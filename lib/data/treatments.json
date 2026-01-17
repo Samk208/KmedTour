@@ -1,0 +1,1930 @@
+[
+  {
+    "id": "1",
+    "slug": "rhinoplasty",
+    "title": "Rhinoplasty",
+    "shortDescription": "Rhinoplasty",
+    "description": "Comprehensive guide to Rhinoplasty in South Korea.",
+    "priceRange": "$3000 - $8000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "7 days",
+    "successRate": "95%+",
+    "category": "Cosmetic",
+    "imageUrl": "/images/procedures/rhinoplasty.jpg",
+    "highlights": [
+      "nose job seoul",
+      "rhinoplasty korea cost",
+      "nose surgery"
+    ]
+  },
+  {
+    "id": "2",
+    "slug": "double-eyelid-surgery",
+    "title": "Double Eyelid Surgery",
+    "shortDescription": "Double Eyelid Surgery",
+    "description": "Comprehensive guide to Double Eyelid Surgery in South Korea.",
+    "priceRange": "$1500 - $4000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "5 days",
+    "successRate": "95%+",
+    "category": "Cosmetic",
+    "imageUrl": "/images/procedures/double-eyelid-surgery.jpg",
+    "highlights": [
+      "double eyelid surgery korea",
+      "blepharoplasty seoul"
+    ]
+  },
+  {
+    "id": "3",
+    "slug": "facelift",
+    "title": "Facelift",
+    "shortDescription": "Facelift",
+    "description": "Comprehensive guide to Facelift in South Korea.",
+    "priceRange": "$5000 - $15000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "10 days",
+    "successRate": "95%+",
+    "category": "Cosmetic",
+    "imageUrl": "/images/procedures/facelift.jpg",
+    "highlights": [
+      "facelift korea",
+      "rhytidectomy seoul"
+    ]
+  },
+  {
+    "id": "4",
+    "slug": "breast-augmentation",
+    "title": "Breast Augmentation",
+    "shortDescription": "Breast Augmentation",
+    "description": "Comprehensive guide to Breast Augmentation in South Korea.",
+    "priceRange": "$4000 - $10000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "7 days",
+    "successRate": "95%+",
+    "category": "Cosmetic",
+    "imageUrl": "/images/procedures/breast-augmentation.jpg",
+    "highlights": [
+      "breast implants korea",
+      "breast augmentation seoul"
+    ]
+  },
+  {
+    "id": "5",
+    "slug": "liposuction",
+    "title": "Liposuction",
+    "shortDescription": "Liposuction",
+    "description": "Comprehensive guide to Liposuction in South Korea.",
+    "priceRange": "$3000 - $8000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "5 days",
+    "successRate": "95%+",
+    "category": "Cosmetic",
+    "imageUrl": "/images/procedures/liposuction.jpg",
+    "highlights": [
+      "liposuction korea",
+      "fat removal seoul"
+    ]
+  },
+  {
+    "id": "6",
+    "slug": "v-line-surgery",
+    "title": "V-Line Surgery",
+    "shortDescription": "V-Line Surgery",
+    "description": "Comprehensive guide to V-Line Surgery in South Korea.",
+    "priceRange": "$8000 - $15000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "14 days",
+    "successRate": "95%+",
+    "category": "Cosmetic",
+    "imageUrl": "/images/procedures/v-line-surgery.jpg",
+    "highlights": [
+      "v-line surgery korea",
+      "jaw contouring seoul"
+    ]
+  },
+  {
+    "id": "7",
+    "slug": "botox-injections",
+    "title": "Botox Injections",
+    "shortDescription": "Botox Injections",
+    "description": "Comprehensive guide to Botox Injections in South Korea.",
+    "priceRange": "$200 - $800",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "1 days",
+    "successRate": "95%+",
+    "category": "Cosmetic",
+    "imageUrl": "/images/procedures/botox-injections.jpg",
+    "highlights": [
+      "botox korea",
+      "botox treatment seoul"
+    ]
+  },
+  {
+    "id": "8",
+    "slug": "chemical-peel",
+    "title": "Chemical Peel",
+    "shortDescription": "Chemical Peel",
+    "description": "Comprehensive guide to Chemical Peel in South Korea.",
+    "priceRange": "$300 - $1500",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "3 days",
+    "successRate": "95%+",
+    "category": "Cosmetic",
+    "imageUrl": "/images/procedures/chemical-peel.jpg",
+    "highlights": [
+      "chemical peel korea",
+      "skin peel seoul"
+    ]
+  },
+  {
+    "id": "9",
+    "slug": "laser-skin-resurfacing",
+    "title": "Laser Skin Resurfacing",
+    "shortDescription": "Laser Skin Resurfacing",
+    "description": "Comprehensive guide to Laser Skin Resurfacing in South Korea.",
+    "priceRange": "$1000 - $4000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "5 days",
+    "successRate": "95%+",
+    "category": "Cosmetic",
+    "imageUrl": "/images/procedures/laser-skin-resurfacing.jpg",
+    "highlights": [
+      "laser treatment korea",
+      "skin resurfacing seoul"
+    ]
+  },
+  {
+    "id": "10",
+    "slug": "acne-scar-removal",
+    "title": "Acne Scar Removal",
+    "shortDescription": "Acne Scar Removal",
+    "description": "Comprehensive guide to Acne Scar Removal in South Korea.",
+    "priceRange": "$800 - $3000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "4 days",
+    "successRate": "95%+",
+    "category": "Cosmetic",
+    "imageUrl": "/images/procedures/acne-scar-removal.jpg",
+    "highlights": [
+      "acne scar treatment korea",
+      "scar removal seoul"
+    ]
+  },
+  {
+    "id": "11",
+    "slug": "skin-whitening",
+    "title": "Skin Whitening Treatment",
+    "shortDescription": "Skin Whitening Treatment",
+    "description": "Comprehensive guide to Skin Whitening Treatment in South Korea.",
+    "priceRange": "$500 - $2000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "3 days",
+    "successRate": "95%+",
+    "category": "Cosmetic",
+    "imageUrl": "/images/procedures/skin-whitening.jpg",
+    "highlights": [
+      "skin whitening korea",
+      "skin brightening seoul"
+    ]
+  },
+  {
+    "id": "12",
+    "slug": "dental-implants",
+    "title": "Dental Implants",
+    "shortDescription": "Dental Implants",
+    "description": "Comprehensive guide to Dental Implants in South Korea.",
+    "priceRange": "$1200 - $3500",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "7 days",
+    "successRate": "95%+",
+    "category": "Dental",
+    "imageUrl": "/images/procedures/dental-implants.jpg",
+    "highlights": [
+      "dental implants korea",
+      "teeth implants seoul"
+    ]
+  },
+  {
+    "id": "13",
+    "slug": "porcelain-veneers",
+    "title": "Porcelain Veneers",
+    "shortDescription": "Porcelain Veneers",
+    "description": "Comprehensive guide to Porcelain Veneers in South Korea.",
+    "priceRange": "$800 - $2500",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "5 days",
+    "successRate": "95%+",
+    "category": "Dental",
+    "imageUrl": "/images/procedures/porcelain-veneers.jpg",
+    "highlights": [
+      "veneers korea",
+      "dental veneers seoul"
+    ]
+  },
+  {
+    "id": "14",
+    "slug": "teeth-whitening",
+    "title": "Teeth Whitening",
+    "shortDescription": "Teeth Whitening",
+    "description": "Comprehensive guide to Teeth Whitening in South Korea.",
+    "priceRange": "$200 - $600",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "1 days",
+    "successRate": "95%+",
+    "category": "Dental",
+    "imageUrl": "/images/procedures/teeth-whitening.jpg",
+    "highlights": [
+      "teeth whitening korea",
+      "dental whitening seoul"
+    ]
+  },
+  {
+    "id": "15",
+    "slug": "full-mouth-reconstruction",
+    "title": "Full Mouth Reconstruction",
+    "shortDescription": "Full Mouth Reconstruction",
+    "description": "Comprehensive guide to Full Mouth Reconstruction in South Korea.",
+    "priceRange": "$12000 - $35000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "14 days",
+    "successRate": "95%+",
+    "category": "Dental",
+    "imageUrl": "/images/procedures/full-mouth-reconstruction.jpg",
+    "highlights": [
+      "full mouth restoration korea",
+      "dental reconstruction seoul"
+    ]
+  },
+  {
+    "id": "16",
+    "slug": "lasik-eye-surgery",
+    "title": "LASIK Eye Surgery",
+    "shortDescription": "LASIK Eye Surgery",
+    "description": "Comprehensive guide to LASIK Eye Surgery in South Korea.",
+    "priceRange": "$1500 - $4000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "3 days",
+    "successRate": "95%+",
+    "category": "Eye Care",
+    "imageUrl": "/images/procedures/lasik-eye-surgery.jpg",
+    "highlights": [
+      "lasik korea",
+      "eye surgery seoul"
+    ]
+  },
+  {
+    "id": "17",
+    "slug": "cataract-surgery",
+    "title": "Cataract Surgery",
+    "shortDescription": "Cataract Surgery",
+    "description": "Comprehensive guide to Cataract Surgery in South Korea.",
+    "priceRange": "$2000 - $5000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "5 days",
+    "successRate": "95%+",
+    "category": "Eye Care",
+    "imageUrl": "/images/procedures/cataract-surgery.jpg",
+    "highlights": [
+      "cataract surgery korea",
+      "lens replacement seoul"
+    ]
+  },
+  {
+    "id": "18",
+    "slug": "corneal-transplant",
+    "title": "Corneal Transplant",
+    "shortDescription": "Corneal Transplant",
+    "description": "Comprehensive guide to Corneal Transplant in South Korea.",
+    "priceRange": "$6000 - $14000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "10 days",
+    "successRate": "95%+",
+    "category": "Eye Care",
+    "imageUrl": "/images/procedures/corneal-transplant.jpg",
+    "highlights": [
+      "cornea transplant korea",
+      "keratoplasty seoul"
+    ]
+  },
+  {
+    "id": "19",
+    "slug": "lasek-eye-surgery",
+    "title": "LASEK Eye Surgery",
+    "shortDescription": "LASEK Eye Surgery",
+    "description": "Comprehensive guide to LASEK Eye Surgery in South Korea.",
+    "priceRange": "$1200 - $3500",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "5 days",
+    "successRate": "95%+",
+    "category": "Eye Care",
+    "imageUrl": "/images/procedures/lasek-eye-surgery.jpg",
+    "highlights": [
+      "lasek korea",
+      "surface laser surgery"
+    ]
+  },
+  {
+    "id": "20",
+    "slug": "smile-eye-surgery",
+    "title": "SMILE Eye Surgery",
+    "shortDescription": "SMILE Eye Surgery",
+    "description": "Comprehensive guide to SMILE Eye Surgery in South Korea.",
+    "priceRange": "$2000 - $5000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "3 days",
+    "successRate": "95%+",
+    "category": "Eye Care",
+    "imageUrl": "/images/procedures/smile-eye-surgery.jpg",
+    "highlights": [
+      "smile procedure korea",
+      "relex smile seoul"
+    ]
+  },
+  {
+    "id": "21",
+    "slug": "knee-replacement",
+    "title": "Knee Replacement",
+    "shortDescription": "Knee Replacement",
+    "description": "Comprehensive guide to Knee Replacement in South Korea.",
+    "priceRange": "$12000 - $25000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "14 days",
+    "successRate": "95%+",
+    "category": "Orthopedic",
+    "imageUrl": "/images/procedures/knee-replacement.jpg",
+    "highlights": [
+      "knee replacement korea",
+      "total knee arthroplasty"
+    ]
+  },
+  {
+    "id": "22",
+    "slug": "hip-replacement",
+    "title": "Hip Replacement",
+    "shortDescription": "Hip Replacement",
+    "description": "Comprehensive guide to Hip Replacement in South Korea.",
+    "priceRange": "$15000 - $30000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "14 days",
+    "successRate": "95%+",
+    "category": "Orthopedic",
+    "imageUrl": "/images/procedures/hip-replacement.jpg",
+    "highlights": [
+      "hip replacement korea",
+      "total hip arthroplasty seoul"
+    ]
+  },
+  {
+    "id": "23",
+    "slug": "acl-reconstruction",
+    "title": "ACL Reconstruction",
+    "shortDescription": "ACL Reconstruction",
+    "description": "Comprehensive guide to ACL Reconstruction in South Korea.",
+    "priceRange": "$5000 - $12000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "7 days",
+    "successRate": "95%+",
+    "category": "Orthopedic",
+    "imageUrl": "/images/procedures/acl-reconstruction.jpg",
+    "highlights": [
+      "acl surgery korea",
+      "knee ligament repair seoul"
+    ]
+  },
+  {
+    "id": "24",
+    "slug": "spinal-fusion",
+    "title": "Spinal Fusion",
+    "shortDescription": "Spinal Fusion",
+    "description": "Comprehensive guide to Spinal Fusion in South Korea.",
+    "priceRange": "$18000 - $40000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "14 days",
+    "successRate": "95%+",
+    "category": "Orthopedic",
+    "imageUrl": "/images/procedures/spinal-fusion.jpg",
+    "highlights": [
+      "spine surgery korea",
+      "spinal fusion seoul"
+    ]
+  },
+  {
+    "id": "25",
+    "slug": "limb-lengthening",
+    "title": "Limb Lengthening",
+    "shortDescription": "Limb Lengthening",
+    "description": "Comprehensive guide to Limb Lengthening in South Korea.",
+    "priceRange": "$25000 - $80000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "180 days",
+    "successRate": "95%+",
+    "category": "Orthopedic",
+    "imageUrl": "/images/procedures/limb-lengthening.jpg",
+    "highlights": [
+      "leg lengthening korea",
+      "height increase surgery"
+    ]
+  },
+  {
+    "id": "26",
+    "slug": "ivf-treatment",
+    "title": "IVF Treatment",
+    "shortDescription": "IVF Treatment",
+    "description": "Comprehensive guide to IVF Treatment in South Korea.",
+    "priceRange": "$8000 - $15000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "30 days",
+    "successRate": "95%+",
+    "category": "Fertility",
+    "imageUrl": "/images/procedures/ivf-treatment.jpg",
+    "highlights": [
+      "ivf korea",
+      "fertility treatment seoul"
+    ]
+  },
+  {
+    "id": "27",
+    "slug": "egg-freezing",
+    "title": "Egg Freezing",
+    "shortDescription": "Egg Freezing",
+    "description": "Comprehensive guide to Egg Freezing in South Korea.",
+    "priceRange": "$3000 - $6000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "14 days",
+    "successRate": "95%+",
+    "category": "Fertility",
+    "imageUrl": "/images/procedures/egg-freezing.jpg",
+    "highlights": [
+      "egg freezing korea",
+      "oocyte cryopreservation seoul"
+    ]
+  },
+  {
+    "id": "28",
+    "slug": "fertility-consultation",
+    "title": "Fertility Consultation",
+    "shortDescription": "Fertility Consultation",
+    "description": "Comprehensive guide to Fertility Consultation in South Korea.",
+    "priceRange": "$200 - $500",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "1 days",
+    "successRate": "95%+",
+    "category": "Fertility",
+    "imageUrl": "/images/procedures/fertility-consultation.jpg",
+    "highlights": [
+      "fertility doctor korea",
+      "ivf consultation seoul"
+    ]
+  },
+  {
+    "id": "29",
+    "slug": "prenatal-care",
+    "title": "Prenatal Care Package",
+    "shortDescription": "Prenatal Care Package",
+    "description": "Comprehensive guide to Prenatal Care Package in South Korea.",
+    "priceRange": "$3000 - $10000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "270 days",
+    "successRate": "95%+",
+    "category": "Obstetrics",
+    "imageUrl": "/images/procedures/prenatal-care.jpg",
+    "highlights": [
+      "pregnancy care korea",
+      "prenatal checkup seoul"
+    ]
+  },
+  {
+    "id": "30",
+    "slug": "health-screening",
+    "title": "Comprehensive Health Screening",
+    "shortDescription": "Comprehensive Health Screening",
+    "description": "Comprehensive guide to Comprehensive Health Screening in South Korea.",
+    "priceRange": "$500 - $3000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "2 days",
+    "successRate": "95%+",
+    "category": "Preventive",
+    "imageUrl": "/images/procedures/health-screening.jpg",
+    "highlights": [
+      "health checkup korea",
+      "medical screening seoul"
+    ]
+  },
+  {
+    "id": "31",
+    "slug": "cancer-screening",
+    "title": "Cancer Screening Package",
+    "shortDescription": "Cancer Screening Package",
+    "description": "Comprehensive guide to Cancer Screening Package in South Korea.",
+    "priceRange": "$800 - $2500",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "2 days",
+    "successRate": "95%+",
+    "category": "Preventive",
+    "imageUrl": "/images/procedures/cancer-screening.jpg",
+    "highlights": [
+      "cancer screening korea",
+      "oncology checkup seoul"
+    ]
+  },
+  {
+    "id": "32",
+    "slug": "cardiac-screening",
+    "title": "Cardiac Health Screening",
+    "shortDescription": "Cardiac Health Screening",
+    "description": "Comprehensive guide to Cardiac Health Screening in South Korea.",
+    "priceRange": "$600 - $2000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "2 days",
+    "successRate": "95%+",
+    "category": "Preventive",
+    "imageUrl": "/images/procedures/cardiac-screening.jpg",
+    "highlights": [
+      "heart checkup korea",
+      "cardiac screening seoul"
+    ]
+  },
+  {
+    "id": "33",
+    "slug": "hair-transplant",
+    "title": "Hair Transplant",
+    "shortDescription": "Hair Transplant",
+    "description": "Comprehensive guide to Hair Transplant in South Korea.",
+    "priceRange": "$3500 - $12000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "5 days",
+    "successRate": "95%+",
+    "category": "Cosmetic",
+    "imageUrl": "/images/procedures/hair-transplant.jpg",
+    "highlights": [
+      "hair transplant korea",
+      "fue seoul"
+    ]
+  },
+  {
+    "id": "34",
+    "slug": "gastric-bypass",
+    "title": "Gastric Bypass",
+    "shortDescription": "Gastric Bypass",
+    "description": "Comprehensive guide to Gastric Bypass in South Korea.",
+    "priceRange": "$12000 - $22000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "14 days",
+    "successRate": "95%+",
+    "category": "Bariatric",
+    "imageUrl": "/images/procedures/gastric-bypass.jpg",
+    "highlights": [
+      "weight loss surgery korea",
+      "bariatric surgery seoul"
+    ]
+  },
+  {
+    "id": "35",
+    "slug": "gastric-sleeve",
+    "title": "Gastric Sleeve",
+    "shortDescription": "Gastric Sleeve",
+    "description": "Comprehensive guide to Gastric Sleeve in South Korea.",
+    "priceRange": "$8000 - $15000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "10 days",
+    "successRate": "95%+",
+    "category": "Bariatric",
+    "imageUrl": "/images/procedures/gastric-sleeve.jpg",
+    "highlights": [
+      "sleeve gastrectomy korea",
+      "stomach reduction seoul"
+    ]
+  },
+  {
+    "id": "36",
+    "slug": "gynecomastia-surgery",
+    "title": "Gynecomastia Surgery",
+    "shortDescription": "Gynecomastia Surgery",
+    "description": "Comprehensive guide to Gynecomastia Surgery in South Korea.",
+    "priceRange": "$3000 - $7000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "5 days",
+    "successRate": "95%+",
+    "category": "Cosmetic",
+    "imageUrl": "/images/procedures/gynecomastia-surgery.jpg",
+    "highlights": [
+      "male breast reduction korea",
+      "gynecomastia treatment seoul"
+    ]
+  },
+  {
+    "id": "37",
+    "slug": "tummy-tuck",
+    "title": "Tummy Tuck",
+    "shortDescription": "Tummy Tuck",
+    "description": "Comprehensive guide to Tummy Tuck in South Korea.",
+    "priceRange": "$5000 - $12000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "10 days",
+    "successRate": "95%+",
+    "category": "Cosmetic",
+    "imageUrl": "/images/procedures/tummy-tuck.jpg",
+    "highlights": [
+      "abdominoplasty korea",
+      "tummy tuck seoul"
+    ]
+  },
+  {
+    "id": "38",
+    "slug": "varicose-vein-treatment",
+    "title": "Varicose Vein Treatment",
+    "shortDescription": "Varicose Vein Treatment",
+    "description": "Comprehensive guide to Varicose Vein Treatment in South Korea.",
+    "priceRange": "$2000 - $6000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "3 days",
+    "successRate": "95%+",
+    "category": "Vascular",
+    "imageUrl": "/images/procedures/varicose-vein-treatment.jpg",
+    "highlights": [
+      "varicose veins korea",
+      "vein treatment seoul"
+    ]
+  },
+  {
+    "id": "39",
+    "slug": "hysterectomy",
+    "title": "Hysterectomy",
+    "shortDescription": "Hysterectomy",
+    "description": "Comprehensive guide to Hysterectomy in South Korea.",
+    "priceRange": "$5000 - $12000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "7 days",
+    "successRate": "95%+",
+    "category": "Gynecology",
+    "imageUrl": "/images/procedures/hysterectomy.jpg",
+    "highlights": [
+      "hysterectomy korea",
+      "uterus removal seoul"
+    ]
+  },
+  {
+    "id": "40",
+    "slug": "prostate-surgery",
+    "title": "Prostate Surgery",
+    "shortDescription": "Prostate Surgery",
+    "description": "Comprehensive guide to Prostate Surgery in South Korea.",
+    "priceRange": "$10000 - $20000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "7 days",
+    "successRate": "95%+",
+    "category": "Urology",
+    "imageUrl": "/images/procedures/prostate-surgery.jpg",
+    "highlights": [
+      "prostate surgery korea",
+      "turp seoul"
+    ]
+  },
+  {
+    "id": "41",
+    "slug": "kidney-stone-removal",
+    "title": "Kidney Stone Removal",
+    "shortDescription": "Kidney Stone Removal",
+    "description": "Comprehensive guide to Kidney Stone Removal in South Korea.",
+    "priceRange": "$3000 - $8000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "3 days",
+    "successRate": "95%+",
+    "category": "Urology",
+    "imageUrl": "/images/procedures/kidney-stone-removal.jpg",
+    "highlights": [
+      "kidney stone treatment korea",
+      "lithotripsy seoul"
+    ]
+  },
+  {
+    "id": "42",
+    "slug": "colonoscopy",
+    "title": "Colonoscopy Screening",
+    "shortDescription": "Colonoscopy Screening",
+    "description": "Comprehensive guide to Colonoscopy Screening in South Korea.",
+    "priceRange": "$500 - $1500",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "1 days",
+    "successRate": "95%+",
+    "category": "Gastroenterology",
+    "imageUrl": "/images/procedures/colonoscopy.jpg",
+    "highlights": [
+      "colonoscopy korea",
+      "colon screening seoul"
+    ]
+  },
+  {
+    "id": "43",
+    "slug": "endoscopy",
+    "title": "Endoscopy",
+    "shortDescription": "Endoscopy",
+    "description": "Comprehensive guide to Endoscopy in South Korea.",
+    "priceRange": "$400 - $1200",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "1 days",
+    "successRate": "95%+",
+    "category": "Gastroenterology",
+    "imageUrl": "/images/procedures/endoscopy.jpg",
+    "highlights": [
+      "endoscopy korea",
+      "stomach camera seoul"
+    ]
+  },
+  {
+    "id": "44",
+    "slug": "hemorrhoid-surgery",
+    "title": "Hemorrhoid Surgery",
+    "shortDescription": "Hemorrhoid Surgery",
+    "description": "Comprehensive guide to Hemorrhoid Surgery in South Korea.",
+    "priceRange": "$2000 - $5000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "3 days",
+    "successRate": "95%+",
+    "category": "Proctology",
+    "imageUrl": "/images/procedures/hemorrhoid-surgery.jpg",
+    "highlights": [
+      "hemorrhoid surgery korea",
+      "piles treatment seoul"
+    ]
+  },
+  {
+    "id": "45",
+    "slug": "sinus-surgery",
+    "title": "Sinus Surgery",
+    "shortDescription": "Sinus Surgery",
+    "description": "Comprehensive guide to Sinus Surgery in South Korea.",
+    "priceRange": "$3000 - $8000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "5 days",
+    "successRate": "95%+",
+    "category": "ENT",
+    "imageUrl": "/images/procedures/sinus-surgery.jpg",
+    "highlights": [
+      "sinus surgery korea",
+      "sinusitis treatment seoul"
+    ]
+  },
+  {
+    "id": "46",
+    "slug": "tonsillectomy",
+    "title": "Tonsillectomy",
+    "shortDescription": "Tonsillectomy",
+    "description": "Comprehensive guide to Tonsillectomy in South Korea.",
+    "priceRange": "$2000 - $5000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "3 days",
+    "successRate": "95%+",
+    "category": "ENT",
+    "imageUrl": "/images/procedures/tonsillectomy.jpg",
+    "highlights": [
+      "tonsil removal korea",
+      "tonsillectomy seoul"
+    ]
+  },
+  {
+    "id": "47",
+    "slug": "septoplasty",
+    "title": "Septoplasty",
+    "shortDescription": "Septoplasty",
+    "description": "Comprehensive guide to Septoplasty in South Korea.",
+    "priceRange": "$2500 - $6000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "5 days",
+    "successRate": "95%+",
+    "category": "ENT",
+    "imageUrl": "/images/procedures/septoplasty.jpg",
+    "highlights": [
+      "deviated septum korea",
+      "septoplasty seoul"
+    ]
+  },
+  {
+    "id": "48",
+    "slug": "thyroid-surgery",
+    "title": "Thyroid Surgery",
+    "shortDescription": "Thyroid Surgery",
+    "description": "Comprehensive guide to Thyroid Surgery in South Korea.",
+    "priceRange": "$6000 - $15000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "7 days",
+    "successRate": "95%+",
+    "category": "Endocrine",
+    "imageUrl": "/images/procedures/thyroid-surgery.jpg",
+    "highlights": [
+      "thyroid surgery korea",
+      "thyroidectomy seoul"
+    ]
+  },
+  {
+    "id": "49",
+    "slug": "brain-tumor-surgery",
+    "title": "Brain Tumor Surgery",
+    "shortDescription": "Brain Tumor Surgery",
+    "description": "Comprehensive guide to Brain Tumor Surgery in South Korea.",
+    "priceRange": "$20000 - $50000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "14 days",
+    "successRate": "95%+",
+    "category": "Neurosurgery",
+    "imageUrl": "/images/procedures/brain-tumor-surgery.jpg",
+    "highlights": [
+      "brain surgery korea",
+      "neurosurgery seoul"
+    ]
+  },
+  {
+    "id": "50",
+    "slug": "pediatric-surgery",
+    "title": "Pediatric Surgery",
+    "shortDescription": "Pediatric Surgery",
+    "description": "Comprehensive guide to Pediatric Surgery in South Korea.",
+    "priceRange": "$5000 - $15000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "7 days",
+    "successRate": "95%+",
+    "category": "Pediatrics",
+    "imageUrl": "/images/procedures/pediatric-surgery.jpg",
+    "highlights": [
+      "child surgery korea",
+      "pediatric treatment seoul"
+    ]
+  },
+  {
+    "id": "51",
+    "slug": "lung-cancer-surgery",
+    "title": "Lung Cancer Surgery",
+    "shortDescription": "Lung Cancer Surgery",
+    "description": "Comprehensive guide to Lung Cancer Surgery in South Korea.",
+    "priceRange": "$15000 - $40000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "14 days",
+    "successRate": "95%+",
+    "category": "Oncology",
+    "imageUrl": "/images/procedures/lung-cancer-surgery.jpg",
+    "highlights": [
+      "lung cancer korea",
+      "thoracic surgery seoul"
+    ]
+  },
+  {
+    "id": "52",
+    "slug": "korean-medicine",
+    "title": "Korean Medicine Treatment",
+    "shortDescription": "Korean Medicine Treatment",
+    "description": "Comprehensive guide to Korean Medicine Treatment in South Korea.",
+    "priceRange": "$1000 - $5000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "14 days",
+    "successRate": "95%+",
+    "category": "Traditional",
+    "imageUrl": "/images/procedures/korean-medicine.jpg",
+    "highlights": [
+      "korean traditional medicine",
+      "hanbok treatment seoul"
+    ]
+  },
+  {
+    "id": "53",
+    "slug": "acupuncture",
+    "title": "Acupuncture Treatment",
+    "shortDescription": "Acupuncture Treatment",
+    "description": "Comprehensive guide to Acupuncture Treatment in South Korea.",
+    "priceRange": "$200 - $1000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "5 days",
+    "successRate": "95%+",
+    "category": "Traditional",
+    "imageUrl": "/images/procedures/acupuncture.jpg",
+    "highlights": [
+      "acupuncture korea",
+      "needle therapy seoul"
+    ]
+  },
+  {
+    "id": "54",
+    "slug": "cupping-therapy",
+    "title": "Cupping Therapy",
+    "shortDescription": "Cupping Therapy",
+    "description": "Comprehensive guide to Cupping Therapy in South Korea.",
+    "priceRange": "$100 - $500",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "3 days",
+    "successRate": "95%+",
+    "category": "Traditional",
+    "imageUrl": "/images/procedures/cupping-therapy.jpg",
+    "highlights": [
+      "cupping korea",
+      "bubal therapy seoul"
+    ]
+  },
+  {
+    "id": "55",
+    "slug": "herbal-medicine",
+    "title": "Herbal Medicine Consultation",
+    "shortDescription": "Herbal Medicine Consultation",
+    "description": "Comprehensive guide to Herbal Medicine Consultation in South Korea.",
+    "priceRange": "$300 - $1500",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "7 days",
+    "successRate": "95%+",
+    "category": "Traditional",
+    "imageUrl": "/images/procedures/herbal-medicine.jpg",
+    "highlights": [
+      "herbal medicine korea",
+      "hanyak consultation seoul"
+    ]
+  },
+  {
+    "id": "56",
+    "slug": "coronary-bypass",
+    "title": "Coronary Bypass Surgery",
+    "shortDescription": "Coronary Bypass Surgery",
+    "description": "Comprehensive guide to Coronary Bypass Surgery in South Korea.",
+    "priceRange": "$20000 - $45000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "21 days",
+    "successRate": "95%+",
+    "category": "Cardiac",
+    "imageUrl": "/images/procedures/coronary-bypass.jpg",
+    "highlights": [
+      "heart bypass korea",
+      "cabg seoul"
+    ]
+  },
+  {
+    "id": "57",
+    "slug": "angioplasty",
+    "title": "Angioplasty",
+    "shortDescription": "Angioplasty",
+    "description": "Comprehensive guide to Angioplasty in South Korea.",
+    "priceRange": "$10000 - $25000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "5 days",
+    "successRate": "95%+",
+    "category": "Cardiac",
+    "imageUrl": "/images/procedures/angioplasty.jpg",
+    "highlights": [
+      "angioplasty korea",
+      "stent procedure seoul"
+    ]
+  },
+  {
+    "id": "58",
+    "slug": "pacemaker-implantation",
+    "title": "Pacemaker Implantation",
+    "shortDescription": "Pacemaker Implantation",
+    "description": "Comprehensive guide to Pacemaker Implantation in South Korea.",
+    "priceRange": "$8000 - $20000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "5 days",
+    "successRate": "95%+",
+    "category": "Cardiac",
+    "imageUrl": "/images/procedures/pacemaker-implantation.jpg",
+    "highlights": [
+      "pacemaker korea",
+      "cardiac device seoul"
+    ]
+  },
+  {
+    "id": "59",
+    "slug": "pulmonary-treatment",
+    "title": "Pulmonary Treatment",
+    "shortDescription": "Pulmonary Treatment",
+    "description": "Comprehensive guide to Pulmonary Treatment in South Korea.",
+    "priceRange": "$3000 - $10000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "7 days",
+    "successRate": "95%+",
+    "category": "Respiratory",
+    "imageUrl": "/images/procedures/pulmonary-treatment.jpg",
+    "highlights": [
+      "lung treatment korea",
+      "respiratory care seoul"
+    ]
+  },
+  {
+    "id": "60",
+    "slug": "neonatal-care",
+    "title": "Neonatal Care",
+    "shortDescription": "Neonatal Care",
+    "description": "Comprehensive guide to Neonatal Care in South Korea.",
+    "priceRange": "$5000 - $20000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "30 days",
+    "successRate": "95%+",
+    "category": "Pediatrics",
+    "imageUrl": "/images/procedures/neonatal-care.jpg",
+    "highlights": [
+      "newborn care korea",
+      "nicu seoul"
+    ]
+  },
+  {
+    "id": "61",
+    "slug": "laparoscopic-gastric-cancer",
+    "title": "Laparoscopic Gastric Cancer Operation",
+    "shortDescription": "Laparoscopic Gastric Cancer Operation",
+    "description": "Korean technique recognized as global standard by NCCN, 77.9% 5-year survival rate\"",
+    "priceRange": "$15000 - $35000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "14 days",
+    "successRate": "95%+",
+    "category": "Cancer",
+    "imageUrl": "/images/procedures/laparoscopic-gastric-cancer.jpg",
+    "highlights": [
+      "gastric cancer surgery korea",
+      "stomach cancer laparoscopy"
+    ]
+  },
+  {
+    "id": "62",
+    "slug": "endoscopic-submucosal-dissection",
+    "title": "Endoscopic Submucosal Dissection",
+    "shortDescription": "Endoscopic Submucosal Dissection",
+    "description": "Korean technique for early gastric cancer, globally recognized standard\"",
+    "priceRange": "$3000 - $8000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "3 days",
+    "successRate": "95%+",
+    "category": "Cancer",
+    "imageUrl": "/images/procedures/endoscopic-submucosal-dissection.jpg",
+    "highlights": [
+      "ESD korea",
+      "early gastric cancer treatment"
+    ]
+  },
+  {
+    "id": "63",
+    "slug": "living-donor-liver-transplant",
+    "title": "Living-Donor Liver Transplantation",
+    "shortDescription": "Living-Donor Liver Transplantation",
+    "description": "Korea performs highest number globally (21.61 per million), 94.5% 1-year graft survival\"",
+    "priceRange": "$50000 - $100000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "21 days",
+    "successRate": "95%+",
+    "category": "Transplantation",
+    "imageUrl": "/images/procedures/living-donor-liver-transplant.jpg",
+    "highlights": [
+      "liver transplant korea",
+      "LDLT"
+    ]
+  },
+  {
+    "id": "64",
+    "slug": "radiofrequency-ablation-liver",
+    "title": "Radiofrequency Ablation for Liver",
+    "shortDescription": "Radiofrequency Ablation for Liver",
+    "description": "For Stages 1-2 liver cancer with 50% survival rate",
+    "priceRange": "$5000 - $12000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "3 days",
+    "successRate": "95%+",
+    "category": "Cancer",
+    "imageUrl": "/images/procedures/radiofrequency-ablation-liver.jpg",
+    "highlights": [
+      "RFA liver cancer korea",
+      "tumor ablation"
+    ]
+  },
+  {
+    "id": "65",
+    "slug": "laparoscopic-colorectal-surgery",
+    "title": "Laparoscopic Colorectal Cancer Surgery",
+    "shortDescription": "Laparoscopic Colorectal Cancer Surgery",
+    "description": "74.3% 5-year survival rate, world-leading outcomes\"",
+    "priceRange": "$15000 - $30000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "10 days",
+    "successRate": "95%+",
+    "category": "Cancer",
+    "imageUrl": "/images/procedures/laparoscopic-colorectal-surgery.jpg",
+    "highlights": [
+      "colon cancer surgery korea",
+      "minimally invasive colorectal"
+    ]
+  },
+  {
+    "id": "66",
+    "slug": "sphincter-saving-procedure",
+    "title": "Sphincter-Saving Procedure",
+    "shortDescription": "Sphincter-Saving Procedure",
+    "description": "For low rectal cancer with sphincter preservation",
+    "priceRange": "$12000 - $25000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "7 days",
+    "successRate": "95%+",
+    "category": "Cancer",
+    "imageUrl": "/images/procedures/sphincter-saving-procedure.jpg",
+    "highlights": [
+      "rectal cancer surgery korea",
+      "sphincter preservation"
+    ]
+  },
+  {
+    "id": "67",
+    "slug": "sentinel-lymph-node-biopsy",
+    "title": "Sentinel Lymph Node Biopsy",
+    "shortDescription": "Sentinel Lymph Node Biopsy",
+    "description": "World-first safety study, 93.8% 5-year survival for breast cancer\"",
+    "priceRange": "$2000 - $5000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "1 days",
+    "successRate": "95%+",
+    "category": "Cancer",
+    "imageUrl": "/images/procedures/sentinel-lymph-node-biopsy.jpg",
+    "highlights": [
+      "SLNB breast cancer korea",
+      "lymph node biopsy"
+    ]
+  },
+  {
+    "id": "68",
+    "slug": "breast-conserving-surgery",
+    "title": "Breast Conserving Surgery",
+    "shortDescription": "Breast Conserving Surgery",
+    "description": "World-class results with immediate reconstruction, 93.8% 5-year survival\"",
+    "priceRange": "$8000 - $15000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "7 days",
+    "successRate": "95%+",
+    "category": "Cancer",
+    "imageUrl": "/images/procedures/breast-conserving-surgery.jpg",
+    "highlights": [
+      "lumpectomy korea",
+      "breast preservation surgery"
+    ]
+  },
+  {
+    "id": "69",
+    "slug": "endoscopic-thyroidectomy",
+    "title": "Endoscopic Thyroidectomy",
+    "shortDescription": "Endoscopic Thyroidectomy",
+    "description": "99.8% survival rate, minimal scarring\"",
+    "priceRange": "$6000 - $12000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "5 days",
+    "successRate": "95%+",
+    "category": "Cancer",
+    "imageUrl": "/images/procedures/endoscopic-thyroidectomy.jpg",
+    "highlights": [
+      "thyroid surgery korea",
+      "minimally invasive thyroid"
+    ]
+  },
+  {
+    "id": "70",
+    "slug": "robotic-thyroidectomy",
+    "title": "Robotic Thyroidectomy",
+    "shortDescription": "Robotic Thyroidectomy",
+    "description": "World-first technique with incision in armpit, 99.8% survival\"",
+    "priceRange": "$8000 - $15000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "5 days",
+    "successRate": "95%+",
+    "category": "Cancer",
+    "imageUrl": "/images/procedures/robotic-thyroidectomy.jpg",
+    "highlights": [
+      "robotic thyroid korea",
+      "armpit thyroid surgery"
+    ]
+  },
+  {
+    "id": "71",
+    "slug": "bronchoplasty",
+    "title": "Bronchoplasty",
+    "shortDescription": "Bronchoplasty",
+    "description": "62.8% 5-year survival, world's largest volume (5,000+ cases)\"",
+    "priceRange": "$20000 - $45000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "14 days",
+    "successRate": "95%+",
+    "category": "Cancer",
+    "imageUrl": "/images/procedures/bronchoplasty.jpg",
+    "highlights": [
+      "lung cancer surgery korea",
+      "bronchoplasty"
+    ]
+  },
+  {
+    "id": "72",
+    "slug": "stereotactic-radiation-therapy",
+    "title": "Stereotactic Radiation Therapy",
+    "shortDescription": "Stereotactic Radiation Therapy",
+    "description": "Precision radiation for lung cancer, 38.5% 5-year survival\"",
+    "priceRange": "$8000 - $20000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "5 days",
+    "successRate": "95%+",
+    "category": "Cancer",
+    "imageUrl": "/images/procedures/stereotactic-radiation-therapy.jpg",
+    "highlights": [
+      "SBRT lung cancer korea",
+      "stereotactic radiation"
+    ]
+  },
+  {
+    "id": "73",
+    "slug": "proton-therapy",
+    "title": "Proton Therapy",
+    "shortDescription": "Proton Therapy",
+    "description": "Available at National Cancer Center and 28 hospitals worldwide. Cost 1/5 of USA",
+    "priceRange": "$15000 - $40000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "14 days",
+    "successRate": "95%+",
+    "category": "Cancer",
+    "imageUrl": "/images/procedures/proton-therapy.jpg",
+    "highlights": [
+      "proton therapy korea",
+      "proton beam cancer"
+    ]
+  },
+  {
+    "id": "74",
+    "slug": "cyberknife",
+    "title": "CyberKnife Treatment",
+    "shortDescription": "CyberKnife Treatment",
+    "description": "Cost 1/3 of USA, tracks organ movement and breathing\"",
+    "priceRange": "$10000 - $25000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "3 days",
+    "successRate": "95%+",
+    "category": "Cancer",
+    "imageUrl": "/images/procedures/cyberknife.jpg",
+    "highlights": [
+      "cyberknife korea",
+      "robotic radiosurgery"
+    ]
+  },
+  {
+    "id": "75",
+    "slug": "heart-transplant",
+    "title": "Heart Transplantation",
+    "shortDescription": "Heart Transplantation",
+    "description": "96.2% short-term survival, 84% 4-year survival (highest worldwide)\"",
+    "priceRange": "$150000 - $300000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "30 days",
+    "successRate": "95%+",
+    "category": "Cardiac",
+    "imageUrl": "/images/procedures/heart-transplant.jpg",
+    "highlights": [
+      "heart transplant korea",
+      "cardiac transplant"
+    ]
+  },
+  {
+    "id": "76",
+    "slug": "percutaneous-coronary-intervention",
+    "title": "Percutaneous Coronary Intervention",
+    "shortDescription": "Percutaneous Coronary Intervention",
+    "description": "2.4% post-PCI mortality, 1-2 day hospitalization\"",
+    "priceRange": "$8000 - $18000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "2 days",
+    "successRate": "95%+",
+    "category": "Cardiac",
+    "imageUrl": "/images/procedures/percutaneous-coronary-intervention.jpg",
+    "highlights": [
+      "PCI korea",
+      "coronary stent korea",
+      "angioplasty"
+    ]
+  },
+  {
+    "id": "77",
+    "slug": "coronary-artery-bypass-grafting",
+    "title": "Coronary Artery Bypass Grafting",
+    "shortDescription": "Coronary Artery Bypass Grafting",
+    "description": "High level of OPCAB with 2.6-3.9% mortality rate",
+    "priceRange": "$25000 - $50000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "14 days",
+    "successRate": "95%+",
+    "category": "Cardiac",
+    "imageUrl": "/images/procedures/coronary-artery-bypass-grafting.jpg",
+    "highlights": [
+      "CABG korea",
+      "heart bypass korea",
+      "OPCAB"
+    ]
+  },
+  {
+    "id": "78",
+    "slug": "tavi-procedure",
+    "title": "TAVI Procedure",
+    "shortDescription": "TAVI Procedure",
+    "description": "Leading country in Asia, 3.3% cardiac death rate at 1 year\"",
+    "priceRange": "$30000 - $60000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "5 days",
+    "successRate": "95%+",
+    "category": "Cardiac",
+    "imageUrl": "/images/procedures/tavi-procedure.jpg",
+    "highlights": [
+      "TAVI korea",
+      "transcatheter aortic valve"
+    ]
+  },
+  {
+    "id": "79",
+    "slug": "congenital-heart-defect-surgery",
+    "title": "Congenital Heart Defect Surgery",
+    "shortDescription": "Congenital Heart Defect Surgery",
+    "description": "1.1% mortality rate for congenital heart defects",
+    "priceRange": "$20000 - $50000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "14 days",
+    "successRate": "95%+",
+    "category": "Cardiac",
+    "imageUrl": "/images/procedures/congenital-heart-defect-surgery.jpg",
+    "highlights": [
+      "pediatric heart surgery korea",
+      "congenital heart"
+    ]
+  },
+  {
+    "id": "80",
+    "slug": "neonatal-heart-surgery",
+    "title": "Neonatal Heart Surgery",
+    "shortDescription": "Neonatal Heart Surgery",
+    "description": "Success in infants under 1.2kg body weight",
+    "priceRange": "$30000 - $80000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "21 days",
+    "successRate": "95%+",
+    "category": "Cardiac",
+    "imageUrl": "/images/procedures/neonatal-heart-surgery.jpg",
+    "highlights": [
+      "infant heart surgery korea",
+      "premature baby heart"
+    ]
+  },
+  {
+    "id": "81",
+    "slug": "minimally-invasive-spine-surgery",
+    "title": "Minimally Invasive Spine Surgery",
+    "shortDescription": "Minimally Invasive Spine Surgery",
+    "description": "Korea leads global research (28.68% of publications, highest h-index)\"",
+    "priceRange": "$10000 - $25000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "7 days",
+    "successRate": "95%+",
+    "category": "Spine",
+    "imageUrl": "/images/procedures/minimally-invasive-spine-surgery.jpg",
+    "highlights": [
+      "MISS korea",
+      "endoscopic spine surgery",
+      "UBE"
+    ]
+  },
+  {
+    "id": "82",
+    "slug": "transforaminal-endoscopic-discectomy",
+    "title": "Transforaminal Endoscopic Lumbar Discectomy",
+    "shortDescription": "Transforaminal Endoscopic Lumbar Discectomy",
+    "description": "4.2% recurrence rate for lumbar herniated disc",
+    "priceRange": "$5000 - $12000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "3 days",
+    "successRate": "95%+",
+    "category": "Spine",
+    "imageUrl": "/images/procedures/transforaminal-endoscopic-discectomy.jpg",
+    "highlights": [
+      "TELD korea",
+      "endoscopic disc surgery"
+    ]
+  },
+  {
+    "id": "83",
+    "slug": "open-microdiscectomy",
+    "title": "Open Microdiscectomy",
+    "shortDescription": "Open Microdiscectomy",
+    "description": "3.3% recurrence rate with 90% patient satisfaction",
+    "priceRange": "$8000 - $18000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "5 days",
+    "successRate": "95%+",
+    "category": "Spine",
+    "imageUrl": "/images/procedures/open-microdiscectomy.jpg",
+    "highlights": [
+      "microdiscectomy korea",
+      "herniated disc surgery"
+    ]
+  },
+  {
+    "id": "84",
+    "slug": "spinal-decompression-surgery",
+    "title": "Spinal Decompression Surgery",
+    "shortDescription": "Spinal Decompression Surgery",
+    "description": "4.0% reoperation rate for spinal stenosis",
+    "priceRange": "$10000 - $22000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "7 days",
+    "successRate": "95%+",
+    "category": "Spine",
+    "imageUrl": "/images/procedures/spinal-decompression-surgery.jpg",
+    "highlights": [
+      "spinal stenosis surgery korea",
+      "laminectomy"
+    ]
+  },
+  {
+    "id": "85",
+    "slug": "ube-spinal-surgery",
+    "title": "UBE Spinal Surgery",
+    "shortDescription": "UBE Spinal Surgery",
+    "description": "Korean-developed technique for decompression and fusion, minimally invasive\"",
+    "priceRange": "$8000 - $18000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "5 days",
+    "successRate": "95%+",
+    "category": "Spine",
+    "imageUrl": "/images/procedures/ube-spinal-surgery.jpg",
+    "highlights": [
+      "unilateral biportal endoscope",
+      "UBE korea"
+    ]
+  },
+  {
+    "id": "86",
+    "slug": "scoliosis-correction-surgery",
+    "title": "Scoliosis Correction Surgery",
+    "shortDescription": "Scoliosis Correction Surgery",
+    "description": "80-90% success rate, 5-day average admission, <3% readmission within 5 years\"",
+    "priceRange": "$20000 - $50000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "10 days",
+    "successRate": "95%+",
+    "category": "Spine",
+    "imageUrl": "/images/procedures/scoliosis-correction-surgery.jpg",
+    "highlights": [
+      "scoliosis surgery korea",
+      "spinal curvature"
+    ]
+  },
+  {
+    "id": "87",
+    "slug": "in-vitro-maturation",
+    "title": "In Vitro Maturation",
+    "shortDescription": "In Vitro Maturation",
+    "description": "Reduces OHSS risk and COH cost",
+    "priceRange": "$5000 - $10000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "14 days",
+    "successRate": "95%+",
+    "category": "Fertility",
+    "imageUrl": "/images/procedures/in-vitro-maturation.jpg",
+    "highlights": [
+      "IVM korea",
+      "immature egg maturation"
+    ]
+  },
+  {
+    "id": "88",
+    "slug": "ovarian-tissue-cryopreservation",
+    "title": "Ovarian Tissue Cryopreservation",
+    "shortDescription": "Ovarian Tissue Cryopreservation",
+    "description": "Established option (ASRM 2019), Korea succeeded in 2015 at Seoul National University\"",
+    "priceRange": "$3000 - $8000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "7 days",
+    "successRate": "95%+",
+    "category": "Fertility",
+    "imageUrl": "/images/procedures/ovarian-tissue-cryopreservation.jpg",
+    "highlights": [
+      "ovarian tissue freezing korea",
+      "fertility preservation"
+    ]
+  },
+  {
+    "id": "89",
+    "slug": "preimplantation-genetic-testing",
+    "title": "Preimplantation Genetic Testing",
+    "shortDescription": "Preimplantation Genetic Testing",
+    "description": "Prevents transmission of genetic diseases and recurrent miscarriages",
+    "priceRange": "$2000 - $5000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "2 days",
+    "successRate": "95%+",
+    "category": "Fertility",
+    "imageUrl": "/images/procedures/preimplantation-genetic-testing.jpg",
+    "highlights": [
+      "PGT korea",
+      "embryo genetic testing",
+      "PGT-A PGT-M"
+    ]
+  },
+  {
+    "id": "90",
+    "slug": "time-lapse-embryo-monitoring",
+    "title": "Time-Lapse Embryo Monitoring",
+    "shortDescription": "Time-Lapse Embryo Monitoring",
+    "description": "Best embryo selection without disturbing incubation",
+    "priceRange": "$1000 - $3000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "1 days",
+    "successRate": "95%+",
+    "category": "Fertility",
+    "imageUrl": "/images/procedures/time-lapse-embryo-monitoring.jpg",
+    "highlights": [
+      "embryoscope korea",
+      "time lapse IVF"
+    ]
+  },
+  {
+    "id": "91",
+    "slug": "microsurgical-tese",
+    "title": "Microsurgical TESE",
+    "shortDescription": "Microsurgical TESE",
+    "description": "Effective sperm retrieval from men with NOA (Non-Obstructive Azoospermia)",
+    "priceRange": "$3000 - $8000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "1 days",
+    "successRate": "95%+",
+    "category": "Fertility",
+    "imageUrl": "/images/procedures/microsurgical-tese.jpg",
+    "highlights": [
+      "micro TESE korea",
+      "sperm extraction"
+    ]
+  },
+  {
+    "id": "92",
+    "slug": "single-port-laparoscopic-surgery",
+    "title": "Single Port Laparoscopic Surgery",
+    "shortDescription": "Single Port Laparoscopic Surgery",
+    "description": "1-2cm umbilical incision, high cosmetic satisfaction\"",
+    "priceRange": "$5000 - $12000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "3 days",
+    "successRate": "95%+",
+    "category": "Fertility",
+    "imageUrl": "/images/procedures/single-port-laparoscopic-surgery.jpg",
+    "highlights": [
+      "single port surgery korea",
+      "SILS"
+    ]
+  },
+  {
+    "id": "93",
+    "slug": "robotic-reproductive-surgery",
+    "title": "Robotic Reproductive Surgery",
+    "shortDescription": "Robotic Reproductive Surgery",
+    "description": "Full range of motion beyond traditional laparoscopy",
+    "priceRange": "$8000 - $18000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "5 days",
+    "successRate": "95%+",
+    "category": "Fertility",
+    "imageUrl": "/images/procedures/robotic-reproductive-surgery.jpg",
+    "highlights": [
+      "robotic surgery fertility korea",
+      "da vinci gynecology"
+    ]
+  },
+  {
+    "id": "94",
+    "slug": "dental-implant-surgery",
+    "title": "Dental Implant Surgery",
+    "shortDescription": "Dental Implant Surgery",
+    "description": "Top Korean brands: Osstem, Dentium, Neobiotech, Megagen, Genoss\"",
+    "priceRange": "$1000 - $3000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "7 days",
+    "successRate": "95%+",
+    "category": "Dentistry",
+    "imageUrl": "/images/procedures/dental-implant-surgery.jpg",
+    "highlights": [
+      "dental implants korea",
+      "tooth implants"
+    ]
+  },
+  {
+    "id": "95",
+    "slug": "prosthodontic-treatment",
+    "title": "Prosthodontic Treatment",
+    "shortDescription": "Prosthodontic Treatment",
+    "description": "Specialist training since 2004",
+    "priceRange": "$800 - $3000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "7 days",
+    "successRate": "95%+",
+    "category": "Dentistry",
+    "imageUrl": "/images/procedures/prosthodontic-treatment.jpg",
+    "highlights": [
+      "prosthodontics korea",
+      "dental prosthetics"
+    ]
+  },
+  {
+    "id": "96",
+    "slug": "orthodontic-treatment",
+    "title": "Orthodontic Treatment",
+    "shortDescription": "Orthodontic Treatment",
+    "description": "Specialist training since 2004",
+    "priceRange": "$2000 - $8000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "365 days",
+    "successRate": "95%+",
+    "category": "Dentistry",
+    "imageUrl": "/images/procedures/orthodontic-treatment.jpg",
+    "highlights": [
+      "orthodontics korea",
+      "braces korea",
+      "teeth straightening"
+    ]
+  },
+  {
+    "id": "97",
+    "slug": "periodontal-treatment",
+    "title": "Periodontal Treatment",
+    "shortDescription": "Periodontal Treatment",
+    "description": "Chronic periodontal disease is 2nd most common diagnosis in Korea, extensive experience\"",
+    "priceRange": "$500 - $2000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "7 days",
+    "successRate": "95%+",
+    "category": "Dentistry",
+    "imageUrl": "/images/procedures/periodontal-treatment.jpg",
+    "highlights": [
+      "periodontics korea",
+      "gum disease treatment"
+    ]
+  },
+  {
+    "id": "98",
+    "slug": "conservative-dentistry",
+    "title": "Conservative Dentistry",
+    "shortDescription": "Conservative Dentistry",
+    "description": "Specialist training since 2004",
+    "priceRange": "$200 - $1000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "3 days",
+    "successRate": "95%+",
+    "category": "Dentistry",
+    "imageUrl": "/images/procedures/conservative-dentistry.jpg",
+    "highlights": [
+      "restorative dentistry korea",
+      "dental fillings"
+    ]
+  },
+  {
+    "id": "99",
+    "slug": "oral-maxillofacial-surgery",
+    "title": "Oral and Maxillofacial Surgery",
+    "shortDescription": "Oral and Maxillofacial Surgery",
+    "description": "Specialist training since 2004",
+    "priceRange": "$5000 - $15000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "10 days",
+    "successRate": "95%+",
+    "category": "Dentistry",
+    "imageUrl": "/images/procedures/oral-maxillofacial-surgery.jpg",
+    "highlights": [
+      "jaw surgery korea",
+      "orthognathic surgery"
+    ]
+  },
+  {
+    "id": "100",
+    "slug": "digital-guided-implant-surgery",
+    "title": "Digital Guided Implant Surgery",
+    "shortDescription": "Digital Guided Implant Surgery",
+    "description": "Korean digital devices: Medit oral scanner, OnDemand planning, Osstem OneGuide, Same-day treatment possible\"",
+    "priceRange": "$1500 - $4000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "3 days",
+    "successRate": "95%+",
+    "category": "Dentistry",
+    "imageUrl": "/images/procedures/digital-guided-implant-surgery.jpg",
+    "highlights": [
+      "guided implant korea",
+      "digital dentistry"
+    ]
+  },
+  {
+    "id": "101",
+    "slug": "living-donor-kidney-transplant",
+    "title": "Living Donor Kidney Transplantation",
+    "shortDescription": "Living Donor Kidney Transplantation",
+    "description": "26.4 per million (2022), 97.1% 1-year graft survival\"",
+    "priceRange": "$40000 - $80000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "21 days",
+    "successRate": "95%+",
+    "category": "Transplantation",
+    "imageUrl": "/images/procedures/living-donor-kidney-transplant.jpg",
+    "highlights": [
+      "kidney transplant korea",
+      "LDKT"
+    ]
+  },
+  {
+    "id": "102",
+    "slug": "abo-incompatible-transplant",
+    "title": "ABO-Incompatible Transplantation",
+    "shortDescription": "ABO-Incompatible Transplantation",
+    "description": "11,682 LDLT cases, 2,501 LDKT cases since 2007\"",
+    "priceRange": "$50000 - $100000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "21 days",
+    "successRate": "95%+",
+    "category": "Transplantation",
+    "imageUrl": "/images/procedures/abo-incompatible-transplant.jpg",
+    "highlights": [
+      "blood type incompatible transplant korea",
+      "desensitization"
+    ]
+  },
+  {
+    "id": "103",
+    "slug": "exchange-donor-kidney-transplant",
+    "title": "Exchange Donor Kidney Transplant",
+    "shortDescription": "Exchange Donor Kidney Transplant",
+    "description": "Started 1991 (first exchange), web-based algorithm since 2005\"",
+    "priceRange": "$40000 - $80000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "21 days",
+    "successRate": "95%+",
+    "category": "Transplantation",
+    "imageUrl": "/images/procedures/exchange-donor-kidney-transplant.jpg",
+    "highlights": [
+      "kidney swap korea",
+      "paired exchange"
+    ]
+  },
+  {
+    "id": "104",
+    "slug": "dual-donor-liver-transplant",
+    "title": "Dual Donor Liver Transplantation",
+    "shortDescription": "Dual Donor Liver Transplantation",
+    "description": "World-first procedure, comparable success to 1:1 transplant\"",
+    "priceRange": "$60000 - $120000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "21 days",
+    "successRate": "95%+",
+    "category": "Transplantation",
+    "imageUrl": "/images/procedures/dual-donor-liver-transplant.jpg",
+    "highlights": [
+      "2:1 liver transplant korea",
+      "dual liver donor"
+    ]
+  },
+  {
+    "id": "105",
+    "slug": "robotic-transplant-surgery",
+    "title": "Robotic Transplant Surgery",
+    "shortDescription": "Robotic Transplant Surgery",
+    "description": "10-fold magnified view, minimal incision, minimal scarring\"",
+    "priceRange": "$50000 - $100000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "14 days",
+    "successRate": "95%+",
+    "category": "Transplantation",
+    "imageUrl": "/images/procedures/robotic-transplant-surgery.jpg",
+    "highlights": [
+      "robotic kidney transplant korea",
+      "robotic liver donor"
+    ]
+  },
+  {
+    "id": "106",
+    "slug": "lung-transplant",
+    "title": "Lung Transplantation",
+    "shortDescription": "Lung Transplantation",
+    "description": "1,383 cases since 2000\"",
+    "priceRange": "$100000 - $200000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "30 days",
+    "successRate": "95%+",
+    "category": "Transplantation",
+    "imageUrl": "/images/procedures/lung-transplant.jpg",
+    "highlights": [
+      "lung transplant korea",
+      "pulmonary transplant"
+    ]
+  },
+  {
+    "id": "107",
+    "slug": "pancreas-transplant",
+    "title": "Pancreas Transplantation",
+    "shortDescription": "Pancreas Transplantation",
+    "description": "813 cases since 2000, for diabetes patients\"",
+    "priceRange": "$80000 - $150000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "21 days",
+    "successRate": "95%+",
+    "category": "Transplantation",
+    "imageUrl": "/images/procedures/pancreas-transplant.jpg",
+    "highlights": [
+      "pancreas transplant korea",
+      "diabetes transplant"
+    ]
+  },
+  {
+    "id": "108",
+    "slug": "small-intestine-transplant",
+    "title": "Small Intestine Transplantation",
+    "shortDescription": "Small Intestine Transplantation",
+    "description": "21 cases since 2000, rare procedure\"",
+    "priceRange": "$100000 - $200000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "30 days",
+    "successRate": "95%+",
+    "category": "Transplantation",
+    "imageUrl": "/images/procedures/small-intestine-transplant.jpg",
+    "highlights": [
+      "intestine transplant korea",
+      "bowel transplant"
+    ]
+  },
+  {
+    "id": "109",
+    "slug": "cornea-transplant",
+    "title": "Cornea Transplantation",
+    "shortDescription": "Cornea Transplantation",
+    "description": "5,940 cases since 2000\"",
+    "priceRange": "$5000 - $12000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "10 days",
+    "successRate": "95%+",
+    "category": "Transplantation",
+    "imageUrl": "/images/procedures/cornea-transplant.jpg",
+    "highlights": [
+      "cornea transplant korea",
+      "keratoplasty"
+    ]
+  },
+  {
+    "id": "110",
+    "slug": "cardiovascular-physiology-assessment",
+    "title": "Cardiovascular Physiology Assessment",
+    "shortDescription": "Cardiovascular Physiology Assessment",
+    "description": "Korean contributions to guidelines, selective stent strategy\"",
+    "priceRange": "$1000 - $3000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "1 days",
+    "successRate": "95%+",
+    "category": "Cardiac",
+    "imageUrl": "/images/procedures/cardiovascular-physiology-assessment.jpg",
+    "highlights": [
+      "FFR korea",
+      "iFR korea",
+      "coronary physiology"
+    ]
+  },
+  {
+    "id": "111",
+    "slug": "radial-artery-approach-pci",
+    "title": "Radial Artery Approach PCI",
+    "shortDescription": "Radial Artery Approach PCI",
+    "description": "60% of cases use radial artery (vs 30% in USA), reduced complications\"",
+    "priceRange": "$8000 - $18000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "2 days",
+    "successRate": "95%+",
+    "category": "Cardiac",
+    "imageUrl": "/images/procedures/radial-artery-approach-pci.jpg",
+    "highlights": [
+      "radial approach korea",
+      "transradial PCI"
+    ]
+  },
+  {
+    "id": "112",
+    "slug": "left-main-coronary-intervention",
+    "title": "Left Main Coronary Intervention",
+    "shortDescription": "Left Main Coronary Intervention",
+    "description": "Korean pioneers in left main stent procedures, contributed to guideline changes\"",
+    "priceRange": "$10000 - $25000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "3 days",
+    "successRate": "95%+",
+    "category": "Cardiac",
+    "imageUrl": "/images/procedures/left-main-coronary-intervention.jpg",
+    "highlights": [
+      "left main stenting korea",
+      "unprotected left main"
+    ]
+  },
+  {
+    "id": "113",
+    "slug": "rehabilitation-therapy",
+    "title": "Rehabilitation Therapy",
+    "shortDescription": "Rehabilitation Therapy",
+    "description": "Comprehensive rehabilitation services",
+    "priceRange": "$1000 - $5000",
+    "priceNote": "Estimated cost including basic procedure fees.",
+    "duration": "14 days",
+    "successRate": "95%+",
+    "category": "Rehabilitation",
+    "imageUrl": "/images/procedures/rehabilitation-therapy.jpg",
+    "highlights": [
+      "rehabilitation korea",
+      "physical therapy"
+    ]
+  }
+]

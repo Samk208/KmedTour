@@ -1,0 +1,124 @@
+{
+  "countries": [
+    {
+      "name": "Nigeria",
+      "code": "NG",
+      "region": "West Africa",
+      "tips": {
+        "visa": "Korean visa available through embassy in Abuja. Processing takes 5-7 business days.",
+        "flights": "Direct flights from Lagos to Seoul via Ethiopian Airlines or Kenya Airways (1 stop).",
+        "currency": "Exchange Naira to Korean Won. Current rate: ₦1,000 ≈ ₩900.",
+        "languages": "English widely spoken in international hospitals. Yoruba/Igbo interpreters available.",
+        "travel": "Total travel time ~15 hours. Best to arrive 2-3 days before procedure for consultation."
+      }
+    },
+    {
+      "name": "Ghana",
+      "code": "GH",
+      "region": "West Africa",
+      "tips": {
+        "visa": "Apply for Korean medical visa at embassy in Accra. Approval typically within 5 days.",
+        "flights": "Fly from Accra via Ethiopian Airlines or Turkish Airlines (1 stop). ~14 hours total.",
+        "currency": "Exchange Cedis to Won. Current rate: GH₵100 ≈ ₩7,500.",
+        "languages": "English is official language. Twi interpreters available at major hospitals.",
+        "travel": "Recommended to stay 7-14 days depending on treatment type."
+      }
+    },
+    {
+      "name": "Kenya",
+      "code": "KE",
+      "region": "East Africa",
+      "tips": {
+        "visa": "Korean medical visa through Seoul embassy in Nairobi. Quick 3-5 day processing.",
+        "flights": "Direct flights available from Nairobi to Seoul via Kenya Airways or Ethiopian.",
+        "currency": "Exchange Shillings to Won. Current rate: KSh1,000 ≈ ₩7,000.",
+        "languages": "English and Swahili. Most Seoul hospitals have East African patient coordinators.",
+        "travel": "Nairobi to Seoul ~12 hours. Budget for 2-week stay minimum."
+      }
+    },
+    {
+      "name": "South Africa",
+      "code": "ZA",
+      "region": "Southern Africa",
+      "tips": {
+        "visa": "Apply at Korean consulate in Cape Town or Johannesburg. Processing 5-7 days.",
+        "flights": "Multiple options via Dubai, Doha, or Ethiopian routes. ~16-18 hours total.",
+        "currency": "Exchange Rand to Won. Current rate: R100 ≈ ₩7,500.",
+        "languages": "English, Afrikaans, and Zulu. International departments well-equipped.",
+        "travel": "Long-haul flight—recommend arriving early for acclimatization."
+      }
+    },
+    {
+      "name": "Ethiopia",
+      "code": "ET",
+      "region": "East Africa",
+      "tips": {
+        "visa": "Korean embassy in Addis Ababa offers streamlined medical visa process (3-5 days).",
+        "flights": "Ethiopian Airlines offers excellent connections via Addis. ~10 hours to Seoul.",
+        "currency": "Exchange Birr to Won. Current rate: ETB100 ≈ ₩1,400.",
+        "languages": "Amharic and English. Interpreters available at major Seoul hospitals.",
+        "travel": "Consider time zone adjustment (5 hour difference). Stay 10-14 days."
+      }
+    },
+    {
+      "name": "Egypt",
+      "code": "EG",
+      "region": "North Africa",
+      "tips": {
+        "visa": "Apply through Korean embassy in Cairo. Medical visa processing 5-7 days.",
+        "flights": "Fly from Cairo via Dubai, Doha, or direct options. ~12 hours total.",
+        "currency": "Exchange Egyptian Pounds to Won. Current rate: EGP100 ≈ ₩2,800.",
+        "languages": "Arabic and English. Arabic interpreters available at select hospitals.",
+        "travel": "Cairo to Seoul well-connected. Plan for 2+ week stay."
+      }
+    },
+    {
+      "name": "Tanzania",
+      "code": "TZ",
+      "region": "East Africa",
+      "tips": {
+        "visa": "Korean medical visa via embassy in Dar es Salaam. Processing 5 days.",
+        "flights": "Fly from Dar es Salaam or Kilimanjaro via Ethiopian or Kenya Airways.",
+        "currency": "Exchange Shillings to Won. Current rate: TZS1,000 ≈ ₩300.",
+        "languages": "Swahili and English. East African coordinators at major hospitals.",
+        "travel": "Total journey ~14 hours. Budget for 10-14 day medical stay."
+      }
+    },
+    {
+      "name": "Uganda",
+      "code": "UG",
+      "region": "East Africa",
+      "tips": {
+        "visa": "Apply at Korean embassy in Kampala. Fast 3-5 day approval.",
+        "flights": "Entebbe to Seoul via Ethiopian Airlines or Kenya Airways. ~13 hours.",
+        "currency": "Exchange Shillings to Won. Current rate: UGX1,000 ≈ ₩250.",
+        "languages": "English official language. Luganda interpreters available on request.",
+        "travel": "Similar time zone to East Africa. Plan 2-week stay minimum."
+      }
+    },
+    {
+      "name": "Senegal",
+      "code": "SN",
+      "region": "West Africa",
+      "tips": {
+        "visa": "Korean embassy in Dakar handles medical visas. Processing 5-7 days.",
+        "flights": "Fly from Dakar via Paris, Istanbul, or Ethiopian routes. ~16 hours total.",
+        "currency": "Exchange CFA Francs to Won. Current rate: XOF10,000 ≈ ₩1,400.",
+        "languages": "French and Wolof. French interpreters available at international hospitals.",
+        "travel": "Long journey—arrive early for rest before treatment."
+      }
+    },
+    {
+      "name": "Côte d'Ivoire",
+      "code": "CI",
+      "region": "West Africa",
+      "tips": {
+        "visa": "Apply through Korean embassy in Abidjan. Medical visa takes 5 days.",
+        "flights": "Fly from Abidjan via Paris, Addis, or Dubai. ~15 hours total.",
+        "currency": "Exchange CFA Francs to Won. Current rate: XOF10,000 ≈ ₩1,400.",
+        "languages": "French official. French-speaking staff at Seoul international departments.",
+        "travel": "Budget 2 weeks for treatment and recovery time."
+      }
+    }
+  ]
+}

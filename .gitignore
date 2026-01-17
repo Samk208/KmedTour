@@ -1,0 +1,75 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Testing
+coverage
+
+# Next.js
+.next/
+out/
+build
+dist
+
+# Misc
+.DS_Store
+*.pem
+nul
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Local Env Files
+.env
+.env*.local
+
+# TypeScript
+tsconfig.tsbuildinfo
+next-env.d.ts
+
+# Editor directories and files
+.idea
+.vscode
+*.swp
+*.swo
+.claude/
+.agent/
+.gemini/
+.playwright-mcp/
+
+# Project Specific Documentation & Strategy (Excluding metadata/strategy docs)
+AI-AGENTS-*.md
+AI-*.md
+BUGFIX-*.md
+CONTENT-*.md
+ENHANCED-*.md
+FIXES_*.md
+HANDOVER-*.md
+IMPLEMENTATION-*.md
+INTERNAL-*.md
+PROCEDURE-*.md
+PSEO-*.md
+REVIEW-*.md
+SEO-*.md
+SETUP-*.md
+STATUS-*.md
+TECHNICAL-*.md
+VISUAL-*.md
+Teck stack Preferences.md
+Deep Tech Improvement/
+Content Hub Data/
+doc/
+docs/
+GEMINI.md
+PRD for Kmedtour.md
+
+# Exclude sensitive contact details if not already covered
+INTERNAL-HOSPITAL-CONTACT-DETAILS.md
+
+# Supabase Local
+supabase/.branches
+supabase/.temp

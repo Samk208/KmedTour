@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "name": "Amara Johnson",
+    "country": "Nigeria",
+    "countryCode": "NG",
+    "treatment": "IVF Treatment",
+    "quote": "After years of trying, we finally found success at Seoul Fertility Center. The team was professional, caring, and made us feel at home. We're now proud parents of twins!",
+    "rating": 5,
+    "date": "2024-11"
+  },
+  {
+    "id": "2",
+    "name": "Kwame Mensah",
+    "country": "Ghana",
+    "countryCode": "GH",
+    "treatment": "Rhinoplasty",
+    "quote": "Kmedtour made the entire process seamless. From booking to recovery, everything was handled professionally. My results exceeded expectations and I felt safe throughout.",
+    "rating": 5,
+    "date": "2024-10"
+  },
+  {
+    "id": "3",
+    "name": "Fatima Diop",
+    "country": "Senegal",
+    "countryCode": "SN",
+    "treatment": "Dental Implants",
+    "quote": "I was nervous about traveling abroad for treatment, but Kmedtour's support was incredible. The dental clinic in Seoul was state-of-the-art and the savings were significant.",
+    "rating": 5,
+    "date": "2024-09"
+  },
+  {
+    "id": "4",
+    "name": "Tshepo Mokoena",
+    "country": "South Africa",
+    "countryCode": "ZA",
+    "treatment": "Knee Replacement",
+    "quote": "At 62, I thought my mobility issues were permanent. The orthopedic team in Seoul gave me my life back. I'm walking pain-free and couldn't be happier.",
+    "rating": 5,
+    "date": "2024-08"
+  },
+  {
+    "id": "5",
+    "name": "Aisha Kamara",
+    "country": "Sierra Leone",
+    "countryCode": "SL",
+    "treatment": "Cancer Treatment",
+    "quote": "The oncology team at Asan Cancer Center was world-class. They saved my life with advanced treatments unavailable back home. Forever grateful to Kmedtour for making this possible.",
+    "rating": 5,
+    "date": "2024-07"
+  },
+  {
+    "id": "6",
+    "name": "Emmanuel Okonkwo",
+    "country": "Nigeria",
+    "countryCode": "NG",
+    "treatment": "Heart Surgery",
+    "quote": "Undergoing heart surgery abroad was a big decision, but Kmedtour's team and the Seoul cardiac center made me feel confident. Recovery has been excellent and follow-up care outstanding.",
+    "rating": 5,
+    "date": "2024-06"
+  }
+]

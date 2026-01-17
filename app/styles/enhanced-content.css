@@ -1,0 +1,145 @@
+/* Enhanced Content Styles for pSEO Pages */
+
+.content-section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid var(--border-grey);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.content-section h2 {
+  color: var(--kmed-navy);
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid var(--kmed-teal);
+}
+
+.content-section h3 {
+  color: var(--kmed-blue);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.content-section p {
+  color: var(--deep-grey);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.content-section strong {
+  color: var(--kmed-navy);
+  font-weight: 600;
+}
+
+.content-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+.content-table th {
+  background: linear-gradient(135deg, var(--kmed-blue), var(--kmed-navy));
+  color: white;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.content-table td {
+  padding: 0.875rem 1rem;
+  border-bottom: 1px solid var(--border-grey);
+  color: var(--deep-grey);
+}
+
+.content-table tbody tr:hover {
+  background: var(--soft-grey);
+}
+
+.content-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  border: 1px solid var(--border-grey);
+}
+
+.content-list {
+  margin: 1rem 0 1rem 1.5rem;
+  color: var(--deep-grey);
+}
+
+.content-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.content-link {
+  color: var(--kmed-blue);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.content-link:hover {
+  color: var(--kmed-navy);
+}
+
+.faq-section {
+  background: linear-gradient(135deg, rgba(27, 77, 255, 0.03), rgba(57, 198, 176, 0.03));
+}
+
+.disclaimer-section {
+  background: rgba(255, 243, 224, 0.4);
+  border-left: 4px solid #f59e0b;
+}
+
+.disclaimer-section p {
+  color: #92400e;
+  font-size: 0.9rem;
+}
+
+code {
+  background: var(--soft-grey);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+  color: var(--kmed-navy);
+}
+
+.hospital-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, var(--kmed-blue)/5, var(--kmed-teal)/5);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-grey);
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--kmed-blue);
+  display: block;
+}
+
+.stat-label {
+  color: var(--deep-grey);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}

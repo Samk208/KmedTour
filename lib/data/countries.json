@@ -1,0 +1,90 @@
+[
+  {
+    "id": "nigeria",
+    "slug": "nigeria",
+    "name": "Nigeria",
+    "region": "West Africa",
+    "flag": "🇳🇬",
+    "visaInfo": {
+      "required": true,
+      "type": "K-ETA (Electronic Travel Authorization)",
+      "processingTime": "3-5 days",
+      "cost": "$10 USD",
+      "notes": "Most Nigerian citizens can apply for K-ETA online for tourism/medical purposes."
+    },
+    "travelInfo": {
+      "directFlights": true,
+      "airlines": ["Korean Air", "Ethiopian Airlines (via Addis Ababa)"],
+      "flightDuration": "14-16 hours",
+      "averageFlightCost": "$800 - $1,500"
+    },
+    "medicalTourismNotes": "Korean medical tourism is growing in popularity among Nigerian patients, particularly for fertility treatments and advanced surgeries.",
+    "commonTreatments": ["IVF", "Plastic Surgery", "Cancer Treatment"]
+  },
+  {
+    "id": "ghana",
+    "slug": "ghana",
+    "name": "Ghana",
+    "region": "West Africa",
+    "flag": "🇬🇭",
+    "visaInfo": {
+      "required": true,
+      "type": "K-ETA (Electronic Travel Authorization)",
+      "processingTime": "3-5 days",
+      "cost": "$10 USD",
+      "notes": "Ghanaian citizens can apply online for medical travel purposes."
+    },
+    "travelInfo": {
+      "directFlights": false,
+      "airlines": ["Ethiopian Airlines", "Turkish Airlines", "Emirates"],
+      "flightDuration": "15-18 hours",
+      "averageFlightCost": "$900 - $1,600"
+    },
+    "medicalTourismNotes": "Growing interest in Korean medical expertise, especially for complex procedures not available locally.",
+    "commonTreatments": ["Cardiac Surgery", "Orthopedic Surgery", "Dental Implants"]
+  },
+  {
+    "id": "south-africa",
+    "slug": "south-africa",
+    "name": "South Africa",
+    "region": "Southern Africa",
+    "flag": "🇿🇦",
+    "visaInfo": {
+      "required": true,
+      "type": "Medical Visa",
+      "processingTime": "1-2 weeks",
+      "cost": "$40 USD",
+      "notes": "Requires medical appointment confirmation and treatment plan."
+    },
+    "travelInfo": {
+      "directFlights": true,
+      "airlines": ["Korean Air", "South African Airways"],
+      "flightDuration": "12-14 hours",
+      "averageFlightCost": "$700 - $1,300"
+    },
+    "medicalTourismNotes": "Well-established medical tourism route with many South Africans seeking specialized treatments in Korea.",
+    "commonTreatments": ["Cancer Treatment", "IVF", "Cardiac Surgery"]
+  },
+  {
+    "id": "kenya",
+    "slug": "kenya",
+    "name": "Kenya",
+    "region": "East Africa",
+    "flag": "🇰🇪",
+    "visaInfo": {
+      "required": true,
+      "type": "K-ETA",
+      "processingTime": "3-5 days",
+      "cost": "$10 USD",
+      "notes": "Simple online application process for medical travel."
+    },
+    "travelInfo": {
+      "directFlights": false,
+      "airlines": ["Ethiopian Airlines", "Qatar Airways", "Emirates"],
+      "flightDuration": "13-16 hours",
+      "averageFlightCost": "$750 - $1,400"
+    },
+    "medicalTourismNotes": "Increasing numbers of Kenyan patients choosing Korea for specialized medical care.",
+    "commonTreatments": ["Orthopedic Surgery", "Cancer Treatment", "Plastic Surgery"]
+  }
+]

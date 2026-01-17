@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Incheon",
+    "slug": "incheon"
+  },
+  {
+    "name": "Seoul",
+    "slug": "seoul"
+  },
+  {
+    "name": "Gyeonggi-do",
+    "slug": "gyeonggi-do"
+  },
+  {
+    "name": "Busan",
+    "slug": "busan"
+  },
+  {
+    "name": "Gwangju",
+    "slug": "gwangju"
+  },
+  {
+    "name": "Gyeongsangbuk-do",
+    "slug": "gyeongsangbuk-do"
+  },
+  {
+    "name": "Jeju-do",
+    "slug": "jeju-do"
+  },
+  {
+    "name": "Chungcheongnam-do",
+    "slug": "chungcheongnam-do"
+  },
+  {
+    "name": "Chungcheongbuk-do",
+    "slug": "chungcheongbuk-do"
+  },
+  {
+    "name": "Daegu",
+    "slug": "daegu"
+  },
+  {
+    "name": "Jeollabuk-do",
+    "slug": "jeollabuk-do"
+  }
+]

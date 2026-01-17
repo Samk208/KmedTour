@@ -1,0 +1,38 @@
+[
+  {
+    "id": "why-korea-medical-tourism",
+    "slug": "why-korea-medical-tourism",
+    "title": "Why Korea is a Top Destination for Medical Tourism",
+    "excerpt": "Discover why Korean healthcare is attracting patients from around the world, especially from Africa.",
+    "content": "Korea has emerged as a global leader in medical tourism, combining advanced technology, highly skilled doctors, and affordable pricing...",
+    "category": "General",
+    "author": "Kmedtour Team",
+    "publishedAt": "2025-01-15",
+    "imageUrl": "/placeholder.svg?height=400&width=800",
+    "tags": ["Medical Tourism", "Korea", "Healthcare"]
+  },
+  {
+    "id": "preparing-for-medical-travel",
+    "slug": "preparing-for-medical-travel",
+    "title": "How to Prepare for Your Medical Trip to Korea",
+    "excerpt": "A comprehensive guide to planning your medical journey from Africa to Korea.",
+    "content": "Planning a medical trip abroad requires careful preparation. Here's your step-by-step guide...",
+    "category": "Travel Guide",
+    "author": "Kmedtour Team",
+    "publishedAt": "2025-01-10",
+    "imageUrl": "/placeholder.svg?height=400&width=800",
+    "tags": ["Travel", "Planning", "Preparation"]
+  },
+  {
+    "id": "ivf-success-stories",
+    "slug": "ivf-success-stories",
+    "title": "IVF Success Stories: African Patients in Korea",
+    "excerpt": "Read inspiring stories from African couples who achieved their dream of parenthood in Korea.",
+    "content": "We've helped hundreds of African couples achieve their dreams of starting a family through IVF treatments in Korea...",
+    "category": "Success Stories",
+    "author": "Kmedtour Team",
+    "publishedAt": "2025-01-05",
+    "imageUrl": "/placeholder.svg?height=400&width=800",
+    "tags": ["IVF", "Success Stories", "Fertility"]
+  }
+]

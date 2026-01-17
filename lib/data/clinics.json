@@ -1,0 +1,896 @@
+[
+  {
+    "id": "16300",
+    "slug": "ain-medical-ain-hospital",
+    "name": "Ain Medical Ain Hospital",
+    "description": "Customized accommodation reservation service; Incheon 1-day tour service; Issuance of Korean/English/Russian documents",
+    "location": "Incheon",
+    "address": "Incheon",
+    "specialties": [
+      "DERMATOLOGY",
+      "OBSTETRICS_AND_GYNECOLOGY"
+    ],
+    "accreditations": [
+      "KOIHA",
+      "KAHF"
+    ],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "RUSSIAN",
+      "MONGOLIAN"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [
+      "WESTERN, KOREAN, ETC"
+    ],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  },
+  {
+    "id": "24546",
+    "slug": "bright-eye-clinic",
+    "name": "BRIGHT EYE CLINIC",
+    "description": "BRIGHT EYE CLINIC is a premier medical facility in Seoul.",
+    "location": "Seoul",
+    "address": "Seoul",
+    "specialties": [
+      "OPHTHALMOLOGY"
+    ],
+    "accreditations": [],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "CHINESE",
+      "RUSSIAN",
+      "JAPANESE",
+      "MONGOLIAN"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  },
+  {
+    "id": "16301",
+    "slug": "bundang-jesaeng-general-hospital",
+    "name": "Bundang Jesaeng General Hospital",
+    "description": "Located within a 5 minute walking distance from the hospital on the sidewalk; Kitchen equipped for cooking Free Wifi Smart TV Air purifier Laundry facility",
+    "location": "Gyeonggi-do",
+    "address": "Gyeonggi-do",
+    "specialties": [
+      "UROLOGY"
+    ],
+    "accreditations": [
+      "KOIHA"
+    ],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "RUSSIAN",
+      "MONGOLIAN"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [
+      "WESTERN"
+    ],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  },
+  {
+    "id": "10152",
+    "slug": "busan-adventist-hospital",
+    "name": "Busan Adventist Hospital",
+    "description": "Offering tailored services with English Russian and Japanese language coordinators and partnerships with multinational insurance companies; Issuance of medical information documents in English and Japanese",
+    "location": "Busan",
+    "address": "Busan",
+    "specialties": [
+      "SURGERY",
+      "UROLOGY",
+      "ORTHOPEDICS"
+    ],
+    "accreditations": [
+      "KOIHA, KAHF"
+    ],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "RUSSIAN",
+      "JAPANESE"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [
+      "WESTERN, ETC"
+    ],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  },
+  {
+    "id": "10153",
+    "slug": "busan-st-marys-hospital",
+    "name": "Busan ST. Mary's Hospital",
+    "description": "Emergency call service available; Issuance of documents in English provided",
+    "location": "Busan",
+    "address": "Busan",
+    "specialties": [
+      "ORTHOPEDICS",
+      "PULMONOLOGY",
+      "PEDIATRICS"
+    ],
+    "accreditations": [
+      "KOIHA, KAHF"
+    ],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [
+      "WESTERN"
+    ],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  },
+  {
+    "id": "6537",
+    "slug": "cha-university-fertility-center-seoul-station",
+    "name": "CHA University Fertility Center Seoul Station",
+    "description": "Patients can take advantage of services linked to CHA associated hospitals; We manage language-specific social media including Instagram in English Russian Mongolian and WeChat in Chinese",
+    "location": "Seoul",
+    "address": "Seoul",
+    "specialties": [
+      "OBSTETRICS/GYNECOLOGY",
+      "FERTILITY"
+    ],
+    "accreditations": [
+      "KAHF(2017), KAHF(2019), KAHF(2021)"
+    ],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "CHINESE",
+      "RUSSIAN",
+      "JAPANESE",
+      "MONGOLIAN"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [
+      "WESTERN, KOREAN, CHINESE"
+    ],
+    "imageUrl": "/images/hospitals/cha-university-fertility-center-seoul-station.png",
+    "doctors": []
+  },
+  {
+    "id": "6538",
+    "slug": "chonnam-national-university-hwasun-hospital",
+    "name": "Chonnam National University Hwasun Hospital",
+    "description": "Medical VISA Support Service; Concierge Service Free interpretation Free airport pick-up; 1:1 Patient escort service; Assistance with Local Tourist Attractions",
+    "location": "Gwangju",
+    "address": "Gwangju",
+    "specialties": [
+      "NEUROSURGERY",
+      "GASTROENTEROLOGY",
+      "OTORHINOLARYNGOLOGY"
+    ],
+    "accreditations": [
+      "KOIHA(2022-2026), KAHF2023"
+    ],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "CHINESE",
+      "RUSSIAN",
+      "JAPANESE",
+      "MONGOLIAN",
+      "VIETNAMESE"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [
+      "WESTERN, KOREAN, ETC"
+    ],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  },
+  {
+    "id": "10154",
+    "slug": "chosun-university-hospital",
+    "name": "Chosun University Hospital",
+    "description": "We provide and support foreign customers with the necessary information for tourism and accommodation as well as interpretation and translation services concierge services and counseling and support",
+    "location": "Gwangju",
+    "address": "Gwangju",
+    "specialties": [
+      "UROLOGY",
+      "OTORHINOLARYNGOLOGY",
+      "GASTROENTEROLOGY"
+    ],
+    "accreditations": [
+      "KOIHA, KAHF"
+    ],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "MONGOLIAN"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [
+      "WESTERN, KOREAN"
+    ],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  },
+  {
+    "id": "16354",
+    "slug": "dm-dermatology",
+    "name": "DM Dermatology",
+    "description": "Pre-visit remote expert consultation service appointment scheduling and medical support",
+    "location": "Seoul",
+    "address": "Seoul",
+    "specialties": [
+      "DERMATOLOGY"
+    ],
+    "accreditations": [],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "CHINESE",
+      "RUSSIAN",
+      "JAPANESE",
+      "MONGOLIAN"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  },
+  {
+    "id": "10065",
+    "slug": "donghoon-advanced-lengthening-reconstruction-institute",
+    "name": "Donghoon Advanced Lengthening Reconstruction Institute",
+    "description": "Accessible rooms at affiliated hotels available for wheelchair-using patients; Caregiver services; Payment option WeChat Pay; Medical related certificates issued upon request; Visa extension assistance; 1:1 concierge service; Parking available",
+    "location": "Gyeonggi-do",
+    "address": "Gyeonggi-do",
+    "specialties": [
+      "ORTHOPEDICS"
+    ],
+    "accreditations": [
+      "KAHF"
+    ],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "CHINESE",
+      "RUSSIAN",
+      "JAPANESE",
+      "ARABIC"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [
+      "WESTERN, HALAL"
+    ],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  },
+  {
+    "id": "3",
+    "slug": "andong-medical-group-hospital",
+    "name": "Andong Medical Group Hospital",
+    "description": "Andong Medical Group Hospital is a premier medical facility in Gyeongsangbuk-do.",
+    "location": "Gyeongsangbuk-do",
+    "address": "Gyeongsangbuk-do",
+    "specialties": [],
+    "accreditations": [],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "CHINESE",
+      "RUSSIAN",
+      "JAPANESE"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [
+      "KOREAN"
+    ],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  },
+  {
+    "id": "4",
+    "slug": "ansan-21st-century-hospital",
+    "name": "Ansan 21st Century Hospital",
+    "description": "Ansan 21st Century Hospital is a premier medical facility in Gyeonggi-do.",
+    "location": "Gyeonggi-do",
+    "address": "Gyeonggi-do",
+    "specialties": [],
+    "accreditations": [],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "CHINESE",
+      "RUSSIAN",
+      "VIETNAMESE",
+      "MONGOLIAN",
+      "ARABIC",
+      "INDONESIAN"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [
+      "WESTERN, KOREAN"
+    ],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  },
+  {
+    "id": "5",
+    "slug": "asan-medical-center",
+    "name": "Asan Medical Center",
+    "description": "Medical Second Opinion; Global Care Program for international patients; Medical Tourism Desk in cooperation with Seoul Tourism Organization; Global Healthcare Center provides comprehensive services for international patients including interpretation medical coordination visa support and more",
+    "location": "Seoul",
+    "address": "Seoul",
+    "specialties": [
+      "ONCOLOGY",
+      "SURGERY",
+      "INTERNAL_MEDICINE"
+    ],
+    "accreditations": [
+      "KOIHA"
+    ],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "CHINESE",
+      "RUSSIAN",
+      "JAPANESE",
+      "MONGOLIAN",
+      "VIETNAMESE",
+      "ARABIC",
+      "KAZAKH",
+      "UZBEK",
+      "KIRGHIZ"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [
+      "WESTERN, KOREAN, HALAL, ETC"
+    ],
+    "imageUrl": "/images/hospitals/asan-medical-center.png",
+    "doctors": []
+  },
+  {
+    "id": "6",
+    "slug": "bnviit-eye-center",
+    "name": "BNviit Eye Center",
+    "description": "Personalized 1:1 care by medical specialists in ophthalmology; Specialized in LASIK LASEK SMILE Cataract surgery Presbyopia treatment Retinal detachment treatment Glaucoma treatment",
+    "location": "Seoul",
+    "address": "Seoul",
+    "specialties": [
+      "OPHTHALMOLOGY"
+    ],
+    "accreditations": [],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "CHINESE",
+      "RUSSIAN",
+      "JAPANESE",
+      "MONGOLIAN"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  },
+  {
+    "id": "7",
+    "slug": "banobagi-plastic-surgery-clinic",
+    "name": "Banobagi Plastic Surgery Clinic",
+    "description": "Banobagi Plastic Surgery Clinic is a premier medical facility in Seoul.",
+    "location": "Seoul",
+    "address": "Seoul",
+    "specialties": [
+      "Consultation in multiple languages including English Chinese Russian Japanese Vietnamese Mongolian Thai Arabic; In-house anesthesiologist for patient safety; Specialized in anti-aging facial contouring double eyelid surgery nose surgery breast surgery and body contouring"
+    ],
+    "accreditations": [],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "CHINESE",
+      "RUSSIAN",
+      "JAPANESE",
+      "VIETNAMESE",
+      "MONGOLIAN",
+      "THAI",
+      "ARABIC"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [
+      "KOREAN"
+    ],
+    "imageUrl": "/images/hospitals/banobagi-plastic-surgery-clinic.png",
+    "doctors": []
+  },
+  {
+    "id": "13",
+    "slug": "cheju-halla-general-hospital",
+    "name": "Cheju Halla General Hospital",
+    "description": "Cheju Halla General Hospital is a premier medical facility in Jeju-do.",
+    "location": "Jeju-do",
+    "address": "Jeju-do",
+    "specialties": [
+      "Concierge service for international patients; Medical tourism services combined with Jeju Island sightseeing; Issuance of medical documents in English and other languages; Hotel and accommodation arrangements; Tourist attraction recommendations"
+    ],
+    "accreditations": [],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "CHINESE",
+      "JAPANESE",
+      "VIETNAMESE",
+      "MONGOLIAN",
+      "RUSSIAN"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [
+      "WESTERN, KOREAN, HALAL, ETC"
+    ],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  },
+  {
+    "id": "14",
+    "slug": "cheonan-chungmu-hospital",
+    "name": "Cheonan Chungmu Hospital",
+    "description": "Cheonan Chungmu Hospital is a premier medical facility in Chungcheongnam-do.",
+    "location": "Chungcheongnam-do",
+    "address": "Chungcheongnam-do",
+    "specialties": [
+      "Specialized orthopedic care; Rehabilitation services; International patient care center"
+    ],
+    "accreditations": [],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "CHINESE",
+      "RUSSIAN"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [
+      "KOREAN"
+    ],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  },
+  {
+    "id": "16",
+    "slug": "cheongju-medical-center",
+    "name": "Cheongju Medical Center",
+    "description": "Celebrating 100 years of excellence in healthcare since 1924; Comprehensive medical services; International patient coordination services; Tourism support services in partnership with local tourism board",
+    "location": "Chungcheongbuk-do",
+    "address": "Chungcheongbuk-do",
+    "specialties": [
+      "SURGERY"
+    ],
+    "accreditations": [],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "CHINESE",
+      "RUSSIAN",
+      "VIETNAMESE"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [
+      "KOREAN"
+    ],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  },
+  {
+    "id": "17",
+    "slug": "chonnam-national-university-hospital",
+    "name": "Chonnam National University Hospital",
+    "description": "114 years of medical excellence; Medical VISA support; Concierge service with airport pick-up; 1:1 patient escort service; Tourist attraction assistance; Comprehensive international patient care",
+    "location": "Gwangju",
+    "address": "Gwangju",
+    "specialties": [
+      "CARDIOLOGY"
+    ],
+    "accreditations": [
+      "KOIHA(2023-2027)"
+    ],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "CHINESE",
+      "RUSSIAN",
+      "JAPANESE",
+      "MONGOLIAN",
+      "VIETNAMESE"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [
+      "WESTERN, KOREAN, ETC"
+    ],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  },
+  {
+    "id": "18",
+    "slug": "chung-ang-university-hospital",
+    "name": "Chung-Ang University Hospital",
+    "description": "Leading medical institution in Seoul; Comprehensive medical services; International Medical Center provides interpretation visa support accommodation assistance and tourist information; Medical second opinion available",
+    "location": "Seoul",
+    "address": "Seoul",
+    "specialties": [
+      "CARDIOLOGY"
+    ],
+    "accreditations": [
+      "KOIHA"
+    ],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "CHINESE",
+      "RUSSIAN",
+      "JAPANESE",
+      "MONGOLIAN",
+      "VIETNAMESE"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [
+      "WESTERN, KOREAN, HALAL, ETC"
+    ],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  },
+  {
+    "id": "19",
+    "slug": "chungbuk-national-university-hospital",
+    "name": "Chungbuk National University Hospital",
+    "description": "Comprehensive medical services; International patient coordination with interpretation and translation; Medical tourism packages; Accommodation and transportation assistance",
+    "location": "Chungcheongbuk-do",
+    "address": "Chungcheongbuk-do",
+    "specialties": [
+      "ONCOLOGY"
+    ],
+    "accreditations": [
+      "KOIHA"
+    ],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "CHINESE",
+      "RUSSIAN",
+      "JAPANESE",
+      "MONGOLIAN",
+      "VIETNAMESE"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [
+      "KOREAN"
+    ],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  },
+  {
+    "id": "21",
+    "slug": "chungyeon-korean-medicine-hospital",
+    "name": "Chungyeon Korean Medicine Hospital",
+    "description": "Chungyeon Korean Medicine Hospital is a premier medical facility in Seoul.",
+    "location": "Seoul",
+    "address": "Seoul",
+    "specialties": [
+      "Specialized in Traditional Korean Medicine including acupuncture herbal medicine cupping and moxibustion; Pain management spinal care and stroke rehabilitation; Beauty and anti-aging programs using Korean medicine principles"
+    ],
+    "accreditations": [],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "CHINESE",
+      "RUSSIAN",
+      "JAPANESE"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [
+      "KOREAN, WESTERN"
+    ],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  },
+  {
+    "id": "22",
+    "slug": "creation-love-womens-hospital",
+    "name": "Creation & Love Women's Hospital",
+    "description": "Specialized fertility center; IVF/IUI procedures; Egg freezing services; Comprehensive reproductive health care; High success rate in fertility treatments; Patient-centered care with multilingual coordinators",
+    "location": "Seoul",
+    "address": "Seoul",
+    "specialties": [
+      "OBSTETRICS_GYNECOLOGY"
+    ],
+    "accreditations": [],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "CHINESE",
+      "RUSSIAN",
+      "JAPANESE",
+      "MONGOLIAN"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [
+      "WESTERN, KOREAN"
+    ],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  },
+  {
+    "id": "24",
+    "slug": "hando-general-hospital",
+    "name": "Hando General Hospital",
+    "description": "Conveniently located near Incheon International Airport; Comprehensive medical services; International patient coordination services",
+    "location": "Incheon",
+    "address": "Incheon",
+    "specialties": [
+      "INTERNAL_MEDICINE"
+    ],
+    "accreditations": [],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "CHINESE",
+      "RUSSIAN",
+      "MONGOLIAN"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [
+      "KOREAN"
+    ],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  },
+  {
+    "id": "26",
+    "slug": "daegu-fatima-hospital",
+    "name": "Daegu Fatima Hospital",
+    "description": "Catholic medical mission; Comprehensive international patient services; Medical second opinion; Visa support and tourist information; Hotel and transportation arrangements",
+    "location": "Daegu",
+    "address": "Daegu",
+    "specialties": [
+      "CARDIOLOGY"
+    ],
+    "accreditations": [
+      "KOIHA"
+    ],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "CHINESE",
+      "RUSSIAN",
+      "JAPANESE",
+      "MONGOLIAN",
+      "VIETNAMESE"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [
+      "KOREAN"
+    ],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  },
+  {
+    "id": "28",
+    "slug": "deesse-plastic-surgery",
+    "name": "Deesse Plastic Surgery",
+    "description": "Deesse Plastic Surgery is a premier medical facility in Seoul.",
+    "location": "Seoul",
+    "address": "Seoul",
+    "specialties": [
+      "Located in premium Cheongdam area; Specialized in facial contouring rhinoplasty blepharoplasty breast surgery and body contouring; In-house anesthesiologists for patient safety; Private recovery rooms; VIP consultation services"
+    ],
+    "accreditations": [],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "CHINESE",
+      "RUSSIAN",
+      "JAPANESE",
+      "VIETNAMESE",
+      "MONGOLIAN"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [
+      "WESTERN, KOREAN"
+    ],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  },
+  {
+    "id": "29",
+    "slug": "design-hospital",
+    "name": "Design Hospital",
+    "description": "Design Hospital is a premier medical facility in Jeollabuk-do.",
+    "location": "Jeollabuk-do",
+    "address": "Jeollabuk-do",
+    "specialties": [
+      "Opened in 2021; Modern facility with latest medical technology; Specialized in orthopedics and rehabilitation; Patient-centered care"
+    ],
+    "accreditations": [],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "CHINESE"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [
+      "KOREAN"
+    ],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  },
+  {
+    "id": "30",
+    "slug": "dong-a-university-hospital",
+    "name": "Dong-A University Hospital",
+    "description": "Leading hospital in Busan; Comprehensive medical services; International Medical Center with multilingual staff; Medical second opinion services; Tourist information and local attraction guidance; Accommodation assistance",
+    "location": "Busan",
+    "address": "Busan",
+    "specialties": [
+      "CARDIOLOGY"
+    ],
+    "accreditations": [
+      "KOIHA"
+    ],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "CHINESE",
+      "RUSSIAN",
+      "JAPANESE",
+      "MONGOLIAN",
+      "VIETNAMESE"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [
+      "WESTERN, KOREAN, HALAL, ETC"
+    ],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  },
+  {
+    "id": "31",
+    "slug": "dongguk-university-gyeongju-hospital",
+    "name": "Dongguk University Gyeongju Hospital",
+    "description": "Located in UNESCO World Heritage city of Gyeongju; Combines medical care with cultural tourism; International patient services with multilingual coordination; Medical tourism packages available",
+    "location": "Gyeongsangbuk-do",
+    "address": "Gyeongsangbuk-do",
+    "specialties": [
+      "ORTHOPEDICS"
+    ],
+    "accreditations": [],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "CHINESE",
+      "RUSSIAN",
+      "JAPANESE",
+      "MONGOLIAN"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [
+      "KOREAN"
+    ],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  },
+  {
+    "id": "33",
+    "slug": "dream-plastic-surgery",
+    "name": "Dream Plastic Surgery",
+    "description": "Specialist team with 20+ years experience in all areas of plastic surgery; Specialized in eyelid surgery rhinoplasty maxillofacial procedures body contouring anti-aging and breast augmentation; Tailored surgical solutions for optimal results with minimal intervention",
+    "location": "Seoul",
+    "address": "Seoul",
+    "specialties": [
+      "PLASTIC_SURGERY"
+    ],
+    "accreditations": [],
+    "internationalPatients": "Yes",
+    "languagesSupported": [
+      "ENGLISH",
+      "CHINESE",
+      "RUSSIAN",
+      "JAPANESE",
+      "VIETNAMESE"
+    ],
+    "highlights": [
+      "KAHF/KOIHA Accredited",
+      "KmedTour Concierge First"
+    ],
+    "facilities": [],
+    "imageUrl": "/images/hospitals/default.jpg",
+    "doctors": []
+  }
+]

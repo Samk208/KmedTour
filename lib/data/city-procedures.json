@@ -1,0 +1,572 @@
+[
+  {
+    "city": "Incheon",
+    "citySlug": "incheon",
+    "procedureSlug": "botox-injections"
+  },
+  {
+    "city": "Incheon",
+    "citySlug": "incheon",
+    "procedureSlug": "chemical-peel"
+  },
+  {
+    "city": "Incheon",
+    "citySlug": "incheon",
+    "procedureSlug": "laser-skin-resurfacing"
+  },
+  {
+    "city": "Incheon",
+    "citySlug": "incheon",
+    "procedureSlug": "acne-scar-removal"
+  },
+  {
+    "city": "Incheon",
+    "citySlug": "incheon",
+    "procedureSlug": "skin-whitening"
+  },
+  {
+    "city": "Incheon",
+    "citySlug": "incheon",
+    "procedureSlug": "hair-transplant"
+  },
+  {
+    "city": "Incheon",
+    "citySlug": "incheon",
+    "procedureSlug": "ivf-treatment"
+  },
+  {
+    "city": "Incheon",
+    "citySlug": "incheon",
+    "procedureSlug": "egg-freezing"
+  },
+  {
+    "city": "Incheon",
+    "citySlug": "incheon",
+    "procedureSlug": "fertility-consultation"
+  },
+  {
+    "city": "Incheon",
+    "citySlug": "incheon",
+    "procedureSlug": "prenatal-care"
+  },
+  {
+    "city": "Incheon",
+    "citySlug": "incheon",
+    "procedureSlug": "hysterectomy"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "lasik-eye-surgery"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "cataract-surgery"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "corneal-transplant"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "lasek-eye-surgery"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "smile-eye-surgery"
+  },
+  {
+    "city": "Gyeonggi-do",
+    "citySlug": "gyeonggi-do",
+    "procedureSlug": "prostate-surgery"
+  },
+  {
+    "city": "Gyeonggi-do",
+    "citySlug": "gyeonggi-do",
+    "procedureSlug": "kidney-stone-removal"
+  },
+  {
+    "city": "Busan",
+    "citySlug": "busan",
+    "procedureSlug": "gastric-bypass"
+  },
+  {
+    "city": "Busan",
+    "citySlug": "busan",
+    "procedureSlug": "gastric-sleeve"
+  },
+  {
+    "city": "Busan",
+    "citySlug": "busan",
+    "procedureSlug": "varicose-vein-treatment"
+  },
+  {
+    "city": "Busan",
+    "citySlug": "busan",
+    "procedureSlug": "hemorrhoid-surgery"
+  },
+  {
+    "city": "Busan",
+    "citySlug": "busan",
+    "procedureSlug": "thyroid-surgery"
+  },
+  {
+    "city": "Busan",
+    "citySlug": "busan",
+    "procedureSlug": "prostate-surgery"
+  },
+  {
+    "city": "Busan",
+    "citySlug": "busan",
+    "procedureSlug": "kidney-stone-removal"
+  },
+  {
+    "city": "Busan",
+    "citySlug": "busan",
+    "procedureSlug": "knee-replacement"
+  },
+  {
+    "city": "Busan",
+    "citySlug": "busan",
+    "procedureSlug": "hip-replacement"
+  },
+  {
+    "city": "Busan",
+    "citySlug": "busan",
+    "procedureSlug": "acl-reconstruction"
+  },
+  {
+    "city": "Busan",
+    "citySlug": "busan",
+    "procedureSlug": "spinal-fusion"
+  },
+  {
+    "city": "Busan",
+    "citySlug": "busan",
+    "procedureSlug": "pulmonary-treatment"
+  },
+  {
+    "city": "Busan",
+    "citySlug": "busan",
+    "procedureSlug": "pediatric-surgery"
+  },
+  {
+    "city": "Busan",
+    "citySlug": "busan",
+    "procedureSlug": "neonatal-care"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "ivf-treatment"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "egg-freezing"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "fertility-consultation"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "prenatal-care"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "hysterectomy"
+  },
+  {
+    "city": "Gwangju",
+    "citySlug": "gwangju",
+    "procedureSlug": "brain-tumor-surgery"
+  },
+  {
+    "city": "Gwangju",
+    "citySlug": "gwangju",
+    "procedureSlug": "colonoscopy"
+  },
+  {
+    "city": "Gwangju",
+    "citySlug": "gwangju",
+    "procedureSlug": "endoscopy"
+  },
+  {
+    "city": "Gwangju",
+    "citySlug": "gwangju",
+    "procedureSlug": "sinus-surgery"
+  },
+  {
+    "city": "Gwangju",
+    "citySlug": "gwangju",
+    "procedureSlug": "tonsillectomy"
+  },
+  {
+    "city": "Gwangju",
+    "citySlug": "gwangju",
+    "procedureSlug": "septoplasty"
+  },
+  {
+    "city": "Gwangju",
+    "citySlug": "gwangju",
+    "procedureSlug": "prostate-surgery"
+  },
+  {
+    "city": "Gwangju",
+    "citySlug": "gwangju",
+    "procedureSlug": "kidney-stone-removal"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "botox-injections"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "chemical-peel"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "laser-skin-resurfacing"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "acne-scar-removal"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "skin-whitening"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "hair-transplant"
+  },
+  {
+    "city": "Gyeonggi-do",
+    "citySlug": "gyeonggi-do",
+    "procedureSlug": "knee-replacement"
+  },
+  {
+    "city": "Gyeonggi-do",
+    "citySlug": "gyeonggi-do",
+    "procedureSlug": "hip-replacement"
+  },
+  {
+    "city": "Gyeonggi-do",
+    "citySlug": "gyeonggi-do",
+    "procedureSlug": "acl-reconstruction"
+  },
+  {
+    "city": "Gyeonggi-do",
+    "citySlug": "gyeonggi-do",
+    "procedureSlug": "spinal-fusion"
+  },
+  {
+    "city": "Gyeonggi-do",
+    "citySlug": "gyeonggi-do",
+    "procedureSlug": "limb-lengthening"
+  },
+  {
+    "city": "Gyeongsangbuk-do",
+    "citySlug": "gyeongsangbuk-do",
+    "procedureSlug": "health-screening"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "cancer-screening"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "lung-cancer-surgery"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "gastric-bypass"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "gastric-sleeve"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "varicose-vein-treatment"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "hemorrhoid-surgery"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "thyroid-surgery"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "health-screening"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "rhinoplasty"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "double-eyelid-surgery"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "facelift"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "breast-augmentation"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "liposuction"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "v-line-surgery"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "gynecomastia-surgery"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "tummy-tuck"
+  },
+  {
+    "city": "Jeju-do",
+    "citySlug": "jeju-do",
+    "procedureSlug": "health-screening"
+  },
+  {
+    "city": "Chungcheongnam-do",
+    "citySlug": "chungcheongnam-do",
+    "procedureSlug": "knee-replacement"
+  },
+  {
+    "city": "Chungcheongnam-do",
+    "citySlug": "chungcheongnam-do",
+    "procedureSlug": "hip-replacement"
+  },
+  {
+    "city": "Chungcheongnam-do",
+    "citySlug": "chungcheongnam-do",
+    "procedureSlug": "acl-reconstruction"
+  },
+  {
+    "city": "Chungcheongnam-do",
+    "citySlug": "chungcheongnam-do",
+    "procedureSlug": "spinal-fusion"
+  },
+  {
+    "city": "Chungcheongbuk-do",
+    "citySlug": "chungcheongbuk-do",
+    "procedureSlug": "gastric-bypass"
+  },
+  {
+    "city": "Chungcheongbuk-do",
+    "citySlug": "chungcheongbuk-do",
+    "procedureSlug": "gastric-sleeve"
+  },
+  {
+    "city": "Chungcheongbuk-do",
+    "citySlug": "chungcheongbuk-do",
+    "procedureSlug": "varicose-vein-treatment"
+  },
+  {
+    "city": "Chungcheongbuk-do",
+    "citySlug": "chungcheongbuk-do",
+    "procedureSlug": "hemorrhoid-surgery"
+  },
+  {
+    "city": "Chungcheongbuk-do",
+    "citySlug": "chungcheongbuk-do",
+    "procedureSlug": "thyroid-surgery"
+  },
+  {
+    "city": "Gwangju",
+    "citySlug": "gwangju",
+    "procedureSlug": "coronary-bypass"
+  },
+  {
+    "city": "Gwangju",
+    "citySlug": "gwangju",
+    "procedureSlug": "angioplasty"
+  },
+  {
+    "city": "Gwangju",
+    "citySlug": "gwangju",
+    "procedureSlug": "pacemaker-implantation"
+  },
+  {
+    "city": "Gwangju",
+    "citySlug": "gwangju",
+    "procedureSlug": "cardiac-screening"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "coronary-bypass"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "angioplasty"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "pacemaker-implantation"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "cardiac-screening"
+  },
+  {
+    "city": "Chungcheongbuk-do",
+    "citySlug": "chungcheongbuk-do",
+    "procedureSlug": "cancer-screening"
+  },
+  {
+    "city": "Chungcheongbuk-do",
+    "citySlug": "chungcheongbuk-do",
+    "procedureSlug": "lung-cancer-surgery"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "korean-medicine"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "acupuncture"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "cupping-therapy"
+  },
+  {
+    "city": "Seoul",
+    "citySlug": "seoul",
+    "procedureSlug": "herbal-medicine"
+  },
+  {
+    "city": "Incheon",
+    "citySlug": "incheon",
+    "procedureSlug": "health-screening"
+  },
+  {
+    "city": "Daegu",
+    "citySlug": "daegu",
+    "procedureSlug": "coronary-bypass"
+  },
+  {
+    "city": "Daegu",
+    "citySlug": "daegu",
+    "procedureSlug": "angioplasty"
+  },
+  {
+    "city": "Daegu",
+    "citySlug": "daegu",
+    "procedureSlug": "pacemaker-implantation"
+  },
+  {
+    "city": "Daegu",
+    "citySlug": "daegu",
+    "procedureSlug": "cardiac-screening"
+  },
+  {
+    "city": "Jeollabuk-do",
+    "citySlug": "jeollabuk-do",
+    "procedureSlug": "knee-replacement"
+  },
+  {
+    "city": "Jeollabuk-do",
+    "citySlug": "jeollabuk-do",
+    "procedureSlug": "hip-replacement"
+  },
+  {
+    "city": "Jeollabuk-do",
+    "citySlug": "jeollabuk-do",
+    "procedureSlug": "acl-reconstruction"
+  },
+  {
+    "city": "Jeollabuk-do",
+    "citySlug": "jeollabuk-do",
+    "procedureSlug": "spinal-fusion"
+  },
+  {
+    "city": "Busan",
+    "citySlug": "busan",
+    "procedureSlug": "coronary-bypass"
+  },
+  {
+    "city": "Busan",
+    "citySlug": "busan",
+    "procedureSlug": "angioplasty"
+  },
+  {
+    "city": "Busan",
+    "citySlug": "busan",
+    "procedureSlug": "pacemaker-implantation"
+  },
+  {
+    "city": "Busan",
+    "citySlug": "busan",
+    "procedureSlug": "cardiac-screening"
+  },
+  {
+    "city": "Gyeongsangbuk-do",
+    "citySlug": "gyeongsangbuk-do",
+    "procedureSlug": "knee-replacement"
+  },
+  {
+    "city": "Gyeongsangbuk-do",
+    "citySlug": "gyeongsangbuk-do",
+    "procedureSlug": "hip-replacement"
+  },
+  {
+    "city": "Gyeongsangbuk-do",
+    "citySlug": "gyeongsangbuk-do",
+    "procedureSlug": "acl-reconstruction"
+  },
+  {
+    "city": "Gyeongsangbuk-do",
+    "citySlug": "gyeongsangbuk-do",
+    "procedureSlug": "spinal-fusion"
+  }
+]
