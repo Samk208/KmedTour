@@ -194,6 +194,14 @@ jobs:
             exit 1
           fi
 
+          # Check Netlify configuration
+          if [ ! -f "netlify.toml" ]; then
+            echo "❌ netlify.toml missing"
+            exit 1
+          fi
+
+          echo "✅ Netlify configuration found"
+
           echo "✅ All deployment checks passed!"
 
       - name: Notify deployment ready

@@ -1,4 +1,4 @@
-name: Deploy to Production
+name: Deploy to Netlify
 
 on:
   push:
@@ -62,14 +62,22 @@ jobs:
           # Check for required env vars (in production they should be in GitHub Secrets)
           echo "✅ Build artifacts verified"
 
-      # Example: Deploy to Vercel
-      - name: Deploy to Vercel
+      # Deploy to Netlify
+      - name: Deploy to Netlify
         if: success()
-        run: |
-          echo "Deploy to your hosting platform here"
-          echo "For Vercel: npx vercel --prod --token=${{ secrets.VERCEL_TOKEN }}"
-          echo "For other platforms, add your deployment commands"
-        continue-on-error: true
+        uses: nwtgck/actions-netlify@v2.1
+        with:
+          publish-dir: ".next"
+          production-branch: main
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: "Deploy from GitHub Actions - ${{ github.sha }}"
+          enable-pull-request-comment: true
+          enable-commit-comment: true
+          overwrites-pull-request-comment: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        timeout-minutes: 10
 
       # Example: Notify deployment
       - name: Notify deployment status
