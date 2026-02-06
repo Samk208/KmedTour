@@ -1,4 +1,5 @@
 import { generateTreatmentSuggestions, suggestionListSchema } from '@/lib/ai/client'
+import { logger } from '@/lib/utils/logger'
 import { NextResponse } from 'next/server'
 import { z } from 'zod'
 
@@ -22,9 +23,12 @@ export async function POST(request: Request) {
       suggestions: validated,
     })
   } catch (error) {
-    if (process.env.NODE_ENV !== 'production') {
-      console.error('[api/treatment-advisor] Error handling request:', error)
-    }
+    logger.error('Treatment advisor request failed', {
+      path: '/api/treatment-advisor',
+      method: 'POST',
+    }, {
+      error: error instanceof Error ? error.message : 'Unknown error',
+    }, error instanceof Error ? error : undefined)
 
     return NextResponse.json(
       {

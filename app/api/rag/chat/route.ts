@@ -1,3 +1,4 @@
+import { logger } from '@/lib/utils/logger'
 import { NextResponse } from 'next/server'
 import { z } from 'zod'
 
@@ -101,6 +102,7 @@ async function geminiEmbed(text: string): Promise<number[]> {
 
   if (!res.ok) {
     const body = await res.text()
+    logger.error('Gemini embedContent failed', { path: '/api/rag/chat' }, { status: res.status, body })
     throw new Error(`[rag] embedContent failed: ${res.status} ${body}`)
   }
 
@@ -113,17 +115,11 @@ async function geminiEmbed(text: string): Promise<number[]> {
   return values
 }
 
-async function geminiGenerateAnswer(args: {
+async function callPythonAgent(args: {
   question: string
   context: RetrievedChunk[]
 }): Promise<string> {
-  const key = process.env.GEMINI_API_KEY
-  if (!key) {
-    throw new Error('[rag] GEMINI_API_KEY is not set')
-  }
-
-  const model = process.env.GEMINI_CHAT_MODEL || 'gemini-1.5-flash'
-
+  // Construct the prompt with context
   const contextBlock = args.context
     .map((c, idx) => {
       const cite = `[${idx + 1}] ${c.title}${c.source_url ? ` (${c.source_url})` : ''}`
@@ -131,45 +127,63 @@ async function geminiGenerateAnswer(args: {
     })
     .join('\n\n---\n\n')
 
-  const system = `You are KmedTour's medical tourism assistant.
+  const contentWithContext = args.context.length > 0
+    ? `CONTEXT:
+${contextBlock}
 
-Rules:
-- Provide general information only. Do not give medical advice or diagnosis.
-- Use ONLY the provided CONTEXT for factual claims.
-- If CONTEXT is insufficient, say you don't have enough verified info and suggest a consultation.
-- Keep the answer concise.
-- When using information from a source, include a citation marker like [1], [2].`
+QUESTION:
+${args.question}`
+    : args.question
 
-  const prompt = `CONTEXT:\n${contextBlock || '(none)'}\n\nQUESTION:\n${args.question}\n\nAnswer:`
-
-  const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${key}`,
-    {
+  try {
+    const res = await fetch('http://127.0.0.1:8000/api/chat', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        contents: [{ role: 'user', parts: [{ text: `${system}\n\n${prompt}` }] }],
-        generationConfig: {
-          temperature: 0.3,
-          maxOutputTokens: 600,
-        },
-      }),
+        messages: [{ role: 'user', content: contentWithContext }],
+        session_id: 'rag-session-' + Date.now()
+      })
+    })
+
+    if (!res.ok) {
+      // If Python server is down or errors, throw to trigger fallback/error handling
+      throw new Error(`Python agent error: ${res.status}`)
+    }
+
+    const data = await res.json()
+    return data.response
+
+  } catch (error) {
+    // Fallback: If Python agent is offline, we could try OpenAI directly here as last resort
+    // For now, let's re-throw so the UI knows there's a connection issue (or we can implement direct OpenAI fallback here if desired)
+    logger.warn('Python agent connection failed, using fallback', { path: '/api/rag/chat' }, { error: error instanceof Error ? error.message : 'Unknown' })
+  
+    // Quick fallback to direct OpenAI if Python is down (to ensure reliability)
+    return await fallbackOpenAIGenerate(args.question, contextBlock)
+  }
+}
+
+async function fallbackOpenAIGenerate(question: string, context: string): Promise<string> {
+  const key = process.env.OPENAI_API_KEY
+  if (!key) throw new Error("No Python agent and no OpenAI Key")
+
+  const res = await fetch('https://api.openai.com/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${key}`
     },
-  )
+    body: JSON.stringify({
+      model: 'gpt-4o-mini',
+      messages: [
+        { role: 'system', content: 'You are KmedTour medical assistant. Provide helpful, safe general info.' },
+        { role: 'user', content: `Context:\n${context}\n\nQuestion: ${question}` }
+      ]
+    })
+  })
 
-  if (!res.ok) {
-    const body = await res.text()
-    throw new Error(`[rag] generateContent failed: ${res.status} ${body}`)
-  }
-
-  const json = await res.json()
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const text = json?.candidates?.[0]?.content?.parts?.map((p: any) => p?.text).filter(Boolean).join('')
-  if (!text) {
-    throw new Error('[rag] generateContent returned no text')
-  }
-
-  return text
+  const data = await res.json()
+  return data.choices?.[0]?.message?.content || "Service unavailable."
 }
 
 export async function POST(request: Request) {
@@ -225,35 +239,48 @@ export async function POST(request: Request) {
       )
     }
 
-    const embedding = await geminiEmbed(payload.message)
+    let embedding: number[] | null = null
+    let retrieved: RetrievedChunk[] = []
 
-    const { data, error } = await client.rpc('match_rag_chunks', {
-      query_embedding: embedding,
-      match_count: 8,
-      min_similarity: 0.2,
-    })
+    try {
+      embedding = await geminiEmbed(payload.message)
 
-    if (error) {
-      throw new Error(`[rag] match_rag_chunks RPC failed: ${error.message}`)
-    }
+      const { data, error } = await client.rpc('match_rag_chunks', {
+        query_embedding: embedding,
+        match_count: 8,
+        min_similarity: 0.2,
+      })
 
-    const retrieved = (data || []) as RetrievedChunk[]
-
-    if (retrieved.length === 0) {
-      return NextResponse.json({
-        success: true,
-        route: 'rag',
-        answer:
-          "I don't have enough verified information in my knowledge base to answer that confidently. Would you like to book a free consultation with our medical coordinators?",
-        citations: [],
-        retrieved: [],
+      if (error) {
+        logger.warn('RAG match_rag_chunks RPC error', { path: '/api/rag/chat' }, { error: error.message })
+      } else {
+        retrieved = (data || []) as RetrievedChunk[]
+      }
+    } catch (err: unknown) {
+      const errorMessage = err instanceof Error ? err.message : 'Unknown error'
+      logger.warn('RAG retrieval/embedding failed, falling back to general knowledge', {
+        path: '/api/rag/chat',
+      }, {
+        error: errorMessage,
       })
     }
 
-    const answer = await geminiGenerateAnswer({
-      question: payload.message,
-      context: retrieved,
-    })
+    // Proceeed to generate answer even if retrieval failed (empty context)
+    let answer = ''
+    try {
+      answer = await callPythonAgent({
+        question: payload.message,
+        context: retrieved,
+      })
+    } catch (genError: unknown) {
+      const errorMessage = genError instanceof Error ? genError.message : 'Unknown error'
+      logger.error('RAG generation failed (likely API key issue)', {
+        path: '/api/rag/chat',
+      }, {
+        error: errorMessage,
+      })
+      answer = "I apologize, but I am currently unable to process your request due to a technical service interruption (API Key invalid). Please contact our medical coordinators directly via the 'Contact' page for immediate assistance."
+    }
 
     const citations = retrieved.map((c, idx) => ({
       ref: `[${idx + 1}]`,
@@ -264,7 +291,7 @@ export async function POST(request: Request) {
 
     return NextResponse.json({
       success: true,
-      route: 'rag',
+      route: retrieved.length > 0 ? 'rag' : 'fallback',
       answer,
       citations,
       retrieved: retrieved.map((c) => ({
@@ -274,9 +301,12 @@ export async function POST(request: Request) {
       })),
     })
   } catch (error) {
-    if (process.env.NODE_ENV !== 'production') {
-      console.error('[api/rag/chat] Error:', error)
-    }
+    logger.error('RAG chat request failed', {
+      path: '/api/rag/chat',
+      method: 'POST',
+    }, {
+      error: error instanceof Error ? error.message : 'Unknown error',
+    }, error instanceof Error ? error : undefined)
 
     return NextResponse.json(
       {
