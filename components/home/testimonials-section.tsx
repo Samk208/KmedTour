@@ -2,9 +2,10 @@
 
 import { useTestimonialsQuery } from '@/lib/api/hooks/use-testimonials'
 import { Quote, Star } from 'lucide-react'
+import Link from 'next/link'
 
 export function TestimonialsSection() {
-  const { data: testimonials = [], isLoading } = useTestimonialsQuery()
+  const { data: testimonials = [], isLoading, isError } = useTestimonialsQuery()
   return (
     <section className="w-full py-20 md:py-32 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto max-w-[1240px] px-4 sm:px-6">
@@ -32,7 +33,11 @@ export function TestimonialsSection() {
         </div>
 
         {/* Testimonials Grid */}
-        {isLoading ? (
+        {isError ? (
+          <div className="text-center py-8">
+            <p className="text-sm text-red-500">Unable to load testimonials. Please try again later.</p>
+          </div>
+        ) : isLoading ? (
           <div className="text-center py-8">
             <p className="text-sm" style={{ color: 'var(--deep-grey)' }}>Loading testimonials...</p>
           </div>
@@ -56,12 +61,13 @@ export function TestimonialsSection() {
               </div>
 
               {/* Stars */}
-              <div className="flex gap-1 mb-3">
+              <div className="flex gap-1 mb-3" role="img" aria-label="5 out of 5 stars">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star
                     key={i}
                     className="h-4 w-4 fill-current"
                     style={{ color: 'var(--kmed-teal)' }}
+                    aria-hidden="true"
                   />
                 ))}
               </div>
@@ -109,13 +115,13 @@ export function TestimonialsSection() {
           >
             Join hundreds of satisfied patients from across Africa
           </p>
-          <a
+          <Link
             href="/patient-intake"
             className="inline-flex items-center gap-2 px-8 py-3 rounded-full font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
             style={{ backgroundColor: 'var(--kmed-blue)' }}
           >
             Start Your Journey
-          </a>
+          </Link>
         </div>
       </div>
     </section>

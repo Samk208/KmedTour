@@ -8,10 +8,8 @@ import { createClient, SupabaseClient } from '@supabase/supabase-js'
 // - Fail safely: if env vars are missing or client creation throws, operate in "mock-only" mode
 //   by exposing a null client so repositories can fall back to JSON/mocks.
 
-type SupabaseClientLike = SupabaseClient
-
 export interface SupabaseContext {
-  client: SupabaseClientLike | null
+  client: SupabaseClient | null
 }
 
 let cachedContext: SupabaseContext | null = null
@@ -37,11 +35,9 @@ export function getSupabaseContext(): SupabaseContext {
     const client = createClient(url, anonKey, {
       auth: {
         // For this web app we do not rely on persisted Supabase auth sessions yet.
-        // This keeps behavior predictable across server/client and avoids accidental
-        // coupling to Supabase auth while we are still in mock / shell mode.
         persistSession: false,
       },
-    }) as SupabaseClientLike
+    })
 
     cachedContext = { client }
     return cachedContext

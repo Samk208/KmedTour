@@ -1,75 +1,79 @@
-# Directive: Workflow Orchestration (LangGraph + n8n)
+# Directive: Agentic Orchestration (LangGraph + Medical Safety)
 
 ## **Goal**
-Define the architecture for the "Deep Tech" agent system. We move beyond stateless "Chatbots" to stateful **Orchestration Agents** that manage the entire patient lifecycle.
+Establish a production-grade, FDA-compliant agent architecture. We move beyond simple "Chatbots" to **Self-Healing, Regulated Agents** that orchestrate the patient journey safely.
 
-## **Architecture: The Hybrid Model**
+## **Architecture: The "Deep Tech" Model**
 
-We use **LangGraph** (Intelligence) + **n8n** (Action).
+We use **LangGraph** (Orchestration) + **Medical Safety Layer** (Compliance) + **OpenAI** (Intelligence).
 
 ```mermaid
 graph TD
     User((User)) --> NextJS[Next.js Frontend]
-    NextJS -- API Call --> LangGraph[LangGraph Agent Orchestrator]
+    NextJS -- API Proxy --> FastAPI[Python Agent Server]
     
-    subgraph "Intelligence Layer (Python)"
-        LangGraph --> Triage[Triage Agent]
-        LangGraph --> Match[Matching Agent]
-        LangGraph --> Quote[Quote Agent]
-        Triage -- RAG --> Supabase[(Supabase Vector DB)]
-    end
-    
-    subgraph "Action Layer (n8n)"
-        LangGraph -- Webhook --> n8n[n8n Workflow Engine]
-        n8n --> Amadeus[Amadeus Flight API]
-        n8n --> Gmail[Gmail/Resend]
-        n8n --> Stripe[Stripe API]
-        n8n --> Hospital[Hospital EMR/Cal]
+    subgraph "Python Agent Core (LangGraph)"
+        FastAPI --> Router{Router Node}
+        Router --> FAQ[FAQ Agent]
+        Router --> MedInfo[Medical Info Agent]
+        Router --> Emergency[Emergency Canned Response]
+        
+        FAQ --> Safety{Medical Safety Layer}
+        MedInfo --> Safety
+        
+        Safety -- Safe --> User
+        Safety -- Unsafe --> Blocker[Block & Rewrite]
+        Safety -- Flagged --> Audit[Human Review Queue]
+        Blocker --> User
     end
 ```
 
-## **1. LangGraph (The Brain)**
-**Why?** We need "Memory" and "State". If a patient pauses for 3 days, the agent picks up exactly where they left off.
+## **1. Core Component: Medical Safety Layer**
+**Why?** LLMs hallucinate. In medicine, hallucinations cause lawsuits or harm. We do **NOT** trust the LLM to police itself.
 
-*   **Location**: `agents/src/graph/`
-*   **Key Components**:
-    *   **State**: A typed dictionary holding `patient_data`, `documents`, `quote_status`.
-    *   **Nodes**: Python functions for `triage_patient`, `rank_hospitals`, `verify_insurance`.
-    *   **Edges**: Logic like `if urgency == 'HIGH' -> goto human_handoff else goto auto_match`.
-    *   **Checkpointer**: Save state to Postgres so workflows persist across server restarts.
+*   **Location**: `agents/app/core/medical_safety.py`
+*   **Mechanism**: Deterministic REGEX & keyword matching (0% hallucination rate).
+*   **Rules**:
+    1.  **NO Diagnosis**: "You have X" -> BLOCKED.
+    2.  **NO Prescriptions**: "Take 5mg of..." -> BLOCKED.
+    3.  **NO Unverified Pricing**: "$5,000" -> FLAGGED for human review against DB.
+    4.  **NO Accreditation Lies**: "JCI Accredited" -> FLAGGED for verification.
 
-## **2. n8n (The Hands)**
-**Why?** Don't write 50 different API clients in Python. Use n8n for standardized connectivity.
+## **2. LangGraph Structure**
+**Why?** Stateful management of the conversation and journey.
 
-*   **Role**:
-    *   **Orchestrator**: Triggered by LangGraph via Webhook.
-    *   **Task Runner**: "Send WhatsApp", "Check Flight Price", "Create Stripe Invoice".
-*   **Integration**:
-    *   LangGraph sends JSON payload: `{ action: "send_quote", user_id: "123", quote_url: "..." }`
-    *   n8n executes the logic and returns `success` or `failure`.
+*   **File**: `agents/app/core/graph.py`
+*   **Provider**: OpenAI (`gpt-4o-mini`) is the default for reliability.
+*   **Routing**:
+    *   **Emergency**: Suicidal/Heart Attack queries bypassed to static help text immediately.
+    *   **Human Handoff**: "I want to talk to a person" -> Routes to Coordinator.
+    *   **Medical Info**: "What is Lasik?" -> RAG/LLM -> **Safety Layer**.
 
-## **3. Rules of Engagement**
+## **3. Integration with Next.js**
+**Why?** The frontend needs to talk to the secure Python environment.
 
-### **Rule A: Separation of Concerns**
-*   **LangGraph**: Decisions, Reasoning, Text Generation, Medical Analysis.
-*   **n8n**: API calls (Twilio, SendGrid, Stripe), Scheduling, boring logic.
-*   **Next.js**: UI, Auth, triggers the initial request.
+*   **API Route**: `app/api/rag/chat/route.ts`
+*   **Pattern**:
+    *   Frontend receives user message.
+    *   Proxies request to `http://localhost:8000/api/chat`.
+    *   **Fallback**: If Python server is offline, frontend falls back to a limited OpenAI direct call (WARN: No safety layer in fallback).
 
-### **Rule B: Human-in-the-Loop**
-*   Deep Tech != No Humans.
-*   Critical steps (e.g., "Finalizing Medical Quote") **MUST** have a `human_approval` node in LangGraph.
-*   The agent pauses, sends a Slack/Dashboard notification to staff, and waits for API signal to resume.
+## **4. Rules of Engagement**
 
-### **Rule C: Stubbing for MVP**
-*   If n8n is not set up locally, mock the Webhook calls in Python.
-*   Return dummy success responses so the LangGraph flow can be tested end-to-end.
+### **Rule A: Safety First**
+*   If the **Safety Layer** flags a response as `BLOCK`, the user NEVER sees the original LLM output. They see a pre-written "I cannot answer that" message.
+*   We prioritize **False Positives** (blocking safe things) over **False Negatives** (allowing unsafe things).
 
-## **Workflow Example: The "Quote Run"**
-1.  **Next.js** sends `POST /api/intake` -> calls LangGraph `start_intake`.
-2.  **LangGraph** `TriageNode` analyses symptoms (RAG).
-3.  **LangGraph** `MatchNode` selects top 3 clinics.
-4.  **LangGraph** calls n8n webhook `check_availability`.
-5.  **n8n** queries Hospital mock APIs -> returns slots.
-6.  **LangGraph** calls n8n webhook `generate_pdf_quote`.
-7.  **n8n** generates PDF -> emails to user.
-8.  **LangGraph** updates state to `WAITING_FOR_DEPOSIT`.
+### **Rule B: Deterministic Fallbacks**
+*   Emergency queries ("Help me", "Chest pain") must **NEVER** touch the LLM. They must be caught by string matching and return hard-coded emergency numbers (119/911).
+
+### **Rule C: Audit Trails**
+*   All `FLAGGED` responses are logged to the `review_queue` table (Supabase) for human review. This is required for future FDA/medical certification.
+
+## **Workflow Example: The "Safe Inquiry"**
+1.  **User**: "I have a headache, is it a tumor?"
+2.  **Router**: Detects "headache" -> Routes to `MedicalInfoAgent`.
+3.  **Agent**: Generates "Headaches can be tumors if..." (Hallucination risk).
+4.  **Safety Layer**: Detects "tumor" + diagnosis context. **BLOCKS**.
+5.  **Output**: "I cannot diagnose medical conditions. Please consult a doctor."
+6.  **Log**: Event saved to `review_queue` for audit.

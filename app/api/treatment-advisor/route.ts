@@ -1,5 +1,6 @@
 import { generateTreatmentSuggestions, suggestionListSchema } from '@/lib/ai/client'
 import { logger } from '@/lib/utils/logger'
+import { rateLimit, RateLimitPresets } from '@/lib/utils/rate-limit'
 import { NextResponse } from 'next/server'
 import { z } from 'zod'
 
@@ -11,6 +12,18 @@ const treatmentAdvisorInputSchema = z.object({
 })
 
 export async function POST(request: Request) {
+  const rateLimitResponse = await rateLimit({
+    ...RateLimitPresets.AI,
+    keyPrefix: 'treatment-advisor',
+  })(request)
+  if (rateLimitResponse) {
+    logger.warn('Treatment advisor rate limit exceeded', {
+      path: '/api/treatment-advisor',
+      method: 'POST',
+    })
+    return rateLimitResponse
+  }
+
   try {
     const json = await request.json()
     const payload = treatmentAdvisorInputSchema.parse(json)

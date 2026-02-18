@@ -1,8 +1,22 @@
 import { getSupabaseContext } from '@/lib/api/client/supabase'
+import { logger } from '@/lib/utils/logger'
+import { rateLimit, RateLimitPresets } from '@/lib/utils/rate-limit'
 import { FullPatientIntake, fullPatientIntakeSchema } from '@/lib/schemas/patient-intake'
 import { NextResponse } from 'next/server'
 
 export async function POST(request: Request) {
+  const rateLimitResponse = await rateLimit({
+    ...RateLimitPresets.STANDARD,
+    keyPrefix: 'patient-intake',
+  })(request)
+  if (rateLimitResponse) {
+    logger.warn('Patient intake rate limit exceeded', {
+      path: '/api/patient-intake',
+      method: 'POST',
+    })
+    return rateLimitResponse
+  }
+
   try {
     const json = await request.json()
     const payload = fullPatientIntakeSchema.parse(json) as FullPatientIntake
@@ -42,13 +56,23 @@ export async function POST(request: Request) {
           })
         }
 
-        if (process.env.NODE_ENV !== 'production') {
-          console.error('[api/patient-intake] Supabase insert error, falling back to mock response:', error)
-        }
+        logger.error('Patient intake Supabase insert error', { path: '/api/patient-intake', method: 'POST' }, {}, error instanceof Error ? error : undefined)
+        return NextResponse.json(
+          {
+            success: false,
+            message: "We couldn't save your intake form right now. Please try again in a moment or contact us.",
+          },
+          { status: 503 }
+        )
       } catch (error) {
-        if (process.env.NODE_ENV !== 'production') {
-          console.error('[api/patient-intake] Unexpected Supabase error, falling back to mock response:', error)
-        }
+        logger.error('Patient intake unexpected Supabase error', { path: '/api/patient-intake', method: 'POST' }, {}, error instanceof Error ? error : undefined)
+        return NextResponse.json(
+          {
+            success: false,
+            message: "We couldn't save your intake form right now. Please try again in a moment or contact us.",
+          },
+          { status: 503 }
+        )
       }
     }
 
@@ -58,9 +82,7 @@ export async function POST(request: Request) {
       message: 'Your intake form has been submitted successfully!',
     })
   } catch (error) {
-    if (process.env.NODE_ENV !== 'production') {
-      console.error('[api/patient-intake] Invalid request body:', error)
-    }
+    logger.error('Patient intake invalid request body', { path: '/api/patient-intake', method: 'POST' }, {}, error instanceof Error ? error : undefined)
 
     return NextResponse.json(
       {

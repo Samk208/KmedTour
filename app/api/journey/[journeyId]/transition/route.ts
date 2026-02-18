@@ -1,4 +1,7 @@
 import { getSupabaseContext } from '@/lib/api/client/supabase'
+import { requireAuth } from '@/lib/utils/api-auth'
+import { logger } from '@/lib/utils/logger'
+import { validateUUID } from '@/lib/utils/validate-params'
 import { NextResponse } from 'next/server'
 import { z } from 'zod'
 
@@ -45,8 +48,14 @@ interface RouteParams {
 }
 
 export async function POST(request: Request, { params }: RouteParams) {
+  const auth = await requireAuth()
+  if (!auth.authenticated) return auth.response
+
   try {
     const { journeyId } = await params
+    const invalid = validateUUID(journeyId, 'journeyId')
+    if (invalid) return invalid
+
     const json = await request.json()
     const payload = transitionSchema.parse(json)
 
@@ -112,7 +121,7 @@ export async function POST(request: Request, { params }: RouteParams) {
       .single()
 
     if (updateError) {
-      console.error('[api/journey/transition] Update error:', updateError)
+      logger.error('Journey transition update error', { path: '/api/journey/transition', method: 'POST' }, {}, updateError instanceof Error ? updateError : undefined)
       return NextResponse.json(
         { success: false, message: 'Failed to transition state' },
         { status: 500 }
@@ -147,7 +156,7 @@ export async function POST(request: Request, { params }: RouteParams) {
       )
     }
 
-    console.error('[api/journey/transition] Unexpected error:', error)
+    logger.error('Journey transition unexpected error', { path: '/api/journey/transition', method: 'POST' }, {}, error instanceof Error ? error : undefined)
     return NextResponse.json(
       { success: false, message: 'Internal server error' },
       { status: 500 }

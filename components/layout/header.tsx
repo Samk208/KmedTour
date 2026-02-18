@@ -1,19 +1,36 @@
 'use client'
 
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { useTranslation } from 'react-i18next'
 import { Menu, X, Globe, Heart } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { useUIStore } from '@/lib/stores/ui-store'
-import { useAuthStore } from '@/lib/stores/auth-store'
+import { useSupabaseSession } from '@/lib/hooks/use-supabase-session'
 import { useFavoritesStore } from '@/lib/stores/favorites-store'
 import { ThemeToggle } from '@/components/layout/theme-toggle'
+import { createClient } from '@/lib/supabase/client'
+import { toast } from 'sonner'
 
 export function Header() {
   const { t, i18n } = useTranslation('common')
+  const router = useRouter()
   const { isMobileMenuOpen, toggleMobileMenu, setMobileMenuOpen } = useUIStore()
-  const { isAuthenticated, user, logout } = useAuthStore()
+  const { user, loading } = useSupabaseSession()
   const { favorites } = useFavoritesStore()
+
+  const handleSignOut = async () => {
+    try {
+      const supabase = createClient()
+      const { error } = await supabase.auth.signOut()
+      if (error) throw error
+      setMobileMenuOpen(false)
+      router.push('/')
+      router.refresh()
+    } catch {
+      toast.error('Failed to sign out. Please try again.')
+    }
+  }
 
   const toggleLanguage = () => {
     const newLang = i18n.language === 'en' ? 'fr' : 'en'
@@ -58,8 +75,8 @@ export function Header() {
           {/* Desktop Actions */}
           <div className="hidden lg:flex items-center gap-4">
             <Link href="/favorites" className="relative">
-              <Button variant="ghost" size="sm" className="relative">
-                <Heart className="h-5 w-5 text-primary" />
+              <Button variant="ghost" size="sm" className="relative" aria-label="Favorites">
+                <Heart className="h-5 w-5 text-primary" aria-hidden="true" />
                 {favorites.length > 0 && (
                   <span 
                     className="absolute -top-1 -right-1 w-5 h-5 bg-secondary rounded-full flex items-center justify-center text-xs font-bold text-white"
@@ -75,31 +92,41 @@ export function Header() {
             <button
               onClick={toggleLanguage}
               className="flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+              aria-label={`Switch language to ${i18n.language === 'en' ? 'French' : 'English'}`}
             >
-              <Globe className="h-4 w-4" />
+              <Globe className="h-4 w-4" aria-hidden="true" />
               {i18n.language.toUpperCase()}
             </button>
             
-            {isAuthenticated ? (
+            {!loading && user ? (
               <>
-                <Link href="/dashboard">
+                <Link href="/patient/dashboard">
                   <Button variant="ghost" size="sm">
-                    {user?.name || t('nav.dashboard')}
+                    {user.user_metadata?.full_name || user.email?.split('@')[0] || t('nav.dashboard')}
                   </Button>
                 </Link>
-                <Button variant="ghost" size="sm" onClick={logout}>
+                <Button variant="ghost" size="sm" onClick={handleSignOut}>
                   {t('nav.logout')}
                 </Button>
               </>
             ) : (
-              <Link href="/patient-intake">
-                <Button
-                  size="sm"
-                  className="bg-[var(--kmed-blue)] hover:bg-[var(--kmed-blue)]/90 text-white"
-                >
-                  {t('ui.getStarted')}
-                </Button>
-              </Link>
+              <>
+                {!loading && (
+                  <Link href="/patient/login">
+                    <Button variant="ghost" size="sm">
+                      {t('nav.login', 'Login')}
+                    </Button>
+                  </Link>
+                )}
+                <Link href="/patient-intake">
+                  <Button
+                    size="sm"
+                    className="bg-[var(--kmed-blue)] hover:bg-[var(--kmed-blue)]/90 text-white"
+                  >
+                    {t('ui.getStarted')}
+                  </Button>
+                </Link>
+              </>
             )}
           </div>
 
@@ -150,34 +177,40 @@ export function Header() {
                 <Globe className="h-4 w-4" />
                 {i18n.language === 'en' ? 'Français' : 'English'}
               </button>
-              {isAuthenticated ? (
+              {!loading && user ? (
                 <>
-                  <Link href="/dashboard" onClick={() => setMobileMenuOpen(false)}>
+                  <Link href="/patient/dashboard" onClick={() => setMobileMenuOpen(false)}>
                     <Button variant="ghost" size="sm" className="w-full justify-start">
-                      {user?.name || t('nav.dashboard')}
+                      {user.user_metadata?.full_name || user.email?.split('@')[0] || t('nav.dashboard')}
                     </Button>
                   </Link>
                   <Button
                     variant="ghost"
                     size="sm"
-                    onClick={() => {
-                      logout()
-                      setMobileMenuOpen(false)
-                    }}
+                    onClick={handleSignOut}
                     className="w-full justify-start"
                   >
                     {t('nav.logout')}
                   </Button>
                 </>
               ) : (
-                <Link href="/patient-intake" onClick={() => setMobileMenuOpen(false)}>
-                  <Button
-                    size="sm"
-                    className="w-full bg-[var(--kmed-blue)] hover:bg-[var(--kmed-blue)]/90 text-white"
-                  >
-                    {t('ui.getStarted')}
-                  </Button>
-                </Link>
+                <>
+                  {!loading && (
+                    <Link href="/patient/login" onClick={() => setMobileMenuOpen(false)}>
+                      <Button variant="ghost" size="sm" className="w-full justify-start">
+                        {t('nav.login', 'Login')}
+                      </Button>
+                    </Link>
+                  )}
+                  <Link href="/patient-intake" onClick={() => setMobileMenuOpen(false)}>
+                    <Button
+                      size="sm"
+                      className="w-full bg-[var(--kmed-blue)] hover:bg-[var(--kmed-blue)]/90 text-white"
+                    >
+                      {t('ui.getStarted')}
+                    </Button>
+                  </Link>
+                </>
               )}
             </nav>
           </div>

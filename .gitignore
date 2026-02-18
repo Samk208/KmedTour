@@ -37,6 +37,7 @@ next-env.d.ts
 *.swp
 *.swo
 .claude/
+.cursor/
 .agent/
 .gemini/
 .playwright-mcp/
@@ -69,6 +70,16 @@ PRD for Kmedtour.md
 
 # Exclude sensitive contact details if not already covered
 INTERNAL-HOSPITAL-CONTACT-DETAILS.md
+
+# Python
+__pycache__/
+*.pyc
+agents/*.log
+agents/log*.txt
+agents/integrity_log.txt
+
+# Sentry
+.sentryclirc
 
 # Supabase Local
 supabase/.branches

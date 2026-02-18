@@ -1,10 +1,16 @@
 import { getSupabaseContext } from '@/lib/api/client/supabase'
+import { requireAuth } from '@/lib/utils/api-auth'
+import { logger } from '@/lib/utils/logger'
+import { rateLimit, RateLimitPresets } from '@/lib/utils/rate-limit'
 import { NextResponse } from 'next/server'
-import { z } from 'zod'
 import Stripe from 'stripe'
+import { z } from 'zod'
 
 const stripe = process.env.STRIPE_SECRET_KEY
-  ? new Stripe(process.env.STRIPE_SECRET_KEY, { apiVersion: '2024-12-18.acacia' })
+  ? new Stripe(process.env.STRIPE_SECRET_KEY, {
+    apiVersion: '2025-12-15.clover',
+    typescript: true,
+  })
   : null
 
 const createCheckoutSchema = z.object({
@@ -15,6 +21,21 @@ const createCheckoutSchema = z.object({
 })
 
 export async function POST(request: Request) {
+  const auth = await requireAuth()
+  if (!auth.authenticated) return auth.response
+
+  const rateLimitResponse = await rateLimit({
+    ...RateLimitPresets.PAYMENT,
+    keyPrefix: 'payments-create-checkout',
+  })(request)
+  if (rateLimitResponse) {
+    logger.warn('Payments create-checkout rate limit exceeded', {
+      path: '/api/payments/create-checkout',
+      method: 'POST',
+    })
+    return rateLimitResponse
+  }
+
   try {
     const json = await request.json()
     const payload = createCheckoutSchema.parse(json)
@@ -35,16 +56,13 @@ export async function POST(request: Request) {
       )
     }
 
-    // Get booking with quote and journey info
+    // Get booking with quote and patient info
     const { data: booking, error: bookingError } = await client
       .from('bookings')
       .select(`
         *,
         quote:quote_id(total_amount, currency, payment_schedule),
-        journey:journey_id(
-          patient_intake_id,
-          patient_intake:patient_intake_id(full_name, email)
-        )
+        patient_intake:patient_id(full_name, email)
       `)
       .eq('id', payload.bookingId)
       .single()
@@ -56,9 +74,10 @@ export async function POST(request: Request) {
       )
     }
 
-    if (booking.status !== 'PENDING_PAYMENT') {
+    // Allow payment if status is PENDING or CONFIRMED
+    if (!['PENDING', 'CONFIRMED'].includes(booking.status)) {
       return NextResponse.json(
-        { success: false, message: 'Booking is not awaiting payment' },
+        { success: false, message: `Booking status (${booking.status}) is not eligible for payment` },
         { status: 400 }
       )
     }
@@ -68,7 +87,6 @@ export async function POST(request: Request) {
     let paymentDescription: string
 
     if (payload.paymentType === 'deposit') {
-      // Use payment schedule if available, otherwise 30% deposit
       const schedule = booking.quote?.payment_schedule as Array<{ amount: number; description: string }> | null
       if (schedule && schedule.length > 0) {
         paymentAmount = schedule[0].amount
@@ -83,9 +101,8 @@ export async function POST(request: Request) {
     }
 
     // Get patient info for Stripe
-    const patientIntake = (booking.journey as { patient_intake?: { full_name?: string; email?: string } })?.patient_intake
+    const patientIntake = (booking as { patient_intake?: { email?: string; full_name?: string } }).patient_intake
     const customerEmail = patientIntake?.email || undefined
-    const customerName = patientIntake?.full_name || 'Patient'
 
     // Create Stripe checkout session
     const session = await stripe.checkout.sessions.create({
@@ -110,7 +127,7 @@ export async function POST(request: Request) {
       cancel_url: `${payload.cancelUrl}?booking_id=${payload.bookingId}`,
       metadata: {
         booking_id: payload.bookingId,
-        journey_id: booking.journey_id,
+        patient_id: booking.patient_id,
         payment_type: payload.paymentType,
         payment_amount: paymentAmount.toString(),
       },
@@ -118,9 +135,9 @@ export async function POST(request: Request) {
 
     // Log payment initiation
     await client.from('journey_events').insert({
-      journey_id: booking.journey_id,
+      patient_id: booking.patient_id,
       event_type: 'PAYMENT_INITIATED',
-      actor_type: 'patient',
+      triggered_by: 'patient',
       event_data: {
         booking_id: payload.bookingId,
         stripe_session_id: session.id,
@@ -143,7 +160,10 @@ export async function POST(request: Request) {
       )
     }
 
-    console.error('[api/payments/create-checkout] Unexpected error:', error)
+    logger.error('Payments create-checkout unexpected error', {
+      path: '/api/payments/create-checkout',
+      method: 'POST',
+    }, { error: error instanceof Error ? error.message : 'Unknown' }, error instanceof Error ? error : undefined)
     return NextResponse.json(
       { success: false, message: 'Internal server error' },
       { status: 500 }

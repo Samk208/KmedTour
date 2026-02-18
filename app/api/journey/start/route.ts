@@ -1,4 +1,7 @@
 import { getSupabaseContext } from '@/lib/api/client/supabase'
+import { requireAuth } from '@/lib/utils/api-auth'
+import { logger } from '@/lib/utils/logger'
+import { rateLimit, RateLimitPresets } from '@/lib/utils/rate-limit'
 import { NextResponse } from 'next/server'
 import { z } from 'zod'
 
@@ -8,6 +11,15 @@ const startJourneySchema = z.object({
 })
 
 export async function POST(request: Request) {
+  const auth = await requireAuth()
+  if (!auth.authenticated) return auth.response
+
+  const rateLimitResponse = await rateLimit({
+    ...RateLimitPresets.STANDARD,
+    keyPrefix: 'journey-start',
+  })(request)
+  if (rateLimitResponse) return rateLimitResponse
+
   try {
     const json = await request.json()
     const payload = startJourneySchema.parse(json)
@@ -53,7 +65,7 @@ export async function POST(request: Request) {
       .single()
 
     if (error) {
-      console.error('[api/journey/start] Supabase error:', error)
+      logger.error('Journey start Supabase error', { path: '/api/journey/start', method: 'POST' }, {}, error instanceof Error ? error : undefined)
       return NextResponse.json(
         { success: false, message: 'Failed to start journey' },
         { status: 500 }
@@ -84,7 +96,7 @@ export async function POST(request: Request) {
       )
     }
 
-    console.error('[api/journey/start] Unexpected error:', error)
+    logger.error('Journey start unexpected error', { path: '/api/journey/start', method: 'POST' }, {}, error instanceof Error ? error : undefined)
     return NextResponse.json(
       { success: false, message: 'Internal server error' },
       { status: 500 }

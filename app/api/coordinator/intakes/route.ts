@@ -1,7 +1,12 @@
 import { getSupabaseContext } from '@/lib/api/client/supabase'
+import { requireAuth } from '@/lib/utils/api-auth'
+import { logger } from '@/lib/utils/logger'
 import { NextResponse } from 'next/server'
 
 export async function GET() {
+  const auth = await requireAuth()
+  if (!auth.authenticated) return auth.response
+
   try {
     const { client } = getSupabaseContext()
 
@@ -29,7 +34,7 @@ export async function GET() {
       .order('created_at', { ascending: false })
 
     if (intakesError) {
-      console.error('[api/coordinator/intakes] Fetch error:', intakesError)
+      logger.error('Coordinator intakes fetch error', { path: '/api/coordinator/intakes', method: 'GET' }, {}, intakesError instanceof Error ? intakesError : undefined)
       return NextResponse.json(
         { success: false, message: 'Failed to fetch intakes' },
         { status: 500 }
@@ -67,7 +72,7 @@ export async function GET() {
       count: intakesWithStatus.length,
     })
   } catch (error) {
-    console.error('[api/coordinator/intakes] Unexpected error:', error)
+    logger.error('Coordinator intakes unexpected error', { path: '/api/coordinator/intakes', method: 'GET' }, {}, error instanceof Error ? error : undefined)
     return NextResponse.json(
       { success: false, message: 'Internal server error' },
       { status: 500 }

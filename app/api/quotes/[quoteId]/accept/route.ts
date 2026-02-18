@@ -1,4 +1,7 @@
 import { getSupabaseContext } from '@/lib/api/client/supabase'
+import { requireAuth } from '@/lib/utils/api-auth'
+import { logger } from '@/lib/utils/logger'
+import { validateUUID } from '@/lib/utils/validate-params'
 import { NextResponse } from 'next/server'
 
 interface RouteParams {
@@ -6,8 +9,14 @@ interface RouteParams {
 }
 
 export async function POST(request: Request, { params }: RouteParams) {
+  const auth = await requireAuth()
+  if (!auth.authenticated) return auth.response
+
   try {
     const { quoteId } = await params
+    const invalid = validateUUID(quoteId, 'quoteId')
+    if (invalid) return invalid
+
     const { client } = getSupabaseContext()
 
     if (!client) {
@@ -59,7 +68,7 @@ export async function POST(request: Request, { params }: RouteParams) {
       .single()
 
     if (updateError) {
-      console.error('[api/quotes/accept] Update error:', updateError)
+      logger.error('Quote accept update error', { path: '/api/quotes/accept', method: 'POST' }, {}, updateError instanceof Error ? updateError : undefined)
       return NextResponse.json(
         { success: false, message: 'Failed to accept quote' },
         { status: 500 }
@@ -83,7 +92,7 @@ export async function POST(request: Request, { params }: RouteParams) {
       .single()
 
     if (bookingError) {
-      console.error('[api/quotes/accept] Booking creation error:', bookingError)
+      logger.error('Quote accept booking creation error', { path: '/api/quotes/accept', method: 'POST' }, {}, bookingError instanceof Error ? bookingError : undefined)
       // Quote is accepted but booking failed - log for manual intervention
     }
 
@@ -119,7 +128,7 @@ export async function POST(request: Request, { params }: RouteParams) {
       message: 'Quote accepted and booking created',
     })
   } catch (error) {
-    console.error('[api/quotes/accept] Unexpected error:', error)
+    logger.error('Quote accept unexpected error', { path: '/api/quotes/accept', method: 'POST' }, {}, error instanceof Error ? error : undefined)
     return NextResponse.json(
       { success: false, message: 'Internal server error' },
       { status: 500 }

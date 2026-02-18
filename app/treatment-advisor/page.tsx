@@ -1,543 +1,256 @@
 'use client'
 
-import { AdvisorStep } from '@/components/advisor/advisor-step'
-import { OptionCard } from '@/components/advisor/option-card'
 import { Button } from '@/components/ui/button'
-import { type AdvisorInput } from '@/lib/advisor-matching'
-import { useTreatmentsQuery } from '@/lib/api/hooks/use-treatments'
-import { ArrowLeft, ArrowRight, CheckCircle, Clock, DollarSign, Globe, Heart, Sparkles } from 'lucide-react'
+import { Input } from '@/components/ui/input'
+import { ScrollArea } from '@/components/ui/scroll-area'
+import { cn } from '@/lib/utils'
+import { motion } from 'framer-motion'
+import { AlertCircle, Bot, Send, Sparkles, User } from 'lucide-react'
 import Link from 'next/link'
-import { useState } from 'react'
-import { useTranslation } from 'react-i18next'
-import { z } from 'zod'
+import dynamic from 'next/dynamic'
+import React, { useEffect, useRef, useState } from 'react'
 
-// Result shape for grounded advisor suggestions
-const matchSchema = z.object({
-  matches: z.array(z.object({
-    id: z.string(),
-    confidence: z.number(),
-    reasons: z.array(z.string())
-  })),
-  reasoning: z.string().optional()
-})
+const TreatmentAdvisorMarkdown = dynamic(
+  () => import('@/components/treatment-advisor-markdown').then(m => ({ default: m.TreatmentAdvisorMarkdown })),
+  { ssr: true, loading: () => <span className="animate-pulse">...</span> }
+)
+
+type Message = {
+  role: 'user' | 'assistant'
+  content: string
+  citations?: { ref: string; title: string; source_url: string | null }[]
+  isError?: boolean
+}
 
 export default function TreatmentAdvisorPage() {
-  const { t } = useTranslation('common')
-  const { data: treatments = [] } = useTreatmentsQuery()
-  const [currentStep, setCurrentStep] = useState(1)
-  const [formData, setFormData] = useState<AdvisorInput>({
-    symptoms: [],
-    duration: '',
-    budget: '',
-    language: [],
-  })
-
-  const [advisorResult, setAdvisorResult] = useState<z.infer<typeof matchSchema> | null>(null)
+  const [messages, setMessages] = useState<Message[]>([
+    {
+      role: 'assistant',
+      content: "Hello! I am your AI Medical Advisor. I can check procedure costs, recommend verified hospitals, and explain medical itineraries. How can I assist you?"
+    }
+  ])
+  const [input, setInput] = useState('')
   const [isLoading, setIsLoading] = useState(false)
-  const [error, setError] = useState<string | null>(null)
+  const scrollRef = useRef<HTMLDivElement>(null)
 
-  const totalSteps = 4
-
-  const handleSymptomToggle = (symptom: string) => {
-    setFormData((prev) => ({
-      ...prev,
-      symptoms: prev.symptoms.includes(symptom)
-        ? prev.symptoms.filter((s) => s !== symptom)
-        : [...prev.symptoms, symptom],
-    }))
-  }
-
-  const handleDurationSelect = (duration: string) => {
-    setFormData((prev) => ({ ...prev, duration }))
-  }
-
-  const handleBudgetSelect = (budget: string) => {
-    setFormData((prev) => ({ ...prev, budget }))
-  }
-
-  const handleLanguageToggle = (language: string) => {
-    setFormData((prev) => ({
-      ...prev,
-      language: prev.language.includes(language)
-        ? prev.language.filter((l) => l !== language)
-        : [...prev.language, language],
-    }))
-  }
-
-  const handleNext = () => {
-    if (currentStep < totalSteps) {
-      setCurrentStep((prev) => prev + 1)
-    } else {
-      handleSubmit()
+  useEffect(() => {
+    if (scrollRef.current) {
+      const scrollContainer = scrollRef.current.querySelector('[data-radix-scroll-area-viewport]')
+      if (scrollContainer) {
+        scrollContainer.scrollTop = scrollContainer.scrollHeight
+      }
     }
-  }
+  }, [messages])
 
-  const handlePrevious = () => {
-    if (currentStep > 1) {
-      setCurrentStep((prev) => prev - 1)
-    }
-  }
+  const handleSend = async () => {
+    if (!input.trim() || isLoading) return
 
-  const handleStartOver = () => {
-    setFormData({
-      symptoms: [],
-      duration: '',
-      budget: '',
-      language: [],
-    })
-    setAdvisorResult(null)
-    setError(null)
-    setCurrentStep(1)
-  }
-
-  const handleSubmit = async () => {
+    const userMessage = input.trim()
+    setInput('')
+    setMessages(prev => [...prev, { role: 'user', content: userMessage }])
     setIsLoading(true)
-    setError(null)
+
     try {
-      const res = await fetch('/api/treatment-advisor', {
+      const res = await fetch('/api/rag/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          treatmentType: formData.symptoms.join(', ') || formData.duration || 'general',
-          countryOfResidence: undefined,
-          budgetRange: formData.budget,
-          preferredLanguage: formData.language[0],
-        }),
+        body: JSON.stringify({ message: userMessage })
       })
-      if (!res.ok) throw new Error('Advisor request failed')
-      const json = await res.json()
-      const mapped = {
-        matches: (json?.suggestions || []).map((s: any) => ({
-          id: String(s.id),
-          confidence: Number(s.confidence ?? 0.7),
-          reasons: [s.reason || 'Matched to your request'],
-        })),
-        reasoning: undefined,
+
+      const data = await res.json()
+
+      if (!data.success) {
+        // Even if API fails, show the error message nicely in chat
+        setMessages(prev => [...prev, {
+          role: 'assistant',
+          content: "I'm currently unable to access the medical database. Please try again or contact a coordinator directly.",
+          isError: true
+        }])
+      } else {
+        setMessages(prev => [...prev, {
+          role: 'assistant',
+          content: data.answer,
+          citations: data.citations
+        }])
       }
-      setAdvisorResult(matchSchema.parse(mapped))
-    } catch (e: any) {
-      console.error(e)
-      setError('Unable to generate suggestions right now.')
+
+    } catch {
+      setMessages(prev => [...prev, {
+        role: 'assistant',
+        content: "I'm having trouble connecting to the server. Please check your connection.",
+        isError: true
+      }])
     } finally {
       setIsLoading(false)
-      setCurrentStep(5)
     }
   }
 
-  const canProceed = () => {
-    switch (currentStep) {
-      case 1:
-        return formData.symptoms.length > 0
-      case 2:
-        return formData.duration !== ''
-      case 3:
-        return formData.budget !== ''
-      case 4:
-        return formData.language.length > 0
-      default:
-        return false
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault()
+      handleSend()
     }
   }
 
-  // --- RESULTS VIEW ---
-  if (currentStep === 5) {
-    // Show Loading
-    if (isLoading && !advisorResult) {
-      return (
-        <div className="min-h-screen bg-white py-12 px-4 flex flex-col items-center justify-center text-center">
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full mb-6 bg-[var(--kmed-teal-light)] animate-pulse">
-            <Sparkles className="w-10 h-10 text-[var(--kmed-teal)]" />
-          </div>
-          <h2 className="text-2xl font-bold mb-2 text-[var(--kmed-navy)]">k-Med AI is analyzing...</h2>
-          <p className="text-[var(--medium-grey)] max-w-md">
-            Comparing your profile against {treatments.length} proprietary treatment protocols.
-          </p>
-        </div>
-      )
-    }
+  // Suggested queries for quick start
+  const suggestions = [
+    "How much is full-mouth dental implants?",
+    "Best rhinoplasty clinics for revision surgery",
+    "What is included in the health checkup package?",
+    "Do I need a visa for medical treatment?"
+  ]
 
-    if (error) {
-      return (
-        <div className="min-h-screen bg-white py-12 px-4 text-center">
-          <h2 className="text-xl font-bold text-red-500 mb-4">Analysis Failed</h2>
-          <p className="mb-6">We encountered an error connecting to the AI Advisor.</p>
-          <Button onClick={handleStartOver} variant="outline">Try Again</Button>
-        </div>
-      )
-    }
-
-    // Prepare Matches
-    const matchesArray = advisorResult?.matches || []
-    const matchedTreatments = matchesArray
-      .map((match) => {
-        const treatment = treatments.find((t) => t.id === match.id)
-        return treatment ? { ...treatment, ...match } : null
-      })
-      .filter((treatment): treatment is NonNullable<typeof treatment> => treatment !== null)
-      .sort((a, b) => (b.confidence || 0) - (a.confidence || 0))
-
-    return (
-      <div className="min-h-screen bg-white py-12 px-4">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full mb-4" style={{ backgroundColor: 'var(--kmed-teal)' }}>
-              <CheckCircle className="w-8 h-8 text-white" />
+  return (
+    <div className="flex flex-col h-screen bg-[#0a0f1c] text-white font-sans selection:bg-teal-500/30">
+      {/* Header */}
+      <header className="flex-none bg-[#0a0f1c]/80 backdrop-blur-md border-b border-white/5 py-4 z-20 sticky top-0">
+        <div className="container mx-auto px-4 flex justify-between items-center">
+          <div className="flex items-center gap-3">
+            <div className="p-2 rounded-lg bg-teal-500/10 border border-teal-500/20">
+              <Bot className="w-5 h-5 text-teal-400" />
             </div>
-            <h1 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: 'var(--deep-grey)' }}>
-              {t('advisor.results.title')}
-            </h1>
-
-            {/* AI Reasoning Box */}
-            {advisorResult?.reasoning && (
-              <div className="bg-[var(--soft-grey)] p-6 rounded-lg text-left max-w-2xl mx-auto mb-8 border border-[var(--border-grey)]">
-                <div className="flex items-center gap-2 mb-2">
-                  <Sparkles className="w-4 h-4 text-[var(--kmed-teal)]" />
-                  <h4 className="font-semibold text-[var(--kmed-navy)]">Advisor Analysis</h4>
-                </div>
-                <p className="text-sm leading-relaxed text-[var(--deep-grey)]">
-                  {advisorResult.reasoning}
-                </p>
-              </div>
-            )}
-          </div>
-
-          {matchedTreatments.length === 0 && !isLoading ? (
-            <div className="text-center py-12">
-              <p className="text-lg mb-6" style={{ color: 'var(--medium-grey)' }}>
-                {t('advisor.results.noMatches')}
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/patient-intake">
-                  <Button className="bg-[var(--kmed-blue)] hover:bg-[var(--kmed-blue)]/90 text-white">
-                    {t('advisor.results.requestConcierge')}
-                  </Button>
-                </Link>
-                <Button variant="outline" onClick={handleStartOver}>
-                  {t('advisor.results.startOver')}
-                </Button>
+            <div>
+              <h1 className="font-bold text-lg tracking-tight text-white">Treatment Advisor</h1>
+              <div className="flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>
+                <span className="text-[10px] text-gray-400 uppercase tracking-widest font-mono">System Online</span>
               </div>
             </div>
-          ) : (
-            <div className="space-y-6">
-              {matchedTreatments.map((treatment) => (
-                <div
-                  key={treatment.id}
-                  className="border-2 rounded-lg p-6 hover:shadow-lg transition-shadow"
-                  style={{ borderColor: 'var(--border-grey)' }}
+          </div>
+          <Link href="/" className="text-sm text-gray-400 hover:text-white transition-colors">
+            Exit
+          </Link>
+        </div>
+      </header>
+
+      {/* Chat Container */}
+      <main className="flex-1 overflow-hidden relative container mx-auto max-w-5xl w-full flex flex-col md:flex-row gap-6 p-4 md:p-6">
+
+        {/* Visual Sidebar (Desktop only) */}
+        <div className="hidden md:flex flex-col w-1/3 gap-4">
+          <div className="p-6 rounded-2xl bg-[#111827] border border-white/5 shadow-2xl space-y-4">
+            <div className="w-10 h-10 rounded-full bg-teal-500/10 border border-teal-500/20 flex items-center justify-center">
+              <Sparkles className="w-5 h-5 text-teal-400" />
+            </div>
+            <h2 className="text-xl font-bold text-white">AI-Powered<br />Medical Intelligence</h2>
+            <p className="text-sm text-gray-400 leading-relaxed">
+              Our RAG (Retrieval Augmented Generation) engine searches through thousands of verified medical documents, clinic accreditations, and successful detailed case studies to give you accurate answers.
+            </p>
+          </div>
+
+          <div className="p-4 rounded-xl bg-gradient-to-br from-teal-900/20 to-blue-900/20 border border-white/5 space-y-2">
+            <h3 className="text-xs font-bold text-teal-400 uppercase mb-2">Verified Sources</h3>
+            {['JCI Accreditation Standards', 'K-Health Database 2024', 'Clinic Price Lists Q4'].map((s, i) => (
+              <div key={i} className="flex items-center gap-2 text-xs text-gray-400">
+                <div className="w-1 h-1 rounded-full bg-teal-500"></div> {s}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Main Chat Window */}
+        <div className="flex-1 flex flex-col rounded-2xl bg-[#111827] border border-white/5 shadow-2xl overflow-hidden relative">
+          {/* Messages Area */}
+          <ScrollArea className="flex-1 p-4 md:p-6" ref={scrollRef}>
+            <div className="flex flex-col gap-6 pb-4">
+              {messages.map((msg, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className={cn(
+                    "flex gap-4 max-w-[85%]",
+                    msg.role === 'user' ? "self-end flex-row-reverse" : "self-start"
+                  )}
                 >
-                  <div className="flex flex-col sm:flex-row gap-6">
-                    <div className="flex-1">
-                      <div className="flex items-start justify-between mb-4">
-                        <div>
-                          <h3 className="text-xl font-bold mb-2" style={{ color: 'var(--deep-grey)' }}>
-                            {treatment.title}
-                          </h3>
-                          <p className="text-sm" style={{ color: 'var(--medium-grey)' }}>
-                            {treatment.shortDescription}
-                          </p>
-                        </div>
-                        <div
-                          className="px-3 py-1 rounded-full text-sm font-medium whitespace-nowrap ml-4"
-                          style={{
-                            backgroundColor: 'var(--kmed-teal-light)',
-                            color: 'var(--kmed-teal)',
-                          }}
-                        >
-                          {treatment.confidence}% {t('advisor.results.confidence')}
-                        </div>
-                      </div>
-
-                      <div className="flex flex-wrap gap-4 mb-4">
-                        <div className="flex items-center gap-2">
-                          <DollarSign className="w-4 h-4" style={{ color: 'var(--kmed-blue)' }} />
-                          <span className="text-sm font-medium">{treatment.priceRange}</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <Clock className="w-4 h-4" style={{ color: 'var(--kmed-blue)' }} />
-                          <span className="text-sm font-medium">{treatment.duration}</span>
-                        </div>
-                      </div>
-
-                      <ul className="space-y-2 mb-6">
-                        {treatment.reasons.map((reason, idx) => (
-                          <li key={idx} className="flex items-start gap-2">
-                            <CheckCircle
-                              className="w-4 h-4 mt-0.5 flex-shrink-0"
-                              style={{ color: 'var(--kmed-teal)' }}
-                            />
-                            <span className="text-sm" style={{ color: 'var(--medium-grey)' }}>
-                              {reason}
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-
-                      <div className="flex gap-3">
-                        <Link href={`/hospitals/${treatment.slug}`}>
-                          <Button variant="outline" size="sm">
-                            {t('advisor.results.viewDetails')}
-                          </Button>
-                        </Link>
-                        <Link href="/patient-intake">
-                          <Button
-                            size="sm"
-                            className="bg-[var(--kmed-blue)] hover:bg-[var(--kmed-blue)]/90 text-white"
-                          >
-                            {t('advisor.results.requestConcierge')}
-                            <ArrowRight className="ml-2 w-4 h-4" />
-                          </Button>
-                        </Link>
-                      </div>
-                    </div>
+                  <div className={cn(
+                    "w-8 h-8 rounded-full flex items-center justify-center shrink-0 border mt-1",
+                    msg.role === 'user'
+                      ? "bg-white text-black border-white"
+                      : "bg-teal-500/10 text-teal-400 border-teal-500/20"
+                  )}>
+                    {msg.role === 'user' ? <User className="w-4 h-4" /> : <Bot className="w-4 h-4" />}
                   </div>
-                </div>
+
+                  <div className={cn(
+                    "p-4 rounded-2xl text-sm leading-relaxed shadow-lg relative",
+                    msg.role === 'user'
+                      ? "bg-white text-black rounded-tr-none"
+                      : cn("bg-[#1f2937] text-gray-200 rounded-tl-none border border-white/5", msg.isError && "border-red-500/30 bg-red-950/10 text-red-200")
+                  )}>
+                    {msg.isError ? (
+                      <div className="flex items-center gap-2">
+                        <AlertCircle className="w-4 h-4 text-red-400" />
+                        {msg.content}
+                      </div>
+                    ) : (
+                      <TreatmentAdvisorMarkdown content={msg.content} citations={msg.citations} />
+                    )}
+                  </div>
+                </motion.div>
               ))}
 
-              <div className="text-center pt-6">
-                <Button variant="outline" onClick={handleStartOver}>
-                  {t('advisor.results.startOver')}
+              {isLoading && (
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex gap-4 self-start">
+                  <div className="w-8 h-8 rounded-full bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400">
+                    <Bot className="w-4 h-4" />
+                  </div>
+                  <div className="bg-[#1f2937] border border-white/5 px-4 py-3 rounded-2xl rounded-tl-none flex items-center gap-3">
+                    <div className="flex gap-1 h-3 items-center">
+                      <motion.div animate={{ height: [4, 12, 4] }} transition={{ duration: 1, repeat: Infinity }} className="w-1 bg-teal-500/50 rounded-full" />
+                      <motion.div animate={{ height: [4, 12, 4] }} transition={{ duration: 1, repeat: Infinity, delay: 0.2 }} className="w-1 bg-teal-500/50 rounded-full" />
+                      <motion.div animate={{ height: [4, 12, 4] }} transition={{ duration: 1, repeat: Infinity, delay: 0.4 }} className="w-1 bg-teal-500/50 rounded-full" />
+                    </div>
+                    <span className="text-xs text-gray-500 font-mono">Analyzing medical data...</span>
+                  </div>
+                </motion.div>
+              )}
+            </div>
+          </ScrollArea>
+
+          {/* Input Area */}
+          <div className="p-4 bg-[#0a0f1c]/50 border-t border-white/5 backdrop-blur-sm z-10">
+            {/* Auto-suggestions (only show if no history or idle) */}
+            {messages.length < 3 && !isLoading && (
+              <div className="flex gap-2 overflow-x-auto pb-3 mb-2 scrollbar-hide mask-fade-right">
+                {suggestions.map((s, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setInput(s)}
+                    className="whitespace-nowrap px-3 py-1.5 rounded-full bg-[#1f2937] hover:bg-teal-900/30 border border-white/10 hover:border-teal-500/30 text-xs text-gray-400 hover:text-teal-300 transition-all"
+                  >
+                    {s}
+                  </button>
+                ))}
+              </div>
+            )}
+
+            <div className="relative group">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-teal-500 to-blue-600 rounded-xl opacity-20 group-hover:opacity-40 transition duration-500 blur"></div>
+              <div className="relative flex items-center bg-[#111827] rounded-xl overflow-hidden shadow-xl border border-white/5">
+                <Input
+                  value={input}
+                  onChange={(e) => setInput(e.target.value)}
+                  onKeyDown={handleKeyDown}
+                  placeholder="Describe your symptoms or desired procedure..."
+                  className="bg-transparent border-none text-white placeholder:text-gray-600 py-6 px-4 focus-visible:ring-0 focus-visible:ring-offset-0"
+                  disabled={isLoading}
+                />
+                <Button
+                  onClick={handleSend}
+                  disabled={!input.trim() || isLoading}
+                  className="mr-2 rounded-lg bg-teal-600 hover:bg-teal-500 text-white shadow-lg shadow-teal-900/20"
+                  size="sm"
+                >
+                  <Send className="w-4 h-4" />
                 </Button>
               </div>
             </div>
-          )}
-        </div>
-      </div>
-    )
-  }
-
-  // --- WIZARD STEPS VIEW ---
-  return (
-    <div className="min-h-screen bg-white py-12 px-4">
-      <div className="container mx-auto max-w-4xl">
-        <div className="text-center mb-12">
-          <h1 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: 'var(--deep-grey)' }}>
-            {t('advisor.title')}
-          </h1>
-          <p className="text-lg" style={{ color: 'var(--medium-grey)' }}>
-            {t('advisor.subtitle')}
-          </p>
+          </div>
         </div>
 
-        {/* Step 1: Symptoms */}
-        {currentStep === 1 && (
-          <AdvisorStep
-            title={t('advisor.step1.title')}
-            subtitle={t('advisor.step1.subtitle')}
-            currentStep={currentStep}
-            totalSteps={totalSteps}
-          >
-            <div className="grid gap-4">
-              <OptionCard
-                label={t('advisor.step1.infertility')}
-                value="infertility"
-                selected={formData.symptoms.includes('infertility')}
-                onClick={() => handleSymptomToggle('infertility')}
-                icon={<Heart className="w-5 h-5" />}
-              />
-              <OptionCard
-                label={t('advisor.step1.cosmeticConcerns')}
-                value="cosmeticConcerns"
-                selected={formData.symptoms.includes('cosmeticConcerns')}
-                onClick={() => handleSymptomToggle('cosmeticConcerns')}
-                icon={<Heart className="w-5 h-5" />}
-              />
-              <OptionCard
-                label={t('advisor.step1.dentalIssues')}
-                value="dentalIssues"
-                selected={formData.symptoms.includes('dentalIssues')}
-                onClick={() => handleSymptomToggle('dentalIssues')}
-                icon={<Heart className="w-5 h-5" />}
-              />
-              <OptionCard
-                label={t('advisor.step1.cancer')}
-                value="cancer"
-                selected={formData.symptoms.includes('cancer')}
-                onClick={() => handleSymptomToggle('cancer')}
-                icon={<Heart className="w-5 h-5" />}
-              />
-              <OptionCard
-                label={t('advisor.step1.jointPain')}
-                value="jointPain"
-                selected={formData.symptoms.includes('jointPain')}
-                onClick={() => handleSymptomToggle('jointPain')}
-                icon={<Heart className="w-5 h-5" />}
-              />
-              <OptionCard
-                label={t('advisor.step1.heartCondition')}
-                value="heartCondition"
-                selected={formData.symptoms.includes('heartCondition')}
-                onClick={() => handleSymptomToggle('heartCondition')}
-                icon={<Heart className="w-5 h-5" />}
-              />
-              <OptionCard
-                label={t('advisor.step1.other')}
-                value="other"
-                selected={formData.symptoms.includes('other')}
-                onClick={() => handleSymptomToggle('other')}
-                icon={<Heart className="w-5 h-5" />}
-              />
-            </div>
-          </AdvisorStep>
-        )}
-
-        {/* Step 2: Duration */}
-        {currentStep === 2 && (
-          <AdvisorStep
-            title={t('advisor.step2.title')}
-            subtitle={t('advisor.step2.subtitle')}
-            currentStep={currentStep}
-            totalSteps={totalSteps}
-          >
-            <div className="grid gap-4">
-              <OptionCard
-                label={t('advisor.step2.oneWeek')}
-                value="oneWeek"
-                selected={formData.duration === 'oneWeek'}
-                onClick={() => handleDurationSelect('oneWeek')}
-                icon={<Clock className="w-5 h-5" />}
-              />
-              <OptionCard
-                label={t('advisor.step2.twoWeeks')}
-                value="twoWeeks"
-                selected={formData.duration === 'twoWeeks'}
-                onClick={() => handleDurationSelect('twoWeeks')}
-                icon={<Clock className="w-5 h-5" />}
-              />
-              <OptionCard
-                label={t('advisor.step2.threeWeeks')}
-                value="threeWeeks"
-                selected={formData.duration === 'threeWeeks'}
-                onClick={() => handleDurationSelect('threeWeeks')}
-                icon={<Clock className="w-5 h-5" />}
-              />
-              <OptionCard
-                label={t('advisor.step2.fourWeeks')}
-                value="fourWeeks"
-                selected={formData.duration === 'fourWeeks'}
-                onClick={() => handleDurationSelect('fourWeeks')}
-                icon={<Clock className="w-5 h-5" />}
-              />
-              <OptionCard
-                label={t('advisor.step2.flexible')}
-                value="flexible"
-                selected={formData.duration === 'flexible'}
-                onClick={() => handleDurationSelect('flexible')}
-                icon={<Clock className="w-5 h-5" />}
-              />
-            </div>
-          </AdvisorStep>
-        )}
-
-        {/* Step 3: Budget */}
-        {currentStep === 3 && (
-          <AdvisorStep
-            title={t('advisor.step3.title')}
-            subtitle={t('advisor.step3.subtitle')}
-            currentStep={currentStep}
-            totalSteps={totalSteps}
-          >
-            <div className="grid gap-4">
-              <OptionCard
-                label={t('advisor.step3.low')}
-                value="low"
-                selected={formData.budget === 'low'}
-                onClick={() => handleBudgetSelect('low')}
-                icon={<DollarSign className="w-5 h-5" />}
-              />
-              <OptionCard
-                label={t('advisor.step3.medium')}
-                value="medium"
-                selected={formData.budget === 'medium'}
-                onClick={() => handleBudgetSelect('medium')}
-                icon={<DollarSign className="w-5 h-5" />}
-              />
-              <OptionCard
-                label={t('advisor.step3.high')}
-                value="high"
-                selected={formData.budget === 'high'}
-                onClick={() => handleBudgetSelect('high')}
-                icon={<DollarSign className="w-5 h-5" />}
-              />
-              <OptionCard
-                label={t('advisor.step3.veryHigh')}
-                value="veryHigh"
-                selected={formData.budget === 'veryHigh'}
-                onClick={() => handleBudgetSelect('veryHigh')}
-                icon={<DollarSign className="w-5 h-5" />}
-              />
-              <OptionCard
-                label={t('advisor.step3.unsure')}
-                value="unsure"
-                selected={formData.budget === 'unsure'}
-                onClick={() => handleBudgetSelect('unsure')}
-                icon={<DollarSign className="w-5 h-5" />}
-              />
-            </div>
-          </AdvisorStep>
-        )}
-
-        {/* Step 4: Language */}
-        {currentStep === 4 && (
-          <AdvisorStep
-            title={t('advisor.step4.title')}
-            subtitle={t('advisor.step4.subtitle')}
-            currentStep={currentStep}
-            totalSteps={totalSteps}
-          >
-            <div className="grid gap-4">
-              <OptionCard
-                label={t('advisor.step4.english')}
-                value="english"
-                selected={formData.language.includes('english')}
-                onClick={() => handleLanguageToggle('english')}
-                icon={<Globe className="w-5 h-5" />}
-              />
-              <OptionCard
-                label={t('advisor.step4.french')}
-                value="french"
-                selected={formData.language.includes('french')}
-                onClick={() => handleLanguageToggle('french')}
-                icon={<Globe className="w-5 h-5" />}
-              />
-              <OptionCard
-                label={t('advisor.step4.translator')}
-                value="translator"
-                selected={formData.language.includes('translator')}
-                onClick={() => handleLanguageToggle('translator')}
-                icon={<Globe className="w-5 h-5" />}
-              />
-              <OptionCard
-                label={t('advisor.step4.noPreference')}
-                value="noPreference"
-                selected={formData.language.includes('noPreference')}
-                onClick={() => handleLanguageToggle('noPreference')}
-                icon={<Globe className="w-5 h-5" />}
-              />
-            </div>
-          </AdvisorStep>
-        )}
-
-        {/* Navigation */}
-        <div className="flex justify-between mt-12">
-          <Button
-            variant="outline"
-            onClick={handlePrevious}
-            disabled={currentStep === 1}
-            className="gap-2"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            {t('ui.previous')}
-          </Button>
-          <Button
-            onClick={handleNext}
-            disabled={!canProceed()}
-            className="bg-[var(--kmed-blue)] hover:bg-[var(--kmed-blue)]/90 text-white gap-2"
-          >
-            {currentStep === totalSteps ? t('ui.finish') : t('ui.next')}
-            <ArrowRight className="w-4 h-4" />
-          </Button>
-        </div>
-      </div>
+      </main>
     </div>
   )
 }

@@ -18,10 +18,12 @@ export default function ContactPage() {
     message: '',
   })
   const [submitted, setSubmitted] = useState(false)
+  const [errorMessage, setErrorMessage] = useState<string | null>(null)
   const { mutateAsync: submitContact, isPending } = useContactSubmission()
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    setErrorMessage(null)
 
     try {
       const result = await submitContact({
@@ -34,17 +36,13 @@ export default function ContactPage() {
       })
 
       if (!result.success) {
-        if (process.env.NODE_ENV !== 'production') {
-          console.error('[contact] Submission failed')
-        }
+        setErrorMessage(result.message ?? 'Something went wrong. Please try again.')
         return
       }
 
       setSubmitted(true)
     } catch (err) {
-      if (process.env.NODE_ENV !== 'production') {
-        console.error('[contact] Network error:', err)
-      }
+      setErrorMessage('We couldn\'t reach the server. Please check your connection and try again.')
     }
   }
 
@@ -122,7 +120,16 @@ export default function ContactPage() {
               <h2 className="text-2xl font-bold mb-6" style={{ color: 'var(--kmed-navy)' }}>
                 Send Us a Message
               </h2>
-              
+
+              {errorMessage && (
+                <div
+                  className="mb-6 p-4 rounded-lg border border-red-200 bg-red-50 text-red-800 text-sm"
+                  role="alert"
+                >
+                  {errorMessage}
+                </div>
+              )}
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">

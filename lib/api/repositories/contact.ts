@@ -22,17 +22,18 @@ export async function createContactSubmission(payload: ContactSubmission): Promi
       body: JSON.stringify(payload),
     })
 
+    const data = (await response.json().catch(() => null)) as ContactSubmissionResult | null
+
     if (!response.ok) {
-      if (process.env.NODE_ENV !== 'production') {
-        console.error('[repo:contact] API error, falling back to mock:', response.status)
+      return {
+        success: false,
+        message: data?.message ?? 'We couldn\'t save your message right now. Please try again or email us directly.',
       }
-      return fallbackResult()
     }
 
-    const data = (await response.json()) as ContactSubmissionResult | null
     if (!data || typeof data.success !== 'boolean') {
       if (process.env.NODE_ENV !== 'production') {
-        console.error('[repo:contact] Malformed response, falling back to mock:', data)
+        console.error('[repo:contact] Malformed response:', data)
       }
       return fallbackResult()
     }
@@ -40,8 +41,11 @@ export async function createContactSubmission(payload: ContactSubmission): Promi
     return data
   } catch (error) {
     if (process.env.NODE_ENV !== 'production') {
-      console.error('[repo:contact] Network error, falling back to mock:', error)
+      console.error('[repo:contact] Network error:', error)
     }
-    return fallbackResult()
+    return {
+      success: false,
+      message: 'We couldn\'t reach the server. Please check your connection and try again.',
+    }
   }
 }

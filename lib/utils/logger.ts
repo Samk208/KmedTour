@@ -103,18 +103,40 @@ class Logger {
   }
 
   /**
-   * Send to external monitoring service
+   * Send to external monitoring service (Sentry)
    */
   private sendToMonitoring(entry: LogEntry) {
-    // TODO: Integrate with Sentry, DataDog, etc.
-    // Example for Sentry:
-    // if (entry.level === 'error' || entry.level === 'fatal') {
-    //   Sentry.captureException(entry.error, {
-    //     level: entry.level,
-    //     contexts: { custom: entry.context },
-    //     extra: entry.metadata,
-    //   })
-    // }
+    try {
+      const Sentry = require('@sentry/nextjs')
+      if (entry.level === 'error' || entry.level === 'fatal') {
+        if (entry.error) {
+          Sentry.captureException(
+            Object.assign(new Error(entry.error.message), {
+              name: entry.error.name,
+              stack: entry.error.stack,
+            }),
+            {
+              level: entry.level === 'fatal' ? 'fatal' : 'error',
+              contexts: { custom: entry.context },
+              extra: entry.metadata,
+            },
+          )
+        } else {
+          Sentry.captureMessage(entry.message, {
+            level: entry.level === 'fatal' ? 'fatal' : 'error',
+            contexts: { custom: entry.context },
+            extra: entry.metadata,
+          })
+        }
+      } else if (entry.level === 'warn') {
+        Sentry.captureMessage(entry.message, {
+          level: 'warning',
+          extra: entry.metadata,
+        })
+      }
+    } catch {
+      // Sentry not available — silently ignore
+    }
   }
 
   /**

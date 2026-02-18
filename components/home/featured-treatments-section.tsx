@@ -9,7 +9,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export function FeaturedTreatmentsSection() {
-  const { data: treatments = [], isLoading } = useTreatmentsQuery()
+  const { data: treatments = [], isLoading, isError } = useTreatmentsQuery()
   const featuredTreatments = treatments.slice(0, 3)
 
   return (
@@ -34,7 +34,11 @@ export function FeaturedTreatmentsSection() {
           </Link>
         </div>
 
-        {isLoading ? (
+        {isError ? (
+          <div className="text-center py-8">
+            <p className="text-sm text-red-500">Unable to load treatments. Please try again later.</p>
+          </div>
+        ) : isLoading ? (
           <div className="grid md:grid-cols-3 gap-8">
             {[1, 2, 3].map(i => <div key={i} className="h-[400px] bg-gray-200 animate-pulse rounded-2xl" />)}
           </div>

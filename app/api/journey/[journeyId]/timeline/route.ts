@@ -1,4 +1,7 @@
 import { getSupabaseContext } from '@/lib/api/client/supabase'
+import { requireAuth } from '@/lib/utils/api-auth'
+import { logger } from '@/lib/utils/logger'
+import { validateUUID } from '@/lib/utils/validate-params'
 import { NextResponse } from 'next/server'
 
 interface RouteParams {
@@ -6,8 +9,14 @@ interface RouteParams {
 }
 
 export async function GET(request: Request, { params }: RouteParams) {
+  const auth = await requireAuth()
+  if (!auth.authenticated) return auth.response
+
   try {
     const { journeyId } = await params
+    const invalid = validateUUID(journeyId, 'journeyId')
+    if (invalid) return invalid
+
     const { client } = getSupabaseContext()
 
     if (!client) {
@@ -39,7 +48,7 @@ export async function GET(request: Request, { params }: RouteParams) {
       .order('created_at', { ascending: true })
 
     if (eventsError) {
-      console.error('[api/journey/timeline] Fetch error:', eventsError)
+      logger.error('Journey timeline fetch error', { path: '/api/journey/timeline', method: 'GET' }, {}, eventsError instanceof Error ? eventsError : undefined)
       return NextResponse.json(
         { success: false, message: 'Failed to fetch timeline' },
         { status: 500 }
@@ -52,7 +61,7 @@ export async function GET(request: Request, { params }: RouteParams) {
       count: events?.length || 0,
     })
   } catch (error) {
-    console.error('[api/journey/timeline] Unexpected error:', error)
+    logger.error('Journey timeline unexpected error', { path: '/api/journey/timeline', method: 'GET' }, {}, error instanceof Error ? error : undefined)
     return NextResponse.json(
       { success: false, message: 'Internal server error' },
       { status: 500 }

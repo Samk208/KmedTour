@@ -1,4 +1,7 @@
 import { getSupabaseContext } from '@/lib/api/client/supabase'
+import { requireAuth } from '@/lib/utils/api-auth'
+import { logger } from '@/lib/utils/logger'
+import { validateUUID } from '@/lib/utils/validate-params'
 import { NextResponse } from 'next/server'
 import { z } from 'zod'
 
@@ -12,8 +15,14 @@ interface RouteParams {
 }
 
 export async function POST(request: Request, { params }: RouteParams) {
+  const auth = await requireAuth()
+  if (!auth.authenticated) return auth.response
+
   try {
     const { journeyId } = await params
+    const invalid = validateUUID(journeyId, 'journeyId')
+    if (invalid) return invalid
+
     const json = await request.json()
     const payload = assignCoordinatorSchema.parse(json)
 
@@ -54,7 +63,7 @@ export async function POST(request: Request, { params }: RouteParams) {
       .single()
 
     if (updateError) {
-      console.error('[api/journey/assign-coordinator] Update error:', updateError)
+      logger.error('Coordinator assignment update error', { path: '/api/journey/assign-coordinator', method: 'POST' }, {}, updateError instanceof Error ? updateError : undefined)
       return NextResponse.json(
         { success: false, message: 'Failed to assign coordinator' },
         { status: 500 }
@@ -88,7 +97,7 @@ export async function POST(request: Request, { params }: RouteParams) {
       )
     }
 
-    console.error('[api/journey/assign-coordinator] Unexpected error:', error)
+    logger.error('Coordinator assignment unexpected error', { path: '/api/journey/assign-coordinator', method: 'POST' }, {}, error instanceof Error ? error : undefined)
     return NextResponse.json(
       { success: false, message: 'Internal server error' },
       { status: 500 }

@@ -129,12 +129,12 @@ export function JourneyTimeline({ events, className }: JourneyTimelineProps) {
                 )}
                 {event.event_type === 'QUOTE_CREATED' && (
                   <div>
-                    Amount: {event.event_data.currency} {Number(event.event_data.total_amount).toLocaleString()}
+                    Amount: {String(event.event_data.currency ?? '')} {Number(event.event_data.total_amount ?? 0).toLocaleString()}
                   </div>
                 )}
                 {event.event_type === 'PAYMENT_COMPLETED' && (
                   <div>
-                    Amount: {event.event_data.currency} {Number(event.event_data.amount).toLocaleString()}
+                    Amount: {String(event.event_data.currency ?? '')} {Number(event.event_data.amount ?? 0).toLocaleString()}
                   </div>
                 )}
               </div>

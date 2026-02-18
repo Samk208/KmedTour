@@ -1,4 +1,7 @@
 import { getSupabaseContext } from '@/lib/api/client/supabase'
+import { requireAuth } from '@/lib/utils/api-auth'
+import { logger } from '@/lib/utils/logger'
+import { validateUUID } from '@/lib/utils/validate-params'
 import { NextResponse } from 'next/server'
 
 interface RouteParams {
@@ -6,8 +9,14 @@ interface RouteParams {
 }
 
 export async function GET(request: Request, { params }: RouteParams) {
+  const auth = await requireAuth()
+  if (!auth.authenticated) return auth.response
+
   try {
     const { journeyId } = await params
+    const invalid = validateUUID(journeyId, 'journeyId')
+    if (invalid) return invalid
+
     const { client } = getSupabaseContext()
 
     if (!client) {
@@ -44,7 +53,7 @@ export async function GET(request: Request, { params }: RouteParams) {
       journey: data,
     })
   } catch (error) {
-    console.error('[api/journey/[journeyId]] Unexpected error:', error)
+    logger.error('Journey fetch unexpected error', { path: '/api/journey/[journeyId]', method: 'GET' }, {}, error instanceof Error ? error : undefined)
     return NextResponse.json(
       { success: false, message: 'Internal server error' },
       { status: 500 }

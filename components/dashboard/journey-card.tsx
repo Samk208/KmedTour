@@ -17,7 +17,7 @@ interface JourneyCardProps {
       email?: string
       treatment_type_slug?: string
     }
-    assigned_coordinator_id?: string
+    assigned_coordinator_id?: string | null
   }
   onViewDetails?: (journeyId: string) => void
   onTransition?: (journeyId: string) => void

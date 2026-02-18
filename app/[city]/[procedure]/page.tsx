@@ -105,7 +105,7 @@ export default async function CityProcedurePage({
         <PseoHero
           city={match.city}
           treatmentTitle={treatment.title}
-          clinicCount={hospitals.length > 0 ? hospitals.length : 3} // Fallback to 3 for marketing impact if empty
+          clinicCount={hospitals.length}
           priceRange={treatment.priceRange || 'Contact for quote'}
         />
 

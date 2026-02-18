@@ -215,7 +215,7 @@ export async function sendWhatsApp(payload: WhatsAppPayload): Promise<{ success:
 
 // Notification processor - processes queued notifications from the database
 export async function processNotificationQueue(
-  client: ReturnType<typeof import('@supabase/supabase-js').createClient>
+  client: import('@supabase/supabase-js').SupabaseClient
 ): Promise<{ processed: number; failed: number }> {
   let processed = 0
   let failed = 0
@@ -260,7 +260,7 @@ export async function processNotificationQueue(
     if (notification.channel === 'email' && patientIntake.email) {
       const template = emailTemplates[notification.template_name as keyof typeof emailTemplates]
       if (template) {
-        const emailContent = template(templateData as never)
+        const emailContent = template(templateData as { patientName: string; [key: string]: unknown })
         result = await sendEmail({
           to: patientIntake.email,
           ...emailContent,

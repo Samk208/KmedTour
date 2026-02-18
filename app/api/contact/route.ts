@@ -51,17 +51,31 @@ export async function POST(request: Request) {
           })
         }
 
-        logger.warn('Supabase insert error, falling back to mock response', {
+        logger.warn('Supabase insert error', {
           path: '/api/contact',
         }, {
           error: error.message,
         })
+        return NextResponse.json(
+          {
+            success: false,
+            message: "We couldn't save your message right now. Please try again in a moment or email us directly.",
+          },
+          { status: 503 }
+        )
       } catch (error) {
-        logger.warn('Unexpected Supabase error, falling back to mock response', {
+        logger.warn('Unexpected Supabase error', {
           path: '/api/contact',
         }, {
           error: error instanceof Error ? error.message : 'Unknown error',
         })
+        return NextResponse.json(
+          {
+            success: false,
+            message: "We couldn't save your message right now. Please try again in a moment or email us directly.",
+          },
+          { status: 503 }
+        )
       }
     }
 

@@ -1,7 +1,12 @@
 import { getSupabaseContext } from '@/lib/api/client/supabase'
+import { requireAuth } from '@/lib/utils/api-auth'
+import { logger } from '@/lib/utils/logger'
 import { NextResponse } from 'next/server'
 
 export async function GET(request: Request) {
+  const auth = await requireAuth()
+  if (!auth.authenticated) return auth.response
+
   try {
     const { searchParams } = new URL(request.url)
     const journeyId = searchParams.get('journeyId')
@@ -35,7 +40,7 @@ export async function GET(request: Request) {
     const { data, error } = await query
 
     if (error) {
-      console.error('[api/bookings] Fetch error:', error)
+      logger.error('Bookings fetch error', { path: '/api/bookings', method: 'GET' }, {}, error instanceof Error ? error : undefined)
       return NextResponse.json(
         { success: false, message: 'Failed to fetch bookings' },
         { status: 500 }
@@ -48,7 +53,7 @@ export async function GET(request: Request) {
       count: data?.length || 0,
     })
   } catch (error) {
-    console.error('[api/bookings] Unexpected error:', error)
+    logger.error('Bookings unexpected error', { path: '/api/bookings', method: 'GET' }, {}, error instanceof Error ? error : undefined)
     return NextResponse.json(
       { success: false, message: 'Internal server error' },
       { status: 500 }

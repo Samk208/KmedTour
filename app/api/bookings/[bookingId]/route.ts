@@ -1,4 +1,7 @@
 import { getSupabaseContext } from '@/lib/api/client/supabase'
+import { requireAuth } from '@/lib/utils/api-auth'
+import { logger } from '@/lib/utils/logger'
+import { validateUUID } from '@/lib/utils/validate-params'
 import { NextResponse } from 'next/server'
 import { z } from 'zod'
 
@@ -7,8 +10,14 @@ interface RouteParams {
 }
 
 export async function GET(request: Request, { params }: RouteParams) {
+  const auth = await requireAuth()
+  if (!auth.authenticated) return auth.response
+
   try {
     const { bookingId } = await params
+    const invalid = validateUUID(bookingId, 'bookingId')
+    if (invalid) return invalid
+
     const { client } = getSupabaseContext()
 
     if (!client) {
@@ -44,7 +53,7 @@ export async function GET(request: Request, { params }: RouteParams) {
       booking: data,
     })
   } catch (error) {
-    console.error('[api/bookings/[bookingId]] Unexpected error:', error)
+    logger.error('Booking fetch unexpected error', { path: '/api/bookings/[bookingId]', method: 'GET' }, {}, error instanceof Error ? error : undefined)
     return NextResponse.json(
       { success: false, message: 'Internal server error' },
       { status: 500 }
@@ -66,8 +75,14 @@ const updateBookingSchema = z.object({
 })
 
 export async function PATCH(request: Request, { params }: RouteParams) {
+  const auth = await requireAuth()
+  if (!auth.authenticated) return auth.response
+
   try {
     const { bookingId } = await params
+    const invalid = validateUUID(bookingId, 'bookingId')
+    if (invalid) return invalid
+
     const json = await request.json()
     const payload = updateBookingSchema.parse(json)
 
@@ -103,7 +118,7 @@ export async function PATCH(request: Request, { params }: RouteParams) {
       .single()
 
     if (updateError) {
-      console.error('[api/bookings/[bookingId]] Update error:', updateError)
+      logger.error('Booking update error', { path: '/api/bookings/[bookingId]', method: 'PATCH' }, {}, updateError instanceof Error ? updateError : undefined)
       return NextResponse.json(
         { success: false, message: 'Failed to update booking' },
         { status: 500 }
@@ -122,7 +137,7 @@ export async function PATCH(request: Request, { params }: RouteParams) {
       )
     }
 
-    console.error('[api/bookings/[bookingId]] Unexpected error:', error)
+    logger.error('Booking update unexpected error', { path: '/api/bookings/[bookingId]', method: 'PATCH' }, {}, error instanceof Error ? error : undefined)
     return NextResponse.json(
       { success: false, message: 'Internal server error' },
       { status: 500 }

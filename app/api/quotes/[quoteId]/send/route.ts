@@ -1,4 +1,7 @@
 import { getSupabaseContext } from '@/lib/api/client/supabase'
+import { requireAuth } from '@/lib/utils/api-auth'
+import { logger } from '@/lib/utils/logger'
+import { validateUUID } from '@/lib/utils/validate-params'
 import { NextResponse } from 'next/server'
 
 interface RouteParams {
@@ -6,8 +9,14 @@ interface RouteParams {
 }
 
 export async function POST(request: Request, { params }: RouteParams) {
+  const auth = await requireAuth()
+  if (!auth.authenticated) return auth.response
+
   try {
     const { quoteId } = await params
+    const invalid = validateUUID(quoteId, 'quoteId')
+    if (invalid) return invalid
+
     const { client } = getSupabaseContext()
 
     if (!client) {
@@ -51,7 +60,7 @@ export async function POST(request: Request, { params }: RouteParams) {
       .single()
 
     if (updateError) {
-      console.error('[api/quotes/send] Update error:', updateError)
+      logger.error('Quote send update error', { path: '/api/quotes/send', method: 'POST' }, {}, updateError instanceof Error ? updateError : undefined)
       return NextResponse.json(
         { success: false, message: 'Failed to send quote' },
         { status: 500 }
@@ -90,7 +99,7 @@ export async function POST(request: Request, { params }: RouteParams) {
       message: 'Quote sent to patient',
     })
   } catch (error) {
-    console.error('[api/quotes/send] Unexpected error:', error)
+    logger.error('Quote send unexpected error', { path: '/api/quotes/send', method: 'POST' }, {}, error instanceof Error ? error : undefined)
     return NextResponse.json(
       { success: false, message: 'Internal server error' },
       { status: 500 }

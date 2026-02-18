@@ -16,13 +16,11 @@ export function SystemBootLoader() {
             return
         }
 
-        // Sequence of "boot" messages
+        // Short boot sequence for fast perceived load (~800ms total)
         const bootSequence = [
-            { text: 'INITIALIZING K-OS KERNEL...', delay: 200 },
-            { text: 'LOADING BIOMETRIC PROTOCOLS...', delay: 800 },
-            { text: 'ESTABLISHING SECURE HANDSHAKE...', delay: 1500 },
-            { text: 'CONNECTING TO INFRASTRUCTURE...', delay: 2200 },
-            { text: 'SYSTEM READY.', delay: 2800 },
+            { text: 'INITIALIZING...', delay: 80 },
+            { text: 'CONNECTING...', delay: 280 },
+            { text: 'SYSTEM READY.', delay: 520 },
         ]
 
         const timeouts: NodeJS.Timeout[] = []
@@ -37,7 +35,7 @@ export function SystemBootLoader() {
         const finishTimeout = setTimeout(() => {
             setLoading(false)
             sessionStorage.setItem('kmed_system_booted', 'true')
-        }, 3500)
+        }, 800)
         timeouts.push(finishTimeout)
 
         return () => timeouts.forEach(clearTimeout)
@@ -51,6 +49,8 @@ export function SystemBootLoader() {
                     exit={{ opacity: 0, scale: 1.1, filter: "blur(10px)" }}
                     transition={{ duration: 0.8 }}
                     className="fixed inset-0 z-50 bg-[#0a0f1c] text-[var(--kmed-teal)] font-mono flex flex-col items-center justify-center p-4"
+                    role="status"
+                    aria-label="Loading application"
                 >
                     <div className="w-full max-w-md space-y-6">
 
@@ -73,7 +73,7 @@ export function SystemBootLoader() {
                             <motion.div
                                 initial={{ width: "0%" }}
                                 animate={{ width: "100%" }}
-                                transition={{ duration: 3, ease: "easeInOut" }}
+                                transition={{ duration: 0.8, ease: "easeInOut" }}
                                 className="h-full bg-[var(--kmed-teal)] shadow-[0_0_10px_var(--kmed-teal)]"
                             />
                         </div>

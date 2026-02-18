@@ -1,4 +1,7 @@
 import { getSupabaseContext } from '@/lib/api/client/supabase'
+import { requireAuth } from '@/lib/utils/api-auth'
+import { logger } from '@/lib/utils/logger'
+import { validateUUID } from '@/lib/utils/validate-params'
 import { NextResponse } from 'next/server'
 import { z } from 'zod'
 
@@ -7,8 +10,14 @@ interface RouteParams {
 }
 
 export async function GET(request: Request, { params }: RouteParams) {
+  const auth = await requireAuth()
+  if (!auth.authenticated) return auth.response
+
   try {
     const { quoteId } = await params
+    const invalid = validateUUID(quoteId, 'quoteId')
+    if (invalid) return invalid
+
     const { client } = getSupabaseContext()
 
     if (!client) {
@@ -36,7 +45,7 @@ export async function GET(request: Request, { params }: RouteParams) {
       quote: data,
     })
   } catch (error) {
-    console.error('[api/quotes/[quoteId]] Unexpected error:', error)
+    logger.error('Quote fetch unexpected error', { path: '/api/quotes/[quoteId]', method: 'GET' }, {}, error instanceof Error ? error : undefined)
     return NextResponse.json(
       { success: false, message: 'Internal server error' },
       { status: 500 }
@@ -59,8 +68,14 @@ const updateQuoteSchema = z.object({
 })
 
 export async function PATCH(request: Request, { params }: RouteParams) {
+  const auth = await requireAuth()
+  if (!auth.authenticated) return auth.response
+
   try {
     const { quoteId } = await params
+    const invalid = validateUUID(quoteId, 'quoteId')
+    if (invalid) return invalid
+
     const json = await request.json()
     const payload = updateQuoteSchema.parse(json)
 
@@ -124,7 +139,7 @@ export async function PATCH(request: Request, { params }: RouteParams) {
       .single()
 
     if (updateError) {
-      console.error('[api/quotes/[quoteId]] Update error:', updateError)
+      logger.error('Quote update error', { path: '/api/quotes/[quoteId]', method: 'PATCH' }, {}, updateError instanceof Error ? updateError : undefined)
       return NextResponse.json(
         { success: false, message: 'Failed to update quote' },
         { status: 500 }
@@ -143,7 +158,7 @@ export async function PATCH(request: Request, { params }: RouteParams) {
       )
     }
 
-    console.error('[api/quotes/[quoteId]] Unexpected error:', error)
+    logger.error('Quote update unexpected error', { path: '/api/quotes/[quoteId]', method: 'PATCH' }, {}, error instanceof Error ? error : undefined)
     return NextResponse.json(
       { success: false, message: 'Internal server error' },
       { status: 500 }

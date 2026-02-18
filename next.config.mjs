@@ -1,3 +1,5 @@
+import { withSentryConfig } from '@sentry/nextjs'
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // TypeScript strict checking enabled for production safety
@@ -5,7 +7,26 @@ const nextConfig = {
     // Only ignore in development if needed, never in production
     ignoreBuildErrors: process.env.NODE_ENV === 'development',
   },
-  
+
+  // Security headers (production best practice)
+  async headers() {
+    const isProd = process.env.NODE_ENV === 'production'
+    const securityHeaders = [
+      { key: 'X-DNS-Prefetch-Control', value: 'on' },
+      { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
+      { key: 'X-Content-Type-Options', value: 'nosniff' },
+      { key: 'X-XSS-Protection', value: '1; mode=block' },
+      { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+      { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
+    ]
+    if (isProd) {
+      securityHeaders.push(
+        { key: 'Strict-Transport-Security', value: 'max-age=31536000; includeSubDomains; preload' }
+      )
+    }
+    return [{ source: '/:path*', headers: securityHeaders }]
+  },
+
   // Image optimization configuration
   images: {
     // Enable optimization for production, can disable in dev for speed
@@ -36,8 +57,16 @@ const nextConfig = {
   
   // Environment variables validation (optional but recommended)
   env: {
-    NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000',
+    NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3002',
   },
 }
 
-export default nextConfig
+export default withSentryConfig(nextConfig, {
+  org: process.env.SENTRY_ORG,
+  project: process.env.SENTRY_PROJECT,
+  silent: !process.env.CI,
+  widenClientFileUpload: true,
+  disableLogger: true,
+  tunnelRoute: '/monitoring',
+  hideSourceMaps: true,
+})

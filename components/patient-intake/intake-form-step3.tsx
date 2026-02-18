@@ -1,6 +1,7 @@
 'use client'
 
 import { UseFormReturn } from 'react-hook-form'
+import Link from 'next/link'
 import { PatientIntakeStep3 } from '@/lib/schemas/patient-intake'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -130,13 +131,13 @@ export function IntakeFormStep3({ form }: IntakeFormStep3Props) {
             />
             <Label htmlFor="agreeToTerms" className="text-sm font-normal cursor-pointer leading-relaxed">
               I agree to Kmedtour&apos;s{' '}
-              <a href="/terms" className="underline" style={{ color: 'var(--kmed-blue)' }}>
+              <Link href="/terms" className="underline" style={{ color: 'var(--kmed-blue)' }}>
                 Terms of Service
-              </a>{' '}
+              </Link>{' '}
               and{' '}
-              <a href="/privacy" className="underline" style={{ color: 'var(--kmed-blue)' }}>
+              <Link href="/privacy" className="underline" style={{ color: 'var(--kmed-blue)' }}>
                 Privacy Policy
-              </a>
+              </Link>
               . I understand that this is a preliminary assessment and not a guarantee of treatment.
             </Label>
           </div>

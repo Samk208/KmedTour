@@ -1,7 +1,12 @@
 import { getSupabaseContext } from '@/lib/api/client/supabase'
+import { requireAuth } from '@/lib/utils/api-auth'
+import { logger } from '@/lib/utils/logger'
 import { NextResponse } from 'next/server'
 
 export async function GET(request: Request) {
+  const auth = await requireAuth()
+  if (!auth.authenticated) return auth.response
+
   try {
     const { searchParams } = new URL(request.url)
     const state = searchParams.get('state')
@@ -48,7 +53,7 @@ export async function GET(request: Request) {
     const { data, error } = await query
 
     if (error) {
-      console.error('[api/coordinator/journeys] Fetch error:', error)
+      logger.error('Coordinator journeys fetch error', { path: '/api/coordinator/journeys', method: 'GET' }, {}, error instanceof Error ? error : undefined)
       return NextResponse.json(
         { success: false, message: 'Failed to fetch journeys' },
         { status: 500 }
@@ -61,7 +66,7 @@ export async function GET(request: Request) {
       count: data?.length || 0,
     })
   } catch (error) {
-    console.error('[api/coordinator/journeys] Unexpected error:', error)
+    logger.error('Coordinator journeys unexpected error', { path: '/api/coordinator/journeys', method: 'GET' }, {}, error instanceof Error ? error : undefined)
     return NextResponse.json(
       { success: false, message: 'Internal server error' },
       { status: 500 }

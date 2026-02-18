@@ -1,4 +1,6 @@
 import { getSupabaseContext } from '@/lib/api/client/supabase'
+import { requireAuth } from '@/lib/utils/api-auth'
+import { logger } from '@/lib/utils/logger'
 import { NextResponse } from 'next/server'
 import { z } from 'zod'
 
@@ -21,6 +23,9 @@ const createQuoteSchema = z.object({
 })
 
 export async function POST(request: Request) {
+  const auth = await requireAuth()
+  if (!auth.authenticated) return auth.response
+
   try {
     const json = await request.json()
     const payload = createQuoteSchema.parse(json)
@@ -66,7 +71,7 @@ export async function POST(request: Request) {
       .single()
 
     if (error) {
-      console.error('[api/quotes] Create error:', error)
+      logger.error('Quote create error', { path: '/api/quotes', method: 'POST' }, {}, error instanceof Error ? error : undefined)
       return NextResponse.json(
         { success: false, message: 'Failed to create quote' },
         { status: 500 }
@@ -97,7 +102,7 @@ export async function POST(request: Request) {
       )
     }
 
-    console.error('[api/quotes] Unexpected error:', error)
+    logger.error('Quote create unexpected error', { path: '/api/quotes', method: 'POST' }, {}, error instanceof Error ? error : undefined)
     return NextResponse.json(
       { success: false, message: 'Internal server error' },
       { status: 500 }
@@ -106,6 +111,9 @@ export async function POST(request: Request) {
 }
 
 export async function GET(request: Request) {
+  const auth = await requireAuth()
+  if (!auth.authenticated) return auth.response
+
   try {
     const { searchParams } = new URL(request.url)
     const journeyId = searchParams.get('journeyId')
@@ -131,7 +139,7 @@ export async function GET(request: Request) {
     const { data, error } = await query
 
     if (error) {
-      console.error('[api/quotes] Fetch error:', error)
+      logger.error('Quotes fetch error', { path: '/api/quotes', method: 'GET' }, {}, error instanceof Error ? error : undefined)
       return NextResponse.json(
         { success: false, message: 'Failed to fetch quotes' },
         { status: 500 }
@@ -144,7 +152,7 @@ export async function GET(request: Request) {
       count: data?.length || 0,
     })
   } catch (error) {
-    console.error('[api/quotes] Unexpected error:', error)
+    logger.error('Quotes fetch unexpected error', { path: '/api/quotes', method: 'GET' }, {}, error instanceof Error ? error : undefined)
     return NextResponse.json(
       { success: false, message: 'Internal server error' },
       { status: 500 }

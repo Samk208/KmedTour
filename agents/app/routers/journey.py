@@ -425,7 +425,7 @@ async def get_next_actions(patient_id: str):
             "current_state": record.state.value,
             "patient_actions": actions["patient"],
             "coordinator_actions": actions["coordinator"],
-            "valid_next_states": [s.value for s in StateTransition if s.value]  # Will fix
+            "valid_next_states": [s.value for s in JourneyState]
         }
 
     except HTTPException:

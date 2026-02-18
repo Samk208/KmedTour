@@ -25,6 +25,7 @@ export default function PatientIntakePage() {
   const [currentStep, setCurrentStep] = useState(1)
   const [formData, setFormData] = useState<Partial<FullPatientIntake>>({})
   const [submissionId, setSubmissionId] = useState<string | null>(null)
+  const [submitError, setSubmitError] = useState<string | null>(null)
 
   const { mutate: submitIntake, isPending } = useSubmitPatientIntake()
 
@@ -57,16 +58,20 @@ export default function PatientIntakePage() {
 
   const handleStep3Submit = form3.handleSubmit((data) => {
     const fullData = { ...formData, ...data } as FullPatientIntake
-    
+    setSubmitError(null)
+
     submitIntake(fullData, {
       onSuccess: (response) => {
+        if (!response.success) {
+          setSubmitError(response.message ?? 'Something went wrong. Please try again.')
+          return
+        }
         setSubmissionId(response.submissionId)
         setCurrentStep(4)
         window.scrollTo({ top: 0, behavior: 'smooth' })
       },
-      onError: (error) => {
-        console.error('[v0] Submission error:', error)
-        alert('There was an error submitting your form. Please try again.')
+      onError: () => {
+        setSubmitError('We couldn\'t reach the server. Please check your connection and try again.')
       },
     })
   })
@@ -134,6 +139,14 @@ export default function PatientIntakePage() {
           {currentStep === 3 && (
             <>
               <IntakeFormStep3 form={form3} />
+              {submitError && (
+                <div
+                  className="mt-6 p-4 rounded-lg border border-red-200 bg-red-50 text-red-800 text-sm"
+                  role="alert"
+                >
+                  {submitError}
+                </div>
+              )}
               <div className="flex justify-between pt-8 border-t mt-8" style={{ borderColor: 'var(--border-grey)' }}>
                 <Button size="lg" variant="outline" onClick={handleBack}>
                   <ArrowLeft className="mr-2 h-5 w-5" />

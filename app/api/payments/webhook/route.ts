@@ -1,9 +1,13 @@
 import { getSupabaseContext } from '@/lib/api/client/supabase'
+import { logger } from '@/lib/utils/logger'
 import { NextResponse } from 'next/server'
 import Stripe from 'stripe'
 
 const stripe = process.env.STRIPE_SECRET_KEY
-  ? new Stripe(process.env.STRIPE_SECRET_KEY, { apiVersion: '2024-12-18.acacia' })
+  ? new Stripe(process.env.STRIPE_SECRET_KEY, {
+      apiVersion: '2025-12-15.clover',
+      typescript: true,
+    })
   : null
 
 const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET
@@ -31,7 +35,10 @@ export async function POST(request: Request) {
   try {
     event = stripe.webhooks.constructEvent(body, signature, webhookSecret)
   } catch (err) {
-    console.error('[api/payments/webhook] Signature verification failed:', err)
+    logger.error('Payments webhook signature verification failed', {
+      path: '/api/payments/webhook',
+      method: 'POST',
+    }, { error: err instanceof Error ? err.message : 'Unknown' }, err instanceof Error ? err : undefined)
     return NextResponse.json(
       { success: false, message: 'Invalid signature' },
       { status: 400 }
@@ -57,7 +64,7 @@ export async function POST(request: Request) {
         const paymentAmount = parseFloat(session.metadata?.payment_amount || '0')
 
         if (!bookingId) {
-          console.error('[api/payments/webhook] Missing booking_id in metadata')
+          logger.warn('Payments webhook missing booking_id in metadata', { path: '/api/payments/webhook', method: 'POST' })
           break
         }
 
@@ -73,7 +80,7 @@ export async function POST(request: Request) {
           .eq('id', bookingId)
 
         if (updateError) {
-          console.error('[api/payments/webhook] Booking update error:', updateError)
+          logger.error('Payments webhook booking update error', { path: '/api/payments/webhook', method: 'POST' }, {}, updateError instanceof Error ? updateError : undefined)
         }
 
         // Log payment event
@@ -164,12 +171,12 @@ export async function POST(request: Request) {
       }
 
       default:
-        console.log(`[api/payments/webhook] Unhandled event type: ${event.type}`)
+        logger.info(`Payments webhook unhandled event type: ${event.type}`, { path: '/api/payments/webhook', method: 'POST' })
     }
 
     return NextResponse.json({ success: true, received: true })
   } catch (error) {
-    console.error('[api/payments/webhook] Processing error:', error)
+    logger.error('Payments webhook processing error', { path: '/api/payments/webhook', method: 'POST' }, {}, error instanceof Error ? error : undefined)
     return NextResponse.json(
       { success: false, message: 'Webhook processing failed' },
       { status: 500 }

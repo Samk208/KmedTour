@@ -1,32 +1,11 @@
+import { getSupabaseContext } from '@/lib/api/client/supabase'
 import { logger } from '@/lib/utils/logger'
+import { rateLimit as rateLimitMiddleware } from '@/lib/utils/rate-limit'
 import { NextResponse } from 'next/server'
 import { z } from 'zod'
 
-import { getSupabaseContext } from '@/lib/api/client/supabase'
-
-type RateLimitEntry = {
-  count: number
-  resetAtMs: number
-}
-
-const rateLimitStore = new Map<string, RateLimitEntry>()
-
-function rateLimit(key: string, limit: number, windowMs: number): boolean {
-  const now = Date.now()
-  const existing = rateLimitStore.get(key)
-
-  if (!existing || existing.resetAtMs <= now) {
-    rateLimitStore.set(key, { count: 1, resetAtMs: now + windowMs })
-    return true
-  }
-
-  if (existing.count >= limit) {
-    return false
-  }
-
-  existing.count += 1
-  return true
-}
+const RAG_LIMIT = Number(process.env.RAG_RATE_LIMIT || 30)
+const RAG_WINDOW_MS = 60_000
 
 const ragChatRequestSchema = z.object({
   message: z.string().min(2),
@@ -135,8 +114,9 @@ QUESTION:
 ${args.question}`
     : args.question
 
+  const agentBaseUrl = process.env.PYTHON_AGENT_URL || 'http://127.0.0.1:8000'
   try {
-    const res = await fetch('http://127.0.0.1:8000/api/chat', {
+    const res = await fetch(`${agentBaseUrl}/api/chat`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -188,20 +168,14 @@ async function fallbackOpenAIGenerate(question: string, context: string): Promis
 
 export async function POST(request: Request) {
   try {
-    const ip =
-      request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ||
-      request.headers.get('x-real-ip') ||
-      'unknown'
-
-    const ok = rateLimit(ip, Number(process.env.RAG_RATE_LIMIT || 30), 60_000)
-    if (!ok) {
-      return NextResponse.json(
-        {
-          success: false,
-          message: 'Rate limit exceeded. Please try again shortly.',
-        },
-        { status: 429 },
-      )
+    const rateLimitResponse = await rateLimitMiddleware({
+      limit: RAG_LIMIT,
+      windowMs: RAG_WINDOW_MS,
+      keyPrefix: 'rag',
+    })(request)
+    if (rateLimitResponse) {
+      logger.warn('RAG chat rate limit exceeded', { path: '/api/rag/chat', method: 'POST' })
+      return rateLimitResponse
     }
 
     const payload = ragChatRequestSchema.parse(await request.json())

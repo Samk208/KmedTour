@@ -16,18 +16,19 @@ export async function createPatientIntake(intake: FullPatientIntake): Promise<Pa
       body: JSON.stringify(intake),
     })
 
-    if (!response.ok) {
-      if (process.env.NODE_ENV !== 'production') {
-        console.error('[repo] createPatientIntake API error, falling back to mock:', response.status)
-      }
-      return fallbackMockResult()
-    }
+    const data = (await response.json().catch(() => null)) as PatientIntakeResult | null
 
-    const data = (await response.json()) as PatientIntakeResult
+    if (!response.ok) {
+      return {
+        success: false,
+        submissionId: '',
+        message: data?.message ?? "We couldn't save your intake form right now. Please try again or contact us.",
+      }
+    }
 
     if (!data || typeof data.success !== 'boolean') {
       if (process.env.NODE_ENV !== 'production') {
-        console.error('[repo] createPatientIntake API response malformed, falling back to mock:', data)
+        console.error('[repo] createPatientIntake malformed response:', data)
       }
       return fallbackMockResult()
     }
@@ -35,9 +36,13 @@ export async function createPatientIntake(intake: FullPatientIntake): Promise<Pa
     return data
   } catch (error) {
     if (process.env.NODE_ENV !== 'production') {
-      console.error('[repo] createPatientIntake network error, falling back to mock:', error)
+      console.error('[repo] createPatientIntake network error:', error)
     }
-    return fallbackMockResult()
+    return {
+      success: false,
+      submissionId: '',
+      message: 'We couldn\'t reach the server. Please check your connection and try again.',
+    }
   }
 }
 

@@ -1,10 +1,10 @@
 name: Deploy to Netlify
 
 on:
-  push:
+  workflow_run:
+    workflows: ["CI Pipeline"]
+    types: [completed]
     branches: [main]
-    tags:
-      - "v*.*.*"
   workflow_dispatch:
     inputs:
       environment:
@@ -16,94 +16,49 @@ on:
           - production
           - staging
 
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   deploy:
     name: Deploy Application
     runs-on: ubuntu-latest
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.workflow_run.conclusion == 'success')
     environment:
       name: ${{ github.event.inputs.environment || 'production' }}
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v4
         with:
-          version: 8
+          version: 10
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: "pnpm"
 
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+      - run: pnpm install --frozen-lockfile
 
-      - name: Build application
-        run: pnpm build
-        env:
-          NODE_ENV: production
-          # Note: Add your production env vars as GitHub Secrets
-          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
-          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
-
-      - name: Run deployment checks
-        run: |
-          echo "Running pre-deployment checks..."
-
-          # Check build artifacts
-          if [ ! -d ".next" ]; then
-            echo "❌ Build failed"
-            exit 1
-          fi
-
-          # Check for required env vars (in production they should be in GitHub Secrets)
-          echo "✅ Build artifacts verified"
-
-      # Deploy to Netlify
       - name: Deploy to Netlify
-        if: success()
-        uses: nwtgck/actions-netlify@v2.1
-        with:
-          publish-dir: ".next"
-          production-branch: main
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          deploy-message: "Deploy from GitHub Actions - ${{ github.sha }}"
-          enable-pull-request-comment: true
-          enable-commit-comment: true
-          overwrites-pull-request-comment: true
+        run: npx netlify-cli deploy --build --prod --message "Deploy ${{ github.sha }}"
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        timeout-minutes: 10
+          NODE_ENV: production
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        timeout-minutes: 15
 
-      # Example: Notify deployment
-      - name: Notify deployment status
+      - name: Report status
         if: always()
         run: |
           if [ "${{ job.status }}" == "success" ]; then
-            echo "✅ Deployment successful!"
-            echo "Environment: ${{ github.event.inputs.environment || 'production' }}"
-            echo "Commit: ${{ github.sha }}"
+            echo "Deployment successful: ${{ github.sha }}"
           else
-            echo "❌ Deployment failed!"
+            echo "Deployment failed: ${{ github.sha }}"
           fi
-
-  # Optional: Database Migration Job
-  migrate:
-    name: Run Database Migrations
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Run Supabase migrations
-        run: |
-          echo "Database migrations would run here"
-          echo "Example: npx supabase db push"
-          echo "Make sure to set up Supabase CLI and credentials"
-        continue-on-error: true
