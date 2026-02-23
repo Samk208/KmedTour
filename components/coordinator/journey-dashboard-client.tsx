@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -8,6 +8,8 @@ import { Badge } from '@/components/ui/badge'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { JourneyCard } from '@/components/dashboard/journey-card'
 import { type JourneyState } from '@/components/dashboard/journey-state-badge'
+import { createClient } from '@/lib/supabase/client'
+import { Bell, RefreshCw } from 'lucide-react'
 
 interface Journey {
   id: string
@@ -60,13 +62,49 @@ function filterJourneys(journeys: Journey[], filter: string): Journey[] {
 }
 
 interface Props {
-  initialJourneys: Journey[]
+  readonly initialJourneys: Journey[]
 }
 
 export function JourneyDashboardClient({ initialJourneys }: Props) {
   const router = useRouter()
   const [activeTab, setActiveTab] = useState('all')
-  const stats = calcStats(initialJourneys)
+  const [pendingUpdates, setPendingUpdates] = useState(0)
+  const [newIntakes, setNewIntakes] = useState(0)
+  const supabaseRef = useRef(createClient())
+
+  // Supabase Realtime — subscribe to journey state changes and new intakes
+  useEffect(() => {
+    const supabase = supabaseRef.current
+
+    const journeyChannel = supabase
+      .channel('coordinator-journeys')
+      .on(
+        'postgres_changes',
+        { event: 'INSERT', schema: 'public', table: 'patient_journey_state' },
+        () => {
+          setPendingUpdates((n) => n + 1)
+          setNewIntakes((n) => n + 1)
+        }
+      )
+      .on(
+        'postgres_changes',
+        { event: 'UPDATE', schema: 'public', table: 'patient_journey_state' },
+        () => {
+          setPendingUpdates((n) => n + 1)
+        }
+      )
+      .subscribe()
+
+    return () => {
+      supabase.removeChannel(journeyChannel)
+    }
+  }, [])
+
+  function handleRefresh() {
+    router.refresh()
+    setPendingUpdates(0)
+    setNewIntakes(0)
+  }
 
   function handleViewDetails(journeyId: string) {
     router.push(`/coordinator/journey/${journeyId}`)
@@ -76,6 +114,7 @@ export function JourneyDashboardClient({ initialJourneys }: Props) {
     router.push(`/coordinator/journey/${journeyId}?action=transition`)
   }
 
+  const stats = calcStats(initialJourneys)
   const visible = filterJourneys(initialJourneys, activeTab)
 
   return (
@@ -85,10 +124,39 @@ export function JourneyDashboardClient({ initialJourneys }: Props) {
           <h1 className="text-3xl font-bold">Coordinator Dashboard</h1>
           <p className="text-muted-foreground mt-1">Manage patient journeys and track progress</p>
         </div>
-        <Button onClick={() => router.push('/coordinator/intakes')}>
-          View New Intakes
-        </Button>
+        <div className="flex items-center gap-3">
+          {pendingUpdates > 0 && (
+            <Button variant="outline" size="sm" onClick={handleRefresh} className="gap-2 border-amber-300 text-amber-700 hover:bg-amber-50">
+              <RefreshCw className="h-4 w-4" />
+              {pendingUpdates} update{pendingUpdates > 1 ? 's' : ''} — refresh
+            </Button>
+          )}
+          <Button onClick={() => router.push('/coordinator/intakes')} className="gap-2">
+            {newIntakes > 0 && (
+              <span className="flex items-center gap-1">
+                <Bell className="h-4 w-4" />
+                <Badge variant="destructive" className="h-5 min-w-5 px-1 text-xs">
+                  {newIntakes}
+                </Badge>
+              </span>
+            )}
+            View New Intakes
+          </Button>
+        </div>
       </div>
+
+      {pendingUpdates > 0 && (
+        <div className="flex items-center gap-3 rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
+          <Bell className="h-4 w-4 shrink-0" />
+          <span>
+            <strong>{pendingUpdates} live update{pendingUpdates > 1 ? 's' : ''}</strong> received.
+            Click &ldquo;refresh&rdquo; to load the latest data.
+          </span>
+          <Button variant="ghost" size="sm" onClick={handleRefresh} className="ml-auto h-7 text-amber-700 hover:text-amber-900">
+            Refresh now
+          </Button>
+        </div>
+      )}
 
       <div className="grid gap-4 md:grid-cols-4">
         {[
@@ -117,7 +185,7 @@ export function JourneyDashboardClient({ initialJourneys }: Props) {
             <div className="flex flex-wrap gap-2">
               {Object.entries(stats.byState).map(([state, count]) => (
                 <Badge key={state} variant="secondary" className="text-sm">
-                  {state.replace(/_/g, ' ')}: {count}
+                  {state.replaceAll('_', ' ')}: {count}
                 </Badge>
               ))}
             </div>
