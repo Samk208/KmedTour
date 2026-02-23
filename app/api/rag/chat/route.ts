@@ -1,4 +1,5 @@
 import { getSupabaseContext } from '@/lib/api/client/supabase'
+import { isEmergency, isMedicalAdvice } from '@/lib/rag/chat-guards'
 import { logger } from '@/lib/utils/logger'
 import { rateLimit as rateLimitMiddleware } from '@/lib/utils/rate-limit'
 import { NextResponse } from 'next/server'
@@ -19,43 +20,6 @@ type RetrievedChunk = {
   content: string
   similarity: number
   metadata: unknown
-}
-
-const EMERGENCY_KEYWORDS = [
-  'chest pain',
-  'heart attack',
-  "can't breathe",
-  'difficulty breathing',
-  'severe bleeding',
-  'heavy bleeding',
-  'suicide',
-  'kill myself',
-  'overdose',
-  'unconscious',
-  'stroke',
-  'seizure',
-  'emergency',
-]
-
-const MEDICAL_ADVICE_PHRASES = [
-  'should i get',
-  'should i have',
-  'do i need',
-  'diagnose',
-  "what's wrong with",
-  'am i sick',
-  'what medication',
-  'what treatment',
-]
-
-function isEmergency(text: string): boolean {
-  const q = text.toLowerCase()
-  return EMERGENCY_KEYWORDS.some((k) => q.includes(k))
-}
-
-function isMedicalAdvice(text: string): boolean {
-  const q = text.toLowerCase()
-  return MEDICAL_ADVICE_PHRASES.some((k) => q.includes(k))
 }
 
 async function geminiEmbed(text: string): Promise<number[]> {
@@ -101,8 +65,8 @@ async function callPythonAgent(args: {
   // Construct the prompt with context
   const contextBlock = args.context
     .map((c, idx) => {
-      const cite = `[${idx + 1}] ${c.title}${c.source_url ? ` (${c.source_url})` : ''}`
-      return `${cite}\n${c.content}`
+      const urlPart = c.source_url ? ' (' + c.source_url + ')' : ''
+      return `[${idx + 1}] ${c.title}${urlPart}\n${c.content}`
     })
     .join('\n\n---\n\n')
 
@@ -126,7 +90,6 @@ ${args.question}`
     })
 
     if (!res.ok) {
-      // If Python server is down or errors, throw to trigger fallback/error handling
       throw new Error(`Python agent error: ${res.status}`)
     }
 
@@ -134,11 +97,7 @@ ${args.question}`
     return data.response
 
   } catch (error) {
-    // Fallback: If Python agent is offline, we could try OpenAI directly here as last resort
-    // For now, let's re-throw so the UI knows there's a connection issue (or we can implement direct OpenAI fallback here if desired)
     logger.warn('Python agent connection failed, using fallback', { path: '/api/rag/chat' }, { error: error instanceof Error ? error.message : 'Unknown' })
-  
-    // Quick fallback to direct OpenAI if Python is down (to ensure reliability)
     return await fallbackOpenAIGenerate(args.question, contextBlock)
   }
 }
@@ -166,6 +125,43 @@ async function fallbackOpenAIGenerate(question: string, context: string): Promis
   return data.choices?.[0]?.message?.content || "Service unavailable."
 }
 
+function safetyResponse(route: 'emergency' | 'human', answer: string) {
+  return NextResponse.json({ success: true, route, answer, citations: [], retrieved: [] })
+}
+
+async function runRetrieval(
+  client: NonNullable<Awaited<ReturnType<typeof getSupabaseContext>>['client']>,
+  message: string
+): Promise<RetrievedChunk[]> {
+  const embedding = await geminiEmbed(message)
+  const { data, error } = await client.rpc('match_rag_chunks', {
+    query_embedding: embedding,
+    match_count: 8,
+    min_similarity: 0.2,
+  })
+  if (error) {
+    logger.warn('RAG match_rag_chunks RPC error', { path: '/api/rag/chat' }, { error: error.message })
+    return []
+  }
+  return (data || []) as RetrievedChunk[]
+}
+
+function buildSuccessResponse(retrieved: RetrievedChunk[], answer: string) {
+  const citations = retrieved.map((c, idx) => ({
+    ref: `[${idx + 1}]`,
+    title: c.title,
+    source_url: c.source_url,
+    similarity: c.similarity,
+  }))
+  return NextResponse.json({
+    success: true,
+    route: retrieved.length > 0 ? 'rag' : 'fallback',
+    answer,
+    citations,
+    retrieved: retrieved.map((c) => ({ title: c.title, source_url: c.source_url, similarity: c.similarity })),
+  })
+}
+
 export async function POST(request: Request) {
   try {
     const rateLimitResponse = await rateLimitMiddleware({
@@ -181,99 +177,42 @@ export async function POST(request: Request) {
     const payload = ragChatRequestSchema.parse(await request.json())
 
     if (isEmergency(payload.message)) {
-      return NextResponse.json({
-        success: true,
-        route: 'emergency',
-        answer:
-          '🚨 This may be a medical emergency. Please call emergency services immediately (Korea: 119 / US: 911 / EU: 112). This assistant cannot help with emergencies.',
-        citations: [],
-        retrieved: [],
-      })
-    }
-
-    if (isMedicalAdvice(payload.message)) {
-      return NextResponse.json({
-        success: true,
-        route: 'human',
-        answer:
-          'I can’t provide medical advice, diagnosis, or treatment recommendations. Please consult a qualified healthcare professional. If you’d like, we can help arrange a consultation with a medical coordinator.',
-        citations: [],
-        retrieved: [],
-      })
-    }
-
-    const { client } = getSupabaseContext()
-    if (!client) {
-      return NextResponse.json(
-        {
-          success: false,
-          message: 'Supabase is not configured.',
-        },
-        { status: 500 },
+      return safetyResponse(
+        'emergency',
+        '🚨 This may be a medical emergency. Please call emergency services immediately (Korea: 119 / US: 911 / EU: 112). This assistant cannot help with emergencies.'
       )
     }
 
-    let embedding: number[] | null = null
+    if (isMedicalAdvice(payload.message)) {
+      return safetyResponse(
+        'human',
+        "I can't provide medical advice, diagnosis, or treatment recommendations. Please consult a qualified healthcare professional. If you'd like, we can help arrange a consultation with a medical coordinator."
+      )
+    }
+
+    const { client } = getSupabaseContext()
     let retrieved: RetrievedChunk[] = []
 
-    try {
-      embedding = await geminiEmbed(payload.message)
-
-      const { data, error } = await client.rpc('match_rag_chunks', {
-        query_embedding: embedding,
-        match_count: 8,
-        min_similarity: 0.2,
-      })
-
-      if (error) {
-        logger.warn('RAG match_rag_chunks RPC error', { path: '/api/rag/chat' }, { error: error.message })
-      } else {
-        retrieved = (data || []) as RetrievedChunk[]
+    if (client) {
+      try {
+        retrieved = await runRetrieval(client, payload.message)
+      } catch (err: unknown) {
+        const msg = err instanceof Error ? err.message : 'Unknown error'
+        logger.warn('RAG retrieval/embedding failed, using direct Python agent', { path: '/api/rag/chat' }, { error: msg })
       }
-    } catch (err: unknown) {
-      const errorMessage = err instanceof Error ? err.message : 'Unknown error'
-      logger.warn('RAG retrieval/embedding failed, falling back to general knowledge', {
-        path: '/api/rag/chat',
-      }, {
-        error: errorMessage,
-      })
+    } else {
+      logger.info('RAG chat: Supabase not configured, using direct Python agent', { path: '/api/rag/chat' })
     }
 
-    // Proceeed to generate answer even if retrieval failed (empty context)
-    let answer = ''
+    let answer: string
     try {
-      answer = await callPythonAgent({
-        question: payload.message,
-        context: retrieved,
-      })
+      answer = await callPythonAgent({ question: payload.message, context: retrieved })
     } catch (genError: unknown) {
-      const errorMessage = genError instanceof Error ? genError.message : 'Unknown error'
-      logger.error('RAG generation failed (likely API key issue)', {
-        path: '/api/rag/chat',
-      }, {
-        error: errorMessage,
-      })
-      answer = "I apologize, but I am currently unable to process your request due to a technical service interruption (API Key invalid). Please contact our medical coordinators directly via the 'Contact' page for immediate assistance."
+      logger.error('RAG generation failed', { path: '/api/rag/chat' }, { error: genError instanceof Error ? genError.message : 'Unknown' })
+      answer = "I apologize, but I am currently unable to process your request. Please contact our medical coordinators via the 'Contact' page."
     }
 
-    const citations = retrieved.map((c, idx) => ({
-      ref: `[${idx + 1}]`,
-      title: c.title,
-      source_url: c.source_url,
-      similarity: c.similarity,
-    }))
-
-    return NextResponse.json({
-      success: true,
-      route: retrieved.length > 0 ? 'rag' : 'fallback',
-      answer,
-      citations,
-      retrieved: retrieved.map((c) => ({
-        title: c.title,
-        source_url: c.source_url,
-        similarity: c.similarity,
-      })),
-    })
+    return buildSuccessResponse(retrieved, answer)
   } catch (error) {
     logger.error('RAG chat request failed', {
       path: '/api/rag/chat',
