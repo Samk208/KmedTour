@@ -14,6 +14,7 @@ export interface LogContext {
   path?: string
   method?: string
   ip?: string
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string]: any
 }
 
@@ -27,6 +28,7 @@ export interface LogEntry {
     message: string
     stack?: string
   }
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   metadata?: Record<string, any>
 }
 
@@ -42,6 +44,7 @@ class Logger {
   /**
    * Format and output log entry
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private log(level: LogLevel, message: string, context?: LogContext, metadata?: Record<string, any>, error?: Error) {
     const entry: LogEntry = {
       level,
@@ -76,6 +79,7 @@ class Logger {
   /**
    * Pretty console output for development
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private consoleLog(level: LogLevel, message: string, context?: LogContext, metadata?: Record<string, any>, error?: Error) {
     const emoji = {
       debug: '🔍',
@@ -107,6 +111,7 @@ class Logger {
    */
   private sendToMonitoring(entry: LogEntry) {
     try {
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
       const Sentry = require('@sentry/nextjs')
       if (entry.level === 'error' || entry.level === 'fatal') {
         if (entry.error) {
@@ -142,6 +147,7 @@ class Logger {
   /**
    * Debug level - verbose information for troubleshooting
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   debug(message: string, context?: LogContext, metadata?: Record<string, any>) {
     if (this.isDevelopment) {
       this.log('debug', message, context, metadata)
@@ -151,6 +157,7 @@ class Logger {
   /**
    * Info level - general informational messages
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   info(message: string, context?: LogContext, metadata?: Record<string, any>) {
     this.log('info', message, context, metadata)
   }
@@ -158,6 +165,7 @@ class Logger {
   /**
    * Warn level - warning messages that don't stop execution
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   warn(message: string, context?: LogContext, metadata?: Record<string, any>) {
     this.log('warn', message, context, metadata)
   }
@@ -165,6 +173,7 @@ class Logger {
   /**
    * Error level - error conditions that need attention
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   error(message: string, context?: LogContext, metadata?: Record<string, any>, error?: Error) {
     this.log('error', message, context, metadata, error)
   }
@@ -172,6 +181,7 @@ class Logger {
   /**
    * Fatal level - severe errors that may cause system failure
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   fatal(message: string, context?: LogContext, metadata?: Record<string, any>, error?: Error) {
     this.log('fatal', message, context, metadata, error)
   }

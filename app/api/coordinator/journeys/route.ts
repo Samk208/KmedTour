@@ -1,10 +1,14 @@
 import { getSupabaseContext } from '@/lib/api/client/supabase'
-import { requireAuth } from '@/lib/utils/api-auth'
+import { requireRole } from '@/lib/utils/api-auth'
 import { logger } from '@/lib/utils/logger'
+import { rateLimit, RateLimitPresets } from '@/lib/utils/rate-limit'
 import { NextResponse } from 'next/server'
 
 export async function GET(request: Request) {
-  const auth = await requireAuth()
+  const rateLimitResponse = await rateLimit({ ...RateLimitPresets.STANDARD, keyPrefix: 'coord-journeys' })(request)
+  if (rateLimitResponse) return rateLimitResponse
+
+  const auth = await requireRole('coordinator', 'admin')
   if (!auth.authenticated) return auth.response
 
   try {

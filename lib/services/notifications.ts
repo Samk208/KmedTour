@@ -152,7 +152,7 @@ export async function sendEmail(payload: EmailPayload): Promise<{ success: boole
       subject: payload.subject,
       html: payload.html,
       text: payload.text,
-      reply_to: payload.replyTo,
+      replyTo: payload.replyTo,
     })
 
     if (error) {
@@ -260,7 +260,8 @@ export async function processNotificationQueue(
     if (notification.channel === 'email' && patientIntake.email) {
       const template = emailTemplates[notification.template_name as keyof typeof emailTemplates]
       if (template) {
-        const emailContent = template(templateData as { patientName: string; [key: string]: unknown })
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const emailContent = (template as (data: any) => { subject: string; html: string; text: string })(templateData)
         result = await sendEmail({
           to: patientIntake.email,
           ...emailContent,

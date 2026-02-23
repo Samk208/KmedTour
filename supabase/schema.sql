@@ -285,33 +285,119 @@ create index if not exists idx_clinic_applications_country on public.clinic_appl
 -- ==============================
 
 -- 1. Enhanced Hospital capabilities
-alter table public.clinics 
+alter table public.clinics
 add column if not exists api_integration_level text default 'NONE', -- 'NONE' | 'WEBHOOK' | 'FULL_API'
 add column if not exists survival_rates jsonb, -- e.g. {"ivf": 0.65, "cardiac": 0.98}
 add column if not exists booking_webhook_url text;
 
--- 2. LangGraph Persistence (Checkpoints)
+-- 2. Patient Journey State Machine
+-- Tracks patient journey through: INQUIRY → TRIAGE → MATCHING → QUOTED → BOOKED → TRAVELING → COMPLETED
 create table if not exists public.patient_journey_state (
-    patient_id uuid primary key references public.patient_intakes(id),
-    current_stage text not null, -- 'INTAKE' | 'TRIAGE' | 'MATCHING' | 'QUOTE' | 'BOOKING'
-    thread_id text not null, -- LangGraph thread ID
-    checkpoint_data jsonb, -- Serialized graph state
-    last_updated_at timestamptz not null default now()
+    id uuid primary key default uuid_generate_v4(),
+    patient_intake_id uuid not null references public.patient_intakes(id),
+    current_state text not null default 'INQUIRY',
+    state_data jsonb default '{}',
+    state_history jsonb default '[]',
+    assigned_coordinator_id uuid, -- future link to auth.users (coordinator)
+    thread_id text, -- LangGraph thread ID (optional, for AI-assisted journeys)
+    checkpoint_data jsonb, -- Serialized LangGraph state
+    created_at timestamptz not null default now(),
+    updated_at timestamptz not null default now()
 );
 
--- 3. Payment / Quote Transactions
+create index if not exists idx_journey_state_patient on public.patient_journey_state (patient_intake_id);
+create index if not exists idx_journey_state_current on public.patient_journey_state (current_state);
+create index if not exists idx_journey_state_coordinator on public.patient_journey_state (assigned_coordinator_id);
+
+-- 3. Quotes — itemized treatment cost breakdowns
 create table if not exists public.quotes (
     id uuid primary key default uuid_generate_v4(),
-    patient_id uuid references public.patient_intakes(id),
+    journey_id uuid references public.patient_journey_state(id),
     hospital_id uuid references public.clinics(id),
-    total_amount numeric,
-    currency text default 'USD',
-    status text default 'DRAFT', -- 'DRAFT' | 'SENT' | 'PAID' | 'EXPIRED'
+    treatment_id uuid references public.treatments(id),
+    treatment_cost numeric not null default 0,
+    accommodation_cost numeric not null default 0,
+    transport_cost numeric not null default 0,
+    misc_cost numeric not null default 0,
+    total_amount numeric not null default 0,
+    currency text not null default 'USD',
+    status text not null default 'DRAFT', -- 'DRAFT' | 'SENT' | 'ACCEPTED' | 'EXPIRED' | 'REJECTED'
+    version integer not null default 1,
+    valid_until timestamptz,
+    payment_schedule jsonb, -- [{amount, dueDate, description}]
+    notes text,
     pdf_url text,
     stripe_payment_link text,
-    breakdown jsonb, -- {procedure: 5000, hotel: 1200, flight: 800}
+    breakdown jsonb, -- legacy / additional breakdown data
+    created_at timestamptz not null default now(),
+    updated_at timestamptz not null default now()
+);
+
+create index if not exists idx_quotes_journey on public.quotes (journey_id);
+create index if not exists idx_quotes_status on public.quotes (status);
+create index if not exists idx_quotes_hospital on public.quotes (hospital_id);
+
+-- 4. Bookings — confirmed patient bookings from accepted quotes
+create table if not exists public.bookings (
+    id uuid primary key default uuid_generate_v4(),
+    journey_id uuid references public.patient_journey_state(id),
+    quote_id uuid references public.quotes(id),
+    hospital_id uuid references public.clinics(id),
+    treatment_id uuid references public.treatments(id),
+    status text not null default 'PENDING_PAYMENT',
+      -- 'PENDING_PAYMENT' | 'DEPOSIT_PAID' | 'CONFIRMED' | 'CANCELLED' | 'COMPLETED'
+    total_amount numeric not null default 0,
+    amount_paid numeric not null default 0,
+    currency text not null default 'USD',
+    payment_schedule jsonb,
+    stripe_payment_id text,
+    scheduled_date date,
+    travel_dates jsonb, -- {arrival, departure}
+    metadata jsonb,
+    created_at timestamptz not null default now(),
+    updated_at timestamptz not null default now()
+);
+
+create index if not exists idx_bookings_journey on public.bookings (journey_id);
+create index if not exists idx_bookings_status on public.bookings (status);
+create index if not exists idx_bookings_hospital on public.bookings (hospital_id);
+
+-- 5. Journey Events — audit log for all journey state changes
+create table if not exists public.journey_events (
+    id uuid primary key default uuid_generate_v4(),
+    journey_id uuid not null references public.patient_journey_state(id),
+    event_type text not null,
+      -- 'JOURNEY_STARTED' | 'STATE_TRANSITION' | 'QUOTE_CREATED' | 'QUOTE_SENT' | 'QUOTE_ACCEPTED'
+      -- 'BOOKING_CREATED' | 'PAYMENT_COMPLETED' | 'COORDINATOR_ASSIGNED' | ...
+    actor_type text not null default 'system', -- 'system' | 'coordinator' | 'patient'
+    actor_id uuid, -- future link to auth.users
+    event_data jsonb default '{}',
     created_at timestamptz not null default now()
 );
+
+create index if not exists idx_journey_events_journey on public.journey_events (journey_id);
+create index if not exists idx_journey_events_type on public.journey_events (event_type);
+create index if not exists idx_journey_events_created on public.journey_events (created_at desc);
+
+-- 6. Notifications — queued notifications for email/SMS/WhatsApp
+create table if not exists public.notifications (
+    id uuid primary key default uuid_generate_v4(),
+    journey_id uuid references public.patient_journey_state(id),
+    template_name text not null,
+    channel text not null default 'email', -- 'email' | 'sms' | 'whatsapp'
+    priority text not null default 'normal', -- 'low' | 'normal' | 'high' | 'urgent'
+    status text not null default 'pending', -- 'pending' | 'sent' | 'failed' | 'cancelled'
+    data jsonb default '{}',
+    sent_at timestamptz,
+    error_message text,
+    retry_count integer not null default 0,
+    created_at timestamptz not null default now(),
+    updated_at timestamptz not null default now()
+);
+
+create index if not exists idx_notifications_journey on public.notifications (journey_id);
+create index if not exists idx_notifications_status on public.notifications (status);
+create index if not exists idx_notifications_channel on public.notifications (channel, status);
 
 -- ==============================
 -- End of Deep Tech Extensions
@@ -409,3 +495,271 @@ as $$
   order by c.embedding <=> query_embedding
   limit match_count;
 $$;
+
+-- ==============================
+-- Row Level Security (RLS) Policies
+-- ==============================
+-- Strategy:
+--   • Content tables (treatments, clinics, countries, articles, testimonials, africa_regions)
+--     → Public read, service_role write
+--   • User interaction tables (patient_intakes, contact_submissions, user_favorites, clinic_applications)
+--     → Authenticated users read their own data, anonymous insert for forms, service_role full access
+--   • Journey/operational tables (patient_journey_state, quotes, bookings, journey_events, notifications)
+--     → Authenticated users (patients) read their own, coordinators read assigned, service_role full access
+
+-- -------------------------------------------------------
+-- Content tables: public read, service_role write
+-- -------------------------------------------------------
+
+alter table public.treatments enable row level security;
+drop policy if exists treatments_public_read on public.treatments;
+create policy treatments_public_read on public.treatments for select using (true);
+drop policy if exists treatments_service_write on public.treatments;
+create policy treatments_service_write on public.treatments for all
+  using (auth.role() = 'service_role')
+  with check (auth.role() = 'service_role');
+
+alter table public.clinics enable row level security;
+drop policy if exists clinics_public_read on public.clinics;
+create policy clinics_public_read on public.clinics for select using (true);
+drop policy if exists clinics_service_write on public.clinics;
+create policy clinics_service_write on public.clinics for all
+  using (auth.role() = 'service_role')
+  with check (auth.role() = 'service_role');
+
+alter table public.countries enable row level security;
+drop policy if exists countries_public_read on public.countries;
+create policy countries_public_read on public.countries for select using (true);
+drop policy if exists countries_service_write on public.countries;
+create policy countries_service_write on public.countries for all
+  using (auth.role() = 'service_role')
+  with check (auth.role() = 'service_role');
+
+alter table public.articles enable row level security;
+drop policy if exists articles_public_read on public.articles;
+create policy articles_public_read on public.articles for select using (true);
+drop policy if exists articles_service_write on public.articles;
+create policy articles_service_write on public.articles for all
+  using (auth.role() = 'service_role')
+  with check (auth.role() = 'service_role');
+
+alter table public.testimonials enable row level security;
+drop policy if exists testimonials_public_read on public.testimonials;
+create policy testimonials_public_read on public.testimonials for select using (true);
+drop policy if exists testimonials_service_write on public.testimonials;
+create policy testimonials_service_write on public.testimonials for all
+  using (auth.role() = 'service_role')
+  with check (auth.role() = 'service_role');
+
+alter table public.africa_regions enable row level security;
+drop policy if exists africa_regions_public_read on public.africa_regions;
+create policy africa_regions_public_read on public.africa_regions for select using (true);
+drop policy if exists africa_regions_service_write on public.africa_regions;
+create policy africa_regions_service_write on public.africa_regions for all
+  using (auth.role() = 'service_role')
+  with check (auth.role() = 'service_role');
+
+-- -------------------------------------------------------
+-- Patient Intakes: anonymous insert, users read own, service_role full
+-- -------------------------------------------------------
+
+alter table public.patient_intakes enable row level security;
+
+-- Anyone can submit an intake form (anonymous insert)
+drop policy if exists patient_intakes_anon_insert on public.patient_intakes;
+create policy patient_intakes_anon_insert on public.patient_intakes for insert
+  with check (true);
+
+-- Authenticated patients can read their own intakes (matched by patient_id → auth.uid)
+drop policy if exists patient_intakes_user_read on public.patient_intakes;
+create policy patient_intakes_user_read on public.patient_intakes for select
+  using (
+    auth.role() = 'service_role'
+    or patient_id = auth.uid()
+  );
+
+-- Service role can do everything (coordinators use service_role via server-side API)
+drop policy if exists patient_intakes_service_all on public.patient_intakes;
+create policy patient_intakes_service_all on public.patient_intakes for all
+  using (auth.role() = 'service_role')
+  with check (auth.role() = 'service_role');
+
+-- -------------------------------------------------------
+-- Contact Submissions: anonymous insert, service_role read
+-- -------------------------------------------------------
+
+alter table public.contact_submissions enable row level security;
+
+drop policy if exists contact_anon_insert on public.contact_submissions;
+create policy contact_anon_insert on public.contact_submissions for insert
+  with check (true);
+
+drop policy if exists contact_service_all on public.contact_submissions;
+create policy contact_service_all on public.contact_submissions for all
+  using (auth.role() = 'service_role')
+  with check (auth.role() = 'service_role');
+
+-- -------------------------------------------------------
+-- User Favorites: users CRUD own, service_role full
+-- -------------------------------------------------------
+
+alter table public.user_favorites enable row level security;
+
+-- Authenticated users manage their own favorites
+drop policy if exists favorites_user_select on public.user_favorites;
+create policy favorites_user_select on public.user_favorites for select
+  using (
+    auth.role() = 'service_role'
+    or user_id = auth.uid()
+    or (user_id is null and anonymous_id is not null) -- anonymous favorites are readable by anyone who has the anonymous_id
+  );
+
+drop policy if exists favorites_user_insert on public.user_favorites;
+create policy favorites_user_insert on public.user_favorites for insert
+  with check (
+    auth.role() = 'service_role'
+    or user_id = auth.uid()
+    or (user_id is null and anonymous_id is not null)
+  );
+
+drop policy if exists favorites_user_delete on public.user_favorites;
+create policy favorites_user_delete on public.user_favorites for delete
+  using (
+    auth.role() = 'service_role'
+    or user_id = auth.uid()
+    or (user_id is null and anonymous_id is not null)
+  );
+
+drop policy if exists favorites_service_all on public.user_favorites;
+create policy favorites_service_all on public.user_favorites for all
+  using (auth.role() = 'service_role')
+  with check (auth.role() = 'service_role');
+
+-- -------------------------------------------------------
+-- Clinic Applications: anonymous insert, service_role full
+-- -------------------------------------------------------
+
+alter table public.clinic_applications enable row level security;
+
+drop policy if exists clinic_apps_anon_insert on public.clinic_applications;
+create policy clinic_apps_anon_insert on public.clinic_applications for insert
+  with check (true);
+
+drop policy if exists clinic_apps_service_all on public.clinic_applications;
+create policy clinic_apps_service_all on public.clinic_applications for all
+  using (auth.role() = 'service_role')
+  with check (auth.role() = 'service_role');
+
+-- -------------------------------------------------------
+-- Patient Journey State: service_role full (all API access is server-side)
+-- Patients read their own journeys via linked patient_intake_id
+-- -------------------------------------------------------
+
+alter table public.patient_journey_state enable row level security;
+
+drop policy if exists journey_state_service_all on public.patient_journey_state;
+create policy journey_state_service_all on public.patient_journey_state for all
+  using (auth.role() = 'service_role')
+  with check (auth.role() = 'service_role');
+
+drop policy if exists journey_state_patient_read on public.patient_journey_state;
+create policy journey_state_patient_read on public.patient_journey_state for select
+  using (
+    exists (
+      select 1 from public.patient_intakes pi
+      where pi.id = patient_journey_state.patient_intake_id
+        and pi.patient_id = auth.uid()
+    )
+  );
+
+-- -------------------------------------------------------
+-- Quotes: service_role full, patients read their own journey's quotes
+-- -------------------------------------------------------
+
+alter table public.quotes enable row level security;
+
+drop policy if exists quotes_service_all on public.quotes;
+create policy quotes_service_all on public.quotes for all
+  using (auth.role() = 'service_role')
+  with check (auth.role() = 'service_role');
+
+drop policy if exists quotes_patient_read on public.quotes;
+create policy quotes_patient_read on public.quotes for select
+  using (
+    exists (
+      select 1 from public.patient_journey_state pjs
+      join public.patient_intakes pi on pi.id = pjs.patient_intake_id
+      where pjs.id = quotes.journey_id
+        and pi.patient_id = auth.uid()
+    )
+  );
+
+-- -------------------------------------------------------
+-- Bookings: service_role full, patients read their own
+-- -------------------------------------------------------
+
+alter table public.bookings enable row level security;
+
+drop policy if exists bookings_service_all on public.bookings;
+create policy bookings_service_all on public.bookings for all
+  using (auth.role() = 'service_role')
+  with check (auth.role() = 'service_role');
+
+drop policy if exists bookings_patient_read on public.bookings;
+create policy bookings_patient_read on public.bookings for select
+  using (
+    exists (
+      select 1 from public.patient_journey_state pjs
+      join public.patient_intakes pi on pi.id = pjs.patient_intake_id
+      where pjs.id = bookings.journey_id
+        and pi.patient_id = auth.uid()
+    )
+  );
+
+-- -------------------------------------------------------
+-- Journey Events: service_role full, patients read their own timeline
+-- -------------------------------------------------------
+
+alter table public.journey_events enable row level security;
+
+drop policy if exists journey_events_service_all on public.journey_events;
+create policy journey_events_service_all on public.journey_events for all
+  using (auth.role() = 'service_role')
+  with check (auth.role() = 'service_role');
+
+drop policy if exists journey_events_patient_read on public.journey_events;
+create policy journey_events_patient_read on public.journey_events for select
+  using (
+    exists (
+      select 1 from public.patient_journey_state pjs
+      join public.patient_intakes pi on pi.id = pjs.patient_intake_id
+      where pjs.id = journey_events.journey_id
+        and pi.patient_id = auth.uid()
+    )
+  );
+
+-- -------------------------------------------------------
+-- Notifications: service_role full, patients read their own
+-- -------------------------------------------------------
+
+alter table public.notifications enable row level security;
+
+drop policy if exists notifications_service_all on public.notifications;
+create policy notifications_service_all on public.notifications for all
+  using (auth.role() = 'service_role')
+  with check (auth.role() = 'service_role');
+
+drop policy if exists notifications_patient_read on public.notifications;
+create policy notifications_patient_read on public.notifications for select
+  using (
+    exists (
+      select 1 from public.patient_journey_state pjs
+      join public.patient_intakes pi on pi.id = pjs.patient_intake_id
+      where pjs.id = notifications.journey_id
+        and pi.patient_id = auth.uid()
+    )
+  );
+
+-- ==============================
+-- End of RLS Policies
+-- ==============================

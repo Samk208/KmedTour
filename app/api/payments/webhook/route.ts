@@ -1,5 +1,6 @@
 import { getSupabaseContext } from '@/lib/api/client/supabase'
 import { logger } from '@/lib/utils/logger'
+import { rateLimit, RateLimitPresets } from '@/lib/utils/rate-limit'
 import { NextResponse } from 'next/server'
 import Stripe from 'stripe'
 
@@ -13,6 +14,9 @@ const stripe = process.env.STRIPE_SECRET_KEY
 const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET
 
 export async function POST(request: Request) {
+  const rateLimitResponse = await rateLimit({ ...RateLimitPresets.GENEROUS, keyPrefix: 'stripe-webhook' })(request)
+  if (rateLimitResponse) return rateLimitResponse
+
   if (!stripe || !webhookSecret) {
     return NextResponse.json(
       { success: false, message: 'Payment system not configured' },

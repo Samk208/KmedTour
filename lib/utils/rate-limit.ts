@@ -1,193 +1,218 @@
 /**
  * Rate limiting utility for API routes
- * 
- * Implements in-memory rate limiting with sliding window algorithm.
- * For production, consider Redis-based rate limiting for distributed systems.
+ *
+ * Uses Upstash Redis for distributed rate limiting on serverless platforms
+ * (Netlify, Vercel). Falls back to in-memory when Upstash env vars are absent
+ * so local development works without any Redis setup.
  */
 
 import { NextResponse } from 'next/server'
 
-interface RateLimitEntry {
-  count: number
-  resetAtMs: number
-  timestamps: number[]
+// ---------------------------------------------------------------------------
+// Shared types
+// ---------------------------------------------------------------------------
+
+export interface RateLimitConfig {
+  limit: number
+  windowMs: number
+  keyPrefix?: string
 }
 
-class RateLimiter {
-  private store: Map<string, RateLimitEntry>
-  private cleanupInterval: NodeJS.Timeout | null = null
+// ---------------------------------------------------------------------------
+// In-memory implementation (local dev / test fallback)
+// ---------------------------------------------------------------------------
+
+interface RateLimitEntry {
+  timestamps: number[]
+  resetAtMs: number
+}
+
+class InMemoryRateLimiter {
+  private readonly store: Map<string, RateLimitEntry> = new Map()
+  private cleanupTimer: ReturnType<typeof setInterval> | null = null
 
   constructor() {
-    this.store = new Map()
-    
-    // Clean up expired entries every 5 minutes
-    this.cleanupInterval = setInterval(() => {
-      this.cleanup()
-    }, 5 * 60 * 1000)
+    if (typeof setInterval !== 'undefined') {
+      this.cleanupTimer = setInterval(() => this.cleanup(), 5 * 60_000)
+    }
   }
 
-  /**
-   * Check if request is within rate limit
-   * @param key - Unique identifier (IP, user ID, etc.)
-   * @param limit - Maximum number of requests
-   * @param windowMs - Time window in milliseconds
-   * @returns true if allowed, false if rate limited
-   */
   check(key: string, limit: number, windowMs: number): boolean {
     const now = Date.now()
-    const existing = this.store.get(key)
+    const entry = this.store.get(key)
 
-    // No previous requests or window expired
-    if (!existing || existing.resetAtMs <= now) {
-      this.store.set(key, {
-        count: 1,
-        resetAtMs: now + windowMs,
-        timestamps: [now],
-      })
+    if (!entry || entry.resetAtMs <= now) {
+      this.store.set(key, { timestamps: [now], resetAtMs: now + windowMs })
       return true
     }
 
-    // Remove timestamps outside the sliding window
-    existing.timestamps = existing.timestamps.filter(ts => ts > now - windowMs)
-    existing.count = existing.timestamps.length
+    entry.timestamps = entry.timestamps.filter(ts => ts > now - windowMs)
+    if (entry.timestamps.length >= limit) return false
 
-    // Check if limit exceeded
-    if (existing.count >= limit) {
-      return false
-    }
-
-    // Add new request
-    existing.timestamps.push(now)
-    existing.count += 1
-    
+    entry.timestamps.push(now)
     return true
   }
 
-  /**
-   * Get remaining requests for a key
-   */
   remaining(key: string, limit: number, windowMs: number): number {
     const now = Date.now()
-    const existing = this.store.get(key)
-
-    if (!existing || existing.resetAtMs <= now) {
-      return limit
-    }
-
-    // Count valid requests in current window
-    const validTimestamps = existing.timestamps.filter(ts => ts > now - windowMs)
-    return Math.max(0, limit - validTimestamps.length)
+    const entry = this.store.get(key)
+    if (!entry || entry.resetAtMs <= now) return limit
+    const valid = entry.timestamps.filter(ts => ts > now - windowMs).length
+    return Math.max(0, limit - valid)
   }
 
-  /**
-   * Get time until rate limit resets
-   */
   resetTime(key: string): number {
-    const existing = this.store.get(key)
-    if (!existing) return 0
-
-    const now = Date.now()
-    return Math.max(0, existing.resetAtMs - now)
+    const entry = this.store.get(key)
+    if (!entry) return 0
+    return Math.max(0, entry.resetAtMs - Date.now())
   }
 
-  /**
-   * Clean up expired entries
-   */
-  private cleanup() {
-    const now = Date.now()
-    const keysToDelete: string[] = []
-
-    this.store.forEach((entry, key) => {
-      if (entry.resetAtMs <= now) {
-        keysToDelete.push(key)
-      }
-    })
-
-    keysToDelete.forEach(key => this.store.delete(key))
-  }
-
-  /**
-   * Clear all entries (useful for testing)
-   */
   clear() {
     this.store.clear()
   }
 
-  /**
-   * Stop cleanup interval (useful for cleanup)
-   */
   destroy() {
-    if (this.cleanupInterval) {
-      clearInterval(this.cleanupInterval)
-      this.cleanupInterval = null
+    if (this.cleanupTimer) {
+      clearInterval(this.cleanupTimer)
+      this.cleanupTimer = null
+    }
+  }
+
+  private cleanup() {
+    const now = Date.now()
+    for (const [key, entry] of this.store) {
+      if (entry.resetAtMs <= now) this.store.delete(key)
     }
   }
 }
 
-// Singleton instance
-const rateLimiter = new RateLimiter()
+// ---------------------------------------------------------------------------
+// Upstash implementation (production)
+// ---------------------------------------------------------------------------
 
-/**
- * Rate limit configuration presets
- */
-export const RateLimitPresets = {
-  // Strict: 10 requests per minute
-  STRICT: { limit: 10, windowMs: 60_000 },
-  
-  // Standard: 30 requests per minute
-  STANDARD: { limit: 30, windowMs: 60_000 },
-  
-  // Moderate: 60 requests per minute
-  MODERATE: { limit: 60, windowMs: 60_000 },
-  
-  // Generous: 100 requests per minute
-  GENEROUS: { limit: 100, windowMs: 60_000 },
-  
-  // AI endpoints: 20 requests per minute (expensive operations)
-  AI: { limit: 20, windowMs: 60_000 },
-  
-  // Auth endpoints: 5 attempts per 15 minutes
-  AUTH: { limit: 5, windowMs: 15 * 60_000 },
-  
-  // Payment endpoints: 10 requests per hour
-  PAYMENT: { limit: 10, windowMs: 60 * 60_000 },
+type UpstashLimiter = {
+  limit: (key: string) => Promise<{ success: boolean; remaining: number; reset: number }>
 }
 
-/**
- * Extract client identifier from request
- */
+const upstashLimiterCache: Map<string, UpstashLimiter> = new Map()
+
+async function getUpstashLimiter(
+  limit: number,
+  windowMs: number,
+  prefix: string
+): Promise<UpstashLimiter | null> {
+  const url = process.env.UPSTASH_REDIS_REST_URL
+  const token = process.env.UPSTASH_REDIS_REST_TOKEN
+
+  if (!url || !token) return null
+
+  const cacheKey = `${prefix}:${limit}:${windowMs}`
+  if (upstashLimiterCache.has(cacheKey)) {
+    return upstashLimiterCache.get(cacheKey)!
+  }
+
+  try {
+    const { Redis } = await import('@upstash/redis')
+    const { Ratelimit } = await import('@upstash/ratelimit')
+
+    const redis = new Redis({ url, token })
+    const windowSec = Math.ceil(windowMs / 1000)
+
+    const limiter = new Ratelimit({
+      redis,
+      limiter: Ratelimit.slidingWindow(limit, `${windowSec} s`),
+      prefix: `kmedtour:rl:${prefix}`,
+    })
+
+    upstashLimiterCache.set(cacheKey, limiter)
+    return limiter
+  } catch {
+    return null
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Singleton in-memory limiter (exported for tests)
+// ---------------------------------------------------------------------------
+
+const rateLimiter = new InMemoryRateLimiter()
+export default rateLimiter
+
+// ---------------------------------------------------------------------------
+// Rate limit presets
+// ---------------------------------------------------------------------------
+
+export const RateLimitPresets = {
+  STRICT:    { limit: 10,  windowMs: 60_000 },
+  STANDARD:  { limit: 30,  windowMs: 60_000 },
+  MODERATE:  { limit: 60,  windowMs: 60_000 },
+  GENEROUS:  { limit: 100, windowMs: 60_000 },
+  AI:        { limit: 20,  windowMs: 60_000 },
+  AUTH:      { limit: 5,   windowMs: 15 * 60_000 },
+  PAYMENT:   { limit: 10,  windowMs: 60 * 60_000 },
+} as const
+
+// ---------------------------------------------------------------------------
+// Client identifier helper
+// ---------------------------------------------------------------------------
+
 export function getClientIdentifier(request: Request): string {
-  // Try to get IP from headers
   const headers = request.headers
   const forwarded = headers.get('x-forwarded-for')
   const realIp = headers.get('x-real-ip')
-  const ip = forwarded?.split(',')[0]?.trim() || realIp || 'unknown'
-  
-  // Could also include user ID if authenticated
-  // const userId = getUserIdFromRequest(request)
-  // return userId ? `user:${userId}` : `ip:${ip}`
-  
+  const ip = forwarded?.split(',')[0]?.trim() ?? realIp ?? 'unknown'
   return `ip:${ip}`
 }
 
-/**
- * Rate limiting middleware for API routes
- */
-export function rateLimit(options: {
-  limit: number
-  windowMs: number
-  keyPrefix?: string
-}) {
+// ---------------------------------------------------------------------------
+// Main middleware factory
+// ---------------------------------------------------------------------------
+
+export function rateLimit(options: RateLimitConfig) {
   return async (request: Request): Promise<NextResponse | null> => {
     const clientId = getClientIdentifier(request)
-    const key = options.keyPrefix ? `${options.keyPrefix}:${clientId}` : clientId
-    
+    const prefix = options.keyPrefix ?? 'default'
+    const key = `${prefix}:${clientId}`
+
+    const upstash = await getUpstashLimiter(options.limit, options.windowMs, prefix)
+
+    if (upstash) {
+      // --- Upstash path (production) ---
+      const result = await upstash.limit(clientId)
+
+      if (!result.success) {
+        const resetMs = result.reset - Date.now()
+        const retryAfter = Math.max(1, Math.ceil(resetMs / 1000))
+
+        return NextResponse.json(
+          {
+            success: false,
+            error: 'Rate limit exceeded',
+            message: 'Too many requests. Please try again later.',
+            retryAfter,
+          },
+          {
+            status: 429,
+            headers: {
+              'Retry-After': retryAfter.toString(),
+              'X-RateLimit-Limit': options.limit.toString(),
+              'X-RateLimit-Remaining': result.remaining.toString(),
+              'X-RateLimit-Reset': new Date(result.reset).toISOString(),
+            },
+          }
+        )
+      }
+
+      return null
+    }
+
+    // --- In-memory fallback (local dev / test) ---
     const allowed = rateLimiter.check(key, options.limit, options.windowMs)
-    
+
     if (!allowed) {
-      const resetTime = rateLimiter.resetTime(key)
-      const retryAfter = Math.ceil(resetTime / 1000)
-      
+      const resetMs = rateLimiter.resetTime(key)
+      const retryAfter = Math.ceil(resetMs / 1000)
+
       return NextResponse.json(
         {
           success: false,
@@ -201,21 +226,20 @@ export function rateLimit(options: {
             'Retry-After': retryAfter.toString(),
             'X-RateLimit-Limit': options.limit.toString(),
             'X-RateLimit-Remaining': '0',
-            'X-RateLimit-Reset': new Date(Date.now() + resetTime).toISOString(),
+            'X-RateLimit-Reset': new Date(Date.now() + resetMs).toISOString(),
           },
         }
       )
     }
-    
-    // Return null to indicate request should proceed
-    // Caller can add rate limit headers if needed
+
     return null
   }
 }
 
-/**
- * Helper to add rate limit headers to response
- */
+// ---------------------------------------------------------------------------
+// Header helper (kept for backwards compatibility)
+// ---------------------------------------------------------------------------
+
 export function addRateLimitHeaders(
   response: NextResponse,
   key: string,
@@ -223,13 +247,11 @@ export function addRateLimitHeaders(
   windowMs: number
 ): NextResponse {
   const remaining = rateLimiter.remaining(key, limit, windowMs)
-  const resetTime = rateLimiter.resetTime(key)
-  
+  const resetMs = rateLimiter.resetTime(key)
+
   response.headers.set('X-RateLimit-Limit', limit.toString())
   response.headers.set('X-RateLimit-Remaining', remaining.toString())
-  response.headers.set('X-RateLimit-Reset', new Date(Date.now() + resetTime).toISOString())
-  
+  response.headers.set('X-RateLimit-Reset', new Date(Date.now() + resetMs).toISOString())
+
   return response
 }
-
-export default rateLimiter

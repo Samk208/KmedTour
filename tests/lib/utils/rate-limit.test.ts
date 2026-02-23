@@ -33,7 +33,19 @@ describe('getClientIdentifier', () => {
   })
 })
 
-describe('RateLimiter', () => {
+describe('in-memory fallback', () => {
+  it('uses in-memory rate limiter when Upstash env vars are missing', () => {
+    // In test environment, UPSTASH vars are absent → in-memory fallback active
+    expect(process.env.UPSTASH_REDIS_REST_URL).toBeUndefined()
+    expect(process.env.UPSTASH_REDIS_REST_TOKEN).toBeUndefined()
+    expect(typeof rateLimiter.check).toBe('function')
+    expect(typeof rateLimiter.remaining).toBe('function')
+    expect(typeof rateLimiter.clear).toBe('function')
+    expect(typeof rateLimiter.destroy).toBe('function')
+  })
+})
+
+describe('RateLimiter (in-memory)', () => {
   beforeEach(() => {
     rateLimiter.clear()
   })
@@ -57,7 +69,7 @@ describe('RateLimiter', () => {
   })
 })
 
-describe('rateLimit middleware', () => {
+describe('rateLimit middleware (in-memory fallback)', () => {
   beforeEach(() => {
     rateLimiter.clear()
   })
@@ -76,5 +88,28 @@ describe('rateLimit middleware', () => {
     expect(result!.status).toBe(429)
     const body = await result!.json()
     expect(body.error).toBe('Rate limit exceeded')
+  })
+
+  it('uses keyPrefix in rate limit key', async () => {
+    const middlewareA = rateLimit({ limit: 1, windowMs: 60_000, keyPrefix: 'route-a' })
+    const middlewareB = rateLimit({ limit: 1, windowMs: 60_000, keyPrefix: 'route-b' })
+    // exhaust route-a
+    await middlewareA(makeRequest('6.6.6.6'))
+    const blockedA = await middlewareA(makeRequest('6.6.6.6'))
+    // route-b should still be open for same IP
+    const allowedB = await middlewareB(makeRequest('6.6.6.6'))
+    expect(blockedA?.status).toBe(429)
+    expect(allowedB).toBeNull()
+  })
+})
+
+describe('RateLimitPresets', () => {
+  it('has all expected presets', () => {
+    const expected = ['STRICT', 'STANDARD', 'MODERATE', 'GENEROUS', 'AI', 'AUTH', 'PAYMENT']
+    for (const key of expected) {
+      expect(RateLimitPresets).toHaveProperty(key)
+      expect((RateLimitPresets as Record<string, unknown>)[key]).toHaveProperty('limit')
+      expect((RateLimitPresets as Record<string, unknown>)[key]).toHaveProperty('windowMs')
+    }
   })
 })

@@ -1,6 +1,7 @@
 import { getSupabaseContext } from '@/lib/api/client/supabase'
-import { requireAuth } from '@/lib/utils/api-auth'
+import { requireRole } from '@/lib/utils/api-auth'
 import { logger } from '@/lib/utils/logger'
+import { rateLimit, RateLimitPresets } from '@/lib/utils/rate-limit'
 import { validateUUID } from '@/lib/utils/validate-params'
 import { NextResponse } from 'next/server'
 import { z } from 'zod'
@@ -15,7 +16,10 @@ interface RouteParams {
 }
 
 export async function POST(request: Request, { params }: RouteParams) {
-  const auth = await requireAuth()
+  const rateLimitResponse = await rateLimit({ ...RateLimitPresets.STRICT, keyPrefix: 'assign-coordinator' })(request)
+  if (rateLimitResponse) return rateLimitResponse
+
+  const auth = await requireRole('coordinator', 'admin')
   if (!auth.authenticated) return auth.response
 
   try {

@@ -8,8 +8,10 @@ import { redirect } from 'next/navigation'
 export default async function PatientLoginPage({
     searchParams,
 }: {
-    searchParams: { message?: string }
+    searchParams: Promise<{ message?: string; success?: string }>
 }) {
+    const resolvedParams = await searchParams
+
     const login = async (formData: FormData) => {
         'use server'
         const email = formData.get('email') as string
@@ -54,12 +56,12 @@ export default async function PatientLoginPage({
                             />
                         </div>
 
-                        {searchParams.message && (
-                            <div className="text-red-500 text-sm text-center">{searchParams.message}</div>
+                        {resolvedParams.message && (
+                            <div className="text-red-500 text-sm text-center">{resolvedParams.message}</div>
                         )}
-                        {(searchParams as any).success && (
+                        {resolvedParams.success && (
                             <div className="text-green-600 text-sm text-center font-medium bg-green-50 p-3 rounded">
-                                {(searchParams as any).success}
+                                {resolvedParams.success}
                             </div>
                         )}
 

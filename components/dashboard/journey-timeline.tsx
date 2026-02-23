@@ -124,9 +124,9 @@ export function JourneyTimeline({ events, className }: JourneyTimelineProps) {
             {/* Event details */}
             {event.event_data && Object.keys(event.event_data).length > 0 && (
               <div className="mt-2 text-sm text-muted-foreground bg-muted/50 rounded-md p-2">
-                {event.event_type === 'STATE_TRANSITION' && event.event_data.reason && (
+                {event.event_type === 'STATE_TRANSITION' && event.event_data.reason ? (
                   <div>Reason: {String(event.event_data.reason)}</div>
-                )}
+                ) : null}
                 {event.event_type === 'QUOTE_CREATED' && (
                   <div>
                     Amount: {String(event.event_data.currency ?? '')} {Number(event.event_data.total_amount ?? 0).toLocaleString()}

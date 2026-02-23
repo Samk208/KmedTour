@@ -61,7 +61,7 @@ export default function AboutPage() {
           </h1>
 
           <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            KmedTour upgrades the medical tourism experience from a chaotic logistical challenge into a seamless, digital workflow. We connect the world to Korea's medical future.
+            KmedTour upgrades the medical tourism experience from a chaotic logistical challenge into a seamless, digital workflow. We connect the world to Korea&apos;s medical future.
           </p>
         </div>
       </section>

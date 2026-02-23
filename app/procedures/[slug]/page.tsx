@@ -6,8 +6,16 @@ import fs from 'fs'
 import path from 'path'
 
 import { Button } from '@/components/ui/button'
+import { MedicalDisclaimer } from '@/components/shared/medical-disclaimer'
 import { Clinic } from '@/lib/schemas/clinic'
 import { Treatment } from '@/lib/schemas/treatment'
+import {
+  parseMarkdownContent,
+  formatMarkdownText,
+  extractFAQs,
+  getBaseUrl,
+  type FAQ,
+} from '@/lib/utils/content-parser'
 
 import cityProceduresData from '@/lib/data/city-procedures.json'
 import clinicsData from '@/lib/data/clinics.json'
@@ -16,7 +24,7 @@ import treatmentsData from '@/lib/data/treatments.json'
 
 import '@/app/styles/enhanced-content.css'
 
-const BASE_URL = 'https://kmedtour.now'
+const BASE_URL = getBaseUrl()
 
 const clinics = clinicsData as Clinic[]
 const treatments = treatmentsData as Treatment[]
@@ -54,167 +62,6 @@ function getGeneratedContent(slug: string): string | null {
     console.error('Error reading generated content:', error)
   }
   return null
-}
-
-interface ContentSection {
-  title: string
-  content: string
-  type: 'intro' | 'section' | 'table' | 'list' | 'faq' | 'disclaimer'
-}
-
-interface FAQ {
-  question: string
-  answer: string
-}
-
-function parseMarkdownContent(markdown: string): ContentSection[] {
-  const sections: ContentSection[] = []
-  const lines = markdown.split('\n')
-
-  let currentSection: ContentSection | null = null
-  let inTable = false
-  let tableContent: string[] = []
-
-  for (let i = 0; i < lines.length; i++) {
-    const line = lines[i]
-
-    // H2 headings denote new sections
-    if (line.startsWith('## ')) {
-      if (currentSection) {
-        sections.push(currentSection)
-      }
-      if (inTable && tableContent.length > 0) {
-        currentSection!.content += '\n' + tableContent.join('\n')
-        tableContent = []
-        inTable = false
-      }
-
-      const title = line.replace('## ', '').trim()
-      const isFAQ = title.toLowerCase().includes('faq') || title.toLowerCase().includes('question')
-      const isDisclaimer = title.toLowerCase().includes('disclaimer')
-
-      currentSection = {
-        title,
-        content: '',
-        type: isDisclaimer ? 'disclaimer' : isFAQ ? 'faq' : 'section'
-      }
-    }
-    // H3 subheadings
-    else if (line.startsWith('### ')) {
-      if (currentSection) {
-        currentSection.content += `\n<h3>${line.replace('### ', '').trim()}</h3>\n`
-      }
-    }
-    // Table detection
-    else if (line.trim().startsWith('|')) {
-      if (!inTable) {
-        inTable = true
-        tableContent = []
-      }
-      tableContent.push(line)
-    }
-    // Regular content
-    else if (currentSection) {
-      if (inTable && !line.trim().startsWith('|')) {
-        currentSection.content += '\n<div class="table-wrapper">\n' + createHtmlTable(tableContent) + '\n</div>\n'
-        tableContent = []
-        inTable = false
-      }
-      currentSection.content += line + '\n'
-    }
-  }
-
-  // Push final section
-  if (currentSection) {
-    if (inTable && tableContent.length > 0) {
-      currentSection.content += '\n<div class="table-wrapper">\n' + createHtmlTable(tableContent) + '\n</div>\n'
-    }
-    sections.push(currentSection)
-  }
-
-  return sections
-}
-
-function extractFAQs(sections: ContentSection[]): FAQ[] {
-  const faqs: FAQ[] = []
-
-  const faqSection = sections.find(s => s.type === 'faq')
-  if (!faqSection) return faqs
-
-  const lines = faqSection.content.split('\n')
-  let currentQuestion = ''
-  let currentAnswer = ''
-
-  for (const line of lines) {
-    // H3 questions
-    if (line.trim().startsWith('<h3>')) {
-      // Save previous Q&A if exists
-      if (currentQuestion && currentAnswer) {
-        faqs.push({
-          question: currentQuestion,
-          answer: currentAnswer.trim()
-        })
-      }
-      // Start new question
-      currentQuestion = line.replace(/<\/?h3>/g, '').trim()
-      currentAnswer = ''
-    } else if (currentQuestion && line.trim()) {
-      currentAnswer += line + ' '
-    }
-  }
-
-  // Save last Q&A
-  if (currentQuestion && currentAnswer) {
-    faqs.push({
-      question: currentQuestion,
-      answer: currentAnswer.trim()
-    })
-  }
-
-  return faqs
-}
-
-function createHtmlTable(tableLines: string[]): string {
-  if (tableLines.length < 2) return ''
-
-  const headers = tableLines[0].split('|').filter(h => h.trim())
-  // Skip separator line (index 1)
-  const rows = tableLines.slice(2).map(line =>
-    line.split('|').filter(cell => cell.trim())
-  )
-
-  let html = '<table class="content-table">\n<thead>\n<tr>\n'
-  headers.forEach(header => {
-    html += `<th>${header.trim()}</th>\n`
-  })
-  html += '</tr>\n</thead>\n<tbody>\n'
-
-  rows.forEach(row => {
-    html += '<tr>\n'
-    row.forEach(cell => {
-      html += `<td>${cell.trim()}</td>\n`
-    })
-    html += '</tr>\n'
-  })
-
-  html += '</tbody>\n</table>'
-  return html
-}
-
-function formatMarkdownText(text: string): string {
-  return text
-    // Bold
-    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-    // Italic
-    .replace(/\*(.+?)\*/g, '<em>$1</em>')
-    // Links
-    .replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2" class="content-link">$1</a>')
-    // Code
-    .replace(/`(.+?)`/g, '<code>$1</code>')
-    // Bullets
-    .replace(/^- (.+)$/gm, '<li>$1</li>')
-    // Wrap consecutive <li> in <ul>
-    .replace(/(<li>.*<\/li>\n?)+/g, '<ul class="content-list">$&</ul>')
 }
 
 function buildMetadata(proc: Treatment): Metadata {
@@ -552,6 +399,8 @@ export default async function EnhancedProcedurePage({ params }: { params: Promis
             </div>
           </div>
         </div>
+
+        <MedicalDisclaimer context={treatment.title} />
 
         {/* Schema Markup */}
         {ProcedureJsonLd(treatment, hospitals)}

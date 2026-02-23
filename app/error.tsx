@@ -1,6 +1,7 @@
 'use client'
 
 import * as Sentry from '@sentry/nextjs'
+import Link from 'next/link'
 import { useEffect } from 'react'
 
 export default function Error({
@@ -33,12 +34,12 @@ export default function Error({
         >
           Try Again
         </button>
-        <a
+        <Link
           href="/"
           className="rounded-lg border border-gray-300 px-6 py-2.5 text-sm font-semibold text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800"
         >
           Go Home
-        </a>
+        </Link>
       </div>
       {error.digest && (
         <p className="mt-4 text-xs text-gray-400">Error ID: {error.digest}</p>

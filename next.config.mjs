@@ -4,8 +4,8 @@ import { withSentryConfig } from '@sentry/nextjs'
 const nextConfig = {
   // TypeScript strict checking enabled for production safety
   typescript: {
-    // Only ignore in development if needed, never in production
-    ignoreBuildErrors: process.env.NODE_ENV === 'development',
+    // Never ignore build errors — catch issues early in all environments
+    ignoreBuildErrors: false,
   },
 
   // Security headers (production best practice)
@@ -45,8 +45,8 @@ const nextConfig = {
   
   // ESLint strict checking for code quality
   eslint: {
-    // Only ignore in development if needed, never in production
-    ignoreDuringBuilds: process.env.NODE_ENV === 'development',
+    // Never ignore lint errors — enforce quality in all environments
+    ignoreDuringBuilds: false,
   },
   
   // Experimental features (optional)

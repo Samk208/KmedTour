@@ -36,7 +36,7 @@ export default async function PatientPortalDashboard() {
         return (
             <div className="container mx-auto py-20 text-center">
                 <h1 className="text-2xl font-bold mb-4">No Medical Record Found</h1>
-                <p className="text-gray-500 mb-8">We couldn't link your account to a patient file.</p>
+                <p className="text-gray-500 mb-8">We couldn&apos;t link your account to a patient file.</p>
                 <Button asChild>
                     <Link href="/get-started">Start a New Journey</Link>
                 </Button>
@@ -76,11 +76,13 @@ export default async function PatientPortalDashboard() {
                             <div className="text-2xl font-bold text-teal-700">
                                 {Array.isArray(patient.journey_state)
                                     ? patient.journey_state[0]?.state?.replace('_', ' ')
+                                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
                                     : (patient.journey_state as any)?.state?.replace('_', ' ') || 'New Inquiry'}
                             </div>
                             <p className="text-xs text-gray-400 mt-1">
                                 Updated {new Date((Array.isArray(patient.journey_state)
                                     ? patient.journey_state[0]?.last_updated_at
+                                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
                                     : (patient.journey_state as any)?.last_updated_at) || new Date()).toLocaleDateString()}
                             </p>
                         </CardContent>
@@ -118,6 +120,7 @@ export default async function PatientPortalDashboard() {
                             Your Quotes
                         </h2>
                         <div className="grid gap-4">
+                            {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                             {patient.quotes.map((quote: any) => (
                                 <Card key={quote.id} className="hover:shadow-md transition-shadow">
                                     <CardContent className="p-6 flex items-center justify-between">
@@ -152,6 +155,7 @@ export default async function PatientPortalDashboard() {
                             Your Bookings
                         </h2>
                         <div className="grid gap-4">
+                            {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                             {patient.bookings.map((booking: any) => (
                                 <Card key={booking.id}>
                                     <CardContent className="p-6">

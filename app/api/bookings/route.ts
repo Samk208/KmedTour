@@ -1,9 +1,13 @@
 import { getSupabaseContext } from '@/lib/api/client/supabase'
 import { requireAuth } from '@/lib/utils/api-auth'
 import { logger } from '@/lib/utils/logger'
+import { rateLimit, RateLimitPresets } from '@/lib/utils/rate-limit'
 import { NextResponse } from 'next/server'
 
 export async function GET(request: Request) {
+  const rateLimitResponse = await rateLimit({ ...RateLimitPresets.STANDARD, keyPrefix: 'bookings' })(request)
+  if (rateLimitResponse) return rateLimitResponse
+
   const auth = await requireAuth()
   if (!auth.authenticated) return auth.response
 

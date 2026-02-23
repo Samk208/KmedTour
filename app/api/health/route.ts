@@ -1,10 +1,14 @@
 import { createClient } from '@/lib/supabase/server'
+import { rateLimit, RateLimitPresets } from '@/lib/utils/rate-limit'
 import { NextResponse } from 'next/server'
 
 export const dynamic = 'force-dynamic'
 export const revalidate = 0
 
-export async function GET() {
+export async function GET(request: Request) {
+  const rateLimitResponse = await rateLimit({ ...RateLimitPresets.GENEROUS, keyPrefix: 'health' })(request)
+  if (rateLimitResponse) return rateLimitResponse
+
   const checks: Record<string, boolean | string> = {
     supabase: false,
     stripe_configured: !!(

@@ -8,7 +8,8 @@ import { Building2, ChevronLeft, ShieldCheck } from 'lucide-react'
 import Link from 'next/link'
 import { redirect } from 'next/navigation'
 
-export default async function QuoteDetailsPage({ params }: { params: { id: string } }) {
+export default async function QuoteDetailsPage({ params }: { params: Promise<{ id: string }> }) {
+    const { id } = await params
     const supabase = await createClient()
 
     // Verify User
@@ -24,14 +25,14 @@ export default async function QuoteDetailsPage({ params }: { params: { id: strin
         hospital:hospital_id(name, city, country, overview),
         bookings(id, status)
     `)
-        .eq('id', params.id)
+        .eq('id', id)
         .single()
 
     if (error || !quote) {
         return (
             <div className="container mx-auto py-20 text-center">
                 <h1 className="text-2xl font-bold">Quote Not Found</h1>
-                <p className="text-gray-500 mt-2">This quote might not exist or you don't have permission.</p>
+                <p className="text-gray-500 mt-2">This quote might not exist or you don&apos;t have permission.</p>
                 <Button asChild className="mt-6">
                     <Link href="/patient/dashboard">Return to Dashboard</Link>
                 </Button>

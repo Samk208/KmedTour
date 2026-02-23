@@ -1,6 +1,7 @@
 import { getSupabaseContext } from '@/lib/api/client/supabase'
 import { requireAuth } from '@/lib/utils/api-auth'
 import { logger } from '@/lib/utils/logger'
+import { rateLimit, RateLimitPresets } from '@/lib/utils/rate-limit'
 import { validateUUID } from '@/lib/utils/validate-params'
 import { NextResponse } from 'next/server'
 import { z } from 'zod'
@@ -48,6 +49,9 @@ interface RouteParams {
 }
 
 export async function POST(request: Request, { params }: RouteParams) {
+  const rateLimitResponse = await rateLimit({ ...RateLimitPresets.STANDARD, keyPrefix: 'journey-transition' })(request)
+  if (rateLimitResponse) return rateLimitResponse
+
   const auth = await requireAuth()
   if (!auth.authenticated) return auth.response
 

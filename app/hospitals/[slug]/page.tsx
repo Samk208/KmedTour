@@ -8,6 +8,14 @@ import path from 'path'
 import { Button } from '@/components/ui/button'
 import { Clinic } from '@/lib/schemas/clinic'
 import { Treatment } from '@/lib/schemas/treatment'
+import { MedicalDisclaimer } from '@/components/shared/medical-disclaimer'
+import {
+  parseMarkdownContent,
+  formatMarkdownText,
+  extractFAQs,
+  getBaseUrl,
+  type FAQ,
+} from '@/lib/utils/content-parser'
 
 import clinicsData from '@/lib/data/clinics.json'
 import mappingsData from '@/lib/data/mappings.json'
@@ -15,7 +23,7 @@ import treatmentsData from '@/lib/data/treatments.json'
 
 import '@/app/styles/enhanced-content.css'
 
-const BASE_URL = 'https://kmedtour.now'
+const BASE_URL = getBaseUrl()
 
 const clinics = clinicsData as Clinic[]
 const treatments = treatmentsData as Treatment[]
@@ -51,151 +59,6 @@ function getGeneratedContent(slug: string): string | null {
     console.error('Error reading generated content:', error)
   }
   return null
-}
-
-interface ContentSection {
-  title: string
-  content: string
-  type: 'intro' | 'section' | 'table' | 'list' | 'faq' | 'disclaimer'
-}
-
-interface FAQ {
-  question: string
-  answer: string
-}
-
-function extractFAQs(sections: ContentSection[]): FAQ[] {
-  const faqs: FAQ[] = []
-
-  const faqSection = sections.find(s => s.type === 'faq')
-  if (!faqSection) return faqs
-
-  const lines = faqSection.content.split('\n')
-  let currentQuestion = ''
-  let currentAnswer = ''
-
-  for (const line of lines) {
-    if (line.trim().startsWith('<h3>')) {
-      if (currentQuestion && currentAnswer) {
-        faqs.push({
-          question: currentQuestion,
-          answer: currentAnswer.trim()
-        })
-      }
-      currentQuestion = line.replace(/<\/?h3>/g, '').trim()
-      currentAnswer = ''
-    } else if (currentQuestion && line.trim()) {
-      currentAnswer += line + ' '
-    }
-  }
-
-  if (currentQuestion && currentAnswer) {
-    faqs.push({
-      question: currentQuestion,
-      answer: currentAnswer.trim()
-    })
-  }
-
-  return faqs
-}
-
-function parseMarkdownContent(markdown: string): ContentSection[] {
-  const sections: ContentSection[] = []
-  const lines = markdown.split('\n')
-
-  let currentSection: ContentSection | null = null
-  let inTable = false
-  let tableContent: string[] = []
-
-  for (let i = 0; i < lines.length; i++) {
-    const line = lines[i]
-
-    if (line.startsWith('## ')) {
-      if (currentSection) {
-        sections.push(currentSection)
-      }
-      if (inTable && tableContent.length > 0) {
-        currentSection!.content += '\n' + tableContent.join('\n')
-        tableContent = []
-        inTable = false
-      }
-
-      const title = line.replace('## ', '').trim()
-      const isFAQ = title.toLowerCase().includes('faq') || title.toLowerCase().includes('question')
-      const isDisclaimer = title.toLowerCase().includes('disclaimer')
-
-      currentSection = {
-        title,
-        content: '',
-        type: isDisclaimer ? 'disclaimer' : isFAQ ? 'faq' : 'section'
-      }
-    }
-    else if (line.startsWith('### ')) {
-      if (currentSection) {
-        currentSection.content += `\n<h3>${line.replace('### ', '').trim()}</h3>\n`
-      }
-    }
-    else if (line.trim().startsWith('|')) {
-      if (!inTable) {
-        inTable = true
-        tableContent = []
-      }
-      tableContent.push(line)
-    }
-    else if (currentSection) {
-      if (inTable && !line.trim().startsWith('|')) {
-        currentSection.content += '\n<div class="table-wrapper">\n' + createHtmlTable(tableContent) + '\n</div>\n'
-        tableContent = []
-        inTable = false
-      }
-      currentSection.content += line + '\n'
-    }
-  }
-
-  if (currentSection) {
-    if (inTable && tableContent.length > 0) {
-      currentSection.content += '\n<div class="table-wrapper">\n' + createHtmlTable(tableContent) + '\n</div>\n'
-    }
-    sections.push(currentSection)
-  }
-
-  return sections
-}
-
-function createHtmlTable(tableLines: string[]): string {
-  if (tableLines.length < 2) return ''
-
-  const headers = tableLines[0].split('|').filter(h => h.trim())
-  const rows = tableLines.slice(2).map(line =>
-    line.split('|').filter(cell => cell.trim())
-  )
-
-  let html = '<table class="content-table">\n<thead>\n<tr>\n'
-  headers.forEach(header => {
-    html += `<th>${header.trim()}</th>\n`
-  })
-  html += '</tr>\n</thead>\n<tbody>\n'
-
-  rows.forEach(row => {
-    html += '<tr>\n'
-    row.forEach(cell => {
-      html += `<td>${cell.trim()}</td>\n`
-    })
-    html += '</tr>\n'
-  })
-
-  html += '</tbody>\n</table>'
-  return html
-}
-
-function formatMarkdownText(text: string): string {
-  return text
-    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-    .replace(/\*(.+?)\*/g, '<em>$1</em>')
-    .replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2" class="content-link">$1</a>')
-    .replace(/`(.+?)`/g, '<code>$1</code>')
-    .replace(/^- (.+)$/gm, '<li>$1</li>')
-    .replace(/(<li>.*<\/li>\n?)+/g, '<ul class="content-list">$&</ul>')
 }
 
 function buildMetadata(clinic: Clinic): Metadata {
@@ -442,7 +305,7 @@ export default async function EnhancedHospitalPage({ params }: { params: Promise
               <div className="content-section bg-gradient-to-br from-[var(--kmed-blue)]/5 to-[var(--kmed-teal)]/5 border-2 border-[var(--kmed-blue)]/20">
                 <h2 className="text-center">Ready to Begin Your Care Journey?</h2>
                 <p className="text-center text-lg mb-6">
-                  Connect with {clinic.name} through KmedTour's concierge service for personalized support.
+                  Connect with {clinic.name} through KmedTour&apos;s concierge service for personalized support.
                 </p>
                 <div className="flex flex-wrap gap-4 justify-center">
                   <Button className="bg-[var(--kmed-blue)] text-white hover:bg-[var(--kmed-navy)] font-semibold px-8" size="lg" asChild>
@@ -533,6 +396,8 @@ export default async function EnhancedHospitalPage({ params }: { params: Promise
             </div>
           </div>
         </div>
+        <MedicalDisclaimer context={clinic.name} />
+
         {/* Schema Markup */}
         {HospitalJsonLd(clinic, procedures)}
         {BreadcrumbJsonLd(clinic)}

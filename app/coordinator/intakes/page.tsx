@@ -154,7 +154,7 @@ export default function IntakesPage() {
         <CardHeader>
           <CardTitle>Patient Submissions</CardTitle>
           <CardDescription>
-            Click "Start Journey" to begin managing a patient's medical tourism journey
+            Click &quot;Start Journey&quot; to begin managing a patient&apos;s medical tourism journey
           </CardDescription>
         </CardHeader>
         <CardContent>

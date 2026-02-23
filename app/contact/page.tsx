@@ -41,7 +41,7 @@ export default function ContactPage() {
       }
 
       setSubmitted(true)
-    } catch (err) {
+    } catch {
       setErrorMessage('We couldn\'t reach the server. Please check your connection and try again.')
     }
   }

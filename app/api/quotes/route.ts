@@ -1,6 +1,7 @@
 import { getSupabaseContext } from '@/lib/api/client/supabase'
 import { requireAuth } from '@/lib/utils/api-auth'
 import { logger } from '@/lib/utils/logger'
+import { rateLimit, RateLimitPresets } from '@/lib/utils/rate-limit'
 import { NextResponse } from 'next/server'
 import { z } from 'zod'
 
@@ -23,6 +24,9 @@ const createQuoteSchema = z.object({
 })
 
 export async function POST(request: Request) {
+  const rateLimitResponse = await rateLimit({ ...RateLimitPresets.STANDARD, keyPrefix: 'quotes' })(request)
+  if (rateLimitResponse) return rateLimitResponse
+
   const auth = await requireAuth()
   if (!auth.authenticated) return auth.response
 
@@ -111,6 +115,9 @@ export async function POST(request: Request) {
 }
 
 export async function GET(request: Request) {
+  const rateLimitResponse = await rateLimit({ ...RateLimitPresets.STANDARD, keyPrefix: 'quotes' })(request)
+  if (rateLimitResponse) return rateLimitResponse
+
   const auth = await requireAuth()
   if (!auth.authenticated) return auth.response
 

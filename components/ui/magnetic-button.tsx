@@ -30,6 +30,8 @@ export function MagneticButton({ children, className, strength = 0.5, ...props }
         setPosition({ x: 0, y: 0 })
     }
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const motionProps = props as any
     return (
         <motion.div
             ref={ref}
@@ -38,7 +40,7 @@ export function MagneticButton({ children, className, strength = 0.5, ...props }
             animate={{ x: position.x, y: position.y }}
             transition={{ type: 'spring', stiffness: 150, damping: 15, mass: 0.1 }}
             className={cn('inline-block', className)}
-            {...(props as any)}
+            {...motionProps}
         >
             {children}
         </motion.div>
