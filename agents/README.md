@@ -46,7 +46,7 @@ pip install -r requirements.txt
 The `.env` file is already created with your API keys. Verify it contains:
 
 ```
-GOOGLE_API_KEY=AIzaSyAVIqlYny8UkXj9NHFovbJ5pvrDFY7-rFc
+GOOGLE_API_KEY=<YOUR_GEMINI_API_KEY>
 DATABASE_URL=postgresql://kmedtour_admin:kmedtour_secure_password_2026@localhost:5432/kmedtour
 REDIS_URL=redis://:redis_secure_password_2026@localhost:6379
 QDRANT_URL=http://localhost:6333
