@@ -8,6 +8,9 @@
 [build.environment]
   NODE_VERSION = "20"
   NEXT_TELEMETRY_DISABLED = "1"
+  # NEXT_PUBLIC_ vars are intentionally embedded in the client bundle by Next.js.
+  # They are public by design (anon keys, publishable keys, URLs) — not secrets.
+  SECRETS_SCAN_OMIT_KEYS = "NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY,NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY,NEXT_PUBLIC_APP_URL,NEXT_PUBLIC_SENTRY_DSN"
 
 [context.production]
   command = "pnpm build"
