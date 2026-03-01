@@ -59,11 +59,12 @@ const nextConfig = {
 
   // Experimental features
   experimental: {
-    // Exclude heavy non-essential directories from server function bundles (Netlify/serverless)
-    // NOTE: Do NOT exclude public/images — Next.js image optimizer needs server access to source files.
-    // The 405 MB agents/ dir is the main culprit for oversized server functions.
+    // Exclude heavy directories from server function bundles (Netlify/serverless)
+    // public/images is safe to exclude because images.unoptimized=true above
+    // means images are served as static CDN assets, not through the server optimizer.
     outputFileTracingExcludes: {
       '*': [
+        'public/images/**',
         'agents/**',
         'content/**',
         'Content Hub Data/**',
@@ -71,6 +72,7 @@ const nextConfig = {
         'supabase/**',
         'tests/**',
         '.github/**',
+        '.next/cache/**',
       ],
     },
   },
