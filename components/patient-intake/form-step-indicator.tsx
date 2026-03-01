@@ -1,16 +1,18 @@
 'use client'
 
 import { Check } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 interface FormStepIndicatorProps {
   currentStep: number
 }
 
 export function FormStepIndicator({ currentStep }: FormStepIndicatorProps) {
+  const { t } = useTranslation()
   const steps = [
-    { number: 1, label: 'Personal Info' },
-    { number: 2, label: 'Medical Details' },
-    { number: 3, label: 'Travel & Budget' },
+    { number: 1, label: t('patientIntakePage.step1.indicator') || 'Personal Info' },
+    { number: 2, label: t('patientIntakePage.step2.indicator') || 'Medical Details' },
+    { number: 3, label: t('patientIntakePage.step3.indicator') || 'Travel & Budget' },
   ]
 
   return (
@@ -20,13 +22,12 @@ export function FormStepIndicator({ currentStep }: FormStepIndicatorProps) {
           <div key={step.number} className="flex items-center flex-1">
             <div className="flex flex-col items-center flex-1">
               <div
-                className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold text-sm transition-all ${
-                  step.number < currentStep
+                className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold text-sm transition-all ${step.number < currentStep
                     ? 'bg-[var(--kmed-teal)] text-white'
                     : step.number === currentStep
-                    ? 'bg-[var(--kmed-blue)] text-white'
-                    : 'bg-[var(--soft-grey)] text-[var(--deep-grey)]'
-                }`}
+                      ? 'bg-[var(--kmed-blue)] text-white'
+                      : 'bg-[var(--soft-grey)] text-[var(--deep-grey)]'
+                  }`}
               >
                 {step.number < currentStep ? (
                   <Check className="h-5 w-5" />
@@ -35,11 +36,10 @@ export function FormStepIndicator({ currentStep }: FormStepIndicatorProps) {
                 )}
               </div>
               <div
-                className={`mt-2 text-xs sm:text-sm font-medium ${
-                  step.number <= currentStep
+                className={`mt-2 text-xs sm:text-sm font-medium ${step.number <= currentStep
                     ? 'text-[var(--kmed-navy)]'
                     : 'text-[var(--deep-grey)]'
-                }`}
+                  }`}
               >
                 {step.label}
               </div>

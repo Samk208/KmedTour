@@ -1,0 +1,218 @@
+{
+  "nav": {
+    "home": "Nyumbani",
+    "about": "Kuhusu",
+    "howItWorks": "Inavyofanya Kazi",
+    "forClinics": "Kwa Kliniki",
+    "contact": "Wasiliana",
+    "content": "Kituo cha Maudhui",
+    "treatments": "Matibabu",
+    "countries": "Nchi",
+    "articles": "Makala",
+    "dashboard": "Dashibodi",
+    "login": "Ingia",
+    "signup": "Jiandikishe",
+    "logout": "Toka",
+    "treatmentAdvisor": "Mshauri wa Matibabu"
+  },
+  "ui": {
+    "learnMore": "Jifunze Zaidi",
+    "getStarted": "Anza",
+    "submit": "Wasilisha",
+    "cancel": "Ghairi",
+    "next": "Ifuatayo",
+    "previous": "Iliopita",
+    "finish": "Kamalisha",
+    "close": "Funga",
+    "loading": "Ikipakia...",
+    "error": "Kuluwa kukatokea",
+    "success": "Mafanikio"
+  },
+  "footer": {
+    "tagline": "Utalii wa matibabu unaotegemewa kutoka Afrika hadi Korea",
+    "copyright": "© 2025 Kmedtour. Haki zote zimahifadhiwa.",
+    "company": "Kampuni",
+    "support": "Msaada",
+    "legal": "Kisheria",
+    "privacyPolicy": "Sera ya Faragha",
+    "termsOfService": "Masharti ya Huduma"
+  },
+  "advisor": {
+    "title": "Mshauri wa Matibabu",
+    "subtitle": "Jibu maswali machache ili kupata matibabu sahihi kwako",
+    "step1": {
+      "title": "Ni dalili gani zipo?",
+      "subtitle": "Chagua zote zinazofaa",
+      "infertility": "Ukatili wa uzazi au ugumu wa kupata ujauzito",
+      "cosmeticConcerns": "Masuala ya urembo au kuboresha muonekano",
+      "dentalIssues": "Masuala ya meno au kukosekana kwa meno",
+      "cancer": "Uchunguzi wa saratani unaohitaji matibabu",
+      "jointPain": "Maumivu ya viungo au matatizo ya uhamaji",
+      "heartCondition": "Hali ya moyo au matatizo ya moyo",
+      "other": "Hali nyingine ya kimatibabu"
+    },
+    "step2": {
+      "title": "Unapaswa kubaki kwa muda gani?",
+      "subtitle": "Chagua muda wako ulio na upatikanaji",
+      "oneWeek": "Wiki 1",
+      "twoWeeks": "Wiki 2",
+      "threeWeeks": "Wiki 3",
+      "fourWeeks": "Wiki 4+",
+      "flexible": "Inayoweza kubadilishwa"
+    },
+    "step3": {
+      "title": "Bajeti yako ni ipi?",
+      "subtitle": "Chagua kiwango cha bajeti unachokadiria",
+      "low": "Chini ya $5,000",
+      "medium": "$5,000 - $15,000",
+      "high": "$15,000 - $30,000",
+      "veryHigh": "$30,000+",
+      "unsure": "Sijapatana bado"
+    },
+    "step4": {
+      "title": "Mipendeleo ya lugha",
+      "subtitle": "Unahitaji msaada wa lugha?",
+      "english": "Wafanyakazi wanaozungumza Kingereza wanatakiwa",
+      "french": "Wafanyakazi wanaozungumza Kifaransa wanapendelewa",
+      "translator": "Nahitaji mtafsiri",
+      "noPreference": "Hakuna upendeleo"
+    },
+    "results": {
+      "title": "Matibabu Yanayopendekezwa",
+      "subtitle": "Kulingana na majibu yako, tunapendekeza:",
+      "noMatches": "Hakuna mechi sahihi zilizopatikana. Timu yetu ya concierge inaweza kukusaidia kupata matibabu sahihi.",
+      "requestConcierge": "Omba Huduma ya Concierge",
+      "viewDetails": "Tazama Maelezo",
+      "startOver": "Anza Upya",
+      "confidence": "Imani ya mechi"
+    }
+  },
+  "landing": {
+    "meta": {
+      "title": "Jukwaa la Utalii wa Matibabu lililokuwa Salama la Korea kwa Wagonjwa wa Kimataifa | Kmedtour",
+      "description": "Unganisha na kliniki bora za matibabu za Korea kwa matibabu ya kiwango cha ulimwengu. Msaada wa wataalamu wa concierge, bei wazi, na msaada wa lugha nyingi kwa wagonjwa wa kimataifa."
+    },
+    "hero": {
+      "badge": "Inategemewa na Wagonjwa Duniani",
+      "title": "Fikia Huduma za Afya za Kiarabu za Korea Kwa Urahisi",
+      "subtitle": "Msaada wa kiwango cha juu, wazi, na wa lugha nyingi kwa wagonjwa wa kimataifa wanaotafuta matibabu ya kisasa nchini Korea",
+      "ctaPrimary": "Chunguza Matibabu",
+      "ctaSecondary": "Omba Msaada wa Concierge",
+      "stats": {
+        "patients": "Wagonjwa wa Kimataifa",
+        "clinics": "Kliniki Washirika",
+        "satisfaction": "Kiwango cha Kuridhika"
+      }
+    },
+    "benefits": {
+      "badge": "Kwa Nini Korea",
+      "title": "Kwa Nini Wagonjwa Duniani Wanachagua Korea",
+      "subtitle": "Korea imekuwa kiongozi wa kimataifa katika utalii wa matibabu, ikitoa ubora usio na kifani na thamani",
+      "items": {
+        "technology": {
+          "title": "Teknolojia ya Kisasa",
+          "description": "Vifaa vya matibabu vya kisasa na mbinu za matibabu za kisasa"
+        },
+        "specialists": {
+          "title": "Mtaalamu Wataalamu",
+          "description": "Madaktari waliofunzwa vyema wenye uzoefu wa kimataifa na vyeti"
+        },
+        "outcomes": {
+          "title": "Matokeo Mazuri ya Usalama",
+          "description": "Kiwango cha mafanikio ya kiwango cha ulimwengu pamoja na viwango na taratibu kali za usalama"
+        },
+        "pricing": {
+          "title": "Bei Wazi",
+          "description": "Masi na gharama wazi zisizohusu maelezo ya ziada ikilinganishwa na nchi za Magharibi"
+        },
+        "support": {
+          "title": "Msaada wa Lugha Mbalimbali",
+          "description": "Msaada wa Kingereza, Kifaransa na lugha nyingine wakati wote wa safari yako"
+        },
+        "accreditation": {
+          "title": "Uthibitisho wa Kimataifa",
+          "description": "Vipengele vilivyoidhinishwa na JCI vinavyokidhi viwango vya juu duniani"
+        }
+      }
+    },
+    "treatments": {
+      "badge": "Matibabu Maarufu",
+      "title": "Matibabu ya Kiwango cha Ulimwengu kwa Mahitaji Yote",
+      "subtitle": "Kutoka uzazi hadi taratibu za urembo, Korea inatoa ubora katika fani zote",
+      "viewAll": "Tazama Matibabu Yote",
+      "from": "Kutoka"
+    },
+    "howItWorks": {
+      "badge": "Mchakato Rahisi",
+      "title": "Jinsi Kmedtour Inavyofanya Kazi",
+      "subtitle": "Safari yako kufikia huduma bora za afya katika hatua rahisi nne",
+      "steps": {
+        "explore": {
+          "title": "Chunguza Chaguo",
+          "description": "Fanya vivutio, vituo vya matibabu na kusoma hadithi za wagonjwa ili kupata mwafaka sahihi"
+        },
+        "matched": {
+          "title": "Pata Mechi",
+          "description": "Wataalamu wetu wanakunganishia na kliniki bora kwa mahitaji yako maalum"
+        },
+        "plan": {
+          "title": "Panga Safari Yako",
+          "description": "Tunahangaika na visa, usafiri, malazi, na mambo yote ya kiutawala kwa ajili yako"
+        },
+        "care": {
+          "title": "Pata Huduma",
+          "description": "Pata matibabu ya kiwango cha kimataifa huku ukipata msaada kamilifu wa concierge kutoka kwa kuwasili hadi kupona"
+        }
+      }
+    },
+    "global": {
+      "badge": "Ufikivu wa Kimataifa",
+      "title": "Inategemewa na Wagonjwa Duniani",
+      "subtitle": "Tunawahudumia wagonjwa wa kimataifa kutoka Afrika, Asia ya Kusini-Mashariki, GCC, Ulaya, na jamii za mataifa ya nje duniani kote",
+      "regions": "Wagonjwa kutoka nchi 50+ wanategemea Kmedtour"
+    },
+    "testimonials": {
+      "badge": "Hadithi za Mafanikio",
+      "title": "Wagonjwa Wetu Wanasema Nini",
+      "subtitle": "Mexperience halisi kutoka kwa wagonjwa ambao walipata huduma bora kupitia Kmedtour"
+    },
+    "faq": {
+      "badge": "Maswali Yanayoulizwa Mara kwa Mara",
+      "title": "Maswali Yanayoulizwa Mara kwa Mara",
+      "subtitle": "Kila kitu unachohitaji kujua kuhusu utalii wa matibabu nchini Korea",
+      "items": {
+        "q1": {
+          "question": "Kwa nini Korea ni marudio ya juu kwa utalii wa matibabu?",
+          "answer": "Korea inachanganya teknolojia ya matibabu ya kisasa, madaktari wenye ujuzi wa hali ya juu, uthibitisho wa kimataifa, na bei nafuu. Hospitali za Korea zina viwango vya juu vya mafanikio duniani, na nchi imewekeza sana katika kuwa kituo cha utalii wa matibabu huku ikiwa na miundombinu bora ya msaada kwa wagonjwa."
+        },
+        "q2": {
+          "question": "Je, unatoa msaada wa lugha nyingi?",
+          "answer": "Ndio! Tunatoa msaada katika Kingereza, Kifaransa, na lugha nyingine. Kliniki zetu za washirika zina wafanyakazi wa lugha nyingi, na tunaweza kupanga wapatanishi kwa mashauriano na taratibu zako ili kuhakikisha mawasiliano wazi wakati wa matibabu yako."
+        },
+        "q3": {
+          "question": "Inachukua muda gani kupanga na kufunga?",
+          "answer": "Mshauriano wa awali na mechi ya kliniki kwa kawaida huchukua siku 3-5 za biashara. Mara tu unapochagua kliniki, uhakika wa booking na mipango ya usafiri yanaweza kukamilika ndani ya wiki 2-4, kulingana na aina ya matibabu yako na tarehe unazopendelea. Tunafanya kazi kwa ufanisi kukidhi muda wako."
+        },
+        "q4": {
+          "question": "Huduma ya concierge ya Kmedtour inajumuisha nini?",
+          "answer": "Huduma yetu ya concierge inajumuisha ulinganifu wa kliniki, upangaji wa miadi, tafsiri za rekodi za matibabu, barua za msaada wa visa, msaada wa kuweka tiketi za usafiri, mapendekezo ya malazi, kupokea uwanja wa ndege, huduma za tafsiri, na msaada wa 24/7 wakati wote wa kukaa kwako nchini Korea."
+        },
+        "q5": {
+          "question": "Kliniki zinachaguliwa na kuthibitishwa vipi?",
+          "answer": "Tunashirikiana tu na vituo vilivyoidhinishwa na JCI au sawa na viwango vya kimataifa. Tunaangalia kliniki kulingana na viwango vya mafanikio, utaalamu wa wataalamu, maoni ya wagonjwa, ubora wa vituo, na uwezo wa msaada wa lugha. Ukaguzi wa mara kwa mara unahakikisha ubora endelevu."
+        },
+        "q6": {
+          "question": "Nifanyeje iwapo nahitaji huduma ya kufuatilia baada ya kurudi nyumbani?",
+          "answer": "Tunaweka mpango na watoa huduma za afya wa ndani kwa huduma ya kufuatilia na kuhakikisha unapata rekodi za matibabu na maelekezo ya huduma yaliyotolewa. Kliniki nyingi za washirika zitoa mashauriano ya telemedicine kwa msaada baada ya matibabu, na tunabaki kuwa tayari kusaidia na maswali yoyote."
+        }
+      }
+    },
+    "finalCta": {
+      "badge": "Tayari Kuanzia?",
+      "title": "Anza Safari Yako ya Utalii wa Matibabu Leo",
+      "subtitle": "Jiunge na maelfu ya wagonjwa walioridhika ambao waligundua huduma bora na nafuu nchini Korea",
+      "ctaPrimary": "Anza Bila Malipo",
+      "ctaSecondary": "Chunguza Matibabu"
+    }
+  }
+}

@@ -7,8 +7,11 @@ import { motion } from 'framer-motion'
 import { ArrowRight, Bot, Database, Globe } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useTranslation } from 'react-i18next'
 
 export function HeroSection() {
+  const { t } = useTranslation('common')
+
   return (
     <section className="relative w-full py-20 md:py-32 overflow-hidden" style={{ backgroundColor: 'var(--cloud-white)' }}>
       {/* Background Elements */}
@@ -36,15 +39,15 @@ export function HeroSection() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--kmed-teal)] opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--kmed-teal)]"></span>
               </span>
-              Deep Tech Medical Infrastructure
+              {t('landing.hero.badge') || "Deep Tech Medical Infrastructure"}
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-balance tracking-tight" style={{ color: 'var(--kmed-navy)' }}>
-              The Operating System for Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--kmed-blue)] to-[var(--kmed-teal)]">Medical Journey</span>
+              {t('landing.hero.title') || "The Operating System for Your Medical Journey"}
             </h1>
 
             <p className="text-lg md:text-xl leading-relaxed max-w-2xl font-light" style={{ color: 'var(--deep-grey)' }}>
-              We orchestrate your entire medical outcome. From AI-powered specialist matching to automated visa logistics and recovery.
+              {t('landing.hero.subtitle') || "We orchestrate your entire medical outcome. From AI-powered specialist matching to automated visa logistics and recovery."}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -54,7 +57,7 @@ export function HeroSection() {
                     size="lg"
                     className="text-base px-8 py-7 bg-[var(--kmed-blue)] hover:bg-[var(--kmed-blue)]/90 text-white shadow-lg hover:shadow-xl transition-all"
                   >
-                    Start Digital Intake
+                    {t('landing.hero.ctaPrimary') || "Start Digital Intake"}
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </MagneticButton>
@@ -68,7 +71,7 @@ export function HeroSection() {
                     className="text-base px-8 py-7 border-2 hover:bg-white bg-white/50 backdrop-blur-sm"
                     style={{ borderColor: 'var(--kmed-blue)', color: 'var(--kmed-blue)' }}
                   >
-                    View Workflow
+                    {t('landing.hero.ctaSecondary') || "View Workflow"}
                   </Button>
                 </MagneticButton>
               </Link>
@@ -79,23 +82,23 @@ export function HeroSection() {
               <div className="space-y-1">
                 <div className="flex items-center gap-2 text-sm font-medium uppercase tracking-wider text-gray-400">
                   <Bot className="w-4 h-4" />
-                  Automation
+                  {t('landing.hero.stats.patients') || "International Patients"}
                 </div>
-                <div className="text-3xl font-bold" style={{ color: 'var(--kmed-navy)' }}>85%</div>
+                <div className="text-3xl font-bold" style={{ color: 'var(--kmed-navy)' }}>5,000+</div>
               </div>
               <div className="space-y-1">
                 <div className="flex items-center gap-2 text-sm font-medium uppercase tracking-wider text-gray-400">
                   <Database className="w-4 h-4" />
-                  Data Points
+                  {t('landing.hero.stats.clinics') || "Partner Clinics"}
                 </div>
-                <div className="text-3xl font-bold" style={{ color: 'var(--kmed-navy)' }}>10k+</div>
+                <div className="text-3xl font-bold" style={{ color: 'var(--kmed-navy)' }}>40+</div>
               </div>
               <div className="space-y-1">
                 <div className="flex items-center gap-2 text-sm font-medium uppercase tracking-wider text-gray-400">
                   <Globe className="w-4 h-4" />
-                  Reach
+                  {t('landing.hero.stats.satisfaction') || "Satisfaction Rate"}
                 </div>
-                <div className="text-3xl font-bold" style={{ color: 'var(--kmed-navy)' }}>Global</div>
+                <div className="text-3xl font-bold" style={{ color: 'var(--kmed-navy)' }}>98%</div>
               </div>
             </div>
           </motion.div>
@@ -129,7 +132,7 @@ export function HeroSection() {
                 >
                   <div className="flex items-center gap-3">
                     <div className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
-                    <span className="text-sm font-medium text-[var(--kmed-navy)]">Matching Algorithm Active</span>
+                    <span className="text-sm font-medium text-[var(--kmed-navy)]">{t('landing.hero.sysStatus.algorithm') || "Matching Algorithm Active"}</span>
                   </div>
                   <span className="text-xs text-[var(--deep-grey)] font-mono">23ms</span>
                 </motion.div>
@@ -140,7 +143,7 @@ export function HeroSection() {
                 >
                   <div className="flex items-center gap-3">
                     <div className="h-2 w-2 rounded-full bg-[var(--kmed-blue)]" />
-                    <span className="text-sm font-medium text-[var(--kmed-navy)]">Real-time Capacity Check</span>
+                    <span className="text-sm font-medium text-[var(--kmed-navy)]">{t('landing.hero.sysStatus.capacity') || "Real-time Capacity Check"}</span>
                   </div>
                   <span className="text-xs text-[var(--deep-grey)] font-mono">Synced</span>
                 </motion.div>

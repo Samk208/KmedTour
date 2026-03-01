@@ -1,0 +1,218 @@
+{
+  "nav": {
+    "home": "Trang Chủ",
+    "about": "Về Chúng Tôi",
+    "howItWorks": "Cách Thức Hoạt Động",
+    "forClinics": "Dành Cho Phòng Khám",
+    "contact": "Liên Hệ",
+    "content": "Nền Tảng Nội Dung",
+    "treatments": "Các Phương Pháp Điều Trị",
+    "countries": "Các Quốc Gia",
+    "articles": "Bài Viết",
+    "dashboard": "Bảng Điều Khiển",
+    "login": "Đăng Nhập",
+    "signup": "Đăng Ký",
+    "logout": "Đăng Xuất",
+    "treatmentAdvisor": "Cố Vấn Điều Trị"
+  },
+  "ui": {
+    "learnMore": "Tìm Hiểu Thêm",
+    "getStarted": "Bắt Đầu",
+    "submit": "Gửi",
+    "cancel": "Hủy",
+    "next": "Tiếp Theo",
+    "previous": "Trước",
+    "finish": "Kết Thúc",
+    "close": "Đóng",
+    "loading": "Đang Tải...",
+    "error": "Đã xảy ra lỗi",
+    "success": "Thành Công"
+  },
+  "footer": {
+    "tagline": "Du lịch y tế đáng tin cậy từ Châu Phi đến Hàn Quốc",
+    "copyright": "© 2025 Kmedtour. Tất cả các quyền được bảo lưu.",
+    "company": "Công Ty",
+    "support": "Hỗ Trợ",
+    "legal": "Pháp Lý",
+    "privacyPolicy": "Chính Sách Bảo Mật",
+    "termsOfService": "Điều Khoản Dịch Vụ"
+  },
+  "advisor": {
+    "title": "Cố Vấn Điều Trị",
+    "subtitle": "Trả lời một vài câu hỏi để tìm phương pháp điều trị phù hợp với bạn",
+    "step1": {
+      "title": "Bạn có triệu chứng gì?",
+      "subtitle": "Chọn tất cả các triệu chứng mà bạn gặp phải",
+      "infertility": "Vô sinh hoặc khó khăn trong việc mang thai",
+      "cosmeticConcerns": "Quan tâm về thẩm mỹ hoặc cải thiện ngoại hình",
+      "dentalIssues": "Vấn đề về răng miệng hoặc thiếu răng",
+      "cancer": "Chẩn đoán ung thư cần điều trị",
+      "jointPain": "Đau khớp hoặc vấn đề về di chuyển",
+      "heartCondition": "Tình trạng tim mạch hoặc vấn đề về tim",
+      "other": "Tình trạng sức khỏe khác"
+    },
+    "step2": {
+      "title": "Bạn có thể ở lại bao lâu?",
+      "subtitle": "Chọn khoảng thời gian bạn có thể ở lại",
+      "oneWeek": "1 tuần",
+      "twoWeeks": "2 tuần",
+      "threeWeeks": "3 tuần",
+      "fourWeeks": "4+ tuần",
+      "flexible": "Linh hoạt"
+    },
+    "step3": {
+      "title": "Ngân sách của bạn là bao nhiêu?",
+      "subtitle": "Chọn khoảng ngân sách ước tính của bạn",
+      "low": "Dưới $5,000",
+      "medium": "$5,000 - $15,000",
+      "high": "$15,000 - $30,000",
+      "veryHigh": "$30,000+",
+      "unsure": "Còn chưa chắc chắn"
+    },
+    "step4": {
+      "title": "Sở thích ngôn ngữ",
+      "subtitle": "Bạn có cần hỗ trợ ngôn ngữ không?",
+      "english": "Cần nhân viên nói tiếng Anh",
+      "french": "Ưu tiên nhân viên nói tiếng Pháp",
+      "translator": "Tôi cần một phiên dịch viên",
+      "noPreference": "Không có sở thích"
+    },
+    "results": {
+      "title": "Các Phương Pháp Điều Trị Được Đề Xuất",
+      "subtitle": "Dựa trên câu trả lời của bạn, chúng tôi khuyên bạn:",
+      "noMatches": "Không tìm thấy kết quả chính xác. Đội ngũ điều phối viên của chúng tôi có thể giúp bạn tìm phương pháp điều trị phù hợp.",
+      "requestConcierge": "Yêu Cầu Dịch Vụ Điều Phối",
+      "viewDetails": "Xem Chi Tiết",
+      "startOver": "Bắt Đầu Lại",
+      "confidence": "Mức độ tự tin"
+    }
+  },
+  "landing": {
+    "meta": {
+      "title": "Nền Tảng Du Lịch Y Tế Đáng Tin Cậy của Hàn Quốc Cho Bệnh Nhân Quốc Tế | Kmedtour",
+      "description": "Kết nối với các phòng khám y tế hàng đầu của Hàn Quốc để có các phương pháp điều trị đẳng cấp thế giới. Hỗ trợ điều phối viên chuyên nghiệp, giá cả minh bạch và hỗ trợ đa ngôn ngữ cho bệnh nhân quốc tế."
+    },
+    "hero": {
+      "badge": "Được Bệnh Nhân Trên Toàn Thế Giới Tin Tưởng",
+      "title": "Tiếp Cận Dịch Vụ Y Tế Hàn Quốc Đẳng Cấp Thế Giới Một Cách Dễ Dàng",
+      "subtitle": "Hỗ trợ cao cấp, minh bạch, đa ngôn ngữ cho bệnh nhân toàn cầu tìm kiếm các phương pháp điều trị y tế tiên tiến tại Hàn Quốc",
+      "ctaPrimary": "Khám Phá Các Phương Pháp Điều Trị",
+      "ctaSecondary": "Yêu Cầu Hỗ Trợ Điều Phối",
+      "stats": {
+        "patients": "Bệnh Nhân Quốc Tế",
+        "clinics": "Phòng Khám Đối Tác",
+        "satisfaction": "Tỷ Lệ Hài Lòng"
+      }
+    },
+    "benefits": {
+      "badge": "Tại Sao Chọn Hàn Quốc",
+      "title": "Tại Sao Bệnh Nhân Trên Toàn Thế Giới Chọn Hàn Quốc",
+      "subtitle": "Hàn Quốc đã trở thành một nhà lãnh đạo toàn cầu trong du lịch y tế, mang đến chất lượng và giá trị không ai sánh kịp",
+      "items": {
+        "technology": {
+          "title": "Công Nghệ Tiên Tiến",
+          "description": "Thiết bị y tế tiên tiến và các kỹ thuật điều trị hiện đại"
+        },
+        "specialists": {
+          "title": "Chuyên Gia Chuyên Nghiệp",
+          "description": "Các bác sĩ được đào tạo chuyên sâu với kinh nghiệm và chứng chỉ quốc tế"
+        },
+        "outcomes": {
+          "title": "Kết Quả An Toàn Xuất Sắc",
+          "description": "Tỷ lệ thành công đẳng cấp thế giới với các tiêu chuẩn và quy trình an toàn nghiêm ngặt"
+        },
+        "pricing": {
+          "title": "Giá Cả Minh Bạch",
+          "description": "Chi phí rõ ràng, minh bạch với tiết kiệm đáng kể so với các quốc gia phương Tây"
+        },
+        "support": {
+          "title": "Hỗ Trợ Đa Ngôn Ngữ",
+          "description": "Hỗ trợ tiếng Anh, tiếng Pháp và các ngôn ngữ khác xuyên suốt hành trình của bạn"
+        },
+        "accreditation": {
+          "title": "Công Nhận Quốc Tế",
+          "description": "Cơ sở được công nhận JCI đáp ứng các tiêu chuẩn toàn cầu cao nhất"
+        }
+      }
+    },
+    "treatments": {
+      "badge": "Các Phương Pháp Điều Trị Phổ Biến",
+      "title": "Các Phương Pháp Điều Trị Đẳng Cấp Thế Giới Cho Mọi Nhu Cầu",
+      "subtitle": "Từ vô sinh đến các quy trình thẩm mỹ, Hàn Quốc cung cấp sự xuất sắc trong tất cả các chuyên ngành",
+      "viewAll": "Xem Tất Cả Các Phương Pháp Điều Trị",
+      "from": "Từ"
+    },
+    "howItWorks": {
+      "badge": "Quy Trình Đơn Giản",
+      "title": "Cách Kmedtour Hoạt Động",
+      "subtitle": "Hành trình của bạn đến với chăm sóc y tế đẳng cấp thế giới trong bốn bước đơn giản",
+      "steps": {
+        "explore": {
+          "title": "Khám Phá Các Lựa Chọn",
+          "description": "Duyệt các phương pháp điều trị, phòng khám và đọc câu chuyện của bệnh nhân để tìm sự phù hợp"
+        },
+        "matched": {
+          "title": "Được Ghép Kết",
+          "description": "Các chuyên gia của chúng tôi kết nối bạn với các phòng khám tốt nhất cho nhu cầu cụ thể của bạn"
+        },
+        "plan": {
+          "title": "Lên Kế Hoạch Cho Chuyến Đi",
+          "description": "Chúng tôi xử lý visa, di chuyển, chỗ ở và tất cả các logistic cho bạn"
+        },
+        "care": {
+          "title": "Nhận Chăm Sóc",
+          "description": "Nhận điều trị đẳng cấp thế giới với sự hỗ trợ toàn diện từ khi đến cho đến khi phục hồi"
+        }
+      }
+    },
+    "global": {
+      "badge": "Phạm Vi Toàn Cầu",
+      "title": "Được Bệnh Nhân Trên Toàn Thế Giới Tin Tưởng",
+      "subtitle": "Chúng tôi phục vụ bệnh nhân quốc tế đến từ Châu Phi, Đông Nam Á, GCC, Châu Âu và cộng đồng người di cư trên toàn thế giới",
+      "regions": "Bệnh nhân đến từ 50+ quốc gia tin tưởng Kmedtour"
+    },
+    "testimonials": {
+      "badge": "Câu Chuyện Thành Công",
+      "title": "Bệnh Nhân Nói Gì Về Chúng Tôi",
+      "subtitle": "Những trải nghiệm thực từ bệnh nhân đã tìm thấy sự chăm sóc chất lượng qua Kmedtour"
+    },
+    "faq": {
+      "badge": "Câu Hỏi Thường Gặp",
+      "title": "Câu Hỏi Thường Gặp",
+      "subtitle": "Mọi thứ bạn cần biết về du lịch y tế tại Hàn Quốc",
+      "items": {
+        "q1": {
+          "question": "Tại sao Hàn Quốc lại là điểm đến hàng đầu cho du lịch y tế?",
+          "answer": "Hàn Quốc kết hợp công nghệ y tế tiên tiến, bác sĩ tay nghề cao, chứng nhận quốc tế và giá cả hợp lý. Các bệnh viện Hàn Quốc có một số tỷ lệ thành công cao nhất trên thế giới, và đất nước này đã đầu tư rất nhiều để trở thành một trung tâm du lịch y tế với cơ sở hạ tầng hỗ trợ bệnh nhân xuất sắc."
+        },
+        "q2": {
+          "question": "Bạn có cung cấp hỗ trợ đa ngôn ngữ không?",
+          "answer": "Có! Chúng tôi cung cấp hỗ trợ bằng tiếng Anh, tiếng Pháp và các ngôn ngữ khác. Các phòng khám đối tác của chúng tôi có nhân viên đa ngôn ngữ, và chúng tôi có thể sắp xếp phiên dịch viên cho các cuộc tư vấn và thủ tục của bạn để đảm bảo giao tiếp rõ ràng trong suốt quá trình điều trị."
+        },
+        "q3": {
+          "question": "Quá trình lên kế hoạch và đặt chỗ mất bao lâu?",
+          "answer": "Cuộc tư vấn ban đầu và khớp phòng khám thường mất từ 3-5 ngày làm việc. Khi bạn đã chọn một phòng khám, việc đặt chỗ và sắp xếp du lịch có thể hoàn tất trong vòng 2-4 tuần, tùy thuộc vào loại hình điều trị và ngày tháng bạn chọn. Chúng tôi làm việc một cách hiệu quả để đáp ứng thời gian của bạn."
+        },
+        "q4": {
+          "question": "Dịch vụ điều phối của Kmedtour bao gồm những gì?",
+          "answer": "Dịch vụ điều phối của chúng tôi bao gồm việc khớp phòng khám, lập lịch hẹn, dịch thuật hồ sơ y tế, thư hỗ trợ visa, trợ giúp đặt chuyến bay, gợi ý chỗ ở, đón tại sân bay, dịch vụ phiên dịch, và hỗ trợ 24/7 trong suốt thời gian bạn ở Hàn Quốc."
+        },
+        "q5": {
+          "question": "Các phòng khám được chọn và kiểm tra như thế nào?",
+          "answer": "Chúng tôi chỉ hợp tác với các cơ sở được công nhận JCI hoặc tương đương đáp ứng các tiêu chuẩn quốc tế. Chúng tôi đánh giá các phòng khám dựa trên tỷ lệ thành công, chứng chỉ chuyên môn, đánh giá của bệnh nhân, chất lượng cơ sở và khả năng hỗ trợ ngôn ngữ. Các cuộc kiểm tra định kỳ đảm bảo tiếp tục các tiêu chuẩn xuất sắc."
+        },
+        "q6": {
+          "question": "Nếu tôi cần chăm sóc tiếp theo sau khi trở về nhà thì sao?",
+          "answer": "Chúng tôi sẽ phối hợp với các nhà cung cấp dịch vụ y tế địa phương của bạn để chăm sóc tiếp theo và đảm bảo bạn nhận được hồ sơ y tế chi tiết cùng hướng dẫn chăm sóc. Nhiều phòng khám đối tác của chúng tôi cung cấp tư vấn y tế từ xa để hỗ trợ sau điều trị, và chúng tôi vẫn sẵn sàng hỗ trợ mọi câu hỏi."
+        }
+      }
+    },
+    "finalCta": {
+      "badge": "Sẵn Sàng Bắt Đầu?",
+      "title": "Bắt Đầu Hành Trình Du Lịch Y Tế Của Bạn Ngày Hôm Nay",
+      "subtitle": "Tham gia cùng hàng ngàn bệnh nhân hài lòng đã tìm thấy chất lượng, chăm sóc y tế hợp lý tại Hàn Quốc",
+      "ctaPrimary": "Bắt Đầu Miễn Phí",
+      "ctaSecondary": "Duyệt Các Phương Pháp Điều Trị"
+    }
+  }
+}

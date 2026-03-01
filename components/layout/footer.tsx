@@ -1,6 +1,6 @@
 'use client'
 
-import Link from 'next/link'
+import { Link } from '@/lib/i18n/routing'
 import { useTranslation } from 'react-i18next'
 
 export function Footer() {

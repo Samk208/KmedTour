@@ -1,0 +1,218 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "howItWorks": "Cara Kerjanya",
+    "forClinics": "Untuk Klinik",
+    "contact": "Kontak",
+    "content": "Pusat Konten",
+    "treatments": "Perawatan",
+    "countries": "Negara",
+    "articles": "Artikel",
+    "dashboard": "Dasbor",
+    "login": "Masuk",
+    "signup": "Daftar",
+    "logout": "Keluar",
+    "treatmentAdvisor": "Penasehat Perawatan"
+  },
+  "ui": {
+    "learnMore": "Pelajari Lebih Lanjut",
+    "getStarted": "Mulai",
+    "submit": "Kirim",
+    "cancel": "Batal",
+    "next": "Berikutnya",
+    "previous": "Sebelumnya",
+    "finish": "Selesai",
+    "close": "Tutup",
+    "loading": "Memuat...",
+    "error": "Terjadi kesalahan",
+    "success": "Sukses"
+  },
+  "footer": {
+    "tagline": "Wisata medis terpercaya dari Afrika ke Korea",
+    "copyright": "© 2025 Kmedtour. Semua hak dilindungi.",
+    "company": "Perusahaan",
+    "support": "Dukungan",
+    "legal": "Hukum",
+    "privacyPolicy": "Kebijakan Privasi",
+    "termsOfService": "Syarat Layanan"
+  },
+  "advisor": {
+    "title": "Penasehat Perawatan",
+    "subtitle": "Jawab beberapa pertanyaan untuk menemukan perawatan yang tepat untuk Anda",
+    "step1": {
+      "title": "Apa gejala Anda?",
+      "subtitle": "Pilih semua yang berlaku",
+      "infertility": "Kemandulan atau kesulitan hamil",
+      "cosmeticConcerns": "Kekhawatiran kosmetik atau peningkatan penampilan",
+      "dentalIssues": "Masalah gigi atau gigi yang hilang",
+      "cancer": "Diagnosis kanker yang memerlukan perawatan",
+      "jointPain": "Nyeri sendi atau masalah mobilitas",
+      "heartCondition": "Kondisi jantung atau masalah jantung",
+      "other": "Kondisi medis lainnya"
+    },
+    "step2": {
+      "title": "Berapa lama Anda bisa tinggal?",
+      "subtitle": "Pilih durasi yang tersedia",
+      "oneWeek": "1 minggu",
+      "twoWeeks": "2 minggu",
+      "threeWeeks": "3 minggu",
+      "fourWeeks": "4+ minggu",
+      "flexible": "Fleksibel"
+    },
+    "step3": {
+      "title": "Apa anggaran Anda?",
+      "subtitle": "Pilih kisaran anggaran yang Anda perkirakan",
+      "low": "Di bawah $5,000",
+      "medium": "$5,000 - $15,000",
+      "high": "$15,000 - $30,000",
+      "veryHigh": "$30,000+",
+      "unsure": "Belum yakin"
+    },
+    "step4": {
+      "title": "Preferensi bahasa",
+      "subtitle": "Apakah Anda memerlukan bantuan bahasa?",
+      "english": "Staf berbahasa Inggris diperlukan",
+      "french": "Staf berbahasa Prancis diutamakan",
+      "translator": "Saya membutuhkan penerjemah",
+      "noPreference": "Tidak ada preferensi"
+    },
+    "results": {
+      "title": "Perawatan yang Direkomendasikan",
+      "subtitle": "Berdasarkan jawaban Anda, kami merekomendasikan:",
+      "noMatches": "Tidak ditemukan kecocokan yang tepat. Tim konsier kami dapat membantu Anda menemukan perawatan yang tepat.",
+      "requestConcierge": "Minta Layanan Konsier",
+      "viewDetails": "Lihat Detail",
+      "startOver": "Mulai Lagi",
+      "confidence": "Keyakinan kecocokan"
+    }
+  },
+  "landing": {
+    "meta": {
+      "title": "Platform Wisata Medis Terpercaya Korea untuk Pasien Internasional | Kmedtour",
+      "description": "Terhubung dengan klinik medis terkemuka di Korea untuk perawatan kelas dunia. Dukungan konsier ahli, harga transparan, dan bantuan multibahasa untuk pasien internasional."
+    },
+    "hero": {
+      "badge": "Dipercaya oleh Pasien di Seluruh Dunia",
+      "title": "Akses Pelayanan Kesehatan Kelas Dunia Korea dengan Mudah",
+      "subtitle": "Dukungan premium, transparan, multibahasa untuk pasien global yang mencari perawatan medis lanjutan di Korea",
+      "ctaPrimary": "Jelajahi Perawatan",
+      "ctaSecondary": "Minta Dukungan Konsier",
+      "stats": {
+        "patients": "Pasien Internasional",
+        "clinics": "Klinik Mitra",
+        "satisfaction": "Tingkat Kepuasan"
+      }
+    },
+    "benefits": {
+      "badge": "Mengapa Korea",
+      "title": "Mengapa Pasien di Seluruh Dunia Memilih Korea",
+      "subtitle": "Korea telah menjadi pemimpin global dalam wisata medis, menawarkan kualitas dan nilai yang tak tertandingi",
+      "items": {
+        "technology": {
+          "title": "Teknologi Canggih",
+          "description": "Peralatan medis mutakhir dan teknik perawatan terbaru"
+        },
+        "specialists": {
+          "title": "Spesialis Ahli",
+          "description": "Dokter terlatih tinggi dengan pengalaman dan sertifikasi internasional"
+        },
+        "outcomes": {
+          "title": "Hasil Keselamatan yang Sangat Baik",
+          "description": "Tingkat keberhasilan kelas dunia dengan standar keselamatan dan protokol yang ketat"
+        },
+        "pricing": {
+          "title": "Harga Transparan",
+          "description": "Biaya jelas dan upfront dengan penghematan signifikan dibandingkan dengan negara-negara Barat"
+        },
+        "support": {
+          "title": "Dukungan Multibahasa",
+          "description": "Dukungan bahasa Inggris, Prancis, dan bahasa lainnya sepanjang perjalanan Anda"
+        },
+        "accreditation": {
+          "title": "Akreditasi Internasional",
+          "description": "Fasilitas terakreditasi JCI yang memenuhi standar global tertinggi"
+        }
+      }
+    },
+    "treatments": {
+      "badge": "Perawatan Populer",
+      "title": "Perawatan Kelas Dunia untuk Setiap Kebutuhan",
+      "subtitle": "Dari kesuburan hingga prosedur kosmetik, Korea menawarkan keunggulan di seluruh spesialisasi",
+      "viewAll": "Lihat Semua Perawatan",
+      "from": "Dari"
+    },
+    "howItWorks": {
+      "badge": "Proses Sederhana",
+      "title": "Bagaimana Kmedtour Bekerja",
+      "subtitle": "Perjalanan Anda menuju pelayanan kesehatan kelas dunia dalam empat langkah sederhana",
+      "steps": {
+        "explore": {
+          "title": "Jelajahi Pilihan",
+          "description": "Telusuri perawatan, klinik, dan baca cerita pasien untuk menemukan yang tepat"
+        },
+        "matched": {
+          "title": "Dapatkan Kecocokan",
+          "description": "Para ahli kami menghubungkan Anda dengan klinik terbaik untuk kebutuhan spesifik Anda"
+        },
+        "plan": {
+          "title": "Rencanakan Perjalanan Anda",
+          "description": "Kami menangani visa, perjalanan, akomodasi, dan semua logistik untuk Anda"
+        },
+        "care": {
+          "title": "Terima Perawatan",
+          "description": "Dapatkan perawatan kelas dunia dengan dukungan penuh konsier dari kedatangan hingga pemulihan"
+        }
+      }
+    },
+    "global": {
+      "badge": "Jangkauan Global",
+      "title": "Dipercaya oleh Pasien di Seluruh Dunia",
+      "subtitle": "Kami melayani pasien internasional dari Afrika, Asia Tenggara, GCC, Eropa, dan komunitas diaspora di seluruh dunia",
+      "regions": "Pasien dari 50+ negara mempercayai Kmedtour"
+    },
+    "testimonials": {
+      "badge": "Kisah Sukses",
+      "title": "Apa Kata Pasien Kami",
+      "subtitle": "Pengalaman nyata dari pasien yang menemukan perawatan berkualitas melalui Kmedtour"
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Pertanyaan yang Sering Diajukan",
+      "subtitle": "Segala yang perlu Anda ketahui tentang wisata medis di Korea",
+      "items": {
+        "q1": {
+          "question": "Mengapa Korea menjadi tujuan utama untuk wisata medis?",
+          "answer": "Korea menggabungkan teknologi medis canggih, dokter yang sangat terampil, akreditasi internasional, dan harga terjangkau. Rumah sakit Korea memiliki beberapa tingkat keberhasilan tertinggi secara global, dan negara ini telah berinvestasi besar-besaran untuk menjadi pusat wisata medis dengan infrastruktur dukungan pasien yang excellent."
+        },
+        "q2": {
+          "question": "Apakah Anda menyediakan dukungan multibahasa?",
+          "answer": "Ya! Kami menawarkan dukungan dalam bahasa Inggris, Prancis, dan bahasa lainnya. Klinik mitra kami memiliki staf multibahasa, dan kami dapat mengatur penerjemah untuk konsultasi dan prosedur Anda untuk memastikan komunikasi yang jelas sepanjang perawatan Anda."
+        },
+        "q3": {
+          "question": "Berapa lama perencanaan dan pemesanan biasanya?",
+          "answer": "Konsultasi awal dan pencocokan klinik biasanya memakan waktu 3-5 hari kerja. Setelah Anda memilih klinik, pemesanan dan pengaturan perjalanan dapat diselesaikan dalam waktu 2-4 minggu, tergantung pada jenis perawatan dan tanggal yang Anda inginkan. Kami bekerja secara efisien untuk mengakomodasi jadwal Anda."
+        },
+        "q4": {
+          "question": "Apa saja yang termasuk dalam layanan konsier Kmedtour?",
+          "answer": "Layanan konsier kami mencakup pencocokan klinik, penjadwalan janji, terjemahan catatan medis, surat dukungan visa, bantuan pemesanan perjalanan, rekomendasi akomodasi, penjemputan bandara, layanan interpretasi, dan dukungan 24/7 sepanjang masa tinggal Anda di Korea."
+        },
+        "q5": {
+          "question": "Bagaimana klinik dipilih dan diverifikasi?",
+          "answer": "Kami hanya bekerja sama dengan fasilitas terakreditasi JCI atau yang setara yang memenuhi standar internasional. Kami mengevaluasi klinik berdasarkan tingkat keberhasilan, kredensial spesialis, ulasan pasien, kualitas fasilitas, dan kemampuan dukungan bahasa. Audit rutin memastikan kualitas yang berkelanjutan."
+        },
+        "q6": {
+          "question": "Bagaimana jika saya memerlukan perawatan lanjutan setelah kembali ke rumah?",
+          "answer": "Kami berkoordinasi dengan penyedia layanan kesehatan lokal Anda untuk perawatan lanjutan dan memastikan Anda menerima catatan medis dan instruksi perawatan yang detail. Banyak klinik mitra kami menawarkan konsultasi telemedisin untuk dukungan pasca-perawatan, dan kami tetap tersedia untuk membantu dengan pertanyaan apa pun."
+        }
+      }
+    },
+    "finalCta": {
+      "badge": "Siap untuk Memulai?",
+      "title": "Mulai Perjalanan Wisata Medis Anda Hari Ini",
+      "subtitle": "Bergabunglah dengan ribuan pasien yang puas yang menemukan perawatan kesehatan berkualitas dan terjangkau di Korea",
+      "ctaPrimary": "Mulai Gratis",
+      "ctaSecondary": "Telusuri Perawatan"
+    }
+  }
+}

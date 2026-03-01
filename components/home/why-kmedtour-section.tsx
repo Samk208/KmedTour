@@ -2,28 +2,30 @@
 
 import { motion } from 'framer-motion'
 import { BarChart3, Database, Globe2, ShieldCheck } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 export function WhyKmedtourSection() {
+  const { t } = useTranslation('common')
   const features = [
     {
       icon: Database,
-      title: 'Data-Driven Verification',
-      description: 'We don\u2019t just list clinics. Our system validates accreditations, survival rates, and patient outcomes in real-time.',
+      title: t('landing.benefits.items.technology.title') || 'Data-Driven Verification',
+      description: t('landing.benefits.items.technology.description') || 'We don\u2019t just list clinics. Our system validates accreditations, survival rates, and patient outcomes in real-time.',
     },
     {
       icon: Globe2,
-      title: 'End-to-End Orchestration',
-      description: 'Our platform vertically integrates hospital booking, travel logistics, and payments into a single seamless workflow.',
+      title: t('landing.benefits.items.support.title') || 'End-to-End Orchestration',
+      description: t('landing.benefits.items.support.description') || 'Our platform vertically integrates hospital booking, travel logistics, and payments into a single seamless workflow.',
     },
     {
       icon: BarChart3,
-      title: 'Algorithmic Pricing',
-      description: 'Get guaranteed price transparency. Our dynamic pricing engine prevents "foreigner surcharges" and hidden fees.',
+      title: t('landing.benefits.items.pricing.title') || 'Algorithmic Pricing',
+      description: t('landing.benefits.items.pricing.description') || 'Get guaranteed price transparency. Our dynamic pricing engine prevents "foreigner surcharges" and hidden fees.',
     },
     {
       icon: ShieldCheck,
-      title: 'Automated Compliance',
-      description: 'Visa invitation letters and medical documentation are generated automatically, reducing administrative errors.',
+      title: t('landing.benefits.items.accreditation.title') || 'Automated Compliance',
+      description: t('landing.benefits.items.accreditation.description') || 'Visa invitation letters and medical documentation are generated automatically, reducing administrative errors.',
     },
   ]
 
@@ -32,13 +34,13 @@ export function WhyKmedtourSection() {
       <div className="container mx-auto max-w-[1240px] px-4 sm:px-6">
         <div className="text-center space-y-4 mb-16">
           <div className="inline-block px-4 py-2 rounded-full text-sm font-medium" style={{ backgroundColor: 'rgba(57, 198, 176, 0.2)', color: 'var(--kmed-teal)' }}>
-            Why KmedTour
+            {t('landing.benefits.badge') || "Why KmedTour"}
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-white text-balance">
-            Medical Infrastructure, Not Just an Agency
+            {t('landing.benefits.title') || "Medical Infrastructure, Not Just an Agency"}
           </h2>
           <p className="text-lg max-w-2xl mx-auto leading-relaxed text-gray-300">
-            We built the operating system for medical tourism so you can focus on healing.
+            {t('landing.benefits.subtitle') || "We built the operating system for medical tourism so you can focus on healing."}
           </p>
         </div>
 

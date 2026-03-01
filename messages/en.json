@@ -1,0 +1,516 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "howItWorks": "How It Works",
+    "forClinics": "For Clinics",
+    "contact": "Contact",
+    "content": "Content Hub",
+    "treatments": "Treatments",
+    "countries": "Countries",
+    "articles": "Articles",
+    "dashboard": "Dashboard",
+    "login": "Login",
+    "signup": "Sign Up",
+    "logout": "Logout",
+    "treatmentAdvisor": "Treatment Advisor"
+  },
+  "ui": {
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "next": "Next",
+    "previous": "Previous",
+    "finish": "Finish",
+    "close": "Close",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success"
+  },
+  "footer": {
+    "tagline": "Trusted medical tourism from Africa to Korea",
+    "copyright": "© 2025 Kmedtour. All rights reserved.",
+    "company": "Company",
+    "support": "Support",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  },
+  "advisor": {
+    "title": "Treatment Advisor",
+    "subtitle": "Answer a few questions to find the right treatment for you",
+    "step1": {
+      "title": "What are your symptoms?",
+      "subtitle": "Select all that apply",
+      "infertility": "Infertility or difficulty conceiving",
+      "cosmeticConcerns": "Cosmetic concerns or appearance enhancement",
+      "dentalIssues": "Dental issues or missing teeth",
+      "cancer": "Cancer diagnosis requiring treatment",
+      "jointPain": "Joint pain or mobility issues",
+      "heartCondition": "Heart condition or cardiac issues",
+      "other": "Other medical condition"
+    },
+    "step2": {
+      "title": "How long can you stay?",
+      "subtitle": "Select your available duration",
+      "oneWeek": "1 week",
+      "twoWeeks": "2 weeks",
+      "threeWeeks": "3 weeks",
+      "fourWeeks": "4+ weeks",
+      "flexible": "Flexible"
+    },
+    "step3": {
+      "title": "What is your budget?",
+      "subtitle": "Select your estimated budget range",
+      "low": "Under $5,000",
+      "medium": "$5,000 - $15,000",
+      "high": "$15,000 - $30,000",
+      "veryHigh": "$30,000+",
+      "unsure": "Not sure yet"
+    },
+    "step4": {
+      "title": "Language preferences",
+      "subtitle": "Do you need language assistance?",
+      "english": "English-speaking staff required",
+      "french": "French-speaking staff preferred",
+      "translator": "I need a translator",
+      "noPreference": "No preference"
+    },
+    "results": {
+      "title": "Recommended Treatments",
+      "subtitle": "Based on your answers, we recommend:",
+      "noMatches": "No exact matches found. Our concierge team can help you find the right treatment.",
+      "requestConcierge": "Request Concierge Service",
+      "viewDetails": "View Details",
+      "startOver": "Start Over",
+      "confidence": "Match confidence"
+    }
+  },
+  "landing": {
+    "meta": {
+      "title": "Korea's Trusted Medical Tourism Platform for International Patients | Kmedtour",
+      "description": "Connect with Korea's top medical clinics for world-class treatments. Expert concierge support, transparent pricing, and multilingual assistance for international patients."
+    },
+    "hero": {
+      "badge": "Trusted by Patients Worldwide",
+      "title": "Access World-Class Korean Healthcare With Ease",
+      "subtitle": "Premium, transparent, multilingual support for global patients seeking advanced medical treatments in Korea",
+      "ctaPrimary": "Explore Treatments",
+      "ctaSecondary": "Request Concierge Support",
+      "stats": {
+        "patients": "International Patients",
+        "clinics": "Partner Clinics",
+        "satisfaction": "Satisfaction Rate"
+      }
+    },
+    "benefits": {
+      "badge": "Why Korea",
+      "title": "Why Patients Worldwide Choose Korea",
+      "subtitle": "Korea has become a global leader in medical tourism, offering unmatched quality and value",
+      "items": {
+        "technology": {
+          "title": "Advanced Technology",
+          "description": "State-of-the-art medical equipment and cutting-edge treatment techniques"
+        },
+        "specialists": {
+          "title": "Expert Specialists",
+          "description": "Highly trained doctors with international experience and certifications"
+        },
+        "outcomes": {
+          "title": "Excellent Safety Outcomes",
+          "description": "World-class success rates with rigorous safety standards and protocols"
+        },
+        "pricing": {
+          "title": "Transparent Pricing",
+          "description": "Clear, upfront costs with significant savings compared to Western countries"
+        },
+        "support": {
+          "title": "Multilingual Support",
+          "description": "English, French, and other language support throughout your journey"
+        },
+        "accreditation": {
+          "title": "International Accreditation",
+          "description": "JCI-accredited facilities meeting the highest global standards"
+        }
+      }
+    },
+    "treatments": {
+      "badge": "MODULE.LIST_ACTIVE",
+      "title": "Core Medical Protocols",
+      "subtitle": "Select a treatment module to initialize your verification process. Data is cross-referenced with 50+ clinics.",
+      "viewAll": "Review All Protocols",
+      "from": "From",
+      "errorLoading": "Unable to load treatments. Please try again later.",
+      "noProtocols": "System Update: No protocols found.",
+      "verified": "VERIFIED",
+      "costEst": "Cost Est.",
+      "success": "Success",
+      "initModule": "INIT_MODULE"
+    },
+    "howItWorks": {
+      "badge": "Simple Process",
+      "title": "How Kmedtour Works",
+      "subtitle": "Your journey to world-class healthcare in four simple steps",
+      "steps": {
+        "explore": {
+          "title": "Explore Options",
+          "description": "Browse treatments, clinics, and read patient stories to find the right fit"
+        },
+        "matched": {
+          "title": "Get Matched",
+          "description": "Our experts connect you with the best clinics for your specific needs"
+        },
+        "plan": {
+          "title": "Plan Your Trip",
+          "description": "We handle visas, travel, accommodation, and all logistics for you"
+        },
+        "care": {
+          "title": "Receive Care",
+          "description": "Get world-class treatment with full concierge support from arrival to recovery"
+        }
+      }
+    },
+    "global": {
+      "badge": "Global Reach",
+      "title": "Trusted by Patients Worldwide",
+      "subtitle": "We serve international patients from Africa, Southeast Asia, GCC, Europe, and diaspora communities around the world",
+      "regions": "Patients from 50+ countries trust Kmedtour"
+    },
+    "testimonials": {
+      "badge": "Success Stories",
+      "title": "What Our Patients Say",
+      "subtitle": "Real experiences from patients who found quality care through Kmedtour"
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about medical tourism in Korea",
+      "items": {
+        "q1": {
+          "question": "Why is Korea a top destination for medical tourism?",
+          "answer": "Korea combines advanced medical technology, highly skilled doctors, international accreditation, and affordable pricing. Korean hospitals have some of the highest success rates globally, and the country has invested heavily in becoming a medical tourism hub with excellent patient support infrastructure."
+        },
+        "q2": {
+          "question": "Do you provide multilingual support?",
+          "answer": "Yes! We offer support in English, French, and other languages. Our partner clinics have multilingual staff, and we can arrange interpreters for your consultations and procedures to ensure clear communication throughout your treatment."
+        },
+        "q3": {
+          "question": "How long does planning and booking take?",
+          "answer": "Initial consultation and clinic matching typically takes 3-5 business days. Once you select a clinic, booking and travel arrangements can be completed within 2-4 weeks, depending on your treatment type and preferred dates. We work efficiently to accommodate your timeline."
+        },
+        "q4": {
+          "question": "What does Kmedtour's concierge service include?",
+          "answer": "Our concierge service includes clinic matching, appointment scheduling, medical record translation, visa support letters, travel booking assistance, accommodation recommendations, airport pickup, interpretation services, and 24/7 support throughout your stay in Korea."
+        },
+        "q5": {
+          "question": "How are clinics selected and vetted?",
+          "answer": "We partner only with JCI-accredited or equivalent facilities that meet international standards. We evaluate clinics based on success rates, specialist credentials, patient reviews, facility quality, and language support capabilities. Regular audits ensure continued excellence."
+        },
+        "q6": {
+          "question": "What if I need follow-up care after returning home?",
+          "answer": "We coordinate with your local healthcare providers for follow-up care and ensure you receive detailed medical records and care instructions. Many of our partner clinics offer telemedicine consultations for post-treatment support, and we remain available to assist with any questions."
+        }
+      }
+    },
+    "finalCta": {
+      "badge": "Ready to Begin?",
+      "title": "Start Your Medical Tourism Journey Today",
+      "subtitle": "Join thousands of satisfied patients who found quality, affordable healthcare in Korea",
+      "ctaPrimary": "Get Started Free",
+      "ctaSecondary": "Browse Treatments"
+    }
+  },
+  "howItWorksPage": {
+    "hero": {
+      "badge": "Operational Protocol v2.4",
+      "title": "System ",
+      "titleHighlight": "Architecture",
+      "subtitle": "KmedTour is not a travel agency. It is a vertically integrated operating system that orchestrates medical data, logistics, and financial transactions into a single secure workflow."
+    },
+    "timeline": {
+      "header": "Execution Sequence",
+      "steps": {
+        "step1": {
+          "title": "Data Ingestion & Analysis",
+          "description": "Submit your medical history via our HIPAA-compliant portal. Our AI extracts key biomarkers and structuring unstructured data for specialist review."
+        },
+        "step2": {
+          "title": "Algorithmic Matching",
+          "description": "Our matching engine queries 50+ verfied clinics, ranking them by survival rates, equipment specificity, and surgeon volume for your condition."
+        },
+        "step3": {
+          "title": "Consultation & Verification",
+          "description": "Engage in encrypted video consultations with shortlisted surgeons. Receive a verified treatment plan with guaranteed line-item pricing."
+        },
+        "step4": {
+          "title": "Logistics Orchestration",
+          "description": "Once confirmed, the system auto-generates visa invitation letters, books medical transport, and reserves recovery accommodation."
+        },
+        "step5": {
+          "title": "Clinical Execution",
+          "description": "Arrive at the facility. Your dedicated concierge ensures all check-in administrative protocols are pre-cleared."
+        },
+        "step6": {
+          "title": "Recovery Protocol",
+          "description": "Post-op monitoring via our app. Virtual check-ins ensures stable recovery before your return flight."
+        }
+      }
+    },
+    "security": {
+      "badge": "Security Core",
+      "title": "Bank-Grade Encryption for Your Medical Data",
+      "subtitle": "We treat your medical records with the same rigor as financial transactions. Our infrastructure is built on private, encrypted channels.",
+      "features": {
+        "item1": "End-to-end encryption for all documents",
+        "item2": "HIPAA & GDPR compliant data handling",
+        "item3": "Ephemeral data access for clinics",
+        "item4": "Audit logs for every record access"
+      },
+      "statusSecure": "STATUS: SECURE",
+      "statusActive": "AES-256 ENCRYPTION ACTIVE"
+    },
+    "cta": {
+      "title": "Ready to Initialize?",
+      "subtitle": "Start the intake protocol. It takes less than 10 minutes to ingest your requirements.",
+      "button": "Start Digital Intake"
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "badge": "SYSTEM ONLINE: KMED-OS V2.0",
+      "title": "The Operating System for ",
+      "titleHighlight": "Global Medical Travel",
+      "subtitle": "KmedTour upgrades the medical tourism experience from a chaotic logistical challenge into a seamless, digital workflow. We connect the world to Korea's medical future."
+    },
+    "mission": {
+      "badge": "Our Mission",
+      "title": "Decoding Complex Care",
+      "p1": "Medical travel has historically been fragmented, opaque, and risky. Patients worldwide struggle to find trustworthy prices, verified doctors, and safe logistics.",
+      "p2a": "We built KmedTour not just as an agency, but as a ",
+      "p2Highlight": "technology platform",
+      "p2b": ". By digitizing the patient journey—from AI-powered matching to secure digital health records—we eliminate friction and restore trust.",
+      "p3": "Today, we serve patients from North America, Europe, Asia, and beyond, proving that high-quality healthcare knows no borders.",
+      "points": {
+        "point1": {
+          "title": "Data-Driven",
+          "description": "Treatments based on clinical outcomes, not marketing."
+        },
+        "point2": {
+          "title": "Transparent",
+          "description": "Clear pricing and direct hospital billing access."
+        }
+      }
+    },
+    "values": {
+      "header": "Core Architecture",
+      "subtitle": "Our operating principles for a flawless medical journey",
+      "items": {
+        "item1": {
+          "title": "Verified Excellence",
+          "description": "We strictly vet every clinic against the highest international standards (JCI, K-Health)."
+        },
+        "item2": {
+          "title": "Digital Precision",
+          "description": "Our proprietary Medical OS organizes your entire journey with algorithmic efficiency."
+        },
+        "item3": {
+          "title": "Human Touch",
+          "description": "While our tech is advanced, our care is personal. Dedicated coordinators for every patient."
+        },
+        "item4": {
+          "title": "Global Access",
+          "description": "Democratizing access to Korea's elite medical infrastructure for patients worldwide."
+        }
+      }
+    },
+    "stats": {
+      "stat1": {
+        "number": "500+",
+        "label": "Successful Journeys"
+      },
+      "stat2": {
+        "number": "50+",
+        "label": "Elite Partners"
+      },
+      "stat3": {
+        "number": "20+",
+        "label": "Countries Served"
+      },
+      "stat4": {
+        "number": "99%",
+        "label": "Systems Uptime"
+      }
+    },
+    "cta": {
+      "title": "Initialize Your Journey",
+      "subtitle": "Use our AI Treatment Advisor or browse our curated network of clinics to begin.",
+      "primaryBtn": "Ask AI Advisor",
+      "secondaryBtn": "Start Consultation"
+    }
+  },
+  "forClinicsPage": {
+    "hero": {
+      "title": "Partner with Kmedtour to Grow Your International Practice",
+      "subtitle": "Join Korea's leading medical tourism platform connecting top clinics with qualified African patients seeking world-class care.",
+      "button": "Become a Partner"
+    },
+    "benefits": {
+      "title": "Why Partner with Kmedtour?",
+      "subtitle": "We handle patient acquisition, screening, and logistics so you can focus on providing excellent care.",
+      "items": {
+        "item1": {
+          "title": "Access African Market",
+          "description": "Connect with thousands of qualified patients from Africa seeking quality medical care."
+        },
+        "item2": {
+          "title": "Increase Revenue",
+          "description": "Grow your international patient volume with our verified lead generation system."
+        },
+        "item3": {
+          "title": "Marketing Support",
+          "description": "Get featured on our platform, content hub, and marketing campaigns to African audiences."
+        },
+        "item4": {
+          "title": "Quality Patients",
+          "description": "Receive pre-qualified patients who have been screened for suitability and budget."
+        }
+      }
+    },
+    "features": {
+      "title": "What You Get as a Partner Clinic",
+      "subtitle": "Our comprehensive partnership program provides everything you need to successfully serve international patients from Africa.",
+      "items": {
+        "item1": "Featured placement on Kmedtour platform",
+        "item2": "Patient referrals matching your specialties",
+        "item3": "Dedicated account manager",
+        "item4": "Translation and coordination support",
+        "item5": "Marketing to African markets",
+        "item6": "Patient feedback and reviews",
+        "item7": "Payment processing support",
+        "item8": "Performance analytics dashboard"
+      }
+    },
+    "requirements": {
+      "title": "Partnership Requirements",
+      "items": {
+        "item1": {
+          "title": "Accreditation",
+          "description": "JCI, ISO, or equivalent international healthcare accreditation"
+        },
+        "item2": {
+          "title": "Language Support",
+          "description": "English-speaking staff or translation services for international patients"
+        },
+        "item3": {
+          "title": "International Experience",
+          "description": "Experience treating international patients with proven track record"
+        },
+        "item4": {
+          "title": "Transparency",
+          "description": "Clear pricing, success rates, and willingness to provide detailed information"
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Expand Your International Practice?",
+      "subtitle": "Join leading Korean clinics already partnering with Kmedtour to serve African patients.",
+      "primaryBtn": "Schedule a Call",
+      "secondaryBtn": "Learn More"
+    }
+  },
+  "patientIntakePage": {
+    "title": "Patient Intake Form",
+    "subtitle": "Help us understand your needs to find the perfect clinic match",
+    "buttons": {
+      "next": "Next Step",
+      "back": "Back",
+      "submit": "Submit Application",
+      "submitting": "Submitting..."
+    },
+    "errors": {
+      "serverError": "Something went wrong. Please try again.",
+      "networkError": "We couldn't reach the server. Please check your connection and try again."
+    },
+    "step1": {
+      "indicator": "Personal Info",
+      "title": "Personal Information",
+      "subtitle": "Let's start with some basic information about you.",
+      "fullName": "Full Name *",
+      "fullNamePlaceholder": "John Doe",
+      "email": "Email Address *",
+      "emailPlaceholder": "john@example.com",
+      "phone": "Phone Number (with country code) *",
+      "phonePlaceholder": "+234 123 456 7890",
+      "country": "Country of Residence *",
+      "countryPlaceholder": "Select your country",
+      "language": "Preferred Language *",
+      "languagePlaceholder": "Select language",
+      "en": "English",
+      "fr": "Français (French)"
+    },
+    "step2": {
+      "indicator": "Medical Details",
+      "title": "Medical Information",
+      "subtitle": "Help us understand your medical needs so we can find the best clinics for you.",
+      "treatmentType": "Treatment Type *",
+      "treatmentTypePlaceholder": "Select treatment type",
+      "other": "Other (please specify in condition)",
+      "medicalCondition": "Medical Condition / Reason for Treatment *",
+      "medicalConditionPlaceholder": "Please describe your condition, symptoms, or reason for seeking treatment...",
+      "previousTreatments": "Previous Treatments (Optional)",
+      "previousTreatmentsPlaceholder": "Have you tried any treatments before? If yes, please describe...",
+      "urgency": "Treatment Urgency *",
+      "urgencyPlaceholder": "When do you need treatment?",
+      "urgent": "Urgent (within 2 weeks)",
+      "within1Month": "Within 1 month",
+      "within3Months": "Within 3 months",
+      "flexible": "Flexible / Planning ahead",
+      "hasInsurance": "I have health insurance that may cover international treatment",
+      "insuranceDetails": "Insurance Details",
+      "insuranceDetailsPlaceholder": "Insurance provider and policy details"
+    },
+    "step3": {
+      "indicator": "Travel & Budget",
+      "title": "Travel & Budget",
+      "subtitle": "Help us plan your medical journey with budget and travel preferences.",
+      "budget": "Budget Range (USD) *",
+      "budgetPlaceholder": "Select your budget range",
+      "under5000": "Under $5,000",
+      "between5kAnd10k": "$5,000 - $10,000",
+      "between10kAnd20k": "$10,000 - $20,000",
+      "over20000": "Over $20,000",
+      "travelDates": "Travel Dates *",
+      "datesFlexible": "Flexible dates",
+      "datesSpecific": "I have specific dates in mind",
+      "preferredDates": "Preferred Dates",
+      "preferredDatesPlaceholder": "e.g., March 15-30, 2025",
+      "accommodation": "Accommodation Preference *",
+      "accommodationPlaceholder": "How would you like to arrange accommodation?",
+      "clinicArranged": "Clinic-arranged accommodation",
+      "selfArranged": "I'll arrange my own accommodation",
+      "needHelp": "I need help finding accommodation",
+      "additionalNotes": "Additional Notes (Optional)",
+      "additionalNotesPlaceholder": "Any other information you'd like us to know? Special requirements, dietary restrictions, mobility needs, etc.",
+      "agreeTextPre": "I agree to Kmedtour's ",
+      "agreeTerms": "Terms of Service",
+      "agreeAnd": " and ",
+      "agreePrivacy": "Privacy Policy",
+      "agreeTextPost": ". I understand that this is a preliminary assessment and not a guarantee of treatment."
+    },
+    "success": {
+      "title": "Submission Successful!",
+      "subtitle": "Thank you for choosing Kmedtour. We've received your information and our team will review it shortly.",
+      "referenceLabel": "Your Reference Number:",
+      "whatHappensNext": "What Happens Next?",
+      "step1Title": "1. Review",
+      "step1Desc": "Our medical team will review your case within 24-48 hours",
+      "step2Title": "2. Matching",
+      "step2Desc": "We'll match you with 3-5 trusted clinics specialized in your treatment",
+      "step3Title": "3. Contact",
+      "step3Desc": "You'll receive clinic recommendations via email with next steps",
+      "btnHome": "Back to Home",
+      "btnContent": "Explore Content Hub"
+    }
+  }
+}

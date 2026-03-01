@@ -3,9 +3,11 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { ClipboardList, Cpu, Plane, ShieldCheck } from 'lucide-react'
 import { useRef } from 'react'
+import { useTranslation } from 'react-i18next'
 
 export function HowItWorksSection() {
   const containerRef = useRef<HTMLDivElement>(null)
+  const { t } = useTranslation('common')
 
   // Track scroll progress for drawing the line
   const { scrollYProgress } = useScroll({
@@ -19,26 +21,26 @@ export function HowItWorksSection() {
   const steps = [
     {
       icon: ClipboardList,
-      title: 'Digital Intake',
-      description: 'Upload your medical history via our secure portal. Our AI extracts key data instantly.',
+      title: t('landing.howItWorks.steps.explore.title') || 'Digital Intake',
+      description: t('landing.howItWorks.steps.explore.description') || 'Upload your medical history via our secure portal...',
       color: 'var(--kmed-blue)',
     },
     {
       icon: Cpu,
-      title: 'Intelligent Matching',
-      description: 'Our algorithms rank 50+ clinics against your outcome needs, budget, and urgency.',
+      title: t('landing.howItWorks.steps.matched.title') || 'Intelligent Matching',
+      description: t('landing.howItWorks.steps.matched.description') || 'Our algorithms rank clinics...',
       color: 'var(--kmed-teal)',
     },
     {
       icon: Plane,
-      title: 'Logistics Orchestration',
-      description: 'We automate visa letters, flight bookings, and hotel arrangements in one workflow.',
+      title: t('landing.howItWorks.steps.plan.title') || 'Logistics Orchestration',
+      description: t('landing.howItWorks.steps.plan.description') || 'We automate visa letters...',
       color: 'var(--kmed-blue)',
     },
     {
       icon: ShieldCheck,
-      title: 'Concierge Recovery',
-      description: 'From airport pickup to post-op checkups, our operating system tracks every step.',
+      title: t('landing.howItWorks.steps.care.title') || 'Concierge Recovery',
+      description: t('landing.howItWorks.steps.care.description') || 'From airport pickup to post-op...',
       color: 'var(--kmed-teal)',
     },
   ]
@@ -48,13 +50,13 @@ export function HowItWorksSection() {
       <div className="container mx-auto max-w-[1240px] px-4 sm:px-6 relative z-10">
         <div className="text-center space-y-4 mb-16">
           <div className="inline-block px-4 py-2 rounded-full text-sm font-medium" style={{ backgroundColor: 'var(--soft-grey)', color: 'var(--kmed-blue)' }}>
-            System Workflow
+            {t('landing.howItWorks.badge') || "System Workflow"}
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-balance" style={{ color: 'var(--kmed-navy)' }}>
-            Intelligent Medical Orchestration
+            {t('landing.howItWorks.title') || "Intelligent Medical Orchestration"}
           </h2>
           <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: 'var(--deep-grey)' }}>
-            We replace manual coordination with automated precision.
+            {t('landing.howItWorks.subtitle') || "We replace manual coordination with automated precision."}
           </p>
         </div>
 

@@ -3,8 +3,10 @@
 import { Button } from '@/components/ui/button'
 import { ArrowRight, Sparkles } from 'lucide-react'
 import Link from 'next/link'
+import { useTranslation } from 'react-i18next'
 
 export function CTASection() {
+  const { t } = useTranslation('common')
   return (
     <section className="w-full py-20 md:py-32" style={{ backgroundColor: 'white' }}>
       <div className="container mx-auto max-w-[1240px] px-4 sm:px-6">
@@ -21,12 +23,11 @@ export function CTASection() {
           </div>
 
           <h2 className="relative text-3xl md:text-4xl lg:text-5xl font-bold text-white text-balance">
-            Experience the Future of Medical Travel
+            {t('landing.finalCta.title') || "Experience the Future of Medical Travel"}
           </h2>
 
           <p className="relative text-lg md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
-            Let our operating system handle the logistics while you focus on recovery.
-            Instant matching, transparent pricing, and full concierge automation.
+            {t('landing.finalCta.subtitle') || "Let our operating system handle the logistics while you focus on recovery. Instant matching, transparent pricing, and full concierge automation."}
           </p>
 
           <div className="relative flex flex-col sm:flex-row gap-4 justify-center pt-4">
@@ -35,7 +36,7 @@ export function CTASection() {
                 size="lg"
                 className="text-base px-8 py-7 bg-white hover:bg-white/90 shadow-lg text-[var(--kmed-blue)] font-bold"
               >
-                Start Digital Intake
+                {t('landing.finalCta.ctaPrimary') || "Start Digital Intake"}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
@@ -46,7 +47,7 @@ export function CTASection() {
                 variant="outline"
                 className="text-base px-8 py-7 border-2 border-white/30 text-white hover:bg-white/10 backdrop-blur-sm"
               >
-                Contact Support
+                {t('landing.finalCta.ctaSecondary') || "Contact Support"}
               </Button>
             </Link>
           </div>

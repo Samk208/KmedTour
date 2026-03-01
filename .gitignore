@@ -84,3 +84,11 @@ agents/integrity_log.txt
 # Supabase Local
 supabase/.branches
 supabase/.temp
+
+# Testing and Logs
+test-results/
+playwright-report/
+playwright/.cache/
+*_output.txt
+git_status.txt
+memory/

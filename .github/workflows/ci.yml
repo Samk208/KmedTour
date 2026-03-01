@@ -102,6 +102,18 @@ jobs:
           NEXT_PUBLIC_SUPABASE_ANON_KEY: placeholder-key-for-build
           NEXT_PUBLIC_APP_URL: http://localhost:3002
 
+      - name: Start Next.js server
+        run: pnpm start &
+        env:
+          PORT: 3002
+          NODE_ENV: production
+          NEXT_PUBLIC_SUPABASE_URL: https://placeholder.supabase.co
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: placeholder-key-for-build
+          NEXT_PUBLIC_APP_URL: http://localhost:3002
+
+      - name: Wait for server to be ready
+        run: npx wait-on http://localhost:3002 --timeout 30000
+
       - name: Run E2E tests
         run: pnpm exec playwright test
         env:
@@ -135,7 +147,11 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
-      - name: Audit dependencies
+      - name: Audit dependencies (fail on critical)
+        run: pnpm audit --audit-level=critical
+        continue-on-error: false
+
+      - name: Audit high-severity (warn only)
         run: pnpm audit --audit-level=high || true
 
       - name: Scan for secrets

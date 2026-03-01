@@ -1,19 +1,22 @@
 'use client'
 
-import Link from 'next/link'
-import { useRouter } from 'next/navigation'
-import { useTranslation } from 'react-i18next'
-import { Menu, X, Globe, Heart } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { useUIStore } from '@/lib/stores/ui-store'
-import { useSupabaseSession } from '@/lib/hooks/use-supabase-session'
-import { useFavoritesStore } from '@/lib/stores/favorites-store'
 import { ThemeToggle } from '@/components/layout/theme-toggle'
+import { Button } from '@/components/ui/button'
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
+import { useSupabaseSession } from '@/lib/hooks/use-supabase-session'
+import { Link, usePathname, useRouter } from '@/lib/i18n/routing'
+import { useFavoritesStore } from '@/lib/stores/favorites-store'
+import { useUIStore } from '@/lib/stores/ui-store'
 import { createClient } from '@/lib/supabase/client'
+import { Globe, Heart, Menu, X } from 'lucide-react'
+import { useLocale } from 'next-intl'
+import { useTranslation } from 'react-i18next'
 import { toast } from 'sonner'
 
 export function Header() {
   const { t, i18n } = useTranslation('common')
+  const locale = useLocale()
+  const pathname = usePathname()
   const router = useRouter()
   const { isMobileMenuOpen, toggleMobileMenu, setMobileMenuOpen } = useUIStore()
   const { user, loading } = useSupabaseSession()
@@ -32,9 +35,21 @@ export function Header() {
     }
   }
 
-  const toggleLanguage = () => {
-    const newLang = i18n.language === 'en' ? 'fr' : 'en'
+  const locales = ['en', 'fr', 'ar', 'id', 'vi', 'th', 'ms', 'sw']
+  const localeNames: Record<string, string> = {
+    en: 'English',
+    fr: 'Français',
+    ar: 'العربية',
+    id: 'Bahasa Indonesia',
+    vi: 'Tiếng Việt',
+    th: 'ไทย',
+    ms: 'Bahasa Melayu',
+    sw: 'Kiswahili'
+  }
+
+  const changeLanguage = (newLang: string) => {
     i18n.changeLanguage(newLang)
+    router.replace(pathname, { locale: newLang })
   }
 
   const navLinks = [
@@ -78,7 +93,7 @@ export function Header() {
               <Button variant="ghost" size="sm" className="relative" aria-label="Favorites">
                 <Heart className="h-5 w-5 text-primary" aria-hidden="true" />
                 {favorites.length > 0 && (
-                  <span 
+                  <span
                     className="absolute -top-1 -right-1 w-5 h-5 bg-secondary rounded-full flex items-center justify-center text-xs font-bold text-white"
                   >
                     {favorites.length > 9 ? '9+' : favorites.length}
@@ -86,18 +101,32 @@ export function Header() {
                 )}
               </Button>
             </Link>
-            
+
             <ThemeToggle />
-            
-            <button
-              onClick={toggleLanguage}
-              className="flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
-              aria-label={`Switch language to ${i18n.language === 'en' ? 'French' : 'English'}`}
-            >
-              <Globe className="h-4 w-4" aria-hidden="true" />
-              {i18n.language.toUpperCase()}
-            </button>
-            
+
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button
+                  className="flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+                  aria-label="Select language"
+                >
+                  <Globe className="h-4 w-4" aria-hidden="true" />
+                  {locale.toUpperCase()}
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end">
+                {locales.map((l) => (
+                  <DropdownMenuItem
+                    key={l}
+                    onClick={() => changeLanguage(l)}
+                    className={locale === l ? "bg-accent" : ""}
+                  >
+                    {localeNames[l] || l.toUpperCase()}
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
             {!loading && user ? (
               <>
                 <Link href="/patient/dashboard">
@@ -170,13 +199,27 @@ export function Header() {
                 <span className="text-sm font-medium text-muted-foreground">Theme:</span>
                 <ThemeToggle />
               </div>
-              <button
-                onClick={toggleLanguage}
-                className="flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-primary text-left"
-              >
-                <Globe className="h-4 w-4" />
-                {i18n.language === 'en' ? 'Français' : 'English'}
-              </button>
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <button
+                    className="flex w-full items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-primary text-left"
+                  >
+                    <Globe className="h-4 w-4" />
+                    {localeNames[locale] || locale.toUpperCase()}
+                  </button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="start">
+                  {locales.map((l) => (
+                    <DropdownMenuItem
+                      key={l}
+                      onClick={() => changeLanguage(l)}
+                      className={locale === l ? "bg-accent" : ""}
+                    >
+                      {localeNames[l] || l.toUpperCase()}
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
               {!loading && user ? (
                 <>
                   <Link href="/patient/dashboard" onClick={() => setMobileMenuOpen(false)}>

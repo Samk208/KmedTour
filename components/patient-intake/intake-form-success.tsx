@@ -1,18 +1,20 @@
 'use client'
 
-import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { CheckCircle, Home, FileText } from 'lucide-react'
+import { CheckCircle, FileText, Home } from 'lucide-react'
+import Link from 'next/link'
+import { useTranslation } from 'react-i18next'
 
 interface IntakeFormSuccessProps {
   submissionId: string
 }
 
 export function IntakeFormSuccess({ submissionId }: IntakeFormSuccessProps) {
+  const { t } = useTranslation()
   return (
     <div className="text-center space-y-8 py-12">
       <div className="flex justify-center">
-        <div 
+        <div
           className="w-20 h-20 rounded-full flex items-center justify-center"
           style={{ backgroundColor: 'var(--success-green)' }}
         >
@@ -22,17 +24,17 @@ export function IntakeFormSuccess({ submissionId }: IntakeFormSuccessProps) {
 
       <div className="space-y-4">
         <h2 className="text-3xl font-bold" style={{ color: 'var(--kmed-navy)' }}>
-          Submission Successful!
+          {t('patientIntakePage.success.title') || "Submission Successful!"}
         </h2>
         <p className="text-lg leading-relaxed max-w-2xl mx-auto" style={{ color: 'var(--deep-grey)' }}>
-          Thank you for choosing Kmedtour. We&apos;ve received your information and our team will review it shortly.
+          {t('patientIntakePage.success.subtitle') || "Thank you for choosing Kmedtour. We've received your information and our team will review it shortly."}
         </p>
       </div>
 
       <div className="bg-[var(--soft-grey)] rounded-xl p-6 max-w-md mx-auto">
         <div className="space-y-2">
           <div className="text-sm font-semibold" style={{ color: 'var(--kmed-navy)' }}>
-            Your Reference Number:
+            {t('patientIntakePage.success.referenceLabel') || "Your Reference Number:"}
           </div>
           <div className="text-2xl font-bold" style={{ color: 'var(--kmed-blue)' }}>
             {submissionId}
@@ -42,31 +44,31 @@ export function IntakeFormSuccess({ submissionId }: IntakeFormSuccessProps) {
 
       <div className="space-y-4">
         <h3 className="text-xl font-semibold" style={{ color: 'var(--kmed-navy)' }}>
-          What Happens Next?
+          {t('patientIntakePage.success.whatHappensNext') || "What Happens Next?"}
         </h3>
         <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto text-left">
           <div className="bg-white rounded-lg p-6 border" style={{ borderColor: 'var(--border-grey)' }}>
             <div className="text-lg font-bold mb-2" style={{ color: 'var(--kmed-blue)' }}>
-              1. Review
+              {t('patientIntakePage.success.step1Title') || "1. Review"}
             </div>
             <p className="text-sm" style={{ color: 'var(--deep-grey)' }}>
-              Our medical team will review your case within 24-48 hours
+              {t('patientIntakePage.success.step1Desc') || "Our medical team will review your case within 24-48 hours"}
             </p>
           </div>
           <div className="bg-white rounded-lg p-6 border" style={{ borderColor: 'var(--border-grey)' }}>
             <div className="text-lg font-bold mb-2" style={{ color: 'var(--kmed-blue)' }}>
-              2. Matching
+              {t('patientIntakePage.success.step2Title') || "2. Matching"}
             </div>
             <p className="text-sm" style={{ color: 'var(--deep-grey)' }}>
-              We&apos;ll match you with 3-5 trusted clinics specialized in your treatment
+              {t('patientIntakePage.success.step2Desc') || "We'll match you with 3-5 trusted clinics specialized in your treatment"}
             </p>
           </div>
           <div className="bg-white rounded-lg p-6 border" style={{ borderColor: 'var(--border-grey)' }}>
             <div className="text-lg font-bold mb-2" style={{ color: 'var(--kmed-blue)' }}>
-              3. Contact
+              {t('patientIntakePage.success.step3Title') || "3. Contact"}
             </div>
             <p className="text-sm" style={{ color: 'var(--deep-grey)' }}>
-              You&apos;ll receive clinic recommendations via email with next steps
+              {t('patientIntakePage.success.step3Desc') || "You'll receive clinic recommendations via email with next steps"}
             </p>
           </div>
         </div>
@@ -76,16 +78,16 @@ export function IntakeFormSuccess({ submissionId }: IntakeFormSuccessProps) {
         <Link href="/">
           <Button size="lg" variant="outline">
             <Home className="mr-2 h-5 w-5" />
-            Back to Home
+            {t('patientIntakePage.success.btnHome') || "Back to Home"}
           </Button>
         </Link>
         <Link href="/content">
-          <Button 
+          <Button
             size="lg"
             className="bg-[var(--kmed-blue)] hover:bg-[var(--kmed-blue)]/90 text-white"
           >
             <FileText className="mr-2 h-5 w-5" />
-            Explore Content Hub
+            {t('patientIntakePage.success.btnContent') || "Explore Content Hub"}
           </Button>
         </Link>
       </div>

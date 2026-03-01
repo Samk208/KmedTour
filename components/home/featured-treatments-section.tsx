@@ -7,10 +7,12 @@ import { motion } from 'framer-motion'
 import { ArrowRight, Cpu, Database, ScanLine } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useTranslation } from 'react-i18next'
 
 export function FeaturedTreatmentsSection() {
   const { data: treatments = [], isLoading, isError } = useTreatmentsQuery()
   const featuredTreatments = treatments.slice(0, 3)
+  const { t } = useTranslation('common')
 
   return (
     <section className="w-full py-20 md:py-32" style={{ backgroundColor: 'var(--soft-grey)' }}>
@@ -18,25 +20,25 @@ export function FeaturedTreatmentsSection() {
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div className="space-y-4 max-w-2xl">
             <div className="inline-block px-3 py-1 border border-[var(--kmed-blue)] text-[var(--kmed-blue)] text-xs font-mono rounded-sm">
-              MODULE.LIST_ACTIVE
+              {t('landing.treatments.badge') || "MODULE.LIST_ACTIVE"}
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-balance" style={{ color: 'var(--kmed-navy)' }}>
-              Core Medical Protocols
+              {t('landing.treatments.title') || "Core Medical Protocols"}
             </h2>
             <p className="text-lg leading-relaxed max-w-xl" style={{ color: 'var(--deep-grey)' }}>
-              Select a treatment module to initialize your verification process. Data is cross-referenced with 50+ clinics.
+              {t('landing.treatments.subtitle') || "Select a treatment module to initialize your verification process. Data is cross-referenced with 50+ clinics."}
             </p>
           </div>
           <Link href="/content/treatments">
             <Button variant="link" className="text-[var(--kmed-blue)] font-bold group">
-              Review All Protocols <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              {t('landing.treatments.viewAll') || "Review All Protocols"} <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>
         </div>
 
         {isError ? (
           <div className="text-center py-8">
-            <p className="text-sm text-red-500">Unable to load treatments. Please try again later.</p>
+            <p className="text-sm text-red-500">{t('landing.treatments.errorLoading') || "Unable to load treatments. Please try again later."}</p>
           </div>
         ) : isLoading ? (
           <div className="grid md:grid-cols-3 gap-8">
@@ -44,7 +46,7 @@ export function FeaturedTreatmentsSection() {
           </div>
         ) : featuredTreatments.length === 0 ? (
           <div className="text-center py-8">
-            <p className="text-sm" style={{ color: 'var(--deep-grey)' }}>System Update: No protocols found.</p>
+            <p className="text-sm" style={{ color: 'var(--deep-grey)' }}>{t('landing.treatments.noProtocols') || "System Update: No protocols found."}</p>
           </div>
         ) : (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
@@ -65,7 +67,7 @@ export function FeaturedTreatmentsSection() {
                       ID: {treatment.id.slice(0, 6).toUpperCase()}
                     </div>
                     <div className="text-[var(--kmed-teal)] font-bold">
-                      VERIFIED
+                      {t('landing.treatments.verified') || "VERIFIED"}
                     </div>
                   </div>
 
@@ -97,11 +99,11 @@ export function FeaturedTreatmentsSection() {
                     {/* Data Grid */}
                     <div className="grid grid-cols-2 gap-px bg-gray-100 border border-gray-100 rounded-lg overflow-hidden my-4 text-xs">
                       <div className="bg-white p-3 text-center">
-                        <div className="text-gray-400 mb-1 flex items-center justify-center gap-1"><Cpu className="w-3 h-3" /> Cost Est.</div>
+                        <div className="text-gray-400 mb-1 flex items-center justify-center gap-1"><Cpu className="w-3 h-3" /> {t('landing.treatments.costEst') || "Cost Est."}</div>
                         <div className="font-bold text-[var(--kmed-navy)]">{treatment.priceRange.split('-')[0]}</div>
                       </div>
                       <div className="bg-white p-3 text-center">
-                        <div className="text-gray-400 mb-1 flex items-center justify-center gap-1"><Database className="w-3 h-3" /> Success</div>
+                        <div className="text-gray-400 mb-1 flex items-center justify-center gap-1"><Database className="w-3 h-3" /> {t('landing.treatments.success') || "Success"}</div>
                         <div className="font-bold text-[var(--kmed-teal)]">{treatment.successRate}</div>
                       </div>
                     </div>
@@ -111,7 +113,7 @@ export function FeaturedTreatmentsSection() {
                         variant="outline"
                         className="w-full justify-between group border-gray-200 hover:border-[var(--kmed-teal)] hover:text-[var(--kmed-teal)]"
                       >
-                        <span className="font-mono text-xs">INIT_MODULE</span>
+                        <span className="font-mono text-xs">{t('landing.treatments.initModule') || "INIT_MODULE"}</span>
                         <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                       </Button>
                     </Link>

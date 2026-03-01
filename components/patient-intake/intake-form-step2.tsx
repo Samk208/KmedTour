@@ -8,12 +8,14 @@ import { Textarea } from '@/components/ui/textarea'
 import { useTreatmentsQuery } from '@/lib/api/hooks/use-treatments'
 import { PatientIntakeStep2 } from '@/lib/schemas/patient-intake'
 import { UseFormReturn } from 'react-hook-form'
+import { useTranslation } from 'react-i18next'
 
 interface IntakeFormStep2Props {
   form: UseFormReturn<PatientIntakeStep2>
 }
 
 export function IntakeFormStep2({ form }: IntakeFormStep2Props) {
+  const { t } = useTranslation()
   const { register, formState: { errors }, setValue, watch } = form
   const { data: treatments = [] } = useTreatmentsQuery()
 
@@ -21,19 +23,19 @@ export function IntakeFormStep2({ form }: IntakeFormStep2Props) {
     <div className="space-y-6">
       <div>
         <h2 className="text-2xl font-bold mb-2" style={{ color: 'var(--kmed-navy)' }}>
-          Medical Information
+          {t('patientIntakePage.step2.title') || "Medical Information"}
         </h2>
         <p className="text-sm" style={{ color: 'var(--deep-grey)' }}>
-          Help us understand your medical needs so we can find the best clinics for you.
+          {t('patientIntakePage.step2.subtitle') || "Help us understand your medical needs so we can find the best clinics for you."}
         </p>
       </div>
 
       <div className="space-y-4">
         <div className="space-y-2">
-          <Label htmlFor="treatmentType">Treatment Type *</Label>
+          <Label htmlFor="treatmentType">{t('patientIntakePage.step2.treatmentType') || "Treatment Type *"}</Label>
           <Select onValueChange={(value) => setValue('treatmentType', value)} value={watch('treatmentType')}>
             <SelectTrigger className={errors.treatmentType ? 'border-[var(--error-red)]' : ''}>
-              <SelectValue placeholder="Select treatment type" />
+              <SelectValue placeholder={t('patientIntakePage.step2.treatmentTypePlaceholder') || "Select treatment type"} />
             </SelectTrigger>
             <SelectContent>
               {treatments.map((treatment) => (
@@ -41,7 +43,7 @@ export function IntakeFormStep2({ form }: IntakeFormStep2Props) {
                   {treatment.title}
                 </SelectItem>
               ))}
-              <SelectItem value="other">Other (please specify in condition)</SelectItem>
+              <SelectItem value="other">{t('patientIntakePage.step2.other') || "Other (please specify in condition)"}</SelectItem>
             </SelectContent>
           </Select>
           {errors.treatmentType && (
@@ -52,10 +54,10 @@ export function IntakeFormStep2({ form }: IntakeFormStep2Props) {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="medicalCondition">Medical Condition / Reason for Treatment *</Label>
+          <Label htmlFor="medicalCondition">{t('patientIntakePage.step2.medicalCondition') || "Medical Condition / Reason for Treatment *"}</Label>
           <Textarea
             id="medicalCondition"
-            placeholder="Please describe your condition, symptoms, or reason for seeking treatment..."
+            placeholder={t('patientIntakePage.step2.medicalConditionPlaceholder') || "Please describe your condition, symptoms, or reason for seeking treatment..."}
             rows={5}
             {...register('medicalCondition')}
             className={errors.medicalCondition ? 'border-[var(--error-red)]' : ''}
@@ -68,29 +70,29 @@ export function IntakeFormStep2({ form }: IntakeFormStep2Props) {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="previousTreatments">Previous Treatments (Optional)</Label>
+          <Label htmlFor="previousTreatments">{t('patientIntakePage.step2.previousTreatments') || "Previous Treatments (Optional)"}</Label>
           <Textarea
             id="previousTreatments"
-            placeholder="Have you tried any treatments before? If yes, please describe..."
+            placeholder={t('patientIntakePage.step2.previousTreatmentsPlaceholder') || "Have you tried any treatments before? If yes, please describe..."}
             rows={3}
             {...register('previousTreatments')}
           />
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="urgency">Treatment Urgency *</Label>
+          <Label htmlFor="urgency">{t('patientIntakePage.step2.urgency') || "Treatment Urgency *"}</Label>
           <Select
             onValueChange={(value) => setValue('urgency', value as PatientIntakeStep2['urgency'])}
             value={watch('urgency')}
           >
             <SelectTrigger className={errors.urgency ? 'border-[var(--error-red)]' : ''}>
-              <SelectValue placeholder="When do you need treatment?" />
+              <SelectValue placeholder={t('patientIntakePage.step2.urgencyPlaceholder') || "When do you need treatment?"} />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="urgent">Urgent (within 2 weeks)</SelectItem>
-              <SelectItem value="within-1-month">Within 1 month</SelectItem>
-              <SelectItem value="within-3-months">Within 3 months</SelectItem>
-              <SelectItem value="flexible">Flexible / Planning ahead</SelectItem>
+              <SelectItem value="urgent">{t('patientIntakePage.step2.urgent') || "Urgent (within 2 weeks)"}</SelectItem>
+              <SelectItem value="within-1-month">{t('patientIntakePage.step2.within1Month') || "Within 1 month"}</SelectItem>
+              <SelectItem value="within-3-months">{t('patientIntakePage.step2.within3Months') || "Within 3 months"}</SelectItem>
+              <SelectItem value="flexible">{t('patientIntakePage.step2.flexible') || "Flexible / Planning ahead"}</SelectItem>
             </SelectContent>
           </Select>
           {errors.urgency && (
@@ -108,16 +110,16 @@ export function IntakeFormStep2({ form }: IntakeFormStep2Props) {
               onCheckedChange={(checked) => setValue('hasInsurance', checked as boolean)}
             />
             <Label htmlFor="hasInsurance" className="text-sm font-normal cursor-pointer">
-              I have health insurance that may cover international treatment
+              {t('patientIntakePage.step2.hasInsurance') || "I have health insurance that may cover international treatment"}
             </Label>
           </div>
 
           {watch('hasInsurance') && (
             <div className="ml-6 space-y-2">
-              <Label htmlFor="insuranceDetails">Insurance Details</Label>
+              <Label htmlFor="insuranceDetails">{t('patientIntakePage.step2.insuranceDetails') || "Insurance Details"}</Label>
               <Input
                 id="insuranceDetails"
-                placeholder="Insurance provider and policy details"
+                placeholder={t('patientIntakePage.step2.insuranceDetailsPlaceholder') || "Insurance provider and policy details"}
                 {...register('insuranceDetails')}
               />
             </div>
