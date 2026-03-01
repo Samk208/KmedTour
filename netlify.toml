@@ -4,9 +4,9 @@
 
 [build]
   command = "pnpm build"
-  environment = { NODE_VERSION = "20" }
 
 [build.environment]
+  NODE_VERSION = "20"
   NEXT_TELEMETRY_DISABLED = "1"
 
 [context.production]
