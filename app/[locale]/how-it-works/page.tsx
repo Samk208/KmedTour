@@ -17,8 +17,8 @@ export default function HowItWorksPage() {
 
       {/* HERO: System Architecture */}
       <section className="relative w-full py-24 md:py-32 overflow-hidden bg-[var(--kmed-navy)] text-white">
-        <div className="absolute inset-0 opacity-20">
-          <ParticleNetwork />
+        <div className="absolute inset-0 opacity-40">
+          <ParticleNetwork particleCount={80} speed={0.4} />
         </div>
 
         {/* Abstract Grid Overlay */}

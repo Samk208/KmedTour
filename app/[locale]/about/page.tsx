@@ -3,6 +3,8 @@
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { InfiniteMarquee } from '@/components/ui/infinite-marquee'
+import { ParticleNetwork } from '@/components/ui/particle-network'
+import { motion } from 'framer-motion'
 import { Activity, Cpu, Database, Globe, Heart, Shield } from 'lucide-react'
 import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
@@ -43,28 +45,47 @@ export default function AboutPage() {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative w-full py-24 md:py-32 overflow-hidden bg-[#0a0f1c]">
+        {/* Particle Network Background */}
+        <div className="absolute inset-0 z-0 opacity-35">
+          <ParticleNetwork particleCount={60} speed={0.35} />
+        </div>
         {/* Background Grid */}
         <div className="absolute inset-0 z-0 opacity-10"
           style={{ backgroundImage: 'linear-gradient(#39c6b0 1px, transparent 1px), linear-gradient(90deg, #39c6b0 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
         </div>
 
         <div className="container relative z-10 mx-auto max-w-[1240px] px-4 sm:px-6 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-teal-500/30 bg-teal-500/10 text-teal-400 text-xs font-mono mb-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-teal-500/30 bg-teal-500/10 text-teal-400 text-xs font-mono mb-6"
+          >
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
             </span>
             {t('aboutPage.hero.badge') || "SYSTEM ONLINE: KMED-OS V2.0"}
-          </div>
+          </motion.div>
 
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight text-balance">
-            {t('aboutPage.hero.title') || "The Operating System for"} <br />
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight text-balance"
+          >
+            {t('aboutPage.hero.title') || "The Operating System for "} <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">{t('aboutPage.hero.titleHighlight') || "Global Medical Travel"}</span>
-          </h1>
+          </motion.h1>
 
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed"
+          >
             {t('aboutPage.hero.subtitle') || "KmedTour upgrades the medical tourism experience from a chaotic logistical challenge into a seamless, digital workflow. We connect the world to Korea's medical future."}
-          </p>
+          </motion.p>
         </div>
       </section>
 
@@ -159,19 +180,27 @@ export default function AboutPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, index) => (
-              <Card key={index} className="p-6 text-center hover:shadow-lg transition-shadow border-slate-200">
-                <div
-                  className="w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-6 bg-gradient-to-br from-teal-50 to-teal-100 text-teal-600"
-                >
-                  <value.icon className="h-7 w-7" />
-                </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-3">
-                  {value.title}
-                </h3>
-                <p className="text-sm leading-relaxed text-slate-500">
-                  {value.description}
-                </p>
-              </Card>
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.15, duration: 0.5 }}
+              >
+                <Card className="p-6 text-center hover:shadow-xl transition-all duration-300 border-slate-200 hover:border-teal-300 hover:-translate-y-1">
+                  <div
+                    className="w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-6 bg-gradient-to-br from-teal-50 to-teal-100 text-teal-600 group-hover:scale-110 transition-transform"
+                  >
+                    <value.icon className="h-7 w-7" />
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900 mb-3">
+                    {value.title}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-slate-500">
+                    {value.description}
+                  </p>
+                </Card>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -182,14 +211,21 @@ export default function AboutPage() {
         <div className="container mx-auto max-w-[1240px] px-4 sm:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center border-t border-white/10 pt-12">
             {stats.map((stat, index) => (
-              <div key={index} className="space-y-2">
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.15, duration: 0.5, type: 'spring' }}
+                className="space-y-2"
+              >
                 <div className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-white/50 tracking-tighter">
                   {stat.number}
                 </div>
                 <div className="text-sm font-medium text-teal-500 uppercase tracking-widest">
                   {stat.label}
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
