@@ -56,10 +56,23 @@ const nextConfig = {
     ignoreDuringBuilds: false,
   },
 
-  // Experimental features (optional)
+  // Experimental features
   experimental: {
-    // Enable if using server actions extensively
-    // serverActions: true,
+    // Exclude heavy directories from server function bundles (Netlify/serverless)
+    // This prevents 194 MB of images + 405 MB agents dir from being traced into
+    // the ___netlify-server-handler function, which has an upload size limit.
+    outputFileTracingExcludes: {
+      '*': [
+        'public/images/**',
+        'agents/**',
+        'content/**',
+        'Content Hub Data/**',
+        'scripts/**',
+        'supabase/**',
+        'tests/**',
+        '.github/**',
+      ],
+    },
   },
 
   // Environment variables validation (optional but recommended)
