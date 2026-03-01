@@ -102,6 +102,10 @@
         "patients": "International Patients",
         "clinics": "Partner Clinics",
         "satisfaction": "Satisfaction Rate"
+      },
+      "sysStatus": {
+        "algorithm": "Matching Algorithm Active",
+        "capacity": "Real-time Capacity Check"
       }
     },
     "benefits": {

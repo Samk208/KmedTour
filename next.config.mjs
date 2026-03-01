@@ -35,9 +35,10 @@ const nextConfig = {
   },
 
   // Image optimization configuration
+  // Using unoptimized mode so images are served as static CDN assets.
+  // This avoids tracing 194 MB of PNGs into the Netlify server function bundle.
   images: {
-    // Enable optimization for production, can disable in dev for speed
-    unoptimized: process.env.NODE_ENV === "development",
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
@@ -58,12 +59,11 @@ const nextConfig = {
 
   // Experimental features
   experimental: {
-    // Exclude heavy directories from server function bundles (Netlify/serverless)
-    // This prevents 194 MB of images + 405 MB agents dir from being traced into
-    // the ___netlify-server-handler function, which has an upload size limit.
+    // Exclude heavy non-essential directories from server function bundles (Netlify/serverless)
+    // NOTE: Do NOT exclude public/images — Next.js image optimizer needs server access to source files.
+    // The 405 MB agents/ dir is the main culprit for oversized server functions.
     outputFileTracingExcludes: {
       '*': [
-        'public/images/**',
         'agents/**',
         'content/**',
         'Content Hub Data/**',

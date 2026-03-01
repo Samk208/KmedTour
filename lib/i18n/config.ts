@@ -29,6 +29,8 @@ if (!i18n.isInitialized) {
       resources,
       lng: 'en',
       fallbackLng: 'en',
+      defaultNS: 'common',
+      ns: ['common'],
       interpolation: {
         escapeValue: false,
       },
