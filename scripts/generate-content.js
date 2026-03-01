@@ -361,7 +361,7 @@ async function main() {
   if (!CONFIG.apiKey) {
     console.error('❌ Error: API key not set!');
     console.error('Set ANTHROPIC_API_KEY or OPENAI_API_KEY environment variable');
-    console.error('Example: export ANTHROPIC_API_KEY=sk-ant-...');
+    console.error('Example: export ANTHROPIC_API_KEY=<YOUR_ANTHROPIC_KEY>');
     process.exit(1);
   }
 

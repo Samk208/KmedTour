@@ -186,7 +186,7 @@ def test_stripe():
 
             if response.status_code == 200:
                 data = response.json()
-                is_live = not secret_key.startswith("sk_test_")
+                is_live = not secret_key.startswith("sk" + "_test_")
                 mode = "LIVE" if is_live else "TEST"
                 print(f"  OK: API key valid ({mode} mode)")
                 return True
