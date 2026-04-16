@@ -18,9 +18,9 @@ export function SystemBootLoader() {
 
         // Short boot sequence for fast perceived load (~800ms total)
         const bootSequence = [
-            { text: 'INITIALIZING...', delay: 80 },
-            { text: 'CONNECTING...', delay: 280 },
-            { text: 'SYSTEM READY.', delay: 520 },
+            { text: 'Connecting to your care team...', delay: 80 },
+            { text: 'Verifying partner hospitals...', delay: 280 },
+            { text: 'Welcome to KmedTour.', delay: 520 },
         ]
 
         const timeouts: NodeJS.Timeout[] = []
@@ -98,23 +98,23 @@ export function SystemBootLoader() {
                             />
                         </div>
 
-                        {/* Stat Grid Mockup */}
+                        {/* Trust Badges */}
                         <div className="grid grid-cols-4 gap-2 text-[10px] text-gray-600 pt-4 border-t border-gray-800/50">
                             <div className="text-center">
                                 <Database className="w-4 h-4 mx-auto mb-1 opacity-50" />
-                                <div>DB: ONLINE</div>
+                                <div>31 Hospitals</div>
                             </div>
                             <div className="text-center">
                                 <Globe className="w-4 h-4 mx-auto mb-1 opacity-50" />
-                                <div>NET: SECURE</div>
+                                <div>Encrypted</div>
                             </div>
                             <div className="text-center">
                                 <Server className="w-4 h-4 mx-auto mb-1 opacity-50" />
-                                <div>CPU: NOMINAL</div>
+                                <div>AI Matching</div>
                             </div>
                             <div className="text-center">
                                 <ShieldCheck className="w-4 h-4 mx-auto mb-1 opacity-50" />
-                                <div>AUTH: OK</div>
+                                <div>KOIHA Verified</div>
                             </div>
                         </div>
 

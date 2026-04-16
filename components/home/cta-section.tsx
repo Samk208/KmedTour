@@ -56,7 +56,7 @@ export function CTASection() {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="relative text-3xl md:text-4xl lg:text-5xl font-bold text-white text-balance"
           >
-            {t('landing.finalCta.title') || "Experience the Future of Medical Travel"}
+            {t('landing.finalCta.title') || "Ready to Start Your Medical Journey?"}
           </motion.h2>
 
           <motion.p
@@ -66,7 +66,7 @@ export function CTASection() {
             transition={{ delay: 0.4, duration: 0.6 }}
             className="relative text-lg md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed"
           >
-            {t('landing.finalCta.subtitle') || "Let our operating system handle the logistics while you focus on recovery. Instant matching, transparent pricing, and full concierge automation."}
+            {t('landing.finalCta.subtitle') || "Get a free quote from Korea's top hospitals. We'll match you with the right specialist, arrange your travel, and support you every step of the way."}
           </motion.p>
 
           <motion.div
@@ -81,7 +81,7 @@ export function CTASection() {
                 size="lg"
                 className="text-base px-8 py-7 bg-white hover:bg-white/90 shadow-lg text-[var(--kmed-blue)] font-bold transition-all hover:scale-105 hover:shadow-xl"
               >
-                {t('landing.finalCta.ctaPrimary') || "Start Digital Intake"}
+                {t('landing.finalCta.ctaPrimary') || "Get Your Free Quote"}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
@@ -92,7 +92,7 @@ export function CTASection() {
                 variant="outline"
                 className="text-base px-8 py-7 border-2 border-white/30 text-white hover:bg-white/10 backdrop-blur-sm transition-all hover:scale-105"
               >
-                {t('landing.finalCta.ctaSecondary') || "Contact Support"}
+                {t('landing.finalCta.ctaSecondary') || "Talk to Our Team"}
               </Button>
             </Link>
           </motion.div>
@@ -105,9 +105,9 @@ export function CTASection() {
             className="relative flex flex-wrap justify-center gap-8 pt-8 text-white/80"
           >
             {[
-              'AI-Powered Matching',
+              'Matched to the Right Specialist',
               'No Hidden Fees',
-              '24/7 System Access',
+              '24/7 Personal Support',
             ].map((label, i) => (
               <motion.div
                 key={label}

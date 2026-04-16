@@ -21,26 +21,26 @@ export function HowItWorksSection() {
   const steps = [
     {
       icon: ClipboardList,
-      title: t('landing.howItWorks.steps.explore.title') || 'Digital Intake',
-      description: t('landing.howItWorks.steps.explore.description') || 'Upload your medical history via our secure portal...',
+      title: t('landing.howItWorks.steps.explore.title') || 'Share Your Needs',
+      description: t('landing.howItWorks.steps.explore.description') || 'Tell us about your condition and preferences. We securely review your medical history to find the best options.',
       color: 'var(--kmed-blue)',
     },
     {
       icon: Cpu,
-      title: t('landing.howItWorks.steps.matched.title') || 'Intelligent Matching',
-      description: t('landing.howItWorks.steps.matched.description') || 'Our algorithms rank clinics...',
+      title: t('landing.howItWorks.steps.matched.title') || 'Get Matched',
+      description: t('landing.howItWorks.steps.matched.description') || 'We recommend verified hospitals and specialists based on your condition, budget, and language needs.',
       color: 'var(--kmed-teal)',
     },
     {
       icon: Plane,
-      title: t('landing.howItWorks.steps.plan.title') || 'Logistics Orchestration',
-      description: t('landing.howItWorks.steps.plan.description') || 'We automate visa letters...',
+      title: t('landing.howItWorks.steps.plan.title') || 'Travel & Stay Arranged',
+      description: t('landing.howItWorks.steps.plan.description') || 'Visa invitation letters, flights, accommodation, and airport pickup — all arranged for you.',
       color: 'var(--kmed-blue)',
     },
     {
       icon: ShieldCheck,
-      title: t('landing.howItWorks.steps.care.title') || 'Concierge Recovery',
-      description: t('landing.howItWorks.steps.care.description') || 'From airport pickup to post-op...',
+      title: t('landing.howItWorks.steps.care.title') || 'Treatment & Recovery',
+      description: t('landing.howItWorks.steps.care.description') || 'A personal coordinator supports you throughout treatment, recovery, and follow-up care back home.',
       color: 'var(--kmed-teal)',
     },
   ]
@@ -50,13 +50,13 @@ export function HowItWorksSection() {
       <div className="container mx-auto max-w-[1240px] px-4 sm:px-6 relative z-10">
         <div className="text-center space-y-4 mb-16">
           <div className="inline-block px-4 py-2 rounded-full text-sm font-medium" style={{ backgroundColor: 'var(--soft-grey)', color: 'var(--kmed-blue)' }}>
-            {t('landing.howItWorks.badge') || "System Workflow"}
+            {t('landing.howItWorks.badge') || "Your Journey"}
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-balance" style={{ color: 'var(--kmed-navy)' }}>
-            {t('landing.howItWorks.title') || "Intelligent Medical Orchestration"}
+            {t('landing.howItWorks.title') || "How KmedTour Works"}
           </h2>
           <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: 'var(--deep-grey)' }}>
-            {t('landing.howItWorks.subtitle') || "We replace manual coordination with automated precision."}
+            {t('landing.howItWorks.subtitle') || "From your first inquiry to full recovery, we handle every detail so you can focus on your health."}
           </p>
         </div>
 

@@ -1,31 +1,31 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { BarChart3, Database, Globe2, ShieldCheck } from 'lucide-react'
+import { BadgeDollarSign, ShieldCheck as VerifiedIcon, Globe2, FileCheck } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 
 export function WhyKmedtourSection() {
   const { t } = useTranslation('common')
   const features = [
     {
-      icon: Database,
-      title: t('landing.benefits.items.technology.title') || 'Data-Driven Verification',
-      description: t('landing.benefits.items.technology.description') || 'We don\u2019t just list clinics. Our system validates accreditations, survival rates, and patient outcomes in real-time.',
+      icon: VerifiedIcon,
+      title: t('landing.benefits.items.technology.title') || 'Verified Hospitals Only',
+      description: t('landing.benefits.items.technology.description') || 'Every hospital is accredited and verified. We check credentials, patient outcomes, and international readiness before recommending any clinic.',
     },
     {
       icon: Globe2,
-      title: t('landing.benefits.items.support.title') || 'End-to-End Orchestration',
-      description: t('landing.benefits.items.support.description') || 'Our platform vertically integrates hospital booking, travel logistics, and payments into a single seamless workflow.',
+      title: t('landing.benefits.items.support.title') || 'Everything Arranged for You',
+      description: t('landing.benefits.items.support.description') || 'Hospital booking, travel, accommodation, and payments — all coordinated through one dedicated team.',
     },
     {
-      icon: BarChart3,
-      title: t('landing.benefits.items.pricing.title') || 'Algorithmic Pricing',
-      description: t('landing.benefits.items.pricing.description') || 'Get guaranteed price transparency. Our dynamic pricing engine prevents "foreigner surcharges" and hidden fees.',
+      icon: BadgeDollarSign,
+      title: t('landing.benefits.items.pricing.title') || 'Transparent Pricing',
+      description: t('landing.benefits.items.pricing.description') || 'See the real cost upfront. No hidden fees, no surprise charges, no inflated "foreigner" prices.',
     },
     {
-      icon: ShieldCheck,
-      title: t('landing.benefits.items.accreditation.title') || 'Automated Compliance',
-      description: t('landing.benefits.items.accreditation.description') || 'Visa invitation letters and medical documentation are generated automatically, reducing administrative errors.',
+      icon: FileCheck,
+      title: t('landing.benefits.items.accreditation.title') || 'Visa & Paperwork Handled',
+      description: t('landing.benefits.items.accreditation.description') || 'We prepare your visa invitation letters and medical documents so you don\u2019t have to worry about paperwork.',
     },
   ]
 
@@ -37,10 +37,10 @@ export function WhyKmedtourSection() {
             {t('landing.benefits.badge') || "Why KmedTour"}
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-white text-balance">
-            {t('landing.benefits.title') || "Medical Infrastructure, Not Just an Agency"}
+            {t('landing.benefits.title') || "Why Patients Choose KmedTour"}
           </h2>
           <p className="text-lg max-w-2xl mx-auto leading-relaxed text-gray-300">
-            {t('landing.benefits.subtitle') || "We built the operating system for medical tourism so you can focus on healing."}
+            {t('landing.benefits.subtitle') || "We handle every detail of your medical journey so you can focus on getting better."}
           </p>
         </div>
 

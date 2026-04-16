@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { useTreatmentsQuery } from '@/lib/api/hooks/use-treatments'
 import { motion } from 'framer-motion'
-import { ArrowRight, Cpu, Database, ScanLine } from 'lucide-react'
+import { ArrowRight, DollarSign, TrendingUp, ScanLine } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
@@ -20,18 +20,18 @@ export function FeaturedTreatmentsSection() {
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div className="space-y-4 max-w-2xl">
             <div className="inline-block px-3 py-1 border border-[var(--kmed-blue)] text-[var(--kmed-blue)] text-xs font-mono rounded-sm">
-              {t('landing.treatments.badge') || "MODULE.LIST_ACTIVE"}
+              {t('landing.treatments.badge') || "Find Your Treatment"}
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-balance" style={{ color: 'var(--kmed-navy)' }}>
-              {t('landing.treatments.title') || "Core Medical Protocols"}
+              {t('landing.treatments.title') || "Featured Treatments"}
             </h2>
             <p className="text-lg leading-relaxed max-w-xl" style={{ color: 'var(--deep-grey)' }}>
-              {t('landing.treatments.subtitle') || "Select a treatment module to initialize your verification process. Data is cross-referenced with 50+ clinics."}
+              {t('landing.treatments.subtitle') || "Explore treatments trusted by thousands of international patients, all performed at verified Korean clinics."}
             </p>
           </div>
           <Link href="/content/treatments">
             <Button variant="link" className="text-[var(--kmed-blue)] font-bold group">
-              {t('landing.treatments.viewAll') || "Review All Protocols"} <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              {t('landing.treatments.viewAll') || "View All Treatments"} <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>
         </div>
@@ -46,7 +46,7 @@ export function FeaturedTreatmentsSection() {
           </div>
         ) : featuredTreatments.length === 0 ? (
           <div className="text-center py-8">
-            <p className="text-sm" style={{ color: 'var(--deep-grey)' }}>{t('landing.treatments.noProtocols') || "System Update: No protocols found."}</p>
+            <p className="text-sm" style={{ color: 'var(--deep-grey)' }}>{t('landing.treatments.noProtocols') || "No treatments available at this time. Please check back soon."}</p>
           </div>
         ) : (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
@@ -60,14 +60,14 @@ export function FeaturedTreatmentsSection() {
               >
                 <Card className="group relative overflow-hidden bg-white hover:border-[var(--kmed-teal)] transition-colors duration-300 border h-full flex flex-col">
 
-                  {/* Technical Header */}
+                  {/* Category Header */}
                   <div className="p-4 border-b border-gray-100 flex justify-between items-center bg-gray-50/50 text-xs font-mono text-gray-500">
                     <div className="flex items-center gap-2">
                       <ScanLine className="w-3 h-3" />
-                      ID: {treatment.id.slice(0, 6).toUpperCase()}
+                      {(treatment.category || 'General').toUpperCase()}
                     </div>
                     <div className="text-[var(--kmed-teal)] font-bold">
-                      {t('landing.treatments.verified') || "VERIFIED"}
+                      {t('landing.treatments.verified') || "✓ VERIFIED"}
                     </div>
                   </div>
 
@@ -99,11 +99,11 @@ export function FeaturedTreatmentsSection() {
                     {/* Data Grid */}
                     <div className="grid grid-cols-2 gap-px bg-gray-100 border border-gray-100 rounded-lg overflow-hidden my-4 text-xs">
                       <div className="bg-white p-3 text-center">
-                        <div className="text-gray-400 mb-1 flex items-center justify-center gap-1"><Cpu className="w-3 h-3" /> {t('landing.treatments.costEst') || "Cost Est."}</div>
+                        <div className="text-gray-400 mb-1 flex items-center justify-center gap-1"><DollarSign className="w-3 h-3" /> {t('landing.treatments.costEst') || "From"}</div>
                         <div className="font-bold text-[var(--kmed-navy)]">{treatment.priceRange.split('-')[0]}</div>
                       </div>
                       <div className="bg-white p-3 text-center">
-                        <div className="text-gray-400 mb-1 flex items-center justify-center gap-1"><Database className="w-3 h-3" /> {t('landing.treatments.success') || "Success"}</div>
+                        <div className="text-gray-400 mb-1 flex items-center justify-center gap-1"><TrendingUp className="w-3 h-3" /> {t('landing.treatments.success') || "Success Rate"}</div>
                         <div className="font-bold text-[var(--kmed-teal)]">{treatment.successRate}</div>
                       </div>
                     </div>
@@ -113,7 +113,7 @@ export function FeaturedTreatmentsSection() {
                         variant="outline"
                         className="w-full justify-between group border-gray-200 hover:border-[var(--kmed-teal)] hover:text-[var(--kmed-teal)]"
                       >
-                        <span className="font-mono text-xs">{t('landing.treatments.initModule') || "INIT_MODULE"}</span>
+                        <span className="text-xs font-medium">{t('landing.treatments.initModule') || "Learn More"}</span>
                         <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                       </Button>
                     </Link>

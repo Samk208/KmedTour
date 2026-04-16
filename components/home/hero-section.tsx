@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 import { MagneticButton } from '@/components/ui/magnetic-button'
 import { ParticleNetwork } from '@/components/ui/particle-network'
 import { motion } from 'framer-motion'
-import { ArrowRight, Bot, Database, Globe } from 'lucide-react'
+import { ArrowRight, Heart, Building2, Globe } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
@@ -39,15 +39,15 @@ export function HeroSection() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--kmed-teal)] opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--kmed-teal)]"></span>
               </span>
-              {t('landing.hero.badge') || "Deep Tech Medical Infrastructure"}
+              {t('landing.hero.badge') || "Trusted by 5,000+ International Patients"}
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-balance tracking-tight" style={{ color: 'var(--kmed-navy)' }}>
-              {t('landing.hero.title') || "The Operating System for Your Medical Journey"}
+              {t('landing.hero.title') || "World-Class Medical Care in Korea, Made Simple"}
             </h1>
 
             <p className="text-lg md:text-xl leading-relaxed max-w-2xl font-light" style={{ color: 'var(--deep-grey)' }}>
-              {t('landing.hero.subtitle') || "We orchestrate your entire medical outcome. From AI-powered specialist matching to automated visa logistics and recovery."}
+              {t('landing.hero.subtitle') || "We connect you with Korea's top hospitals, handle travel logistics, and support you from first consultation to full recovery."}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -57,7 +57,7 @@ export function HeroSection() {
                     size="lg"
                     className="text-base px-8 py-7 bg-[var(--kmed-blue)] hover:bg-[var(--kmed-blue)]/90 text-white shadow-lg hover:shadow-xl transition-all"
                   >
-                    {t('landing.hero.ctaPrimary') || "Start Digital Intake"}
+                    {t('landing.hero.ctaPrimary') || "Get a Free Quote"}
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </MagneticButton>
@@ -71,7 +71,7 @@ export function HeroSection() {
                     className="text-base px-8 py-7 border-2 hover:bg-white bg-white/50 backdrop-blur-sm"
                     style={{ borderColor: 'var(--kmed-blue)', color: 'var(--kmed-blue)' }}
                   >
-                    {t('landing.hero.ctaSecondary') || "View Workflow"}
+                    {t('landing.hero.ctaSecondary') || "How It Works"}
                   </Button>
                 </MagneticButton>
               </Link>
@@ -81,14 +81,14 @@ export function HeroSection() {
             <div className="grid grid-cols-3 gap-8 pt-6 border-t border-gray-200">
               <div className="space-y-1">
                 <div className="flex items-center gap-2 text-sm font-medium uppercase tracking-wider text-gray-400">
-                  <Bot className="w-4 h-4" />
+                  <Heart className="w-4 h-4" />
                   {t('landing.hero.stats.patients') || "International Patients"}
                 </div>
                 <div className="text-3xl font-bold" style={{ color: 'var(--kmed-navy)' }}>5,000+</div>
               </div>
               <div className="space-y-1">
                 <div className="flex items-center gap-2 text-sm font-medium uppercase tracking-wider text-gray-400">
-                  <Database className="w-4 h-4" />
+                  <Building2 className="w-4 h-4" />
                   {t('landing.hero.stats.clinics') || "Partner Clinics"}
                 </div>
                 <div className="text-3xl font-bold" style={{ color: 'var(--kmed-navy)' }}>40+</div>
@@ -132,9 +132,9 @@ export function HeroSection() {
                 >
                   <div className="flex items-center gap-3">
                     <div className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
-                    <span className="text-sm font-medium text-[var(--kmed-navy)]">{t('landing.hero.sysStatus.algorithm') || "Matching Algorithm Active"}</span>
+                    <span className="text-sm font-medium text-[var(--kmed-navy)]">{t('landing.hero.sysStatus.algorithm') || "Matched to the Right Hospital for You"}</span>
                   </div>
-                  <span className="text-xs text-[var(--deep-grey)] font-mono">23ms</span>
+                  <span className="text-xs text-[var(--kmed-teal)] font-semibold">Active</span>
                 </motion.div>
                 <motion.div
                   animate={{ y: [0, -5, 0] }}
@@ -143,9 +143,9 @@ export function HeroSection() {
                 >
                   <div className="flex items-center gap-3">
                     <div className="h-2 w-2 rounded-full bg-[var(--kmed-blue)]" />
-                    <span className="text-sm font-medium text-[var(--kmed-navy)]">{t('landing.hero.sysStatus.capacity') || "Real-time Capacity Check"}</span>
+                    <span className="text-sm font-medium text-[var(--kmed-navy)]">{t('landing.hero.sysStatus.capacity') || "Real-Time Appointment Availability"}</span>
                   </div>
-                  <span className="text-xs text-[var(--deep-grey)] font-mono">Synced</span>
+                  <span className="text-xs text-[var(--kmed-teal)] font-semibold">Updated</span>
                 </motion.div>
               </div>
             </div>

@@ -13,7 +13,7 @@ export function WhyKoreaSection() {
     {
       icon: Award,
       title: 'World-Class Quality',
-      description: 'JCI-accredited hospitals with the latest medical technology and highly trained specialists.',
+      description: 'KOIHA/KAHF-accredited hospitals with the latest medical technology and highly trained specialists.',
       stat: '#1 in Asia',
     },
     {

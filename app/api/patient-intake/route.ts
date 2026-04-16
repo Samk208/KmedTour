@@ -78,7 +78,7 @@ export async function POST(request: Request) {
 
     return NextResponse.json({
       success: true,
-      submissionId: `mock-${Date.now()}`,
+      submissionId: crypto.randomUUID(),
       message: 'Your intake form has been submitted successfully!',
     })
   } catch (error) {
