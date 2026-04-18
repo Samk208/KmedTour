@@ -140,17 +140,17 @@
       }
     },
     "treatments": {
-      "badge": "MODULE.LIST_ACTIVE",
-      "title": "Core Medical Protocols",
-      "subtitle": "Select a treatment module to initialize your verification process. Data is cross-referenced with 50+ clinics.",
-      "viewAll": "Review All Protocols",
+      "badge": "Popular Treatments",
+      "title": "World-Class Medical Treatments",
+      "subtitle": "Browse our most popular procedures, each verified across 50+ partner clinics in Korea.",
+      "viewAll": "View All Treatments",
       "from": "From",
       "errorLoading": "Unable to load treatments. Please try again later.",
-      "noProtocols": "System Update: No protocols found.",
-      "verified": "VERIFIED",
+      "noProtocols": "No treatments found. Please check back soon.",
+      "verified": "Verified",
       "costEst": "Cost Est.",
       "success": "Success",
-      "initModule": "INIT_MODULE"
+      "initModule": "Learn More"
     },
     "howItWorks": {
       "badge": "Simple Process",
@@ -227,42 +227,42 @@
   },
   "howItWorksPage": {
     "hero": {
-      "badge": "Operational Protocol v2.4",
-      "title": "System ",
-      "titleHighlight": "Architecture",
-      "subtitle": "KmedTour is not a travel agency. It is a vertically integrated operating system that orchestrates medical data, logistics, and financial transactions into a single secure workflow."
+      "badge": "How It Works",
+      "title": "Your Journey to ",
+      "titleHighlight": "Korean Healthcare",
+      "subtitle": "From your first enquiry to safe recovery at home — KmedTour handles every step so you can focus on getting better."
     },
     "timeline": {
-      "header": "Execution Sequence",
+      "header": "Your Step-by-Step Journey",
       "steps": {
         "step1": {
-          "title": "Data Ingestion & Analysis",
-          "description": "Submit your medical history via our HIPAA-compliant portal. Our AI extracts key biomarkers and structuring unstructured data for specialist review."
+          "title": "Share Your Medical Needs",
+          "description": "Complete our simple intake form with your medical history and treatment goals. It takes less than 10 minutes and is fully secure."
         },
         "step2": {
-          "title": "Algorithmic Matching",
-          "description": "Our matching engine queries 50+ verfied clinics, ranking them by survival rates, equipment specificity, and surgeon volume for your condition."
+          "title": "Get Matched to the Right Clinic",
+          "description": "Our team reviews your needs and matches you to the best-fit clinics from our verified network of 50+ Korean hospitals."
         },
         "step3": {
-          "title": "Consultation & Verification",
-          "description": "Engage in encrypted video consultations with shortlisted surgeons. Receive a verified treatment plan with guaranteed line-item pricing."
+          "title": "Consultation & Treatment Plan",
+          "description": "Connect with your shortlisted clinic via video consultation. Receive a clear treatment plan with transparent, guaranteed pricing."
         },
         "step4": {
-          "title": "Logistics Orchestration",
-          "description": "Once confirmed, the system auto-generates visa invitation letters, books medical transport, and reserves recovery accommodation."
+          "title": "Visa, Travel & Accommodation",
+          "description": "Once you confirm, we arrange your visa invitation letter, flights, airport transfer, and recovery accommodation."
         },
         "step5": {
-          "title": "Clinical Execution",
-          "description": "Arrive at the facility. Your dedicated concierge ensures all check-in administrative protocols are pre-cleared."
+          "title": "Arrive & Receive Care",
+          "description": "Your personal concierge meets you on arrival and guides you through every step of your treatment journey."
         },
         "step6": {
-          "title": "Recovery Protocol",
-          "description": "Post-op monitoring via our app. Virtual check-ins ensures stable recovery before your return flight."
+          "title": "Recovery & Follow-Up",
+          "description": "After treatment, we monitor your recovery remotely and stay in touch until you're safely home and feeling well."
         }
       }
     },
     "security": {
-      "badge": "Security Core",
+      "badge": "Your Data is Safe",
       "title": "Bank-Grade Encryption for Your Medical Data",
       "subtitle": "We treat your medical records with the same rigor as financial transactions. Our infrastructure is built on private, encrypted channels.",
       "features": {
@@ -271,25 +271,25 @@
         "item3": "Ephemeral data access for clinics",
         "item4": "Audit logs for every record access"
       },
-      "statusSecure": "STATUS: SECURE",
-      "statusActive": "AES-256 ENCRYPTION ACTIVE"
+      "statusSecure": "Secure",
+      "statusActive": "Encrypted & Protected"
     },
     "cta": {
-      "title": "Ready to Initialize?",
-      "subtitle": "Start the intake protocol. It takes less than 10 minutes to ingest your requirements.",
-      "button": "Start Digital Intake"
+      "title": "Ready to Get Started?",
+      "subtitle": "Fill in your details and get a personalised treatment plan in under 10 minutes.",
+      "button": "Get a Free Quote"
     }
   },
   "aboutPage": {
     "hero": {
-      "badge": "SYSTEM ONLINE: KMED-OS V2.0",
-      "title": "The Operating System for ",
-      "titleHighlight": "Global Medical Travel",
-      "subtitle": "KmedTour upgrades the medical tourism experience from a chaotic logistical challenge into a seamless, digital workflow. We connect the world to Korea's medical future."
+      "badge": "About KmedTour",
+      "title": "Trusted Medical Tourism ",
+      "titleHighlight": "From Africa to Korea",
+      "subtitle": "KmedTour makes world-class Korean healthcare accessible to patients everywhere — with full concierge support, transparent pricing, and a team that guides you from enquiry to recovery."
     },
     "mission": {
       "badge": "Our Mission",
-      "title": "Decoding Complex Care",
+      "title": "Making Quality Care Accessible",
       "p1": "Medical travel has historically been fragmented, opaque, and risky. Patients worldwide struggle to find trustworthy prices, verified doctors, and safe logistics.",
       "p2a": "We built KmedTour not just as an agency, but as a ",
       "p2Highlight": "technology platform",
