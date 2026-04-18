@@ -1,0 +1,58 @@
+{
+  "name": "KmedTour – Medical Tourism from Africa to Korea",
+  "short_name": "KmedTour",
+  "description": "Connect with verified Korean medical clinics. Transparent pricing, concierge support, and expert guidance for African patients seeking world-class healthcare in Korea.",
+  "start_url": "/en",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#1D4ED8",
+  "lang": "en",
+  "categories": ["health", "medical", "travel"],
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/modern-korean-hospital-building-with-medical-excel.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "KmedTour homepage"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Get a Free Quote",
+      "short_name": "Get Quote",
+      "description": "Start your patient intake form",
+      "url": "/en/patient-intake",
+      "icons": [{ "src": "/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Browse Clinics",
+      "short_name": "Clinics",
+      "description": "Explore verified Korean clinics",
+      "url": "/en/clinics",
+      "icons": [{ "src": "/icon-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}
