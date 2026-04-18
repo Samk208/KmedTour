@@ -10,7 +10,8 @@
 
 import { POST } from '../route'
 import { vi, describe, it, expect, beforeEach } from 'vitest'
-import { NextRequest } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server'
+import type { SupabaseClient } from '@supabase/supabase-js'
 
 // Mock dependencies
 vi.mock('@/lib/api/client/supabase')
@@ -42,7 +43,7 @@ describe('POST /api/patient-intake', () => {
             }),
           }),
         }),
-      },
+      } as unknown as SupabaseClient,
     })
 
     const request = new NextRequest('http://localhost:3002/api/patient-intake', {
@@ -142,7 +143,7 @@ describe('POST /api/patient-intake', () => {
             }),
           }),
         }),
-      },
+      } as unknown as SupabaseClient,
     })
 
     const request = new NextRequest('http://localhost:3002/api/patient-intake', {
@@ -201,7 +202,7 @@ describe('POST /api/patient-intake', () => {
     const { rateLimit } = await import('@/lib/utils/rate-limit')
 
     // Mock rate limit middleware to return response
-    const rateLimitResponse = new Response('Too many requests', { status: 429 })
+    const rateLimitResponse = new NextResponse('Too many requests', { status: 429 })
     vi.mocked(rateLimit).mockReturnValue(async () => rateLimitResponse)
 
     const request = new NextRequest('http://localhost:3002/api/patient-intake', {

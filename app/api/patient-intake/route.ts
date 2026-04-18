@@ -186,7 +186,10 @@ async function insertPatientIntake(
     } catch (error) {
       // If this is the last attempt, return the error
       if (attempt === MAX_RETRIES) {
-        return { data: null, error }
+        return {
+          data: null,
+          error: error instanceof Error ? { message: error.message } : { message: String(error) },
+        }
       }
 
       // Wait before retrying

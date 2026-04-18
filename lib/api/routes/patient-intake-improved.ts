@@ -20,6 +20,11 @@ import { FullPatientIntake, fullPatientIntakeSchema } from '@/lib/schemas/patien
 import { NextResponse } from 'next/server'
 import type { SupabaseClient } from '@supabase/supabase-js'
 
+/** Shape of the row returned after a successful intake insert */
+interface PatientIntakeRow {
+  id: string
+}
+
 // Configuration
 const MAX_RETRIES = 3
 const INITIAL_RETRY_DELAY_MS = 100
@@ -155,7 +160,7 @@ async function alertAdminOfFallback(payload: FullPatientIntake, submissionId: st
 async function insertPatientIntake(
   client: SupabaseClient,
   payload: FullPatientIntake
-): Promise<{ data: unknown; error: unknown } | null> {
+): Promise<{ data: PatientIntakeRow | null; error: { message: string } | null } | null> {
   for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
     try {
       const result = await client
@@ -185,7 +190,10 @@ async function insertPatientIntake(
     } catch (error) {
       // If this is the last attempt, return the error
       if (attempt === MAX_RETRIES) {
-        return { data: null, error }
+        return {
+          data: null,
+          error: error instanceof Error ? { message: error.message } : { message: String(error) },
+        }
       }
 
       // Wait before retrying
@@ -227,7 +235,7 @@ export async function POST(request: Request) {
     if (client) {
       try {
         // Attempt insert with retry logic
-        const { data, error } = await insertPatientIntake(client, payload)
+        const { data, error } = (await insertPatientIntake(client, payload)) ?? { data: null, error: null }
 
         if (!error && data) {
           // Success! Send confirmation and notify
