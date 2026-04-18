@@ -49,9 +49,9 @@ function getCitiesForProcedure(procedureSlug: string) {
 
 function getProcedureImage(slug: string): string {
   try {
-    const imagePath = path.join(process.cwd(), 'public', 'images', 'procedures', `${slug}.png`)
+    const imagePath = path.join(process.cwd(), 'public', 'images', 'procedures', `${slug}.jpg`)
     if (fs.existsSync(imagePath)) {
-      return `/images/procedures/${slug}.png`
+      return `/images/procedures/${slug}.jpg`
     }
   } catch {
     // ignore

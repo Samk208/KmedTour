@@ -42,9 +42,9 @@ function getProceduresForHospital(hospitalId: string) {
 
 function getHospitalImage(slug: string): string {
   try {
-    const imagePath = path.join(process.cwd(), 'public', 'images', 'hospitals', `${slug}.png`)
+    const imagePath = path.join(process.cwd(), 'public', 'images', 'hospitals', `${slug}.jpg`)
     if (fs.existsSync(imagePath)) {
-      return `/images/hospitals/${slug}.png`
+      return `/images/hospitals/${slug}.jpg`
     }
   } catch {
     // ignore

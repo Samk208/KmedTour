@@ -88,8 +88,8 @@ Images are saved as:
 - `public/images/procedures/{procedure-slug}.png`
 
 Example:
-- `/public/images/hospitals/asan-medical-center.png`
-- `/public/images/procedures/rhinoplasty.png`
+- `/public/images/hospitals/asan-medical-center.jpg`
+- `/public/images/procedures/rhinoplasty.jpg`
 
 #### Cost & Time
 
@@ -163,7 +163,7 @@ If you prefer not to use AI generation:
 ```bash
 # Just replace the PNG file directly
 # No need to run script
-cp my-custom-image.png public/images/hospitals/asan-medical-center.png
+cp my-custom-image.png public/images/hospitals/asan-medical-center.jpg
 ```
 
 ---
