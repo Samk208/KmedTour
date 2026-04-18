@@ -13,6 +13,7 @@ import { getSupabaseContext } from '@/lib/api/client/supabase'
 import { logger } from '@/lib/utils/logger'
 import { rateLimit, RateLimitPresets } from '@/lib/utils/rate-limit'
 import { FullPatientIntake, fullPatientIntakeSchema } from '@/lib/schemas/patient-intake'
+import type { SupabaseClient } from '@supabase/supabase-js'
 import { NextResponse } from 'next/server'
 
 // Configuration
@@ -148,9 +149,9 @@ async function alertAdminOfFallback(payload: FullPatientIntake, submissionId: st
  * Insert patient intake into Supabase with retry logic
  */
 async function insertPatientIntake(
-  client: any,
+  client: SupabaseClient,
   payload: FullPatientIntake
-): Promise<{ data: any; error: any } | null> {
+): Promise<{ data: unknown; error: unknown } | null> {
   for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
     try {
       const result = await client
