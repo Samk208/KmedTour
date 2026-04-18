@@ -14,6 +14,11 @@ import { logger } from '@/lib/utils/logger'
 import { rateLimit, RateLimitPresets } from '@/lib/utils/rate-limit'
 import { FullPatientIntake, fullPatientIntakeSchema } from '@/lib/schemas/patient-intake'
 import type { SupabaseClient } from '@supabase/supabase-js'
+
+/** Shape of the row returned by Supabase after a successful intake insert */
+interface PatientIntakeRow {
+  id: string
+}
 import { NextResponse } from 'next/server'
 
 // Configuration
@@ -151,7 +156,7 @@ async function alertAdminOfFallback(payload: FullPatientIntake, submissionId: st
 async function insertPatientIntake(
   client: SupabaseClient,
   payload: FullPatientIntake
-): Promise<{ data: unknown; error: unknown } | null> {
+): Promise<{ data: PatientIntakeRow | null; error: { message: string } | null } | null> {
   for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
     try {
       const result = await client
@@ -223,7 +228,7 @@ export async function POST(request: Request) {
     if (client) {
       try {
         // Attempt insert with retry logic
-        const { data, error } = await insertPatientIntake(client, payload)
+        const { data, error } = (await insertPatientIntake(client, payload)) ?? { data: null, error: null }
 
         if (!error && data) {
           // Success! Send confirmation and notify
