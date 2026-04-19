@@ -1,7 +1,11 @@
 -- Migration: Add user_roles table for RBAC
 -- Apply in Supabase SQL editor or via: supabase db push
 
-create type if not exists public.user_role_enum as enum ('patient', 'coordinator', 'admin');
+do $$ begin
+  if not exists (select 1 from pg_type where typname = 'user_role_enum') then
+    create type public.user_role_enum as enum ('patient', 'coordinator', 'admin');
+  end if;
+end $$;
 
 create table if not exists public.user_roles (
   id         uuid primary key default uuid_generate_v4(),

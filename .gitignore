@@ -41,6 +41,7 @@ next-env.d.ts
 .agent/
 .gemini/
 .playwright-mcp/
+.windsurf/
 
 # Project Specific Documentation & Strategy (Excluding metadata/strategy docs)
 AI-AGENTS-*.md
@@ -49,6 +50,7 @@ BUGFIX-*.md
 CONTENT-*.md
 ENHANCED-*.md
 FIXES_*.md
+FIXES-*.md
 HANDOVER-*.md
 IMPLEMENTATION-*.md
 INTERNAL-*.md
@@ -60,6 +62,18 @@ SETUP-*.md
 STATUS-*.md
 TECHNICAL-*.md
 VISUAL-*.md
+AUDIT-*.md
+COMPLETION-*.md
+EXECUTIVE-*.txt
+EXECUTIVE-*.md
+INDEX-*.md
+SESSION-*.md
+VERIFICATION-*.md
+MANUAL-TODO.md
+Untitled-*.txt
+
+# AI-agent skill copies (not project source)
+skills/
 Teck stack Preferences.md
 Deep Tech Improvement/
 Content Hub Data/
