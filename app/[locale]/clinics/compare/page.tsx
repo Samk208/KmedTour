@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { useClinicsQuery } from '@/lib/api/hooks/use-clinics'
+import { formatSpecialty } from '@/lib/utils/format'
 import { Award, Calendar, Check, DollarSign, Globe, MapPin, Star, Users } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -162,7 +163,7 @@ export default function CompareClinicPage() {
                             className="px-2 py-1 rounded text-xs bg-[var(--soft-grey)]"
                             style={{ color: 'var(--kmed-blue)' }}
                           >
-                            {specialty}
+                            {formatSpecialty(specialty)}
                           </span>
                         ))}
                       </div>

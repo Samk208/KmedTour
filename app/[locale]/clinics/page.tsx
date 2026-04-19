@@ -4,6 +4,7 @@ import { ClinicCard } from '@/components/clinics/clinic-card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { useClinicsQuery } from '@/lib/api/hooks/use-clinics'
+import { formatSpecialty } from '@/lib/utils/format'
 import { ArrowUpDown, Search, SlidersHorizontal } from 'lucide-react'
 import Link from 'next/link'
 import { useState } from 'react'
@@ -142,7 +143,7 @@ export default function ClinicsPage() {
                     : { color: 'var(--deep-grey)' }
                 }
               >
-                {specialty}
+                {formatSpecialty(specialty)}
               </button>
             ))}
           </div>

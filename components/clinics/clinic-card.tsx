@@ -4,6 +4,7 @@ import { FavoriteButton } from '@/components/shared/favorite-button'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Clinic } from '@/lib/schemas/clinic'
+import { formatSpecialty } from '@/lib/utils/format'
 import { ArrowRight, Award, Globe, MapPin, Star, Users } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -116,7 +117,7 @@ export function ClinicCard({ clinic, variant = 'default' }: ClinicCardProps) {
             <Award className="h-4 w-4 mt-0.5 flex-shrink-0" style={{ color: 'var(--kmed-teal)' }} />
             <div className="text-sm" style={{ color: 'var(--deep-grey)' }}>
               <span className="font-medium">Specialties:</span>{' '}
-              {clinic.specialties.slice(0, 3).join(', ')}
+              {clinic.specialties.slice(0, 3).map(formatSpecialty).join(', ')}
               {clinic.specialties.length > 3 && ` +${clinic.specialties.length - 3} more`}
             </div>
           </div>

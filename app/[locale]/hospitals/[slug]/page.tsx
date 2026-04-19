@@ -9,6 +9,7 @@ import { MedicalDisclaimer } from '@/components/shared/medical-disclaimer'
 import { Button } from '@/components/ui/button'
 import { Clinic } from '@/lib/schemas/clinic'
 import { Treatment } from '@/lib/schemas/treatment'
+import { formatSpecialty } from '@/lib/utils/format'
 import {
   extractFAQs,
   formatMarkdownText,
@@ -345,7 +346,7 @@ export default async function EnhancedHospitalPage({ params }: { params: Promise
                           className="px-2 py-1 rounded text-xs font-medium bg-[var(--soft-grey)]"
                           style={{ color: 'var(--kmed-navy)' }}
                         >
-                          {spec}
+                          {formatSpecialty(spec)}
                         </span>
                       ))}
                     </div>
