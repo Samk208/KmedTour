@@ -26,10 +26,13 @@ export async function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     /*
-     * Match all request paths except for the ones starting with:
-     * - _next/static (static files)
-     * - _next/image (image optimization files)
+     * Match all request paths except for:
+     * - api          (API routes — must bypass i18n locale redirect)
+     * - _next/static (Next.js static files)
+     * - _next/image  (Next.js image optimization)
+     * - _vercel      (Vercel infrastructure)
+     * - paths with a file extension (sw.js, manifest.webmanifest, *.png, etc.)
      */
-    "/((?!_next/static|_next/image).*)",
+    "/((?!api|_next/static|_next/image|_vercel|.*\\..*).*)",
   ],
 };
