@@ -9,7 +9,7 @@
  * 5. Comprehensive error logging
  */
 
-import { getSupabaseContext } from '@/lib/api/client/supabase'
+import { getSupabaseAdminContext } from '@/lib/api/client/supabase'
 import { logger } from '@/lib/utils/logger'
 import { rateLimit, RateLimitPresets } from '@/lib/utils/rate-limit'
 import { FullPatientIntake, fullPatientIntakeSchema } from '@/lib/schemas/patient-intake'
@@ -226,7 +226,7 @@ export async function POST(request: Request) {
     const json = await request.json()
     const payload = fullPatientIntakeSchema.parse(json) as FullPatientIntake
 
-    const { client } = getSupabaseContext()
+    const { client } = getSupabaseAdminContext()
 
     if (client) {
       try {

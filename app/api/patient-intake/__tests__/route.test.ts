@@ -28,10 +28,10 @@ describe('POST /api/patient-intake', () => {
    * EXPECTED: Returns success with data.id
    */
   it('should handle successful intake submission with Supabase', async () => {
-    const { getSupabaseContext } = await import('@/lib/api/client/supabase')
+    const { getSupabaseAdminContext } = await import('@/lib/api/client/supabase')
     
     // Mock Supabase client with successful insert
-    vi.mocked(getSupabaseContext).mockReturnValue({
+    vi.mocked(getSupabaseAdminContext).mockReturnValue({
       client: {
         from: vi.fn().mockReturnValue({
           insert: vi.fn().mockReturnValue({
@@ -79,11 +79,11 @@ describe('POST /api/patient-intake', () => {
    * ISSUE: Currently returns success: true, but data not persisted!
    */
   it('should handle Supabase unavailable with fallback UUID', async () => {
-    const { getSupabaseContext } = await import('@/lib/api/client/supabase')
+    const { getSupabaseAdminContext } = await import('@/lib/api/client/supabase')
     const { logger } = await import('@/lib/utils/logger')
 
     // Mock Supabase client as null (unavailable)
-    vi.mocked(getSupabaseContext).mockReturnValue({ client: null })
+    vi.mocked(getSupabaseAdminContext).mockReturnValue({ client: null })
 
     const request = new NextRequest('http://localhost:3002/api/patient-intake', {
       method: 'POST',
@@ -128,10 +128,10 @@ describe('POST /api/patient-intake', () => {
    * EXPECTED: Returns 503 Service Unavailable, error message
    */
   it('should handle Supabase insert error gracefully', async () => {
-    const { getSupabaseContext } = await import('@/lib/api/client/supabase')
+    const { getSupabaseAdminContext } = await import('@/lib/api/client/supabase')
 
     // Mock Supabase client that returns error
-    vi.mocked(getSupabaseContext).mockReturnValue({
+    vi.mocked(getSupabaseAdminContext).mockReturnValue({
       client: {
         from: vi.fn().mockReturnValue({
           insert: vi.fn().mockReturnValue({

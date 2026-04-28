@@ -13,6 +13,7 @@ export interface SupabaseContext {
 }
 
 let cachedContext: SupabaseContext | null = null
+let cachedAdminContext: SupabaseContext | null = null
 
 export function getSupabaseContext(): SupabaseContext {
   if (cachedContext) {
@@ -48,6 +49,45 @@ export function getSupabaseContext(): SupabaseContext {
 
     cachedContext = { client: null }
     return cachedContext
+  }
+}
+
+// Server-only: bypasses RLS via service_role. NEVER import from client components
+// or pass through to the browser bundle.
+export function getSupabaseAdminContext(): SupabaseContext {
+  if (cachedAdminContext) {
+    return cachedAdminContext
+  }
+
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL
+  const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY
+
+  if (!url || !serviceKey) {
+    if (process.env.NODE_ENV !== 'production') {
+      console.warn('[supabase] NEXT_PUBLIC_SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY not set. Admin client running in mock-only mode.')
+    }
+
+    cachedAdminContext = { client: null }
+    return cachedAdminContext
+  }
+
+  try {
+    const client = createClient(url, serviceKey, {
+      auth: {
+        persistSession: false,
+        autoRefreshToken: false,
+      },
+    })
+
+    cachedAdminContext = { client }
+    return cachedAdminContext
+  } catch (error) {
+    if (process.env.NODE_ENV !== 'production') {
+      console.error('[supabase] Failed to create Supabase admin client. Falling back to mock-only mode.', error)
+    }
+
+    cachedAdminContext = { client: null }
+    return cachedAdminContext
   }
 }
 
