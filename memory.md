@@ -1,7 +1,19 @@
 # KmedTour — Rolling State of Truth
 
-**Last updated:** 2026-04-28 evening (pre-travel session)
-**Latest handover:** [`HANDOVER-2026-04-27.md`](HANDOVER-2026-04-27.md) — note RLS section is SUPERSEDED, see below
+**Last updated:** 2026-04-28 evening (editor handoff — Sam traveling for GSAT pitch tomorrow)
+**Latest handover:** [`HANDOVER-2026-04-28.md`](HANDOVER-2026-04-28.md) ← **READ FIRST** if you're an incoming editor
+**Previous handover:** [`HANDOVER-2026-04-27.md`](HANDOVER-2026-04-27.md) — RLS section is SUPERSEDED by 2026-04-28
+
+## 🟢 Incoming editor — start here
+
+Sam is presenting at GSAT tomorrow and traveling. The site is demo-ready. Your job is to pick up post-travel work from `HANDOVER-2026-04-28.md` §6.
+
+Top 3 next tasks (priority order):
+1. **AI agent deploy via Coolify** (60 min) — chat is currently broken; full plan at HANDOVER-2026-04-28.md §6.1
+2. **Seed RAG chunks** (45-90 min) — agent has no knowledge base; §6.2
+3. **Audit SECURITY DEFINER functions** (30 min) — closes yesterday's anon-INSERT mystery; §6.3
+
+Do NOT touch any of these without first invoking `supabase:supabase` and `superpowers:systematic-debugging` skills. The 2026-04-27 session burned hours skipping skills.
 
 This is the single source of truth for "where is the project right now". Do NOT diff through HANDOVER-* files to figure out current state — read this file first.
 
@@ -77,10 +89,10 @@ This is the single source of truth for "where is the project right now". Do NOT 
 
 ## Where to look next session
 
-1. **FIRST: invoke skills before touching anything** — `supabase:supabase` and `superpowers:systematic-debugging`. Today's session burned hours doing guess-driven debugging. The skills exist for exactly this kind of work — use them.
-2. **Then read:** `HANDOVER-2026-04-27.md` (this session's full detail) — note especially the "SKILL GATE" section at the top
-3. **Then update:** this `memory.md` file (replace what's stale at the end of session)
-4. **Then execute:** the "Tomorrow's plan" Option A from the handover
+1. **FIRST: invoke skills before touching anything** — `supabase:supabase` and `superpowers:systematic-debugging`.
+2. **Then read:** [`HANDOVER-2026-04-28.md`](HANDOVER-2026-04-28.md) (current handover — full editor handoff context)
+3. **Then update:** this `memory.md` file at the END of your session (Session Log table at bottom)
+4. **Then execute:** pick a task from §6 of the handover. Confirm with Sam (or whoever is driving) before touching code.
 
 ## How to debug Supabase issues without guessing
 
