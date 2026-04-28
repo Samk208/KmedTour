@@ -1,30 +1,14 @@
 import { withSentryConfig } from "@sentry/nextjs";
 import createNextIntlPlugin from "next-intl/plugin";
+import { validateProductionEnv } from "./lib/config/env-validation.mjs";
 
 const withNextIntl = createNextIntlPlugin("./lib/i18n/request.ts");
 
-const requiredProductionEnv = [
-  "NEXT_PUBLIC_SUPABASE_URL",
-  "NEXT_PUBLIC_SUPABASE_ANON_KEY",
-  "SUPABASE_SERVICE_ROLE_KEY",
-  "NEXT_PUBLIC_APP_URL",
-  "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY",
-  "STRIPE_SECRET_KEY",
-  "RESEND_API_KEY",
-  "GEMINI_API_KEY",
-];
-
-if (
-  process.env.KMEDTOUR_SKIP_ENV_VALIDATION !== "1" &&
-  (process.env.NETLIFY === "true" || process.env.CI === "true") &&
-  process.env.NODE_ENV === "production"
-) {
-  const missing = requiredProductionEnv.filter((key) => !process.env[key]);
-  if (missing.length > 0) {
-    throw new Error(
-      `Missing required production environment variables: ${missing.join(", ")}`,
-    );
-  }
+const envValidation = validateProductionEnv(process.env);
+if (!envValidation.ok) {
+  throw new Error(
+    `Missing required production environment variables: ${envValidation.missing.join(", ")}`,
+  );
 }
 
 /** @type {import('next').NextConfig} */
