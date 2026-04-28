@@ -18,6 +18,7 @@
     "generate:hospitals": "node scripts/generate-images.js hospitals",
     "generate:procedures": "node scripts/generate-images.js procedures",
     "rag:ingest:treatments": "node scripts/ingest-rag-treatments.js",
+    "rag:seed": "node supabase/scripts/seed_rag.js",
     "pseo:preview": "pnpm dev",
     "wonlink-contacts-validate-script": "node scripts/wonlink-data-validate-public.js"
   },

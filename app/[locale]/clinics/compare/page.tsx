@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { useClinicsQuery } from '@/lib/api/hooks/use-clinics'
+import { preferHospitalWebp } from '@/lib/utils/images'
 import { formatSpecialty } from '@/lib/utils/format'
 import { Award, Calendar, Check, DollarSign, Globe, MapPin, Star, Users } from 'lucide-react'
 import Image from 'next/image'
@@ -90,10 +91,11 @@ export default function CompareClinicPage() {
                       <div className="text-center">
                         <div className="w-20 h-20 mx-auto mb-3 rounded-lg overflow-hidden bg-white relative">
                           <Image
-                            src={clinic?.imageUrl || "/placeholder.svg"}
+                            src={preferHospitalWebp(clinic?.imageUrl) || "/placeholder.svg"}
                             alt={clinic?.name || "Clinic"}
                             fill
                             className="object-cover"
+                            sizes="80px"
                           />
                         </div>
                         <div className="font-semibold text-base" style={{ color: 'var(--kmed-navy)' }}>
@@ -272,7 +274,7 @@ export default function CompareClinicPage() {
                   {compareData.map((clinic) => (
                     <td key={clinic?.id} className="p-4">
                       <div className="flex flex-col gap-2">
-                        <Link href={`/clinics/${clinic?.slug}`}>
+                        <Link href={`/hospitals/${clinic?.slug}`}>
                           <Button
                             variant="outline"
                             className="w-full"

@@ -6,11 +6,8 @@ import { routing } from "@/lib/i18n/routing";
 import type { Metadata, Viewport } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import "../globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://kmedtour.com";
 
@@ -93,7 +90,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} dir={dir}>
-      <body className={`${inter.className} font-sans antialiased`}>
+      <body className="font-sans antialiased">
         <NextIntlClientProvider messages={messages}>
           <Providers>
             <div className="flex min-h-screen flex-col">

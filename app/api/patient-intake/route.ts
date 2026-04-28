@@ -10,6 +10,7 @@
  */
 
 import { getSupabaseAdminContext } from '@/lib/api/client/supabase'
+import { apiError, createErrorId } from '@/lib/utils/api-response'
 import { logger } from '@/lib/utils/logger'
 import { rateLimit, RateLimitPresets } from '@/lib/utils/rate-limit'
 import { FullPatientIntake, fullPatientIntakeSchema } from '@/lib/schemas/patient-intake'
@@ -117,13 +118,13 @@ async function notifyCoordinator(payload: FullPatientIntake, submissionId: strin
 }
 
 /**
- * Alert admin of fallback submission (Supabase unavailable)
+ * Alert admin that an intake submission could not be persisted.
  * This is a CRITICAL issue that requires immediate attention
  */
-async function alertAdminOfFallback(payload: FullPatientIntake, submissionId: string): Promise<void> {
+async function alertAdminOfFallback(payload: FullPatientIntake, errorId: string): Promise<void> {
   const slackWebhook = process.env.SLACK_WEBHOOK_URL
   if (!slackWebhook) {
-    console.error('🚨 CRITICAL: Patient intake using fallback UUID (Supabase down) and Slack not configured!')
+    console.error('CRITICAL: Patient intake rejected because Supabase is unavailable and Slack is not configured.')
     return
   }
 
@@ -131,22 +132,22 @@ async function alertAdminOfFallback(payload: FullPatientIntake, submissionId: st
     await fetch(slackWebhook, {
       method: 'POST',
       body: JSON.stringify({
-        text: `🚨 CRITICAL: Patient Intake Fallback Activated`,
+        text: `CRITICAL: Patient Intake Submission Failed`,
         blocks: [
           {
             type: 'section',
             text: {
               type: 'mrkdwn',
-              text: `*🚨 CRITICAL ALERT*\n*Supabase is unavailable!*\nPatient intake was submitted but data was NOT saved to database.\n*Email:* ${payload.email}\n*Fallback UUID:* ${submissionId}\n*Action Required:* Check Supabase status and manually process this intake if database recovers.`,
+              text: `*CRITICAL ALERT*\n*Supabase is unavailable!*\nA patient intake request was rejected before data could be saved.\n*Email:* ${payload.email}\n*Error ID:* ${errorId}\n*Action Required:* Check Supabase status and ask the patient to resubmit after recovery.`,
             },
           },
         ],
       }),
     })
 
-    logger.fatal('Fallback submission activated - Supabase unavailable', { email: payload.email, submissionId })
+    logger.fatal('Patient intake rejected - Supabase unavailable', { email: payload.email, errorId })
   } catch (error) {
-    logger.fatal('Failed to alert admin of fallback', { email: payload.email, submissionId }, {}, error instanceof Error ? error : undefined)
+    logger.fatal('Failed to alert admin of intake outage', { email: payload.email, errorId }, {}, error instanceof Error ? error : undefined)
   }
 }
 
@@ -248,70 +249,62 @@ export async function POST(request: Request) {
         }
 
         // Database error (e.g., constraint violation, permission denied)
+        const errorId = createErrorId('intake')
         logger.error(
           'Patient intake Supabase insert failed after retries',
           { path: '/api/patient-intake', method: 'POST', email: payload.email },
-          {},
+          { errorId },
           error instanceof Error ? error : undefined
         )
 
-        return NextResponse.json(
-          {
-            success: false,
-            message: "We couldn't save your intake form right now. Please try again in a moment or contact us.",
-          },
-          { status: 503 }
+        return apiError(
+          "We couldn't save your intake form right now. Please try again in a moment or contact us.",
+          503,
+          { errorId, code: 'INTAKE_SAVE_FAILED' },
         )
       } catch (error) {
         // Unexpected error during insert
+        const errorId = createErrorId('intake')
         logger.error(
           'Patient intake unexpected Supabase error',
           { path: '/api/patient-intake', method: 'POST', email: payload.email },
-          {},
+          { errorId },
           error instanceof Error ? error : undefined
         )
 
-        return NextResponse.json(
-          {
-            success: false,
-            message: "We couldn't save your intake form right now. Please try again in a moment or contact us.",
-          },
-          { status: 503 }
+        return apiError(
+          "We couldn't save your intake form right now. Please try again in a moment or contact us.",
+          503,
+          { errorId, code: 'INTAKE_SAVE_FAILED' },
         )
       }
     }
 
-    // CRITICAL: Supabase client is null (unavailable)
-    const fallbackId = crypto.randomUUID()
+    const errorId = createErrorId('intake')
+    await alertAdminOfFallback(payload, errorId)
+    logger.fatal('Patient intake rejected because Supabase admin client is unavailable', {
+      path: '/api/patient-intake',
+      method: 'POST',
+    }, {
+      errorId,
+      email: payload.email,
+    })
 
-    // Alert admin immediately
-    await alertAdminOfFallback(payload, fallbackId)
-
-    // Return 202 Accepted (not 200 OK) to signal partial success
-    return NextResponse.json(
-      {
-        success: true,
-        submissionId: fallbackId,
-        message: 'Your intake form has been submitted successfully!',
-        warning: 'System temporarily unavailable - your application will be manually reviewed',
-      },
-      { status: 202 }
+    return apiError(
+      "We couldn't save your intake form right now. Please try again in a moment or contact us directly.",
+      503,
+      { errorId, code: 'DATABASE_NOT_CONFIGURED' },
     )
   } catch (error) {
     // Invalid request body
+    const errorId = createErrorId('intake')
     logger.error(
       'Patient intake invalid request body',
       { path: '/api/patient-intake', method: 'POST' },
-      {},
+      { errorId },
       error instanceof Error ? error : undefined
     )
 
-    return NextResponse.json(
-      {
-        success: false,
-        message: 'Invalid intake data.',
-      },
-      { status: 400 }
-    )
+    return apiError('Invalid intake data.', 400, { errorId, code: 'INVALID_INTAKE_DATA' })
   }
 }

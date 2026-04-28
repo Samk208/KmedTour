@@ -1,5 +1,6 @@
 import { getSupabaseAdminContext } from '@/lib/api/client/supabase'
 import { contactSubmissionSchema } from '@/lib/schemas/contact'
+import { apiError, createErrorId } from '@/lib/utils/api-response'
 import { logger } from '@/lib/utils/logger'
 import { rateLimit, RateLimitPresets } from '@/lib/utils/rate-limit'
 import { NextResponse } from 'next/server'
@@ -51,52 +52,57 @@ export async function POST(request: Request) {
           })
         }
 
+        const errorId = createErrorId('contact')
         logger.warn('Supabase insert error', {
           path: '/api/contact',
         }, {
+          errorId,
           error: error.message,
         })
-        return NextResponse.json(
-          {
-            success: false,
-            message: "We couldn't save your message right now. Please try again in a moment or email us directly.",
-          },
-          { status: 503 }
+        return apiError(
+          "We couldn't save your message right now. Please try again in a moment or email us directly.",
+          503,
+          { errorId, code: 'CONTACT_SAVE_FAILED' },
         )
       } catch (error) {
+        const errorId = createErrorId('contact')
         logger.warn('Unexpected Supabase error', {
           path: '/api/contact',
         }, {
+          errorId,
           error: error instanceof Error ? error.message : 'Unknown error',
         })
-        return NextResponse.json(
-          {
-            success: false,
-            message: "We couldn't save your message right now. Please try again in a moment or email us directly.",
-          },
-          { status: 503 }
+        return apiError(
+          "We couldn't save your message right now. Please try again in a moment or email us directly.",
+          503,
+          { errorId, code: 'CONTACT_SAVE_FAILED' },
         )
       }
     }
 
-    return NextResponse.json({
-      success: true,
-      message: 'Your message has been received. We will get back to you shortly.',
+    const errorId = createErrorId('contact')
+    logger.error('Contact submission failed because Supabase admin client is unavailable', {
+      path: '/api/contact',
+      method: 'POST',
+    }, {
+      errorId,
+      email: payload.email,
     })
+    return apiError(
+      "We couldn't save your message right now. Please try again in a moment or email us directly.",
+      503,
+      { errorId, code: 'DATABASE_NOT_CONFIGURED' },
+    )
   } catch (error) {
+    const errorId = createErrorId('contact')
     logger.error('Invalid contact request', {
       path: '/api/contact',
       method: 'POST',
     }, {
+      errorId,
       error: error instanceof Error ? error.message : 'Unknown error',
     })
 
-    return NextResponse.json(
-      {
-        success: false,
-        message: 'Invalid contact data.',
-      },
-      { status: 400 },
-    )
+    return apiError('Invalid contact data.', 400, { errorId, code: 'INVALID_CONTACT_DATA' })
   }
 }

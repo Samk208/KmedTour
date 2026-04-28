@@ -117,6 +117,9 @@ export function HeroSection() {
                 alt="Medical Infrastructure"
                 width={700}
                 height={500}
+                priority
+                fetchPriority="high"
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="w-full h-auto object-cover opacity-90 transition-transform duration-700 group-hover:scale-105"
               />
 

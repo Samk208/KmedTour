@@ -78,7 +78,7 @@ describe('POST /api/patient-intake', () => {
    * EXPECTED: Returns fallback UUID, logs warning
    * ISSUE: Currently returns success: true, but data not persisted!
    */
-  it('should handle Supabase unavailable with fallback UUID', async () => {
+  it('should reject intake when Supabase admin client is unavailable', async () => {
     const { getSupabaseAdminContext } = await import('@/lib/api/client/supabase')
     const { logger } = await import('@/lib/utils/logger')
 
@@ -109,17 +109,22 @@ describe('POST /api/patient-intake', () => {
 
     // ⚠️ CURRENT BEHAVIOR: success: true (WRONG - data not saved)
     // EXPECTED BEHAVIOR: Should warn about fallback
-    expect(response.status).toBe(202) // 202 = Accepted, not fully processed
-    expect(data.success).toBe(true)
-    expect(data.submissionId).toBeDefined()
-    expect(data.warning).toBeDefined() // Should include warning
+    expect(response.status).toBe(503)
+    expect(data.success).toBe(false)
+    expect(data.errorId).toMatch(/^intake_/)
+    expect(data.code).toBe('DATABASE_NOT_CONFIGURED')
 
     // Verify logger was called to alert about fallback
-    expect(logger.warn).toHaveBeenCalledWith(
-      expect.stringContaining('fallback'),
+    expect(logger.fatal).toHaveBeenCalledWith(
+      expect.stringContaining('Patient intake rejected'),
+      expect.objectContaining({
+        path: '/api/patient-intake',
+        method: 'POST',
+      }),
       expect.objectContaining({
         email: 'jane@example.com',
-      })
+        errorId: expect.stringMatching(/^intake_/),
+      }),
     )
   })
 

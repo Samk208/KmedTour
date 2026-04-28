@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Clinic } from '@/lib/schemas/clinic'
 import { formatSpecialty } from '@/lib/utils/format'
+import { preferHospitalWebp } from '@/lib/utils/images'
 import { ArrowRight, Award, Globe, MapPin, Star, Users } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -15,16 +16,19 @@ interface ClinicCardProps {
 }
 
 export function ClinicCard({ clinic, variant = 'default' }: ClinicCardProps) {
+  const imageSrc = preferHospitalWebp(clinic.imageUrl)
+
   if (variant === 'compact') {
     return (
       <Card className="p-4 hover:shadow-lg transition-shadow duration-300 bg-white border-[var(--border-grey)]">
         <div className="flex gap-4">
           <div className="flex-shrink-0 w-24 h-24 rounded-lg overflow-hidden bg-[var(--soft-grey)] relative">
             <Image
-              src={clinic.imageUrl || "/images/hospitals/default.jpg"}
+              src={imageSrc}
               alt={clinic.name}
               fill
               className="object-cover"
+              sizes="96px"
             />
           </div>
           <div className="flex-1 min-w-0">
@@ -56,10 +60,11 @@ export function ClinicCard({ clinic, variant = 'default' }: ClinicCardProps) {
     <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300 bg-white border-[var(--border-grey)]">
       <div className="relative h-56 overflow-hidden">
         <Image
-          src={clinic.imageUrl || "/images/hospitals/default.jpg"}
+          src={imageSrc}
           alt={clinic.name}
           fill
           className="object-cover"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         <div className="absolute top-4 right-4 flex gap-2">
           <div className="px-3 py-1 rounded-full text-xs font-semibold bg-white" style={{ color: 'var(--kmed-blue)' }}>

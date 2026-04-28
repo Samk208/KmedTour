@@ -1,34 +1,25 @@
-import fs from 'fs'
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import path from 'path'
 
 import { MedicalDisclaimer } from '@/components/shared/medical-disclaimer'
 import { Button } from '@/components/ui/button'
+import { locales } from '@/lib/i18n/locales'
 import { Clinic } from '@/lib/schemas/clinic'
 import { Treatment } from '@/lib/schemas/treatment'
 import { formatSpecialty } from '@/lib/utils/format'
-import {
-  extractFAQs,
-  formatMarkdownText,
-  getBaseUrl,
-  parseMarkdownContent,
-  type FAQ,
-} from '@/lib/utils/content-parser'
+import { preferHospitalWebp } from '@/lib/utils/images'
 
 import clinicsData from '@/lib/data/clinics.json'
 import mappingsData from '@/lib/data/mappings.json'
 import treatmentsData from '@/lib/data/treatments.json'
-
 import '@/app/styles/enhanced-content.css'
-
-const BASE_URL = getBaseUrl()
 
 const clinics = clinicsData as Clinic[]
 const treatments = treatmentsData as Treatment[]
 const mappings = mappingsData as { hospitalId: string; procedureId: string; verified?: boolean }[]
+const BASE_URL = (process.env.NEXT_PUBLIC_APP_URL || 'https://kmedtour.com').replace(/\/$/, '')
 
 function getClinicBySlug(slug: string) {
   return clinics.find((clinic) => clinic.slug === slug)
@@ -42,27 +33,7 @@ function getProceduresForHospital(hospitalId: string) {
 }
 
 function getHospitalImage(slug: string): string {
-  try {
-    const imagePath = path.join(process.cwd(), 'public', 'images', 'hospitals', `${slug}.jpg`)
-    if (fs.existsSync(imagePath)) {
-      return `/images/hospitals/${slug}.jpg`
-    }
-  } catch {
-    // ignore
-  }
-  return '/images/hospitals/default.jpg'
-}
-
-function getGeneratedContent(slug: string): string | null {
-  try {
-    const contentPath = path.join(process.cwd(), 'content', 'generated', 'hospitals', `${slug}.md`)
-    if (fs.existsSync(contentPath)) {
-      return fs.readFileSync(contentPath, 'utf-8')
-    }
-  } catch (error) {
-    console.error('Error reading generated content:', error)
-  }
-  return null
+  return `/images/hospitals/${slug}.webp`
 }
 
 function buildMetadata(clinic: Clinic): Metadata {
@@ -181,31 +152,10 @@ function BreadcrumbJsonLd(clinic: Clinic) {
   )
 }
 
-function FAQPageJsonLd(faqs: FAQ[]) {
-  if (faqs.length === 0) return null
-
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqs.map(faq => ({
-      '@type': 'Question',
-      name: faq.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: faq.answer
-      }
-    }))
-  }
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-    />
-  )
-}
-
 export async function generateStaticParams() {
-  return clinics.map((clinic) => ({ slug: clinic.slug }))
+  return locales.flatMap((locale) =>
+    clinics.map((clinic) => ({ locale, slug: clinic.slug }))
+  )
 }
 
 export async function generateMetadata({
@@ -225,9 +175,7 @@ export default async function EnhancedHospitalPage({ params }: { params: Promise
   if (!clinic) return notFound()
 
   const procedures = getProceduresForHospital(clinic.id)
-  const generatedContent = getGeneratedContent(slug)
-  const contentSections = generatedContent ? parseMarkdownContent(generatedContent) : []
-  const faqs = extractFAQs(contentSections)
+  const heroImage = preferHospitalWebp(clinic.imageUrl || getHospitalImage(clinic.slug))
 
   return (
     <div className="bg-[var(--cloud-white)] min-h-screen">
@@ -235,7 +183,7 @@ export default async function EnhancedHospitalPage({ params }: { params: Promise
       <div className="relative text-white py-28 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src={clinic.imageUrl || getHospitalImage(clinic.slug)}
+            src={heroImage}
             alt={`${clinic.name} - KAHF/KOIHA Accredited Hospital in ${clinic.location || 'South Korea'} - International patient facilities`}
             fill
             className="object-cover opacity-30"
@@ -291,19 +239,33 @@ export default async function EnhancedHospitalPage({ params }: { params: Promise
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Main Content Column */}
           <div className="lg:col-span-2 space-y-6">
-            {contentSections.map((section, index) => (
-              <div
-                key={index}
-                className={`content-section ${section.type === 'faq' ? 'faq-section' : ''} ${section.type === 'disclaimer' ? 'disclaimer-section' : ''}`}
-              >
-                <h2>{section.title}</h2>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: formatMarkdownText(section.content)
-                  }}
-                />
+            <div className="content-section">
+              <h2>About {clinic.name}</h2>
+              <p>{clinic.description}</p>
+              {clinic.shortDescription && <p>{clinic.shortDescription}</p>}
+            </div>
+
+            {clinic.highlights.length > 0 && (
+              <div className="content-section">
+                <h2>Patient Support Highlights</h2>
+                <ul className="content-list">
+                  {clinic.highlights.map((highlight) => (
+                    <li key={highlight}>{highlight}</li>
+                  ))}
+                </ul>
               </div>
-            ))}
+            )}
+
+            {clinic.facilities.length > 0 && (
+              <div className="content-section">
+                <h2>Facilities and Services</h2>
+                <ul className="content-list">
+                  {clinic.facilities.map((facility) => (
+                    <li key={facility}>{facility}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             {/* CTA Section */}
             <div className="content-section bg-gradient-to-br from-[var(--kmed-blue)]/5 to-[var(--kmed-teal)]/5 border-2 border-[var(--kmed-blue)]/20">
@@ -405,7 +367,6 @@ export default async function EnhancedHospitalPage({ params }: { params: Promise
       {/* Schema Markup */}
       {HospitalJsonLd(clinic, procedures)}
       {BreadcrumbJsonLd(clinic)}
-      {FAQPageJsonLd(faqs)}
     </div>
   )
 }

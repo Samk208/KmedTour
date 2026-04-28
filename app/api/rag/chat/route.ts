@@ -1,5 +1,6 @@
 import { getSupabaseAdminContext } from '@/lib/api/client/supabase'
 import { isEmergency, isMedicalAdvice } from '@/lib/rag/chat-guards'
+import { apiError, createErrorId } from '@/lib/utils/api-response'
 import { logger } from '@/lib/utils/logger'
 import { rateLimit as rateLimitMiddleware } from '@/lib/utils/rate-limit'
 import { NextResponse } from 'next/server'
@@ -214,19 +215,18 @@ export async function POST(request: Request) {
 
     return buildSuccessResponse(retrieved, answer)
   } catch (error) {
+    const errorId = createErrorId('rag')
     logger.error('RAG chat request failed', {
       path: '/api/rag/chat',
       method: 'POST',
     }, {
+      errorId,
       error: error instanceof Error ? error.message : 'Unknown error',
     }, error instanceof Error ? error : undefined)
 
-    return NextResponse.json(
-      {
-        success: false,
-        message: 'Unable to process your request at this time.',
-      },
-      { status: 400 },
-    )
+    return apiError('Unable to process your request at this time.', 400, {
+      errorId,
+      code: 'RAG_REQUEST_FAILED',
+    })
   }
 }

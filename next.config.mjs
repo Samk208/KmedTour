@@ -3,6 +3,30 @@ import createNextIntlPlugin from "next-intl/plugin";
 
 const withNextIntl = createNextIntlPlugin("./lib/i18n/request.ts");
 
+const requiredProductionEnv = [
+  "NEXT_PUBLIC_SUPABASE_URL",
+  "NEXT_PUBLIC_SUPABASE_ANON_KEY",
+  "SUPABASE_SERVICE_ROLE_KEY",
+  "NEXT_PUBLIC_APP_URL",
+  "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY",
+  "STRIPE_SECRET_KEY",
+  "RESEND_API_KEY",
+  "GEMINI_API_KEY",
+];
+
+if (
+  process.env.KMEDTOUR_SKIP_ENV_VALIDATION !== "1" &&
+  (process.env.NETLIFY === "true" || process.env.CI === "true") &&
+  process.env.NODE_ENV === "production"
+) {
+  const missing = requiredProductionEnv.filter((key) => !process.env[key]);
+  if (missing.length > 0) {
+    throw new Error(
+      `Missing required production environment variables: ${missing.join(", ")}`,
+    );
+  }
+}
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // TypeScript strict checking enabled for production safety
@@ -34,6 +58,16 @@ const nextConfig = {
     return [{ source: "/:path*", headers: securityHeaders }];
   },
 
+  async redirects() {
+    return [
+      {
+        source: "/:locale/clinics/:slug",
+        destination: "/:locale/hospitals/:slug",
+        permanent: true,
+      },
+    ];
+  },
+
   // Image optimization configuration
   // Using unoptimized mode so images are served as static CDN assets.
   // This avoids tracing 194 MB of PNGs into the Netlify server function bundle.
@@ -57,24 +91,21 @@ const nextConfig = {
     ignoreDuringBuilds: false,
   },
 
-  // Experimental features
-  experimental: {
-    // Exclude heavy directories from server function bundles (Netlify/serverless)
-    // public/images is safe to exclude because images.unoptimized=true above
-    // means images are served as static CDN assets, not through the server optimizer.
-    outputFileTracingExcludes: {
-      '*': [
-        'public/images/**',
-        'agents/**',
-        'content/**',
-        'Content Hub Data/**',
-        'scripts/**',
-        'supabase/**',
-        'tests/**',
-        '.github/**',
-        '.next/cache/**',
-      ],
-    },
+  // Exclude heavy directories from server function bundles (Netlify/serverless).
+  // public/images is safe to exclude because images.unoptimized=true above means
+  // images are served as static CDN assets, not through the server optimizer.
+  outputFileTracingExcludes: {
+    '*': [
+      'public/images/**',
+      'agents/**',
+      'content/**',
+      'Content Hub Data/**',
+      'scripts/**',
+      'supabase/**',
+      'tests/**',
+      '.github/**',
+      '.next/cache/**',
+    ],
   },
 
   // Environment variables validation (optional but recommended)
@@ -89,7 +120,11 @@ export default withSentryConfig(withNextIntl(nextConfig), {
   project: process.env.SENTRY_PROJECT,
   silent: !process.env.CI,
   widenClientFileUpload: true,
-  disableLogger: true,
+  webpack: {
+    treeshake: {
+      removeDebugLogging: true,
+    },
+  },
   tunnelRoute: "/monitoring",
   hideSourceMaps: true,
 });
