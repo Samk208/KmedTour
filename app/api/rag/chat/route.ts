@@ -1,4 +1,4 @@
-import { getSupabaseContext } from '@/lib/api/client/supabase'
+import { getSupabaseAdminContext } from '@/lib/api/client/supabase'
 import { isEmergency, isMedicalAdvice } from '@/lib/rag/chat-guards'
 import { logger } from '@/lib/utils/logger'
 import { rateLimit as rateLimitMiddleware } from '@/lib/utils/rate-limit'
@@ -130,7 +130,7 @@ function safetyResponse(route: 'emergency' | 'human', answer: string) {
 }
 
 async function runRetrieval(
-  client: NonNullable<Awaited<ReturnType<typeof getSupabaseContext>>['client']>,
+  client: NonNullable<Awaited<ReturnType<typeof getSupabaseAdminContext>>['client']>,
   message: string
 ): Promise<RetrievedChunk[]> {
   const embedding = await geminiEmbed(message)
@@ -190,7 +190,7 @@ export async function POST(request: Request) {
       )
     }
 
-    const { client } = getSupabaseContext()
+    const { client } = getSupabaseAdminContext()
     let retrieved: RetrievedChunk[] = []
 
     if (client) {

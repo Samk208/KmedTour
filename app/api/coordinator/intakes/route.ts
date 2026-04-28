@@ -1,4 +1,4 @@
-import { getSupabaseContext } from '@/lib/api/client/supabase'
+import { getSupabaseAdminContext } from '@/lib/api/client/supabase'
 import { requireRole } from '@/lib/utils/api-auth'
 import { logger } from '@/lib/utils/logger'
 import { rateLimit, RateLimitPresets } from '@/lib/utils/rate-limit'
@@ -12,7 +12,7 @@ export async function GET(request: Request) {
   if (!auth.authenticated) return auth.response
 
   try {
-    const { client } = getSupabaseContext()
+    const { client } = getSupabaseAdminContext()
 
     if (!client) {
       return NextResponse.json(

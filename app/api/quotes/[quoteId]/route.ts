@@ -1,4 +1,4 @@
-import { getSupabaseContext } from '@/lib/api/client/supabase'
+import { getSupabaseContext, getSupabaseAdminContext } from '@/lib/api/client/supabase'
 import { requireAuth } from '@/lib/utils/api-auth'
 import { logger } from '@/lib/utils/logger'
 import { rateLimit, RateLimitPresets } from '@/lib/utils/rate-limit'
@@ -86,7 +86,7 @@ export async function PATCH(request: Request, { params }: RouteParams) {
     const json = await request.json()
     const payload = updateQuoteSchema.parse(json)
 
-    const { client } = getSupabaseContext()
+    const { client } = getSupabaseAdminContext()
 
     if (!client) {
       return NextResponse.json(
