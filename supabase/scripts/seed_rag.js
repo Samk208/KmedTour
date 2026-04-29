@@ -15,7 +15,11 @@ const { createClient } = require('@supabase/supabase-js');
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const geminiKey = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY;
-const embeddingModel = process.env.GEMINI_EMBEDDING_MODEL || 'text-embedding-004';
+// gemini-embedding-001 is the current embedContent-capable model. text-embedding-004
+// returns 404 on v1beta as of 2026-04. We pin outputDimensionality=768 because the
+// rag_chunks.embedding column is vector(768).
+const embeddingModel = process.env.GEMINI_EMBEDDING_MODEL || 'gemini-embedding-001';
+const embeddingDim = Number(process.env.GEMINI_EMBEDDING_OUTPUT_DIM || 768);
 
 if (!supabaseUrl || !supabaseKey || !geminiKey) {
   console.error('Missing NEXT_PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, or GEMINI_API_KEY/GOOGLE_API_KEY in .env.local');
@@ -58,10 +62,13 @@ function chunkText(text, size = 1200, overlap = 160) {
 }
 
 function buildSources() {
+  // source_id pattern: '<kind>:<slug>'. Stable, readable, collision-free with
+  // any non-seed rows that use UUIDs. Cleanup uses source_type='seed'.
   const clinics = readJson('lib/data/clinics.json').map((clinic) => ({
     title: clinic.name,
     source_url: `/hospitals/${clinic.slug}`,
-    metadata: { kind: 'clinic', slug: clinic.slug, external_id: clinic.id },
+    source_id: `clinic:${clinic.slug}`,
+    metadata: { kind: 'clinic', slug: clinic.slug, external_id: clinic.id, content_hash: null },
     content: [
       clinic.name,
       clinic.shortDescription,
@@ -78,6 +85,7 @@ function buildSources() {
   const treatments = readJson('lib/data/treatments.json').map((treatment) => ({
     title: treatment.title,
     source_url: `/procedures/${treatment.slug}`,
+    source_id: `treatment:${treatment.slug}`,
     metadata: { kind: 'treatment', slug: treatment.slug, external_id: treatment.id },
     content: [
       treatment.title,
@@ -94,6 +102,7 @@ function buildSources() {
   const articles = readJson('lib/data/articles.json').map((article) => ({
     title: article.title,
     source_url: `/content/articles/${article.slug}`,
+    source_id: `article:${article.slug}`,
     metadata: { kind: 'article', slug: article.slug, external_id: article.id },
     content: [article.title, article.excerpt, article.content].filter(Boolean).join('\n'),
   }));
@@ -107,7 +116,10 @@ async function embed(text) {
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ content: { parts: [{ text }] } }),
+      body: JSON.stringify({
+        content: { parts: [{ text }] },
+        outputDimensionality: embeddingDim,
+      }),
     },
   );
 
@@ -118,8 +130,8 @@ async function embed(text) {
 
   const json = await res.json();
   const values = json?.embedding?.values;
-  if (!Array.isArray(values) || values.length !== 768) {
-    throw new Error(`Unexpected embedding dimension: ${Array.isArray(values) ? values.length : 'none'}`);
+  if (!Array.isArray(values) || values.length !== embeddingDim) {
+    throw new Error(`Unexpected embedding dimension: ${Array.isArray(values) ? values.length : 'none'} (expected ${embeddingDim})`);
   }
   return `[${values.join(',')}]`;
 }
@@ -140,15 +152,17 @@ async function main() {
     const chunks = chunkText(source.content);
     if (chunks.length === 0) continue;
 
+    // Production schema does not have content_hash / is_active on rag_documents.
+    // Production schema does not have token_count on rag_chunks. We carry both
+    // pieces of info in metadata so they remain queryable without a migration.
     const { data: document, error: documentError } = await supabase
       .from('rag_documents')
       .insert({
         title: source.title,
         source_url: source.source_url,
         source_type: 'seed',
-        content_hash: hashContent(source.content),
-        metadata: source.metadata,
-        is_active: true,
+        source_id: source.source_id,
+        metadata: { ...source.metadata, content_hash: hashContent(source.content) },
       })
       .select('id')
       .single();
@@ -162,8 +176,7 @@ async function main() {
         chunk_index: i,
         content,
         embedding: await embed(content),
-        token_count: Math.ceil(content.length / 4),
-        metadata: source.metadata,
+        metadata: { ...source.metadata, token_count: Math.ceil(content.length / 4) },
       });
       process.stdout.write('.');
     }
