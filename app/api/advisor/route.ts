@@ -55,7 +55,7 @@ export async function POST(req: Request) {
     })))
 
     const result = await streamObject({
-      model: google('gemini-1.5-flash'),
+      model: google('gemini-2.0-flash'),
       schema: z.object({
         matches: z.array(z.object({
           id: z.string().describe('The ID of the treatment from the context'),
