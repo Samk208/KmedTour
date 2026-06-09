@@ -135,7 +135,7 @@
         },
         "accreditation": {
           "title": "International Accreditation",
-          "description": "JCI-accredited facilities meeting the highest global standards"
+          "description": "KOIHA/KAHF-accredited hospitals, including JCI-accredited Severance Hospital"
         }
       }
     },
@@ -209,7 +209,7 @@
         },
         "q5": {
           "question": "How are clinics selected and vetted?",
-          "answer": "We partner only with JCI-accredited or equivalent facilities that meet international standards. We evaluate clinics based on success rates, specialist credentials, patient reviews, facility quality, and language support capabilities. Regular audits ensure continued excellence."
+          "answer": "We feature hospitals accredited under Korea's national standards (KOIHA/KAHF), including JCI-accredited Severance Hospital, and we verify each listing against the hospital's official information. We evaluate hospitals on specialist credentials, facility quality, accreditation, and language-support capabilities."
         },
         "q6": {
           "question": "What if I need follow-up care after returning home?",
@@ -241,7 +241,7 @@
         },
         "step2": {
           "title": "Get Matched to the Right Clinic",
-          "description": "Our team reviews your needs and matches you to the best-fit clinics from our verified network of 50+ Korean hospitals."
+          "description": "Our team reviews your needs and matches you to the best-fit clinics from our curated list of verified Korean hospitals."
         },
         "step3": {
           "title": "Consultation & Treatment Plan",
@@ -312,7 +312,7 @@
       "items": {
         "item1": {
           "title": "Verified Excellence",
-          "description": "We strictly vet every clinic against the highest international standards (JCI, K-Health)."
+          "description": "We verify every hospital listing against recognized Korean accreditation standards (KOIHA/KAHF), and JCI where the hospital holds it."
         },
         "item2": {
           "title": "Digital Precision",
@@ -373,11 +373,11 @@
         },
         "item3": {
           "title": "Marketing Support",
-          "description": "Get featured on our platform, content hub, and marketing campaigns to African audiences."
+          "description": "Get featured on our platform, content hub, and marketing campaigns to international audiences."
         },
         "item4": {
-          "title": "Quality Patients",
-          "description": "Receive pre-qualified patients who have been screened for suitability and budget."
+          "title": "A Verified Listing",
+          "description": "Get a verified, SEO-optimized listing that puts your hospital in front of international patients researching care in Korea."
         }
       }
     },
@@ -400,7 +400,7 @@
       "items": {
         "item1": {
           "title": "Accreditation",
-          "description": "JCI, ISO, or equivalent international healthcare accreditation"
+          "description": "KOIHA/KAHF accreditation, with JCI where the hospital holds it"
         },
         "item2": {
           "title": "Language Support",
