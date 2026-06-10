@@ -1,36 +1,62 @@
 'use client'
 
+import { zodResolver } from '@hookform/resolvers/zod'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
 import { useContactSubmission } from '@/lib/api/hooks/use-contact'
 import { Clock, Mail, MapPin, Phone } from 'lucide-react'
 import { useState } from 'react'
+import { useForm } from 'react-hook-form'
+import { z } from 'zod'
+
+const contactSchema = z.object({
+  name: z.string().min(1, 'Please enter your full name'),
+  email: z
+    .string()
+    .min(1, 'Please enter your email')
+    .email('Please enter a valid email address'),
+  phone: z.string().optional(),
+  subject: z.string().min(1, 'Please enter a subject'),
+  message: z.string().min(1, 'Please enter a message'),
+})
+
+type ContactFormValues = z.infer<typeof contactSchema>
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: '',
-  })
   const [submitted, setSubmitted] = useState(false)
   const [errorMessage, setErrorMessage] = useState<string | null>(null)
   const { mutateAsync: submitContact, isPending } = useContactSubmission()
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
+  const form = useForm<ContactFormValues>({
+    resolver: zodResolver(contactSchema),
+    defaultValues: {
+      name: '',
+      email: '',
+      phone: '',
+      subject: '',
+      message: '',
+    },
+  })
+
+  const onSubmit = async (values: ContactFormValues) => {
     setErrorMessage(null)
 
     try {
       const result = await submitContact({
-        fullName: formData.name,
-        email: formData.email,
-        phone: formData.phone,
-        message: `${formData.subject}\n\n${formData.message}`,
+        fullName: values.name,
+        email: values.email,
+        phone: values.phone ?? '',
+        message: `${values.subject}\n\n${values.message}`,
         type: 'patient_contact',
         sourcePage: 'contact',
       })
@@ -90,7 +116,7 @@ export default function ContactPage() {
           <Button 
             onClick={() => {
               setSubmitted(false)
-              setFormData({ name: '', email: '', phone: '', subject: '', message: '' })
+              form.reset()
             }}
             className="bg-[var(--kmed-blue)] hover:bg-[var(--kmed-blue)]/90 text-white"
           >
@@ -130,75 +156,94 @@ export default function ContactPage() {
                 </div>
               )}
 
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="name">Full Name *</Label>
-                    <Input
-                      id="name"
-                      required
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      placeholder="John Doe"
+              <Form {...form}>
+                <form onSubmit={form.handleSubmit(onSubmit)} noValidate className="space-y-6">
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <FormField
+                      control={form.control}
+                      name="name"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Full Name *</FormLabel>
+                          <FormControl>
+                            <Input placeholder="John Doe" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                    <FormField
+                      control={form.control}
+                      name="email"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Email *</FormLabel>
+                          <FormControl>
+                            <Input type="email" placeholder="john@example.com" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
                     />
                   </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email *</Label>
-                    <Input
-                      id="email"
-                      type="email"
-                      required
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      placeholder="john@example.com"
-                    />
-                  </div>
-                </div>
 
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="phone">Phone</Label>
-                    <Input
-                      id="phone"
-                      type="tel"
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      placeholder="+234 123 456 7890"
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <FormField
+                      control={form.control}
+                      name="phone"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Phone</FormLabel>
+                          <FormControl>
+                            <Input type="tel" placeholder="+234 123 456 7890" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                    <FormField
+                      control={form.control}
+                      name="subject"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Subject *</FormLabel>
+                          <FormControl>
+                            <Input placeholder="How can we help?" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
                     />
                   </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="subject">Subject *</Label>
-                    <Input
-                      id="subject"
-                      required
-                      value={formData.subject}
-                      onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                      placeholder="How can we help?"
-                    />
-                  </div>
-                </div>
 
-                <div className="space-y-2">
-                  <Label htmlFor="message">Message *</Label>
-                  <Textarea
-                    id="message"
-                    required
-                    rows={6}
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    placeholder="Tell us more about your inquiry..."
+                  <FormField
+                    control={form.control}
+                    name="message"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Message *</FormLabel>
+                        <FormControl>
+                          <Textarea
+                            rows={6}
+                            placeholder="Tell us more about your inquiry..."
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
                   />
-                </div>
 
-                <Button 
-                  type="submit"
-                  size="lg"
-                  disabled={isPending}
-                  className="w-full bg-[var(--kmed-blue)] hover:bg-[var(--kmed-blue)]/90 text-white"
-                >
-                  {isPending ? 'Sending...' : 'Send Message'}
-                </Button>
-              </form>
+                  <Button
+                    type="submit"
+                    size="lg"
+                    disabled={isPending}
+                    className="w-full bg-[var(--kmed-blue)] hover:bg-[var(--kmed-blue)]/90 text-white"
+                  >
+                    {isPending ? 'Sending...' : 'Send Message'}
+                  </Button>
+                </form>
+              </Form>
             </Card>
           </div>
 
