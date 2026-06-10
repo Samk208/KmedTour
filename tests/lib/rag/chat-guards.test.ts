@@ -33,8 +33,13 @@ describe('chat-guards', () => {
       expect(isMedicalAdvice('Should I get dental implants?')).toBe(true)
     })
 
-    it('detects "do i need"', () => {
-      expect(isMedicalAdvice('Do I need a visa?')).toBe(true)
+    it('detects "do i need" with a clinical object', () => {
+      expect(isMedicalAdvice('Do I need surgery?')).toBe(true)
+    })
+
+    it('ignores "do i need" for logistics (visa, flights, hotel)', () => {
+      expect(isMedicalAdvice('What visa do I need for medical treatment in Korea?')).toBe(false)
+      expect(isMedicalAdvice('Do I need a visa?')).toBe(false)
     })
 
     it('detects "what medication"', () => {

@@ -21,12 +21,17 @@ export const EMERGENCY_KEYWORDS = [
 export const MEDICAL_ADVICE_PHRASES = [
   'should i get',
   'should i have',
-  'do i need',
   'diagnose',
   "what's wrong with",
   'am i sick',
   'what medication',
   'what treatment',
+]
+
+// "do i need" only solicits medical advice when it names a clinical object.
+// Bare "do i need a visa/flight/hotel?" is logistics, not advice.
+export const MEDICAL_ADVICE_PATTERNS = [
+  /\bdo i need (a |an |the )?(surgery|operation|treatment|procedure|medication|medicine|biopsy|scan|implant)/,
 ]
 
 export function isEmergency(text: string): boolean {
@@ -36,5 +41,8 @@ export function isEmergency(text: string): boolean {
 
 export function isMedicalAdvice(text: string): boolean {
   const q = text.toLowerCase()
-  return MEDICAL_ADVICE_PHRASES.some((k) => q.includes(k))
+  return (
+    MEDICAL_ADVICE_PHRASES.some((k) => q.includes(k)) ||
+    MEDICAL_ADVICE_PATTERNS.some((re) => re.test(q))
+  )
 }
