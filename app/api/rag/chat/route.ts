@@ -1,5 +1,6 @@
 import { getSupabaseAdminContext } from '@/lib/api/client/supabase'
 import { isEmergency, isMedicalAdvice } from '@/lib/rag/chat-guards'
+import { generateAnswer, type RetrievedChunk } from '@/lib/rag/generate'
 import { apiError, createErrorId } from '@/lib/utils/api-response'
 import { logger } from '@/lib/utils/logger'
 import { rateLimit as rateLimitMiddleware } from '@/lib/utils/rate-limit'
@@ -12,16 +13,6 @@ const RAG_WINDOW_MS = 60_000
 const ragChatRequestSchema = z.object({
   message: z.string().min(2),
 })
-
-type RetrievedChunk = {
-  chunk_id: string
-  document_id: string
-  title: string
-  source_url: string | null
-  content: string
-  similarity: number
-  metadata: unknown
-}
 
 async function geminiEmbed(text: string): Promise<number[]> {
   const key = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY
@@ -60,73 +51,6 @@ async function geminiEmbed(text: string): Promise<number[]> {
   }
 
   return values
-}
-
-async function callPythonAgent(args: {
-  question: string
-  context: RetrievedChunk[]
-}): Promise<string> {
-  // Construct the prompt with context
-  const contextBlock = args.context
-    .map((c, idx) => {
-      const urlPart = c.source_url ? ' (' + c.source_url + ')' : ''
-      return `[${idx + 1}] ${c.title}${urlPart}\n${c.content}`
-    })
-    .join('\n\n---\n\n')
-
-  const contentWithContext = args.context.length > 0
-    ? `CONTEXT:
-${contextBlock}
-
-QUESTION:
-${args.question}`
-    : args.question
-
-  const agentBaseUrl = process.env.PYTHON_AGENT_URL || 'http://127.0.0.1:8000'
-  try {
-    const res = await fetch(`${agentBaseUrl}/api/chat`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        messages: [{ role: 'user', content: contentWithContext }],
-        session_id: 'rag-session-' + Date.now()
-      })
-    })
-
-    if (!res.ok) {
-      throw new Error(`Python agent error: ${res.status}`)
-    }
-
-    const data = await res.json()
-    return data.response
-
-  } catch (error) {
-    logger.warn('Python agent connection failed, using fallback', { path: '/api/rag/chat' }, { error: error instanceof Error ? error.message : 'Unknown' })
-    return await fallbackOpenAIGenerate(args.question, contextBlock)
-  }
-}
-
-async function fallbackOpenAIGenerate(question: string, context: string): Promise<string> {
-  const key = process.env.OPENAI_API_KEY
-  if (!key) throw new Error("No Python agent and no OpenAI Key")
-
-  const res = await fetch('https://api.openai.com/v1/chat/completions', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${key}`
-    },
-    body: JSON.stringify({
-      model: 'gpt-4o-mini',
-      messages: [
-        { role: 'system', content: 'You are KmedTour medical assistant. Provide helpful, safe general info.' },
-        { role: 'user', content: `Context:\n${context}\n\nQuestion: ${question}` }
-      ]
-    })
-  })
-
-  const data = await res.json()
-  return data.choices?.[0]?.message?.content || "Service unavailable."
 }
 
 function safetyResponse(route: 'emergency' | 'human', answer: string) {
@@ -202,15 +126,15 @@ export async function POST(request: Request) {
         retrieved = await runRetrieval(client, payload.message)
       } catch (err: unknown) {
         const msg = err instanceof Error ? err.message : 'Unknown error'
-        logger.warn('RAG retrieval/embedding failed, using direct Python agent', { path: '/api/rag/chat' }, { error: msg })
+        logger.warn('RAG retrieval/embedding failed, generating without context', { path: '/api/rag/chat' }, { error: msg })
       }
     } else {
-      logger.info('RAG chat: Supabase not configured, using direct Python agent', { path: '/api/rag/chat' })
+      logger.info('RAG chat: Supabase not configured, generating without context', { path: '/api/rag/chat' })
     }
 
     let answer: string
     try {
-      answer = await callPythonAgent({ question: payload.message, context: retrieved })
+      answer = await generateAnswer(payload.message, retrieved)
     } catch (genError: unknown) {
       logger.error('RAG generation failed', { path: '/api/rag/chat' }, { error: genError instanceof Error ? genError.message : 'Unknown' })
       answer = "I apologize, but I am currently unable to process your request. Please contact our medical coordinators via the 'Contact' page."
