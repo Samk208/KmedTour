@@ -34,6 +34,7 @@ describe('rag/generate', () => {
   beforeEach(() => {
     vi.stubEnv('PYTHON_AGENT_URL', '')
     vi.stubEnv('GEMINI_API_KEY', 'test-gemini-key')
+    vi.stubEnv('OPENROUTER_API_KEY', 'test-openrouter-key')
     vi.stubEnv('OPENAI_API_KEY', 'test-openai-key')
   })
 
@@ -59,14 +60,36 @@ describe('rag/generate', () => {
     expect(String(fetchMock.mock.calls[0][0])).toContain('generativelanguage.googleapis.com')
   })
 
-  it('falls back to openai when gemini fails', async () => {
+  it('falls back to deepseek (openrouter) when gemini fails', async () => {
+    const fetchMock = mockFetchSequence([
+      { ok: false, status: 429, text: 'quota' },
+      { ok: true, json: { choices: [{ message: { content: 'DeepSeek answer' } }] } },
+    ])
+    const answer = await generateAnswer('question', [chunk()])
+    expect(answer).toBe('DeepSeek answer')
+    expect(fetchMock).toHaveBeenCalledTimes(2)
+    expect(String(fetchMock.mock.calls[1][0])).toContain('openrouter.ai')
+  })
+
+  it('falls back to openai when gemini and deepseek both fail', async () => {
+    const fetchMock = mockFetchSequence([
+      { ok: false, status: 429, text: 'quota' },
+      { ok: false, status: 500, text: 'openrouter down' },
+      { ok: true, json: { choices: [{ message: { content: 'OpenAI answer' } }] } },
+    ])
+    const answer = await generateAnswer('question', [chunk()])
+    expect(answer).toBe('OpenAI answer')
+    expect(String(fetchMock.mock.calls[2][0])).toContain('api.openai.com')
+  })
+
+  it('skips deepseek when OPENROUTER_API_KEY is unset', async () => {
+    vi.stubEnv('OPENROUTER_API_KEY', '')
     const fetchMock = mockFetchSequence([
       { ok: false, status: 429, text: 'quota' },
       { ok: true, json: { choices: [{ message: { content: 'OpenAI answer' } }] } },
     ])
     const answer = await generateAnswer('question', [chunk()])
     expect(answer).toBe('OpenAI answer')
-    expect(fetchMock).toHaveBeenCalledTimes(2)
     expect(String(fetchMock.mock.calls[1][0])).toContain('api.openai.com')
   })
 
@@ -83,9 +106,10 @@ describe('rag/generate', () => {
   it('throws with provider details when all providers fail', async () => {
     mockFetchSequence([
       { ok: false, status: 500, text: 'gemini down' },
+      { ok: false, status: 500, text: 'openrouter down' },
       { ok: false, status: 401, text: 'bad key' },
     ])
-    await expect(generateAnswer('question', [chunk()])).rejects.toThrow(/gemini[\s\S]*openai/)
+    await expect(generateAnswer('question', [chunk()])).rejects.toThrow(/gemini[\s\S]*deepseek[\s\S]*openai/)
   })
 
   it('does not return empty answers — treats empty gemini response as failure', async () => {

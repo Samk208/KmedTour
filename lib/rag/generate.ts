@@ -83,6 +83,31 @@ export async function generateWithGemini(question: string, contextBlock: string)
   return text
 }
 
+export async function generateWithDeepSeek(question: string, contextBlock: string): Promise<string> {
+  const key = process.env.OPENROUTER_API_KEY
+  if (!key) throw new Error('OPENROUTER_API_KEY not set')
+
+  const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${key}` },
+    body: JSON.stringify({
+      model: process.env.OPENROUTER_MODEL || 'deepseek/deepseek-v4-pro',
+      messages: [
+        { role: 'system', content: SYSTEM_PROMPT },
+        { role: 'user', content: `Context:\n${contextBlock}\n\nQuestion: ${question}` },
+      ],
+    }),
+  })
+  if (!res.ok) {
+    const body = await res.text()
+    throw new Error(`DeepSeek/OpenRouter error: ${res.status} ${body.slice(0, 200)}`)
+  }
+  const data = await res.json()
+  const text = data.choices?.[0]?.message?.content
+  if (!text) throw new Error('DeepSeek returned empty response')
+  return text
+}
+
 export async function generateWithOpenAI(question: string, contextBlock: string): Promise<string> {
   const key = process.env.OPENAI_API_KEY
   if (!key) throw new Error('OPENAI_API_KEY not set')
@@ -109,7 +134,8 @@ export async function generateWithOpenAI(question: string, contextBlock: string)
 }
 
 /**
- * Generate an answer with provider cascade: Python agent -> Gemini -> OpenAI.
+ * Generate an answer with provider cascade:
+ * Python agent -> Gemini -> DeepSeek (OpenRouter) -> OpenAI.
  * Each failure is logged and the next provider is tried; throws only if all fail.
  */
 export async function generateAnswer(question: string, context: RetrievedChunk[]): Promise<string> {
@@ -117,6 +143,7 @@ export async function generateAnswer(question: string, context: RetrievedChunk[]
   const providers: Array<[string, (q: string, c: string) => Promise<string>]> = [
     ['python-agent', generateWithPythonAgent],
     ['gemini', generateWithGemini],
+    ['deepseek', generateWithDeepSeek],
     ['openai', generateWithOpenAI],
   ]
 

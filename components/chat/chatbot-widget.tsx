@@ -8,6 +8,7 @@ import { Bot, MessageCircle, Send, X } from 'lucide-react'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import { cn } from '@/lib/utils'
+import { VoiceMode } from '@/components/chat/voice-mode'
 
 const TreatmentAdvisorMarkdown = dynamic(
   () => import('@/components/treatment-advisor-markdown').then((m) => ({ default: m.TreatmentAdvisorMarkdown })),
@@ -104,6 +105,26 @@ export function ChatbotWidget() {
       e.preventDefault()
       handleSend()
     }
+  }
+
+  // Voice transcripts stream into a per-role "live" bubble, frozen when final.
+  const handleVoiceTranscript = (role: 'user' | 'assistant', text: string, final: boolean) => {
+    const liveId = `voice-${role}-live`
+    setMessages((prev) => {
+      const idx = prev.findIndex((m) => m.id === liveId)
+      const msg: Message = { id: final ? `voice-${role}-${Date.now()}` : liveId, role, content: text }
+      if (idx === -1) return [...prev, msg]
+      const next = [...prev]
+      next[idx] = msg
+      return next
+    })
+  }
+
+  const handleVoiceError = (message: string) => {
+    setMessages((prev) => [
+      ...prev,
+      { id: `voice-error-${Date.now()}`, role: 'assistant', content: message, isError: true },
+    ])
   }
 
   return (
@@ -215,6 +236,7 @@ export function ChatbotWidget() {
               >
                 <Send className="h-4 w-4" />
               </Button>
+              <VoiceMode onTranscript={handleVoiceTranscript} onError={handleVoiceError} />
             </div>
             <p className="text-[10px] text-gray-400 mt-2 text-center">
               For emergencies call 119. Not medical advice — consult a healthcare professional.

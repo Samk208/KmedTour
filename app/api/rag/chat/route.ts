@@ -1,5 +1,6 @@
 import { getSupabaseAdminContext } from '@/lib/api/client/supabase'
 import { isEmergency, isMedicalAdvice } from '@/lib/rag/chat-guards'
+import { geminiEmbed } from '@/lib/rag/embed'
 import { generateAnswer, type RetrievedChunk } from '@/lib/rag/generate'
 import { apiError, createErrorId } from '@/lib/utils/api-response'
 import { logger } from '@/lib/utils/logger'
@@ -13,45 +14,6 @@ const RAG_WINDOW_MS = 60_000
 const ragChatRequestSchema = z.object({
   message: z.string().min(2),
 })
-
-async function geminiEmbed(text: string): Promise<number[]> {
-  const key = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY
-  if (!key) {
-    throw new Error('[rag] GEMINI_API_KEY (or GOOGLE_API_KEY) is not set')
-  }
-
-  // gemini-embedding-001 is the current embedContent-capable model. text-embedding-004
-  // returns 404 on v1beta as of 2026-04. outputDimensionality=768 must match the
-  // rag_chunks.embedding column type and the dim used at seed-time.
-  const model = process.env.GEMINI_EMBEDDING_MODEL || 'gemini-embedding-001'
-  const dim = Number(process.env.GEMINI_EMBEDDING_OUTPUT_DIM || 768)
-
-  const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/${model}:embedContent?key=${key}`,
-    {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        content: { parts: [{ text }] },
-        outputDimensionality: dim,
-      }),
-    },
-  )
-
-  if (!res.ok) {
-    const body = await res.text()
-    logger.error('Gemini embedContent failed', { path: '/api/rag/chat' }, { status: res.status, body })
-    throw new Error(`[rag] embedContent failed: ${res.status} ${body}`)
-  }
-
-  const json = await res.json()
-  const values = json?.embedding?.values
-  if (!Array.isArray(values) || values.length !== dim) {
-    throw new Error(`[rag] embedContent returned wrong embedding dim: ${Array.isArray(values) ? values.length : 'none'} (expected ${dim})`)
-  }
-
-  return values
-}
 
 function safetyResponse(route: 'emergency' | 'human', answer: string) {
   return NextResponse.json({ success: true, route, answer, citations: [], retrieved: [] })
