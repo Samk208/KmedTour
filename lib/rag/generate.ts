@@ -49,7 +49,10 @@ export async function generateWithPythonAgent(question: string, contextBlock: st
 export async function generateWithGemini(question: string, contextBlock: string): Promise<string> {
   const key = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY
   if (!key) throw new Error('GEMINI_API_KEY not set')
-  const model = process.env.GEMINI_MODEL || 'gemini-2.0-flash'
+  // gemini-flash-latest is Google's rolling alias for the current stable Flash.
+  // Pinned versions (1.5, then 2.0) have been retired under us twice — the alias
+  // survives retirements. Override with GEMINI_MODEL to pin deliberately.
+  const model = process.env.GEMINI_MODEL || 'gemini-flash-latest'
 
   const res = await fetch(
     `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${key}`,
@@ -64,7 +67,9 @@ export async function generateWithGemini(question: string, contextBlock: string)
             parts: [{ text: contextBlock ? `Context:\n${contextBlock}\n\nQuestion: ${question}` : question }],
           },
         ],
-        generationConfig: { temperature: 0.3, maxOutputTokens: 1024 },
+        // thinkingBudget 0 disables reasoning tokens on thinking-capable Flash
+        // models — RAG answers here don't need them and they eat the token cap.
+        generationConfig: { temperature: 0.3, maxOutputTokens: 2048, thinkingConfig: { thinkingBudget: 0 } },
       }),
     }
   )

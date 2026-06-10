@@ -170,7 +170,8 @@ async function callGemini(input: TreatmentAdvisorInput): Promise<Suggestion[] | 
   const key = process.env.GEMINI_API_KEY
   if (!key) return null
 
-  const model = process.env.GEMINI_MODEL || 'gemini-2.0-flash'
+  // Rolling alias — pinned Gemini versions keep getting retired (1.5, then 2.0).
+  const model = process.env.GEMINI_MODEL || 'gemini-flash-latest'
 
   const procedureCatalog = treatments
     .map((t) => `${t.id}:${t.slug || ''}:${t.title}`)
