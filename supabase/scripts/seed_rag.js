@@ -107,7 +107,17 @@ function buildSources() {
     content: [article.title, article.excerpt, article.content].filter(Boolean).join('\n'),
   }));
 
-  return [...clinics, ...treatments, ...articles];
+  // RAG-only knowledge docs (visa, logistics, payments, aftercare) — not site
+  // pages; they exist so chat can answer core logistics questions.
+  const knowledge = readJson('lib/data/rag-knowledge.json').map((doc) => ({
+    title: doc.title,
+    source_url: '/how-it-works',
+    source_id: `knowledge:${doc.slug}`,
+    metadata: { kind: 'knowledge', slug: doc.slug },
+    content: [doc.title, doc.content].filter(Boolean).join('\n'),
+  }));
+
+  return [...clinics, ...treatments, ...articles, ...knowledge];
 }
 
 async function embed(text) {
