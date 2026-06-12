@@ -5,7 +5,6 @@ import Link from 'next/link'
 import { locales } from '@/lib/i18n/locales'
 import { Clinic } from '@/lib/schemas/clinic'
 import { Treatment } from '@/lib/schemas/treatment'
-import { getBaseUrl } from '@/lib/utils/content-parser'
 import { MedicalDisclaimer } from '@/components/shared/medical-disclaimer'
 import { PseoClinicList } from '@/components/pseo/ClinicList'
 import { PseoHero } from '@/components/pseo/Hero'
@@ -18,7 +17,7 @@ import clinicsData from '@/lib/data/clinics.json'
 import mappingsData from '@/lib/data/mappings.json'
 import treatmentsData from '@/lib/data/treatments.json'
 
-const BASE_URL = getBaseUrl()
+const BASE_URL = (process.env.NEXT_PUBLIC_APP_URL || 'https://kmedtour.com').replace(/\/$/, '')
 const clinics = clinicsData as Clinic[]
 const treatments = treatmentsData as Treatment[]
 const mappings = mappingsData as { hospitalId: string; procedureId: string; verified?: boolean }[]

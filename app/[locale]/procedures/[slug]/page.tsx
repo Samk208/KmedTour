@@ -1,26 +1,17 @@
-import fs from 'fs'
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import path from 'path'
 
 import { MedicalDisclaimer } from '@/components/shared/medical-disclaimer'
-import {
-  TreatmentRichSections,
-  type TreatmentRichContent,
-} from '@/components/treatments/treatment-rich-sections'
+import { TreatmentRichSections } from '@/components/treatments/treatment-rich-sections'
 import { Button } from '@/components/ui/button'
+import { treatmentContent } from '@/lib/data/treatment-content'
 import { locales } from '@/lib/i18n/locales'
 import { Clinic } from '@/lib/schemas/clinic'
 import { Treatment } from '@/lib/schemas/treatment'
-import {
-  extractFAQs,
-  formatMarkdownText,
-  getBaseUrl,
-  parseMarkdownContent,
-  type FAQ,
-} from '@/lib/utils/content-parser'
+
+type FAQ = { question: string; answer: string }
 
 import cityProceduresData from '@/lib/data/city-procedures.json'
 import clinicsData from '@/lib/data/clinics.json'
@@ -29,7 +20,7 @@ import treatmentsData from '@/lib/data/treatments.json'
 
 import '@/app/styles/enhanced-content.css'
 
-const BASE_URL = getBaseUrl()
+const BASE_URL = (process.env.NEXT_PUBLIC_APP_URL || 'https://kmedtour.com').replace(/\/$/, '')
 
 const clinics = clinicsData as Clinic[]
 const treatments = treatmentsData as Treatment[]
@@ -52,44 +43,20 @@ function getCitiesForProcedure(procedureSlug: string) {
   return cities.slice(0, 12)
 }
 
-function getProcedureImage(slug: string): string {
-  try {
-    const imagePath = path.join(process.cwd(), 'public', 'images', 'procedures', `${slug}.jpg`)
-    if (fs.existsSync(imagePath)) {
-      return `/images/procedures/${slug}.jpg`
-    }
-  } catch {
-    // ignore
-  }
-  return '/images/procedures/default.jpg'
+// Image comes from the bundled treatments.json data — NO runtime fs. Reading
+// files via process.cwd() at request time fails in the Netlify serverless
+// function (the files aren't in the bundle) and 500s the page.
+function getProcedureImage(treatment: Treatment): string {
+  return treatment.imageUrl || '/images/procedures/default.jpg'
 }
 
-function getGeneratedContent(slug: string): string | null {
-  try {
-    const contentPath = path.join(process.cwd(), 'content', 'generated', 'procedures', `${slug}.md`)
-    if (fs.existsSync(contentPath)) {
-      return fs.readFileSync(contentPath, 'utf-8')
-    }
-  } catch (error) {
-    console.error('Error reading generated content:', error)
-  }
-  return null
-}
-
-function getRichContent(slug: string): TreatmentRichContent | null {
-  try {
-    const p = path.join(process.cwd(), 'lib', 'data', 'treatment-content', `${slug}.json`)
-    if (fs.existsSync(p)) {
-      return JSON.parse(fs.readFileSync(p, 'utf-8')) as TreatmentRichContent
-    }
-  } catch (error) {
-    console.error('Error reading rich treatment content:', error)
-  }
-  return null
+// Rich content from the statically-imported, bundled index — NO runtime fs.
+function getRichContent(slug: string) {
+  return treatmentContent[slug] ?? null
 }
 
 function buildMetadata(proc: Treatment): Metadata {
-  const imageUrl = `${BASE_URL}${getProcedureImage(proc.slug)}`
+  const imageUrl = `${BASE_URL}${getProcedureImage(proc)}`
 
   return {
     title: `${proc.title} in Korea | Complete Guide, Costs, Top Hospitals 2026`,
@@ -254,12 +221,9 @@ export default async function EnhancedProcedurePage({ params }: { params: Promis
   const hospitals = getHospitalsForProcedure(treatment.id)
   const cities = getCitiesForProcedure(treatment.slug)
   const richContent = getRichContent(slug)
-  const generatedContent = getGeneratedContent(slug)
-  const contentSections = generatedContent ? parseMarkdownContent(generatedContent) : []
-  // Prefer the curated sidecar FAQs for schema; fall back to markdown-extracted FAQs.
   const faqs: FAQ[] = richContent
     ? richContent.faqs.map((f) => ({ question: f.q, answer: f.a }))
-    : extractFAQs(contentSections)
+    : []
   const heroSubtitle =
     richContent?.shortDescription ||
     treatment.shortDescription ||
@@ -271,7 +235,7 @@ export default async function EnhancedProcedurePage({ params }: { params: Promis
       <div className="relative text-white py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src={getProcedureImage(treatment.slug)}
+            src={getProcedureImage(treatment)}
             alt={`${treatment.title} procedure - Patient consultation at KAHF-accredited hospital in Seoul, South Korea`}
             fill
             className="object-cover opacity-25"
@@ -325,23 +289,7 @@ export default async function EnhancedProcedurePage({ params }: { params: Promis
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Main Content Column */}
           <div className="lg:col-span-2 space-y-6">
-            {richContent ? (
-              <TreatmentRichSections content={richContent} />
-            ) : (
-              contentSections.map((section, index) => (
-                <div
-                  key={index}
-                  className={`content-section ${section.type === 'faq' ? 'faq-section' : ''} ${section.type === 'disclaimer' ? 'disclaimer-section' : ''}`}
-                >
-                  <h2>{section.title}</h2>
-                  <div
-                    dangerouslySetInnerHTML={{
-                      __html: formatMarkdownText(section.content)
-                    }}
-                  />
-                </div>
-              ))
-            )}
+            {richContent && <TreatmentRichSections content={richContent} />}
 
             {/* CTA Section */}
             <div className="content-section bg-gradient-to-br from-[var(--kmed-blue)]/5 to-[var(--kmed-teal)]/5 border-2 border-[var(--kmed-blue)]/20">
