@@ -6,6 +6,10 @@ import { notFound } from 'next/navigation'
 import path from 'path'
 
 import { MedicalDisclaimer } from '@/components/shared/medical-disclaimer'
+import {
+  TreatmentRichSections,
+  type TreatmentRichContent,
+} from '@/components/treatments/treatment-rich-sections'
 import { Button } from '@/components/ui/button'
 import { Clinic } from '@/lib/schemas/clinic'
 import { Treatment } from '@/lib/schemas/treatment'
@@ -67,6 +71,18 @@ function getGeneratedContent(slug: string): string | null {
     }
   } catch (error) {
     console.error('Error reading generated content:', error)
+  }
+  return null
+}
+
+function getRichContent(slug: string): TreatmentRichContent | null {
+  try {
+    const p = path.join(process.cwd(), 'lib', 'data', 'treatment-content', `${slug}.json`)
+    if (fs.existsSync(p)) {
+      return JSON.parse(fs.readFileSync(p, 'utf-8')) as TreatmentRichContent
+    }
+  } catch (error) {
+    console.error('Error reading rich treatment content:', error)
   }
   return null
 }
@@ -230,9 +246,17 @@ export default async function EnhancedProcedurePage({ params }: { params: Promis
 
   const hospitals = getHospitalsForProcedure(treatment.id)
   const cities = getCitiesForProcedure(treatment.slug)
+  const richContent = getRichContent(slug)
   const generatedContent = getGeneratedContent(slug)
   const contentSections = generatedContent ? parseMarkdownContent(generatedContent) : []
-  const faqs = extractFAQs(contentSections)
+  // Prefer the curated sidecar FAQs for schema; fall back to markdown-extracted FAQs.
+  const faqs: FAQ[] = richContent
+    ? richContent.faqs.map((f) => ({ question: f.q, answer: f.a }))
+    : extractFAQs(contentSections)
+  const heroSubtitle =
+    richContent?.shortDescription ||
+    treatment.shortDescription ||
+    'Comprehensive guide to costs, recovery timeline, top hospitals, and everything you need to know.'
 
   return (
     <div className="bg-[var(--cloud-white)] min-h-screen">
@@ -276,7 +300,7 @@ export default async function EnhancedProcedurePage({ params }: { params: Promis
             {treatment.title} in Korea
           </h1>
           <p className="text-xl text-white/95 max-w-3xl mb-8 leading-relaxed">
-            {treatment.shortDescription || 'Comprehensive guide to costs, recovery timeline, top hospitals, and everything you need to know.'}
+            {heroSubtitle}
           </p>
           <div className="flex flex-wrap gap-4">
             <Button className="bg-white text-[var(--kmed-blue)] hover:bg-white/90 font-semibold text-lg px-8" size="lg" asChild>
@@ -294,19 +318,23 @@ export default async function EnhancedProcedurePage({ params }: { params: Promis
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Main Content Column */}
           <div className="lg:col-span-2 space-y-6">
-            {contentSections.map((section, index) => (
-              <div
-                key={index}
-                className={`content-section ${section.type === 'faq' ? 'faq-section' : ''} ${section.type === 'disclaimer' ? 'disclaimer-section' : ''}`}
-              >
-                <h2>{section.title}</h2>
+            {richContent ? (
+              <TreatmentRichSections content={richContent} />
+            ) : (
+              contentSections.map((section, index) => (
                 <div
-                  dangerouslySetInnerHTML={{
-                    __html: formatMarkdownText(section.content)
-                  }}
-                />
-              </div>
-            ))}
+                  key={index}
+                  className={`content-section ${section.type === 'faq' ? 'faq-section' : ''} ${section.type === 'disclaimer' ? 'disclaimer-section' : ''}`}
+                >
+                  <h2>{section.title}</h2>
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: formatMarkdownText(section.content)
+                    }}
+                  />
+                </div>
+              ))
+            )}
 
             {/* CTA Section */}
             <div className="content-section bg-gradient-to-br from-[var(--kmed-blue)]/5 to-[var(--kmed-teal)]/5 border-2 border-[var(--kmed-blue)]/20">
