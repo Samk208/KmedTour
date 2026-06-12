@@ -11,7 +11,6 @@ import {
   type TreatmentRichContent,
 } from '@/components/treatments/treatment-rich-sections'
 import { Button } from '@/components/ui/button'
-import { locales } from '@/lib/i18n/locales'
 import { Clinic } from '@/lib/schemas/clinic'
 import { Treatment } from '@/lib/schemas/treatment'
 import {
@@ -225,15 +224,12 @@ function FAQPageJsonLd(faqs: FAQ[]) {
   )
 }
 
-export async function generateStaticParams() {
-  // Must enumerate BOTH locale and slug. Omitting locale leaves the static
-  // params incomplete under the dynamic [locale] layout, which bails with
-  // DYNAMIC_SERVER_USAGE at runtime (500 on every page). Matches the working
-  // hospitals/[slug] route.
-  return locales.flatMap((locale) =>
-    treatments.map((t) => ({ locale, slug: t.slug }))
-  )
-}
+// No generateStaticParams: the [locale] layout renders dynamically (next-intl
+// getMessages() reads headers() with no setRequestLocale), so a slug-only
+// generateStaticParams bailed with DYNAMIC_SERVER_USAGE (500), and enumerating
+// all 8 locales × 113 slugs exploded the build. Rendering dynamically — like the
+// home and contact pages — is correct for this architecture and avoids both.
+export const dynamic = 'force-dynamic'
 
 export async function generateMetadata({
   params,

@@ -2,7 +2,6 @@ import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 
-import { locales } from '@/lib/i18n/locales'
 import { Clinic } from '@/lib/schemas/clinic'
 import { Treatment } from '@/lib/schemas/treatment'
 import { getBaseUrl } from '@/lib/utils/content-parser'
@@ -79,21 +78,11 @@ function buildMetadata(city: string, proc: Treatment): Metadata {
   }
 }
 
-export async function generateStaticParams() {
-  // Enumerate locale too — omitting it bails with DYNAMIC_SERVER_USAGE (500)
-  // under the dynamic [locale] layout. Matches hospitals/[slug].
-  return locales.flatMap((locale) =>
-    cityProcedures.map((c) => ({
-      locale,
-      city: c.citySlug,
-      procedure: c.procedureSlug,
-    }))
-  )
-}
-
-// Only the city/procedure combos enumerated above are real pages; any other
-// combination must 404 (not render on-demand). Closed page set.
-export const dynamicParams = false
+// No generateStaticParams: a city/procedure-only list bailed with
+// DYNAMIC_SERVER_USAGE (500) under the dynamic [locale] layout, and enumerating
+// all 8 locales × 114 combos exploded the build. Render dynamically; unknown
+// combos still hit notFound() below.
+export const dynamic = 'force-dynamic'
 
 export async function generateMetadata({
   params,
