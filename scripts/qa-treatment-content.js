@@ -40,6 +40,15 @@ for (const f of files) {
   const allText = JSON.stringify(t);
   if (ATTRIB_VERB.test(allText)) probs.push('FABRICATED-QUOTE:faqs-or-text');
   if (!Array.isArray(t.faqs) || t.faqs.length < 4) probs.push(`faqs<4 (${t.faqs ? t.faqs.length : 0})`);
+  else if (t.faqs.some((f) => !f.q || !f.a)) probs.push('faq-keys (must be q/a, not question/answer)');
+  // references (optional) must point only to authoritative domains — no competitor/commercial sites
+  const ALLOWED_REF = /(\.gov|\.edu|ncbi\.nlm\.nih\.gov|pubmed|nih\.gov|who\.int|wikipedia\.org|medicalkorea\.or\.kr|khidi\.or\.kr|frontiersin\.org|nature\.com|thelancet\.com|bmj\.com|\.go\.kr)/i;
+  if (Array.isArray(t.references)) {
+    for (const r of t.references) {
+      if (!r.url || !r.label) probs.push('reference missing url/label');
+      else if (!ALLOWED_REF.test(r.url)) probs.push(`non-authoritative reference: ${r.url}`);
+    }
+  }
 
   if (probs.length) issues.push(`${slug}: ${probs.join(', ')}`);
   else pass++;

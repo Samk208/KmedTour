@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 
 export type TreatmentFaq = { q: string; a: string }
+export type TreatmentReference = { label: string; url: string }
 
 export type TreatmentRichContent = {
   slug: string
@@ -14,6 +15,7 @@ export type TreatmentRichContent = {
     why_korea: string
   }
   faqs: TreatmentFaq[]
+  references?: TreatmentReference[]
 }
 
 const SECTION_ORDER: { key: keyof TreatmentRichContent['sections']; title: string }[] = [
@@ -62,6 +64,21 @@ export function TreatmentRichSections({ content }: { content: TreatmentRichConte
               <p>{f.a}</p>
             </Fragment>
           ))}
+        </div>
+      )}
+
+      {content.references && content.references.length > 0 && (
+        <div className="content-section">
+          <h2>Sources</h2>
+          <ul>
+            {content.references.map((r, i) => (
+              <li key={i}>
+                <a href={r.url} target="_blank" rel="noopener nofollow">
+                  {r.label}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       )}
     </>

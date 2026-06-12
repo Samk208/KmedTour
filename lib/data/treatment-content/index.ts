@@ -5,16 +5,19 @@ import aclReconstruction from './acl-reconstruction.json'
 import acneScarRemoval from './acne-scar-removal.json'
 import angioplasty from './angioplasty.json'
 import breastAugmentation from './breast-augmentation.json'
+import cataractSurgery from './cataract-surgery.json'
 import coronaryArteryBypassGrafting from './coronary-artery-bypass-grafting.json'
 import cyberknife from './cyberknife.json'
 import dentalImplants from './dental-implants.json'
 import doubleEyelidSurgery from './double-eyelid-surgery.json'
 import eggFreezing from './egg-freezing.json'
 import facelift from './facelift.json'
+import gastricBypass from './gastric-bypass.json'
 import gastricSleeve from './gastric-sleeve.json'
 import hairTransplant from './hair-transplant.json'
 import healthScreening from './health-screening.json'
 import hipReplacement from './hip-replacement.json'
+import hysterectomy from './hysterectomy.json'
 import ivfTreatment from './ivf-treatment.json'
 import kneeReplacement from './knee-replacement.json'
 import lasikEyeSurgery from './lasik-eye-surgery.json'
@@ -25,6 +28,7 @@ import porcelainVeneers from './porcelain-veneers.json'
 import protonTherapy from './proton-therapy.json'
 import rhinoplasty from './rhinoplasty.json'
 import smileEyeSurgery from './smile-eye-surgery.json'
+import spinalFusion from './spinal-fusion.json'
 import vLineSurgery from './v-line-surgery.json'
 
 export const treatmentContent: Record<string, TreatmentRichContent> = {
@@ -32,16 +36,19 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "acne-scar-removal": acneScarRemoval as TreatmentRichContent,
   "angioplasty": angioplasty as TreatmentRichContent,
   "breast-augmentation": breastAugmentation as TreatmentRichContent,
+  "cataract-surgery": cataractSurgery as TreatmentRichContent,
   "coronary-artery-bypass-grafting": coronaryArteryBypassGrafting as TreatmentRichContent,
   "cyberknife": cyberknife as TreatmentRichContent,
   "dental-implants": dentalImplants as TreatmentRichContent,
   "double-eyelid-surgery": doubleEyelidSurgery as TreatmentRichContent,
   "egg-freezing": eggFreezing as TreatmentRichContent,
   "facelift": facelift as TreatmentRichContent,
+  "gastric-bypass": gastricBypass as TreatmentRichContent,
   "gastric-sleeve": gastricSleeve as TreatmentRichContent,
   "hair-transplant": hairTransplant as TreatmentRichContent,
   "health-screening": healthScreening as TreatmentRichContent,
   "hip-replacement": hipReplacement as TreatmentRichContent,
+  "hysterectomy": hysterectomy as TreatmentRichContent,
   "ivf-treatment": ivfTreatment as TreatmentRichContent,
   "knee-replacement": kneeReplacement as TreatmentRichContent,
   "lasik-eye-surgery": lasikEyeSurgery as TreatmentRichContent,
@@ -52,5 +59,6 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "proton-therapy": protonTherapy as TreatmentRichContent,
   "rhinoplasty": rhinoplasty as TreatmentRichContent,
   "smile-eye-surgery": smileEyeSurgery as TreatmentRichContent,
+  "spinal-fusion": spinalFusion as TreatmentRichContent,
   "v-line-surgery": vLineSurgery as TreatmentRichContent,
 }
