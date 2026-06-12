@@ -1,0 +1,24 @@
+{
+  "_comment": "Per-procedure inline image scenes (consultation → procedure → recovery). 3 varied, on-topic queries each; alt text is written into the sidecar for SEO/a11y. Distinct from the hero query in treatment-image-queries.json.",
+
+  "gastric-bypass": [
+    { "q": "bariatric surgery consultation doctor patient", "alt": "Bariatric surgeon consulting a patient before gastric bypass in Korea" },
+    { "q": "laparoscopic surgery operating room monitor", "alt": "Laparoscopic gastric bypass surgery in a Korean operating room" },
+    { "q": "healthy balanced meal nutrition plate", "alt": "Post-bariatric nutrition and healthy eating during gastric bypass recovery" }
+  ],
+  "cataract-surgery": [
+    { "q": "ophthalmologist eye examination patient", "alt": "Ophthalmologist examining a patient before cataract surgery in Korea" },
+    { "q": "eye surgery microscope ophthalmology", "alt": "Cataract surgery performed under an operating microscope" },
+    { "q": "senior smiling clear vision glasses", "alt": "Patient with restored vision after cataract surgery in Korea" }
+  ],
+  "hysterectomy": [
+    { "q": "gynecologist consultation woman doctor clinic", "alt": "Gynecologist discussing hysterectomy options with a patient" },
+    { "q": "robotic surgery operating room da vinci", "alt": "Robotic-assisted minimally invasive surgery in a Korean hospital" },
+    { "q": "woman resting recovery hospital bed comfortable", "alt": "Patient resting during recovery after a minimally invasive hysterectomy" }
+  ],
+  "spinal-fusion": [
+    { "q": "doctor spine xray mri consultation patient", "alt": "Spine specialist reviewing an MRI before spinal fusion" },
+    { "q": "spine surgery operating room surgeons", "alt": "Minimally invasive spinal fusion surgery in Seoul" },
+    { "q": "physical therapy back rehabilitation patient", "alt": "Physical therapy and rehabilitation after spinal fusion" }
+  ]
+}

@@ -44,5 +44,22 @@
       "label": "Hysterectomy — overview (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Hysterectomy"
     }
+  ],
+  "images": [
+    {
+      "src": "/images/procedures/inline/hysterectomy-1.jpg",
+      "alt": "Gynecologist discussing hysterectomy options with a patient",
+      "credit": "MART  PRODUCTION"
+    },
+    {
+      "src": "/images/procedures/inline/hysterectomy-2.jpg",
+      "alt": "Robotic-assisted minimally invasive surgery in a Korean hospital",
+      "credit": "Stéf -b."
+    },
+    {
+      "src": "/images/procedures/inline/hysterectomy-3.jpg",
+      "alt": "Patient resting during recovery after a minimally invasive hysterectomy",
+      "credit": "Ivan S"
+    }
   ]
 }

@@ -44,5 +44,22 @@
       "label": "Spinal fusion — overview (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Spinal_fusion"
     }
+  ],
+  "images": [
+    {
+      "src": "/images/procedures/inline/spinal-fusion-1.jpg",
+      "alt": "Spine specialist reviewing an MRI before spinal fusion",
+      "credit": "Anna Shvets"
+    },
+    {
+      "src": "/images/procedures/inline/spinal-fusion-2.jpg",
+      "alt": "Minimally invasive spinal fusion surgery in Seoul",
+      "credit": "Anna Shvets"
+    },
+    {
+      "src": "/images/procedures/inline/spinal-fusion-3.jpg",
+      "alt": "Physical therapy and rehabilitation after spinal fusion",
+      "credit": "www.kaboompics.com"
+    }
   ]
 }

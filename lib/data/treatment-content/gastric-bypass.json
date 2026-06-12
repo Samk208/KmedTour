@@ -48,5 +48,22 @@
       "label": "Cost-effectiveness of Bariatric Surgery for Morbid Obesity in South Korea — PubMed",
       "url": "https://pubmed.ncbi.nlm.nih.gov/31396789/"
     }
+  ],
+  "images": [
+    {
+      "src": "/images/procedures/inline/gastric-bypass-1.jpg",
+      "alt": "Bariatric surgeon consulting a patient before gastric bypass in Korea",
+      "credit": "RDNE Stock project"
+    },
+    {
+      "src": "/images/procedures/inline/gastric-bypass-2.jpg",
+      "alt": "Laparoscopic gastric bypass surgery in a Korean operating room",
+      "credit": "Zakir Rushanly"
+    },
+    {
+      "src": "/images/procedures/inline/gastric-bypass-3.jpg",
+      "alt": "Post-bariatric nutrition and healthy eating during gastric bypass recovery",
+      "credit": "Nadin Sh"
+    }
   ]
 }

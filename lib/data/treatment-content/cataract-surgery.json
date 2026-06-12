@@ -44,5 +44,22 @@
       "label": "Medical Korea — official international healthcare program (KHIDI, Ministry of Health & Welfare)",
       "url": "https://www.medicalkorea.or.kr/en"
     }
+  ],
+  "images": [
+    {
+      "src": "/images/procedures/inline/cataract-surgery-1.jpg",
+      "alt": "Ophthalmologist examining a patient before cataract surgery in Korea",
+      "credit": "Pavel Danilyuk"
+    },
+    {
+      "src": "/images/procedures/inline/cataract-surgery-2.jpg",
+      "alt": "Cataract surgery performed under an operating microscope",
+      "credit": "Delhi Eye Centre"
+    },
+    {
+      "src": "/images/procedures/inline/cataract-surgery-3.jpg",
+      "alt": "Patient with restored vision after cataract surgery in Korea",
+      "credit": "Moe Magners"
+    }
   ]
 }
