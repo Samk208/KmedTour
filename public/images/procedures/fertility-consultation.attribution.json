@@ -1,9 +1,10 @@
 {
   "source": "pexels",
-  "photoId": 7659869,
-  "photographer": "Thirdman",
-  "photographerUrl": "https://www.pexels.com/@thirdman",
-  "pexelsUrl": "https://www.pexels.com/photo/doctor-consulting-a-patient-7659869/",
-  "license": "Pexels License (free for commercial use)",
-  "downloadedAt": "2026-04-14T07:08:49.624Z"
+  "photo_id": 7108395,
+  "photographer": "Pavel Danilyuk",
+  "photographer_url": "https://www.pexels.com/@pavel-danilyuk",
+  "pexels_url": "https://www.pexels.com/photo/couple-at-the-clinic-7108395/",
+  "query": "doctor couple consultation clinic warm",
+  "alt": "A couple consulting with a doctor in a medical office for a health check-up.",
+  "license": "Pexels License — free for commercial use, no attribution required"
 }

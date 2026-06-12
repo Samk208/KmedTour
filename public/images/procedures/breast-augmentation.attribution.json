@@ -1,9 +1,10 @@
 {
   "source": "pexels",
-  "photoId": 13060605,
-  "photographer": "Lucas Guimarães Bueno",
-  "photographerUrl": "https://www.pexels.com/@lucas-guimaraes-bueno-258458556",
-  "pexelsUrl": "https://www.pexels.com/photo/a-man-marking-his-client-s-face-13060605/",
-  "license": "Pexels License (free for commercial use)",
-  "downloadedAt": "2026-04-14T07:08:36.682Z"
+  "photo_id": 7108173,
+  "photographer": "Pavel Danilyuk",
+  "photographer_url": "https://www.pexels.com/@pavel-danilyuk",
+  "pexels_url": "https://www.pexels.com/photo/a-doctor-checking-his-patient-7108173/",
+  "query": "plastic surgery consultation doctor patient",
+  "alt": "A doctor evaluates a patient's skin condition in a clinical setting with appropriate medical attire.",
+  "license": "Pexels License — free for commercial use, no attribution required"
 }

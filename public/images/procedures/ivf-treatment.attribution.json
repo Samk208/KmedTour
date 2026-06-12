@@ -1,9 +1,10 @@
 {
   "source": "pexels",
-  "photoId": 36665085,
-  "photographer": "Dr. Jyoti Bandi",
-  "photographerUrl": "https://www.pexels.com/@dr-jyoti-bandi-1632851054",
-  "pexelsUrl": "https://www.pexels.com/photo/healthcare-professional-in-hospital-corridor-36665085/",
-  "license": "Pexels License (free for commercial use)",
-  "downloadedAt": "2026-04-14T07:09:00.604Z"
+  "photo_id": 8533045,
+  "photographer": "Artem Podrez",
+  "photographer_url": "https://www.pexels.com/@artempodrez",
+  "pexels_url": "https://www.pexels.com/photo/a-person-looking-through-the-microscope-8533045/",
+  "query": "embryologist laboratory microscope fertility",
+  "alt": "A scientist in a lab coat using a microscope for research in a laboratory setting.",
+  "license": "Pexels License — free for commercial use, no attribution required"
 }

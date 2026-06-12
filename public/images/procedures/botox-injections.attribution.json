@@ -1,9 +1,10 @@
 {
   "source": "pexels",
-  "photoId": 7446683,
-  "photographer": "Gustavo Fring",
-  "photographerUrl": "https://www.pexels.com/@gustavo-fring",
-  "pexelsUrl": "https://www.pexels.com/photo/a-woman-in-a-dermatology-clinic-7446683/",
-  "license": "Pexels License (free for commercial use)",
-  "downloadedAt": "2026-04-14T07:08:34.667Z"
+  "photo_id": 4586708,
+  "photographer": "Anna Shvets",
+  "photographer_url": "https://www.pexels.com/@shvetsa",
+  "pexels_url": "https://www.pexels.com/photo/cosmetologist-injecting-a-woman-in-a-face-with-a-syringe-4586708/",
+  "query": "cosmetic injection face clinic professional",
+  "alt": "Woman receives cosmetic injection in clinical setting, enhancing beauty using modern techniques.",
+  "license": "Pexels License — free for commercial use, no attribution required"
 }

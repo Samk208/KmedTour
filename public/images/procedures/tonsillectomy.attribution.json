@@ -1,9 +1,10 @@
 {
   "source": "pexels",
-  "photoId": 30686774,
-  "photographer": "fahri tokcan",
-  "photographerUrl": "https://www.pexels.com/@fahri-tokcan-522576348",
-  "pexelsUrl": "https://www.pexels.com/photo/plastic-surgeon-examines-patient-s-nose-in-clinic-30686774/",
-  "license": "Pexels License (free for commercial use)",
-  "downloadedAt": "2026-04-14T07:09:44.297Z"
+  "photo_id": 7579824,
+  "photographer": "cottonbro studio",
+  "photographer_url": "https://www.pexels.com/@cottonbro",
+  "pexels_url": "https://www.pexels.com/photo/doctor-and-patient-during-examination-7579824/",
+  "query": "doctor examining throat patient clinic",
+  "alt": "A doctor examining a patient's throat in a clinical setting, highlighting professional healthcare.",
+  "license": "Pexels License — free for commercial use, no attribution required"
 }

@@ -1,9 +1,10 @@
 {
   "source": "pexels",
-  "photoId": 13697924,
-  "photographer": "Jonathan Borba",
-  "photographerUrl": "https://www.pexels.com/@jonathanborba",
-  "pexelsUrl": "https://www.pexels.com/photo/doctors-in-surgery-room-13697924/",
-  "license": "Pexels License (free for commercial use)",
-  "downloadedAt": "2026-04-14T07:08:56.630Z"
+  "photo_id": 8460125,
+  "photographer": "Los Muertos Crew",
+  "photographer_url": "https://www.pexels.com/@cristian-rojas",
+  "pexels_url": "https://www.pexels.com/photo/a-man-sitting-on-blue-bed-8460125/",
+  "query": "doctor consultation patient clinic private",
+  "alt": "Doctor checking patient's vitals in a clinical setting for health consultation.",
+  "license": "Pexels License — free for commercial use, no attribution required"
 }

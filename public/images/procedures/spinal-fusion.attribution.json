@@ -1,9 +1,10 @@
 {
   "source": "pexels",
-  "photoId": 30964751,
+  "photo_id": 30964707,
   "photographer": "Viktors Duks",
-  "photographerUrl": "https://www.pexels.com/@duksi",
-  "pexelsUrl": "https://www.pexels.com/photo/surgeons-performing-complex-spinal-surgery-30964751/",
-  "license": "Pexels License (free for commercial use)",
-  "downloadedAt": "2026-04-14T07:09:40.316Z"
+  "photographer_url": "https://www.pexels.com/@duksi",
+  "pexels_url": "https://www.pexels.com/photo/surgeons-performing-a-spinal-operation-in-operating-room-30964707/",
+  "query": "spine surgery operating room surgeons",
+  "alt": "Surgeons in sterile gloves perform a spinal operation in a modern operating room, focusing on precision and care.",
+  "license": "Pexels License — free for commercial use, no attribution required"
 }

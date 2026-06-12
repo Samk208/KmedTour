@@ -1,9 +1,10 @@
 {
   "source": "pexels",
-  "photoId": 6627598,
+  "photo_id": 6627575,
   "photographer": "www.kaboompics.com",
-  "photographerUrl": "https://www.pexels.com/@karola-g",
-  "pexelsUrl": "https://www.pexels.com/photo/samples-of-teeth-6627598/",
-  "license": "Pexels License (free for commercial use)",
-  "downloadedAt": "2026-04-14T07:09:42.260Z"
+  "photographer_url": "https://www.pexels.com/@karola-g",
+  "pexels_url": "https://www.pexels.com/photo/a-dentist-holding-a-dental-shade-guide-in-front-of-a-patient-6627575/",
+  "query": "teeth whitening dental clinic patient",
+  "alt": "Dentist using a shade guide to match tooth color for a patient in a dental clinic.",
+  "license": "Pexels License — free for commercial use, no attribution required"
 }
