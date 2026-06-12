@@ -11,6 +11,7 @@ import {
   type TreatmentRichContent,
 } from '@/components/treatments/treatment-rich-sections'
 import { Button } from '@/components/ui/button'
+import { locales } from '@/lib/i18n/locales'
 import { Clinic } from '@/lib/schemas/clinic'
 import { Treatment } from '@/lib/schemas/treatment'
 import {
@@ -225,7 +226,13 @@ function FAQPageJsonLd(faqs: FAQ[]) {
 }
 
 export async function generateStaticParams() {
-  return treatments.map((t) => ({ slug: t.slug }))
+  // Must enumerate BOTH locale and slug. Omitting locale leaves the static
+  // params incomplete under the dynamic [locale] layout, which bails with
+  // DYNAMIC_SERVER_USAGE at runtime (500 on every page). Matches the working
+  // hospitals/[slug] route.
+  return locales.flatMap((locale) =>
+    treatments.map((t) => ({ locale, slug: t.slug }))
+  )
 }
 
 export async function generateMetadata({
