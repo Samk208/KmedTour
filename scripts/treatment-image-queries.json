@@ -1,0 +1,141 @@
+{
+  "_comment": "Curated Pexels queries per treatment slug. One primary scene-based query each; fetcher pulls top 4 candidates per query (per_page=4). Apply step dedupes photo_ids across slugs. NEVER use the raw procedure name as a query — that's how acl-reconstruction got a CNC machine photo.",
+
+  "gastric-bypass": "laparoscopic surgery operating room team",
+  "gastric-sleeve": "surgeons performing abdominal surgery hospital",
+
+  "laparoscopic-gastric-cancer": "laparoscopic surgery monitor operating room",
+  "endoscopic-submucosal-dissection": "endoscopy procedure doctor hospital",
+  "radiofrequency-ablation-liver": "interventional radiology procedure hospital",
+  "laparoscopic-colorectal-surgery": "surgical team operating theatre",
+  "sphincter-saving-procedure": "surgeons operation hospital focused",
+  "sentinel-lymph-node-biopsy": "surgeon operating room precision instruments",
+  "breast-conserving-surgery": "female surgeon operating room team",
+  "endoscopic-thyroidectomy": "neck examination doctor patient clinic",
+  "robotic-thyroidectomy": "robotic surgery system operating room",
+  "bronchoplasty": "thoracic surgery operating room",
+  "stereotactic-radiation-therapy": "radiation therapy machine cancer treatment",
+  "proton-therapy": "radiotherapy machine modern hospital",
+  "cyberknife": "radiation oncology treatment machine patient",
+
+  "coronary-bypass": "cardiac surgery operating room surgeons",
+  "angioplasty": "cardiac catheterization lab hospital",
+  "pacemaker-implantation": "cardiologist heart monitor hospital patient",
+  "heart-transplant": "cardiac surgeons operation hospital",
+  "percutaneous-coronary-intervention": "cardiac catheterization laboratory doctors",
+  "coronary-artery-bypass-grafting": "heart surgery operating theatre team",
+  "tavi-procedure": "interventional cardiology hospital procedure",
+  "congenital-heart-defect-surgery": "pediatric heart surgery hospital",
+  "neonatal-heart-surgery": "neonatal intensive care unit hospital",
+  "cardiovascular-physiology-assessment": "cardiologist ecg heart test patient",
+  "radial-artery-approach-pci": "cardiac catheterization wrist procedure doctor",
+  "left-main-coronary-intervention": "interventional cardiologist angiogram screen",
+
+  "rhinoplasty": "plastic surgeon marking nose patient consultation",
+  "double-eyelid-surgery": "eye area cosmetic consultation clinic",
+  "facelift": "cosmetic surgeon consultation face woman clinic",
+  "breast-augmentation": "plastic surgery consultation doctor patient",
+  "liposuction": "cosmetic surgery body marking clinic",
+  "v-line-surgery": "facial contour consultation cosmetic clinic",
+  "botox-injections": "cosmetic injection face clinic professional",
+  "chemical-peel": "facial treatment spa dermatology clinic",
+  "laser-skin-resurfacing": "laser facial treatment dermatology patient",
+  "acne-scar-removal": "dermatologist laser face treatment patient",
+  "skin-whitening": "facial skincare treatment clinic glowing skin",
+  "hair-transplant": "hair treatment scalp clinic specialist",
+  "gynecomastia-surgery": "male patient consultation doctor clinic",
+  "tummy-tuck": "abdomen surgery marking cosmetic clinic",
+
+  "dental-implants": "dentist dental implant procedure patient",
+  "porcelain-veneers": "dentist examining teeth shade patient smile",
+  "teeth-whitening": "teeth whitening dental clinic patient",
+  "full-mouth-reconstruction": "dental surgery clinic modern equipment",
+  "dental-implant-surgery": "dental surgeon operating patient clinic",
+  "prosthodontic-treatment": "dental prosthesis lab technician",
+  "orthodontic-treatment": "orthodontist braces patient dental clinic",
+  "periodontal-treatment": "dental hygienist cleaning teeth patient",
+  "conservative-dentistry": "dentist filling tooth patient clinic",
+  "oral-maxillofacial-surgery": "oral surgery dental operating room",
+  "digital-guided-implant-surgery": "digital dentistry 3d scanner clinic",
+
+  "sinus-surgery": "ent doctor examining patient nose clinic",
+  "tonsillectomy": "doctor examining throat patient clinic",
+  "septoplasty": "ent specialist nose examination patient",
+
+  "thyroid-surgery": "neck ultrasound examination doctor patient",
+
+  "lasik-eye-surgery": "laser eye surgery patient clinic",
+  "cataract-surgery": "eye surgery microscope ophthalmologist",
+  "corneal-transplant": "eye surgery operating microscope hospital",
+  "lasek-eye-surgery": "ophthalmologist laser eye procedure clinic",
+  "smile-eye-surgery": "eye exam ophthalmology clinic modern",
+
+  "ivf-treatment": "embryologist laboratory microscope fertility",
+  "egg-freezing": "fertility laboratory cryopreservation scientist",
+  "fertility-consultation": "doctor couple consultation clinic warm",
+  "in-vitro-maturation": "fertility lab scientist microscope",
+  "ovarian-tissue-cryopreservation": "medical laboratory liquid nitrogen storage",
+  "preimplantation-genetic-testing": "genetics laboratory scientist pipette",
+  "time-lapse-embryo-monitoring": "laboratory incubator monitoring scientist",
+  "microsurgical-tese": "microsurgery laboratory specialist",
+  "single-port-laparoscopic-surgery": "minimally invasive surgery operating room",
+  "robotic-reproductive-surgery": "robotic surgery console surgeon",
+
+  "colonoscopy": "endoscopy suite doctor hospital procedure",
+  "endoscopy": "gastroenterologist endoscope procedure hospital",
+
+  "hysterectomy": "gynecology surgery operating room female team",
+
+  "brain-tumor-surgery": "neurosurgery operating room microscope",
+
+  "prenatal-care": "pregnant woman ultrasound doctor clinic",
+
+  "lung-cancer-surgery": "thoracic surgeons operating hospital",
+
+  "knee-replacement": "knee surgery orthopedic operating room",
+  "hip-replacement": "orthopedic surgeon hip xray patient",
+  "acl-reconstruction": "knee examination orthopedic doctor athlete",
+  "spinal-fusion": "spine surgery operating room surgeons",
+  "limb-lengthening": "orthopedic doctor leg examination xray",
+
+  "pediatric-surgery": "pediatric surgeon child hospital care",
+  "neonatal-care": "newborn baby incubator nicu nurse",
+
+  "health-screening": "health checkup doctor patient examination",
+  "cancer-screening": "ct scanner patient radiology hospital",
+  "cardiac-screening": "ecg heart test patient doctor clinic",
+
+  "hemorrhoid-surgery": "doctor consultation patient clinic private",
+
+  "rehabilitation-therapy": "physical therapist patient rehabilitation exercise",
+
+  "pulmonary-treatment": "doctor lung examination stethoscope patient",
+
+  "minimally-invasive-spine-surgery": "spine surgery minimally invasive operating room",
+  "transforaminal-endoscopic-discectomy": "endoscopic spine procedure operating room",
+  "open-microdiscectomy": "spine surgeon operating microscope",
+  "spinal-decompression-surgery": "back examination doctor patient spine model",
+  "ube-spinal-surgery": "spine surgery monitor operating theatre",
+  "scoliosis-correction-surgery": "spine xray doctor examining scoliosis",
+
+  "korean-medicine": "traditional korean medicine herbs treatment",
+  "acupuncture": "acupuncture needles treatment back patient",
+  "cupping-therapy": "cupping therapy back treatment traditional",
+  "herbal-medicine": "herbal medicine preparation traditional asian",
+
+  "living-donor-liver-transplant": "transplant surgery team operating room",
+  "living-donor-kidney-transplant": "kidney surgery operating room surgeons",
+  "abo-incompatible-transplant": "transplant surgeons operation hospital team",
+  "exchange-donor-kidney-transplant": "surgical team hospital operation",
+  "dual-donor-liver-transplant": "liver surgery operating theatre team",
+  "robotic-transplant-surgery": "robotic surgical system hospital",
+  "lung-transplant": "thoracic surgery hospital operating room team",
+  "pancreas-transplant": "abdominal surgery operating room hospital",
+  "small-intestine-transplant": "surgeons operating hospital concentration",
+  "cornea-transplant": "eye surgery ophthalmology operating microscope",
+
+  "prostate-surgery": "urology surgery robotic operating room",
+  "kidney-stone-removal": "urologist patient consultation kidney model",
+
+  "varicose-vein-treatment": "leg vein treatment doctor clinic patient"
+}

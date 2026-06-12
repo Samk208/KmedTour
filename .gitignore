@@ -106,3 +106,6 @@ playwright/.cache/
 *_output.txt
 git_status.txt
 memory/
+
+# temp image candidates (fetch-image-candidates.js)
+public/images/_candidates/
