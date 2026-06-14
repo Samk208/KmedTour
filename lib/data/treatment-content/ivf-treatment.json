@@ -30,5 +30,22 @@
       "q": "What are my chances of success with IVF?",
       "a": "Success with IVF genuinely varies and cannot be reduced to a single figure. It depends on your age, the cause of your infertility, egg and sperm quality, and other personal factors. Your clinical team will discuss what is realistic for you, depending on your case, after reviewing your records and tests. They will speak honestly rather than promise an outcome, and they can explain what each stage of your cycle means for you."
     }
+  ],
+  "images": [
+    {
+      "src": "/images/procedures/inline/ivf-treatment-1.jpg",
+      "alt": "Fertility specialist consulting a couple about IVF in Korea",
+      "credit": "SHVETS production"
+    },
+    {
+      "src": "/images/procedures/inline/ivf-treatment-2.jpg",
+      "alt": "Embryology lab work during IVF treatment in Korea",
+      "credit": "Zakir Rushanly"
+    },
+    {
+      "src": "/images/procedures/inline/ivf-treatment-3.jpg",
+      "alt": "Couple after IVF treatment at a Korean fertility clinic",
+      "credit": "Tima Miroshnichenko"
+    }
   ]
 }

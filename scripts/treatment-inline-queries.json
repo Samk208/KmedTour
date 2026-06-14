@@ -20,5 +20,131 @@
     { "q": "doctor spine xray mri consultation patient", "alt": "Spine specialist reviewing an MRI before spinal fusion" },
     { "q": "spine surgery operating room surgeons", "alt": "Minimally invasive spinal fusion surgery in Seoul" },
     { "q": "physical therapy back rehabilitation patient", "alt": "Physical therapy and rehabilitation after spinal fusion" }
+  ],
+
+  "acl-reconstruction": [
+    { "q": "orthopedic surgeon knee examination patient consultation", "alt": "Orthopedic surgeon assessing a knee before ACL reconstruction in Korea" },
+    { "q": "arthroscopic knee surgery operating room", "alt": "Arthroscopic ACL reconstruction in a Korean operating room" },
+    { "q": "knee physical therapy rehabilitation athlete", "alt": "Knee rehabilitation and physical therapy after ACL reconstruction" }
+  ],
+  "acne-scar-removal": [
+    { "q": "dermatologist skin examination patient consultation", "alt": "Dermatologist assessing acne scarring before treatment in Korea" },
+    { "q": "laser skin treatment dermatology clinic", "alt": "Laser resurfacing for acne scar removal at a Korean dermatology clinic" },
+    { "q": "woman clear smooth healthy skin face", "alt": "Smoother, clearer skin after acne scar treatment in Korea" }
+  ],
+  "angioplasty": [
+    { "q": "cardiologist heart consultation patient clinic", "alt": "Cardiologist reviewing results before angioplasty in Korea" },
+    { "q": "cardiac catheterization lab angiography monitor", "alt": "Coronary angioplasty performed in a Korean cardiac catheterization lab" },
+    { "q": "senior patient cardiac rehabilitation walking", "alt": "Cardiac rehabilitation after angioplasty in Korea" }
+  ],
+  "breast-augmentation": [
+    { "q": "plastic surgeon consultation woman clinic", "alt": "Plastic surgeon consulting a patient before breast augmentation in Korea" },
+    { "q": "plastic surgery operating room sterile", "alt": "Breast augmentation surgery in a Korean operating room" },
+    { "q": "confident woman recovery wellness", "alt": "Patient during recovery after breast augmentation in Korea" }
+  ],
+  "coronary-artery-bypass-grafting": [
+    { "q": "cardiac surgeon consultation patient heart", "alt": "Cardiac surgeon discussing bypass surgery with a patient in Korea" },
+    { "q": "open heart surgery operating room team", "alt": "Coronary artery bypass grafting performed by a Korean cardiac surgery team" },
+    { "q": "senior heart patient rehabilitation recovery", "alt": "Cardiac rehabilitation after bypass surgery in Korea" }
+  ],
+  "cyberknife": [
+    { "q": "radiation oncologist consultation patient scan", "alt": "Radiation oncologist planning CyberKnife treatment in Korea" },
+    { "q": "radiosurgery medical linear accelerator machine", "alt": "CyberKnife robotic radiosurgery system at a Korean cancer center" },
+    { "q": "cancer patient recovery hopeful wellness", "alt": "Patient recovering after CyberKnife radiosurgery in Korea" }
+  ],
+  "dental-implants": [
+    { "q": "dentist consultation patient dental clinic", "alt": "Dentist planning dental implants with a patient in Korea" },
+    { "q": "dental implant surgery dentist procedure", "alt": "Dental implant placement at a Korean dental clinic" },
+    { "q": "person smiling healthy white teeth", "alt": "Restored smile after dental implants in Korea" }
+  ],
+  "double-eyelid-surgery": [
+    { "q": "plastic surgeon facial consultation patient", "alt": "Plastic surgeon consulting a patient before double eyelid surgery in Korea" },
+    { "q": "cosmetic eye surgery clinic procedure", "alt": "Double eyelid surgery at a Korean cosmetic clinic" },
+    { "q": "woman bright eyes natural beauty face", "alt": "Refreshed eye appearance after double eyelid surgery in Korea" }
+  ],
+  "egg-freezing": [
+    { "q": "fertility doctor consultation woman clinic", "alt": "Fertility specialist consulting a patient about egg freezing in Korea" },
+    { "q": "ivf laboratory embryologist microscope", "alt": "Egg retrieval and cryopreservation in a Korean fertility lab" },
+    { "q": "confident woman planning future wellness", "alt": "Patient after egg freezing at a Korean fertility clinic" }
+  ],
+  "facelift": [
+    { "q": "plastic surgeon facial consultation mature woman", "alt": "Plastic surgeon planning a facelift with a patient in Korea" },
+    { "q": "facial plastic surgery operating room", "alt": "Facelift surgery at a Korean plastic surgery clinic" },
+    { "q": "mature woman youthful radiant skin", "alt": "Refreshed appearance after a facelift in Korea" }
+  ],
+  "gastric-sleeve": [
+    { "q": "bariatric doctor consultation patient weight", "alt": "Bariatric specialist consulting a patient before gastric sleeve in Korea" },
+    { "q": "laparoscopic surgery operating room screen", "alt": "Laparoscopic sleeve gastrectomy in a Korean operating room" },
+    { "q": "healthy meal portion nutrition lifestyle", "alt": "Nutrition and healthy eating during gastric sleeve recovery" }
+  ],
+  "hair-transplant": [
+    { "q": "hair specialist scalp consultation patient", "alt": "Hair restoration specialist assessing a patient in Korea" },
+    { "q": "hair transplant procedure clinic technician", "alt": "Follicular hair transplant procedure at a Korean clinic" },
+    { "q": "man confident full hair healthy", "alt": "Fuller hairline after a hair transplant in Korea" }
+  ],
+  "health-screening": [
+    { "q": "doctor patient health checkup consultation", "alt": "Doctor reviewing a comprehensive health screening in Korea" },
+    { "q": "mri ct scan medical imaging hospital", "alt": "Advanced imaging during a Korean comprehensive health screening" },
+    { "q": "healthy adult wellness lifestyle smiling", "alt": "Patient receiving health screening results in Korea" }
+  ],
+  "hip-replacement": [
+    { "q": "orthopedic surgeon hip consultation senior patient", "alt": "Orthopedic surgeon reviewing a hip X-ray before replacement in Korea" },
+    { "q": "joint replacement surgery operating room", "alt": "Total hip replacement surgery in a Korean operating room" },
+    { "q": "senior walking rehabilitation physical therapy", "alt": "Mobility rehabilitation after hip replacement in Korea" }
+  ],
+  "ivf-treatment": [
+    { "q": "fertility specialist couple consultation clinic", "alt": "Fertility specialist consulting a couple about IVF in Korea" },
+    { "q": "ivf laboratory embryo microscope embryologist", "alt": "Embryology lab work during IVF treatment in Korea" },
+    { "q": "happy couple hopeful family future", "alt": "Couple after IVF treatment at a Korean fertility clinic" }
+  ],
+  "knee-replacement": [
+    { "q": "orthopedic surgeon knee consultation senior", "alt": "Orthopedic surgeon reviewing a knee X-ray before replacement in Korea" },
+    { "q": "knee joint replacement surgery operating room", "alt": "Total knee replacement surgery in a Korean operating room" },
+    { "q": "senior knee rehabilitation physical therapy walking", "alt": "Rehabilitation and mobility after knee replacement in Korea" }
+  ],
+  "lasik-eye-surgery": [
+    { "q": "ophthalmologist eye exam patient consultation", "alt": "Ophthalmologist assessing a patient before LASIK in Korea" },
+    { "q": "laser eye surgery ophthalmology equipment", "alt": "LASIK laser vision correction at a Korean eye clinic" },
+    { "q": "person clear vision outdoors no glasses", "alt": "Clear vision after LASIK surgery in Korea" }
+  ],
+  "liposuction": [
+    { "q": "plastic surgeon body consultation patient clinic", "alt": "Plastic surgeon consulting a patient before liposuction in Korea" },
+    { "q": "cosmetic surgery operating room procedure", "alt": "Liposuction body contouring at a Korean clinic" },
+    { "q": "fit confident person wellness lifestyle", "alt": "Body contour results after liposuction in Korea" }
+  ],
+  "living-donor-kidney-transplant": [
+    { "q": "transplant surgeon consultation patient nephrology", "alt": "Transplant specialist consulting a patient before kidney transplant in Korea" },
+    { "q": "organ transplant surgery operating room team", "alt": "Living-donor kidney transplant surgery in a Korean hospital" },
+    { "q": "patient recovery healthy hopeful hospital", "alt": "Recovery after living-donor kidney transplant in Korea" }
+  ],
+  "living-donor-liver-transplant": [
+    { "q": "hepatology surgeon consultation patient liver", "alt": "Transplant surgeon consulting a patient before liver transplant in Korea" },
+    { "q": "liver transplant surgery operating room surgeons", "alt": "Living-donor liver transplant surgery in a Korean hospital" },
+    { "q": "patient recovery wellness hospital hopeful", "alt": "Recovery after living-donor liver transplant in Korea" }
+  ],
+  "porcelain-veneers": [
+    { "q": "cosmetic dentist smile consultation patient", "alt": "Cosmetic dentist planning porcelain veneers with a patient in Korea" },
+    { "q": "dental veneer procedure dentist clinic", "alt": "Porcelain veneer placement at a Korean dental clinic" },
+    { "q": "bright white smile beautiful teeth", "alt": "Brighter smile after porcelain veneers in Korea" }
+  ],
+  "proton-therapy": [
+    { "q": "radiation oncologist consultation cancer patient", "alt": "Radiation oncologist planning proton therapy in Korea" },
+    { "q": "proton therapy machine cancer treatment center", "alt": "Proton beam therapy system at a Korean cancer center" },
+    { "q": "cancer patient recovery hopeful wellness", "alt": "Patient recovering after proton therapy in Korea" }
+  ],
+  "rhinoplasty": [
+    { "q": "facial plastic surgeon nose consultation patient", "alt": "Plastic surgeon planning rhinoplasty with a patient in Korea" },
+    { "q": "rhinoplasty cosmetic surgery operating room", "alt": "Rhinoplasty surgery at a Korean plastic surgery clinic" },
+    { "q": "woman natural profile beautiful face", "alt": "Refined nasal profile after rhinoplasty in Korea" }
+  ],
+  "smile-eye-surgery": [
+    { "q": "ophthalmologist eye consultation patient exam", "alt": "Ophthalmologist assessing a patient before SMILE eye surgery in Korea" },
+    { "q": "laser vision correction eye surgery clinic", "alt": "SMILE minimally invasive laser vision correction in Korea" },
+    { "q": "person clear vision confident outdoors", "alt": "Clear vision after SMILE eye surgery in Korea" }
+  ],
+  "v-line-surgery": [
+    { "q": "facial plastic surgeon jaw consultation patient", "alt": "Plastic surgeon planning V-line contouring with a patient in Korea" },
+    { "q": "facial contouring surgery operating room", "alt": "V-line facial contouring surgery at a Korean clinic" },
+    { "q": "woman defined jawline beauty face", "alt": "Refined facial contour after V-line surgery in Korea" }
   ]
 }

@@ -30,5 +30,22 @@
       "q": "How is follow-up handled after I return home?",
       "a": "Follow-up imaging and assessments are usually scheduled for weeks or months after the final session, since effects continue to settle over time. These can often be arranged with your home medical team, with results shared back to the Korean center. The care team explains the planned follow-up schedule before you depart."
     }
+  ],
+  "images": [
+    {
+      "src": "/images/procedures/inline/proton-therapy-1.jpg",
+      "alt": "Radiation oncologist planning proton therapy in Korea",
+      "credit": "Thirdman"
+    },
+    {
+      "src": "/images/procedures/inline/proton-therapy-2.jpg",
+      "alt": "Proton beam therapy system at a Korean cancer center",
+      "credit": "Tima Miroshnichenko"
+    },
+    {
+      "src": "/images/procedures/inline/proton-therapy-3.jpg",
+      "alt": "Patient recovering after proton therapy in Korea",
+      "credit": "Ivan S"
+    }
   ]
 }

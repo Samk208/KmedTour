@@ -30,5 +30,22 @@
       "q": "Is LASIK permanent?",
       "a": "The reshaping of the cornea is lasting, and many people enjoy stable vision for years. However, the eye can still change with age, including the natural near-focus shift that affects most people later in life, which may eventually call for reading glasses. A stable prescription before surgery and regular check-ups afterward support long-term results."
     }
+  ],
+  "images": [
+    {
+      "src": "/images/procedures/inline/lasik-eye-surgery-1.jpg",
+      "alt": "Ophthalmologist assessing a patient before LASIK in Korea",
+      "credit": "Pavel Danilyuk"
+    },
+    {
+      "src": "/images/procedures/inline/lasik-eye-surgery-2.jpg",
+      "alt": "LASIK laser vision correction at a Korean eye clinic",
+      "credit": "Delhi Eye Centre"
+    },
+    {
+      "src": "/images/procedures/inline/lasik-eye-surgery-3.jpg",
+      "alt": "Clear vision after LASIK surgery in Korea",
+      "credit": "Maksim Goncharenok"
+    }
   ]
 }

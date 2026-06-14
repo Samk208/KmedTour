@@ -30,5 +30,22 @@
       "q": "What does cemented versus uncemented fixation mean?",
       "a": "Cemented implants are held in place with bone cement, giving immediate fixation that allows early weight-bearing. Uncemented implants have a textured surface that lets your own bone grow onto them over time for a biological bond. The surgeon selects the option based on your bone quality, age, and anatomy. Both are well-established; the choice is tailored to give durable, stable fixation for your hip."
     }
+  ],
+  "images": [
+    {
+      "src": "/images/procedures/inline/hip-replacement-1.jpg",
+      "alt": "Orthopedic surgeon reviewing a hip X-ray before replacement in Korea",
+      "credit": "Tima Miroshnichenko"
+    },
+    {
+      "src": "/images/procedures/inline/hip-replacement-2.jpg",
+      "alt": "Total hip replacement surgery in a Korean operating room",
+      "credit": "Stéf -b."
+    },
+    {
+      "src": "/images/procedures/inline/hip-replacement-3.jpg",
+      "alt": "Mobility rehabilitation after hip replacement in Korea",
+      "credit": "Anastasia  Shuraeva"
+    }
   ]
 }

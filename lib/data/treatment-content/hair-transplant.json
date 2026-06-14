@@ -30,5 +30,22 @@
       "q": "How long should I plan to stay in Korea?",
       "a": "A stay of around five days is typical, covering the consultation, the procedure, an early review, and the first wash before you travel home. Flying is generally fine once the clinic confirms the grafts are stable, often near the end of your stay. Follow-up afterward is usually arranged through a return visit or progress photos."
     }
+  ],
+  "images": [
+    {
+      "src": "/images/procedures/inline/hair-transplant-1.jpg",
+      "alt": "Hair restoration specialist assessing a patient in Korea",
+      "credit": "fahri tokcan"
+    },
+    {
+      "src": "/images/procedures/inline/hair-transplant-2.jpg",
+      "alt": "Follicular hair transplant procedure at a Korean clinic",
+      "credit": "Dr. Haror's  Wellness"
+    },
+    {
+      "src": "/images/procedures/inline/hair-transplant-3.jpg",
+      "alt": "Fuller hairline after a hair transplant in Korea",
+      "credit": "Andrea Piacquadio"
+    }
   ]
 }

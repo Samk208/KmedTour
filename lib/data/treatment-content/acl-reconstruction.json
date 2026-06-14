@@ -30,5 +30,22 @@
       "q": "When can I return to sport after ACL reconstruction?",
       "a": "Return to pivoting sports is gradual and usually considered only after many months, not weeks. Rehabilitation progresses through stages, regaining motion and strength, then balance and agility, then sport-specific drills, before any return to competition. The timing depends on meeting strength and control targets and on agreement from the surgeon or your home physiotherapist. Returning too early raises the risk of re-injury, so milestones matter more than dates."
     }
+  ],
+  "images": [
+    {
+      "src": "/images/procedures/inline/acl-reconstruction-1.jpg",
+      "alt": "Orthopedic surgeon assessing a knee before ACL reconstruction in Korea",
+      "credit": "Tima Miroshnichenko"
+    },
+    {
+      "src": "/images/procedures/inline/acl-reconstruction-2.jpg",
+      "alt": "Arthroscopic ACL reconstruction in a Korean operating room",
+      "credit": "Anna Shvets"
+    },
+    {
+      "src": "/images/procedures/inline/acl-reconstruction-3.jpg",
+      "alt": "Knee rehabilitation and physical therapy after ACL reconstruction",
+      "credit": "www.kaboompics.com"
+    }
   ]
 }

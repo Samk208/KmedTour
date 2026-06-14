@@ -30,5 +30,22 @@
       "q": "How long until I can walk normally after surgery?",
       "a": "Most patients stand and take guided steps with a frame within the first day, then progress to walking and stairs during the stay. Comfortable everyday walking usually returns over several weeks as swelling settles and strength builds, with full recovery taking a few months. Consistent physiotherapy at home is the main driver of steady progress, so following your plan closely matters."
     }
+  ],
+  "images": [
+    {
+      "src": "/images/procedures/inline/knee-replacement-1.jpg",
+      "alt": "Orthopedic surgeon reviewing a knee X-ray before replacement in Korea",
+      "credit": "Tima Miroshnichenko"
+    },
+    {
+      "src": "/images/procedures/inline/knee-replacement-2.jpg",
+      "alt": "Total knee replacement surgery in a Korean operating room",
+      "credit": "Stéf -b."
+    },
+    {
+      "src": "/images/procedures/inline/knee-replacement-3.jpg",
+      "alt": "Rehabilitation and mobility after knee replacement in Korea",
+      "credit": "Juan Manuel Montejano Lopez"
+    }
   ]
 }

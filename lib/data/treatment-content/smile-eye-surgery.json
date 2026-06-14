@@ -30,5 +30,22 @@
       "q": "How soon will my vision be clear?",
       "a": "Many people notice clearer vision over the first day, with some haze that sharpens gradually as the cornea settles. Mild light sensitivity or watering early on is normal. Vision often continues to refine over the following weeks. A next-day check during your stay confirms healing is on track before you travel home."
     }
+  ],
+  "images": [
+    {
+      "src": "/images/procedures/inline/smile-eye-surgery-1.jpg",
+      "alt": "Ophthalmologist assessing a patient before SMILE eye surgery in Korea",
+      "credit": "AI25.Studio  Studio"
+    },
+    {
+      "src": "/images/procedures/inline/smile-eye-surgery-2.jpg",
+      "alt": "SMILE minimally invasive laser vision correction in Korea",
+      "credit": "Souvik Bhowmik"
+    },
+    {
+      "src": "/images/procedures/inline/smile-eye-surgery-3.jpg",
+      "alt": "Clear vision after SMILE eye surgery in Korea",
+      "credit": "Maksim Goncharenok"
+    }
   ]
 }
