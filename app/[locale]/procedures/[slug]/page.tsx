@@ -109,7 +109,8 @@ function buildMetadata(proc: Treatment): Metadata {
   }
 }
 
-function ProcedureJsonLd(proc: Treatment, hospitals: Clinic[]) {
+function ProcedureJsonLd(proc: Treatment, hospitals: Clinic[], entities?: { name: string; url: string }[]) {
+  const about = (entities ?? []).map((e) => ({ '@type': 'Thing', name: e.name, sameAs: e.url }))
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'MedicalProcedure',
@@ -117,6 +118,7 @@ function ProcedureJsonLd(proc: Treatment, hospitals: Clinic[]) {
     procedureType: proc.category,
     estimatedCost: proc.priceRange,
     howPerformed: proc.shortDescription,
+    ...(about.length > 0 ? { about, mentions: about } : {}),
     provider: hospitals.slice(0, 5).map((h) => ({
       '@type': 'Hospital',
       name: h.name,
@@ -393,7 +395,7 @@ export default async function EnhancedProcedurePage({ params }: { params: Promis
       <MedicalDisclaimer context={treatment.title} />
 
       {/* Schema Markup */}
-      {ProcedureJsonLd(treatment, hospitals)}
+      {ProcedureJsonLd(treatment, hospitals, richContent?.entities)}
       {BreadcrumbJsonLd(treatment)}
       {FAQPageJsonLd(faqs)}
     </div>

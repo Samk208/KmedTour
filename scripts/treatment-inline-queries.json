@@ -146,5 +146,46 @@
     { "q": "facial plastic surgeon jaw consultation patient", "alt": "Plastic surgeon planning V-line contouring with a patient in Korea" },
     { "q": "facial contouring surgery operating room", "alt": "V-line facial contouring surgery at a Korean clinic" },
     { "q": "woman defined jawline beauty face", "alt": "Refined facial contour after V-line surgery in Korea" }
+  ],
+
+  "botox-injections": [
+    { "q": "doctor consulting female patient skincare clinic", "alt": "Doctor consulting a patient about Botox injections at a skin clinic in Seoul, Korea" },
+    { "q": "dermatologist injecting botox forehead patient", "alt": "Dermatologist administering Botox injections to a patient's face at a Korean aesthetic clinic" },
+    { "q": "woman smooth clear skin face after facial treatment", "alt": "Woman with smooth, refreshed skin after Botox treatment in Korea" }
+  ],
+  "chemical-peel": [
+    { "q": "dermatologist consultation patient skin examination clinic", "alt": "Dermatologist assessing a patient's skin before a chemical peel at a Seoul clinic in South Korea" },
+    { "q": "facial chemical peel treatment skincare clinic", "alt": "Chemical peel solution being applied during a skin-resurfacing treatment in South Korea" },
+    { "q": "woman clear glowing healthy skin face", "alt": "Smooth, even-toned skin after chemical peel recovery from a Korea dermatology clinic" }
+  ],
+  "laser-skin-resurfacing": [
+    { "q": "dermatologist consulting patient skin treatment modern clinic", "alt": "Dermatology consultation for laser skin resurfacing at a clinic in Seoul, Korea" },
+    { "q": "patient receiving fractional laser facial treatment protective eyewear", "alt": "Fractional CO2 laser skin resurfacing procedure being performed in a Korean dermatology clinic" },
+    { "q": "smooth clear glowing facial skin healthy complexion", "alt": "Clear, refreshed skin texture after laser resurfacing recovery in Korea" }
+  ],
+  "skin-whitening": [
+    { "q": "dermatologist examining patient facial pigmentation skin analysis clinic", "alt": "Dermatologist analyzing a patient's skin pigmentation during a brightening consultation at a Seoul clinic in Korea" },
+    { "q": "clinician laser toning treatment patient face dermatology clinic", "alt": "Supervised laser toning skin brightening procedure being performed at a Gangnam dermatology clinic in Korea" },
+    { "q": "person clear even healthy skin tone mirror", "alt": "Patient with clearer, more even skin tone after dermatologist-supervised brightening treatment in Korea" }
+  ],
+  "teeth-whitening": [
+    { "q": "patient consultation dentist examining teeth dental clinic", "alt": "Dental consultation and tooth shade assessment before teeth whitening at a clinic in Korea" },
+    { "q": "dentist applying whitening gel LED light teeth", "alt": "In-office light-activated teeth whitening procedure with protective gum barrier at a Seoul dental clinic" },
+    { "q": "person smiling bright white teeth", "alt": "Patient with a brighter smile after professional teeth whitening in Korea" }
+  ],
+  "full-mouth-reconstruction": [
+    { "q": "dentist reviewing 3D dental scan treatment plan patient clinic", "alt": "Full mouth reconstruction consultation and digital planning at a dental clinic in Korea" },
+    { "q": "dental implant surgery guided equipment clinic", "alt": "Dental implant placement during full mouth reconstruction in Korea" },
+    { "q": "person restored healthy white smile", "alt": "Restored smile result after full mouth reconstruction in Korea" }
+  ],
+  "corneal-transplant": [
+    { "q": "ophthalmologist examining patient eye slit lamp consultation", "alt": "Corneal transplant consultation and corneal imaging at a Korean eye clinic" },
+    { "q": "eye surgeon microsurgery operating microscope", "alt": "Keratoplasty corneal transplant surgery under a microscope in South Korea" },
+    { "q": "person clear bright eyes looking ahead", "alt": "Restored clear vision after corneal transplant recovery in Korea" }
+  ],
+  "lasek-eye-surgery": [
+    { "q": "ophthalmologist eye examination corneal topography patient clinic", "alt": "Pre-operative eye exam and corneal screening before LASEK eye surgery in Korea" },
+    { "q": "patient excimer laser vision correction surgery operating suite", "alt": "Excimer laser reshaping the cornea during LASEK surface vision correction in Seoul" },
+    { "q": "person smiling outdoors clear vision no glasses", "alt": "Patient enjoying clear vision after LASEK eye surgery recovery in Korea" }
   ]
 }

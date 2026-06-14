@@ -74,13 +74,19 @@
 }
 
 .content-list {
-  margin: 1rem 0 1rem 1.5rem;
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin: 1rem 0 1rem 0.5rem;
   color: var(--deep-grey);
 }
 
 .content-list li {
   margin-bottom: 0.5rem;
   line-height: 1.6;
+}
+
+.content-list li::marker {
+  color: var(--kmed-teal);
 }
 
 .content-link {
@@ -114,6 +120,64 @@ code {
   font-family: 'Courier New', monospace;
   font-size: 0.9em;
   color: var(--kmed-navy);
+}
+
+/* Callout / answer boxes (factory formula: Quick Answer, Key Takeaway, Pro Tip, Warning) */
+.quick-answer-box {
+  background: #f3e5f5;
+  border: 1px solid #ce93d8;
+  border-left: 5px solid #9c27b0;
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.callout-box {
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+  border-left: 5px solid;
+}
+
+.callout-takeaway {
+  background: #e3f2fd;
+  border-color: #1565c0;
+}
+
+.callout-tip {
+  background: #e8f5e9;
+  border-color: #2e7d32;
+}
+
+.callout-warning {
+  background: #fff3e0;
+  border-color: #ef6c00;
+}
+
+.callout-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.8rem;
+  margin-bottom: 0.6rem;
+  color: var(--kmed-navy);
+}
+
+.quick-answer-box .callout-title {
+  color: #6a1b9a;
+}
+
+.callout-box p,
+.quick-answer-box p {
+  color: var(--deep-grey);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.content-table th[scope='row'] {
+  background: var(--soft-grey);
+  color: var(--kmed-navy);
+  font-weight: 600;
 }
 
 .hospital-stats {

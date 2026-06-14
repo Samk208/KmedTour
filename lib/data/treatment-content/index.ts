@@ -4,14 +4,18 @@ import type { TreatmentRichContent } from '@/components/treatments/treatment-ric
 import aclReconstruction from './acl-reconstruction.json'
 import acneScarRemoval from './acne-scar-removal.json'
 import angioplasty from './angioplasty.json'
+import botoxInjections from './botox-injections.json'
 import breastAugmentation from './breast-augmentation.json'
 import cataractSurgery from './cataract-surgery.json'
+import chemicalPeel from './chemical-peel.json'
+import cornealTransplant from './corneal-transplant.json'
 import coronaryArteryBypassGrafting from './coronary-artery-bypass-grafting.json'
 import cyberknife from './cyberknife.json'
 import dentalImplants from './dental-implants.json'
 import doubleEyelidSurgery from './double-eyelid-surgery.json'
 import eggFreezing from './egg-freezing.json'
 import facelift from './facelift.json'
+import fullMouthReconstruction from './full-mouth-reconstruction.json'
 import gastricBypass from './gastric-bypass.json'
 import gastricSleeve from './gastric-sleeve.json'
 import hairTransplant from './hair-transplant.json'
@@ -20,6 +24,8 @@ import hipReplacement from './hip-replacement.json'
 import hysterectomy from './hysterectomy.json'
 import ivfTreatment from './ivf-treatment.json'
 import kneeReplacement from './knee-replacement.json'
+import lasekEyeSurgery from './lasek-eye-surgery.json'
+import laserSkinResurfacing from './laser-skin-resurfacing.json'
 import lasikEyeSurgery from './lasik-eye-surgery.json'
 import liposuction from './liposuction.json'
 import livingDonorKidneyTransplant from './living-donor-kidney-transplant.json'
@@ -27,22 +33,28 @@ import livingDonorLiverTransplant from './living-donor-liver-transplant.json'
 import porcelainVeneers from './porcelain-veneers.json'
 import protonTherapy from './proton-therapy.json'
 import rhinoplasty from './rhinoplasty.json'
+import skinWhitening from './skin-whitening.json'
 import smileEyeSurgery from './smile-eye-surgery.json'
 import spinalFusion from './spinal-fusion.json'
+import teethWhitening from './teeth-whitening.json'
 import vLineSurgery from './v-line-surgery.json'
 
 export const treatmentContent: Record<string, TreatmentRichContent> = {
   "acl-reconstruction": aclReconstruction as TreatmentRichContent,
   "acne-scar-removal": acneScarRemoval as TreatmentRichContent,
   "angioplasty": angioplasty as TreatmentRichContent,
+  "botox-injections": botoxInjections as TreatmentRichContent,
   "breast-augmentation": breastAugmentation as TreatmentRichContent,
   "cataract-surgery": cataractSurgery as TreatmentRichContent,
+  "chemical-peel": chemicalPeel as TreatmentRichContent,
+  "corneal-transplant": cornealTransplant as TreatmentRichContent,
   "coronary-artery-bypass-grafting": coronaryArteryBypassGrafting as TreatmentRichContent,
   "cyberknife": cyberknife as TreatmentRichContent,
   "dental-implants": dentalImplants as TreatmentRichContent,
   "double-eyelid-surgery": doubleEyelidSurgery as TreatmentRichContent,
   "egg-freezing": eggFreezing as TreatmentRichContent,
   "facelift": facelift as TreatmentRichContent,
+  "full-mouth-reconstruction": fullMouthReconstruction as TreatmentRichContent,
   "gastric-bypass": gastricBypass as TreatmentRichContent,
   "gastric-sleeve": gastricSleeve as TreatmentRichContent,
   "hair-transplant": hairTransplant as TreatmentRichContent,
@@ -51,6 +63,8 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "hysterectomy": hysterectomy as TreatmentRichContent,
   "ivf-treatment": ivfTreatment as TreatmentRichContent,
   "knee-replacement": kneeReplacement as TreatmentRichContent,
+  "lasek-eye-surgery": lasekEyeSurgery as TreatmentRichContent,
+  "laser-skin-resurfacing": laserSkinResurfacing as TreatmentRichContent,
   "lasik-eye-surgery": lasikEyeSurgery as TreatmentRichContent,
   "liposuction": liposuction as TreatmentRichContent,
   "living-donor-kidney-transplant": livingDonorKidneyTransplant as TreatmentRichContent,
@@ -58,7 +72,9 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "porcelain-veneers": porcelainVeneers as TreatmentRichContent,
   "proton-therapy": protonTherapy as TreatmentRichContent,
   "rhinoplasty": rhinoplasty as TreatmentRichContent,
+  "skin-whitening": skinWhitening as TreatmentRichContent,
   "smile-eye-surgery": smileEyeSurgery as TreatmentRichContent,
   "spinal-fusion": spinalFusion as TreatmentRichContent,
+  "teeth-whitening": teethWhitening as TreatmentRichContent,
   "v-line-surgery": vLineSurgery as TreatmentRichContent,
 }
