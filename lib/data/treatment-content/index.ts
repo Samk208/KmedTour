@@ -6,6 +6,8 @@ import acneScarRemoval from './acne-scar-removal.json'
 import angioplasty from './angioplasty.json'
 import botoxInjections from './botox-injections.json'
 import breastAugmentation from './breast-augmentation.json'
+import cancerScreening from './cancer-screening.json'
+import cardiacScreening from './cardiac-screening.json'
 import cataractSurgery from './cataract-surgery.json'
 import chemicalPeel from './chemical-peel.json'
 import cornealTransplant from './corneal-transplant.json'
@@ -15,9 +17,11 @@ import dentalImplants from './dental-implants.json'
 import doubleEyelidSurgery from './double-eyelid-surgery.json'
 import eggFreezing from './egg-freezing.json'
 import facelift from './facelift.json'
+import fertilityConsultation from './fertility-consultation.json'
 import fullMouthReconstruction from './full-mouth-reconstruction.json'
 import gastricBypass from './gastric-bypass.json'
 import gastricSleeve from './gastric-sleeve.json'
+import gynecomastiaSurgery from './gynecomastia-surgery.json'
 import hairTransplant from './hair-transplant.json'
 import healthScreening from './health-screening.json'
 import hipReplacement from './hip-replacement.json'
@@ -27,17 +31,21 @@ import kneeReplacement from './knee-replacement.json'
 import lasekEyeSurgery from './lasek-eye-surgery.json'
 import laserSkinResurfacing from './laser-skin-resurfacing.json'
 import lasikEyeSurgery from './lasik-eye-surgery.json'
+import limbLengthening from './limb-lengthening.json'
 import liposuction from './liposuction.json'
 import livingDonorKidneyTransplant from './living-donor-kidney-transplant.json'
 import livingDonorLiverTransplant from './living-donor-liver-transplant.json'
 import porcelainVeneers from './porcelain-veneers.json'
+import prenatalCare from './prenatal-care.json'
 import protonTherapy from './proton-therapy.json'
 import rhinoplasty from './rhinoplasty.json'
 import skinWhitening from './skin-whitening.json'
 import smileEyeSurgery from './smile-eye-surgery.json'
 import spinalFusion from './spinal-fusion.json'
 import teethWhitening from './teeth-whitening.json'
+import tummyTuck from './tummy-tuck.json'
 import vLineSurgery from './v-line-surgery.json'
+import varicoseVeinTreatment from './varicose-vein-treatment.json'
 
 export const treatmentContent: Record<string, TreatmentRichContent> = {
   "acl-reconstruction": aclReconstruction as TreatmentRichContent,
@@ -45,6 +53,8 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "angioplasty": angioplasty as TreatmentRichContent,
   "botox-injections": botoxInjections as TreatmentRichContent,
   "breast-augmentation": breastAugmentation as TreatmentRichContent,
+  "cancer-screening": cancerScreening as TreatmentRichContent,
+  "cardiac-screening": cardiacScreening as TreatmentRichContent,
   "cataract-surgery": cataractSurgery as TreatmentRichContent,
   "chemical-peel": chemicalPeel as TreatmentRichContent,
   "corneal-transplant": cornealTransplant as TreatmentRichContent,
@@ -54,9 +64,11 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "double-eyelid-surgery": doubleEyelidSurgery as TreatmentRichContent,
   "egg-freezing": eggFreezing as TreatmentRichContent,
   "facelift": facelift as TreatmentRichContent,
+  "fertility-consultation": fertilityConsultation as TreatmentRichContent,
   "full-mouth-reconstruction": fullMouthReconstruction as TreatmentRichContent,
   "gastric-bypass": gastricBypass as TreatmentRichContent,
   "gastric-sleeve": gastricSleeve as TreatmentRichContent,
+  "gynecomastia-surgery": gynecomastiaSurgery as TreatmentRichContent,
   "hair-transplant": hairTransplant as TreatmentRichContent,
   "health-screening": healthScreening as TreatmentRichContent,
   "hip-replacement": hipReplacement as TreatmentRichContent,
@@ -66,15 +78,19 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "lasek-eye-surgery": lasekEyeSurgery as TreatmentRichContent,
   "laser-skin-resurfacing": laserSkinResurfacing as TreatmentRichContent,
   "lasik-eye-surgery": lasikEyeSurgery as TreatmentRichContent,
+  "limb-lengthening": limbLengthening as TreatmentRichContent,
   "liposuction": liposuction as TreatmentRichContent,
   "living-donor-kidney-transplant": livingDonorKidneyTransplant as TreatmentRichContent,
   "living-donor-liver-transplant": livingDonorLiverTransplant as TreatmentRichContent,
   "porcelain-veneers": porcelainVeneers as TreatmentRichContent,
+  "prenatal-care": prenatalCare as TreatmentRichContent,
   "proton-therapy": protonTherapy as TreatmentRichContent,
   "rhinoplasty": rhinoplasty as TreatmentRichContent,
   "skin-whitening": skinWhitening as TreatmentRichContent,
   "smile-eye-surgery": smileEyeSurgery as TreatmentRichContent,
   "spinal-fusion": spinalFusion as TreatmentRichContent,
   "teeth-whitening": teethWhitening as TreatmentRichContent,
+  "tummy-tuck": tummyTuck as TreatmentRichContent,
   "v-line-surgery": vLineSurgery as TreatmentRichContent,
+  "varicose-vein-treatment": varicoseVeinTreatment as TreatmentRichContent,
 }
