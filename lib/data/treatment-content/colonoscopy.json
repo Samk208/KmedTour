@@ -1,0 +1,167 @@
+{
+  "slug": "colonoscopy",
+  "shortDescription": "Sedated colonoscopy in Korea with same-session gastroscopy, on-the-spot polyp removal, and same-day results at Seoul screening centers.",
+  "quickAnswer": [
+    "A colonoscopy is an outpatient exam where an endoscope inspects the entire colon and rectum, usually under **sedation**, to detect and remove polyps before they can become cancer.",
+    "In Korea it is typically bundled into a **comprehensive health screening**, often with a same-session gastroscopy, and **polyps are removed on the spot** when found.",
+    "Self-pay cost in Seoul is roughly **$300–$600** within a screening package, with polypectomy and pathology adding to the total.",
+    "Plan a **short stay** in Korea: most results are same-day, but if polyps are removed you should not fly for at least **7 days**."
+  ],
+  "keyFacts": [
+    {
+      "label": "Procedure time",
+      "value": "About 20–45 minutes for the scope itself; longer if polyps are removed"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "Conscious sedation (commonly propofol and/or a benzodiazepine); unsedated is an option"
+    },
+    {
+      "label": "Hospital stay",
+      "value": "Outpatient — 2–3 hours of monitored recovery, no overnight admission"
+    },
+    {
+      "label": "Recommended stay in Korea",
+      "value": "3–5 days; longer if polyps are removed (no flying for ~7 days)"
+    },
+    {
+      "label": "Recovery",
+      "value": "Same-day rest; normal activity within 24 hours, longer if a polyp was removed"
+    },
+    {
+      "label": "Typical cost in Korea",
+      "value": "Approximately $300–$600 within a screening package; polypectomy and pathology extra"
+    }
+  ],
+  "sections": {
+    "overview": "A **colonoscopy** is an outpatient endoscopic exam in which a thin, flexible camera is passed through the rectum to inspect the lining of the entire large intestine.\n\nIt is the reference test for **colorectal cancer screening** because it both detects and removes **polyps** — small growths that can develop into cancer over years.\n\nIn Korea, colonoscopy is most often performed as part of a **comprehensive health screening** rather than a standalone visit.\n\nBecause sedation is used, many Korean centers perform a **gastroscopy** (upper-GI scope) in the same sedation session, covering stomach and colon in one appointment.\n\nKorea runs colorectal cancer screening at a national scale, and screening centers in Seoul handle high volumes with standardized, English-supported workflows for international visitors.",
+    "candidacy": "Colonoscopy is generally considered for adults due for **colorectal cancer screening** or those with specific symptoms or risk factors. You may be a candidate if you:\n\n- Are at or above the usual screening age and have never been screened, or are due for a repeat exam\n- Have a **family history** of colorectal cancer or polyps\n- Have symptoms such as rectal bleeding, persistent change in bowel habits, unexplained anemia, or abdominal pain\n- Had a positive stool-based test and need a confirmatory exam\n- Have a personal history of polyps requiring **surveillance**\n\nA Korean physician reviews your history, medications (especially blood thinners), and prep tolerance before booking.\n\nSedation suitability is assessed separately; people with certain heart, lung, or anesthesia-risk conditions may need extra evaluation or an unsedated approach. Pregnancy and acute severe colitis are typical reasons to defer.",
+    "procedure_steps": "The day before, you follow a **low-residue diet** and drink a **bowel-prep** laxative solution so the colon is clean enough to see clearly. Clear results depend heavily on good prep.\n\nOn the day, you arrive fasting. Staff place an IV and administer **sedation** so you are relaxed and usually unaware during the exam.\n\nThe endoscopist advances the colonoscope to the **cecum** (the start of the colon) and slowly withdraws, examining the lining.\n\n- Suspicious **polyps** are typically removed during the same exam (**polypectomy**)\n- Removed tissue is sent for **pathology**\n- If a gastroscopy is bundled, it is done in the same sedation\n\nThe scope portion usually takes **20–45 minutes**. You then move to a recovery area until the sedation wears off.",
+    "recovery_timeline": "Recovery from a screening colonoscopy is quick because it is **outpatient** and minimally invasive.\n\n- **First 2–3 hours:** monitored recovery at the center as sedation wears off; mild bloating or gas is normal\n- **Same day:** light meals, plenty of fluids, no driving or important decisions because of sedation\n- **Within 24 hours:** most people return to normal activity\n- **After polypectomy:** avoid heavy lifting, alcohol, and blood thinners as advised, and watch for bleeding for several days\n\nBecause of a small bleeding and perforation risk after polyp removal, you should **not fly for at least 7 days** if a polyp was taken.\n\nReport heavy rectal bleeding, severe abdominal pain, or fever promptly. **Pathology results** for removed tissue may take a few days, and your physician will advise on any future surveillance interval.",
+    "cost_breakdown": "Pricing in Korea is usually structured around **screening packages** rather than a single line item, which keeps colonoscopy affordable for self-pay international patients.\n\nA comprehensive checkup that includes colonoscopy commonly runs about **$300–$600**.\n\nAdding a **gastroscopy** in the same sedation session is often only a modest extra charge because one sedation covers both scopes.\n\n- **Polypectomy** adds a procedure fee that can scale with the number of polyps removed\n- **Pathology** of removed tissue is billed separately\n- **Sedation** may be included or itemized depending on the center\n\nQuotes typically cover the consultation, the scope, facility, and basic monitoring. Always confirm in writing what is and is not included, since the final bill depends on findings — a clean screening costs less than one where polyps are found and removed.",
+    "why_korea": "Korea has built one of the world's most developed **gastrointestinal screening** ecosystems, driven by a strong domestic **health check-up culture** centered on Seoul and the **Gangnam** district.\n\nHigh-volume screening centers run **standardized**, protocol-driven endoscopy with quality measures such as bowel-prep adequacy, cecal intubation, withdrawal time, and adenoma detection.\n\nThe national colorectal cancer screening framework means colonoscopy is routine, widely practiced, and supported by experienced endoscopists.\n\nFor international visitors, leading Seoul centers offer **English-language coordination**, efficient **same-day** workflows, and the convenience of pairing colonoscopy with a broader checkup.\n\nKorea's medical system is regulated by the **Ministry of Food and Drug Safety**, and the government promotes inbound care through **Medical Korea** and the **Korea Health Industry Development Institute**, giving patients a transparent, well-organized pathway."
+  },
+  "costTable": [
+    {
+      "item": "Comprehensive screening package including colonoscopy",
+      "cost": "$300–$600"
+    },
+    {
+      "item": "Add gastroscopy in same sedation session",
+      "cost": "$150–$300"
+    },
+    {
+      "item": "Polypectomy (polyp removal)",
+      "cost": "$200–$500+"
+    },
+    {
+      "item": "Pathology of removed tissue",
+      "cost": "$50–$200"
+    },
+    {
+      "item": "Sedation (if itemized separately)",
+      "cost": "$50–$150"
+    }
+  ],
+  "keyTakeaways": [
+    "Korea performs colonoscopy as a high-volume, standardized screening procedure, usually under sedation and often paired with a same-session gastroscopy.",
+    "Self-pay cost in Seoul is moderate — roughly $300–$600 within a checkup package — with polypectomy and pathology billed on top when polyps are found.",
+    "Plan a short stay and add buffer days: results are often same-day, but if polyps are removed you should not fly for at least a week."
+  ],
+  "entities": [
+    {
+      "name": "Colonoscopy",
+      "url": "https://en.wikipedia.org/wiki/Colonoscopy"
+    },
+    {
+      "name": "Colorectal cancer",
+      "url": "https://en.wikipedia.org/wiki/Colorectal_cancer"
+    },
+    {
+      "name": "Polypectomy",
+      "url": "https://en.wikipedia.org/wiki/Polypectomy"
+    },
+    {
+      "name": "Propofol",
+      "url": "https://en.wikipedia.org/wiki/Propofol"
+    },
+    {
+      "name": "Cancer screening",
+      "url": "https://en.wikipedia.org/wiki/Cancer_screening"
+    },
+    {
+      "name": "Ministry of Food and Drug Safety",
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_Food_and_Drug_Safety"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is the colonoscopy painful, and will I be asleep?",
+      "a": "Most patients in Korea have the exam under conscious sedation (often propofol and/or a benzodiazepine), so they are relaxed and usually unaware during the procedure. You may feel mild bloating or gas afterward. Unsedated colonoscopy is also available if you prefer to avoid sedation, though it can be less comfortable."
+    },
+    {
+      "q": "Can I get a gastroscopy at the same time?",
+      "a": "Yes. Because colonoscopy already requires sedation, many Korean centers perform an upper-GI gastroscopy in the same sedation session. This covers both your stomach and colon in one appointment, with a single recovery period and often only a modest additional cost."
+    },
+    {
+      "q": "What happens if a polyp is found during my colonoscopy?",
+      "a": "Polyps are typically removed during the same exam (polypectomy) and sent for pathology. This adds to the cost and means you should avoid heavy activity, alcohol, and blood thinners as advised, and should not fly for at least 7 days because of a small bleeding and perforation risk."
+    },
+    {
+      "q": "How many days should I stay in Korea for a colonoscopy?",
+      "a": "A typical visit is about 3–5 days, allowing time for consultation, bowel prep, the procedure, and same-day results. If polyps are removed, plan to stay longer, since air travel should be delayed for at least a week after polypectomy."
+    },
+    {
+      "q": "How much does a colonoscopy cost in Korea for foreigners?",
+      "a": "Self-pay colonoscopy in Seoul commonly falls within a comprehensive screening package costing roughly $300–$600. Polyp removal, pathology, and sometimes sedation are billed separately, so a screening where polyps are found and removed costs more than a clean exam. Always confirm inclusions in writing."
+    }
+  ],
+  "callouts": [
+    {
+      "type": "tip",
+      "title": "Bundle the upper scope",
+      "text": "Because colonoscopy already requires sedation, adding a gastroscopy in the same session is efficient and low-cost — you cover stomach and colon in one appointment with a single sedation and one recovery."
+    },
+    {
+      "type": "warning",
+      "title": "Do not fly too soon after polyp removal",
+      "text": "If a polyp is removed, avoid air travel for at least 7 days due to the small risk of delayed bleeding or perforation. Build buffer days into your itinerary in case polypectomy is needed."
+    },
+    {
+      "type": "note",
+      "title": "Good prep drives good results",
+      "text": "The accuracy of a colonoscopy depends on how clean your colon is. Follow the bowel-prep and diet instructions exactly the day before, or the exam may need to be repeated."
+    }
+  ],
+  "references": [
+    {
+      "label": "The current capacity and quality of colonoscopy in Korea (NCBI)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6361025/"
+    },
+    {
+      "label": "Intentions to undergo colonoscopy under Korea's National Cancer Screening Program (NCBI)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7904222/"
+    },
+    {
+      "label": "Korean Guidelines for Postpolypectomy Colonoscopy Surveillance (NCBI)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3363120/"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/procedures/inline/colonoscopy-1.jpg",
+      "alt": "International patient consulting a doctor before a colonoscopy screening in Korea",
+      "credit": "Chokniti Khongchum"
+    },
+    {
+      "src": "/images/procedures/inline/colonoscopy-2.jpg",
+      "alt": "Endoscopist performing a colonoscopy procedure in a Korea screening center",
+      "credit": "Anna Shvets"
+    },
+    {
+      "src": "/images/procedures/inline/colonoscopy-3.jpg",
+      "alt": "Patient resting in a monitored recovery area after a sedated colonoscopy in Korea",
+      "credit": "Engin Akyurt"
+    }
+  ]
+}

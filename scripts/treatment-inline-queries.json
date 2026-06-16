@@ -629,5 +629,117 @@
       "q": "person walking healthy legs recovery outdoors",
       "alt": "Patient recovering and walking after same-day varicose vein treatment in Korea"
     }
+  ],
+  "prostate-surgery": [
+    {
+      "q": "doctor consulting older male patient hospital office",
+      "alt": "Urology consultation before prostate surgery at a hospital in Seoul, South Korea"
+    },
+    {
+      "q": "robotic surgery operating room surgeons monitor",
+      "alt": "Robotic da Vinci prostate surgery performed in an operating room in South Korea"
+    },
+    {
+      "q": "senior man walking recovery hospital window light",
+      "alt": "Patient recovering after prostate surgery during a follow-up stay in Korea"
+    }
+  ],
+  "kidney-stone-removal": [
+    {
+      "q": "doctor consulting patient urology clinic Korea",
+      "alt": "Urologist consulting an international patient about kidney stone removal at a Seoul clinic in Korea"
+    },
+    {
+      "q": "surgeon laser surgery operating room",
+      "alt": "Surgeon performing minimally invasive ureteroscopy with laser lithotripsy for kidney stone removal in Korea"
+    },
+    {
+      "q": "patient recovering drinking water hospital recovery",
+      "alt": "Patient recovering and hydrating after kidney stone removal at a hospital in Korea"
+    }
+  ],
+  "colonoscopy": [
+    {
+      "q": "doctor consulting patient clinic Korea",
+      "alt": "International patient consulting a doctor before a colonoscopy screening in Korea"
+    },
+    {
+      "q": "endoscopy procedure colonoscopy hospital",
+      "alt": "Endoscopist performing a colonoscopy procedure in a Korea screening center"
+    },
+    {
+      "q": "patient resting recovery hospital bed",
+      "alt": "Patient resting in a monitored recovery area after a sedated colonoscopy in Korea"
+    }
+  ],
+  "endoscopy": [
+    {
+      "q": "doctor consulting patient clinic Korea",
+      "alt": "Patient consulting a physician before an upper GI endoscopy in South Korea"
+    },
+    {
+      "q": "endoscopy procedure gastroscopy hospital",
+      "alt": "Upper GI endoscopy (gastroscopy) being performed in a Korean clinic"
+    },
+    {
+      "q": "patient resting recovery hospital bed",
+      "alt": "Patient recovering after a sedated endoscopy in Korea"
+    }
+  ],
+  "hemorrhoid-surgery": [
+    {
+      "q": "doctor consultation patient clinic desk discussion",
+      "alt": "Colorectal surgeon consulting with a patient before hemorrhoid surgery at a clinic in Korea"
+    },
+    {
+      "q": "surgeons operating room surgery hospital Korea",
+      "alt": "Surgical team performing a minimally invasive hemorrhoid procedure in a Korean hospital operating room"
+    },
+    {
+      "q": "patient recovering hospital bed nurse care recovery",
+      "alt": "Patient recovering after hemorrhoid surgery with nursing care during the stay in Korea"
+    }
+  ],
+  "sinus-surgery": [
+    {
+      "q": "doctor ENT consultation patient nose examination clinic",
+      "alt": "ENT specialist consultation before endoscopic sinus surgery at a clinic in Korea"
+    },
+    {
+      "q": "surgeon endoscope nose surgery operating room",
+      "alt": "Surgeon performing endoscopic sinus surgery (FESS) through the nostrils in a Korea operating room"
+    },
+    {
+      "q": "person breathing freely outdoors recovered healthy",
+      "alt": "Patient breathing freely during recovery after sinus surgery in Korea"
+    }
+  ],
+  "tonsillectomy": [
+    {
+      "q": "ENT doctor examining patient throat consultation clinic",
+      "alt": "ENT specialist consultation before a tonsillectomy at a Korean hospital in Seoul"
+    },
+    {
+      "q": "operating room surgical team general anesthesia procedure",
+      "alt": "Surgical team performing a tonsillectomy under general anesthesia in South Korea"
+    },
+    {
+      "q": "person resting recovery drinking water at home soft food",
+      "alt": "Patient resting and staying hydrated during tonsillectomy recovery after surgery in Korea"
+    }
+  ],
+  "septoplasty": [
+    {
+      "q": "doctor consultation patient nose examination clinic",
+      "alt": "ENT specialist consulting an international patient about septoplasty for a deviated septum in South Korea"
+    },
+    {
+      "q": "surgeon operating room nasal surgery team",
+      "alt": "Surgical team performing septoplasty nasal surgery in a Seoul operating room in South Korea"
+    },
+    {
+      "q": "woman breathing easily relaxed recovery healthy",
+      "alt": "Patient breathing comfortably during septoplasty recovery after deviated septum correction in Korea"
+    }
   ]
 }
