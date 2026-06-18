@@ -853,5 +853,117 @@
       "q": "woman recovering hospital bed smiling",
       "alt": "Patient recovering after thyroid surgery in Korea during follow-up"
     }
+  ],
+  "coronary-bypass": [
+    {
+      "q": "doctor patient cardiac consultation hospital Korea",
+      "alt": "Cardiac surgeon consulting with a patient before coronary bypass surgery at a Seoul hospital"
+    },
+    {
+      "q": "open heart surgery operating room cardiac team",
+      "alt": "Surgical team performing coronary artery bypass grafting CABG procedure in a Korean hospital operating theatre"
+    },
+    {
+      "q": "patient cardiac recovery hospital ward walking rehabilitation",
+      "alt": "International patient recovering after coronary bypass surgery in a Seoul cardiac ward, assisted by a nurse"
+    }
+  ],
+  "pacemaker-implantation": [
+    {
+      "q": "cardiologist patient consultation hospital Seoul Korea",
+      "alt": "Cardiologist reviewing pacemaker candidacy with patient at Seoul hospital Korea"
+    },
+    {
+      "q": "pacemaker implantation cardiac catheterization lab procedure",
+      "alt": "Cardiac electrophysiology team performing pacemaker implantation procedure in operating laboratory"
+    },
+    {
+      "q": "patient recovery cardiac ward hospital discharge Korea",
+      "alt": "Patient recovering in cardiac ward after pacemaker implantation in South Korea"
+    }
+  ],
+  "pulmonary-treatment": [
+    {
+      "q": "pulmonologist doctor patient consultation hospital Seoul Korea",
+      "alt": "Pulmonologist consulting international patient about lung disease treatment options at Korean hospital"
+    },
+    {
+      "q": "thoracic surgery operating room VATS minimally invasive lung",
+      "alt": "Minimally invasive VATS lung surgery procedure being performed at Korean tertiary hospital"
+    },
+    {
+      "q": "patient recovering hospital breathing exercises pulmonary rehabilitation",
+      "alt": "Patient doing pulmonary rehabilitation breathing exercises during recovery after lung surgery in Korea"
+    }
+  ],
+  "neonatal-care": [
+    {
+      "q": "neonatal care nurse newborn incubator hospital Korea",
+      "alt": "Neonatal care nurse attending to premature infant in NICU incubator at Korean tertiary hospital"
+    },
+    {
+      "q": "NICU neonatal intensive care unit premature baby medical equipment",
+      "alt": "Neonatal intensive care unit with premature infant and monitoring equipment — Korea neonatal care"
+    },
+    {
+      "q": "newborn baby family hospital recovery care consultation",
+      "alt": "Family with newborn receiving post-NICU recovery care consultation at Korean hospital"
+    }
+  ],
+  "laparoscopic-gastric-cancer": [
+    {
+      "q": "oncology surgical consultation patient doctor hospital Korea",
+      "alt": "Surgeon consulting with patient before gastric cancer surgery in Korean hospital"
+    },
+    {
+      "q": "laparoscopic minimally invasive abdominal surgery operating room",
+      "alt": "Laparoscopic gastrectomy procedure in operating theater for gastric cancer treatment"
+    },
+    {
+      "q": "cancer patient recovery hospital bed post surgery care",
+      "alt": "Patient recovering after gastric cancer surgery in Korean medical center"
+    }
+  ],
+  "endoscopic-submucosal-dissection": [
+    {
+      "q": "gastroenterology doctor consultation patient hospital Korea",
+      "alt": "Gastroenterologist consulting with patient before endoscopic procedure in Korean hospital"
+    },
+    {
+      "q": "endoscopy procedure medical equipment gastroscopy",
+      "alt": "Endoscopic submucosal dissection procedure equipment and endoscope in operating room"
+    },
+    {
+      "q": "patient recovery hospital bed after gastroscopy procedure",
+      "alt": "Patient resting in hospital room recovering after endoscopic procedure in Korea"
+    }
+  ],
+  "radiofrequency-ablation-liver": [
+    {
+      "q": "oncology consultation doctor patient liver cancer Korea hospital",
+      "alt": "Oncologist consulting with a patient about liver cancer treatment options at a Korean medical center"
+    },
+    {
+      "q": "interventional radiology procedure ultrasound guided needle liver",
+      "alt": "Interventional radiologist performing image-guided radiofrequency ablation of a liver tumor"
+    },
+    {
+      "q": "patient recovery hospital bed abdominal procedure minimally invasive",
+      "alt": "Patient resting and recovering after minimally invasive liver tumor ablation treatment in Korea"
+    }
+  ],
+  "laparoscopic-colorectal-surgery": [
+    {
+      "q": "surgeon patient consultation colorectal cancer Korea hospital",
+      "alt": "Korean hospital surgeon consulting patient about colorectal cancer surgery options"
+    },
+    {
+      "q": "laparoscopic colorectal surgery operating room minimally invasive",
+      "alt": "Laparoscopic colorectal cancer surgery in South Korea operating room with surgical team"
+    },
+    {
+      "q": "patient recovery walking hospital corridor after abdominal surgery",
+      "alt": "Patient recovering and mobilizing in hospital corridor after laparoscopic colorectal surgery in Korea"
+    }
   ]
 }

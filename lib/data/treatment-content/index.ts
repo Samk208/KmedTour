@@ -15,11 +15,13 @@ import chemicalPeel from './chemical-peel.json'
 import colonoscopy from './colonoscopy.json'
 import cornealTransplant from './corneal-transplant.json'
 import coronaryArteryBypassGrafting from './coronary-artery-bypass-grafting.json'
+import coronaryBypass from './coronary-bypass.json'
 import cuppingTherapy from './cupping-therapy.json'
 import cyberknife from './cyberknife.json'
 import dentalImplants from './dental-implants.json'
 import doubleEyelidSurgery from './double-eyelid-surgery.json'
 import eggFreezing from './egg-freezing.json'
+import endoscopicSubmucosalDissection from './endoscopic-submucosal-dissection.json'
 import endoscopy from './endoscopy.json'
 import facelift from './facelift.json'
 import fertilityConsultation from './fertility-consultation.json'
@@ -37,6 +39,8 @@ import ivfTreatment from './ivf-treatment.json'
 import kidneyStoneRemoval from './kidney-stone-removal.json'
 import kneeReplacement from './knee-replacement.json'
 import koreanMedicine from './korean-medicine.json'
+import laparoscopicColorectalSurgery from './laparoscopic-colorectal-surgery.json'
+import laparoscopicGastricCancer from './laparoscopic-gastric-cancer.json'
 import lasekEyeSurgery from './lasek-eye-surgery.json'
 import laserSkinResurfacing from './laser-skin-resurfacing.json'
 import lasikEyeSurgery from './lasik-eye-surgery.json'
@@ -45,11 +49,15 @@ import liposuction from './liposuction.json'
 import livingDonorKidneyTransplant from './living-donor-kidney-transplant.json'
 import livingDonorLiverTransplant from './living-donor-liver-transplant.json'
 import lungCancerSurgery from './lung-cancer-surgery.json'
+import neonatalCare from './neonatal-care.json'
+import pacemakerImplantation from './pacemaker-implantation.json'
 import pediatricSurgery from './pediatric-surgery.json'
 import porcelainVeneers from './porcelain-veneers.json'
 import prenatalCare from './prenatal-care.json'
 import prostateSurgery from './prostate-surgery.json'
 import protonTherapy from './proton-therapy.json'
+import pulmonaryTreatment from './pulmonary-treatment.json'
+import radiofrequencyAblationLiver from './radiofrequency-ablation-liver.json'
 import rhinoplasty from './rhinoplasty.json'
 import septoplasty from './septoplasty.json'
 import sinusSurgery from './sinus-surgery.json'
@@ -78,11 +86,13 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "colonoscopy": colonoscopy as TreatmentRichContent,
   "corneal-transplant": cornealTransplant as TreatmentRichContent,
   "coronary-artery-bypass-grafting": coronaryArteryBypassGrafting as TreatmentRichContent,
+  "coronary-bypass": coronaryBypass as TreatmentRichContent,
   "cupping-therapy": cuppingTherapy as TreatmentRichContent,
   "cyberknife": cyberknife as TreatmentRichContent,
   "dental-implants": dentalImplants as TreatmentRichContent,
   "double-eyelid-surgery": doubleEyelidSurgery as TreatmentRichContent,
   "egg-freezing": eggFreezing as TreatmentRichContent,
+  "endoscopic-submucosal-dissection": endoscopicSubmucosalDissection as TreatmentRichContent,
   "endoscopy": endoscopy as TreatmentRichContent,
   "facelift": facelift as TreatmentRichContent,
   "fertility-consultation": fertilityConsultation as TreatmentRichContent,
@@ -100,6 +110,8 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "kidney-stone-removal": kidneyStoneRemoval as TreatmentRichContent,
   "knee-replacement": kneeReplacement as TreatmentRichContent,
   "korean-medicine": koreanMedicine as TreatmentRichContent,
+  "laparoscopic-colorectal-surgery": laparoscopicColorectalSurgery as TreatmentRichContent,
+  "laparoscopic-gastric-cancer": laparoscopicGastricCancer as TreatmentRichContent,
   "lasek-eye-surgery": lasekEyeSurgery as TreatmentRichContent,
   "laser-skin-resurfacing": laserSkinResurfacing as TreatmentRichContent,
   "lasik-eye-surgery": lasikEyeSurgery as TreatmentRichContent,
@@ -108,11 +120,15 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "living-donor-kidney-transplant": livingDonorKidneyTransplant as TreatmentRichContent,
   "living-donor-liver-transplant": livingDonorLiverTransplant as TreatmentRichContent,
   "lung-cancer-surgery": lungCancerSurgery as TreatmentRichContent,
+  "neonatal-care": neonatalCare as TreatmentRichContent,
+  "pacemaker-implantation": pacemakerImplantation as TreatmentRichContent,
   "pediatric-surgery": pediatricSurgery as TreatmentRichContent,
   "porcelain-veneers": porcelainVeneers as TreatmentRichContent,
   "prenatal-care": prenatalCare as TreatmentRichContent,
   "prostate-surgery": prostateSurgery as TreatmentRichContent,
   "proton-therapy": protonTherapy as TreatmentRichContent,
+  "pulmonary-treatment": pulmonaryTreatment as TreatmentRichContent,
+  "radiofrequency-ablation-liver": radiofrequencyAblationLiver as TreatmentRichContent,
   "rhinoplasty": rhinoplasty as TreatmentRichContent,
   "septoplasty": septoplasty as TreatmentRichContent,
   "sinus-surgery": sinusSurgery as TreatmentRichContent,
