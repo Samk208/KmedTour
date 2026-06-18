@@ -741,5 +741,117 @@
       "q": "woman breathing easily relaxed recovery healthy",
       "alt": "Patient breathing comfortably during septoplasty recovery after deviated septum correction in Korea"
     }
+  ],
+  "acupuncture": [
+    {
+      "q": "acupuncture consultation Korean medicine doctor patient clinic",
+      "alt": "Patient consulting a licensed Korean Medicine doctor before acupuncture treatment in South Korea"
+    },
+    {
+      "q": "acupuncture needles back treatment session",
+      "alt": "Acupuncture needles placed during a traditional Korean Medicine session in Korea"
+    },
+    {
+      "q": "person relaxing resting wellness recovery calm",
+      "alt": "Patient resting and relaxing after an acupuncture session in Korea with no downtime"
+    }
+  ],
+  "brain-tumor-surgery": [
+    {
+      "q": "doctor consultation patient brain MRI scan review",
+      "alt": "Neurosurgeon reviewing a brain MRI with a patient before brain tumor surgery in Korea"
+    },
+    {
+      "q": "neurosurgery operating room surgical team microscope",
+      "alt": "Surgical team performing brain tumor surgery in a Korean operating room"
+    },
+    {
+      "q": "patient recovery hospital bed nurse care",
+      "alt": "Patient recovering and monitored after brain tumor surgery in a Korea hospital"
+    }
+  ],
+  "cupping-therapy": [
+    {
+      "q": "patient consultation Korean medicine doctor clinic",
+      "alt": "Patient consulting a licensed Korean medicine doctor before cupping therapy in Korea"
+    },
+    {
+      "q": "cupping therapy suction cups on back",
+      "alt": "Cupping therapy suction cups placed on a patient's back during a buhang session in Korea"
+    },
+    {
+      "q": "relaxed person back massage recovery wellness",
+      "alt": "Patient resting after cupping therapy in Korea with temporary circular skin marks fading during recovery"
+    }
+  ],
+  "herbal-medicine": [
+    {
+      "q": "traditional korean medicine doctor consultation patient pulse",
+      "alt": "Licensed Korean medicine doctor taking a patient's pulse during a herbal medicine consultation in Korea"
+    },
+    {
+      "q": "korean herbal medicine dried herbs pharmacy",
+      "alt": "Dried medicinal herbs used to prepare custom hanyak herbal formulas at a Korean medicine clinic"
+    },
+    {
+      "q": "herbal medicine tea decoction cup drinking wellness",
+      "alt": "Korean herbal decoction prepared as part of a tailored treatment course for recovery and wellness"
+    }
+  ],
+  "korean-medicine": [
+    {
+      "q": "doctor patient consultation traditional medicine clinic",
+      "alt": "Korean medicine practitioner consulting with a patient before hanbang treatment in Korea"
+    },
+    {
+      "q": "acupuncture needles back treatment therapy",
+      "alt": "Acupuncture session during traditional Korean medicine treatment in Seoul, Korea"
+    },
+    {
+      "q": "woman relaxing wellness recovery spa calm",
+      "alt": "Patient resting and recovering after a non-surgical Korean medicine session in Korea"
+    }
+  ],
+  "lung-cancer-surgery": [
+    {
+      "q": "doctor consultation patient chest x-ray lung scan clinic",
+      "alt": "Thoracic surgeon reviewing a chest scan with a patient before lung cancer surgery in Korea"
+    },
+    {
+      "q": "surgeons operating room minimally invasive surgery monitors",
+      "alt": "Surgical team performing minimally invasive lung cancer surgery in a Korean hospital operating room"
+    },
+    {
+      "q": "patient recovering hospital bed walking nurse recovery",
+      "alt": "Patient recovering and walking with a nurse after lung cancer surgery in Korea"
+    }
+  ],
+  "pediatric-surgery": [
+    {
+      "q": "doctor consulting parent and child in hospital",
+      "alt": "Pediatric surgeon consulting with a parent and child before surgery in Korea"
+    },
+    {
+      "q": "surgeons performing laparoscopic surgery operating room",
+      "alt": "Surgical team performing minimally invasive pediatric surgery in a Korea hospital operating room"
+    },
+    {
+      "q": "child recovering smiling hospital bed parent",
+      "alt": "Child recovering with a parent after pediatric surgery in Korea"
+    }
+  ],
+  "thyroid-surgery": [
+    {
+      "q": "doctor consulting patient neck examination clinic",
+      "alt": "Surgeon examining a patient's neck during a thyroid surgery consultation in Korea"
+    },
+    {
+      "q": "surgeons operating room surgery team",
+      "alt": "Surgical team performing a thyroidectomy procedure in a Korean hospital operating room"
+    },
+    {
+      "q": "woman recovering hospital bed smiling",
+      "alt": "Patient recovering after thyroid surgery in Korea during follow-up"
+    }
   ]
 }

@@ -3,8 +3,10 @@ import type { TreatmentRichContent } from '@/components/treatments/treatment-ric
 
 import aclReconstruction from './acl-reconstruction.json'
 import acneScarRemoval from './acne-scar-removal.json'
+import acupuncture from './acupuncture.json'
 import angioplasty from './angioplasty.json'
 import botoxInjections from './botox-injections.json'
+import brainTumorSurgery from './brain-tumor-surgery.json'
 import breastAugmentation from './breast-augmentation.json'
 import cancerScreening from './cancer-screening.json'
 import cardiacScreening from './cardiac-screening.json'
@@ -13,6 +15,7 @@ import chemicalPeel from './chemical-peel.json'
 import colonoscopy from './colonoscopy.json'
 import cornealTransplant from './corneal-transplant.json'
 import coronaryArteryBypassGrafting from './coronary-artery-bypass-grafting.json'
+import cuppingTherapy from './cupping-therapy.json'
 import cyberknife from './cyberknife.json'
 import dentalImplants from './dental-implants.json'
 import doubleEyelidSurgery from './double-eyelid-surgery.json'
@@ -27,11 +30,13 @@ import gynecomastiaSurgery from './gynecomastia-surgery.json'
 import hairTransplant from './hair-transplant.json'
 import healthScreening from './health-screening.json'
 import hemorrhoidSurgery from './hemorrhoid-surgery.json'
+import herbalMedicine from './herbal-medicine.json'
 import hipReplacement from './hip-replacement.json'
 import hysterectomy from './hysterectomy.json'
 import ivfTreatment from './ivf-treatment.json'
 import kidneyStoneRemoval from './kidney-stone-removal.json'
 import kneeReplacement from './knee-replacement.json'
+import koreanMedicine from './korean-medicine.json'
 import lasekEyeSurgery from './lasek-eye-surgery.json'
 import laserSkinResurfacing from './laser-skin-resurfacing.json'
 import lasikEyeSurgery from './lasik-eye-surgery.json'
@@ -39,6 +44,8 @@ import limbLengthening from './limb-lengthening.json'
 import liposuction from './liposuction.json'
 import livingDonorKidneyTransplant from './living-donor-kidney-transplant.json'
 import livingDonorLiverTransplant from './living-donor-liver-transplant.json'
+import lungCancerSurgery from './lung-cancer-surgery.json'
+import pediatricSurgery from './pediatric-surgery.json'
 import porcelainVeneers from './porcelain-veneers.json'
 import prenatalCare from './prenatal-care.json'
 import prostateSurgery from './prostate-surgery.json'
@@ -50,6 +57,7 @@ import skinWhitening from './skin-whitening.json'
 import smileEyeSurgery from './smile-eye-surgery.json'
 import spinalFusion from './spinal-fusion.json'
 import teethWhitening from './teeth-whitening.json'
+import thyroidSurgery from './thyroid-surgery.json'
 import tonsillectomy from './tonsillectomy.json'
 import tummyTuck from './tummy-tuck.json'
 import vLineSurgery from './v-line-surgery.json'
@@ -58,8 +66,10 @@ import varicoseVeinTreatment from './varicose-vein-treatment.json'
 export const treatmentContent: Record<string, TreatmentRichContent> = {
   "acl-reconstruction": aclReconstruction as TreatmentRichContent,
   "acne-scar-removal": acneScarRemoval as TreatmentRichContent,
+  "acupuncture": acupuncture as TreatmentRichContent,
   "angioplasty": angioplasty as TreatmentRichContent,
   "botox-injections": botoxInjections as TreatmentRichContent,
+  "brain-tumor-surgery": brainTumorSurgery as TreatmentRichContent,
   "breast-augmentation": breastAugmentation as TreatmentRichContent,
   "cancer-screening": cancerScreening as TreatmentRichContent,
   "cardiac-screening": cardiacScreening as TreatmentRichContent,
@@ -68,6 +78,7 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "colonoscopy": colonoscopy as TreatmentRichContent,
   "corneal-transplant": cornealTransplant as TreatmentRichContent,
   "coronary-artery-bypass-grafting": coronaryArteryBypassGrafting as TreatmentRichContent,
+  "cupping-therapy": cuppingTherapy as TreatmentRichContent,
   "cyberknife": cyberknife as TreatmentRichContent,
   "dental-implants": dentalImplants as TreatmentRichContent,
   "double-eyelid-surgery": doubleEyelidSurgery as TreatmentRichContent,
@@ -82,11 +93,13 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "hair-transplant": hairTransplant as TreatmentRichContent,
   "health-screening": healthScreening as TreatmentRichContent,
   "hemorrhoid-surgery": hemorrhoidSurgery as TreatmentRichContent,
+  "herbal-medicine": herbalMedicine as TreatmentRichContent,
   "hip-replacement": hipReplacement as TreatmentRichContent,
   "hysterectomy": hysterectomy as TreatmentRichContent,
   "ivf-treatment": ivfTreatment as TreatmentRichContent,
   "kidney-stone-removal": kidneyStoneRemoval as TreatmentRichContent,
   "knee-replacement": kneeReplacement as TreatmentRichContent,
+  "korean-medicine": koreanMedicine as TreatmentRichContent,
   "lasek-eye-surgery": lasekEyeSurgery as TreatmentRichContent,
   "laser-skin-resurfacing": laserSkinResurfacing as TreatmentRichContent,
   "lasik-eye-surgery": lasikEyeSurgery as TreatmentRichContent,
@@ -94,6 +107,8 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "liposuction": liposuction as TreatmentRichContent,
   "living-donor-kidney-transplant": livingDonorKidneyTransplant as TreatmentRichContent,
   "living-donor-liver-transplant": livingDonorLiverTransplant as TreatmentRichContent,
+  "lung-cancer-surgery": lungCancerSurgery as TreatmentRichContent,
+  "pediatric-surgery": pediatricSurgery as TreatmentRichContent,
   "porcelain-veneers": porcelainVeneers as TreatmentRichContent,
   "prenatal-care": prenatalCare as TreatmentRichContent,
   "prostate-surgery": prostateSurgery as TreatmentRichContent,
@@ -105,6 +120,7 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "smile-eye-surgery": smileEyeSurgery as TreatmentRichContent,
   "spinal-fusion": spinalFusion as TreatmentRichContent,
   "teeth-whitening": teethWhitening as TreatmentRichContent,
+  "thyroid-surgery": thyroidSurgery as TreatmentRichContent,
   "tonsillectomy": tonsillectomy as TreatmentRichContent,
   "tummy-tuck": tummyTuck as TreatmentRichContent,
   "v-line-surgery": vLineSurgery as TreatmentRichContent,

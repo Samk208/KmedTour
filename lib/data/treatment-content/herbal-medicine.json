@@ -1,0 +1,146 @@
+{
+  "slug": "herbal-medicine",
+  "shortDescription": "A traditional Korean medicine (hanyak) consultation in Korea where a licensed doctor diagnoses your constitution and prescribes custom herbal formulas.",
+  "quickAnswer": [
+    "A **herbal medicine consultation** is a non-surgical visit to a Korean Medicine (한방, *hanbang*) clinic where a licensed doctor diagnoses you and prescribes a **custom herbal formula (한약, *hanyak*)**.",
+    "Diagnosis blends interview, tongue inspection, and **pulse palpation (*maekjin*)**, often guided by **Sasang constitutional medicine** — a uniquely Korean four-type framework.",
+    "It is **outpatient with no anesthesia and no downtime**; the consultation itself takes roughly 20–40 minutes.",
+    "A first consultation typically runs **about $25–$40**, with a one-month custom herbal supply commonly **$80–$250+** depending on ingredients."
+  ],
+  "keyFacts": [
+    {
+      "label": "Procedure time",
+      "value": "~20–40 min consultation"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "None"
+    },
+    {
+      "label": "Hospital stay",
+      "value": "None (outpatient)"
+    },
+    {
+      "label": "Recommended stay in Korea",
+      "value": "1 day for the visit; a few days if combining with acupuncture or follow-up"
+    },
+    {
+      "label": "Recovery",
+      "value": "No downtime"
+    },
+    {
+      "label": "Typical cost in Korea",
+      "value": "~$25–$40 consultation; ~$80–$250+ for a one-month herbal course"
+    }
+  ],
+  "sections": {
+    "overview": "A herbal medicine consultation is the gateway to **Korean traditional medicine (한의학)**, often called *hanbang*. Rather than treating a single symptom in isolation, the doctor assesses your whole pattern — energy, digestion, sleep, temperature, and emotional state — and aims to restore balance.\n\nThe centerpiece is **hanyak (한약)**: a herbal formula blended specifically for you from medicinal plants, roots, and other natural ingredients. Formulas come as **decoctions (liquid), pills, or powders**, with precise dosing instructions.\n\nKorean clinics frequently apply **Sasang constitutional medicine**, a homegrown framework that sorts people into four constitutional types and tailors the prescription to that type.\n\nThis is a **non-surgical, outpatient** service. It is widely used in Korea for fatigue, digestive complaints, women's health, post-illness recovery, and general wellness, and it is often combined with acupuncture, moxibustion, or cupping in the same clinic.",
+    "candidacy": "A herbal consultation suits travelers seeking a **constitutional, whole-body approach** rather than treatment of an acute emergency. Common reasons people seek it include:\n\n- **Persistent fatigue or low energy**\n- **Digestive issues** and appetite changes\n- **Women's health** concerns and menstrual irregularity\n- **Sleep, stress, and recovery** after illness\n- **General wellness and prevention**\n\nIt is **not a substitute for emergency or acute surgical care**. If you take prescription medication, are pregnant or breastfeeding, or manage a chronic condition such as liver, kidney, or heart disease, tell the doctor — herbs can interact with medication and some are not suitable in pregnancy.\n\nBring a list of your current medications and supplements. A good clinic will screen for interactions before prescribing and may decline or adjust a formula based on your history.",
+    "procedure_steps": "The visit is a structured diagnosis-and-prescription consultation, not a procedure.\n\n- **Intake interview.** The doctor asks in depth about symptoms, medical history, lifestyle, diet, sleep, and emotional state.\n- **Observation.** Inspection of the face, complexion, and **tongue** to read internal patterns.\n- **Pulse palpation (*maekjin*, 맥진).** The doctor feels the pulse at the wrist to assess how *qi* is flowing and where imbalances may sit; some clinics also use abdominal palpation.\n- **Constitutional typing.** Where Sasang medicine is used, you are matched to one of four types (*taeyang, taeeum, soyang, soeum*) to guide the formula.\n- **Prescription.** A **custom herbal formula** is composed for your pattern, dispensed as a decoction, pills, or powder with dosing instructions.\n\nMany clinics keep ready-made decoctions and ointments on hand, so travelers can sometimes leave the same day with medicine. Custom-brewed formulas may take longer to prepare or be shipped.",
+    "recovery_timeline": "There is **no downtime** — you can resume normal activity immediately after the consultation. The meaningful timeline is the **herbal course** itself.\n\n- **First days.** You begin the prescribed regimen, typically taking the decoction or pills on a fixed daily schedule with the doctor's dietary guidance.\n- **One-month course.** Herbal formulas are commonly prescribed in **roughly one-month supplies**, since constitutional change is gradual rather than immediate.\n- **Follow-up.** A review visit lets the doctor adjust the formula based on your response; chronic patterns may need more than one course.\n\nKeep decoction pouches refrigerated where advised and follow storage instructions. Stop and contact the clinic if you notice an unexpected reaction. Because results build slowly and vary by person, treat any single course as one step rather than a guaranteed outcome.",
+    "cost_breakdown": "Foreign visitors **pay out of pocket**, as travelers are not covered by Korea's national health insurance. Even so, prices are generally modest by international standards.\n\n- **Initial consultation:** about **$25–$40**.\n- **Custom herbal formula (one month):** commonly **$80–$250+**, driven mainly by the ingredients chosen.\n- **Add-on therapies** such as acupuncture or moxibustion are usually billed separately.\n\nMore expensive formulas reflect rarer or higher-grade medicinal herbs, not necessarily a \"better\" result. Ask for an itemized estimate before brewing begins, confirm whether the price includes shipping if the medicine is prepared after your visit, and check the clinic's policy on follow-up consultations.\n\nCosts vary by clinic, location, and the complexity of your prescription, so treat all figures as approximate ranges.",
+    "why_korea": "Korea offers a distinctive setting for herbal medicine because **Korean traditional medicine is a fully licensed, regulated profession** practiced alongside Western medicine. Doctors of Korean Medicine complete formal university training in both classical and modern medical sciences.\n\nKorea also brings **Sasang constitutional medicine**, a uniquely Korean framework with no direct equivalent in other East Asian traditions, giving the consultation a constitution-specific focus.\n\nClinics are concentrated in **Seoul**, including the **Gangnam** district, with many catering to international patients. The herbal-medicine experience pairs naturally with acupuncture and other *hanbang* therapies under one roof.\n\nKorea actively promotes medical and wellness travel through national bodies, and consultation and herbal costs are typically **lower than comparable private care in Western countries**, making it an accessible option for visitors who want an authentic, professionally delivered traditional consultation."
+  },
+  "costTable": [
+    {
+      "item": "Initial herbal medicine consultation",
+      "cost": "$25–$40"
+    },
+    {
+      "item": "Custom herbal formula (decoction/pills, ~1 month)",
+      "cost": "$80–$250+"
+    },
+    {
+      "item": "Follow-up consultation",
+      "cost": "$20–$40"
+    },
+    {
+      "item": "Add-on acupuncture or moxibustion (per session)",
+      "cost": "$30–$70"
+    }
+  ],
+  "callouts": [
+    {
+      "type": "tip",
+      "title": "Bring your medication list",
+      "text": "Herbal formulas can interact with prescription drugs and some are unsuitable in pregnancy. Give the doctor a full list of your current medicines and supplements so the formula can be screened and adjusted safely."
+    }
+  ],
+  "keyTakeaways": [
+    "A herbal medicine consultation in Korea is a non-surgical, no-downtime outpatient visit that ends in a custom *hanyak* formula tailored to your constitution.",
+    "Diagnosis blends interview, tongue inspection, and pulse palpation, often guided by Korea's own Sasang constitutional medicine.",
+    "Expect roughly $25–$40 for the consultation and $80–$250+ for a one-month herbal course, paid out of pocket as a foreign visitor.",
+    "Results build gradually over a multi-week course; disclose medications and health conditions so the doctor can prescribe safely."
+  ],
+  "entities": [
+    {
+      "name": "Traditional Korean medicine",
+      "url": "https://en.wikipedia.org/wiki/Traditional_Korean_medicine"
+    },
+    {
+      "name": "Sasang typology",
+      "url": "https://en.wikipedia.org/wiki/Sasang_typology"
+    },
+    {
+      "name": "Herbal medicine",
+      "url": "https://en.wikipedia.org/wiki/Herbal_medicine"
+    },
+    {
+      "name": "Decoction",
+      "url": "https://en.wikipedia.org/wiki/Decoction"
+    },
+    {
+      "name": "Moxibustion",
+      "url": "https://en.wikipedia.org/wiki/Moxibustion"
+    },
+    {
+      "name": "Gangnam District",
+      "url": "https://en.wikipedia.org/wiki/Gangnam_District"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is a herbal medicine consultation a medical procedure or surgery?",
+      "a": "No. It is a non-surgical, outpatient consultation with a licensed Doctor of Korean Medicine. There is no anesthesia, no hospital stay, and no downtime — you leave with a diagnosis and, usually, a custom herbal prescription."
+    },
+    {
+      "q": "How much does it cost for a foreign visitor in Korea?",
+      "a": "Roughly $25–$40 for the initial consultation and about $80–$250 or more for a one-month custom herbal formula, depending on the ingredients. Foreign travelers pay out of pocket because they are not covered by Korea's national health insurance. Treat these as approximate ranges."
+    },
+    {
+      "q": "What is Sasang constitutional medicine?",
+      "a": "It is a uniquely Korean framework that classifies people into four constitutional types based on body structure, appearance, and temperament, then tailors the herbal prescription to that type. Many Korean clinics use it to personalize hanyak formulas."
+    },
+    {
+      "q": "How long do I need to stay in Korea for this?",
+      "a": "The consultation itself fits within a single day. If you want to combine it with acupuncture, a follow-up review, or have a custom formula brewed and shipped, a stay of a few days is more comfortable."
+    },
+    {
+      "q": "Are Korean herbal formulas safe with my regular medication?",
+      "a": "Herbs can interact with prescription drugs, and some are not suitable during pregnancy or with certain conditions. Always give the doctor a complete list of your medicines and health history so the formula can be screened and adjusted, and stop and contact the clinic if you notice any unexpected reaction."
+    }
+  ],
+  "references": [
+    {
+      "label": "Traditional Korean medicine — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Traditional_Korean_medicine"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/procedures/inline/herbal-medicine-1.jpg",
+      "alt": "Licensed Korean medicine doctor taking a patient's pulse during a herbal medicine consultation in Korea",
+      "credit": "RDNE Stock project"
+    },
+    {
+      "src": "/images/procedures/inline/herbal-medicine-2.jpg",
+      "alt": "Dried medicinal herbs used to prepare custom hanyak herbal formulas at a Korean medicine clinic",
+      "credit": "Yan Krukau"
+    },
+    {
+      "src": "/images/procedures/inline/herbal-medicine-3.jpg",
+      "alt": "Korean herbal decoction prepared as part of a tailored treatment course for recovery and wellness",
+      "credit": "Elton Sipp"
+    }
+  ]
+}
