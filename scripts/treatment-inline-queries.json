@@ -965,5 +965,117 @@
       "q": "patient recovery walking hospital corridor after abdominal surgery",
       "alt": "Patient recovering and mobilizing in hospital corridor after laparoscopic colorectal surgery in Korea"
     }
+  ],
+  "sphincter-saving-procedure": [
+    {
+      "q": "patient consultation surgeon colorectal cancer Korea clinic",
+      "alt": "Patient consultation with colorectal surgeon before sphincter-saving procedure at Korean hospital"
+    },
+    {
+      "q": "laparoscopic robotic rectal surgery operating room Korea",
+      "alt": "Minimally invasive robotic sphincter-saving surgery being performed in Korean operating theatre"
+    },
+    {
+      "q": "patient recovery walk hospital corridor Korea post surgery",
+      "alt": "Rectal cancer patient in early post-operative recovery walking in Korean hospital corridor after sphincter-saving procedure"
+    }
+  ],
+  "sentinel-lymph-node-biopsy": [
+    {
+      "q": "doctor patient consultation oncology Korea hospital",
+      "alt": "Oncologist consulting with international patient before sentinel lymph node biopsy procedure in Seoul Korea"
+    },
+    {
+      "q": "surgeon operating theatre minimally invasive lymph node biopsy",
+      "alt": "Surgeon performing sentinel lymph node biopsy procedure under anaesthesia in South Korean operating theatre"
+    },
+    {
+      "q": "patient recovery hospital bed arm rest post surgery",
+      "alt": "Patient resting in recovery ward after sentinel lymph node biopsy surgery at Korean oncology hospital"
+    }
+  ],
+  "breast-conserving-surgery": [
+    {
+      "q": "doctor patient consultation breast cancer treatment clinic South Korea",
+      "alt": "Oncology consultation for breast conserving surgery at a South Korean cancer center"
+    },
+    {
+      "q": "surgeon operating room breast surgery hospital",
+      "alt": "Surgical team performing breast conserving surgery lumpectomy in a Korean hospital operating room"
+    },
+    {
+      "q": "woman recovery hospital room after breast surgery Korea",
+      "alt": "Patient resting in recovery ward after breast conserving surgery in South Korea"
+    }
+  ],
+  "endoscopic-thyroidectomy": [
+    {
+      "q": "doctor patient consultation thyroid neck Korea hospital",
+      "alt": "Doctor consulting with a patient about endoscopic thyroidectomy options at a Korean hospital"
+    },
+    {
+      "q": "surgeon operating endoscopic minimally invasive surgery operating room",
+      "alt": "Surgical team performing endoscopic thyroidectomy in a South Korean operating room"
+    },
+    {
+      "q": "patient recovery hospital bed resting post surgery",
+      "alt": "Patient recovering after endoscopic thyroidectomy in a Seoul hospital room"
+    }
+  ],
+  "robotic-thyroidectomy": [
+    {
+      "q": "doctor patient consultation thyroid neck Korea hospital",
+      "alt": "Doctor consulting patient about robotic thyroidectomy procedure at a Korean hospital"
+    },
+    {
+      "q": "robotic surgery operating room da vinci system",
+      "alt": "Surgical team operating da Vinci robotic system during a robotic thyroidectomy procedure in South Korea"
+    },
+    {
+      "q": "patient recovery hospital room after surgery Korea",
+      "alt": "Patient resting in recovery room after scarless robotic thyroidectomy at a Seoul medical center"
+    }
+  ],
+  "bronchoplasty": [
+    {
+      "q": "doctor patient consultation lung breathing medical Korea clinic",
+      "alt": "Thoracic surgeon consulting with international patient about bronchoplasty procedure in Korean hospital"
+    },
+    {
+      "q": "minimally invasive thoracic surgery VATS operating room",
+      "alt": "VATS bronchoplasty sleeve resection procedure in South Korean thoracic surgery theatre"
+    },
+    {
+      "q": "patient recovery breathing exercises hospital ward post surgery",
+      "alt": "Patient performing incentive spirometry breathing exercises during bronchoplasty recovery in Korean hospital"
+    }
+  ],
+  "stereotactic-radiation-therapy": [
+    {
+      "q": "doctor patient consultation oncology hospital Korea",
+      "alt": "Radiation oncologist consulting with a patient before stereotactic radiation therapy in a Korean hospital"
+    },
+    {
+      "q": "linear accelerator radiotherapy machine treatment room",
+      "alt": "CyberKnife or TrueBeam linear accelerator in a stereotactic radiation therapy treatment room"
+    },
+    {
+      "q": "patient resting recovery after radiation therapy clinic",
+      "alt": "Patient resting comfortably in a clinic lounge after completing an SBRT session in South Korea"
+    }
+  ],
+  "heart-transplant": [
+    {
+      "q": "patient consultation cardiac surgeon hospital Seoul Korea",
+      "alt": "Patient and cardiac surgeon consultation before heart transplant in Seoul Korea hospital"
+    },
+    {
+      "q": "open heart surgery operating room cardiopulmonary bypass surgical team",
+      "alt": "Surgical team performing heart transplant with cardiopulmonary bypass in Korean hospital"
+    },
+    {
+      "q": "heart transplant patient recovery hospital ward rehabilitation Korea",
+      "alt": "Heart transplant patient in post-operative recovery ward during cardiac rehabilitation in South Korea"
+    }
   ]
 }

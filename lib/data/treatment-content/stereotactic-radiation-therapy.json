@@ -1,0 +1,166 @@
+{
+  "slug": "stereotactic-radiation-therapy",
+  "shortDescription": "Pinpoint, high-dose radiation for tumors in South Korea — fewer sessions, no surgery, world-class oncology centers.",
+  "quickAnswer": [
+    "Stereotactic radiation therapy (SRS/SBRT) delivers **precisely targeted, high-dose radiation** to tumors in 1–5 sessions, sparing surrounding healthy tissue.",
+    "Korean hospitals have used CyberKnife and TrueBeam STX systems since the mid-2000s; SBRT was approved under Korea's National Health Insurance as early as 2003.",
+    "**Typical cost in Korea: $8,000–$25,000 USD** depending on tumor site, number of fractions, and planning complexity — significantly below US or Japanese pricing.",
+    "Most patients need **7–14 days total in Korea**, covering simulation, planning, treatment sessions, and a post-treatment imaging review."
+  ],
+  "keyFacts": [
+    {
+      "label": "Procedure time",
+      "value": "30–90 min per session (1–5 sessions total)"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "None for most adults; light sedation for pediatric or anxious patients"
+    },
+    {
+      "label": "Hospital stay",
+      "value": "Outpatient — no overnight stay in the vast majority of cases"
+    },
+    {
+      "label": "Recommended stay in Korea",
+      "value": "7–14 days (simulation + planning + treatment + follow-up scan)"
+    },
+    {
+      "label": "Recovery",
+      "value": "Most patients resume normal activity within 1–3 days after each session"
+    },
+    {
+      "label": "Typical cost in Korea",
+      "value": "$8,000–$25,000 USD depending on site and fractions"
+    }
+  ],
+  "sections": {
+    "overview": "Stereotactic radiation therapy is an umbrella term for two closely related techniques: **Stereotactic Radiosurgery (SRS)**, used mainly for brain and skull-base targets, and **Stereotactic Body Radiation Therapy (SBRT)**, used for tumors in the lung, liver, spine, prostate, and other body sites.\n\nBoth techniques use multiple, precisely angled radiation beams that converge on the tumor from outside the body. The convergence delivers a lethal dose to the tumor while each individual beam passes harmlessly through surrounding normal tissue.\n\nDespite the word \"surgery,\" no incisions are involved. The procedure is non-invasive and performed on an outpatient basis.\n\n**SRS** typically treats in a single fraction. **SBRT** delivers the dose across 3–5 sessions (fractions), often on alternating days, which allows normal tissue to recover between treatments while still achieving ablative doses at the tumor.\n\nKorea's oncology centers have deployed this technology for over two decades. CyberKnife systems, TrueBeam STX linear accelerators, and Tomotherapy platforms are all in active clinical use at major institutions in Seoul and beyond.",
+    "candidacy": "Stereotactic radiation therapy is considered when surgery carries high risk, when a tumor is in a sensitive or surgically inaccessible location, or when a patient prefers a non-invasive option.\n\nCommon indications include:\n\n- **Brain metastases** (1–3 lesions, each typically under 3–4 cm)\n- **Primary brain tumors** (acoustic neuroma, meningioma, arteriovenous malformation)\n- **Early-stage or medically inoperable lung cancer** (Stage I–II, peripheral lesions)\n- **Liver tumors** including hepatocellular carcinoma and oligometastatic disease\n- **Spinal metastases** causing pain or at risk of cord compression\n- **Prostate cancer** (SBRT as definitive or salvage treatment)\n- **Oligometastatic disease** — limited metastases in kidney, adrenal, lymph nodes\n\nCandidacy depends on:\n\n- Tumor size and proximity to critical structures (optic nerves, brainstem, bowel)\n- Overall performance status and prior radiation history\n- Adequate imaging (high-resolution MRI or CT with contrast) to define the target\n- A multidisciplinary tumor board review, which is standard at accredited Korean centers\n\nPatients who have already received conventional radiation may still be candidates for stereotactic re-irradiation, though this requires careful dose review.",
+    "procedure_steps": "The treatment unfolds across three distinct phases spread over several days.\n\n**Phase 1 — Simulation and Imaging (Day 1–2)**\n\nA dedicated planning CT scan is taken with the patient in the exact treatment position. For brain targets, a custom thermoplastic mask or stereotactic head frame immobilizes the head to sub-millimeter precision. For body targets, a vacuum body cradle is molded. MRI is usually fused with the CT to delineate the tumor boundary with greater soft-tissue detail.\n\n**Phase 2 — Treatment Planning (Days 2–4)**\n\nA radiation oncologist contours the tumor (the gross tumor volume) and the surrounding critical structures that must be protected. A medical physicist then designs a beam arrangement — often 5 to 12 beams or non-coplanar arcs — to maximize dose within the target and minimize dose outside it. This planning step can take 1–3 days.\n\n**Phase 3 — Delivery Sessions (Days 4–14 depending on fractions)**\n\n- The patient is positioned in the immobilization device.\n- **Image guidance** (cone-beam CT or X-ray imaging) is performed before each fraction to verify the patient's position matches the plan.\n- The treatment machine — CyberKnife, TrueBeam STX, or similar — delivers radiation from multiple angles over 30–90 minutes.\n- The patient is awake and can communicate with the team throughout.\n- After the final session, a follow-up imaging appointment is typically scheduled 4–8 weeks later to assess response.",
+    "recovery_timeline": "Stereotactic radiation therapy causes far less collateral tissue disruption than open surgery, so recovery is generally faster and milder.\n\n**During treatment sessions:**\n\n- Patients leave the department under their own power after each session.\n- Mild fatigue is the most common side effect.\n- Brain SRS may cause temporary headache or mild nausea on the day of treatment.\n\n**Days 1–7 post-final fraction:**\n\n- Fatigue is common but usually peaks within the first week.\n- For brain targets: mild hair thinning may occur over the treatment area weeks later.\n- For lung SBRT: occasional chest wall soreness if the beam path crosses ribs.\n- For liver/prostate SBRT: mild gastrointestinal sensitivity or urinary frequency possible.\n\n**Weeks 2–6:**\n\n- Most patients return to normal daily activities within a few days.\n- Heavy exercise or physically demanding work may be restricted for 2–3 weeks depending on the site.\n- A **follow-up imaging scan** (MRI or CT, sometimes PET-CT) at 4–8 weeks is critical to assess the tumor's early response.\n\n**Months 2–6:**\n\n- Tumor may appear transiently larger on imaging before shrinking (radiation effect vs. progression — your oncologist will interpret this).\n- Some patients experience delayed radiation effects at 3–6 months, especially near the brain; these are managed with steroids if symptomatic.\n\nKorean centers typically provide a structured follow-up imaging schedule and telemedicine check-ins for international patients returning home.",
+    "cost_breakdown": "Korean pricing for stereotactic radiation therapy is significantly lower than equivalent procedures in the United States, United Kingdom, or Japan, while using comparable or identical technology platforms.\n\nCosts vary by three main drivers:\n\n1. **Tumor site and size** — brain SRS for a single small lesion is less resource-intensive than 5-fraction liver SBRT with daily CBCT.\n2. **Number of fractions** — each additional session adds equipment time and physicist review hours.\n3. **Planning complexity** — targets near the spinal cord, optic chiasm, or brainstem require more rigorous dose optimization.\n\nTypical all-in cost ranges in Korea (approximate USD, consultations and imaging included):\n\n- Brain SRS (single lesion, 1 fraction): $8,000–$14,000\n- Brain SRS (2–3 lesions): $12,000–$18,000\n- Lung or liver SBRT (3–5 fractions): $14,000–$22,000\n- Prostate SBRT (5 fractions): $12,000–$20,000\n- Spinal SBRT: $10,000–$18,000\n\nThese figures typically include initial consultation, simulation CT, MRI fusion, treatment planning, all delivery sessions, and one follow-up imaging appointment. International patient coordinators at accredited hospitals can provide itemized quotes before travel.\n\nAdditional costs to budget: accommodation in Seoul for 7–14 days, interpreter services (often included by the hospital's international center), and travel.",
+    "why_korea": "Korea's strengths in stereotactic radiation therapy reflect decades of institutional investment in radiation oncology infrastructure, research output, and structured oversight of international medical services.\n\n**Technology and clinical experience**\n\nKorea adopted CyberKnife technology in the early 2000s. By 2011, CyberKnife-based SBRT was formally reimbursed under the National Health Insurance Service, signaling regulatory recognition of its clinical value. Major centers in Seoul operate multiple high-energy linear accelerators with stereotactic capability, enabling them to schedule patients without long waiting periods.\n\n**Regulatory and accreditation framework**\n\nThe **Korea Health Industry Development Institute (KHIDI)** tracks and supports inbound medical tourism. The **KAHF (Korean Accreditation for Hospitals serving Foreign patients)** designation — visible on the Medical Korea portal — identifies facilities that meet defined standards for international patient services including multilingual coordinators, patient rights, and quality systems.\n\nThe Ministry of Food and Drug Safety (**MFDS**) regulates the import, installation, and clinical use of radiotherapy devices in Korea, ensuring all treatment machines in use meet safety standards before patient exposure.\n\n**Cost and access**\n\nWaiting times at Korean cancer centers for stereotactic radiation are generally short compared to public health systems in Europe or Canada. The combination of competitive pricing — often 40–60% below US out-of-pocket rates — and rapid access is a primary driver for international patients from the GCC, Southeast Asia, and Africa.\n\n**Seoul and Gangnam as oncology hubs**\n\nSeoul's Gangnam district and the broader Seocho corridor are home to several large general hospitals with dedicated radiation oncology departments. These institutions publish in international peer-reviewed oncology journals and participate in multinational clinical trials, reflecting active engagement with the global radiation oncology community.\n\nKorea's medical tourism support infrastructure — visa-on-arrival medical visit pathways, multilingual hospital international centers, and platforms such as **Medical Korea (medicalkorea.or.kr)** — reduces logistical friction for patients traveling for cancer treatment."
+  },
+  "costTable": [
+    {
+      "item": "Brain SRS — single lesion (1 fraction)",
+      "cost": "$8,000–$14,000"
+    },
+    {
+      "item": "Brain SRS — 2–3 lesions",
+      "cost": "$12,000–$18,000"
+    },
+    {
+      "item": "Lung or liver SBRT (3–5 fractions)",
+      "cost": "$14,000–$22,000"
+    },
+    {
+      "item": "Prostate SBRT (5 fractions)",
+      "cost": "$12,000–$20,000"
+    },
+    {
+      "item": "Spinal SBRT (3–5 fractions)",
+      "cost": "$10,000–$18,000"
+    }
+  ],
+  "callouts": [
+    {
+      "type": "tip",
+      "title": "Bring all prior imaging on disc",
+      "text": "Korean radiation oncology teams need your most recent MRI, CT, and PET-CT scans (within 4–8 weeks ideally) to plan treatment. Request DICOM files on a USB or disc from your home hospital before traveling — this avoids costly repeat scans and reduces your time in Korea."
+    }
+  ],
+  "keyTakeaways": [
+    "Stereotactic radiation therapy (SRS/SBRT) is a non-invasive, outpatient procedure delivering high-dose, precisely targeted radiation in 1–5 sessions — no surgery, no general anesthesia for most patients.",
+    "Korea has deployed CyberKnife, TrueBeam STX, and Tomotherapy platforms for over two decades, with SBRT formally recognized under the National Health Insurance Service since 2003.",
+    "All-in costs in Korea typically run $8,000–$25,000 USD depending on tumor site and fractions — generally 40–60% below comparable US out-of-pocket pricing.",
+    "Plan for 7–14 days in Korea to cover simulation, planning, treatment sessions, and an initial follow-up imaging review before departing."
+  ],
+  "entities": [
+    {
+      "name": "Stereotactic radiosurgery",
+      "url": "https://en.wikipedia.org/wiki/Stereotactic_radiosurgery"
+    },
+    {
+      "name": "Stereotactic body radiation therapy",
+      "url": "https://en.wikipedia.org/wiki/Stereotactic_body_radiation_therapy"
+    },
+    {
+      "name": "CyberKnife",
+      "url": "https://en.wikipedia.org/wiki/CyberKnife"
+    },
+    {
+      "name": "Korea Health Industry Development Institute",
+      "url": "https://en.wikipedia.org/wiki/Korea_Health_Industry_Development_Institute"
+    },
+    {
+      "name": "Ministry of Food and Drug Safety (South Korea)",
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_Food_and_Drug_Safety_(South_Korea)"
+    },
+    {
+      "name": "Medical tourism in South Korea",
+      "url": "https://en.wikipedia.org/wiki/Medical_tourism_in_South_Korea"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is stereotactic radiation therapy the same as brain surgery?",
+      "a": "No. Despite the word 'surgery' in 'stereotactic radiosurgery,' no incisions are made. The procedure is entirely non-invasive: radiation beams converge on the tumor from outside the body. Patients are awake and typically go home the same day."
+    },
+    {
+      "q": "How many sessions will I need at a Korean hospital?",
+      "a": "This depends on the tumor site and size. Single brain metastases are often treated in one session (SRS). Lung, liver, prostate, and spinal targets are usually treated in 3–5 sessions (SBRT), typically on alternating days. Your radiation oncologist will confirm the fractionation schedule after reviewing your imaging."
+    },
+    {
+      "q": "What is the difference between SRS and SBRT?",
+      "a": "SRS (Stereotactic Radiosurgery) usually refers to single-fraction treatment, most commonly for intracranial targets. SBRT (Stereotactic Body Radiation Therapy) delivers the same high-precision, ablative concept across 3–5 fractions to body (extracranial) sites. Both are performed on an outpatient basis."
+    },
+    {
+      "q": "Will my treatment plan from home be usable in Korea, or do I need to start over?",
+      "a": "Korean centers create their own treatment plans using their specific machine parameters and immobilization systems — your home plan cannot be transferred directly to a different machine. However, bringing your prior imaging (DICOM files), pathology reports, and any prior radiation dose records significantly accelerates the Korean team's planning process and avoids repeat diagnostic scans."
+    },
+    {
+      "q": "Is it safe to fly home after completing SBRT in Korea?",
+      "a": "For most patients, short-haul and long-haul flights are permitted after the final session, provided there are no acute side effects requiring monitoring. Your Korean oncology team will advise based on your specific treatment site and response. A post-treatment telemedicine check-in with your home oncologist is recommended within 2–4 weeks of return."
+    },
+    {
+      "q": "How do I verify that a Korean hospital is accredited for international patients?",
+      "a": "The Medical Korea portal (medicalkorea.or.kr) lists hospitals holding the KAHF designation — the Korean government accreditation for facilities serving foreign patients. This confirms the hospital meets defined standards for international patient services, quality systems, and safety. Always verify accreditation status before booking."
+    }
+  ],
+  "references": [
+    {
+      "label": "Survey of Stereotactic Body Radiotherapy in Korea — PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4506107/"
+    },
+    {
+      "label": "CMS LCD: Stereotactic Radiation Therapy SRS and SBRT (L35076)",
+      "url": "https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?LCDId=35076"
+    },
+    {
+      "label": "Medical Korea — Accredited Hospitals (KAHF)",
+      "url": "https://www.medicalkorea.or.kr/en/kahfAccreditedHospitals/view?medicalProviderNo=6540"
+    },
+    {
+      "label": "KHIDI — Korea Health Industry Development Institute",
+      "url": "https://www.khidi.or.kr/board?menuId=MENU00795&siteId=SITE00012"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/procedures/inline/stereotactic-radiation-therapy-1.jpg",
+      "alt": "Radiation oncologist consulting with a patient before stereotactic radiation therapy in a Korean hospital",
+      "credit": "Thirdman"
+    },
+    {
+      "src": "/images/procedures/inline/stereotactic-radiation-therapy-2.jpg",
+      "alt": "CyberKnife or TrueBeam linear accelerator in a stereotactic radiation therapy treatment room",
+      "credit": "Andre"
+    },
+    {
+      "src": "/images/procedures/inline/stereotactic-radiation-therapy-3.jpg",
+      "alt": "Patient resting comfortably in a clinic lounge after completing an SBRT session in South Korea",
+      "credit": "Engin Akyurt"
+    }
+  ]
+}

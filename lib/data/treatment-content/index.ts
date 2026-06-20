@@ -8,6 +8,8 @@ import angioplasty from './angioplasty.json'
 import botoxInjections from './botox-injections.json'
 import brainTumorSurgery from './brain-tumor-surgery.json'
 import breastAugmentation from './breast-augmentation.json'
+import breastConservingSurgery from './breast-conserving-surgery.json'
+import bronchoplasty from './bronchoplasty.json'
 import cancerScreening from './cancer-screening.json'
 import cardiacScreening from './cardiac-screening.json'
 import cataractSurgery from './cataract-surgery.json'
@@ -22,6 +24,7 @@ import dentalImplants from './dental-implants.json'
 import doubleEyelidSurgery from './double-eyelid-surgery.json'
 import eggFreezing from './egg-freezing.json'
 import endoscopicSubmucosalDissection from './endoscopic-submucosal-dissection.json'
+import endoscopicThyroidectomy from './endoscopic-thyroidectomy.json'
 import endoscopy from './endoscopy.json'
 import facelift from './facelift.json'
 import fertilityConsultation from './fertility-consultation.json'
@@ -31,6 +34,7 @@ import gastricSleeve from './gastric-sleeve.json'
 import gynecomastiaSurgery from './gynecomastia-surgery.json'
 import hairTransplant from './hair-transplant.json'
 import healthScreening from './health-screening.json'
+import heartTransplant from './heart-transplant.json'
 import hemorrhoidSurgery from './hemorrhoid-surgery.json'
 import herbalMedicine from './herbal-medicine.json'
 import hipReplacement from './hip-replacement.json'
@@ -59,11 +63,15 @@ import protonTherapy from './proton-therapy.json'
 import pulmonaryTreatment from './pulmonary-treatment.json'
 import radiofrequencyAblationLiver from './radiofrequency-ablation-liver.json'
 import rhinoplasty from './rhinoplasty.json'
+import roboticThyroidectomy from './robotic-thyroidectomy.json'
+import sentinelLymphNodeBiopsy from './sentinel-lymph-node-biopsy.json'
 import septoplasty from './septoplasty.json'
 import sinusSurgery from './sinus-surgery.json'
 import skinWhitening from './skin-whitening.json'
 import smileEyeSurgery from './smile-eye-surgery.json'
+import sphincterSavingProcedure from './sphincter-saving-procedure.json'
 import spinalFusion from './spinal-fusion.json'
+import stereotacticRadiationTherapy from './stereotactic-radiation-therapy.json'
 import teethWhitening from './teeth-whitening.json'
 import thyroidSurgery from './thyroid-surgery.json'
 import tonsillectomy from './tonsillectomy.json'
@@ -79,6 +87,8 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "botox-injections": botoxInjections as TreatmentRichContent,
   "brain-tumor-surgery": brainTumorSurgery as TreatmentRichContent,
   "breast-augmentation": breastAugmentation as TreatmentRichContent,
+  "breast-conserving-surgery": breastConservingSurgery as TreatmentRichContent,
+  "bronchoplasty": bronchoplasty as TreatmentRichContent,
   "cancer-screening": cancerScreening as TreatmentRichContent,
   "cardiac-screening": cardiacScreening as TreatmentRichContent,
   "cataract-surgery": cataractSurgery as TreatmentRichContent,
@@ -93,6 +103,7 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "double-eyelid-surgery": doubleEyelidSurgery as TreatmentRichContent,
   "egg-freezing": eggFreezing as TreatmentRichContent,
   "endoscopic-submucosal-dissection": endoscopicSubmucosalDissection as TreatmentRichContent,
+  "endoscopic-thyroidectomy": endoscopicThyroidectomy as TreatmentRichContent,
   "endoscopy": endoscopy as TreatmentRichContent,
   "facelift": facelift as TreatmentRichContent,
   "fertility-consultation": fertilityConsultation as TreatmentRichContent,
@@ -102,6 +113,7 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "gynecomastia-surgery": gynecomastiaSurgery as TreatmentRichContent,
   "hair-transplant": hairTransplant as TreatmentRichContent,
   "health-screening": healthScreening as TreatmentRichContent,
+  "heart-transplant": heartTransplant as TreatmentRichContent,
   "hemorrhoid-surgery": hemorrhoidSurgery as TreatmentRichContent,
   "herbal-medicine": herbalMedicine as TreatmentRichContent,
   "hip-replacement": hipReplacement as TreatmentRichContent,
@@ -130,11 +142,15 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "pulmonary-treatment": pulmonaryTreatment as TreatmentRichContent,
   "radiofrequency-ablation-liver": radiofrequencyAblationLiver as TreatmentRichContent,
   "rhinoplasty": rhinoplasty as TreatmentRichContent,
+  "robotic-thyroidectomy": roboticThyroidectomy as TreatmentRichContent,
+  "sentinel-lymph-node-biopsy": sentinelLymphNodeBiopsy as TreatmentRichContent,
   "septoplasty": septoplasty as TreatmentRichContent,
   "sinus-surgery": sinusSurgery as TreatmentRichContent,
   "skin-whitening": skinWhitening as TreatmentRichContent,
   "smile-eye-surgery": smileEyeSurgery as TreatmentRichContent,
+  "sphincter-saving-procedure": sphincterSavingProcedure as TreatmentRichContent,
   "spinal-fusion": spinalFusion as TreatmentRichContent,
+  "stereotactic-radiation-therapy": stereotacticRadiationTherapy as TreatmentRichContent,
   "teeth-whitening": teethWhitening as TreatmentRichContent,
   "thyroid-surgery": thyroidSurgery as TreatmentRichContent,
   "tonsillectomy": tonsillectomy as TreatmentRichContent,
