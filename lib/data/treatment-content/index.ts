@@ -15,6 +15,7 @@ import cardiacScreening from './cardiac-screening.json'
 import cataractSurgery from './cataract-surgery.json'
 import chemicalPeel from './chemical-peel.json'
 import colonoscopy from './colonoscopy.json'
+import congenitalHeartDefectSurgery from './congenital-heart-defect-surgery.json'
 import cornealTransplant from './corneal-transplant.json'
 import coronaryArteryBypassGrafting from './coronary-artery-bypass-grafting.json'
 import coronaryBypass from './coronary-bypass.json'
@@ -53,9 +54,13 @@ import liposuction from './liposuction.json'
 import livingDonorKidneyTransplant from './living-donor-kidney-transplant.json'
 import livingDonorLiverTransplant from './living-donor-liver-transplant.json'
 import lungCancerSurgery from './lung-cancer-surgery.json'
+import minimallyInvasiveSpineSurgery from './minimally-invasive-spine-surgery.json'
 import neonatalCare from './neonatal-care.json'
+import neonatalHeartSurgery from './neonatal-heart-surgery.json'
+import openMicrodiscectomy from './open-microdiscectomy.json'
 import pacemakerImplantation from './pacemaker-implantation.json'
 import pediatricSurgery from './pediatric-surgery.json'
+import percutaneousCoronaryIntervention from './percutaneous-coronary-intervention.json'
 import porcelainVeneers from './porcelain-veneers.json'
 import prenatalCare from './prenatal-care.json'
 import prostateSurgery from './prostate-surgery.json'
@@ -70,11 +75,14 @@ import sinusSurgery from './sinus-surgery.json'
 import skinWhitening from './skin-whitening.json'
 import smileEyeSurgery from './smile-eye-surgery.json'
 import sphincterSavingProcedure from './sphincter-saving-procedure.json'
+import spinalDecompressionSurgery from './spinal-decompression-surgery.json'
 import spinalFusion from './spinal-fusion.json'
 import stereotacticRadiationTherapy from './stereotactic-radiation-therapy.json'
+import taviProcedure from './tavi-procedure.json'
 import teethWhitening from './teeth-whitening.json'
 import thyroidSurgery from './thyroid-surgery.json'
 import tonsillectomy from './tonsillectomy.json'
+import transforaminalEndoscopicDiscectomy from './transforaminal-endoscopic-discectomy.json'
 import tummyTuck from './tummy-tuck.json'
 import vLineSurgery from './v-line-surgery.json'
 import varicoseVeinTreatment from './varicose-vein-treatment.json'
@@ -94,6 +102,7 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "cataract-surgery": cataractSurgery as TreatmentRichContent,
   "chemical-peel": chemicalPeel as TreatmentRichContent,
   "colonoscopy": colonoscopy as TreatmentRichContent,
+  "congenital-heart-defect-surgery": congenitalHeartDefectSurgery as TreatmentRichContent,
   "corneal-transplant": cornealTransplant as TreatmentRichContent,
   "coronary-artery-bypass-grafting": coronaryArteryBypassGrafting as TreatmentRichContent,
   "coronary-bypass": coronaryBypass as TreatmentRichContent,
@@ -132,9 +141,13 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "living-donor-kidney-transplant": livingDonorKidneyTransplant as TreatmentRichContent,
   "living-donor-liver-transplant": livingDonorLiverTransplant as TreatmentRichContent,
   "lung-cancer-surgery": lungCancerSurgery as TreatmentRichContent,
+  "minimally-invasive-spine-surgery": minimallyInvasiveSpineSurgery as TreatmentRichContent,
   "neonatal-care": neonatalCare as TreatmentRichContent,
+  "neonatal-heart-surgery": neonatalHeartSurgery as TreatmentRichContent,
+  "open-microdiscectomy": openMicrodiscectomy as TreatmentRichContent,
   "pacemaker-implantation": pacemakerImplantation as TreatmentRichContent,
   "pediatric-surgery": pediatricSurgery as TreatmentRichContent,
+  "percutaneous-coronary-intervention": percutaneousCoronaryIntervention as TreatmentRichContent,
   "porcelain-veneers": porcelainVeneers as TreatmentRichContent,
   "prenatal-care": prenatalCare as TreatmentRichContent,
   "prostate-surgery": prostateSurgery as TreatmentRichContent,
@@ -149,11 +162,14 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "skin-whitening": skinWhitening as TreatmentRichContent,
   "smile-eye-surgery": smileEyeSurgery as TreatmentRichContent,
   "sphincter-saving-procedure": sphincterSavingProcedure as TreatmentRichContent,
+  "spinal-decompression-surgery": spinalDecompressionSurgery as TreatmentRichContent,
   "spinal-fusion": spinalFusion as TreatmentRichContent,
   "stereotactic-radiation-therapy": stereotacticRadiationTherapy as TreatmentRichContent,
+  "tavi-procedure": taviProcedure as TreatmentRichContent,
   "teeth-whitening": teethWhitening as TreatmentRichContent,
   "thyroid-surgery": thyroidSurgery as TreatmentRichContent,
   "tonsillectomy": tonsillectomy as TreatmentRichContent,
+  "transforaminal-endoscopic-discectomy": transforaminalEndoscopicDiscectomy as TreatmentRichContent,
   "tummy-tuck": tummyTuck as TreatmentRichContent,
   "v-line-surgery": vLineSurgery as TreatmentRichContent,
   "varicose-vein-treatment": varicoseVeinTreatment as TreatmentRichContent,

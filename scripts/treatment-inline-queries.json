@@ -1077,5 +1077,117 @@
       "q": "heart transplant patient recovery hospital ward rehabilitation Korea",
       "alt": "Heart transplant patient in post-operative recovery ward during cardiac rehabilitation in South Korea"
     }
+  ],
+  "percutaneous-coronary-intervention": [
+    {
+      "q": "doctor patient consultation cardiology clinic Korea",
+      "alt": "Cardiologist consulting international patient before percutaneous coronary intervention in Seoul Korea"
+    },
+    {
+      "q": "cardiac catheterization laboratory angioplasty stent procedure",
+      "alt": "Cardiac catheterisation lab during percutaneous coronary intervention coronary stent placement procedure"
+    },
+    {
+      "q": "patient recovery hospital bed heart monitoring ECG",
+      "alt": "Patient recovering after coronary stent PCI procedure in Korean hospital cardiac ward"
+    }
+  ],
+  "tavi-procedure": [
+    {
+      "q": "cardiologist patient consultation cardiac clinic Korea",
+      "alt": "Cardiologist consulting an international patient about TAVI procedure at a Korean cardiac centre"
+    },
+    {
+      "q": "minimally invasive heart catheter procedure operating room",
+      "alt": "Cardiac catheterisation lab during a transcatheter aortic valve implantation TAVI procedure"
+    },
+    {
+      "q": "heart patient walking hospital recovery corridor Korea",
+      "alt": "Patient recovering and walking in hospital corridor after TAVI valve replacement procedure in Seoul Korea"
+    }
+  ],
+  "congenital-heart-defect-surgery": [
+    {
+      "q": "doctor patient consultation cardiology South Korea hospital",
+      "alt": "Cardiologist consulting with patient about congenital heart defect surgery options in South Korea"
+    },
+    {
+      "q": "open heart surgery operating room cardiac surgeon",
+      "alt": "Cardiac surgeon performing open-heart congenital heart defect repair procedure"
+    },
+    {
+      "q": "patient recovery hospital bed cardiac surgery Korea",
+      "alt": "Patient recovering in Korean hospital cardiac ward after congenital heart defect surgery"
+    }
+  ],
+  "neonatal-heart-surgery": [
+    {
+      "q": "pediatric cardiologist consultation newborn heart Korea hospital",
+      "alt": "Pediatric cardiologist reviewing neonatal echocardiography results before congenital heart surgery in Korea"
+    },
+    {
+      "q": "neonatal open heart surgery operating room cardiopulmonary bypass",
+      "alt": "Surgical team performing neonatal open-heart repair using cardiopulmonary bypass in a Korean cardiac center"
+    },
+    {
+      "q": "newborn NICU recovery after cardiac surgery monitoring",
+      "alt": "Newborn recovering in neonatal intensive care unit after congenital heart surgery in Seoul Korea"
+    }
+  ],
+  "minimally-invasive-spine-surgery": [
+    {
+      "q": "doctor patient spine consultation clinic Korea",
+      "alt": "Spine surgeon consulting international patient at Korean hospital before minimally invasive spine surgery"
+    },
+    {
+      "q": "endoscopic spine surgery operating room surgeon",
+      "alt": "Surgeon performing endoscopic minimally invasive spine surgery procedure in Korean operating theater"
+    },
+    {
+      "q": "patient walking hospital corridor spine surgery recovery",
+      "alt": "Patient recovering and walking after minimally invasive spine surgery at Korean medical center"
+    }
+  ],
+  "transforaminal-endoscopic-discectomy": [
+    {
+      "q": "doctor patient spine consultation Seoul Korea hospital",
+      "alt": "Spine surgeon consulting with international patient about lumbar disc herniation before transforaminal endoscopic discectomy in Seoul Korea"
+    },
+    {
+      "q": "minimally invasive endoscopic spine surgery operating room",
+      "alt": "Operating room setup for transforaminal endoscopic lumbar discectomy procedure with fluoroscopy and endoscope equipment"
+    },
+    {
+      "q": "patient walking recovery after back surgery hospital",
+      "alt": "Patient walking corridor during early recovery after transforaminal endoscopic discectomy at Korean hospital"
+    }
+  ],
+  "open-microdiscectomy": [
+    {
+      "q": "doctor patient spine consultation Korea hospital",
+      "alt": "Korean spine surgeon reviewing lumbar MRI with patient before open microdiscectomy consultation"
+    },
+    {
+      "q": "patient walking hospital corridor recovery spine surgery",
+      "alt": "Patient walking with physiotherapist in Korean hospital after open microdiscectomy recovery"
+    },
+    {
+      "q": "surgical microscope operating room spine neurosurgery",
+      "alt": "Operating room with surgical microscope set up for open microdiscectomy lumbar disc procedure"
+    }
+  ],
+  "spinal-decompression-surgery": [
+    {
+      "q": "doctor patient spine consultation clinic Korea",
+      "alt": "Spine surgeon consulting international patient about spinal decompression surgery in Korean hospital"
+    },
+    {
+      "q": "minimally invasive spine surgery operating room endoscope",
+      "alt": "Surgeon performing minimally invasive endoscopic spinal decompression surgery in Korean operating theatre"
+    },
+    {
+      "q": "patient physiotherapy walking rehabilitation after back surgery",
+      "alt": "Patient recovering mobility with physiotherapist after spinal decompression surgery in South Korea"
+    }
   ]
 }
