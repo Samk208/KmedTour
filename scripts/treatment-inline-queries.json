@@ -1189,5 +1189,117 @@
       "q": "patient physiotherapy walking rehabilitation after back surgery",
       "alt": "Patient recovering mobility with physiotherapist after spinal decompression surgery in South Korea"
     }
+  ],
+  "ube-spinal-surgery": [
+    {
+      "q": "patient consultation spine doctor Korea clinic",
+      "alt": "Foreign patient consultation with spine surgeon at Korean medical clinic before UBE spinal surgery"
+    },
+    {
+      "q": "minimally invasive endoscopic spine surgery operating room",
+      "alt": "Surgeon performing UBE unilateral biportal endoscopic spinal surgery in Korean hospital operating room"
+    },
+    {
+      "q": "patient walking recovery hospital corridor spine surgery",
+      "alt": "Patient walking in hospital corridor during early recovery after UBE spinal surgery in South Korea"
+    }
+  ],
+  "scoliosis-correction-surgery": [
+    {
+      "q": "doctor patient consultation spine X-ray hospital Seoul Korea",
+      "alt": "Spine surgeon reviewing scoliosis X-ray with patient before surgery in Korean hospital"
+    },
+    {
+      "q": "spinal surgery operating room titanium rods pedicle screws procedure",
+      "alt": "Surgical team performing posterior spinal fusion scoliosis correction surgery Korea"
+    },
+    {
+      "q": "patient physiotherapy recovery walking hospital corridor spine surgery",
+      "alt": "Scoliosis surgery patient doing physiotherapy walking in Korean hospital during recovery"
+    }
+  ],
+  "in-vitro-maturation": [
+    {
+      "q": "fertility consultation doctor patient Seoul clinic",
+      "alt": "Fertility specialist consultation at a Seoul IVM clinic Korea"
+    },
+    {
+      "q": "embryology laboratory oocyte culture dish microscope",
+      "alt": "Embryologist working with oocytes in IVM culture laboratory"
+    },
+    {
+      "q": "woman resting recovery fertility treatment clinic",
+      "alt": "Patient resting comfortably after IVM egg retrieval procedure Korea"
+    }
+  ],
+  "ovarian-tissue-cryopreservation": [
+    {
+      "q": "fertility clinic consultation doctor patient Seoul Korea",
+      "alt": "Fertility specialist consulting a patient about ovarian tissue preservation options in a Korean reproductive medicine clinic"
+    },
+    {
+      "q": "laparoscopic gynecology surgery operating room minimally invasive",
+      "alt": "Laparoscopic surgical retrieval of ovarian cortex tissue in a Korean teaching hospital operating room"
+    },
+    {
+      "q": "fertility preservation recovery hospital patient resting",
+      "alt": "Patient resting and recovering after ovarian tissue cryopreservation retrieval procedure in Korea"
+    }
+  ],
+  "preimplantation-genetic-testing": [
+    {
+      "q": "genetic testing laboratory embryo analysis equipment",
+      "alt": "PGT embryo genetic analysis laboratory Korea IVF clinic"
+    },
+    {
+      "q": "IVF embryo biopsy blastocyst microscope lab",
+      "alt": "Embryo biopsy trophectoderm cells extracted for PGT screening"
+    },
+    {
+      "q": "fertility clinic patient consultation doctor",
+      "alt": "Patient consultation at Korean fertility clinic before PGT IVF cycle"
+    }
+  ],
+  "time-lapse-embryo-monitoring": [
+    {
+      "q": "IVF embryo time-lapse incubator laboratory Korea fertility",
+      "alt": "Time-lapse embryo monitoring incubator in a Korean IVF laboratory"
+    },
+    {
+      "q": "embryo laboratory scientist microscope monitoring cell division",
+      "alt": "Embryologist reviewing time-lapse embryo development footage in fertility lab"
+    },
+    {
+      "q": "fertility clinic doctor patient consultation Seoul Korea",
+      "alt": "Fertility specialist consulting with patient at a Seoul IVF clinic"
+    }
+  ],
+  "microsurgical-tese": [
+    {
+      "q": "urologist andrology consultation patient Seoul clinic",
+      "alt": "Male fertility consultation with urologist at a Seoul andrology clinic before micro-TESE sperm retrieval Korea"
+    },
+    {
+      "q": "microsurgery operating room microscope surgical team",
+      "alt": "Operating microscope and surgical team performing microsurgical TESE testicular sperm extraction procedure Korea"
+    },
+    {
+      "q": "couple fertility clinic consultation pregnancy hope",
+      "alt": "Couple meeting with fertility coordinator at Korean IVF center after successful micro-TESE sperm retrieval"
+    }
+  ],
+  "single-port-laparoscopic-surgery": [
+    {
+      "q": "minimally invasive surgery consultation patient doctor Korea hospital",
+      "alt": "Patient consultation with surgeon before single port laparoscopic surgery in Korea"
+    },
+    {
+      "q": "laparoscopic surgery operating room team monitors instruments",
+      "alt": "Operating room team performing single port laparoscopic surgery with high-definition monitor"
+    },
+    {
+      "q": "patient recovery hospital bed post surgery abdomen care",
+      "alt": "Patient recovering after single port laparoscopic surgery in Korean hospital"
+    }
   ]
 }

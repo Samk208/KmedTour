@@ -40,6 +40,7 @@ import hemorrhoidSurgery from './hemorrhoid-surgery.json'
 import herbalMedicine from './herbal-medicine.json'
 import hipReplacement from './hip-replacement.json'
 import hysterectomy from './hysterectomy.json'
+import inVitroMaturation from './in-vitro-maturation.json'
 import ivfTreatment from './ivf-treatment.json'
 import kidneyStoneRemoval from './kidney-stone-removal.json'
 import kneeReplacement from './knee-replacement.json'
@@ -54,14 +55,17 @@ import liposuction from './liposuction.json'
 import livingDonorKidneyTransplant from './living-donor-kidney-transplant.json'
 import livingDonorLiverTransplant from './living-donor-liver-transplant.json'
 import lungCancerSurgery from './lung-cancer-surgery.json'
+import microsurgicalTese from './microsurgical-tese.json'
 import minimallyInvasiveSpineSurgery from './minimally-invasive-spine-surgery.json'
 import neonatalCare from './neonatal-care.json'
 import neonatalHeartSurgery from './neonatal-heart-surgery.json'
 import openMicrodiscectomy from './open-microdiscectomy.json'
+import ovarianTissueCryopreservation from './ovarian-tissue-cryopreservation.json'
 import pacemakerImplantation from './pacemaker-implantation.json'
 import pediatricSurgery from './pediatric-surgery.json'
 import percutaneousCoronaryIntervention from './percutaneous-coronary-intervention.json'
 import porcelainVeneers from './porcelain-veneers.json'
+import preimplantationGeneticTesting from './preimplantation-genetic-testing.json'
 import prenatalCare from './prenatal-care.json'
 import prostateSurgery from './prostate-surgery.json'
 import protonTherapy from './proton-therapy.json'
@@ -69,8 +73,10 @@ import pulmonaryTreatment from './pulmonary-treatment.json'
 import radiofrequencyAblationLiver from './radiofrequency-ablation-liver.json'
 import rhinoplasty from './rhinoplasty.json'
 import roboticThyroidectomy from './robotic-thyroidectomy.json'
+import scoliosisCorrectionSurgery from './scoliosis-correction-surgery.json'
 import sentinelLymphNodeBiopsy from './sentinel-lymph-node-biopsy.json'
 import septoplasty from './septoplasty.json'
+import singlePortLaparoscopicSurgery from './single-port-laparoscopic-surgery.json'
 import sinusSurgery from './sinus-surgery.json'
 import skinWhitening from './skin-whitening.json'
 import smileEyeSurgery from './smile-eye-surgery.json'
@@ -81,9 +87,11 @@ import stereotacticRadiationTherapy from './stereotactic-radiation-therapy.json'
 import taviProcedure from './tavi-procedure.json'
 import teethWhitening from './teeth-whitening.json'
 import thyroidSurgery from './thyroid-surgery.json'
+import timeLapseEmbryoMonitoring from './time-lapse-embryo-monitoring.json'
 import tonsillectomy from './tonsillectomy.json'
 import transforaminalEndoscopicDiscectomy from './transforaminal-endoscopic-discectomy.json'
 import tummyTuck from './tummy-tuck.json'
+import ubeSpinalSurgery from './ube-spinal-surgery.json'
 import vLineSurgery from './v-line-surgery.json'
 import varicoseVeinTreatment from './varicose-vein-treatment.json'
 
@@ -127,6 +135,7 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "herbal-medicine": herbalMedicine as TreatmentRichContent,
   "hip-replacement": hipReplacement as TreatmentRichContent,
   "hysterectomy": hysterectomy as TreatmentRichContent,
+  "in-vitro-maturation": inVitroMaturation as TreatmentRichContent,
   "ivf-treatment": ivfTreatment as TreatmentRichContent,
   "kidney-stone-removal": kidneyStoneRemoval as TreatmentRichContent,
   "knee-replacement": kneeReplacement as TreatmentRichContent,
@@ -141,14 +150,17 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "living-donor-kidney-transplant": livingDonorKidneyTransplant as TreatmentRichContent,
   "living-donor-liver-transplant": livingDonorLiverTransplant as TreatmentRichContent,
   "lung-cancer-surgery": lungCancerSurgery as TreatmentRichContent,
+  "microsurgical-tese": microsurgicalTese as TreatmentRichContent,
   "minimally-invasive-spine-surgery": minimallyInvasiveSpineSurgery as TreatmentRichContent,
   "neonatal-care": neonatalCare as TreatmentRichContent,
   "neonatal-heart-surgery": neonatalHeartSurgery as TreatmentRichContent,
   "open-microdiscectomy": openMicrodiscectomy as TreatmentRichContent,
+  "ovarian-tissue-cryopreservation": ovarianTissueCryopreservation as TreatmentRichContent,
   "pacemaker-implantation": pacemakerImplantation as TreatmentRichContent,
   "pediatric-surgery": pediatricSurgery as TreatmentRichContent,
   "percutaneous-coronary-intervention": percutaneousCoronaryIntervention as TreatmentRichContent,
   "porcelain-veneers": porcelainVeneers as TreatmentRichContent,
+  "preimplantation-genetic-testing": preimplantationGeneticTesting as TreatmentRichContent,
   "prenatal-care": prenatalCare as TreatmentRichContent,
   "prostate-surgery": prostateSurgery as TreatmentRichContent,
   "proton-therapy": protonTherapy as TreatmentRichContent,
@@ -156,8 +168,10 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "radiofrequency-ablation-liver": radiofrequencyAblationLiver as TreatmentRichContent,
   "rhinoplasty": rhinoplasty as TreatmentRichContent,
   "robotic-thyroidectomy": roboticThyroidectomy as TreatmentRichContent,
+  "scoliosis-correction-surgery": scoliosisCorrectionSurgery as TreatmentRichContent,
   "sentinel-lymph-node-biopsy": sentinelLymphNodeBiopsy as TreatmentRichContent,
   "septoplasty": septoplasty as TreatmentRichContent,
+  "single-port-laparoscopic-surgery": singlePortLaparoscopicSurgery as TreatmentRichContent,
   "sinus-surgery": sinusSurgery as TreatmentRichContent,
   "skin-whitening": skinWhitening as TreatmentRichContent,
   "smile-eye-surgery": smileEyeSurgery as TreatmentRichContent,
@@ -168,9 +182,11 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "tavi-procedure": taviProcedure as TreatmentRichContent,
   "teeth-whitening": teethWhitening as TreatmentRichContent,
   "thyroid-surgery": thyroidSurgery as TreatmentRichContent,
+  "time-lapse-embryo-monitoring": timeLapseEmbryoMonitoring as TreatmentRichContent,
   "tonsillectomy": tonsillectomy as TreatmentRichContent,
   "transforaminal-endoscopic-discectomy": transforaminalEndoscopicDiscectomy as TreatmentRichContent,
   "tummy-tuck": tummyTuck as TreatmentRichContent,
+  "ube-spinal-surgery": ubeSpinalSurgery as TreatmentRichContent,
   "v-line-surgery": vLineSurgery as TreatmentRichContent,
   "varicose-vein-treatment": varicoseVeinTreatment as TreatmentRichContent,
 }

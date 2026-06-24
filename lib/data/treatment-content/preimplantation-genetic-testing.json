@@ -1,0 +1,162 @@
+{
+  "slug": "preimplantation-genetic-testing",
+  "shortDescription": "Screen IVF embryos for chromosomal and genetic defects before transfer — PGT-A, PGT-M, and PGT-SR available at Korean fertility clinics at significantly lower cost than the US or UK.",
+  "quickAnswer": [
+    "**PGT-A** (aneuploidies), **PGT-M** (monogenic diseases), and **PGT-SR** (structural rearrangements) are all available at major Seoul fertility centres",
+    "**NGS (next-generation sequencing)** is the standard platform used in Korean IVF labs for PGT-A — more accurate than older array-based methods",
+    "A full IVF + PGT cycle in Korea costs roughly **$6,000–$12,000** all-in, compared with $15,000–$25,000+ in the US",
+    "**PGT-M requires 4–6 weeks of lead time** for case-specific probe design — plan your trip accordingly"
+  ],
+  "keyFacts": [
+    {
+      "label": "Procedure time",
+      "value": "Embryo biopsy: 15–30 min per embryo batch; lab analysis: 7–14 days (PGT-A/SR) or 4–6 weeks initial prep + 7–14 days analysis (PGT-M)"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "Light sedation or general anaesthesia for egg retrieval (the IVF step); embryo biopsy is performed in the lab, no anaesthesia for the patient"
+    },
+    {
+      "label": "Hospital stay",
+      "value": "Outpatient; egg retrieval is same-day discharge"
+    },
+    {
+      "label": "Recommended stay in Korea",
+      "value": "3–5 weeks minimum for a fresh IVF + PGT-A cycle; allow 6–8 weeks if PGT-M probe design is needed"
+    },
+    {
+      "label": "Recovery",
+      "value": "1–3 days rest after egg retrieval; frozen embryo transfer is low-intervention with minimal downtime"
+    },
+    {
+      "label": "Typical cost in Korea",
+      "value": "$6,000–$12,000 (IVF + PGT combined, excluding travel and accommodation)"
+    }
+  ],
+  "sections": {
+    "overview": "**Preimplantation Genetic Testing (PGT)** is performed on embryos created through in vitro fertilisation (IVF) before they are transferred to the uterus. A small number of cells are biopsied from each blastocyst-stage embryo (day 5–6) and sent for chromosomal or genetic analysis.\n\nThere are three main types. **PGT-A** screens for aneuploidies — embryos with the wrong number of chromosomes, which is the leading cause of failed implantation and early miscarriage. **PGT-M** identifies specific monogenic (single-gene) diseases such as thalassaemia, BRCA mutations, or spinal muscular atrophy. **PGT-SR** detects unbalanced structural rearrangements in couples where one partner carries a chromosomal translocation or inversion.\n\nKorean IVF laboratories have adopted **next-generation sequencing (NGS)** as the standard platform for PGT-A. NGS provides genome-wide coverage, can identify mosaicism, and delivers higher resolution than older array-based comparative genomic hybridisation (aCGH) methods.\n\nOnly chromosomally or genetically normal embryos are selected for transfer. All other suitable embryos are vitrified (flash-frozen) for potential future use. This approach is designed to reduce miscarriage risk and improve the chance of a healthy live birth per transfer.",
+    "candidacy": "PGT is not required for every IVF cycle. Clinics in Korea typically recommend it for patients in the following situations:\n\n- **Advanced maternal age** (generally 35 and older), where aneuploidy rates in embryos rise substantially\n- **Recurrent implantation failure** — two or more failed embryo transfers with good-quality embryos\n- **Recurrent pregnancy loss** — two or more miscarriages, particularly when a chromosomal cause is suspected\n- **Known chromosomal rearrangement** in one or both partners (e.g., balanced translocation) — PGT-SR is indicated\n- **Known monogenic disease** in the family — PGT-M is indicated; both partners and sometimes extended family members may need prior carrier testing\n- **Male factor infertility** — severe oligospermia or TESE-retrieved sperm carry higher aneuploidy risk\n- **Previous pregnancy or child with a chromosomal condition**\n\nPGT-M also requires a family pedigree, genetic counselling, and custom probe or haplotyping design performed before the IVF cycle begins. Patients pursuing PGT-M should allow 4–6 weeks for this preparation work before egg collection can proceed.\n\nPGT is not suitable for every embryo or every situation. A genetic counsellor at the Korean clinic will review your history and advise which test type is appropriate.",
+    "procedure_steps": "The PGT process runs alongside a standard IVF cycle.\n\n**Ovarian stimulation and egg retrieval** follows the clinic's chosen protocol, typically 10–14 days of injectable hormones. Eggs are retrieved under light sedation or general anaesthesia as a same-day outpatient procedure.\n\n**Fertilisation** is performed using standard IVF or intracytoplasmic sperm injection (ICSI). ICSI is used in most PGT cycles to eliminate sperm DNA contamination of the biopsy sample.\n\n**Embryo culture** continues until day 5 or 6, when embryos reach the blastocyst stage — the optimal point for biopsy because more cells are available and developmental competence can be assessed simultaneously.\n\n**Trophectoderm biopsy** — a trained embryologist removes 5–10 cells from the outer cell layer (trophectoderm) of each suitable blastocyst. The inner cell mass, which becomes the foetus, is not touched.\n\n**Embryo vitrification** occurs immediately after biopsy. All biopsied embryos are flash-frozen while genetic results are awaited.\n\n**Laboratory analysis** is performed on the biopsied cells. For PGT-A and PGT-SR, NGS results are typically available within 7–14 days. For PGT-M, analysis uses the pre-designed probe or haplotype panel and takes a similar time once the cycle is complete.\n\n**Frozen embryo transfer (FET)** of a normal-result embryo is scheduled in a subsequent cycle — usually 4–8 weeks after biopsy results are confirmed.",
+    "recovery_timeline": "Recovery from the PGT process follows the standard IVF timeline.\n\n**After egg retrieval (days 1–3):** Mild bloating, cramping, or spotting is common. Most patients resume light activity within 24–48 hours. A small number of patients develop ovarian hyperstimulation syndrome (OHSS); the clinic will monitor for this.\n\n**During the biopsy and analysis wait (days 5–21):** The patient has no procedure during this period. Some clinics schedule a follow-up ultrasound or blood test. Patients travelling from abroad often use this window to rest or explore Korea before returning home.\n\n**Frozen embryo transfer (FET):** This is a low-intensity procedure performed under ultrasound guidance, similar to a Pap smear in terms of physical impact. No anaesthesia is required. Patients typically rest for a few hours and can travel home the same or following day.\n\n**Two-week wait:** Pregnancy testing (beta-hCG blood test) is scheduled approximately 10–14 days after FET.\n\n**For international patients:** A common approach is to complete egg retrieval and biopsy in Korea, return home while awaiting results, then come back for FET — or to arrange FET at a partner clinic in the home country using the genetic results from Korea.",
+    "cost_breakdown": "IVF + PGT in Korea is substantially less expensive than in the United States or United Kingdom when all components are accounted for.\n\nA complete IVF cycle in Korea including monitoring, medications, egg retrieval, and embryo culture typically falls in the **$4,500–$7,500** range. PGT-A analysis (NGS-based, per cycle regardless of number of embryos up to a batch limit) adds approximately **$1,000–$2,500**. PGT-SR pricing is similar to PGT-A.\n\nPGT-M carries additional cost because each case requires a bespoke genetic probe or haplotyping panel. Expect to add **$1,500–$3,500** for probe development on top of the base PGT fee.\n\nFrozen embryo transfer, if performed in Korea, typically costs **$800–$1,800** as a standalone procedure.\n\nBy comparison, a single IVF + PGT-A cycle in the US commonly totals $15,000–$25,000 including medications. The Korean price advantage is real and well-documented among medical tourism coordinators, though exact figures vary by clinic and patient protocol.\n\nAdditional costs to budget: genetic counselling (often bundled), vitrification and annual storage fees for frozen embryos, and any repeat cycles. Always request a written itemised quote from your clinic before committing.",
+    "why_korea": "Korea has built one of the most technically advanced reproductive medicine sectors in Asia, for several interconnected reasons.\n\n**Laboratory infrastructure:** Korean IVF laboratories are equipped with time-lapse embryo incubators, NGS sequencing platforms, and laser-assisted biopsy systems. Trophectoderm biopsy and vitrification are performed routinely as standard of care at leading Seoul fertility centres, not as exceptional procedures.\n\n**Regulatory framework:** Assisted reproductive technology in Korea is regulated by the Ministry of Food and Drug Safety (MFDS) and overseen through frameworks supported by the Korea Health Industry Development Institute (KHIDI). The Medical Korea initiative — a government programme — actively facilitates international patient access and quality assurance across accredited hospitals.\n\n**Specialist depth:** Korea trains reproductive endocrinologists and clinical embryologists through structured fellowship programmes. High patient volumes at major fertility centres mean that embryologists performing trophectoderm biopsies do so with regularity that builds proficiency.\n\n**Cost structure:** Lower labour and facility overhead costs allow Korean clinics to price IVF + PGT cycles significantly below US or UK equivalents without compromising equipment or protocol quality.\n\n**English-language support:** Major fertility centres in Seoul and other metropolitan areas have international patient departments staffed with English-speaking coordinators who manage scheduling, translation, legal consent, and logistics for overseas patients.\n\n**Genetic counselling access:** Korea has a strong clinical genetics infrastructure. Patients pursuing PGT-M can access certified genetic counsellors for pedigree analysis, carrier testing, and probe design coordination within the same hospital system."
+  },
+  "costTable": [
+    {
+      "item": "IVF cycle (stimulation, monitoring, egg retrieval, embryo culture)",
+      "cost": "$4,500–$7,500"
+    },
+    {
+      "item": "PGT-A or PGT-SR (NGS-based, per cycle)",
+      "cost": "$1,000–$2,500"
+    },
+    {
+      "item": "PGT-M probe / haplotype design (one-time per disease)",
+      "cost": "$1,500–$3,500"
+    },
+    {
+      "item": "Frozen embryo transfer (FET) in Korea",
+      "cost": "$800–$1,800"
+    },
+    {
+      "item": "Embryo vitrification + first-year storage",
+      "cost": "$300–$600"
+    }
+  ],
+  "callouts": [
+    {
+      "type": "tip",
+      "title": "PGT-M patients: plan 6–8 weeks ahead",
+      "text": "PGT-M requires custom probe or haplotype panel design before your IVF cycle can start. Send your genetic reports and family pedigree to the clinic at least 6 weeks before your planned travel date so the lab can complete probe validation in time."
+    }
+  ],
+  "keyTakeaways": [
+    "PGT-A, PGT-M, and PGT-SR are all available in Korea using NGS — the current gold standard platform — at a fraction of US or UK costs",
+    "PGT-M requires case-specific preparation (4–6 weeks); all other types can be integrated into a standard IVF cycle",
+    "International patients typically need 3–5 weeks in Korea for a complete fresh IVF + PGT-A cycle; a return trip is often scheduled separately for frozen embryo transfer",
+    "Always request an itemised written quote and confirm whether medications, genetic counselling, and FET are bundled or charged separately"
+  ],
+  "entities": [
+    {
+      "name": "Preimplantation genetic testing",
+      "url": "https://en.wikipedia.org/wiki/Preimplantation_genetic_testing"
+    },
+    {
+      "name": "In vitro fertilisation",
+      "url": "https://en.wikipedia.org/wiki/In_vitro_fertilisation"
+    },
+    {
+      "name": "Next-generation sequencing",
+      "url": "https://en.wikipedia.org/wiki/DNA_sequencing#Next-generation_sequencing"
+    },
+    {
+      "name": "Trophoblast",
+      "url": "https://en.wikipedia.org/wiki/Trophoblast"
+    },
+    {
+      "name": "Aneuploidy",
+      "url": "https://en.wikipedia.org/wiki/Aneuploidy"
+    },
+    {
+      "name": "Korea Health Industry Development Institute",
+      "url": "https://en.wikipedia.org/wiki/Korea_Health_Industry_Development_Institute"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the difference between PGT-A, PGT-M, and PGT-SR?",
+      "a": "PGT-A screens embryos for aneuploidy — an abnormal number of chromosomes, which is the most common cause of failed implantation and early miscarriage. PGT-M tests for a specific known single-gene (monogenic) disorder in the family, such as thalassaemia, cystic fibrosis, or a BRCA mutation. PGT-SR is used when one partner carries a balanced chromosomal rearrangement (e.g., a translocation or inversion) to detect unbalanced forms in embryos. Each test type requires a different lab protocol and in some cases different preparation time."
+    },
+    {
+      "q": "Does PGT guarantee a successful pregnancy?",
+      "a": "No. PGT selects embryos that are chromosomally or genetically normal based on the cells tested, which improves the probability of successful implantation and reduces miscarriage risk. However, a normal PGT result does not guarantee a live birth, as other biological factors influence whether an embryo implants and develops to term. Clinics and counsellors will explain realistic outcome expectations based on your individual circumstances."
+    },
+    {
+      "q": "Can I do the egg retrieval in Korea and the embryo transfer at home?",
+      "a": "In some cases, yes. Some international patients complete egg retrieval, fertilisation, biopsy, and vitrification in Korea, then arrange for frozen embryo transfer at a clinic in their home country. This requires coordination between both clinics, correct cold-chain transport of vitrified embryos, and confirmation that the home clinic accepts embryos prepared to Korean lab standards. Discuss this plan explicitly with your Korean clinic before committing."
+    },
+    {
+      "q": "How long does PGT-M probe design take and why?",
+      "a": "PGT-M requires a custom genetic tool — either a PCR probe or a haplotyping panel — designed specifically for your family's mutation and surrounding DNA markers. This process typically takes 4–6 weeks and is done before the IVF cycle begins. It often involves genetic counselling, DNA samples from the affected family member or carrier parents, and laboratory validation. This lead time is not negotiable and should be factored into your travel planning."
+    },
+    {
+      "q": "Is NGS-based PGT-A better than older testing methods?",
+      "a": "NGS (next-generation sequencing) offers genome-wide coverage, higher resolution, and the ability to detect low-level mosaicism compared with older methods such as FISH or array-based CGH. Most leading Korean fertility centres now use NGS as their standard PGT-A platform. It is worth confirming with your clinic which specific platform and analysis software they use when comparing clinics."
+    },
+    {
+      "q": "Will my embryos be safe during the wait for PGT results?",
+      "a": "Yes. Immediately after biopsy, embryos are vitrified — flash-frozen using a rapid cryopreservation technique that preserves cell integrity with high reliability. The embryos remain frozen until genetic results are confirmed and a transfer cycle is planned. Vitrification survival rates at experienced Korean labs are generally very high, though no lab can guarantee 100% survival for every embryo."
+    }
+  ],
+  "references": [
+    {
+      "label": "NGS-based PGT-A for recurrent implantation failure — PMC",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8189974/"
+    },
+    {
+      "label": "Mini-review of IVF outcomes following PGT-NGS approach — PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9406843/"
+    },
+    {
+      "label": "IVF success rates in PGT-M cycles — PMC",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12167401/"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/procedures/inline/preimplantation-genetic-testing-1.jpg",
+      "alt": "PGT embryo genetic analysis laboratory Korea IVF clinic",
+      "credit": "Tima Miroshnichenko"
+    },
+    {
+      "src": "/images/procedures/inline/preimplantation-genetic-testing-2.jpg",
+      "alt": "Embryo biopsy trophectoderm cells extracted for PGT screening",
+      "credit": "Zakir Rushanly"
+    },
+    {
+      "src": "/images/procedures/inline/preimplantation-genetic-testing-3.jpg",
+      "alt": "Patient consultation at Korean fertility clinic before PGT IVF cycle",
+      "credit": "Thirdman"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "slug": "time-lapse-embryo-monitoring",
+  "shortDescription": "How Korean IVF clinics use EmbryoScope and Geri systems with AI scoring to select the best embryos without disturbing them.",
+  "quickAnswer": [
+    "**Time-lapse embryo monitoring (TLM) is an add-on to IVF**, not a standalone procedure — embryos stay undisturbed in a camera-equipped incubator throughout culture",
+    "**Two leading systems** are EmbryoScope (Vitrolife) and Geri (Vitrolife), both photographing embryos every 5–20 minutes to build a morphokinetic video record",
+    "**AI ranking algorithms** such as iDAScore and KIDScore D5 analyse the footage and score each embryo's implantation potential automatically",
+    "**Korea add-on cost** is approximately **$500–$1,500 USD** on top of a base IVF cycle; full IVF cycles in Korea typically range from $4,800–$8,200 USD"
+  ],
+  "keyFacts": [
+    {
+      "label": "Procedure time",
+      "value": "No separate procedure — runs continuously during the 5–6 day embryo culture window of an IVF cycle"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "None required for TLM itself; egg retrieval (a separate step) uses light sedation"
+    },
+    {
+      "label": "Hospital stay",
+      "value": "Outpatient add-on; no admission required"
+    },
+    {
+      "label": "Recommended stay in Korea",
+      "value": "3–5 weeks total to cover stimulation, retrieval, monitoring culture, and embryo transfer"
+    },
+    {
+      "label": "Recovery",
+      "value": "Recovery follows standard IVF timeline; no additional recovery for TLM itself"
+    },
+    {
+      "label": "Typical cost in Korea",
+      "value": "Approximately $500–$1,500 USD add-on; full IVF cycle $4,800–$8,200 USD"
+    }
+  ],
+  "sections": {
+    "overview": "Time-lapse embryo monitoring (TLM) is a laboratory technique used inside IVF cycles. A miniaturised camera built into the incubator photographs each developing embryo every 5 to 20 minutes, generating a continuous time-lapse video of cell division from fertilisation to the blastocyst stage.\n\nBecause images are captured inside the incubator, the embryo never leaves its precisely controlled environment of temperature, CO₂, and humidity. Traditional methods require removing the dish and placing it under an external microscope — a brief but repeated stress. TLM eliminates those interruptions.\n\nThe resulting footage records what embryologists call **morphokinetics** — the timing and pattern of each cell division event. These events include when the fertilised egg first cleaves, how long each subsequent division takes, and whether the blastocyst compacts and hatches on schedule.\n\n**AI-based decision tools** such as iDAScore (developed by Vitrolife, trained on over 180,000 embryos with known outcomes) and KIDScore D5 analyse morphokinetic data automatically. They rank each embryo's statistical implantation potential, giving the embryologist an objective second opinion alongside conventional morphology grading.\n\nTLM is an add-on service layered onto a standard IVF protocol. The egg retrieval, fertilisation, culture, and embryo transfer steps all proceed as normal — TLM simply upgrades the incubator used during culture and adds the video analysis layer.",
+    "candidacy": "TLM is available to most patients already undergoing IVF or ICSI, but it is particularly relevant for certain groups:\n\n- Patients who have experienced one or more **failed IVF transfers** with embryos that appeared morphologically normal\n- Couples where **multiple embryos of similar grade** are available and a single best candidate must be chosen\n- Patients with **unexplained infertility** where embryo selection quality may be a contributing factor\n- Women of **advanced reproductive age** where embryo quality is more variable\n- Patients considering **single embryo transfer (SET)** who want maximum confidence in the chosen embryo\n\nTLM does not replace preimplantation genetic testing (PGT). The two technologies address different questions — TLM evaluates developmental dynamics, PGT evaluates chromosomal status. Some patients opt for both.\n\nTLM is generally **not indicated** when a patient produces only one or two embryos with straightforward quality differences, as the added information may not change the transfer decision. Your care team will advise whether TLM meaningfully adds value for your specific situation.",
+    "procedure_steps": "TLM runs in parallel with the standard IVF laboratory workflow rather than replacing any step.\n\n**Day 0 — Fertilisation.** Retrieved eggs are fertilised via conventional IVF or ICSI and placed directly into the time-lapse incubator (EmbryoScope or Geri). The incubator closes and the camera begins capturing images at regular intervals — typically every 5 to 15 minutes across multiple focal planes.\n\n**Days 1–3 — Cleavage stage monitoring.** The system records each cell division event. Embryologists and AI algorithms note the timing of the first cleavage, synchrony between blastomeres, and the presence of any irregularities such as direct cleavage or multinucleation.\n\n**Days 4–6 — Blastocyst culture.** Compaction, blastocoel formation, and hatching are recorded. The KIDScore D5 or iDAScore algorithm processes the full morphokinetic record and generates a ranked score for each embryo.\n\n**Embryo selection.** The embryologist reviews the AI score alongside conventional morphology grading (Gardner grading for blastocysts). The highest-ranked embryo is selected for fresh transfer or vitrification for a frozen embryo transfer.\n\n**Transfer or vitrification.** Embryo transfer itself is identical to standard IVF — a thin catheter is used to place the embryo in the uterine cavity under ultrasound guidance. Excess high-quality blastocysts are vitrified using rapid-freeze cryopreservation.\n\nThe patient is not present during culture monitoring; the technology operates entirely within the laboratory.",
+    "recovery_timeline": "Because TLM adds no physical intervention for the patient, recovery follows the standard IVF schedule.\n\n**After egg retrieval (Day 0):** Mild cramping and bloating are expected for 1–3 days. Most patients rest at the clinic for 1–2 hours post-retrieval before discharge.\n\n**During the culture window (Days 1–6):** No patient activity required. The embryology team monitors progress remotely via the TLM software dashboard; some Korean clinics share video clips or morphokinetic reports with patients through a portal.\n\n**After embryo transfer:** Light spotting and mild pelvic discomfort are normal for a few days. Your care team will advise on activity restrictions — typically avoiding strenuous exercise for 1–2 weeks.\n\n**Progesterone support:** Luteal phase support (usually vaginal or injectable progesterone) continues for approximately 10–14 days until a pregnancy blood test. This is standard for all IVF cycles and unrelated to TLM.\n\n**Pregnancy test:** A serum beta-hCG blood test is typically scheduled 10–14 days after transfer. Waiting for this result is generally the longest emotionally demanding phase of the cycle.",
+    "cost_breakdown": "TLM is priced as a laboratory add-on, not a separate procedure. Cost structure in Korean fertility centres generally follows this pattern:\n\nBase IVF cycle costs in Korea range from approximately **$4,800 to $8,200 USD**, covering stimulation monitoring, egg retrieval, fertilisation, embryo culture, and a single fresh transfer. Medication costs vary and may be quoted separately.\n\nThe TLM add-on — covering incubator use and AI scoring software — is typically quoted in the **$500 to $1,500 USD** range, depending on the duration of culture (Day 3 vs Day 5), the number of embryos, and the clinic tier.\n\nAdditional items that commonly appear on cost breakdowns:\n\n- Embryo vitrification (freezing surplus blastocysts): $300–$600 per cohort\n- Annual embryo storage: $150–$400 per year\n- Frozen embryo transfer (FET) cycle: $1,200–$2,500 if fresh transfer does not result in pregnancy\n- Preimplantation genetic testing (PGT-A), if added: $1,500–$3,500 depending on embryo count\n\nSome Korean clinics bundle TLM into a premium IVF package rather than listing it as a line item. Always request an itemised quote.",
+    "why_korea": "Korea has built one of the highest-volume and most technically advanced IVF sectors in Asia over the past two decades, and time-lapse technology is now standard equipment at major fertility centres rather than a premium rarity.\n\n**Regulatory framework.** Korea's Ministry of Food and Drug Safety (MFDS) regulates all assisted reproductive technology (ART) devices, including time-lapse incubators. The Korea Health Industry Development Institute (KHIDI) supports research funding and quality improvement across the reproductive medicine sector, and Medical Korea is the government-backed portal that vets internationally-oriented fertility clinics.\n\n**Volume and experience.** Korea recorded approximately 300,000 fertility treatment patients in 2024 — a 31% increase from 2020. High procedure volume means embryology teams accumulate hands-on experience with diverse patient profiles rapidly, and laboratories investing in EmbryoScope and Geri systems can amortise the equipment cost across a large caseload.\n\n**Technology adoption.** Leading Seoul fertility centres have adopted both EmbryoScope and Geri platforms alongside AI scoring tools such as iDAScore and KIDScore D5. The embryology culture at Korean clinics places heavy emphasis on continuous quality improvement and lab metrics.\n\n**Cost efficiency.** Full IVF cycles in Korea average $4,800–$8,200 USD — substantially below comparable care in the United States, UK, or Australia — without sacrificing laboratory technology standards.\n\n**English-language support.** Government-vetted fertility clinics under the Medical Korea programme routinely provide English-speaking patient coordinators and translated medical records, reducing friction for patients from Africa, the GCC, and Southeast Asia travelling to Seoul for care."
+  },
+  "costTable": [
+    {
+      "item": "Base IVF cycle (stimulation, retrieval, culture, fresh transfer)",
+      "cost": "$4,800–$8,200"
+    },
+    {
+      "item": "Time-lapse monitoring add-on (EmbryoScope or Geri + AI scoring)",
+      "cost": "$500–$1,500"
+    },
+    {
+      "item": "Embryo vitrification (surplus blastocysts)",
+      "cost": "$300–$600"
+    },
+    {
+      "item": "Frozen embryo transfer (FET) cycle",
+      "cost": "$1,200–$2,500"
+    },
+    {
+      "item": "Annual cryostorage fee",
+      "cost": "$150–$400"
+    }
+  ],
+  "callouts": [
+    {
+      "type": "tip",
+      "title": "Ask for an itemised quote",
+      "text": "Some Korean clinics bundle time-lapse monitoring into a premium IVF package without listing it separately. Request a line-item breakdown before confirming your cycle to understand exactly what is included and what costs extra, such as PGT or additional FET cycles."
+    }
+  ],
+  "keyTakeaways": [
+    "Time-lapse embryo monitoring is a laboratory add-on to IVF — it adds no extra procedures, injections, or recovery time for the patient",
+    "EmbryoScope and Geri systems keep embryos in an undisturbed, camera-equipped incubator throughout the 5–6 day culture window, with AI tools ranking each embryo's implantation potential",
+    "Korea's high IVF volume, MFDS-regulated laboratory standards, and KHIDI-supported research environment mean TLM is widely available at major Seoul fertility centres",
+    "Total out-of-pocket cost for an IVF cycle with TLM in Korea is typically $5,300–$9,700 USD, substantially below comparable care in Western markets"
+  ],
+  "entities": [
+    {
+      "name": "EmbryoScope",
+      "url": "https://en.wikipedia.org/wiki/EmbryoScope"
+    },
+    {
+      "name": "In vitro fertilisation",
+      "url": "https://en.wikipedia.org/wiki/In_vitro_fertilisation"
+    },
+    {
+      "name": "Preimplantation genetic testing",
+      "url": "https://en.wikipedia.org/wiki/Preimplantation_genetic_testing"
+    },
+    {
+      "name": "Morphokinetics",
+      "url": "https://en.wikipedia.org/wiki/Morphokinetics"
+    },
+    {
+      "name": "Vitrolife",
+      "url": "https://en.wikipedia.org/wiki/Vitrolife"
+    },
+    {
+      "name": "Korea Health Industry Development Institute",
+      "url": "https://en.wikipedia.org/wiki/Korea_Health_Industry_Development_Institute"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is time-lapse embryo monitoring a separate procedure I need to book?",
+      "a": "No. TLM is a laboratory add-on that runs during the culture phase of your IVF cycle. You do not attend any additional appointments — the monitoring happens entirely inside the embryology lab while your embryos develop over 5–6 days."
+    },
+    {
+      "q": "Does time-lapse monitoring guarantee a better pregnancy outcome?",
+      "a": "No outcome can be guaranteed in IVF. TLM provides your embryology team with more continuous developmental data and an AI-generated ranking to support embryo selection. The technology is intended to improve decision-making, not to ensure pregnancy."
+    },
+    {
+      "q": "What is the difference between EmbryoScope and Geri?",
+      "a": "Both are time-lapse incubators manufactured by Vitrolife. EmbryoScope has been in wider clinical use and was the platform on which iDAScore was originally trained. Geri uses individual culture chambers (one per patient) and captures images at multiple focal planes every few minutes. Both meet the same core function: continuous monitoring without removing embryos from the incubator."
+    },
+    {
+      "q": "Can I see the time-lapse video of my embryos?",
+      "a": "Many Korean fertility clinics share video clips or still images from the time-lapse record with patients as part of their patient communication service. Ask your clinic coordinator whether this is available and in what format — it varies by clinic."
+    },
+    {
+      "q": "How long does the embryo culture period last?",
+      "a": "Standard IVF culture in a time-lapse incubator runs to Day 5 or Day 6, at which point embryos that have reached the blastocyst stage are either transferred fresh or vitrified. Some clinics also assess embryos at Day 3, but blastocyst transfer (Day 5/6) is now the most common approach at high-volume Korean centres."
+    },
+    {
+      "q": "Do Korean clinics use AI to select embryos or does a human embryologist decide?",
+      "a": "Both. AI scoring tools such as iDAScore and KIDScore D5 generate a ranked score based on morphokinetic data, but the final transfer decision is made by a qualified embryologist who also considers conventional morphology grading and the patient's clinical history. AI functions as a decision-support tool, not an autonomous selector."
+    }
+  ],
+  "references": [
+    {
+      "label": "Robust and generalizable embryo selection based on AI and time-lapse image sequences — PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8809568/"
+    },
+    {
+      "label": "Deep learning applications for human embryo assessment using time-lapse imaging — Frontiers in Reproductive Health",
+      "url": "https://www.frontiersin.org/journals/reproductive-health/articles/10.3389/frph.2025.1549642/full"
+    },
+    {
+      "label": "KIDScore D5 for prediction of embryo pregnancy potential — PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39578525/"
+    },
+    {
+      "label": "Korea Health Industry Development Institute (KHIDI)",
+      "url": "https://www.khidi.or.kr/eng"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/procedures/inline/time-lapse-embryo-monitoring-1.jpg",
+      "alt": "Time-lapse embryo monitoring incubator in a Korean IVF laboratory",
+      "credit": "Nadezhda Moryak"
+    },
+    {
+      "src": "/images/procedures/inline/time-lapse-embryo-monitoring-2.jpg",
+      "alt": "Embryologist reviewing time-lapse embryo development footage in fertility lab",
+      "credit": "Mikhail Nilov"
+    },
+    {
+      "src": "/images/procedures/inline/time-lapse-embryo-monitoring-3.jpg",
+      "alt": "Fertility specialist consulting with patient at a Seoul IVF clinic",
+      "credit": "Thirdman"
+    }
+  ]
+}
