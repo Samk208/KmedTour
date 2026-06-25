@@ -1301,5 +1301,117 @@
       "q": "patient recovery hospital bed post surgery abdomen care",
       "alt": "Patient recovering after single port laparoscopic surgery in Korean hospital"
     }
+  ],
+  "robotic-reproductive-surgery": [
+    {
+      "q": "doctor patient consultation gynecology clinic Seoul Korea",
+      "alt": "Female patient consulting with a gynecologist at a modern Seoul clinic before robotic reproductive surgery"
+    },
+    {
+      "q": "da Vinci robotic surgery operating room minimally invasive",
+      "alt": "Robotic surgical system in use during a minimally invasive reproductive procedure at a Korean hospital"
+    },
+    {
+      "q": "woman recovery rest after surgery hospital room Korea",
+      "alt": "Patient resting comfortably in a private hospital room during recovery after robotic reproductive surgery in Korea"
+    }
+  ],
+  "dental-implant-surgery": [
+    {
+      "q": "dental consultation patient dentist Seoul Korea clinic modern",
+      "alt": "Patient receiving dental consultation at a modern Seoul dental clinic before implant surgery"
+    },
+    {
+      "q": "dental implant titanium post procedure oral surgery close-up",
+      "alt": "Close-up of titanium dental implant post placement procedure in Korea dental clinic"
+    },
+    {
+      "q": "patient smiling dental implant result beautiful teeth restoration",
+      "alt": "Patient smiling with restored teeth after successful dental implant surgery in South Korea"
+    }
+  ],
+  "prosthodontic-treatment": [
+    {
+      "q": "dental consultation digital scan Seoul Korea clinic",
+      "alt": "Prosthodontist reviewing digital scan with patient at a modern Seoul dental clinic"
+    },
+    {
+      "q": "zirconia crown veneer fabrication dental lab Korea",
+      "alt": "Dental technician milling a zirconia crown using CAD/CAM equipment in a Korean dental laboratory"
+    },
+    {
+      "q": "smile makeover before after porcelain veneers result",
+      "alt": "Patient displaying natural-looking porcelain veneer smile result after prosthodontic treatment in Korea"
+    }
+  ],
+  "orthodontic-treatment": [
+    {
+      "q": "dental consultation orthodontic examination patient Seoul clinic",
+      "alt": "Orthodontic consultation at a modern dental clinic in Seoul, South Korea"
+    },
+    {
+      "q": "clear aligners invisible braces dental tray teeth alignment",
+      "alt": "Clear aligner trays used in orthodontic treatment at a Korean dental clinic"
+    },
+    {
+      "q": "smile result straight teeth after orthodontic braces treatment",
+      "alt": "Patient smile showing aligned teeth after completing orthodontic treatment in Korea"
+    }
+  ],
+  "periodontal-treatment": [
+    {
+      "q": "dental periodontist gum treatment consultation Korea clinic",
+      "alt": "Periodontist performing gum examination during periodontal consultation in a modern Korean dental clinic"
+    },
+    {
+      "q": "laser gum disease treatment dental procedure minimally invasive",
+      "alt": "Laser periodontal therapy being performed to treat gum disease with minimal invasiveness"
+    },
+    {
+      "q": "healthy gums smile result after periodontal treatment",
+      "alt": "Healthy gum tissue and clean teeth after successful periodontal treatment in South Korea"
+    }
+  ],
+  "conservative-dentistry": [
+    {
+      "q": "dental filling tooth restoration consultation Korea clinic",
+      "alt": "Dentist consulting patient about conservative dentistry tooth restoration in a modern Korean dental clinic"
+    },
+    {
+      "q": "composite resin filling dental procedure tooth-colored restoration",
+      "alt": "Close-up of composite resin dental filling procedure preserving natural tooth structure"
+    },
+    {
+      "q": "natural tooth restoration dental inlay ceramic result smile",
+      "alt": "Patient showing natural-looking ceramic inlay result after conservative dentistry treatment"
+    }
+  ],
+  "oral-maxillofacial-surgery": [
+    {
+      "q": "oral surgery jaw consultation Korea patient doctor",
+      "alt": "Oral and maxillofacial surgery consultation in South Korea — patient reviewing jaw X-ray with specialist"
+    },
+    {
+      "q": "orthognathic jaw surgery procedure operating room Korea",
+      "alt": "Orthognathic jaw surgery procedure being performed in a Korean hospital operating room"
+    },
+    {
+      "q": "jaw surgery recovery patient smiling result before after",
+      "alt": "Patient recovery after jaw surgery showing improved facial profile and bite alignment result"
+    }
+  ],
+  "digital-guided-implant-surgery": [
+    {
+      "q": "digital dental 3D CBCT scan consultation Korea dentist",
+      "alt": "Dentist reviewing a 3D CBCT scan on a computer screen during a digital guided implant surgery consultation in Korea"
+    },
+    {
+      "q": "computer guided dental implant surgery surgical guide placement",
+      "alt": "Surgeon placing a dental implant using a CAD/CAM computer-guided surgical stent during guided implant surgery"
+    },
+    {
+      "q": "dental implant result patient smile recovery teeth restoration",
+      "alt": "Patient smiling after successful dental implant restoration and recovery following guided implant surgery in Seoul Korea"
+    }
   ]
 }

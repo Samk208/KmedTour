@@ -16,12 +16,15 @@ import cataractSurgery from './cataract-surgery.json'
 import chemicalPeel from './chemical-peel.json'
 import colonoscopy from './colonoscopy.json'
 import congenitalHeartDefectSurgery from './congenital-heart-defect-surgery.json'
+import conservativeDentistry from './conservative-dentistry.json'
 import cornealTransplant from './corneal-transplant.json'
 import coronaryArteryBypassGrafting from './coronary-artery-bypass-grafting.json'
 import coronaryBypass from './coronary-bypass.json'
 import cuppingTherapy from './cupping-therapy.json'
 import cyberknife from './cyberknife.json'
+import dentalImplantSurgery from './dental-implant-surgery.json'
 import dentalImplants from './dental-implants.json'
+import digitalGuidedImplantSurgery from './digital-guided-implant-surgery.json'
 import doubleEyelidSurgery from './double-eyelid-surgery.json'
 import eggFreezing from './egg-freezing.json'
 import endoscopicSubmucosalDissection from './endoscopic-submucosal-dissection.json'
@@ -60,18 +63,23 @@ import minimallyInvasiveSpineSurgery from './minimally-invasive-spine-surgery.js
 import neonatalCare from './neonatal-care.json'
 import neonatalHeartSurgery from './neonatal-heart-surgery.json'
 import openMicrodiscectomy from './open-microdiscectomy.json'
+import oralMaxillofacialSurgery from './oral-maxillofacial-surgery.json'
+import orthodonticTreatment from './orthodontic-treatment.json'
 import ovarianTissueCryopreservation from './ovarian-tissue-cryopreservation.json'
 import pacemakerImplantation from './pacemaker-implantation.json'
 import pediatricSurgery from './pediatric-surgery.json'
 import percutaneousCoronaryIntervention from './percutaneous-coronary-intervention.json'
+import periodontalTreatment from './periodontal-treatment.json'
 import porcelainVeneers from './porcelain-veneers.json'
 import preimplantationGeneticTesting from './preimplantation-genetic-testing.json'
 import prenatalCare from './prenatal-care.json'
 import prostateSurgery from './prostate-surgery.json'
+import prosthodonticTreatment from './prosthodontic-treatment.json'
 import protonTherapy from './proton-therapy.json'
 import pulmonaryTreatment from './pulmonary-treatment.json'
 import radiofrequencyAblationLiver from './radiofrequency-ablation-liver.json'
 import rhinoplasty from './rhinoplasty.json'
+import roboticReproductiveSurgery from './robotic-reproductive-surgery.json'
 import roboticThyroidectomy from './robotic-thyroidectomy.json'
 import scoliosisCorrectionSurgery from './scoliosis-correction-surgery.json'
 import sentinelLymphNodeBiopsy from './sentinel-lymph-node-biopsy.json'
@@ -111,12 +119,15 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "chemical-peel": chemicalPeel as TreatmentRichContent,
   "colonoscopy": colonoscopy as TreatmentRichContent,
   "congenital-heart-defect-surgery": congenitalHeartDefectSurgery as TreatmentRichContent,
+  "conservative-dentistry": conservativeDentistry as TreatmentRichContent,
   "corneal-transplant": cornealTransplant as TreatmentRichContent,
   "coronary-artery-bypass-grafting": coronaryArteryBypassGrafting as TreatmentRichContent,
   "coronary-bypass": coronaryBypass as TreatmentRichContent,
   "cupping-therapy": cuppingTherapy as TreatmentRichContent,
   "cyberknife": cyberknife as TreatmentRichContent,
+  "dental-implant-surgery": dentalImplantSurgery as TreatmentRichContent,
   "dental-implants": dentalImplants as TreatmentRichContent,
+  "digital-guided-implant-surgery": digitalGuidedImplantSurgery as TreatmentRichContent,
   "double-eyelid-surgery": doubleEyelidSurgery as TreatmentRichContent,
   "egg-freezing": eggFreezing as TreatmentRichContent,
   "endoscopic-submucosal-dissection": endoscopicSubmucosalDissection as TreatmentRichContent,
@@ -155,18 +166,23 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "neonatal-care": neonatalCare as TreatmentRichContent,
   "neonatal-heart-surgery": neonatalHeartSurgery as TreatmentRichContent,
   "open-microdiscectomy": openMicrodiscectomy as TreatmentRichContent,
+  "oral-maxillofacial-surgery": oralMaxillofacialSurgery as TreatmentRichContent,
+  "orthodontic-treatment": orthodonticTreatment as TreatmentRichContent,
   "ovarian-tissue-cryopreservation": ovarianTissueCryopreservation as TreatmentRichContent,
   "pacemaker-implantation": pacemakerImplantation as TreatmentRichContent,
   "pediatric-surgery": pediatricSurgery as TreatmentRichContent,
   "percutaneous-coronary-intervention": percutaneousCoronaryIntervention as TreatmentRichContent,
+  "periodontal-treatment": periodontalTreatment as TreatmentRichContent,
   "porcelain-veneers": porcelainVeneers as TreatmentRichContent,
   "preimplantation-genetic-testing": preimplantationGeneticTesting as TreatmentRichContent,
   "prenatal-care": prenatalCare as TreatmentRichContent,
   "prostate-surgery": prostateSurgery as TreatmentRichContent,
+  "prosthodontic-treatment": prosthodonticTreatment as TreatmentRichContent,
   "proton-therapy": protonTherapy as TreatmentRichContent,
   "pulmonary-treatment": pulmonaryTreatment as TreatmentRichContent,
   "radiofrequency-ablation-liver": radiofrequencyAblationLiver as TreatmentRichContent,
   "rhinoplasty": rhinoplasty as TreatmentRichContent,
+  "robotic-reproductive-surgery": roboticReproductiveSurgery as TreatmentRichContent,
   "robotic-thyroidectomy": roboticThyroidectomy as TreatmentRichContent,
   "scoliosis-correction-surgery": scoliosisCorrectionSurgery as TreatmentRichContent,
   "sentinel-lymph-node-biopsy": sentinelLymphNodeBiopsy as TreatmentRichContent,
