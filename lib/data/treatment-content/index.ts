@@ -13,6 +13,7 @@ import breastConservingSurgery from './breast-conserving-surgery.json'
 import bronchoplasty from './bronchoplasty.json'
 import cancerScreening from './cancer-screening.json'
 import cardiacScreening from './cardiac-screening.json'
+import cardiovascularPhysiologyAssessment from './cardiovascular-physiology-assessment.json'
 import cataractSurgery from './cataract-surgery.json'
 import chemicalPeel from './chemical-peel.json'
 import colonoscopy from './colonoscopy.json'
@@ -57,6 +58,7 @@ import laparoscopicGastricCancer from './laparoscopic-gastric-cancer.json'
 import lasekEyeSurgery from './lasek-eye-surgery.json'
 import laserSkinResurfacing from './laser-skin-resurfacing.json'
 import lasikEyeSurgery from './lasik-eye-surgery.json'
+import leftMainCoronaryIntervention from './left-main-coronary-intervention.json'
 import limbLengthening from './limb-lengthening.json'
 import liposuction from './liposuction.json'
 import livingDonorKidneyTransplant from './living-donor-kidney-transplant.json'
@@ -83,7 +85,9 @@ import prostateSurgery from './prostate-surgery.json'
 import prosthodonticTreatment from './prosthodontic-treatment.json'
 import protonTherapy from './proton-therapy.json'
 import pulmonaryTreatment from './pulmonary-treatment.json'
+import radialArteryApproachPci from './radial-artery-approach-pci.json'
 import radiofrequencyAblationLiver from './radiofrequency-ablation-liver.json'
+import rehabilitationTherapy from './rehabilitation-therapy.json'
 import rhinoplasty from './rhinoplasty.json'
 import roboticReproductiveSurgery from './robotic-reproductive-surgery.json'
 import roboticThyroidectomy from './robotic-thyroidectomy.json'
@@ -124,6 +128,7 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "bronchoplasty": bronchoplasty as TreatmentRichContent,
   "cancer-screening": cancerScreening as TreatmentRichContent,
   "cardiac-screening": cardiacScreening as TreatmentRichContent,
+  "cardiovascular-physiology-assessment": cardiovascularPhysiologyAssessment as TreatmentRichContent,
   "cataract-surgery": cataractSurgery as TreatmentRichContent,
   "chemical-peel": chemicalPeel as TreatmentRichContent,
   "colonoscopy": colonoscopy as TreatmentRichContent,
@@ -168,6 +173,7 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "lasek-eye-surgery": lasekEyeSurgery as TreatmentRichContent,
   "laser-skin-resurfacing": laserSkinResurfacing as TreatmentRichContent,
   "lasik-eye-surgery": lasikEyeSurgery as TreatmentRichContent,
+  "left-main-coronary-intervention": leftMainCoronaryIntervention as TreatmentRichContent,
   "limb-lengthening": limbLengthening as TreatmentRichContent,
   "liposuction": liposuction as TreatmentRichContent,
   "living-donor-kidney-transplant": livingDonorKidneyTransplant as TreatmentRichContent,
@@ -194,7 +200,9 @@ export const treatmentContent: Record<string, TreatmentRichContent> = {
   "prosthodontic-treatment": prosthodonticTreatment as TreatmentRichContent,
   "proton-therapy": protonTherapy as TreatmentRichContent,
   "pulmonary-treatment": pulmonaryTreatment as TreatmentRichContent,
+  "radial-artery-approach-pci": radialArteryApproachPci as TreatmentRichContent,
   "radiofrequency-ablation-liver": radiofrequencyAblationLiver as TreatmentRichContent,
+  "rehabilitation-therapy": rehabilitationTherapy as TreatmentRichContent,
   "rhinoplasty": rhinoplasty as TreatmentRichContent,
   "robotic-reproductive-surgery": roboticReproductiveSurgery as TreatmentRichContent,
   "robotic-thyroidectomy": roboticThyroidectomy as TreatmentRichContent,

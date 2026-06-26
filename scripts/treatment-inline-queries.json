@@ -1525,5 +1525,61 @@
       "q": "patient eye drop post-operative recovery care",
       "alt": "Patient applying antibiotic eye drops during corneal transplant recovery"
     }
+  ],
+  "cardiovascular-physiology-assessment": [
+    {
+      "q": "cardiologist consultation patient cardiac clinic Seoul Korea",
+      "alt": "Cardiologist consulting with an international patient before cardiac assessment in Korea"
+    },
+    {
+      "q": "echocardiography stress test cardiac monitoring hospital",
+      "alt": "Echocardiography and stress test during cardiovascular physiology assessment in Korea"
+    },
+    {
+      "q": "ECG heart monitor results review doctor patient",
+      "alt": "Cardiologist reviewing ECG results with a patient at a Korean hospital"
+    }
+  ],
+  "radial-artery-approach-pci": [
+    {
+      "q": "cardiac catheterization lab interventional cardiologist wrist procedure",
+      "alt": "Interventional cardiologist preparing radial artery access for PCI in Korea"
+    },
+    {
+      "q": "coronary stent PCI balloon angioplasty heart procedure",
+      "alt": "Coronary stent deployment during percutaneous coronary intervention in Korea"
+    },
+    {
+      "q": "patient cardiac recovery hospital walking mobilization ward",
+      "alt": "Patient mobilizing early after radial-access PCI at a Korean cardiac center"
+    }
+  ],
+  "left-main-coronary-intervention": [
+    {
+      "q": "cardiologist cardiac surgeon consultation patient hospital Korea",
+      "alt": "Cardiologist consulting a patient on left main coronary intervention options in Korea"
+    },
+    {
+      "q": "cardiac catheterization lab coronary angiogram interventional cardiology",
+      "alt": "Coronary angiogram showing left main coronary artery during cardiac catheterization"
+    },
+    {
+      "q": "heart surgery recovery patient hospital bed cardiac ward",
+      "alt": "Patient in recovery after left main coronary intervention at a Korean cardiac center"
+    }
+  ],
+  "rehabilitation-therapy": [
+    {
+      "q": "physical therapist patient rehabilitation session South Korea hospital",
+      "alt": "Physical therapist guiding a patient through rehabilitation exercises at a Korean hospital"
+    },
+    {
+      "q": "occupational therapy hand exercise fine motor rehabilitation clinic",
+      "alt": "Occupational therapist working on fine motor rehabilitation with a patient in Korea"
+    },
+    {
+      "q": "patient walking rehabilitation parallel bars recovery hospital ward",
+      "alt": "Patient practising walking on parallel bars during inpatient rehabilitation in Korea"
+    }
   ]
 }

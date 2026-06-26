@@ -1,0 +1,174 @@
+{
+  "slug": "left-main-coronary-intervention",
+  "shortDescription": "PCI or CABG for left main coronary artery stenosis — a high-stakes cardiac procedure performed in Korea's high-volume catheterization centres with intravascular imaging guidance.",
+  "quickAnswer": [
+    "**PCI or CABG** is chosen based on SYNTAX score, lesion complexity, and surgical fitness — low-to-intermediate SYNTAX favours PCI, high SYNTAX or diabetes often favours CABG.",
+    "**IVUS or OCT guidance** is now a Class I recommendation for left main PCI, improving stent sizing and reducing major adverse cardiac events.",
+    "**Cost in Korea** for PCI-based left main intervention typically ranges from approximately **$12,000 to $22,000** USD — substantially below US list prices.",
+    "Korea's leading cardiac centres perform among the highest volumes of complex coronary interventions in Asia, with documented volume-outcome benefits for high-complexity cases."
+  ],
+  "keyFacts": [
+    {
+      "label": "Procedure time",
+      "value": "1.5–3 hours (PCI); 4–6 hours (CABG)"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "Local sedation + conscious sedation (PCI); general anesthesia (CABG)"
+    },
+    {
+      "label": "Hospital stay",
+      "value": "3–5 days (PCI); 7–10 days (CABG)"
+    },
+    {
+      "label": "Recommended stay in Korea",
+      "value": "10–14 days for PCI; 21–28 days for CABG"
+    },
+    {
+      "label": "Recovery",
+      "value": "4–6 weeks light activity (PCI); 6–12 weeks (CABG)"
+    },
+    {
+      "label": "Typical cost in Korea",
+      "value": "~$12,000–$22,000 USD (PCI); ~$18,000–$35,000 USD (CABG)"
+    }
+  ],
+  "sections": {
+    "overview": "The left main coronary artery (LMCA) supplies blood to a large portion of the heart muscle — in most people, roughly 70–80% of the left ventricle. Significant stenosis here is one of the most dangerous forms of coronary artery disease.\n\nTwo revascularisation strategies exist: **percutaneous coronary intervention (PCI)**, which opens the artery using a catheter and implants a drug-eluting stent, and **coronary artery bypass grafting (CABG)**, which surgically reroutes blood around the blockage using a grafted vessel.\n\nNeither approach is universally superior. The choice is made jointly by an interventional cardiologist, cardiac surgeon, and patient — a process sometimes called the 'Heart Team' discussion.\n\nModern left main PCI relies on **intravascular imaging** (IVUS or OCT) rather than angiography alone. These tools provide real-time cross-sectional views of the artery wall, allowing precise stent sizing and placement. The 2025 ACC/AHA guideline elevated IVUS/OCT use in left main PCI to a Class I recommendation.\n\n**Drug-eluting stents (DES)** release anti-proliferative medication locally to prevent scar tissue from re-narrowing the vessel — a major improvement over bare-metal stents used in earlier eras.\n\nThis is not a routine stenting procedure. It demands high operator experience, a dedicated hybrid catheterisation suite, and rapid surgical backup. All statements here are for informational purposes only; treatment decisions must be made by your cardiac team based on your individual imaging and physiology.",
+    "candidacy": "Candidacy for PCI versus CABG in left main disease is determined by a structured scoring and assessment process.\n\nThe **SYNTAX score** quantifies the complexity of coronary anatomy. A low SYNTAX score (below 23) generally favours PCI as equivalent to CABG for composite outcomes. A high SYNTAX score (above 32) or involvement of three-vessel disease alongside LMCA stenosis typically favours surgical bypass.\n\nPatients who may be directed toward **PCI** include those with isolated ostial or mid-shaft left main disease, low-to-intermediate SYNTAX scores, no diabetes (or well-controlled diabetes), and elevated surgical risk due to age or comorbidities.\n\nPatients directed toward **CABG** often have high SYNTAX scores, distal bifurcation involvement, coexisting multi-vessel disease, younger age with acceptable surgical fitness, or diabetes with complex anatomy.\n\n**Functional assessment** — including fractional flow reserve (FFR) or instantaneous wave-free ratio (iFR) — may be used to confirm haemodynamic significance before committing to revascularisation.\n\nYour cardiology team abroad will request your prior angiogram images and SYNTAX calculation before confirming candidacy remotely.",
+    "procedure_steps": "**Pre-procedure preparation**\n\nPatients undergo coronary angiography (if not already done) to map the lesion. A Heart Team review confirms the revascularisation strategy. Dual antiplatelet therapy is typically loaded in advance for PCI patients.\n\n**For PCI (catheter-based)**\n\nAccess is obtained via the radial artery (wrist) or femoral artery (groin). A guide catheter is advanced to the left main coronary ostium under X-ray fluoroscopy.\n\n- **IVUS or OCT imaging** is performed first to characterise the lesion length, reference vessel diameter, plaque morphology, and calcium burden.\n- Balloon pre-dilation or rotational atherectomy may be used to prepare calcified lesions.\n- One or more **drug-eluting stents** are deployed under imaging guidance.\n- Post-dilation with a non-compliant balloon optimises stent expansion.\n- Bifurcation techniques (provisional or two-stent strategies) are used when the circumflex ostium is involved.\n- Final IVUS/OCT confirms adequate stent apposition and absence of edge dissection.\n\n**For CABG (surgical)**\n\nPerformed under general anaesthesia with cardiopulmonary bypass (or off-pump in selected cases). The left internal mammary artery is most commonly grafted to the left anterior descending artery. Additional saphenous vein grafts may bridge other diseased vessels.\n\nAfter either procedure, the patient is monitored in a cardiac intensive care or step-down unit.",
+    "recovery_timeline": "**Immediately after PCI (Day 0–2)**\n\nPatients are observed in the catheterisation recovery area. Access-site haemostasis is confirmed. Cardiac monitoring continues for at least 24 hours. Most patients mobilise the same day or next morning.\n\n**Hospital discharge (Day 3–5 for PCI)**\n\nDischarge depends on haemodynamic stability, absence of complications, and biomarker trends. Dual antiplatelet therapy is prescribed — typically for a minimum of 12 months after left main DES implantation.\n\n**First 2 weeks in Korea (outpatient)**\n\nA follow-up clinic visit at 5–7 days checks the access site, ECG, and any symptoms. Wound care, activity limits, and medication instructions are reviewed.\n\n**Weeks 3–6 at home**\n\n- Light walking resumed from week 1; aerobic activity typically from week 4–6 on physician approval.\n- Driving is usually restricted for 1–2 weeks after radial-access PCI.\n- Heavy lifting and strenuous exertion are avoided for 4–6 weeks.\n\n**CABG recovery is longer** — sternal healing requires 6–8 weeks of restrictions; full activity recovery takes 10–12 weeks.\n\n**Long-term follow-up** includes a stress test or coronary CT at 6–12 months. Lifestyle modification — smoking cessation, blood pressure control, statin therapy, diet — is essential to prevent disease progression.\n\nYour treating team sets the specific timeline; individual recovery varies based on pre-existing heart function, comorbidities, and procedural complexity.",
+    "cost_breakdown": "Korea offers meaningful cost advantages for complex coronary interventions versus Western list prices.\n\n**Approximate USD ranges for left main PCI in Korea:**\n\n- Standard single-stent PCI with IVUS: approximately $12,000–$16,000\n- Complex bifurcation PCI (two stents, extended imaging): approximately $16,000–$22,000\n- CABG (open surgical bypass): approximately $18,000–$35,000 depending on number of grafts and ICU stay\n\nThese figures typically cover the procedure itself, catheterisation lab fees, stent and device costs, anaesthesia, standard post-procedure hospital stay (3–5 days for PCI), and routine follow-up imaging before departure.\n\n**What may be added separately:**\n\n- Pre-procedure cardiac CT angiography or diagnostic angiogram if not already done\n- Extended ICU stay if required\n- Cardiac rehabilitation sessions\n- Translation or medical coordinator services\n- Accommodation and international travel\n\n**Payment and insurance:** Most international patients pay out of pocket. Some hospitals accept international insurance with prior authorisation. Upfront deposits are common. Ask for a detailed itemised quote before travel.\n\nAll cost figures are approximate ranges; actual quotes depend on your specific anatomy, chosen hospital tier, and current exchange rates.",
+    "why_korea": "Korea has built a well-documented reputation in cardiovascular medicine through sustained investment in high-volume tertiary cardiac centres.\n\n**High procedural volume drives outcomes.** Korean nationwide cohort research has consistently shown that higher institutional case volume is associated with lower in-hospital mortality for complex cardiac procedures.\n\n**Intravascular imaging expertise.** Korean cardiac centres were early adopters of IVUS-guided coronary intervention and have published extensively in this area. The IVUS-ACS trial and related work emerging from Korean institutions have influenced global guidelines.\n\n**Integrated Heart Team infrastructure.** Korea's leading cardiac hospitals operate dedicated hybrid catheterisation-operating suites where PCI and emergency surgical conversion can occur in the same room. Multi-disciplinary Heart Team conferences are standard practice.\n\n**Medical Korea programme.** The Korean government's Medical Korea initiative, coordinated through KHIDI (Korea Health Industry Development Institute), supports international patients through designated hospitals, coordinator services, and quality oversight.\n\n**Cost competitiveness without cutting corners.** Published medical tourism data place coronary stenting costs in Korea at roughly one-third to one-half of US list prices. The savings do not appear to come from reduced imaging or device use — IVUS guidance remains standard, and premium drug-eluting stents are routinely used.\n\nAs always: verify any specific hospital's credentials and cardiac surgery programme volume independently before committing to travel."
+  },
+  "costTable": [
+    {
+      "item": "PCI – single stent (ostial/mid-shaft, IVUS-guided)",
+      "cost": "$12,000–$16,000"
+    },
+    {
+      "item": "PCI – bifurcation (two stents, complex imaging)",
+      "cost": "$16,000–$22,000"
+    },
+    {
+      "item": "CABG – 1–2 vessel bypass (including ICU)",
+      "cost": "$18,000–$26,000"
+    },
+    {
+      "item": "CABG – 3+ vessel bypass (multi-graft, extended stay)",
+      "cost": "$26,000–$35,000"
+    },
+    {
+      "item": "Diagnostic coronary angiogram (if needed pre-procedure)",
+      "cost": "$1,500–$3,000"
+    }
+  ],
+  "callouts": [
+    {
+      "type": "warning",
+      "title": "Emergency symptoms — seek immediate care",
+      "text": "Severe chest pain or pressure, pain radiating to the jaw or left arm, sudden shortness of breath, profuse sweating, loss of consciousness, or new-onset palpitations may indicate an acute coronary syndrome or stent complication. Do not wait for a scheduled appointment. Call emergency services (119 in Korea) or go directly to the nearest hospital emergency department. Left main territory events can escalate rapidly."
+    }
+  ],
+  "keyTakeaways": [
+    "Left main coronary intervention is a high-stakes decision requiring a Heart Team assessment — PCI is appropriate for low-to-intermediate SYNTAX scores; CABG is preferred for complex or high-SYNTAX anatomy.",
+    "IVUS or OCT guidance is now a guideline-endorsed standard for left main PCI and is routinely available at Korea's leading cardiac centres.",
+    "Approximate costs in Korea range from $12,000–$22,000 for PCI and $18,000–$35,000 for CABG — well below US list prices, with dual antiplatelet therapy continuing for at least 12 months post-stent.",
+    "All treatment decisions must be individualised by your cardiologist and cardiac surgeon based on your coronary anatomy, systemic health, and risk profile — this content is informational only."
+  ],
+  "entities": [
+    {
+      "name": "Left main coronary artery",
+      "url": "https://en.wikipedia.org/wiki/Left_coronary_artery"
+    },
+    {
+      "name": "Percutaneous coronary intervention",
+      "url": "https://en.wikipedia.org/wiki/Percutaneous_coronary_intervention"
+    },
+    {
+      "name": "Coronary artery bypass surgery",
+      "url": "https://en.wikipedia.org/wiki/Coronary_artery_bypass_surgery"
+    },
+    {
+      "name": "Intravascular ultrasound",
+      "url": "https://en.wikipedia.org/wiki/Intravascular_ultrasound"
+    },
+    {
+      "name": "SYNTAX score",
+      "url": "https://en.wikipedia.org/wiki/SYNTAX_score"
+    },
+    {
+      "name": "Drug-eluting stent",
+      "url": "https://en.wikipedia.org/wiki/Drug-eluting_stent"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How is the decision made between PCI and CABG for left main disease?",
+      "a": "The decision is made by a multi-disciplinary Heart Team — typically an interventional cardiologist and a cardiac surgeon — reviewing your coronary angiogram, SYNTAX score, functional assessments (FFR/iFR), comorbidities, and surgical risk. Low-to-intermediate SYNTAX scores generally favour PCI. High SYNTAX scores, significant diabetes with complex anatomy, or very distal bifurcation lesions often favour CABG. Your preferences and fitness for surgery also factor into the discussion."
+    },
+    {
+      "q": "Why is IVUS or OCT used instead of just the X-ray picture?",
+      "a": "Standard coronary angiography shows a silhouette of the artery lumen but cannot measure vessel wall dimensions accurately. IVUS and OCT provide cross-sectional images that reveal true vessel diameter, plaque composition, and calcium burden — information needed to select the right stent size and confirm full expansion after deployment. In left main disease, undersized or under-expanded stents carry serious risk, so imaging guidance is a guideline Class I recommendation."
+    },
+    {
+      "q": "How long must I take dual antiplatelet therapy (DAPT) after left main PCI?",
+      "a": "Current guidelines typically recommend at least 12 months of DAPT — aspirin plus a P2Y12 inhibitor (such as ticagrelor or clopidogrel) — after drug-eluting stent implantation in the left main coronary artery. Stopping early without physician guidance significantly increases the risk of stent thrombosis, which can be life-threatening. Your cardiologist will set the exact duration based on your bleeding risk, kidney function, and other medications."
+    },
+    {
+      "q": "Can I fly home shortly after left main PCI?",
+      "a": "Most cardiologists advise remaining near the treating hospital for at least 7–10 days after uncomplicated left main PCI before considering long-haul flight. The first week is when the highest-risk complications — stent thrombosis, access-site bleeding, arrhythmia — are most likely to occur. Many centres in Korea schedule a clinical review at day 5–7 before clearing international travel. Inform the airline of your recent procedure; some require a fitness-to-fly letter."
+    },
+    {
+      "q": "What medications will I need to manage long-term after this procedure?",
+      "a": "Beyond DAPT, most patients after left main revascularisation are prescribed a high-intensity statin (to slow plaque progression), a beta-blocker (to reduce cardiac workload and arrhythmia risk), an ACE inhibitor or ARB (if left ventricular function is impaired), and aspirin indefinitely. Your Korean cardiologist will prepare a complete discharge medication list with dosing; share this with your home cardiologist to ensure continuity of care."
+    },
+    {
+      "q": "Is left main PCI or CABG available at all Korean hospitals, or only specific centres?",
+      "a": "Left main intervention — particularly PCI — is a complex, high-stakes procedure that should be performed at high-volume tertiary cardiac centres with full cardiac surgical backup and on-site IVUS/OCT capability. Not every Korean hospital offering general cardiology services is equipped for this. When evaluating a Korean centre for this procedure, ask specifically about their annual volume of left main PCI cases and whether a cardiac surgeon is available in-house, not just on call."
+    }
+  ],
+  "references": [
+    {
+      "label": "IVUS-guided vs angiography-guided DES for left main disease (PMC, 2024)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11218326/"
+    },
+    {
+      "label": "IVUS guidance improves long-term prognosis in unprotected LMCA disease (PMC)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5443793/"
+    },
+    {
+      "label": "Intravascular imaging-guided DES implantation – Lancet network meta-analysis (2023)",
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(23)02454-6/abstract"
+    },
+    {
+      "label": "Institutional case volume and mortality after cardiac valve replacement – Korean nationwide study (PMC)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9392916/"
+    },
+    {
+      "label": "Left Main Coronary Artery PCI – overview (PMC 2022)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9658424/"
+    },
+    {
+      "label": "Routine intracoronary imaging-guided left main coronary intervention (Scientific Reports, 2025)",
+      "url": "https://www.nature.com/articles/s41598-025-93763-2"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/procedures/inline/left-main-coronary-intervention-1.jpg",
+      "alt": "Cardiologist consulting a patient on left main coronary intervention options in Korea",
+      "credit": "Los Muertos Crew"
+    },
+    {
+      "src": "/images/procedures/inline/left-main-coronary-intervention-2.jpg",
+      "alt": "Coronary angiogram showing left main coronary artery during cardiac catheterization",
+      "credit": "Marta Branco"
+    },
+    {
+      "src": "/images/procedures/inline/left-main-coronary-intervention-3.jpg",
+      "alt": "Patient in recovery after left main coronary intervention at a Korean cardiac center",
+      "credit": "Engin Akyurt"
+    }
+  ]
+}
