@@ -1,0 +1,178 @@
+{
+  "slug": "lung-transplant",
+  "shortDescription": "Lung transplantation in South Korea — single, bilateral, or living-donor lobar — managed through the KONOS national organ-sharing network.",
+  "quickAnswer": [
+    "**Single and bilateral lung transplants** are both performed in Korea, with bilateral preferred for conditions such as COPD and cystic fibrosis; single-lung is used for selected fibrosis cases.",
+    "Korea **pioneered living-donor lobar lung transplantation (LDLLT)** in Asia, using lower lobes from two living donors for patients — often children — who cannot wait for a deceased donor.",
+    "The **KONOS (Korean Network for Organ Sharing)** centrally manages all deceased-donor organ allocation, ensuring transparent, urgency-based matching across the country.",
+    "Approximate total cost for a lung transplant in South Korea ranges from **$80,000 to $180,000 USD**, significantly below comparable programmes in the United States."
+  ],
+  "keyFacts": [
+    {
+      "label": "Procedure time",
+      "value": "4–12 hours (single lung); 6–14 hours (bilateral or LDLLT)"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "General anesthesia; cardiopulmonary bypass or ECMO support as required"
+    },
+    {
+      "label": "Hospital stay",
+      "value": "4–8 weeks (ICU then step-down ward)"
+    },
+    {
+      "label": "Recommended stay in Korea",
+      "value": "3–6 months for initial recovery and immunosuppression stabilisation"
+    },
+    {
+      "label": "Recovery",
+      "value": "Return to light activity at 3–6 months; full pulmonary rehabilitation 6–12 months"
+    },
+    {
+      "label": "Typical cost in Korea",
+      "value": "Approx. $80,000–$180,000 USD (all-inclusive estimate; varies by procedure type)"
+    }
+  ],
+  "sections": {
+    "overview": "Lung transplantation replaces one or both diseased lungs with healthy donor lungs to restore respiratory function in patients with end-stage lung disease. It is among the most technically demanding solid-organ transplants performed in thoracic surgery.\n\nSouth Korea operates a mature, nationally coordinated lung transplant programme through a small number of high-volume academic medical centres. The programme is governed by the Act on Organ and Human Body Part Donation and Transplantation, administered by the Korea Health Industry Development Institute (**KHIDI**) in partnership with KONOS.\n\nThree main surgical approaches are used in Korea:\n\n- **Single-lung transplant** — one diseased lung is replaced; shorter operative time, preferred for older patients or those with idiopathic pulmonary fibrosis (IPF) when the native lung will not compete with the graft\n- **Bilateral sequential lung transplant** — both lungs replaced in a single operation via a clamshell or bilateral thoracotomy incision; standard for younger patients, COPD, bronchiectasis, and cystic fibrosis\n- **Living-donor lobar lung transplant (LDLLT)** — the right lower lobe from one living donor and the left lower lobe from a second living donor are transplanted into the recipient; Korea was among the first countries in Asia to report this technique and amended transplant law in 2018 to formally permit living-lung donation\n\nIdiopathic pulmonary fibrosis (IPF) has historically been the most common indication in Korea, reflecting the country's ageing patient population and the rising incidence of fibrotic lung disease across East Asia.",
+    "candidacy": "Lung transplantation is considered when chronic lung disease has progressed to a stage where medical therapy no longer maintains acceptable quality of life or survival, and life expectancy without transplant is estimated at fewer than two years.\n\nCommon diagnoses that may qualify a patient for evaluation include:\n\n- Idiopathic pulmonary fibrosis (IPF) and other interstitial lung diseases\n- Chronic obstructive pulmonary disease (COPD) or emphysema not responding to medical management\n- Bronchiectasis or cystic fibrosis with recurrent infections and declining FEV1\n- Pulmonary arterial hypertension refractory to advanced therapies\n- Sarcoidosis or lymphangioleiomyomatosis with severe functional impairment\n\nKorean transplant centres conduct a thorough multi-disciplinary evaluation before listing. This typically includes pulmonary function testing, six-minute walk distance, echocardiography, CT imaging of the chest, cardiac catheterisation, and infectious disease screening.\n\nContraindications that would generally exclude a candidate include active malignancy within the preceding two to five years, severe dysfunction of other major organs (unless combined transplant is planned), active smoking or recent cessation under six months, uncontrolled psychiatric illness, and inability to adhere to a complex lifelong immunosuppression regimen.\n\nFor LDLLT, living donors must be healthy adults — typically family members — with compatible blood type and lobe size sufficient to fill the recipient's chest cavity. Both donors undergo independent surgical risk assessment before consent is finalised.",
+    "procedure_steps": "Once a compatible deceased donor lung is identified by KONOS and allocated to a recipient on the waiting list, the transplant team mobilises within a strict cold ischaemia window — typically under six hours for lungs.\n\nThe operative sequence for a **bilateral sequential lung transplant** (the most common approach in younger Korean patients) proceeds as follows:\n\n- The patient is positioned supine or in a lateral decubitus position depending on surgeon preference and incision choice (bilateral anterior thoracotomy with transverse sternotomy, or sequential lateral thoracotomies)\n- Cardiopulmonary bypass or veno-venous **ECMO** (extracorporeal membrane oxygenation) is established if haemodynamic or respiratory stability cannot be maintained during single-lung ventilation\n- The first native lung is excised, and the donor lung is implanted with bronchial, pulmonary artery, and pulmonary vein anastomoses\n- The second native lung is then excised and the second donor lung implanted in the same fashion\n- Haemostasis is secured, chest drains are placed, and ECMO is weaned if it was used intraoperatively\n\nFor **single-lung transplant**, only one side is replaced via a standard posterolateral thoracotomy.\n\nFor **LDLLT**, two separate donor operations (one for each living donor) are coordinated simultaneously with the recipient operation. Each donor's lower lobe is resected via a video-assisted or open thoracotomy, and the two lobes are implanted into the recipient as a functional right and left lung.\n\nAll procedures are performed under general anaesthesia with double-lumen endotracheal intubation for independent lung ventilation.",
+    "recovery_timeline": "Recovery from lung transplantation is prolonged and structured across several distinct phases.\n\n**Immediate post-operative period (Days 1–7)**\n\n- Patient remains in the intensive care unit on mechanical ventilation, typically weaned to extubation within two to five days if primary graft function is satisfactory\n- ECMO may be continued post-operatively if primary graft dysfunction (PGD) is detected\n- Chest drains are managed, and fluid balance is closely monitored\n- Immunosuppression (typically a calcineurin inhibitor such as tacrolimus, an antimetabolite, and corticosteroids) is initiated immediately\n\n**Early hospital phase (Weeks 1–6)**\n\n- Stepdown from ICU to a specialised thoracic transplant ward\n- Bronchoscopy performed regularly to assess anastomosis and sample airways for infection surveillance\n- Pulmonary physiotherapy begins as soon as the patient is haemodynamically stable\n- Total inpatient stay is commonly four to eight weeks for uncomplicated recipients\n\n**Post-discharge recovery in Korea (Months 1–3)**\n\n- Outpatient clinic visits two to three times weekly for blood-level monitoring of immunosuppressants and lung function spirometry\n- Korean transplant centres expect international patients to remain in Korea for a minimum of three months post-discharge\n- Prophylactic antifungal, antiviral (CMV), and antibacterial regimens continue during this high-risk window\n\n**Longer-term rehabilitation (Months 3–12+)**\n\n- Supervised pulmonary rehabilitation programme; most patients return to independent daily activities by six months\n- Annual surveillance bronchoscopy and PFTs to monitor for chronic lung allograft dysfunction (CLAD)\n- Lifelong immunosuppression and regular follow-up are mandatory — coordination with a transplant-experienced pulmonologist in the patient's home country is arranged before discharge from Korea",
+    "cost_breakdown": "Lung transplantation involves multiple cost layers that international patients must plan for well in advance.\n\n**Evaluation and listing phase** covers pulmonary function testing, CT scanning, cardiac investigations, infectious-disease panels, and multi-disciplinary team consultations. This phase typically runs $3,000–$8,000 USD and is required before any patient can be placed on the KONOS waiting list.\n\n**Surgical and ICU fees** form the largest single component. The transplant operation itself — theatre time, perfusionist fees, ECMO if required, and surgical team costs — combined with four to eight weeks of ICU and step-down ward care typically accounts for the majority of the total bill.\n\n**Immunosuppression and pharmacy** costs during the inpatient stay are substantial. Tacrolimus, mycophenolate mofetil, prednisolone, and antiviral/antifungal prophylactics are all included in most hospital packages but should be confirmed in writing.\n\n**Post-discharge monitoring** for the three to six months recommended in Korea adds accommodation, outpatient clinic fees, and drug costs. Patients should budget an additional $8,000–$20,000 USD for this phase.\n\nFor **LDLLT**, two separate donor surgeries add cost but may shorten waiting time significantly. Donor surgical fees, anaesthesia, and short inpatient recovery for each donor are typically itemised separately.\n\nAll figures are approximate and depend on the specific procedure type, length of ECMO support, complications, and the centre chosen. International patients should request a detailed written estimate before confirming admission.",
+    "why_korea": "South Korea's lung transplant programme is distinguished by several structural and clinical advantages that are difficult to replicate in other medical tourism destinations.\n\n**Centralised organ allocation via KONOS**\n\nThe Korean Network for Organ Sharing allocates all deceased-donor lungs through a transparent, urgency-weighted scoring system modelled on international best practice. This national coordination — rather than fragmented hospital-by-hospital allocation — maximises the utilisation of each donated lung and reduces waiting-list inequity.\n\n**Living-donor lobar lung transplantation leadership**\n\nKorea is among a very small number of countries with documented experience in LDLLT. The 2018 amendment to Korea's organ donation law formally legalised living-lung donation, allowing high-volume academic centres to develop this technique for patients — particularly children and young adults — who cannot safely wait for a deceased donor.\n\n**KOTRY and outcomes tracking**\n\nThe Korean Organ Transplantation Registry (KOTRY) provides systematic long-term outcome data across all transplant types, enabling Korean centres to benchmark their results, identify complications early, and continuously refine protocols.\n\n**KHIDI international patient infrastructure**\n\nThe Korea Health Industry Development Institute and the Medical Korea portal (medicalkorea.or.kr) provide government-backed coordination services for international patients, including hospital referrals, interpreter services, and coordination with home-country healthcare providers after discharge.\n\n**MFDS regulatory oversight**\n\nThe Ministry of Food and Drug Safety (MFDS) oversees pharmaceutical and immunosuppression standards used in Korean transplant centres, ensuring that drug quality and protocols meet rigorous regulatory standards comparable to those of the US FDA or European EMA.\n\n**Cost efficiency without compromise on complexity**\n\nKorean academic medical centres offer lung transplantation at a fraction of the cost of equivalent programmes in the United States or Western Europe, while operating within a universal healthcare infrastructure and a culture of high-volume, protocol-driven surgical practice."
+  },
+  "costTable": [
+    {
+      "item": "Pre-transplant evaluation (workup, listing)",
+      "cost": "$3,000–$8,000"
+    },
+    {
+      "item": "Single-lung transplant (surgery + ICU + ward)",
+      "cost": "$80,000–$120,000"
+    },
+    {
+      "item": "Bilateral lung transplant (surgery + ICU + ward)",
+      "cost": "$110,000–$180,000"
+    },
+    {
+      "item": "Post-discharge outpatient monitoring (3–6 months in Korea)",
+      "cost": "$8,000–$20,000"
+    },
+    {
+      "item": "Immunosuppression pharmacy (first year, estimated)",
+      "cost": "$12,000–$25,000"
+    }
+  ],
+  "callouts": [
+    {
+      "type": "tip",
+      "title": "Plan for a long in-country stay",
+      "text": "Korean transplant centres expect international recipients to remain in Korea for at least three months after discharge for immunosuppression monitoring. Factor accommodation and outpatient clinic fees into your total budget before travel."
+    },
+    {
+      "type": "tip",
+      "title": "Living-donor eligibility for LDLLT",
+      "text": "For patients considering living-donor lobar lung transplant, two healthy family members with matching blood type and adequate lobe volume must be identified before evaluation. Both donors undergo independent surgical risk assessment."
+    },
+    {
+      "type": "tip",
+      "title": "Coordinate home-country follow-up early",
+      "text": "Before leaving Korea, your transplant team will arrange transfer-of-care documentation. Identify a transplant-experienced pulmonologist in your home country who can continue immunosuppression monitoring — this is a lifelong requirement."
+    }
+  ],
+  "keyTakeaways": [
+    "Korea manages all deceased-donor lung allocation through the national KONOS network, using urgency-based scoring to match organs transparently across the country.",
+    "Living-donor lobar lung transplantation (LDLLT) — using lower lobes from two healthy living donors — is available in Korea for patients who cannot wait for a deceased donor, following a 2018 legal amendment permitting living-lung donation.",
+    "Idiopathic pulmonary fibrosis is the most common indication for lung transplant in Korea; bilateral sequential transplant is the standard approach for younger patients with COPD, bronchiectasis, or cystic fibrosis.",
+    "Estimated total costs range from approximately $80,000 to $180,000 USD depending on procedure type, ECMO use, and length of post-operative stay — substantially below US benchmark costs.",
+    "International patients should plan to remain in Korea for three to six months post-discharge for mandatory immunosuppression monitoring and outpatient pulmonary rehabilitation.",
+    "KHIDI and the Medical Korea portal provide government-supported coordination services for international patients navigating the Korean transplant system."
+  ],
+  "entities": [
+    {
+      "name": "Korean Network for Organ Sharing",
+      "url": "https://en.wikipedia.org/wiki/Korean_Network_for_Organ_Sharing"
+    },
+    {
+      "name": "Lung transplantation",
+      "url": "https://en.wikipedia.org/wiki/Lung_transplantation"
+    },
+    {
+      "name": "Living-donor lobar lung transplantation",
+      "url": "https://en.wikipedia.org/wiki/Living-donor_lobar_lung_transplantation"
+    },
+    {
+      "name": "Korea Health Industry Development Institute",
+      "url": "https://en.wikipedia.org/wiki/Korea_Health_Industry_Development_Institute"
+    },
+    {
+      "name": "Idiopathic pulmonary fibrosis",
+      "url": "https://en.wikipedia.org/wiki/Idiopathic_pulmonary_fibrosis"
+    },
+    {
+      "name": "Extracorporeal membrane oxygenation",
+      "url": "https://en.wikipedia.org/wiki/Extracorporeal_membrane_oxygenation"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can foreign patients receive a lung transplant in South Korea using a deceased donor?",
+      "a": "Foreign nationals may be evaluated and listed by Korean transplant centres, but deceased-donor organ allocation through KONOS follows urgency-based national criteria and waiting-list position. Prospective patients should consult directly with a Korean transplant centre and the KHIDI international patient office to understand current eligibility and waiting-time expectations for non-residents."
+    },
+    {
+      "q": "What is living-donor lobar lung transplantation and why is it relevant in Korea?",
+      "a": "Living-donor lobar lung transplantation (LDLLT) uses the right lower lobe from one living donor and the left lower lobe from a second living donor, implanting both into a single recipient in place of a full set of lungs. It was pioneered in the United States and Japan and has since been developed in Korea — formally permitted by a 2018 amendment to Korea's organ donation law — primarily to offer an option for patients, especially children and young adults, whose condition is deteriorating faster than the deceased-donor waiting list allows."
+    },
+    {
+      "q": "How long is the total recovery period after a lung transplant in Korea?",
+      "a": "Inpatient stay is typically four to eight weeks, covering the ICU phase and a step-down ward period. After hospital discharge, Korean transplant centres ask international patients to remain in Korea for at least three months for frequent outpatient monitoring of immunosuppression levels and lung function. Return to light daily activity is usually possible around three to six months post-transplant; full pulmonary rehabilitation and functional recovery can take up to twelve months or longer."
+    },
+    {
+      "q": "What immunosuppressive drugs are used after lung transplantation and are they available in Korea?",
+      "a": "Standard post-transplant immunosuppression typically includes a calcineurin inhibitor (tacrolimus or cyclosporine), an antimetabolite (mycophenolate mofetil or azathioprine), and low-dose corticosteroids. Prophylactic antiviral (for CMV), antifungal, and antibiotic agents are added during the early high-risk period. All these medications are available in Korean hospitals and are regulated by the Ministry of Food and Drug Safety (MFDS). Before discharge, the transplant team will provide a full medication list and arrange supply or prescriptions for the patient's home country."
+    },
+    {
+      "q": "What is KONOS and how does it affect organ waiting times?",
+      "a": "KONOS, the Korean Network for Organ Sharing, is the national authority responsible for registering organ donors, managing the transplant waiting list, and allocating deceased-donor organs across South Korea. Lungs are allocated based on a scoring system that weights medical urgency, compatibility, and time on the list. KONOS data show that the number of annual lung transplants in Korea grew substantially over the past decade, though the number of candidates on the waiting list continues to outpace available donors — a global challenge not unique to Korea."
+    },
+    {
+      "q": "How do costs for lung transplantation in Korea compare to the United States?",
+      "a": "Lung transplantation in the United States is among the most expensive surgical procedures globally, with total first-year costs frequently reported in the range of $500,000 to over $1,000,000 USD when all facility, physician, and post-operative costs are included. Korean centres offer the same procedure — including bilateral transplant and ECMO support — at an approximate total cost of $80,000 to $180,000 USD for the surgical and initial inpatient phase, though post-discharge monitoring and lifetime immunosuppression add further costs in both settings."
+    }
+  ],
+  "references": [
+    {
+      "label": "The First Living-Donor Lobar Lung Transplantation in Korea — PMC",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6193886/"
+    },
+    {
+      "label": "Current Status and Future of Lung Donation in Korea — PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/pmc/articles/PMC5680493/"
+    },
+    {
+      "label": "Allocation of Donor Lungs in Korea — PMC",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9358154/"
+    },
+    {
+      "label": "Medical Korea — Transplantation (KHIDI official portal)",
+      "url": "https://www.medicalkorea.or.kr/en/Transplantation"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/procedures/inline/lung-transplant-1.jpg",
+      "alt": "Thoracic surgeon consulting an international patient about lung transplant options at a Korean academic medical centre",
+      "credit": "cottonbro studio"
+    },
+    {
+      "src": "/images/procedures/inline/lung-transplant-2.jpg",
+      "alt": "Surgical team performing a bilateral lung transplant procedure under general anaesthesia in a Korean hospital operating room",
+      "credit": "Stéf -b."
+    },
+    {
+      "src": "/images/procedures/inline/lung-transplant-3.jpg",
+      "alt": "Lung transplant recipient undergoing supervised pulmonary rehabilitation breathing exercises during post-operative recovery in Korea",
+      "credit": "Anastasia  Shuraeva"
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "slug": "pancreas-transplant",
+  "shortDescription": "Pancreas transplantation in South Korea — SPK, PAK, and PTA procedures for Type 1 diabetes and insulin-dependent conditions.",
+  "quickAnswer": [
+    "**Simultaneous pancreas-kidney (SPK) transplant** is the most common approach in Korea, accounting for roughly 84% of cases at leading centers — combining insulin independence with kidney restoration in one operation.",
+    "**Cost in Korea** is broadly estimated at **$80,000–$150,000 USD** for the full procedure, hospital stay, and immediate post-operative care — significantly less than comparable Western pricing.",
+    "Korea's organ allocation is managed by **KONOS (Korean Network for Organ Sharing)**, a government-regulated body ensuring transparent deceased-donor matching; the **KOTRY** registry tracks long-term outcomes nationally.",
+    "**Living-donor segmental pancreas transplant** is performed at select high-volume Korean centers, offering advantages such as shorter cold ischemia time and reduced waiting periods for eligible recipients."
+  ],
+  "keyFacts": [
+    {
+      "label": "Procedure time",
+      "value": "4–8 hours (SPK); 3–5 hours (pancreas-alone)"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "General anesthesia"
+    },
+    {
+      "label": "Hospital stay",
+      "value": "3–5 weeks (initial surgical admission)"
+    },
+    {
+      "label": "Recommended stay in Korea",
+      "value": "8–12 weeks including close outpatient follow-up"
+    },
+    {
+      "label": "Recovery",
+      "value": "Full functional recovery 3–6 months; immunosuppression lifelong"
+    },
+    {
+      "label": "Typical cost in Korea",
+      "value": "Approx. $80,000–$150,000 USD (all-in surgical episode)"
+    }
+  ],
+  "sections": {
+    "overview": "Pancreas transplantation replaces a diseased or non-functional pancreas with a healthy donor organ, restoring the body's ability to produce insulin independently. It is primarily indicated for patients with **Type 1 diabetes mellitus (T1DM)** who experience severe glycemic instability or life-threatening hypoglycemia that cannot be controlled by insulin therapy alone.\n\nThree main procedural variants are performed in South Korea:\n\n- **Simultaneous Pancreas-Kidney (SPK):** A pancreas and kidney from the same deceased donor are transplanted in a single operation. This is the most common approach, suited for T1DM patients who also have diabetic nephropathy or end-stage renal disease.\n- **Pancreas After Kidney (PAK):** A pancreas transplant performed after a prior kidney transplant, for patients who have already received or will receive a kidney from a living donor.\n- **Pancreas Transplant Alone (PTA):** For patients with adequate kidney function but severe metabolic complications of diabetes.\n\nA fourth option available at select Korean centers is **living-donor segmental pancreas transplantation**, where the distal body and tail of a living donor's pancreas are transplanted. This approach enables better HLA matching and shorter ischemia time compared to deceased-donor transplants.\n\nSouth Korea has developed significant institutional expertise in all four approaches, supported by national registries, government-regulated organ allocation infrastructure, and high-volume transplant centers that have collectively performed hundreds of cases over multiple decades.",
+    "candidacy": "Not every patient with diabetes is a candidate. Transplant teams at Korean centers use rigorous multidisciplinary evaluation to determine suitability.\n\nTypical indications for evaluation include:\n\n- **Type 1 diabetes mellitus** with hypoglycemia unawareness, frequent severe hypoglycemic episodes, or consistently uncontrolled blood glucose despite optimal insulin therapy\n- **Diabetic nephropathy** with declining kidney function (eGFR typically below 20 mL/min), making SPK the preferred route\n- Intolerable quality-of-life impact from insulin-dependent diabetes\n- Patients who have already received a kidney transplant and seek metabolic correction (PAK pathway)\n\nPatients are generally excluded or require careful case-by-case review if they have:\n\n- Significant cardiovascular disease that elevates surgical risk\n- Active malignancy or uncontrolled infection\n- Severe obesity (BMI thresholds vary by center)\n- Substance use disorders or documented non-adherence to medical regimens\n- Advanced age with multiple comorbidities, though age alone is not an absolute barrier\n\nForeign patients seeking evaluation in Korea typically undergo pre-arrival consultations, with medical records translated and reviewed by the transplant team. KONOS registration is required for deceased-donor waitlisting, and timelines for international patients vary. Living-donor transplants from a compatible family member can sometimes reduce waiting time significantly.",
+    "procedure_steps": "All pancreas transplants in Korea are performed under **general anesthesia** in a major surgical facility with dedicated organ transplant teams including transplant surgeons, anesthesiologists, perfusionists, and intensive care specialists.\n\nThe general sequence for an SPK procedure:\n\n- **Pre-operative preparation:** Final crossmatch testing, immunosuppression induction (typically with anti-thymocyte globulin or basiliximab), cardiac clearance, and bowel preparation.\n- **Organ procurement and cold preservation:** The donor pancreas (and kidney in SPK) are procured by a separate surgical team and preserved in cold storage solution. Cold ischemia time is carefully minimized, as longer ischemia is associated with poorer graft function.\n- **Recipient surgery:** The recipient's abdomen is opened via a midline incision. The donor pancreas is typically placed in the **right iliac fossa**, with vascular anastomoses connecting donor vessels to the recipient's iliac artery and vein. **Exocrine drainage** is handled by anastomosing the donor duodenal segment either to the recipient's small bowel (enteric drainage, the more widely used approach) or to the bladder.\n- **Kidney implantation (SPK):** The donor kidney is placed in the **left iliac fossa** in the same operation, with separate vascular and ureteral anastomoses.\n- **Closure and ICU transfer:** The abdomen is closed and the patient transferred to an intensive care or high-dependency unit for close monitoring.\n\nFor **living-donor segmental pancreas transplant**, only the distal pancreas (body and tail) is harvested from the donor, who retains the head of the pancreas. The donor undergoes a separate simultaneous surgery, and both procedures are coordinated by the same transplant team. This approach is practiced at high-volume Korean centers with demonstrated experience in living-donor abdominal organ programs.",
+    "recovery_timeline": "Recovery from pancreas transplantation is extended and requires sustained medical supervision. Korean transplant centers typically plan for international patients to remain in-country for a minimum of 8 to 12 weeks after surgery.\n\nPhase-by-phase timeline:\n\n- **ICU / step-down (Days 1–7):** Intensive monitoring of graft function, blood glucose levels, fluid balance, and early signs of rejection or surgical complications such as thrombosis, bleeding, or anastomotic leak.\n- **General ward (Days 7–21):** Transition to oral immunosuppression (typically a **tacrolimus + mycophenolate mofetil + corticosteroid** regimen), gradual dietary advancement, patient and caregiver education on medication adherence and self-monitoring.\n- **Hospital discharge to local accommodation (Weeks 3–5):** Most uncomplicated SPK patients are discharged to nearby serviced accommodation. Outpatient visits occur 2–3 times per week for labs, tacrolimus level checks, and clinical assessment.\n- **Weeks 5–12 in Korea:** Continued close follow-up, with decreasing visit frequency as labs stabilize. Biopsy may be performed if rejection is suspected.\n- **Return home (from ~Week 10–12):** Coordination with the patient's home care team is established. Korean transplant coordinators provide detailed discharge summaries and immunosuppression protocols.\n- **Months 3–6:** Gradual functional recovery, return to daily activities. Insulin requirements typically drop to zero in successful SPK and PTA recipients within days to weeks of a functioning graft.\n- **Long-term:** Lifelong immunosuppression, annual follow-up, and metabolic monitoring. Rejection episodes requiring treatment can occur years after transplant.",
+    "cost_breakdown": "Pancreas transplantation in South Korea is generally estimated to cost **$80,000–$150,000 USD** for the full surgical episode, depending on the procedure type, hospital tier, length of stay, and complications.\n\nThis range covers the surgical procedure, operating room, anesthesia, organ procurement and preservation, immediate ICU and ward stay, and initial immunosuppression supply. It does not typically cover pre-travel evaluation, international flights, long-term accommodation, or ongoing immunosuppression medication costs after discharge.\n\nSPK procedures are generally at the higher end of the range due to the dual-organ complexity and longer operative time. PTA may be lower if the patient has no kidney disease and a shorter hospital admission is achieved.\n\nKorea's cost advantage relative to the United States — where pancreas transplant episodes can run considerably higher — is supported by lower hospital overhead, government-regulated transplant infrastructure, and efficient high-volume surgical teams.\n\nMedical Korea, the government-backed portal operated by **KHIDI (Korea Health Industry Development Institute)**, provides a framework for international patients to access registered hospitals. Facilities working within this system are subject to quality accreditation standards set by the Korean government.\n\nPatients should request itemized cost estimates from the transplant center before travel and confirm what post-discharge medications and follow-up visits are included in quoted packages.",
+    "why_korea": "South Korea has built one of Asia's most comprehensive solid organ transplantation programs, underpinned by government infrastructure, national registries, and high procedural volumes at specialist centers.\n\n**KONOS (Korean Network for Organ Sharing)**, established under the Act on Organ Transplantation (2000), manages deceased-donor organ procurement, recipient matching, and allocation across the country. This centralized system ensures regulated, transparent, and equitable organ distribution — a critical quality-of-care factor for international patients.\n\n**KOTRY (Korean Organ Transplantation Registry)**, initiated in 2014, tracks outcomes for all solid organ transplant recipients nationally, enabling continuous quality improvement and providing a documented evidence base for survival and graft function rates.\n\nKorea's transplant programs have particular depth in pancreas transplantation for **Type 1 diabetes**. High-volume centers have published outcomes showing 1-year and 5-year death-censored pancreas graft survival rates comparable to leading programs worldwide. The availability of **living-donor segmental pancreas transplant** — less commonly offered outside specialized Asian centers — provides an additional pathway for eligible patients.\n\n**KHIDI and the Medical Korea portal** actively support international patients through registered hospital networks, coordinator services, and visa facilitation specifically for medical travelers. Korea's healthcare system combines nationally accredited hospital quality with costs that are significantly lower than equivalent care in North America or Western Europe.\n\nThe concentration of transplant expertise in a small number of high-volume centers, rather than dispersal across many low-volume hospitals, supports the consistent team experience that complex procedures like SPK require."
+  },
+  "costTable": [
+    {
+      "item": "SPK (simultaneous pancreas-kidney) full surgical episode",
+      "cost": "$100,000–$150,000"
+    },
+    {
+      "item": "PTA (pancreas transplant alone) full surgical episode",
+      "cost": "$80,000–$120,000"
+    },
+    {
+      "item": "Initial immunosuppression supply (3 months)",
+      "cost": "$3,000–$8,000"
+    },
+    {
+      "item": "Post-discharge outpatient follow-up (in Korea, 6–8 weeks)",
+      "cost": "$2,000–$5,000"
+    },
+    {
+      "item": "Accommodation and living costs (8–12 weeks in Korea)",
+      "cost": "$4,000–$10,000"
+    }
+  ],
+  "callouts": [
+    {
+      "type": "tip",
+      "title": "Start the KONOS waitlist process early",
+      "text": "International patients seeking a deceased-donor transplant in Korea must be registered with KONOS. Eligibility rules for foreign nationals are subject to government regulation — confirm current requirements with the transplant coordinator before travel, as waitlist dynamics and international patient policies can change."
+    },
+    {
+      "type": "tip",
+      "title": "Living-donor transplant can shorten the wait",
+      "text": "If you have a biologically compatible family member willing to donate, ask specifically about living-donor segmental pancreas transplant at centers with dedicated living-donor programs. It may reduce waiting time and can offer better HLA matching outcomes compared to a deceased-donor organ."
+    }
+  ],
+  "keyTakeaways": [
+    "SPK is the dominant pancreas transplant procedure in Korea, combining pancreas and kidney restoration in a single operation for T1DM patients with renal disease.",
+    "KONOS and KOTRY provide government-regulated organ allocation and national outcome tracking, underpinning the quality and transparency of Korea's transplant system.",
+    "All-in costs for a pancreas transplant episode in Korea are broadly estimated at $80,000–$150,000 USD — substantially lower than comparable Western hospital pricing.",
+    "Living-donor segmental pancreas transplant is available at select high-volume Korean centers, offering an alternative pathway for eligible patients with a compatible donor.",
+    "International patients should plan for 8–12 weeks in Korea post-surgery to cover the critical close-monitoring period before returning home.",
+    "Lifelong immunosuppression after transplant requires ongoing coordination between the Korean transplant team and the patient's home medical team."
+  ],
+  "entities": [
+    {
+      "name": "Korean Network for Organ Sharing",
+      "url": "https://en.wikipedia.org/wiki/Korean_Network_for_Organ_Sharing"
+    },
+    {
+      "name": "Simultaneous pancreas-kidney transplantation",
+      "url": "https://en.wikipedia.org/wiki/Pancreas_transplantation"
+    },
+    {
+      "name": "Tacrolimus",
+      "url": "https://en.wikipedia.org/wiki/Tacrolimus"
+    },
+    {
+      "name": "Type 1 diabetes mellitus",
+      "url": "https://en.wikipedia.org/wiki/Type_1_diabetes"
+    },
+    {
+      "name": "Medical tourism in South Korea",
+      "url": "https://en.wikipedia.org/wiki/Medical_tourism_in_South_Korea"
+    },
+    {
+      "name": "Korea Health Industry Development Institute",
+      "url": "https://en.wikipedia.org/wiki/Korea_Health_Industry_Development_Institute"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can international patients join the deceased-donor pancreas waiting list in Korea?",
+      "a": "International patients can be registered with KONOS, Korea's national organ allocation body, but eligibility conditions and priority rules for foreign nationals are subject to government regulation that may change. Always confirm the current policy directly with the transplant center's international patient coordinator before making any travel or financial commitments."
+    },
+    {
+      "q": "How long will I need to stay in South Korea after a pancreas transplant?",
+      "a": "Most transplant centers recommend staying in Korea for at least 8 to 12 weeks after surgery. The first 3 to 5 weeks are typically spent in hospital; the remaining time involves intensive outpatient monitoring — including blood draws, tacrolimus level checks, and clinical review — before the team considers it safe for you to travel home."
+    },
+    {
+      "q": "What is the difference between SPK, PAK, and PTA?",
+      "a": "SPK (simultaneous pancreas-kidney) transplants both organs in one operation and is most common for Type 1 diabetes patients with kidney failure. PAK (pancreas after kidney) is for patients who have already received or plan to receive a kidney separately. PTA (pancreas transplant alone) is for patients with functioning kidneys but severe metabolic diabetes complications. Your transplant team will determine which pathway fits your clinical profile."
+    },
+    {
+      "q": "Is living-donor pancreas transplant available in Korea?",
+      "a": "Yes. Select high-volume Korean transplant centers have published experience with living-donor segmental pancreas transplantation, where the distal body and tail of a compatible living donor's pancreas are transplanted. This can shorten waiting times and allows better pre-operative matching. Not every center offers this; ask specifically when contacting hospitals."
+    },
+    {
+      "q": "What immunosuppression will I need after a pancreas transplant?",
+      "a": "Most recipients are maintained on a combination of tacrolimus, mycophenolate mofetil, and a low-dose corticosteroid. These medications must be taken for life. Dosing is titrated carefully during your stay in Korea, and a detailed protocol is provided to your home physician before you leave. Immunosuppression adherence is essential — stopping or missing doses is the most common cause of rejection."
+    },
+    {
+      "q": "How do Korean pancreas transplant outcomes compare internationally?",
+      "a": "Published data from Korean transplant centers report 1-year and 5-year death-censored pancreas graft survival rates that are in line with outcomes published by leading programs in North America and Europe. Korea's national KOTRY registry enables continuous monitoring of outcomes across the system, supporting ongoing quality improvement."
+    }
+  ],
+  "references": [
+    {
+      "label": "Outcomes of pancreas transplantation over two decades — PMC 2025",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12059245/"
+    },
+    {
+      "label": "Strategies for Monitoring and Supporting Living Donors in Korea — PMC 2025",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11913627/"
+    },
+    {
+      "label": "Medical Korea — Transplantation (KHIDI official portal)",
+      "url": "https://www.medicalkorea.or.kr/en/Transplantation"
+    },
+    {
+      "label": "Medical tourism in South Korea — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Medical_tourism_in_South_Korea"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/procedures/inline/pancreas-transplant-1.jpg",
+      "alt": "Patient meeting transplant care team at a Korean hospital for pancreas transplant consultation",
+      "credit": "Thirdman"
+    },
+    {
+      "src": "/images/procedures/inline/pancreas-transplant-2.jpg",
+      "alt": "Surgical team performing simultaneous pancreas-kidney transplant procedure in operating theatre",
+      "credit": "Stéf -b."
+    },
+    {
+      "src": "/images/procedures/inline/pancreas-transplant-3.jpg",
+      "alt": "Transplant recipient in post-operative recovery ward with nursing monitoring after pancreas transplant in Korea",
+      "credit": "Engin Akyurt"
+    }
+  ]
+}

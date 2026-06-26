@@ -1413,5 +1413,117 @@
       "q": "dental implant result patient smile recovery teeth restoration",
       "alt": "Patient smiling after successful dental implant restoration and recovery following guided implant surgery in Seoul Korea"
     }
+  ],
+  "abo-incompatible-transplant": [
+    {
+      "q": "kidney transplant consultation doctor patient hospital Seoul Korea",
+      "alt": "Transplant specialist consulting with international patient at Seoul hospital before ABO-incompatible kidney transplant"
+    },
+    {
+      "q": "plasmapheresis apheresis machine medical procedure hospital",
+      "alt": "Plasmapheresis session during ABO-incompatible transplant desensitization protocol in Korean hospital"
+    },
+    {
+      "q": "kidney transplant patient recovery hospital ward Korea",
+      "alt": "Patient recovering in Korean hospital ward following ABO-incompatible kidney transplant surgery"
+    }
+  ],
+  "exchange-donor-kidney-transplant": [
+    {
+      "q": "kidney transplant consultation doctor patient hospital Seoul Korea",
+      "alt": "Transplant specialist consulting with patient at a Seoul hospital ahead of kidney exchange surgery"
+    },
+    {
+      "q": "laparoscopic kidney surgery operating room surgical team",
+      "alt": "Surgical team performing minimally invasive laparoscopic donor nephrectomy for kidney exchange transplant in Korea"
+    },
+    {
+      "q": "kidney transplant patient recovery hospital room walking rehabilitation",
+      "alt": "Kidney transplant recipient during early recovery and rehabilitation walk in Korean hospital ward"
+    }
+  ],
+  "dual-donor-liver-transplant": [
+    {
+      "q": "medical consultation doctor patient Korea hospital modern",
+      "alt": "Patient consulting with a transplant coordinator at a Korean tertiary hospital before dual-donor liver transplant"
+    },
+    {
+      "q": "liver surgery operating theatre surgical team South Korea",
+      "alt": "Surgical team performing a complex hepatobiliary procedure in a Seoul transplant center"
+    },
+    {
+      "q": "patient recovery hospital ward Korea post-surgery family",
+      "alt": "Liver transplant recipient resting in a Korean hospital ward during early recovery with family support"
+    }
+  ],
+  "robotic-transplant-surgery": [
+    {
+      "q": "robotic surgery console surgeon operating room Korea hospital",
+      "alt": "Surgeon at da Vinci robotic surgery console in Korean transplant operating room"
+    },
+    {
+      "q": "minimally invasive laparoscopic transplant surgery abdominal ports",
+      "alt": "Close-up of minimally invasive port sites for robotic kidney transplant procedure"
+    },
+    {
+      "q": "transplant patient recovery hospital bed walking nurse Korea",
+      "alt": "Kidney transplant patient in early recovery walking with nurse at Korean hospital"
+    }
+  ],
+  "lung-transplant": [
+    {
+      "q": "medical consultation doctor patient lung health Korea hospital",
+      "alt": "Thoracic surgeon consulting an international patient about lung transplant options at a Korean academic medical centre"
+    },
+    {
+      "q": "operating theatre cardiac surgery lung transplant surgical team",
+      "alt": "Surgical team performing a bilateral lung transplant procedure under general anaesthesia in a Korean hospital operating room"
+    },
+    {
+      "q": "patient pulmonary rehabilitation breathing exercises post surgery recovery",
+      "alt": "Lung transplant recipient undergoing supervised pulmonary rehabilitation breathing exercises during post-operative recovery in Korea"
+    }
+  ],
+  "pancreas-transplant": [
+    {
+      "q": "patient consultation doctor hospital Korea",
+      "alt": "Patient meeting transplant care team at a Korean hospital for pancreas transplant consultation"
+    },
+    {
+      "q": "abdominal organ transplant surgery operating room",
+      "alt": "Surgical team performing simultaneous pancreas-kidney transplant procedure in operating theatre"
+    },
+    {
+      "q": "patient recovery hospital bed post surgery monitoring",
+      "alt": "Transplant recipient in post-operative recovery ward with nursing monitoring after pancreas transplant in Korea"
+    }
+  ],
+  "small-intestine-transplant": [
+    {
+      "q": "medical consultation doctor patient hospital Korea",
+      "alt": "Doctor consulting patient about small intestine transplant options at a Korean hospital"
+    },
+    {
+      "q": "abdominal organ transplant surgery operating room team",
+      "alt": "Surgical team performing small intestine transplantation procedure in Korea"
+    },
+    {
+      "q": "patient recovery hospital bed nutrition therapy rehabilitation",
+      "alt": "Patient recovering from intestinal transplant with nutritional support in Korean hospital ward"
+    }
+  ],
+  "cornea-transplant": [
+    {
+      "q": "ophthalmologist eye examination consultation Seoul clinic",
+      "alt": "Ophthalmologist conducting pre-operative cornea examination in a Seoul eye clinic"
+    },
+    {
+      "q": "cornea transplant surgery operating theater microscope",
+      "alt": "Surgeon performing corneal transplant procedure under surgical microscope"
+    },
+    {
+      "q": "patient eye drop post-operative recovery care",
+      "alt": "Patient applying antibiotic eye drops during corneal transplant recovery"
+    }
   ]
 }

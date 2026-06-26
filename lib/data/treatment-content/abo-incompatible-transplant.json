@@ -1,0 +1,176 @@
+{
+  "slug": "abo-incompatible-transplant",
+  "shortDescription": "ABO-incompatible kidney transplantation in South Korea using rituximab-based desensitization — expanding donor pools for patients without a blood-type match.",
+  "quickAnswer": [
+    "**Korea has performed over 2,500 ABO-incompatible living-donor kidney transplants** since introducing desensitization therapy in 2007, making it one of the highest-volume nations globally.",
+    "**Desensitization combines rituximab, plasmapheresis (6–12 sessions), and IVIG** administered in the weeks before surgery to suppress anti-A/B antibodies to safe levels.",
+    "**Outcomes are comparable to standard compatible transplants** when antibody titers are controlled — Korean national cohort data shows similar graft and patient survival rates.",
+    "**International patients must bring their own living donor** (up to 2nd–3rd degree relative or spouse); Korea's law prohibits commercial organ sourcing."
+  ],
+  "keyFacts": [
+    {
+      "label": "Procedure time",
+      "value": "3–5 hours (surgical implantation, following weeks of pre-op desensitization)"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "General anesthesia"
+    },
+    {
+      "label": "Hospital stay",
+      "value": "2–4 weeks (includes pre-transplant desensitization admission)"
+    },
+    {
+      "label": "Recommended stay in Korea",
+      "value": "8–14 weeks (covers pre-op workup, surgery, and early post-op monitoring)"
+    },
+    {
+      "label": "Recovery",
+      "value": "4–6 weeks to basic mobility; 3–6 months to stable graft function; lifelong immunosuppression required"
+    },
+    {
+      "label": "Typical cost in Korea",
+      "value": "Approximately $35,000–$70,000 USD all-inclusive (desensitization + surgery + initial hospitalization)"
+    }
+  ],
+  "sections": {
+    "overview": "ABO-incompatible (ABOi) transplantation allows a kidney to be transplanted between a donor and recipient whose blood types would normally be immunologically incompatible. Without preparation, the recipient's immune system would immediately attack the donated organ through pre-formed anti-A or anti-B antibodies.\n\nSouth Korea began performing ABOi living-donor kidney transplants systematically from 2007 onward, after adapting desensitization protocols developed in Japan. The core innovation is a structured pre-transplant regimen that reduces circulating anti-ABO antibodies to levels low enough that the transplanted kidney is not rejected on arrival.\n\nThe procedure has significantly expanded South Korea's transplant capacity. Because deceased-donor waiting lists are long, living-donor transplants are the primary pathway — and ABOi techniques now allow spouses, parents, and siblings who are blood-type mismatched to serve as donors.\n\nKorean transplant centers have published extensively on long-term outcomes, contributing to the global evidence base for this technique. Research published in the Journal of Korean Medical Sciences confirms that ABOi transplantation remains viable even in patients with high baseline antibody titers, with outcomes comparable to ABO-compatible procedures when protocols are followed rigorously.",
+    "candidacy": "ABOi transplantation is considered for patients who have a willing living donor but whose donor is blood-type incompatible. The decision depends on a detailed immunological assessment conducted in Korea before any commitment to surgery.\n\nTypical candidate profile:\n\n- End-stage renal disease (ESRD) with no suitable ABO-compatible living donor available\n- Baseline anti-A or anti-B antibody titer assessed — very high titers (above 1:1024) require more intensive desensitization and carry modestly higher risk\n- No active infection, malignancy, or severe cardiovascular disease that would preclude surgery or immunosuppression\n- Donor and recipient complete cross-match and HLA typing — combined ABO and HLA incompatibility increases complexity significantly\n- Patient willingness and capacity to undergo 6–12 plasmapheresis sessions before surgery and commit to lifelong immunosuppression\n\nPatients are assessed at transplant centers in Seoul and other major Korean cities. The evaluation typically spans 1–2 weeks and includes laboratory workup, imaging, and multidisciplinary team review before a transplant date is scheduled.",
+    "procedure_steps": "ABOi transplantation is best understood as a two-phase process: a desensitization phase lasting several weeks before surgery, and the surgical transplant itself.\n\n**Desensitization phase (4–6 weeks pre-surgery):**\n\n- **Rituximab infusion** — an anti-CD20 monoclonal antibody that depletes B lymphocytes responsible for producing anti-A/B antibodies. Most Korean protocols use one or two doses 2–4 weeks before transplant.\n- **Plasmapheresis (therapeutic plasma exchange)** — typically 6–12 sessions conducted over 2–3 weeks. Each session filters the blood to physically remove anti-A/B antibodies, lowering titers toward the target threshold (commonly below 1:8 or 1:16 depending on center protocol).\n- **Intravenous immunoglobulin (IVIG)** — administered after plasmapheresis sessions to stabilize immune function and reduce rebound antibody production.\n- Antibody titers are measured after each session; surgery proceeds only when the target titer is reached and sustained.\n\n**Surgical phase:**\n\n- Standard living-donor nephrectomy (laparoscopic, performed on the donor simultaneously or shortly before)\n- Kidney implanted into the recipient's lower abdomen under general anesthesia; takes approximately 3–5 hours\n- Induction immunosuppression administered at time of surgery (typically tacrolimus, mycophenolate mofetil, and corticosteroids)\n\n**Immediate post-operative monitoring:**\n\n- Daily antibody titer checks for the first week to detect rebound\n- Additional plasmapheresis on standby if titers rise above the threshold post-transplant\n- Renal function monitored via creatinine levels, urine output, and Doppler ultrasound",
+    "recovery_timeline": "Recovery from ABOi kidney transplantation is longer and more monitored than standard compatible transplantation, reflecting both the complexity of the procedure and the ongoing immunosuppression management.\n\n**Weeks 1–2 (ICU/step-down unit):**\n\n- Daily antibody titer surveillance continues\n- Tacrolimus trough levels adjusted to therapeutic range\n- Graft function established — urine output is the primary early indicator\n- Biopsy may be performed if creatinine does not fall as expected\n\n**Weeks 3–6 (general ward then outpatient in Korea):**\n\n- Gradual reduction in monitoring frequency\n- Oral immunosuppression regimen stabilized\n- Light walking encouraged; no heavy lifting or strenuous activity\n- International patients are typically required to remain in Korea during this phase for close follow-up\n\n**Months 2–3 (can return home with follow-up plan):**\n\n- Kidney function measured by estimated GFR (eGFR); most stable patients reach acceptable ranges within 8–12 weeks\n- Local nephrologist takes over routine monitoring; Korean transplant team provides remote consultation support\n- Immunosuppression adjusted based on labs and any rejection episodes\n\n**Months 3–12 and beyond:**\n\n- Annual biopsy protocol at some Korean centers to monitor subclinical rejection\n- Lifelong tacrolimus and mycophenolate; steroid dose gradually tapered in most patients\n- Infection vigilance is elevated in the first 6–12 months due to intensive immunosuppression",
+    "cost_breakdown": "Korea's ABOi kidney transplant costs are substantially lower than equivalent procedures in the United States, United Kingdom, or Australia, while operating at comparable levels of surgical and immunological complexity.\n\nTotal costs for international patients typically fall in the range of **$35,000–$70,000 USD**, depending on the number of desensitization sessions required, length of hospital stay, and the specific center.\n\nThis range is approximate. High-baseline-titer patients requiring more plasmapheresis sessions and longer hospitalization will approach the upper end. Patients with moderate titers and straightforward surgical courses can fall toward the lower end.\n\nInternational patients should budget separately for:\n\n- Donor evaluation and pre-operative workup (shared between donor and recipient)\n- Accommodation in Korea for the recommended 8–14 week stay (for both patient and companion)\n- Post-discharge outpatient pharmacy costs for immunosuppressants (ongoing after return home)\n- Medical visa and travel logistics\n\nKorea's medical costs are influenced by national healthcare pricing frameworks overseen by the Ministry of Health and Welfare and the Korea Health Industry Development Institute (KHIDI). While international patients pay out-of-pocket and do not access National Health Insurance rates, the underlying cost structure keeps prices competitive globally.",
+    "why_korea": "South Korea has built one of Asia's strongest transplant medicine ecosystems, underpinned by government investment, high surgical volume, and rigorous outcome tracking.\n\n**Regulatory quality:** The Ministry of Food and Drug Safety (MFDS) governs pharmaceutical standards, including the rituximab and IVIG biologics used in desensitization. All transplant programs operate under the Korean Network for Organ Sharing (KONOS), which mandates outcome reporting and quality audits.\n\n**Published protocols:** Korean transplant centers — particularly in Seoul — have contributed landmark peer-reviewed research on ABOi techniques. This publication record reflects high case volume and systematic protocol refinement, not anecdotal practice.\n\n**Volume and consistency:** Korea's ABOi program has been running continuously since 2007. A nationwide cohort study found that ABOi transplantation increased overall living-donor kidney transplantation by over 12%, with spousal donors becoming a significant and successful subgroup. High volume correlates with lower complication rates in complex surgical procedures.\n\n**Infrastructure:** Seoul's major hospital districts — including the Gangnam and Jongno university hospital clusters — house fully integrated transplant units with on-site plasmapheresis, 24-hour intensivists, and dedicated transplant coordinators.\n\n**Medical Korea portal:** The government's official Medical Korea portal (medicalkorea.or.kr) lists accredited international patient service centers, providing a verified starting point for foreign patients researching transplant programs. KHIDI, the Korea Health Industry Development Institute, supports international patient navigation services.\n\n**Cost-quality positioning:** Korea's combination of lower procedure costs, high surgical volume, and government-regulated quality standards makes it a credible destination for patients who cannot access ABOi transplantation affordably in their home countries."
+  },
+  "costTable": [
+    {
+      "item": "Pre-operative evaluation and workup (donor + recipient)",
+      "cost": "$3,000–$6,000"
+    },
+    {
+      "item": "Desensitization (rituximab, plasmapheresis sessions, IVIG)",
+      "cost": "$10,000–$22,000"
+    },
+    {
+      "item": "Surgery (donor nephrectomy + recipient implantation)",
+      "cost": "$15,000–$28,000"
+    },
+    {
+      "item": "Post-operative hospital stay (2–4 weeks)",
+      "cost": "$8,000–$18,000"
+    },
+    {
+      "item": "Discharge medications (initial immunosuppressant supply)",
+      "cost": "$1,500–$4,000"
+    }
+  ],
+  "callouts": [
+    {
+      "type": "tip",
+      "title": "Bring full donor and recipient blood work from home",
+      "text": "Korean transplant centers can begin preliminary titer assessment and compatibility screening before you arrive if you courier blood samples or send lab reports in advance. This can shorten the in-country evaluation phase by 3–7 days and reduce accommodation costs."
+    }
+  ],
+  "keyTakeaways": [
+    "Korea has performed ABOi living-donor kidney transplants since 2007 with outcomes comparable to standard compatible transplants when desensitization protocols are followed.",
+    "The pre-transplant desensitization phase — rituximab, plasmapheresis, and IVIG — spans 4–6 weeks and is as critical as the surgery itself.",
+    "International patients must bring their own living donor (relative or spouse); commercial organ sourcing is illegal in Korea.",
+    "Total costs for international patients typically range from $35,000 to $70,000 USD, substantially below equivalent procedures in the US or Western Europe.",
+    "Plan for an 8–14 week stay in Korea to cover evaluation, desensitization, surgery, and early post-operative monitoring before safe return home.",
+    "Lifelong immunosuppression is mandatory; patients need a nephrologist at home who is briefed on the ABOi protocol before returning."
+  ],
+  "entities": [
+    {
+      "name": "ABO blood group system",
+      "url": "https://en.wikipedia.org/wiki/ABO_blood_group_system"
+    },
+    {
+      "name": "Kidney transplantation",
+      "url": "https://en.wikipedia.org/wiki/Kidney_transplantation"
+    },
+    {
+      "name": "Rituximab",
+      "url": "https://en.wikipedia.org/wiki/Rituximab"
+    },
+    {
+      "name": "Plasmapheresis",
+      "url": "https://en.wikipedia.org/wiki/Plasmapheresis"
+    },
+    {
+      "name": "Immunosuppression",
+      "url": "https://en.wikipedia.org/wiki/Immunosuppression"
+    },
+    {
+      "name": "Korea Health Industry Development Institute",
+      "url": "https://en.wikipedia.org/wiki/Korea_Health_Industry_Development_Institute"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I use a spouse or non-blood relative as a donor for an ABO-incompatible transplant in Korea?",
+      "a": "Yes. Korean law permits spouses and relatives up to the 2nd or 3rd degree to donate. Spousal donation has become a significant and well-documented subgroup within Korea's ABOi transplant program, with outcomes comparable to blood-relative donors when titers are controlled."
+    },
+    {
+      "q": "How long does the desensitization process take before surgery can proceed?",
+      "a": "Typically 4–6 weeks. This includes rituximab infusion, 6–12 plasmapheresis sessions conducted over 2–3 weeks, and IVIG. Surgery proceeds only once anti-A/B antibody titers fall below the center's target threshold and remain stable. Patients with very high baseline titers may need additional sessions."
+    },
+    {
+      "q": "Is ABO-incompatible transplantation riskier than a standard compatible kidney transplant?",
+      "a": "It carries a somewhat higher risk of antibody-mediated rejection (AMR) compared to compatible transplants, particularly in the early post-transplant period. However, Korean research published in peer-reviewed journals confirms that with proper desensitization and monitoring, long-term graft and patient survival rates are broadly comparable to compatible transplants."
+    },
+    {
+      "q": "What immunosuppressants will I need after surgery, and for how long?",
+      "a": "Lifelong immunosuppression is required. The standard regimen combines tacrolimus, mycophenolate mofetil, and a corticosteroid (often tapered over time). Tacrolimus and mycophenolate are typically continued indefinitely. Your Korean transplant team will provide a detailed protocol, which your home nephrologist continues managing after you return."
+    },
+    {
+      "q": "Does the Korean government regulate ABOi transplant programs for international patients?",
+      "a": "Yes. All transplant programs in Korea operate under the Korean Network for Organ Sharing (KONOS) and are subject to outcome reporting requirements. The MFDS regulates the biologics used in desensitization. The Medical Korea portal (medicalkorea.or.kr), administered by KHIDI, lists internationally accredited hospitals and provides patient navigation support."
+    },
+    {
+      "q": "What happens if my antibody titers rebound after transplant?",
+      "a": "Rebound is monitored daily in the first post-operative week. If titers rise above the threshold, additional plasmapheresis sessions are performed promptly. This is a standard protocol feature in Korean centers and is one reason the recommended minimum stay in Korea is 8–14 weeks — to ensure any rebound is caught and treated before the patient travels home."
+    }
+  ],
+  "references": [
+    {
+      "label": "Long-Term Clinical Outcomes of ABO-Incompatible Kidney Transplantation in Patients With High Baseline Anti-A/B Antibody Titers (JKMS 2025)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12685579/"
+    },
+    {
+      "label": "ABO-Incompatible Kidney Transplantation — Frontiers in Immunology 2017",
+      "url": "https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2017.00234/full"
+    },
+    {
+      "label": "Impact of ABO Incompatible Kidney Transplantation on Living Donor Transplantation — PMC",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5360260/"
+    },
+    {
+      "label": "ABO Incompatible Living Donor Kidney Transplantation in Korea — PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24118271/"
+    },
+    {
+      "label": "Medical Korea — Transplantation (official portal)",
+      "url": "https://www.medicalkorea.or.kr/en/Transplantation"
+    },
+    {
+      "label": "Eculizumab as adjunctive therapy in ABOi living donor kidney transplantation — Frontiers in Immunology 2024",
+      "url": "https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2024.1465851/full"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/procedures/inline/abo-incompatible-transplant-1.jpg",
+      "alt": "Transplant specialist consulting with international patient at Seoul hospital before ABO-incompatible kidney transplant",
+      "credit": "RDNE Stock project"
+    },
+    {
+      "src": "/images/procedures/inline/abo-incompatible-transplant-2.jpg",
+      "alt": "Plasmapheresis session during ABO-incompatible transplant desensitization protocol in Korean hospital",
+      "credit": "www.kaboompics.com"
+    },
+    {
+      "src": "/images/procedures/inline/abo-incompatible-transplant-3.jpg",
+      "alt": "Patient recovering in Korean hospital ward following ABO-incompatible kidney transplant surgery",
+      "credit": "Engin Akyurt"
+    }
+  ]
+}
