@@ -61,5 +61,100 @@
       "alt": "Clear, refreshed skin texture after laser resurfacing recovery in Korea",
       "credit": "Shiny Diamond"
     }
+  ],
+  "quickAnswer": [
+    "Fractional CO2 and Er:YAG laser resurfacing in Korea costs USD 200–800 per session — 40–60% less than comparable US or Australian clinic prices",
+    "Korean dermatology clinics frequently use advanced fractional laser platforms with settings calibrated for Asian skin, reducing downtime and pigmentation risk",
+    "Expect 5–10 days of redness and peeling after a full fractional treatment; plan your Korea stay with enough recovery buffer"
+  ],
+  "keyFacts": [
+    {
+      "label": "Procedure Duration",
+      "value": "30–90 minutes"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "Topical numbing cream; IV sedation for aggressive settings"
+    },
+    {
+      "label": "Recovery Time",
+      "value": "5–10 days (fractional); up to 2–3 weeks (ablative)"
+    },
+    {
+      "label": "Hospital Stay",
+      "value": "None — outpatient"
+    },
+    {
+      "label": "Results Duration",
+      "value": "1–2 years; cumulative improvement with a series"
+    },
+    {
+      "label": "Cost Range",
+      "value": "USD 200–800 per session"
+    }
+  ],
+  "costTable": [
+    {
+      "item": "Non-ablative fractional laser (mild)",
+      "koreanCost": "USD 200–350",
+      "globalCost": "USD 500–900"
+    },
+    {
+      "item": "Ablative fractional CO2 (standard)",
+      "koreanCost": "USD 350–600",
+      "globalCost": "USD 800–1,500"
+    },
+    {
+      "item": "Full ablative resurfacing",
+      "koreanCost": "USD 500–800",
+      "globalCost": "USD 1,200–2,500"
+    },
+    {
+      "item": "Combination laser package (series of 3)",
+      "koreanCost": "USD 700–1,500",
+      "globalCost": "USD 1,800–4,000"
+    }
+  ],
+  "callouts": [
+    {
+      "type": "warning",
+      "text": "Sun exposure must be minimized for at least 4–6 weeks after fractional laser treatment. Plan travel timing and use SPF 50+ consistently throughout recovery."
+    },
+    {
+      "type": "tip",
+      "text": "Fractional (not fully ablative) laser treatment delivers improvements with less downtime by treating columns of skin while leaving surrounding tissue intact."
+    }
+  ],
+  "keyTakeaways": [
+    "Fractional laser resurfacing treats fine lines, scars, and uneven texture with less downtime than fully ablative approaches by leaving channels of untreated skin",
+    "Korean clinics calibrate laser settings for Asian skin phototypes, which require different parameters to minimize post-inflammatory hyperpigmentation",
+    "A series of lighter treatments often achieves better long-term results than a single aggressive session, especially for darker skin tones"
+  ],
+  "entities": [
+    {
+      "name": "Laser resurfacing",
+      "url": "https://en.wikipedia.org/wiki/Laser_resurfacing",
+      "type": "MedicalProcedure"
+    },
+    {
+      "name": "Carbon dioxide laser",
+      "url": "https://en.wikipedia.org/wiki/Carbon_dioxide_laser",
+      "type": "Technology"
+    },
+    {
+      "name": "Erbium-doped YAG laser",
+      "url": "https://en.wikipedia.org/wiki/Erbium-doped_YAG_laser",
+      "type": "Technology"
+    },
+    {
+      "name": "Fitzpatrick scale",
+      "url": "https://en.wikipedia.org/wiki/Fitzpatrick_scale",
+      "type": "MedicalConcept"
+    },
+    {
+      "name": "Dermatology",
+      "url": "https://en.wikipedia.org/wiki/Dermatology",
+      "type": "MedicalSpecialty"
+    }
   ]
 }

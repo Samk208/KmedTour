@@ -1,6 +1,37 @@
 {
   "slug": "v-line-surgery",
   "shortDescription": "Facial bone-contouring surgery that narrows the lower jaw and chin for a slimmer, tapered profile.",
+  "quickAnswer": [
+    "Korean V-line surgery costs USD 8,000–15,000 — roughly 40–60% less than comparable jaw-contouring in the US, UK, or Australia",
+    "Surgery combines mandible angle contouring and genioplasty through internal (intraoral) incisions, leaving no visible facial scars",
+    "Plan a 14-day stay in Korea: 3D CT planning, the 2–3 hour procedure, and monitored healing before the surgeon clears you to fly home"
+  ],
+  "keyFacts": [
+    {
+      "label": "Procedure Duration",
+      "value": "2–3 hours"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "General anesthesia"
+    },
+    {
+      "label": "Recovery Time",
+      "value": "14 days in Korea; 4–6 weeks for swelling to resolve"
+    },
+    {
+      "label": "Hospital Stay",
+      "value": "1 night observation"
+    },
+    {
+      "label": "Results Duration",
+      "value": "Permanent (bone reshaping)"
+    },
+    {
+      "label": "Cost Range",
+      "value": "USD 8,000–15,000"
+    }
+  ],
   "sections": {
     "overview": "V-line surgery is a facial bone-contouring procedure that reshapes the lower jaw and chin to create a slimmer, more tapered jawline. Korea is a well-established destination for this surgery because it is performed by oral and maxillofacial specialists working from detailed 3D imaging in hospitals experienced with international patients.\n\nThe procedure addresses a wide or square lower face by reshaping the underlying bone rather than soft tissue alone. It combines two main elements: contouring of the mandible angle, the corner of the jaw near the ear, to reduce squareness, and a genioplasty, a reshaping of the chin bone to refine its width and projection. Together these narrow the lower third of the face into the tapered V shape the procedure is named for.\n\nThis is bone surgery and is planned carefully. Korean centers typically use 3D CT imaging to map the jaw and chin, plan the exact cuts, and account for the position of the inferior alveolar nerve, which runs through the lower jaw and supplies sensation to the lip and chin. Protecting this nerve is a central part of safe planning. The surgery is performed under general anesthesia, usually through incisions inside the mouth so there are no external scars.\n\nThe operation generally takes two to three hours, and the work is led throughout by an oral and maxillofacial specialty team. With a stated success rate above ninety-five percent, a price range of eight thousand to fifteen thousand US dollars, and a longer stay of fourteen days to allow monitored healing near a major nerve, V-line surgery in Korea is positioned as a precise, individualized option for international patients seeking a refined lower-face contour.",
     "candidacy": "Good candidates are adults in stable general health who have completed facial bone growth and want to reshape a wide or square lower jaw and chin. It suits people whose concern is the bone structure of the lower face rather than soft tissue or skin alone, since the procedure reshapes the mandible angle and chin bone.\n\nBecause this is bone surgery, suitability depends on jaw anatomy, bite alignment, and the position of the inferior alveolar nerve, all assessed using 3D CT imaging during planning. The surgeon checks that reshaping the bone will achieve the goal safely while preserving function and protecting the nerve.\n\nThe procedure is generally postponed during pregnancy, with an active infection, with untreated dental or gum disease, or when a bite or jaw-joint problem needs separate review first. Non-smokers, or those willing to stop before and after surgery, heal better. A thorough consultation with an oral and maxillofacial specialist, including imaging, confirms whether V-line surgery is appropriate or whether another approach would better suit the patient's facial structure and goals.",
@@ -9,6 +40,70 @@
     "cost_breakdown": "The price for V-line surgery ranges from eight thousand to fifteen thousand US dollars. The range reflects the extent of bone work, whether mandible angle contouring and genioplasty are both performed, the complexity of the anatomy, the 3D imaging and planning involved, and the hospital.\n\nQuoted packages generally cover the surgeon's fee, the operating facility, anesthesia, 3D CT planning, the fixation plates and screws used, standard pre-operative assessment, and scheduled post-operative follow-up visits during the stay. A written quotation is provided after consultation and imaging review so the inclusions are clear before travel.\n\nItems that typically sit outside the surgical quote include international flights, accommodation, local transport, meals, interpretation if required, and travel insurance. Extended medication, extra garments, dental treatment, or management of unrelated conditions found during assessment may also fall outside the quote. Because this is a longer stay, accommodation across two weeks is an important part of the overall travel budget. Patients receive an itemized estimate so the covers-versus-excludes breakdown is understood in advance, alongside guidance on accommodation and travel costs for the longer stay.",
     "why_korea": "Korea has built a structured medical-tourism system that makes it a practical destination for V-line surgery. The Ministry of Health and Welfare regulates healthcare standards, and the Korea Health Industry Development Institute, through its Medical Korea program, supports international patients seeking treatment in the country.\n\nHospitals that treat foreign patients are registered under this national framework, and many pursue accreditation. The Korea Institute for Healthcare Accreditation, KOIHA, oversees domestic accreditation that signals consistent safety and care standards, giving overseas patients an external reference point when comparing providers.\n\nFacial bone contouring is a recognized area of expertise in Korea, performed by oral and maxillofacial specialists using 3D CT planning to map the jaw, plan precise bone cuts, and protect the inferior alveolar nerve. Modern surgical facilities and detailed imaging support careful, individualized planning. International patient centers at many hospitals provide coordination, language assistance, and clear scheduling, which matters for a longer stay when traveling from Africa, the Middle East, or Asia."
   },
+  "costTable": [
+    {
+      "item": "Mandible angle contouring (alone)",
+      "koreanCost": "USD 5,000–9,000",
+      "globalCost": "USD 15,000–25,000"
+    },
+    {
+      "item": "Genioplasty (chin reshaping)",
+      "koreanCost": "USD 3,000–6,000",
+      "globalCost": "USD 8,000–15,000"
+    },
+    {
+      "item": "Combined V-line package",
+      "koreanCost": "USD 8,000–15,000",
+      "globalCost": "USD 22,000–40,000"
+    },
+    {
+      "item": "3D CT planning",
+      "koreanCost": "Included",
+      "globalCost": "USD 500–1,500 extra"
+    }
+  ],
+  "callouts": [
+    {
+      "type": "warning",
+      "text": "Temporary numbness or altered sensation of the lower lip and chin can occur because the inferior alveolar nerve runs through the lower jaw. This typically resolves over weeks to months and is monitored at every follow-up visit."
+    },
+    {
+      "type": "info",
+      "text": "All incisions are made inside the mouth. There are no external facial scars."
+    }
+  ],
+  "keyTakeaways": [
+    "V-line surgery reshapes bone permanently — the result does not rely on fillers or implants and does not fade over time",
+    "3D CT imaging is mandatory for safe planning: it maps the exact jaw anatomy and locates the inferior alveolar nerve before any bone cuts are made",
+    "The 14-day Korea stay is longer than most cosmetic procedures specifically because this is bone surgery near a critical nerve"
+  ],
+  "entities": [
+    {
+      "name": "Mandible",
+      "url": "https://en.wikipedia.org/wiki/Mandible",
+      "type": "AnatomicalStructure"
+    },
+    {
+      "name": "Genioplasty",
+      "url": "https://en.wikipedia.org/wiki/Genioplasty",
+      "type": "MedicalProcedure"
+    },
+    {
+      "name": "Inferior alveolar nerve",
+      "url": "https://en.wikipedia.org/wiki/Inferior_alveolar_nerve",
+      "type": "AnatomicalStructure"
+    },
+    {
+      "name": "Plastic surgery in South Korea",
+      "url": "https://en.wikipedia.org/wiki/Plastic_surgery_in_South_Korea",
+      "type": "Topic"
+    },
+    {
+      "name": "Medical tourism in South Korea",
+      "url": "https://en.wikipedia.org/wiki/Medical_tourism_in_South_Korea",
+      "type": "Topic"
+    }
+  ],
   "faqs": [
     {
       "q": "Will V-line surgery leave visible scars?",
@@ -29,6 +124,16 @@
     {
       "q": "What does the price typically include?",
       "a": "Quotes generally cover the surgeon's fee, operating facility, anesthesia, 3D CT planning, the fixation plates and screws, pre-operative assessment, and follow-up visits during your stay. Flights, accommodation across the two-week stay, local transport, meals, and travel insurance are usually excluded. You receive an itemized written quotation after consultation so the inclusions are clear before you travel."
+    }
+  ],
+  "references": [
+    {
+      "label": "Medical Korea — Official Portal for International Patients",
+      "url": "https://www.medicalkorea.or.kr"
+    },
+    {
+      "label": "Korea Health Industry Development Institute (KHIDI)",
+      "url": "https://www.khidi.or.kr"
     }
   ],
   "images": [

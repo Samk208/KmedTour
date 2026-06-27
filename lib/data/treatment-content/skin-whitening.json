@@ -65,5 +65,100 @@
       "alt": "Patient with clearer, more even skin tone after dermatologist-supervised brightening treatment in Korea",
       "credit": "Sora Shimazaki"
     }
+  ],
+  "quickAnswer": [
+    "Skin brightening treatments in Korea cost USD 100–500 per session — Seoul clinics use laser toning, vitamin C IV drips, and prescription topicals in physician-supervised protocols",
+    "Korean dermatologists treat hyperpigmentation and uneven skin tone using evidence-based approaches, with emphasis on safety for Asian skin phototypes",
+    "Most brightening results are cumulative over 4–8 weekly sessions; a Korea trip can start your protocol and set up a maintenance plan for follow-up at home"
+  ],
+  "keyFacts": [
+    {
+      "label": "Procedure Duration",
+      "value": "30–60 minutes per session"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "None — minimal discomfort"
+    },
+    {
+      "label": "Recovery Time",
+      "value": "Minimal; mild redness may persist a few hours"
+    },
+    {
+      "label": "Hospital Stay",
+      "value": "None — outpatient"
+    },
+    {
+      "label": "Results Duration",
+      "value": "Cumulative over 4–8 sessions; maintenance required"
+    },
+    {
+      "label": "Cost Range",
+      "value": "USD 100–500 per session"
+    }
+  ],
+  "costTable": [
+    {
+      "item": "Low-fluence Q-switch laser toning (1 session)",
+      "koreanCost": "USD 100–200",
+      "globalCost": "USD 300–600"
+    },
+    {
+      "item": "Vitamin C IV brightening drip",
+      "koreanCost": "USD 80–150",
+      "globalCost": "USD 200–400"
+    },
+    {
+      "item": "Prescription topical lightening protocol (set)",
+      "koreanCost": "USD 100–250",
+      "globalCost": "USD 250–500"
+    },
+    {
+      "item": "Combination brightening package (4 sessions)",
+      "koreanCost": "USD 350–700",
+      "globalCost": "USD 900–2,000"
+    }
+  ],
+  "callouts": [
+    {
+      "type": "warning",
+      "text": "Avoid unregulated skin-lightening products containing mercury or high-concentration hydroquinone. All treatments at licensed Korean dermatology clinics use products approved by the Ministry of Food and Drug Safety (MFDS)."
+    },
+    {
+      "type": "info",
+      "text": "\"Skin whitening\" is often used interchangeably with \"skin brightening\" or \"pigmentation treatment.\" Korean clinics focus on even-toning and radiance rather than dramatic lightening of overall skin tone."
+    }
+  ],
+  "keyTakeaways": [
+    "Physician-supervised brightening at Korean dermatology clinics uses MFDS-approved treatments — a safer alternative to unregulated over-the-counter lightening products",
+    "Results are cumulative and maintenance-dependent; expect a protocol of several sessions over weeks, not a one-time fix",
+    "Low-fluence laser toning is a particularly popular Korean technique for hyperpigmentation that has gained wide adoption across Asia"
+  ],
+  "entities": [
+    {
+      "name": "Skin whitening",
+      "url": "https://en.wikipedia.org/wiki/Skin_whitening",
+      "type": "Topic"
+    },
+    {
+      "name": "Hyperpigmentation",
+      "url": "https://en.wikipedia.org/wiki/Hyperpigmentation",
+      "type": "MedicalCondition"
+    },
+    {
+      "name": "Melanin",
+      "url": "https://en.wikipedia.org/wiki/Melanin",
+      "type": "Substance"
+    },
+    {
+      "name": "Q-switched laser",
+      "url": "https://en.wikipedia.org/wiki/Q-switched_laser",
+      "type": "Technology"
+    },
+    {
+      "name": "Ministry of Food and Drug Safety",
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_Food_and_Drug_Safety",
+      "type": "Organization"
+    }
   ]
 }

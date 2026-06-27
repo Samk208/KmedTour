@@ -47,5 +47,101 @@
       "alt": "Smoother, clearer skin after acne scar treatment in Korea",
       "credit": "Andrea Piacquadio"
     }
-  ]
+  ],
+  "quickAnswer": [
+    "Acne scar treatment in Korea costs USD 150–600 per session — Korean dermatologists combine fractional laser, microneedling RF, subcision, and chemical peels in custom protocols",
+    "Seoul's dermatology clinics specialize in scar management for Asian skin phototypes, lowering the risk of post-inflammatory hyperpigmentation that can follow aggressive treatments",
+    "Most protocols involve 3–6 monthly sessions; a single Korea trip can complete an initial 1–2 sessions, with maintenance spaced over subsequent months"
+  ],
+  "keyFacts": [
+    {
+      "label": "Procedure Duration",
+      "value": "30–90 minutes per session"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "Topical numbing cream; sometimes local injection"
+    },
+    {
+      "label": "Recovery Time",
+      "value": "3–7 days redness/swelling (varies by modality)"
+    },
+    {
+      "label": "Hospital Stay",
+      "value": "None — outpatient"
+    },
+    {
+      "label": "Results Duration",
+      "value": "Cumulative improvement over 3–6 months of treatment"
+    },
+    {
+      "label": "Cost Range",
+      "value": "USD 150–600 per session"
+    }
+  ],
+  "costTable": [
+    {
+      "item": "Fractional CO2 laser (scars)",
+      "koreanCost": "USD 250–500",
+      "globalCost": "USD 700–1,500"
+    },
+    {
+      "item": "Microneedling RF (1 session)",
+      "koreanCost": "USD 200–400",
+      "globalCost": "USD 600–1,200"
+    },
+    {
+      "item": "Subcision (per area)",
+      "koreanCost": "USD 150–300",
+      "globalCost": "USD 400–800"
+    },
+    {
+      "item": "Combined scar protocol (per session)",
+      "koreanCost": "USD 300–600",
+      "globalCost": "USD 800–2,000"
+    }
+  ],
+  "callouts": [
+    {
+      "type": "info",
+      "text": "Korean clinics often combine multiple modalities (laser + microneedling RF + subcision) in a single session to address different scar types simultaneously — a more efficient approach than single-modality treatment alone."
+    },
+    {
+      "type": "warning",
+      "text": "Acne scar treatment is not a one-session fix. Plan for at least 3–6 monthly treatments for significant improvement, and discuss a maintenance schedule with your doctor."
+    }
+  ],
+  "keyTakeaways": [
+    "Acne scar removal is a multi-session process; realistic improvement requires a treatment plan spanning several months, not a single procedure",
+    "Korean dermatologists routinely combine laser, RF microneedling, and subcision to address different scar subtypes — tethered, rolling, ice pick, and boxcar scars each respond to different tools",
+    "Skin phototype calibration is critical; Korean clinics' extensive experience with Types III–V reduces the risk of worsening pigmentation"
+  ],
+  "entities": [
+    {
+      "name": "Acne scar",
+      "url": "https://en.wikipedia.org/wiki/Acne_scar",
+      "type": "MedicalCondition"
+    },
+    {
+      "name": "Laser resurfacing",
+      "url": "https://en.wikipedia.org/wiki/Laser_resurfacing",
+      "type": "MedicalProcedure"
+    },
+    {
+      "name": "Microneedling",
+      "url": "https://en.wikipedia.org/wiki/Microneedling",
+      "type": "MedicalProcedure"
+    },
+    {
+      "name": "Subcision",
+      "url": "https://en.wikipedia.org/wiki/Subcision",
+      "type": "MedicalProcedure"
+    },
+    {
+      "name": "Fitzpatrick scale",
+      "url": "https://en.wikipedia.org/wiki/Fitzpatrick_scale",
+      "type": "MedicalConcept"
+    }
+  ],
+  "references": []
 }

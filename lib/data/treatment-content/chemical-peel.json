@@ -57,5 +57,100 @@
       "alt": "Smooth, even-toned skin after chemical peel recovery from a Korea dermatology clinic",
       "credit": "Yan Krukau"
     }
+  ],
+  "quickAnswer": [
+    "Chemical peels in Korea cost USD 60–400 depending on depth — superficial peels are same-day outpatient; deep peels need more recovery time in-country",
+    "Korean dermatology clinics offer TCA, glycolic, salicylic, and combination peels calibrated for Asian skin phototypes",
+    "Mild redness and peeling last 3–7 days for medium peels; plan your Korea trip with enough downtime after the procedure"
+  ],
+  "keyFacts": [
+    {
+      "label": "Procedure Duration",
+      "value": "20–60 minutes"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "Topical numbing cream (deep peels may need more)"
+    },
+    {
+      "label": "Recovery Time",
+      "value": "3–7 days (medium peel); up to 2 weeks (deep peel)"
+    },
+    {
+      "label": "Hospital Stay",
+      "value": "None — outpatient"
+    },
+    {
+      "label": "Results Duration",
+      "value": "3–6 months maintenance; cumulative improvement with a series"
+    },
+    {
+      "label": "Cost Range",
+      "value": "USD 60–400 per session"
+    }
+  ],
+  "costTable": [
+    {
+      "item": "Superficial peel (glycolic/salicylic)",
+      "koreanCost": "USD 60–120",
+      "globalCost": "USD 150–300"
+    },
+    {
+      "item": "Medium-depth peel (TCA 20–35%)",
+      "koreanCost": "USD 150–280",
+      "globalCost": "USD 400–700"
+    },
+    {
+      "item": "Deep peel (TCA >35% / phenol)",
+      "koreanCost": "USD 250–400",
+      "globalCost": "USD 600–1,200"
+    },
+    {
+      "item": "Combination peel package (series of 3)",
+      "koreanCost": "USD 250–500",
+      "globalCost": "USD 600–1,200"
+    }
+  ],
+  "callouts": [
+    {
+      "type": "warning",
+      "text": "Deep chemical peels require more downtime and close follow-up. If you are traveling from abroad, discuss timing with your doctor before booking flights."
+    },
+    {
+      "type": "info",
+      "text": "Korean dermatologists are experienced with Fitzpatrick Type III–V skin and select peel strengths and combinations accordingly to minimize post-inflammatory hyperpigmentation risk."
+    }
+  ],
+  "keyTakeaways": [
+    "Peel depth determines both the results and the recovery window — superficial peels fit easily into a short trip, while deep peels need extra days in-country",
+    "Korean clinics have extensive experience with Asian and darker skin phototypes, which matters for safe acid concentration selection",
+    "A series of superficial peels can be more effective for even-toning than a single deep peel, with less downtime per session"
+  ],
+  "entities": [
+    {
+      "name": "Chemical peel",
+      "url": "https://en.wikipedia.org/wiki/Chemical_peel",
+      "type": "MedicalProcedure"
+    },
+    {
+      "name": "Glycolic acid",
+      "url": "https://en.wikipedia.org/wiki/Glycolic_acid",
+      "type": "Substance"
+    },
+    {
+      "name": "Trichloroacetic acid",
+      "url": "https://en.wikipedia.org/wiki/Trichloroacetic_acid",
+      "type": "Substance"
+    },
+    {
+      "name": "Fitzpatrick scale",
+      "url": "https://en.wikipedia.org/wiki/Fitzpatrick_scale",
+      "type": "MedicalConcept"
+    },
+    {
+      "name": "Dermatology",
+      "url": "https://en.wikipedia.org/wiki/Dermatology",
+      "type": "MedicalSpecialty"
+    }
   ]
 }

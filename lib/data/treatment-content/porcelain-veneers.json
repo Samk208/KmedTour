@@ -47,5 +47,114 @@
       "alt": "Brighter smile after porcelain veneers in Korea",
       "credit": "Shiny Diamond"
     }
+  ],
+  "quickAnswer": [
+    "Porcelain veneers in Korea cost USD 250–600 per tooth — roughly 40–60% less than US or Australian cosmetic dental prices for comparable all-ceramic work",
+    "Korean dental labs produce ultra-thin ceramic veneers (as thin as 0.3 mm) using CAD/CAM technology, enabling precise shade and shape matching in 3–7 days",
+    "A full veneer treatment takes 3–7 days total — preparation visit, lab fabrication, and bonding — making Korea a practical destination for dental cosmetic work"
+  ],
+  "keyFacts": [
+    {
+      "label": "Procedure Duration",
+      "value": "2–3 visits over 3–7 days"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "Local anesthesia for tooth preparation"
+    },
+    {
+      "label": "Recovery Time",
+      "value": "Minimal; temporary sensitivity for 1–2 weeks"
+    },
+    {
+      "label": "Hospital Stay",
+      "value": "None — outpatient dental clinic"
+    },
+    {
+      "label": "Results Duration",
+      "value": "10–20 years with proper maintenance"
+    },
+    {
+      "label": "Cost Range",
+      "value": "USD 250–600 per veneer"
+    }
+  ],
+  "costTable": [
+    {
+      "item": "Single porcelain veneer (standard)",
+      "koreanCost": "USD 250–400",
+      "globalCost": "USD 600–1,200"
+    },
+    {
+      "item": "Single veneer (premium e.max/Zirconia)",
+      "koreanCost": "USD 400–600",
+      "globalCost": "USD 1,000–1,800"
+    },
+    {
+      "item": "Full smile (8–10 veneers)",
+      "koreanCost": "USD 2,500–5,500",
+      "globalCost": "USD 6,000–14,000"
+    },
+    {
+      "item": "Consultation and shade matching",
+      "koreanCost": "Often included",
+      "globalCost": "USD 100–250"
+    }
+  ],
+  "callouts": [
+    {
+      "type": "info",
+      "text": "Minimal-prep and no-prep veneers preserve more natural tooth enamel than traditional veneers. Ask your Korean dentist whether these options suit your case."
+    },
+    {
+      "type": "warning",
+      "text": "Porcelain veneers are irreversible — tooth preparation removes a thin layer of enamel that cannot be replaced. Make sure you understand this commitment before proceeding."
+    }
+  ],
+  "keyTakeaways": [
+    "Porcelain veneers are a permanent cosmetic commitment — enamel reduction cannot be reversed, so careful selection of a skilled and experienced dentist is essential",
+    "Korea's dental labs produce thin, high-quality ceramic veneers quickly using CAD/CAM technology, making a 1-week trip realistic for a complete veneer procedure",
+    "Cost savings of 40–60% versus Western markets are most significant when placing multiple veneers — a full smile makeover can save thousands of dollars"
+  ],
+  "entities": [
+    {
+      "name": "Veneer (dentistry)",
+      "url": "https://en.wikipedia.org/wiki/Veneer_(dentistry)",
+      "type": "MedicalProcedure"
+    },
+    {
+      "name": "Porcelain",
+      "url": "https://en.wikipedia.org/wiki/Porcelain",
+      "type": "Material"
+    },
+    {
+      "name": "Cosmetic dentistry",
+      "url": "https://en.wikipedia.org/wiki/Cosmetic_dentistry",
+      "type": "MedicalSpecialty"
+    },
+    {
+      "name": "Tooth enamel",
+      "url": "https://en.wikipedia.org/wiki/Tooth_enamel",
+      "type": "AnatomicalStructure"
+    },
+    {
+      "name": "CAD/CAM dentistry",
+      "url": "https://en.wikipedia.org/wiki/CAD/CAM_dentistry",
+      "type": "Technology"
+    }
+  ],
+  "references": [
+    {
+      "label": "Medical Korea — Official Portal for International Patients",
+      "url": "https://www.medicalkorea.or.kr"
+    },
+    {
+      "label": "Korea Health Industry Development Institute (KHIDI)",
+      "url": "https://www.khidi.or.kr"
+    },
+    {
+      "label": "Veneer (dentistry) — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Veneer_(dentistry)"
+    }
   ]
 }

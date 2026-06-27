@@ -41,8 +41,8 @@
       "url": "https://www.khidi.or.kr/eps"
     },
     {
-      "label": "Medical Korea (official medical tourism portal)",
-      "url": "https://www.medicalkorea.or.kr/"
+      "label": "Medical Korea — Official Portal",
+      "url": "https://www.medicalkorea.or.kr"
     },
     {
       "label": "Botulinum toxin — Wikipedia",
@@ -64,6 +64,101 @@
       "src": "/images/procedures/inline/botox-injections-3.jpg",
       "alt": "Woman with smooth, refreshed skin after Botox treatment in Korea",
       "credit": "Shiny Diamond"
+    }
+  ],
+  "quickAnswer": [
+    "Botox in Seoul costs USD 80–150 per area — roughly 40–70% less than comparable clinics in the US or UK",
+    "Injections take 10–20 minutes with no downtime; most patients return to normal activities the same day",
+    "Effects appear within 3–5 days, settle fully over 2 weeks, and last 3–4 months — plan your trip timing accordingly"
+  ],
+  "keyFacts": [
+    {
+      "label": "Procedure Duration",
+      "value": "10–20 minutes per session"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "Topical numbing cream (optional)"
+    },
+    {
+      "label": "Recovery Time",
+      "value": "Minimal; normal activities same day"
+    },
+    {
+      "label": "Hospital Stay",
+      "value": "None — outpatient"
+    },
+    {
+      "label": "Results Duration",
+      "value": "3–4 months (jaw slimming may last longer)"
+    },
+    {
+      "label": "Cost Range",
+      "value": "USD 80–350 per session (area-dependent)"
+    }
+  ],
+  "costTable": [
+    {
+      "item": "Single area (forehead or frown lines)",
+      "koreanCost": "USD 80–150",
+      "globalCost": "USD 200–400"
+    },
+    {
+      "item": "Full upper face (3-area package)",
+      "koreanCost": "USD 200–350",
+      "globalCost": "USD 500–900"
+    },
+    {
+      "item": "Masseter jaw slimming",
+      "koreanCost": "USD 150–300",
+      "globalCost": "USD 400–700"
+    },
+    {
+      "item": "Consultation",
+      "koreanCost": "Often included",
+      "globalCost": "USD 50–150"
+    }
+  ],
+  "callouts": [
+    {
+      "type": "info",
+      "text": "Korean clinics often use domestically manufactured botulinum toxin brands approved by the Ministry of Food and Drug Safety (MFDS), which helps keep prices lower while maintaining regulatory standards."
+    },
+    {
+      "type": "tip",
+      "text": "Book your Botox appointment at least 2 weeks before any important event so the full effect has time to develop."
+    }
+  ],
+  "keyTakeaways": [
+    "Botox is non-surgical with minimal downtime — a practical treatment to schedule around a Korea trip",
+    "Korean-made toxin brands are MFDS-regulated and help keep prices competitive without sacrificing oversight",
+    "Jaw masseter slimming is a specialty of Korean aesthetic clinics and can produce results lasting several months per session"
+  ],
+  "entities": [
+    {
+      "name": "Botulinum toxin",
+      "url": "https://en.wikipedia.org/wiki/Botulinum_toxin",
+      "type": "Substance"
+    },
+    {
+      "name": "Masseter muscle",
+      "url": "https://en.wikipedia.org/wiki/Masseter_muscle",
+      "type": "AnatomicalStructure"
+    },
+    {
+      "name": "Wrinkle",
+      "url": "https://en.wikipedia.org/wiki/Wrinkle",
+      "type": "Topic"
+    },
+    {
+      "name": "Medical tourism in South Korea",
+      "url": "https://en.wikipedia.org/wiki/Medical_tourism_in_South_Korea",
+      "type": "Topic"
+    },
+    {
+      "name": "Ministry of Food and Drug Safety",
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_Food_and_Drug_Safety",
+      "type": "Organization"
     }
   ]
 }
