@@ -16,16 +16,16 @@
   ],
   "cataract-surgery": [
     {
-      "q": "ophthalmologist eye examination patient",
-      "alt": "Ophthalmologist examining a patient before cataract surgery in Korea"
+      "q": "eye examination ophthalmology clinic",
+      "alt": "Ophthalmologist examining patient before cataract surgery in Korea"
     },
     {
-      "q": "eye surgery microscope ophthalmology",
-      "alt": "Cataract surgery performed under an operating microscope"
+      "q": "cataract surgery operation intraocular lens",
+      "alt": "Cataract surgery with IOL implant at Korean eye clinic"
     },
     {
-      "q": "senior smiling clear vision glasses",
-      "alt": "Patient with restored vision after cataract surgery in Korea"
+      "q": "patient vision recovery clear glasses",
+      "alt": "Clear vision after cataract surgery in Korea"
     }
   ],
   "hysterectomy": [
@@ -268,29 +268,29 @@
   ],
   "knee-replacement": [
     {
-      "q": "orthopedic surgeon knee consultation senior",
-      "alt": "Orthopedic surgeon reviewing a knee X-ray before replacement in Korea"
+      "q": "orthopedic surgeon knee X-ray review consultation",
+      "alt": "Orthopedic surgeon reviewing knee X-ray before replacement in Korea"
     },
     {
-      "q": "knee joint replacement surgery operating room",
-      "alt": "Total knee replacement surgery in a Korean operating room"
+      "q": "knee replacement surgery operating room orthopedic",
+      "alt": "Total knee replacement surgery in Korean operating room"
     },
     {
-      "q": "senior knee rehabilitation physical therapy walking",
-      "alt": "Rehabilitation and mobility after knee replacement in Korea"
+      "q": "physical therapy rehabilitation knee walking recovery",
+      "alt": "Rehabilitation and mobility exercises after knee replacement in Korea"
     }
   ],
   "lasik-eye-surgery": [
     {
-      "q": "ophthalmologist eye exam patient consultation",
-      "alt": "Ophthalmologist assessing a patient before LASIK in Korea"
+      "q": "eye clinic consultation Korea",
+      "alt": "Ophthalmologist assessing patient before LASIK eye surgery in Korea"
     },
     {
-      "q": "laser eye surgery ophthalmology equipment",
-      "alt": "LASIK laser vision correction at a Korean eye clinic"
+      "q": "laser eye surgery procedure",
+      "alt": "LASIK laser vision correction at Korean eye clinic"
     },
     {
-      "q": "person clear vision outdoors no glasses",
+      "q": "clear vision patient after eye surgery",
       "alt": "Clear vision after LASIK surgery in Korea"
     }
   ],
@@ -380,15 +380,15 @@
   ],
   "smile-eye-surgery": [
     {
-      "q": "ophthalmologist eye consultation patient exam",
-      "alt": "Ophthalmologist assessing a patient before SMILE eye surgery in Korea"
+      "q": "eye clinic consultation Korea ophthalmology",
+      "alt": "Ophthalmologist assessing patient before SMILE eye surgery in Korea"
     },
     {
-      "q": "laser vision correction eye surgery clinic",
+      "q": "femtosecond laser eye surgery cornea",
       "alt": "SMILE minimally invasive laser vision correction in Korea"
     },
     {
-      "q": "person clear vision confident outdoors",
+      "q": "clear vision patient sunlight after eye surgery",
       "alt": "Clear vision after SMILE eye surgery in Korea"
     }
   ],
@@ -464,58 +464,58 @@
   ],
   "teeth-whitening": [
     {
-      "q": "patient consultation dentist examining teeth dental clinic",
-      "alt": "Dental consultation and tooth shade assessment before teeth whitening at a clinic in Korea"
+      "q": "dentist patient consultation dental clinic Korea",
+      "alt": "Dentist reviewing shade guide with patient before teeth whitening consultation at a Seoul dental clinic"
     },
     {
-      "q": "dentist applying whitening gel LED light teeth",
-      "alt": "In-office light-activated teeth whitening procedure with protective gum barrier at a Seoul dental clinic"
+      "q": "teeth whitening LED lamp dental procedure close up",
+      "alt": "Professional in-clinic teeth whitening procedure using LED activation lamp with peroxide gel applied"
     },
     {
-      "q": "person smiling bright white teeth",
-      "alt": "Patient with a brighter smile after professional teeth whitening in Korea"
+      "q": "bright smile after teeth whitening result",
+      "alt": "Patient smiling with noticeably whitened teeth after professional dental whitening treatment in Korea"
     }
   ],
   "full-mouth-reconstruction": [
     {
-      "q": "dentist reviewing 3D dental scan treatment plan patient clinic",
-      "alt": "Full mouth reconstruction consultation and digital planning at a dental clinic in Korea"
+      "q": "dental implant surgery consultation Korea clinic",
+      "alt": "Dental surgeon reviewing a 3D CBCT scan with a patient at a modern Seoul dental clinic"
     },
     {
-      "q": "dental implant surgery guided equipment clinic",
-      "alt": "Dental implant placement during full mouth reconstruction in Korea"
+      "q": "full arch dental restoration before after smile",
+      "alt": "Split comparison showing severely worn teeth before treatment and a complete smile restoration after full mouth reconstruction"
     },
     {
-      "q": "person restored healthy white smile",
-      "alt": "Restored smile result after full mouth reconstruction in Korea"
+      "q": "CAD CAM dental milling machine crown fabrication",
+      "alt": "In-clinic CAD/CAM milling unit producing a zirconia dental crown from a digital scan file"
     }
   ],
   "corneal-transplant": [
     {
-      "q": "ophthalmologist examining patient eye slit lamp consultation",
-      "alt": "Corneal transplant consultation and corneal imaging at a Korean eye clinic"
+      "q": "eye specialist corneal examination slit lamp",
+      "alt": "Ophthalmologist examining cornea before transplant surgery in Korea"
     },
     {
-      "q": "eye surgeon microsurgery operating microscope",
-      "alt": "Keratoplasty corneal transplant surgery under a microscope in South Korea"
+      "q": "corneal transplant eye surgery operating room",
+      "alt": "Corneal transplant surgery at Korean tertiary eye center"
     },
     {
-      "q": "person clear bright eyes looking ahead",
-      "alt": "Restored clear vision after corneal transplant recovery in Korea"
+      "q": "patient eye recovery post surgery check",
+      "alt": "Post-operative eye follow-up after corneal transplant in Korea"
     }
   ],
   "lasek-eye-surgery": [
     {
-      "q": "ophthalmologist eye examination corneal topography patient clinic",
-      "alt": "Pre-operative eye exam and corneal screening before LASEK eye surgery in Korea"
+      "q": "eye clinic consultation Korea laser surgery",
+      "alt": "Ophthalmologist consulting patient before LASEK eye surgery in Korea"
     },
     {
-      "q": "patient excimer laser vision correction surgery operating suite",
-      "alt": "Excimer laser reshaping the cornea during LASEK surface vision correction in Seoul"
+      "q": "surface laser eye surgery cornea",
+      "alt": "LASEK surface laser vision correction at Korean eye clinic"
     },
     {
-      "q": "person smiling outdoors clear vision no glasses",
-      "alt": "Patient enjoying clear vision after LASEK eye surgery recovery in Korea"
+      "q": "patient recovery sunglasses bright light sensitivity",
+      "alt": "Recovery after LASEK eye surgery in Korea"
     }
   ],
   "limb-lengthening": [

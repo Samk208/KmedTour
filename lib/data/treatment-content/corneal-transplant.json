@@ -1,69 +1,184 @@
 {
   "slug": "corneal-transplant",
-  "shortDescription": "Keratoplasty in South Korea (PK, DALK, DSAEK, DMEK) to restore sight clouded by corneal disease, scarring, or endothelial failure.",
+  "shortDescription": "Corneal transplant (keratoplasty) in Korea: full-range lamellar and endothelial techniques at KAHF-accredited tertiary centers, $12,000–$18,000 per eye.",
+  "quickAnswer": [
+    "**Four technique options** — PK (full-thickness), DALK (anterior lamellar), DSAEK, and DMEK (endothelial only) — matched to which corneal layers are affected",
+    "**Endothelial keratoplasty (DSAEK/DMEK)** offers the fastest visual recovery: usable vision within 1–2 weeks",
+    "**Rejection is the key long-term risk** — steroid and antibiotic drops continue for months; urgent signs (redness, light sensitivity, sudden blurring) require same-day contact",
+    "**Plan an extended stay** — initial surgery plus mandatory early follow-up visits mean most patients need 2–4 weeks in Korea before flying home"
+  ],
+  "keyFacts": [
+    {
+      "label": "Procedure time",
+      "value": "1–2 hours depending on technique (PK vs. lamellar vs. endothelial)"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "Local (topical/regional block) or general anesthesia — decided case-by-case"
+    },
+    {
+      "label": "Hospital stay",
+      "value": "Typically 1–2 days inpatient; day-surgery possible for DSAEK/DMEK at some centers"
+    },
+    {
+      "label": "Recommended stay in Korea",
+      "value": "2–4 weeks minimum for early post-operative monitoring and suture checks"
+    },
+    {
+      "label": "Recovery",
+      "value": "DSAEK/DMEK: functional vision 1–2 weeks; PK: vision fluctuates up to 12–18 months with sutures in place"
+    },
+    {
+      "label": "Typical cost in Korea",
+      "value": "Approximately $12,000–$18,000 USD per eye (technique, donor tissue, and hospital fees vary)"
+    }
+  ],
   "sections": {
-    "overview": "A corneal transplant, or keratoplasty, replaces diseased, scarred, or clouded corneal tissue with healthy donor cornea to restore clear vision. The cornea is the transparent dome at the front of the eye, and when conditions such as keratoconus, Fuchs' endothelial dystrophy, corneal scarring from infection or injury, or failed earlier grafts damage it, light can no longer focus properly and sight deteriorates. South Korean tertiary eye centers offer the full modern range of techniques rather than a single one-size approach. Penetrating keratoplasty (PK) replaces the entire thickness of the cornea and is used for deep scarring or full-thickness disease. Deep anterior lamellar keratoplasty (DALK) replaces the front layers while preserving the patient's own healthy inner endothelium, which lowers rejection risk and suits conditions like keratoconus. For diseases affecting only the innermost layer, endothelial keratoplasty techniques such as DSAEK and DMEK transplant just that thin layer, allowing far quicker visual recovery through a small incision. The right technique depends on which layers of the cornea are affected, and a Korean ophthalmology team determines this through detailed imaging and examination. For international patients from Africa, the appeal lies in access to selective lamellar and endothelial procedures performed by high-volume specialists, often with shorter scheduling than in home countries. Outcomes vary by diagnosis and graft type, and no transplant can be guaranteed, but matching the procedure to the disease is a major reason results have steadily improved.",
-    "candidacy": "Good candidates are people whose vision loss comes from a corneal problem that glasses, contact lenses, or medication can no longer correct. Common indications include advanced keratoconus, Fuchs' endothelial dystrophy and other endothelial failures, corneal scarring from trauma or past infection such as herpes or bacterial keratitis, hereditary corneal dystrophies, and previously failed grafts. The choice between PK, DALK, DSAEK, and DMEK depends on which corneal layers are diseased, so a thorough preoperative assessment with corneal imaging and a full eye examination is essential. Candidacy also depends on the health of the rest of the eye: significant glaucoma, severe dry eye, retinal disease, or uncontrolled ocular surface inflammation can affect whether and which transplant is advisable, and these are evaluated before surgery. General health matters too, since you must tolerate anesthesia and commit to the postoperative steroid drops and follow-up that protect the graft. International patients should be realistic that recovery and rejection monitoring continue for months, requiring either an extended stay or reliable ophthalmic care at home. Honest discussion of your full history with the Korean team is the only way to confirm you are a suitable candidate.",
-    "procedure_steps": "Care begins with consultation and diagnostic testing, including corneal topography, thickness mapping, and a detailed slit-lamp examination, to confirm the diagnosis and select the technique. Donor tissue is supplied through an eye bank, where corneas are screened and stored under controlled refrigeration before use. On the day of surgery, the procedure is usually done under local or general anesthesia depending on the case and patient. In penetrating keratoplasty the surgeon removes a circular full-thickness disc of the diseased cornea and sutures a matching donor button into place with very fine stitches. In deep anterior lamellar keratoplasty the diseased front layers are removed while the patient's healthy inner endothelium is preserved, and donor anterior tissue is positioned over it. In endothelial techniques such as DSAEK and DMEK, only the thin inner layer is replaced through a small incision, and an air or gas bubble is placed inside the eye to hold the graft against the cornea while it adheres. Surgery typically takes from under an hour to a couple of hours depending on complexity. Afterward the eye is shielded, and you receive specific instructions, including positioning face-up for a period after endothelial grafts so the bubble supports the new tissue.",
-    "recovery_timeline": "Recovery depends heavily on the technique. Endothelial keratoplasty generally restores useful vision fastest, with many people noticing clearer sight within one to two weeks and continued stabilization over the following one to two months as the graft settles. Penetrating keratoplasty recovers much more slowly because the full-thickness sutures stay in for an extended period and the resulting astigmatism takes time to settle; vision can continue to change for roughly twelve to eighteen months as stitches are gradually adjusted or removed. DALK falls between these, avoiding endothelial rejection but still requiring patience as the surface heals. Across all types, antibiotic and anti-inflammatory steroid eye drops are used for months to suppress rejection and inflammation, and the tapering schedule is individualized. International patients should plan an initial stay in Korea long enough for the first critical reviews, then arrange ongoing monitoring at home. You will be taught the warning signs of rejection, often summarized as redness, sensitivity to light, vision change, and pain, and told to seek care urgently if they appear. Protecting the eye from rubbing and trauma, attending every follow-up, and using drops exactly as prescribed are the strongest things you can do to protect the graft.",
-    "cost_breakdown": "Costs for corneal transplantation in South Korea vary widely with the technique chosen, the complexity of the case, the hospital tier, and whether one or both eyes are treated. Published medical-tourism figures for keratoplasty at major Korean centers commonly fall in an approximate range of 12,000 to 18,000 US dollars per eye, while simpler or partial procedures are sometimes quoted lower. These figures should be treated as estimates, not quotes, because the final price depends on the surgical approach (PK, DALK, DSAEK, or DMEK), donor tissue and eye-bank fees, anesthesia, hospital stay, and the diagnostic workup. Beyond the surgical fee, international patients should budget for the preoperative consultation and imaging, postoperative medications, multiple follow-up visits, accommodation for an extended stay, flights, interpretation services, and travel insurance. Because graft monitoring continues for months, you should also factor in the cost of ongoing care once you return home. Many Korean hospitals with international healthcare centers provide written cost estimates after reviewing your records, which is the only reliable way to plan a budget. Always request an itemized estimate covering surgery, tissue, medication, and follow-up before committing, and confirm what is and is not included.",
-    "why_korea": "South Korea has become a leading destination for medical travel, with foreign patient numbers rising sharply in recent years and Seoul concentrating much of that volume in its tertiary hospitals. The sector is supported by national policy through the Korea Health Industry Development Institute (KHIDI), a government body under the Ministry of Health and Welfare, and its Medical Korea program, which registers institutions licensed to attract foreign patients and administers the Korea Accreditation Program for Hospitals Serving Foreign Patients (KAHF). For corneal transplantation specifically, the draw is the concentration of high-volume ophthalmology specialists in Seoul's large tertiary eye centers who routinely perform the selective lamellar and endothelial techniques (DALK, DSAEK, DMEK) alongside traditional penetrating keratoplasty, supported by established eye-bank tissue systems and modern corneal imaging. International healthcare centers at major hospitals coordinate scheduling, interpretation, and documentation for overseas patients, which matters for African patients managing travel logistics from abroad. Choosing a KHIDI-registered, accredited institution gives a verifiable baseline of standards. That said, donor tissue availability and eligibility are assessed case by case, outcomes depend on diagnosis, and Korea is a destination for the surgery, not a substitute for the months of follow-up that protect the graft after you go home."
+    "overview": "Corneal transplant — medically termed keratoplasty — replaces diseased, scarred, or clouded corneal tissue with healthy donor cornea sourced from a screened eye bank.\n\nThe cornea is the clear front window of the eye. When it becomes opaque or structurally compromised, vision loss follows and cannot be corrected by glasses, contact lenses, or medication alone.\n\nKorean tertiary ophthalmology centers offer the full spectrum of modern techniques:\n\n- **Penetrating keratoplasty (PK):** full-thickness replacement — the oldest and most established method.\n- **Deep anterior lamellar keratoplasty (DALK):** removes only the front layers while preserving the patient's own healthy endothelium, which lowers rejection risk.\n- **DSAEK and DMEK:** endothelial keratoplasty procedures that replace only the damaged inner cell layer through a small incision, using an air or gas bubble to hold the graft while it adheres.\n\nThe technique chosen depends on which corneal layers are affected, the patient's prior surgical history, and the surgeon's assessment of the eye bank tissue available.",
+    "candidacy": "Good candidates share one defining feature: vision loss caused by corneal disease that has not responded to non-surgical options.\n\nCommon qualifying diagnoses include:\n\n- **Advanced keratoconus** — progressive thinning and cone-shaped distortion of the cornea\n- **Fuchs' endothelial dystrophy** — inherited failure of the endothelial pump cells that keep the cornea clear\n- **Corneal scarring** from prior infection (herpes simplex keratitis, bacterial ulcer) or trauma\n- **Hereditary corneal dystrophies** affecting the stroma or anterior layers\n- **Failed prior graft** — regraft surgery is technically demanding but performed at high-volume Korean centers\n\nContraindications require careful evaluation. Significant uncontrolled glaucoma, severe dry eye syndrome, active ocular surface inflammation, or co-existing retinal disease can each reduce the chance of a successful outcome.\n\nGeneral health must be suitable for anesthesia. Patients are expected to commit to an extended stay in Korea for post-operative monitoring and to ongoing drop therapy at home after returning.",
+    "procedure_steps": "The process begins before surgery with a thorough workup: corneal topography, pachymetry (thickness mapping), slit-lamp biomicroscopy, and endothelial cell density count.\n\nDonor tissue is procured from a licensed eye bank. All tissue undergoes serological screening and is stored under refrigerated conditions with documented cell counts.\n\n**Penetrating keratoplasty (PK):**\nA circular trephine removes a full-thickness disc of the patient's cornea. The donor button — cut to precise diameter — is sutured into place with continuous or interrupted fine nylon sutures. Sutures may remain for 12–18 months while the wound heals.\n\n**Deep anterior lamellar keratoplasty (DALK):**\nThe surgeon removes the front stromal layers while leaving the patient's own Descemet membrane and endothelium intact. Donor anterior tissue is positioned and sutured. Because the patient's endothelium is preserved, endothelial rejection is effectively eliminated.\n\n**DSAEK / DMEK:**\nOnly the diseased inner endothelial layer is replaced. Donor tissue is folded and inserted through a small corneal incision. An air or gas bubble is injected to press the graft flat against the recipient bed. The patient lies face-up for 30–60 minutes post-operatively to hold graft position.\n\nTotal operating time is typically 1–2 hours. Anesthesia choice — local block or general — is made jointly by the surgeon and anesthesiologist based on patient cooperation and systemic health.",
+    "recovery_timeline": "Recovery differs substantially by technique, and patients should understand the timelines before choosing Korea for surgery.\n\n**Endothelial keratoplasty (DSAEK/DMEK):**\nFunctional vision typically returns within 1–2 weeks as the graft adheres and the cornea clears. Full stabilization takes 1–2 months. DMEK often produces sharper final vision than DSAEK because the transplanted tissue is thinner and more anatomically normal.\n\n**DALK:**\nVisual recovery is slower than endothelial procedures — several months — but the absence of endothelial rejection risk is a significant long-term advantage. Sutures remain in place for an extended period.\n\n**PK:**\nVision fluctuates during the 12–18 months that sutures are in place. Suture adjustment or selective removal is sometimes needed to manage post-operative astigmatism. Final visual acuity stabilizes only after full suture removal.\n\n**Universal post-operative care:**\n- Antibiotic and corticosteroid eye drops are prescribed for months — the taper schedule is individualized.\n- Drop compliance is essential to prevent rejection.\n- Rejection warning signs — sudden redness, increased light sensitivity, vision change, or pain — require same-day ophthalmology contact, not a wait-and-see approach.\n- Protective eyewear is required whenever outdoors during the healing phase.\n\nMost international patients need 2–4 weeks in Korea before the surgical team considers them stable to fly home.",
+    "cost_breakdown": "The approximate price range for corneal transplant in Korea is **$12,000–$18,000 USD per eye**. This is a planning estimate; the final written quote follows review of your medical records and imaging.\n\nFactors that shift cost within this range:\n\n- **Technique:** DMEK requires highly skilled tissue preparation; PK is less technically demanding but carries higher anesthesia and inpatient time.\n- **Donor tissue and eye-bank fees:** Processed, pre-cut endothelial grafts (DMEK/DSAEK) carry higher preparation costs than full-thickness PK tissue.\n- **Anesthesia type:** General anesthesia adds to the facility fee versus a local block.\n- **Hospital stay:** Day surgery versus 1–2 days inpatient affects the room and nursing charge.\n- **Diagnostic workup:** Pre-operative topography, pachymetry, and specular microscopy are billed separately at most centers.\n\nPatients must also budget for items outside the surgical fee:\n\n- International flights and airport transfers\n- 2–4 weeks accommodation in Seoul or the host city\n- Post-operative medications (steroid drops are required for months)\n- Comprehensive travel and medical insurance covering surgical complications\n- Ongoing follow-up costs at home after returning\n\nRequest an itemized written estimate before committing to surgery.",
+    "why_korea": "Korea's ophthalmology system is structured to handle the full complexity of corneal surgery at scale, which matters for international patients who cannot easily return for complications.\n\n**National oversight:** The Korea Health Industry Development Institute (KHIDI) and Ministry of Health and Welfare operate the Medical Korea framework — a government-backed program that sets standards for hospitals treating foreign patients.\n\n**Accreditation:** Hospitals participating in the Medical Korea program carry KAHF (Korea International Medical Association) certification. The Korea Institute for Healthcare Accreditation (KOIHA) conducts regular facility reviews.\n\n**High-volume specialist exposure:** Seoul tertiary centers perform each of the four corneal transplant techniques regularly, giving surgeons the repetition that matters in technically demanding procedures like DMEK and DALK.\n\n**Eye-bank infrastructure:** Korea maintains a functioning national eye-bank system with documented tissue screening protocols and modern corneal imaging (Scheimpflug tomography, specular microscopy).\n\n**International patient coordination:** Accredited centers operate international healthcare centers staffed with medical interpreters, case coordinators, and documentation specialists who manage visa support letters, medical report translation, and scheduling across multiple specialist appointments."
   },
+  "costTable": [
+    {
+      "item": "Surgical fee (technique-dependent)",
+      "cost": "$8,000–$13,000"
+    },
+    {
+      "item": "Donor cornea / eye-bank preparation fee",
+      "cost": "$1,500–$3,000"
+    },
+    {
+      "item": "Anesthesia",
+      "cost": "$500–$1,200"
+    },
+    {
+      "item": "Inpatient stay (1–2 nights, if required)",
+      "cost": "$400–$1,000"
+    },
+    {
+      "item": "Pre-operative diagnostic workup",
+      "cost": "$300–$800"
+    },
+    {
+      "item": "Post-operative medications (drops, 3–6 months)",
+      "cost": "$200–$500"
+    }
+  ],
+  "callouts": [
+    {
+      "type": "tip",
+      "title": "Rejection warning signs — act the same day",
+      "text": "Sudden redness, new light sensitivity, unexplained vision blurring, or eye pain after any type of corneal graft are rejection warning signs. Do not wait for your next scheduled appointment — contact your surgeon or the nearest ophthalmology emergency unit immediately. Early treatment with intensive steroids can reverse most acute rejection episodes if caught within 24–48 hours."
+    },
+    {
+      "type": "tip",
+      "title": "DMEK vs. DSAEK — ask about cell density",
+      "text": "Both replace only the endothelial layer, but DMEK transplants a thinner, purer tissue layer and typically delivers better final visual acuity. Ask your Korean surgeon for the eye bank's pre-cut DMEK tissue cell density count — above 2,000 cells/mm² is the standard quality threshold for graft tissue used at reputable centers."
+    },
+    {
+      "type": "tip",
+      "title": "Plan your return trip carefully",
+      "text": "Most airlines require a physician fit-to-fly letter after intraocular surgery. If your procedure involved an air or gas bubble (DSAEK/DMEK), flying before the bubble fully absorbs causes dangerous intraocular pressure changes. Your surgical team will confirm when you are cleared for air travel — do not book return flights before that clearance."
+    }
+  ],
+  "keyTakeaways": [
+    "Korea offers all four corneal transplant techniques (PK, DALK, DSAEK, DMEK) at KAHF-accredited tertiary centers under the Medical Korea government framework",
+    "Technique selection drives both cost ($12,000–$18,000 per eye) and recovery timeline — endothelial procedures (DSAEK/DMEK) recover fastest, PK takes up to 18 months",
+    "Rejection is a lifelong vigilance issue requiring months of steroid drops and immediate response to warning signs regardless of which technique was used",
+    "International patients should plan at least 2–4 weeks in Korea before flying home, and must confirm fit-to-fly clearance if a gas bubble was used"
+  ],
+  "entities": [
+    {
+      "name": "Penetrating keratoplasty",
+      "url": "https://en.wikipedia.org/wiki/Corneal_transplantation"
+    },
+    {
+      "name": "Keratoconus",
+      "url": "https://en.wikipedia.org/wiki/Keratoconus"
+    },
+    {
+      "name": "Fuchs endothelial dystrophy",
+      "url": "https://en.wikipedia.org/wiki/Fuchs%27_dystrophy"
+    },
+    {
+      "name": "Descemet membrane endothelial keratoplasty",
+      "url": "https://en.wikipedia.org/wiki/Descemet_membrane_endothelial_keratoplasty"
+    },
+    {
+      "name": "Medical tourism in South Korea",
+      "url": "https://en.wikipedia.org/wiki/Medical_tourism_in_South_Korea"
+    },
+    {
+      "name": "Korea Health Industry Development Institute",
+      "url": "https://en.wikipedia.org/wiki/Korea_Health_Industry_Development_Institute"
+    }
+  ],
   "faqs": [
     {
       "q": "What is the difference between PK, DALK, DSAEK, and DMEK?",
-      "a": "They differ by how much of the cornea is replaced. Penetrating keratoplasty (PK) replaces the full thickness. DALK replaces only the front layers and keeps your own inner endothelium. DSAEK and DMEK replace just the thin innermost layer through a small incision. The right one depends on which corneal layers are diseased, decided after imaging and examination by your Korean ophthalmology team."
+      "a": "All four are corneal transplant procedures, but they replace different layers. PK (penetrating keratoplasty) removes and replaces the full thickness of the cornea — every layer. DALK (deep anterior lamellar keratoplasty) replaces only the front stromal layers, leaving the patient's own healthy inner endothelium, which eliminates endothelial rejection risk. DSAEK and DMEK are endothelial keratoplasty procedures — they replace only the diseased inner endothelial cell layer through a small incision. DMEK uses a thinner, more anatomically precise graft than DSAEK and generally achieves better final visual acuity, but it is technically more demanding. Your Korean surgeon will recommend the technique based on which layers are diseased and your eye's specific anatomy."
     },
     {
-      "q": "How long will I need to stay in Korea?",
-      "a": "It depends on the technique and your healing. You should plan an initial stay long enough to cover surgery and the first critical follow-up reviews, which for endothelial grafts can be a few weeks and for penetrating keratoplasty may be longer. Because graft monitoring continues for months, most patients arrange ongoing eye care at home after returning. Confirm the expected timeline with your hospital."
+      "q": "How long do I need to stay in Korea after corneal transplant surgery?",
+      "a": "Plan for a minimum of 2–4 weeks in Korea before your surgical team considers you stable to travel home. The first week involves daily or every-other-day post-operative checks to confirm graft adhesion (especially critical for DSAEK/DMEK) and to monitor intraocular pressure. If you received a gas or air bubble during endothelial keratoplasty, you cannot fly until the bubble is fully absorbed — usually 1–2 weeks. PK patients may need selective suture adjustment appointments within the first month. Always get a written fit-to-fly clearance before booking return flights."
     },
     {
-      "q": "Where does the donor cornea come from?",
-      "a": "Donor corneas are supplied through eye banks, where the tissue is screened and stored under controlled refrigeration before transplantation. Availability and suitability are assessed case by case, so timing can depend on tissue supply. Ask your hospital's international center how donor tissue is sourced and how scheduling around tissue availability works for your specific procedure."
+      "q": "Where does the donor cornea come from, and is it safe?",
+      "a": "Donor corneas in Korea come from licensed eye banks operating under national regulatory oversight. Donated tissue undergoes serological screening for infectious diseases, specular microscopy to confirm endothelial cell density, and refrigerated storage with documented chain-of-custody records. Pre-cut tissue for DSAEK and DMEK is evaluated for cell density — reputable centers use tissue above 2,000 cells/mm². You can ask your coordinator for documentation of the tissue's origin and quality metrics before surgery."
     },
     {
-      "q": "Can a corneal transplant be rejected?",
-      "a": "Yes. Any corneal graft can be rejected, though risk varies by technique, with full-thickness PK generally carrying more endothelial rejection risk than lamellar approaches like DALK. You will use anti-inflammatory steroid drops for months to lower this risk and be taught the warning signs, commonly redness, light sensitivity, vision change, and pain. If any appear, seek eye care urgently. No transplant outcome can be guaranteed."
+      "q": "What are the rejection warning signs and how quickly do I need to act?",
+      "a": "Corneal graft rejection can occur months or even years after surgery. The classic warning signs are Redness, light Sensitivity, Vision decrease, and Pain. If you notice any combination of these symptoms, contact your ophthalmologist the same day — not the next morning. Acute rejection episodes caught within 24–48 hours can usually be reversed with intensive topical and sometimes systemic corticosteroids. Delayed treatment significantly worsens the prognosis. This applies regardless of which technique was used, though DALK carries no endothelial rejection risk."
     },
     {
-      "q": "How soon will my vision improve after surgery?",
-      "a": "It varies by technique. Endothelial keratoplasty (DSAEK/DMEK) often gives clearer vision within one to two weeks and continued improvement over one to two months. Penetrating keratoplasty recovers far more slowly, with vision changing for roughly twelve to eighteen months as sutures and astigmatism settle. Your surgeon will explain the expected curve for your specific procedure and diagnosis."
+      "q": "What is the recovery timeline for each technique?",
+      "a": "Recovery varies considerably by technique. DSAEK and DMEK: usable vision typically returns within 1–2 weeks as the endothelial graft adheres and the cornea clears; full stabilization takes 1–2 months. DALK: vision recovery is slower — several months — because the stromal wound still needs to heal, but the endothelial rejection risk is eliminated. PK: vision fluctuates for the entire 12–18 months that sutures remain in place; selective suture removal to manage astigmatism may be needed, and final acuity is assessed only after all sutures are out. All techniques require antibiotic and steroid eye drops for months with an individualized taper schedule."
+    },
+    {
+      "q": "Is corneal transplant in Korea covered by travel insurance, and what should my policy include?",
+      "a": "Standard travel insurance does not cover elective surgery abroad. You need a specialist medical travel insurance policy that explicitly covers planned surgical procedures, post-operative complications, emergency medical repatriation, and extended stays if recovery is slower than expected. Verify that the policy covers complications requiring additional surgery (such as graft dislocation requiring rebubbling in DMEK) and that the coverage limit is sufficient to cover the full cost-of-care range. Discuss policy requirements with your Korean international patient coordinator before booking."
     }
   ],
   "references": [
     {
-      "label": "Corneal transplantation for keratoconus in South Korea (Scientific Reports, Nature)",
+      "label": "Outcomes of penetrating keratoplasty vs. DMEK — Nature Scientific Reports 2021",
       "url": "https://www.nature.com/articles/s41598-021-92133-y"
     },
     {
-      "label": "Corneal transplantation for keratoconus in South Korea (PMC / NCBI)",
+      "label": "Endothelial keratoplasty review — PMC / NCBI",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8206092/"
     },
     {
-      "label": "Corneal Donation: Current Guidelines and Future Direction (PMC / NCBI)",
+      "label": "Corneal transplantation techniques update — PMC / NCBI",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8285277/"
     },
     {
-      "label": "Medical tourism in South Korea (Wikipedia)",
+      "label": "Medical tourism in South Korea — Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Medical_tourism_in_South_Korea"
+    },
+    {
+      "label": "Corneal transplantation — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Corneal_transplantation"
     }
   ],
   "images": [
     {
       "src": "/images/procedures/inline/corneal-transplant-1.jpg",
-      "alt": "Corneal transplant consultation and corneal imaging at a Korean eye clinic",
-      "credit": "Pavel Danilyuk"
+      "alt": "Ophthalmologist examining cornea before transplant surgery in Korea",
+      "credit": "Anna Shvets"
     },
     {
       "src": "/images/procedures/inline/corneal-transplant-2.jpg",
-      "alt": "Keratoplasty corneal transplant surgery under a microscope in South Korea",
-      "credit": "Delhi Eye Centre"
+      "alt": "Corneal transplant surgery at Korean tertiary eye center",
+      "credit": "Dr. Haror's  Wellness"
     },
     {
       "src": "/images/procedures/inline/corneal-transplant-3.jpg",
-      "alt": "Restored clear vision after corneal transplant recovery in Korea",
-      "credit": "Zulfugar Karimov"
+      "alt": "Post-operative eye follow-up after corneal transplant in Korea",
+      "credit": "www.kaboompics.com"
     }
   ]
 }
