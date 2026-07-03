@@ -1,6 +1,38 @@
 {
   "slug": "angioplasty",
   "shortDescription": "A catheter-based procedure that opens narrowed coronary arteries from inside, usually placing a stent to hold them open.",
+  "quickAnswer": [
+    "**Coronary angioplasty** is a catheter-based procedure that opens narrowed coronary arteries from the inside using a balloon, with a stent — usually drug-eluting — left permanently in place to keep the artery open.",
+    "**Best candidates** have one or a limited number of significant coronary blockages confirmed on angiogram, persistent angina despite medication, or a blocked artery during an acute heart attack — suitability is decided after the cardiology team reviews your coronary anatomy.",
+    "**A stent placed during the procedure stays permanently**, requiring dual antiplatelet medication started immediately and continued as prescribed; stopping early raises the risk of the stent becoming blocked.",
+    "**Typical cost in Korea:** $10,000–$25,000 USD, reflecting a catheterisation laboratory procedure with a short inpatient stay of around five days, and varying mainly with the number and type of stents used."
+  ],
+  "keyFacts": [
+    {
+      "label": "Procedure time",
+      "value": "1–2 hours typical; longer for complex lesions"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "Local anaesthesia with sedation"
+    },
+    {
+      "label": "Hospital stay",
+      "value": "Several days inpatient (typically ~5-day stay)"
+    },
+    {
+      "label": "Recommended stay in Korea",
+      "value": "5–7 days (including buffer before flying)"
+    },
+    {
+      "label": "Recovery",
+      "value": "Light activity within days; dual antiplatelet medication required long-term"
+    },
+    {
+      "label": "Typical cost in Korea",
+      "value": "$10,000–$25,000 USD"
+    }
+  ],
   "sections": {
     "overview": "Angioplasty is a catheter-based procedure that widens narrowed or blocked coronary arteries from the inside, restoring blood flow to the heart muscle without open surgery. Patients travel to Korea for angioplasty because its cardiac centers offer well-established catheterization laboratories, drug-eluting stent technology, and coordinated care for international visitors within a single pathway.\n\nThe procedure works by guiding a thin tube through an artery in the wrist or groin up to the heart. A small balloon at the tip is inflated at the narrowing to compress the plaque against the vessel wall, and a stent, a tiny mesh tube, is usually left in place to keep the artery open. Most stents used today are drug-eluting, releasing medication over time to reduce the chance of the vessel re-narrowing.\n\nAngioplasty is considered less invasive than bypass surgery. It is performed under local anesthesia with sedation rather than general anesthesia, and recovery is generally quicker. It is well suited to many patients with one or a limited number of significant blockages, and it can also be used in the setting of an acute heart attack to reopen a blocked artery promptly.\n\nFor international patients, Korean centers coordinate the angiogram review, the procedure itself, the short hospital stay, and medication planning as a connected process, with interpretation and travel logistics handled alongside the clinical care. The aim is to relieve symptoms such as chest pain and breathlessness and to improve blood supply to the heart in a controlled, monitored setting.",
     "candidacy": "Whether angioplasty suits you is decided after a cardiology team reviews your coronary anatomy, usually on an angiogram, together with your symptoms and heart function. It is commonly chosen for people with one or a small number of significant narrowings that are well placed for a catheter approach, and for those whose angina continues despite medication.\n\nIt is also used urgently during a heart attack to reopen the responsible artery quickly. By contrast, when disease involves many vessels, the left-main artery, or complex patterns, a team may judge that bypass surgery offers a more durable result, so the choice between the two is made case by case.\n\nSeveral factors shape suitability and preparation. Kidney function matters because contrast dye is used; severe contrast allergy, uncontrolled bleeding tendencies, or an inability to take the antiplatelet medication needed after stenting all call for careful review. Heavily calcified or very long blockages may need additional techniques. International patients should expect Korean centers to request existing imaging and records so the team can confirm that angioplasty, rather than surgery or continued medication alone, is the most appropriate option before travel is arranged.",
@@ -9,6 +41,72 @@
     "cost_breakdown": "The quoted range of roughly $10,000 to $25,000 reflects a catheter-based procedure performed in a specialized laboratory with a short hospital stay. It generally covers the cardiologist and laboratory team, the catheterization itself, the balloon and stent or stents used, contrast and consumables, and the monitored stay of several days with routine medication during admission.\n\nWhere a case falls within that range depends mainly on the number and type of stents, the complexity of the blockages, and whether extra techniques such as specialized imaging, plaque modification, or pressure measurement are needed. Treating more than one vessel or a heavily calcified lesion can move the figure higher.\n\nFor international patients, pre-procedure tests such as angiography and bloodwork may be itemized separately, and costs beyond the hospital bill, accommodation, local transport, interpretation, and any buffer days before flying, should be planned for alongside the medical estimate. Korean centers serving medical travelers usually provide an itemized quote after reviewing your records, so the inclusions are clear before you commit. Confirming in writing what the estimate covers, including the antiplatelet medication you will need to continue, helps with planning the full trip.",
     "why_korea": "Korea's cardiac centers operate well-equipped catheterization laboratories with experienced interventional teams and access to current drug-eluting stent technology and intravascular imaging. Many run hybrid operating rooms, where catheter-based and surgical approaches can be combined in one suite, which supports flexible decision-making for borderline cases.\n\nLeading hospitals commonly hold international accreditation and work within a national system overseen by the Ministry of Health and Welfare, supported by KHIDI and with hospital recognition through KOIHA, which together set expectations for safety and quality. For patients traveling from abroad, this framework offers a degree of reassurance about the standard of care they can expect.\n\nCenters that serve medical travelers typically provide coordinated international services: review of imaging and records before arrival, interpretation during the angiogram and procedure, and help arranging accommodation and the short stay involved. The combination of established interventional capability, organized aftercare with clear medication guidance, and dedicated patient coordination makes Korea a considered option for people seeking angioplasty away from home, without implying any particular result for an individual case."
   },
+  "costTable": [
+    {
+      "item": "Single-vessel angioplasty with drug-eluting stent, standard case",
+      "cost": "$10,000–$15,000"
+    },
+    {
+      "item": "Multi-vessel angioplasty or complex lesion",
+      "cost": "$15,000–$25,000"
+    },
+    {
+      "item": "Diagnostic angiogram (if done separately before procedure)",
+      "cost": "$2,000–$4,000"
+    },
+    {
+      "item": "Intravascular imaging or pressure measurement (FFR/IVUS), if used",
+      "cost": "Confirm if applicable"
+    },
+    {
+      "item": "Antiplatelet medication for discharge",
+      "cost": "Confirm if included in quote"
+    }
+  ],
+  "callouts": [
+    {
+      "type": "tip",
+      "title": "Send your angiogram images before you travel",
+      "text": "Korean cardiac centres ask for your existing angiogram to confirm whether angioplasty is suitable and to plan the procedure in advance. Sending digital files or disc images to the international patient office early can reduce repeated testing on arrival and help the team prepare the catheterisation laboratory."
+    },
+    {
+      "type": "warning",
+      "title": "Never stop antiplatelet medication without medical advice",
+      "text": "After a stent is placed, dual antiplatelet therapy must be continued exactly as prescribed. Stopping early — even briefly — raises the risk of the stent becoming blocked, which can cause a serious cardiac event. Before your return flight, confirm the medication plan and ensure an uninterrupted supply is available at home."
+    }
+  ],
+  "keyTakeaways": [
+    "Coronary angioplasty is a catheter-based procedure that does not require open surgery; access is usually through the wrist, and recovery is generally quicker than after bypass surgery.",
+    "A stent placed during the procedure is permanent and requires dual antiplatelet medication to be continued exactly as prescribed — stopping early raises the risk of the stent blocking.",
+    "Suitability depends on the number, location, and complexity of the blockages assessed on your angiogram; patients with multi-vessel or left-main disease may be better served by bypass surgery.",
+    "The five-day Korea stay includes monitoring, medication setup, and access-site review; an additional buffer before flying gives the team time to confirm the wound and medication regimen before departure."
+  ],
+  "entities": [
+    {
+      "name": "Angioplasty",
+      "url": "https://en.wikipedia.org/wiki/Angioplasty"
+    },
+    {
+      "name": "Coronary stent",
+      "url": "https://en.wikipedia.org/wiki/Coronary_stent"
+    },
+    {
+      "name": "Drug-eluting stent",
+      "url": "https://en.wikipedia.org/wiki/Drug-eluting_stent"
+    },
+    {
+      "name": "Coronary artery disease",
+      "url": "https://en.wikipedia.org/wiki/Coronary_artery_disease"
+    },
+    {
+      "name": "Medical tourism in South Korea",
+      "url": "https://en.wikipedia.org/wiki/Medical_tourism_in_South_Korea"
+    },
+    {
+      "name": "Radial artery",
+      "url": "https://en.wikipedia.org/wiki/Radial_artery"
+    }
+  ],
   "faqs": [
     {
       "q": "How do I transfer my angiogram and medical records before treatment?",
@@ -40,7 +138,7 @@
     {
       "src": "/images/procedures/inline/angioplasty-2.jpg",
       "alt": "Coronary angioplasty performed in a Korean cardiac catheterization lab",
-      "credit": "Los Muertos Crew"
+      "credit": "محمد عزام الشيخ يوسف"
     },
     {
       "src": "/images/procedures/inline/angioplasty-3.jpg",

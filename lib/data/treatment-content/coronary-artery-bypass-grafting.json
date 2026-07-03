@@ -1,6 +1,38 @@
 {
   "slug": "coronary-artery-bypass-grafting",
   "shortDescription": "Open-heart surgery that reroutes blood around blocked coronary arteries using grafts taken from your own body.",
+  "quickAnswer": [
+    "**Coronary artery bypass grafting (CABG)** is open-heart surgery that restores blood flow to the heart by routing it around blocked coronary arteries using grafts — typically an internal mammary artery from the chest wall, a radial artery from the forearm, or a saphenous vein from the leg.",
+    "**Best candidates** have multi-vessel coronary disease, significant left-main artery narrowing, or blockages whose pattern makes stenting unlikely to give a durable result — confirmed on angiogram by a cardiology and cardiac-surgery team.",
+    "**Surgery is performed under general anaesthesia**, usually with a heart-lung machine; recovery involves a cardiac intensive care unit stay followed by a ward stay, with the breastbone needing several weeks to heal.",
+    "**Typical cost in Korea:** $25,000–$50,000 USD, reflecting the complexity of open-heart surgery and a two-week inpatient stay; international patients should budget additional time for wound healing, medication adjustment, and early rehabilitation before flying home."
+  ],
+  "keyFacts": [
+    {
+      "label": "Procedure time",
+      "value": "3–6 hours depending on number of grafts"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "General anaesthesia; heart-lung machine usually used"
+    },
+    {
+      "label": "Hospital stay",
+      "value": "~2 weeks inpatient (ICU then ward); extended Korea stay needed before flying"
+    },
+    {
+      "label": "Recommended stay in Korea",
+      "value": "Several weeks total"
+    },
+    {
+      "label": "Recovery",
+      "value": "Breastbone heals over weeks; cardiac rehabilitation begins in hospital; structured programme continues at home"
+    },
+    {
+      "label": "Typical cost in Korea",
+      "value": "$25,000–$50,000 USD"
+    }
+  ],
   "sections": {
     "overview": "Coronary artery bypass grafting (CABG) is open-heart surgery that restores blood flow to the heart muscle by routing blood around narrowed or blocked coronary arteries with grafts harvested from elsewhere in your body. Patients travel to Korea for CABG because its tertiary cardiac centers combine accredited surgical teams, hybrid operating rooms, and structured post-operative care within a coordinated medical-tourism pathway.\n\nThe procedure is typically recommended when imaging shows multi-vessel disease, significant left-main narrowing, or blockages unsuitable for stenting. A graft, taken from a chest-wall artery, an arm artery, or a leg vein, is sewn beyond the blockage so oxygen-rich blood again reaches the affected region of muscle. One or several grafts may be placed in a single operation, depending on how many vessels are involved.\n\nCABG is a major intervention carried out under general anesthesia, often with the support of a heart-lung machine. It is most relevant for people whose angina persists despite medication, whose disease pattern raises the risk of a future heart attack, or for whom less invasive options have been ruled out by a cardiology team. The aim is to relieve symptoms, reduce strain on the heart, and lower the likelihood of further cardiac events.\n\nFor international patients, Korean cardiac centers coordinate the angiogram review, surgical planning, inpatient stay, and early rehabilitation as a continuous process, with interpretation and logistics handled alongside the clinical care so that families can focus on recovery.",
     "candidacy": "Candidacy for CABG is decided by a cardiology and cardiac-surgery team after reviewing your coronary anatomy, usually on a recent angiogram, along with heart function and overall health. The procedure is generally considered for people with disease in several coronary vessels, with a significant narrowing of the left-main artery, or with blockages whose location or pattern makes stenting unlikely to give a durable result.\n\nIt is also weighed for patients whose angina continues despite optimal medication, and for those in whom diabetes or reduced pumping function shifts the balance toward surgery. Your team considers kidney function, lung capacity, prior strokes, and the condition of the vessels available for grafting.\n\nCertain factors call for caution or further preparation rather than outright exclusion: active infection, uncontrolled bleeding tendencies, severe frailty, or other organ disease that raises operative risk. Smoking, blood-sugar control, and dental health are often addressed before surgery. International patients should expect Korean centers to request existing records and imaging so the team can confirm that bypass, rather than stenting or continued medical therapy, is the most appropriate path before any travel is finalized.",
@@ -9,6 +41,67 @@
     "cost_breakdown": "The quoted range of roughly $25,000 to $50,000 reflects the complexity of open-heart surgery and the resources it requires. The figure usually covers the surgical team, anesthesia, operating-room and heart-lung machine use, the intensive care and ward stay across about two weeks, and routine post-operative monitoring and medication during admission.\n\nWhere a case sits within that range depends on the number of grafts, whether an on-pump or off-pump approach is used, the length of intensive care, and any additional cardiac procedures performed at the same time. Pre-operative tests such as angiography, echocardiography, and bloodwork may be billed separately, as may imaging repeated during the stay.\n\nFor international patients, costs outside the hospital bill, accommodation for a companion, local transport, interpretation, and the extended stay needed before flying home, should be budgeted alongside the medical estimate. Korean centers serving medical travelers generally provide an itemized estimate after reviewing your records, so you can see what is and is not included before committing. Confirming the scope of the quote in writing helps avoid surprises and supports planning for the full length of the trip.",
     "why_korea": "Korea's tertiary hospitals run high-volume cardiac surgery programs supported by hybrid operating rooms, where surgical and catheter-based techniques can be combined in one suite, and by intensive care units staffed for complex post-operative recovery. This infrastructure suits the range of CABG cases, including those needing several grafts or combined procedures.\n\nMany leading centers hold international accreditation and operate within a national framework overseen by the Ministry of Health and Welfare, with support from KHIDI and hospital recognition through KOIHA, which together set expectations for safety and quality. For families traveling from abroad, this regulatory backdrop offers a measure of reassurance about standards of care.\n\nKorean centers serving medical travelers typically provide coordinated international patient services: review of records and imaging before arrival, interpretation during consultations and the inpatient stay, and help arranging the extended logistics that cardiac surgery requires. The combination of structured surgical pathways, organized rehabilitation, and dedicated coordination makes Korea a considered option for people seeking bypass surgery away from home, without implying any particular result for an individual case."
   },
+  "costTable": [
+    {
+      "item": "CABG — single or double graft, standard case",
+      "cost": "$25,000–$35,000"
+    },
+    {
+      "item": "CABG — triple or quadruple graft, or combined procedure",
+      "cost": "$35,000–$50,000"
+    },
+    {
+      "item": "Pre-operative angiogram, echocardiogram, and bloodwork",
+      "cost": "Often billed separately; confirm"
+    },
+    {
+      "item": "Cardiac intensive care unit stay beyond routine length",
+      "cost": "May be billed separately if extended"
+    },
+    {
+      "item": "Cardiac rehabilitation programme during inpatient stay",
+      "cost": "Confirm if included in package"
+    }
+  ],
+  "callouts": [
+    {
+      "type": "tip",
+      "title": "Plan cardiac rehabilitation before you travel",
+      "text": "Korean hospitals typically begin a structured rehabilitation programme during the inpatient stay. Before you go, identify a cardiac rehabilitation service at home that can continue the programme after discharge — continuity significantly supports recovery and long-term heart health."
+    }
+  ],
+  "keyTakeaways": [
+    "CABG is recommended when coronary disease involves several vessels, the left-main artery, or blockages unsuitable for stenting — the choice between bypass and stenting is made by a cardiology and cardiac-surgery team after reviewing your angiogram.",
+    "Surgery uses grafts from your own body to reroute blood around blocked segments; arterial grafts from the chest wall are preferred where suitable, as they tend to remain open longer than vein grafts.",
+    "Recovery involves a cardiac ICU stay, breastbone healing over several weeks, and a structured rehabilitation programme; international patients should plan a stay of several weeks in Korea before flying home.",
+    "Costs range from $25,000 to $50,000 USD; pre-operative testing, extended ICU care, and the costs of an extended stay in Korea before flying should be budgeted separately."
+  ],
+  "entities": [
+    {
+      "name": "Coronary artery bypass surgery",
+      "url": "https://en.wikipedia.org/wiki/Coronary_artery_bypass_surgery"
+    },
+    {
+      "name": "Internal mammary artery",
+      "url": "https://en.wikipedia.org/wiki/Internal_thoracic_artery"
+    },
+    {
+      "name": "Saphenous vein graft",
+      "url": "https://en.wikipedia.org/wiki/Saphenous_vein"
+    },
+    {
+      "name": "Coronary artery disease",
+      "url": "https://en.wikipedia.org/wiki/Coronary_artery_disease"
+    },
+    {
+      "name": "Cardiac surgery",
+      "url": "https://en.wikipedia.org/wiki/Cardiac_surgery"
+    },
+    {
+      "name": "Medical tourism in South Korea",
+      "url": "https://en.wikipedia.org/wiki/Medical_tourism_in_South_Korea"
+    }
+  ],
   "faqs": [
     {
       "q": "How do I transfer my angiogram and medical records before treatment?",

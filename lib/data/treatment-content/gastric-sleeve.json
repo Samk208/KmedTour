@@ -1,6 +1,38 @@
 {
   "slug": "gastric-sleeve",
   "shortDescription": "Keyhole surgery that removes part of the stomach to reduce its size and support weight loss.",
+  "quickAnswer": [
+    "**Gastric sleeve (laparoscopic sleeve gastrectomy)** removes a large portion of the stomach, leaving a narrow banana-shaped tube that holds far less food and reduces hunger signals.",
+    "**Best candidates** have a BMI of 40+, or 35+ with an obesity-related condition such as type 2 diabetes or high blood pressure, and have not achieved lasting results through supervised diet and lifestyle change.",
+    "**The procedure is irreversible** — the removed stomach cannot be restored — so lifelong vitamin supplementation, permanent dietary change, and ongoing follow-up are essential commitments.",
+    "**Typical cost in Korea:** $8,000–$15,000 USD, covering the laparoscopic operation, surgeon and anesthesia fees, and inpatient monitoring across an approximately ten-day stay."
+  ],
+  "keyFacts": [
+    {
+      "label": "Procedure time",
+      "value": "1–2 hours (laparoscopic)"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "General anesthesia"
+    },
+    {
+      "label": "Hospital stay",
+      "value": "Several days inpatient, within a ~10-day total stay"
+    },
+    {
+      "label": "Recommended stay in Korea",
+      "value": "10 days"
+    },
+    {
+      "label": "Recovery",
+      "value": "Staged diet over weeks; full activity returns gradually over months; lifelong supplementation required"
+    },
+    {
+      "label": "Typical cost in Korea",
+      "value": "$8,000–$15,000 USD"
+    }
+  ],
   "sections": {
     "overview": "Gastric sleeve, or laparoscopic sleeve gastrectomy, is a weight-loss operation in which a large portion of the stomach is removed, leaving a narrow tube-shaped pouch. Patients travel to Korea for this procedure because Korean hospitals offer the laparoscopic technique within accredited surgical units that provide structured inpatient monitoring during the early recovery period, supported by a stay of around ten days.\n\nThe smaller stomach holds far less food and reduces hunger signals, which together help patients eat less and lose weight over the months that follow. It is most often considered for people living with severe obesity, particularly when weight has not responded to supervised diet, exercise, and lifestyle change, and when excess weight is affecting health.\n\nAn essential point to understand is that the sleeve is irreversible: the removed part of the stomach cannot be put back. Surgery is a tool, not a cure, and lasting results depend on permanent changes to eating and activity, along with lifelong follow-up and vitamin supplementation to prevent nutritional gaps.\n\nThe priced range of 8,000 to 15,000 US dollars reflects the operation together with its hospital stay and perioperative care. Clinics report a high rate of successful weight loss when patients commit to the post-surgery plan, though individual results vary with starting weight, health, and how closely guidance is followed.\n\nBecause part of the recovery involves watching for rare complications such as a leak along the staple line, the operation is performed in a hospital with several days of inpatient observation before discharge. The procedure improves the conditions for weight loss; sustaining it is an ongoing partnership between patient and care team.",
     "candidacy": "Gastric sleeve is generally considered for adults whose obesity is severe enough to threaten health and who have not achieved lasting results through supervised diet and lifestyle change. Standard criteria used by most surgical teams are a body mass index of 40 or above, or a BMI of 35 or above when accompanied by an obesity-related condition such as type 2 diabetes, high blood pressure, or sleep apnea.\n\nBeyond the numbers, candidacy depends on overall fitness for surgery and anesthesia, and on readiness to make permanent changes. Because the operation is irreversible and requires lifelong vitamin supplementation and follow-up, willingness to commit to that plan is as important as meeting the BMI threshold.\n\nA pre-operative assessment checks heart, lung, and metabolic health, screens for conditions that need treatment first, and reviews medications. Certain situations may make surgery unsuitable or require it to be delayed, including untreated eating disorders, unstable medical conditions, or pregnancy.\n\nPatients should also be prepared for the practical demands of recovery: a staged diet, smaller portions for life, and ongoing monitoring after returning home. A consultation confirms whether the sleeve is appropriate and whether another approach might suit your circumstances better.",
@@ -9,6 +41,67 @@
     "cost_breakdown": "Gastric sleeve is priced from 8,000 to 15,000 US dollars. This reflects a hospital-based operation with a substantial inpatient stay, so the figure typically covers more than the surgery alone.\n\nA quote usually includes the surgeon's and anesthesia fees, the operating theater, the laparoscopic procedure, and several days of inpatient care and monitoring across the roughly ten-day stay. Pre-operative assessment, standard tests, and early post-surgery diet guidance are often part of the package, but you should confirm exactly what is and is not included.\n\nFactors that move the price within the range include the complexity of your case, any additional tests required, and the length of monitoring your situation calls for. Ask whether items such as imaging to check the staple line, take-home medications, and the initial supply of vitamins are covered.\n\nBeyond the medical fee, budget for travel, accommodation for any nights spent outside the hospital, and the cost of ongoing follow-up and lifelong supplements once you return home. Because the sleeve requires permanent dietary change and monitoring, the true cost is best viewed over the long term, not as a one-time figure. Treat any quote as an estimate until the team has completed your assessment and confirmed your plan.",
     "why_korea": "Korea offers gastric sleeve surgery within accredited hospital settings that provide the laparoscopic technique alongside structured inpatient monitoring, which matters for an operation where the early recovery window calls for close observation. The planned stay of around ten days is built to keep patients under professional care through that period.\n\nKorean healthcare operates under national oversight. The Ministry of Health and Welfare sets medical standards, while KHIDI and KOIHA support the international patient sector and the accreditation of facilities that treat overseas visitors. Many hospitals provide coordination for international patients, including language assistance and help organizing assessment, surgery, and follow-up around the length of stay.\n\nFor bariatric care specifically, the appeal is the combination of established surgical units, multidisciplinary support before and after the operation, and the inpatient observation that a sleeve warrants. For patients traveling from Africa, the Middle East, and Asia, this structure provides reassurance during the critical days after surgery, along with clear guidance on the lifelong follow-up and supplementation that lasting results depend on."
   },
+  "costTable": [
+    {
+      "item": "Gastric sleeve — laparoscopic, standard case",
+      "cost": "$8,000–$11,000"
+    },
+    {
+      "item": "Gastric sleeve — complex case or additional monitoring required",
+      "cost": "$11,000–$15,000"
+    },
+    {
+      "item": "Pre-operative assessment, bloods, and metabolic tests",
+      "cost": "Often included in package"
+    },
+    {
+      "item": "Staple-line imaging post-surgery",
+      "cost": "Often included; confirm in quote"
+    },
+    {
+      "item": "Initial vitamin and supplement supply on discharge",
+      "cost": "$50–$150 (confirm if included)"
+    }
+  ],
+  "callouts": [
+    {
+      "type": "tip",
+      "title": "Plan lifelong supplementation before you travel",
+      "text": "A smaller stomach absorbs fewer vitamins and minerals. Before surgery, confirm with your care team exactly which supplements you will need — typically including B12, iron, calcium, and vitamin D — and arrange a reliable supply at home. Starting this early prevents nutritional gaps from developing during the recovery period."
+    }
+  ],
+  "keyTakeaways": [
+    "Gastric sleeve permanently removes a large portion of the stomach; the operation is irreversible, so it requires genuine readiness for lifelong dietary change, vitamin supplementation, and ongoing follow-up.",
+    "Standard candidacy criteria are a BMI of 40 or above, or 35 or above with an obesity-related condition such as type 2 diabetes or high blood pressure, alongside fitness for surgery and a commitment to the long-term plan.",
+    "The ten-day Korea stay is designed to cover the highest-risk early recovery window, with inpatient monitoring of the staple line and staged diet progression under clinical supervision before discharge.",
+    "Costs range from $8,000 to $15,000 USD; an itemised quote after the surgical team reviews your case shows exactly what is covered — confirm whether imaging, take-home medications, and initial supplements are included."
+  ],
+  "entities": [
+    {
+      "name": "Sleeve gastrectomy",
+      "url": "https://en.wikipedia.org/wiki/Sleeve_gastrectomy"
+    },
+    {
+      "name": "Bariatric surgery",
+      "url": "https://en.wikipedia.org/wiki/Bariatric_surgery"
+    },
+    {
+      "name": "Obesity",
+      "url": "https://en.wikipedia.org/wiki/Obesity"
+    },
+    {
+      "name": "Body mass index",
+      "url": "https://en.wikipedia.org/wiki/Body_mass_index"
+    },
+    {
+      "name": "Medical tourism in South Korea",
+      "url": "https://en.wikipedia.org/wiki/Medical_tourism_in_South_Korea"
+    },
+    {
+      "name": "Ghrelin",
+      "url": "https://en.wikipedia.org/wiki/Ghrelin"
+    }
+  ],
   "faqs": [
     {
       "q": "Is the gastric sleeve reversible?",
@@ -45,7 +138,7 @@
     {
       "src": "/images/procedures/inline/gastric-sleeve-3.jpg",
       "alt": "Nutrition and healthy eating during gastric sleeve recovery",
-      "credit": "Leeloo The First"
+      "credit": "Beyzaa Yurtkuran"
     }
   ]
 }

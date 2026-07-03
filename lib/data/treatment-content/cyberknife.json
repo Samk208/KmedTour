@@ -1,6 +1,38 @@
 {
   "slug": "cyberknife",
   "shortDescription": "Robotic stereotactic radiosurgery delivering focused high-dose radiation to small targets in a few sessions",
+  "quickAnswer": [
+    "**CyberKnife** is a form of stereotactic radiosurgery using a robotic arm to deliver focused radiation from many angles onto a precisely defined target, continuously tracking the target and adjusting for movement — including the natural motion of breathing.",
+    "**Best candidates** have small, well-defined lesions — commonly in the brain, spine, or lung, or other sites where a focused high-dose approach is suitable — with the number of lesions typically limited; assessed after the oncology team reviews imaging and pathology.",
+    "**Treatment involves no incision and no general anaesthesia**, typically delivered in a single session or a small number of sessions over a few days, making the Korea stay short compared with conventional radiation courses.",
+    "**Acceptance follows a remote records review**: the Korean oncology team examines your case before travel is arranged and may conclude that a different approach is more appropriate — cost is set only after the treatment plan is designed."
+  ],
+  "keyFacts": [
+    {
+      "label": "Procedure type",
+      "value": "Robotic stereotactic radiosurgery (single or few sessions)"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "None; patients remain awake throughout each session"
+    },
+    {
+      "label": "Sessions",
+      "value": "Usually 1–5 sessions over a few days; no incision"
+    },
+    {
+      "label": "Recommended stay in Korea",
+      "value": "Short — typically days to one week (simulation, sessions, brief review)"
+    },
+    {
+      "label": "Recovery",
+      "value": "No surgical recovery; effects depend on area treated; follow-up imaging weeks to months later"
+    },
+    {
+      "label": "Cost",
+      "value": "Set after planning; driven by session count and complexity"
+    }
+  ],
   "sections": {
     "overview": "CyberKnife is a form of stereotactic radiosurgery that uses a robotic arm to deliver focused beams of radiation from many angles onto a precisely defined target. Patients consider Korea for this treatment because it is offered at major cancer centers with experienced radiation oncology teams and the imaging and tracking systems the technique relies on.\n\nDespite the name, CyberKnife involves no incision. It delivers high doses of radiation to small, well-defined lesions while the system continuously tracks the target and adjusts for movement, including the natural motion of breathing. This tracking allows tight focus on the lesion, with the aim of limiting dose to nearby tissue. The benefit in any individual situation depends on the size, number, and location of the lesions and is assessed case by case.\n\nCyberKnife is commonly considered for small lesions in the brain, spine, and lung, among other sites, where a focused high-dose approach is appropriate. Treatment is typically delivered in a single session or a small number of sessions, rather than over many weeks, which is one reason the stay in Korea is short.\n\nFor international patients, the process starts with a remote review of medical records before travel is arranged. The Korean oncology team uses this review to determine whether CyberKnife suits the diagnosis and to explain what the treatment would involve. The emphasis throughout is on careful planning and a clear, honest account of what the treatment can offer in each individual case, depending on your situation.",
     "candidacy": "CyberKnife is most often considered for small, well-defined lesions where a focused high-dose approach is suitable. This commonly includes certain lesions in the brain, the spine and the region around the spinal cord, and the lung, as well as some other sites where the target can be clearly delineated and tracked. It is frequently discussed when the number of lesions is limited and each is relatively small.\n\nSuitability is not decided from the diagnosis alone. The Korean oncology team reviews your full records first, including diagnostic imaging, pathology, and the history of any prior surgery, chemotherapy, or radiation. They assess the size, number, and position of the lesions, their relationship to nearby structures, and your overall condition.\n\nFor some patients another approach is more appropriate, and an honest review may conclude that CyberKnife is not the right fit. Acceptance follows this assessment rather than preceding it. The purpose is to match the treatment to the clinical situation, depending on your case, and to set realistic expectations before any travel is arranged.",
@@ -9,6 +41,67 @@
     "cost_breakdown": "The price range for CyberKnife reflects that cost depends on the number of sessions, or fractions, in your plan and the complexity of the target. A single-session treatment differs in cost from a plan delivered across a few sessions, so the figure for any individual is set after the plan is designed.\n\nThe quoted range typically covers the planning steps, including simulation and any immobilization, and the delivery of the planned sessions. Some items usually fall outside this. Diagnostic imaging performed before acceptance, biopsies, chemotherapy or other systemic treatments, hospital stays for unrelated care, and management of complications are generally separate from the radiosurgery price.\n\nTravel, accommodation for the short stay, interpreter support, and follow-up imaging arranged later are also normally not included. Because the number of sessions depends on your case, the care team provides an itemized estimate after the records review and planning, rather than a fixed figure in advance. Requesting a written breakdown of what each figure covers, and what is excluded, is encouraged before you arrange travel.",
     "why_korea": "CyberKnife stereotactic radiosurgery is offered at major Korean cancer centers with experienced radiation oncology and medical physics teams and the imaging and tracking systems the technique depends on. This availability at established centers is one reason international patients consider Korea for focused radiosurgery.\n\nKorea's care for international patients is supported by national bodies, with the Ministry of Health and Welfare setting policy and organizations such as KHIDI and KOIHA involved in promotion and accreditation. Many centers run dedicated international patient offices that coordinate records review, scheduling, interpretation, and the logistics of a short stay.\n\nBecause CyberKnife is often delivered in a single session or a few sessions, this coordinated support helps compress planning, treatment, and an initial review into a brief, well-organized visit for a patient traveling from abroad. Whether CyberKnife is the right choice still depends on your individual diagnosis and is determined by the treating team. The infrastructure available in Korea is built to support international patients through a short, focused course of care, depending on your case."
   },
+  "costTable": [
+    {
+      "item": "Single-session CyberKnife treatment",
+      "cost": "Lower end of range; confirm with centre"
+    },
+    {
+      "item": "Multi-session course (2–5 fractions)",
+      "cost": "Higher end of range; confirm with centre"
+    },
+    {
+      "item": "Planning and simulation (imaging, immobilisation, plan design)",
+      "cost": "Typically included in treatment price"
+    },
+    {
+      "item": "Diagnostic imaging or biopsy before acceptance",
+      "cost": "Billed separately"
+    },
+    {
+      "item": "Follow-up imaging after treatment (weeks to months later)",
+      "cost": "Arrange with home team or confirm if included"
+    }
+  ],
+  "callouts": [
+    {
+      "type": "tip",
+      "title": "Send records before booking travel",
+      "text": "The Korean oncology team reviews your imaging and pathology remotely before confirming whether CyberKnife suits your case. Because the review takes time — and may recommend a different approach — start this process before making any flight or accommodation commitments."
+    }
+  ],
+  "keyTakeaways": [
+    "CyberKnife delivers focused high-dose radiation without incision or general anaesthesia, using a robotic arm that tracks the target throughout delivery — allowing patients to breathe normally during treatment.",
+    "Treatment is typically completed in a single session or a small number of sessions over a few days, which keeps the Korea stay short; the planning and simulation phase before the first session adds a short additional period.",
+    "Suitability is determined after a remote review of imaging, pathology, and prior treatment history — the oncology team may conclude that another approach is more appropriate, and acceptance follows that honest assessment.",
+    "Follow-up imaging to assess response is usually scheduled weeks to months after the final session, can often be done with your home medical team, and results are shared back to the Korean centre."
+  ],
+  "entities": [
+    {
+      "name": "CyberKnife",
+      "url": "https://en.wikipedia.org/wiki/CyberKnife"
+    },
+    {
+      "name": "Stereotactic radiosurgery",
+      "url": "https://en.wikipedia.org/wiki/Stereotactic_radiosurgery"
+    },
+    {
+      "name": "Radiation therapy",
+      "url": "https://en.wikipedia.org/wiki/Radiation_therapy"
+    },
+    {
+      "name": "Brain tumor",
+      "url": "https://en.wikipedia.org/wiki/Brain_tumor"
+    },
+    {
+      "name": "Medical tourism in South Korea",
+      "url": "https://en.wikipedia.org/wiki/Medical_tourism_in_South_Korea"
+    },
+    {
+      "name": "Lung cancer",
+      "url": "https://en.wikipedia.org/wiki/Lung_cancer"
+    }
+  ],
   "faqs": [
     {
       "q": "How are my medical records transferred and reviewed before I travel?",

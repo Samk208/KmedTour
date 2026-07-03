@@ -1,6 +1,38 @@
 {
   "slug": "living-donor-kidney-transplant",
   "shortDescription": "A healthy kidney from a living relative replaces failed kidney function for patients with end-stage renal disease.",
+  "quickAnswer": [
+    "**A living donor kidney transplant** places a healthy kidney donated by a living relative into a patient whose own kidneys can no longer filter the blood; a single donated kidney is enough to restore filtering function, allowing one healthy person to safely donate to a relative.",
+    "**Best candidates** are patients with end-stage renal disease — from diabetes, high blood pressure, or other causes — who would otherwise depend on long-term dialysis; the donor must be a healthy relative with two well-functioning kidneys who passes their own full evaluation.",
+    "**Both donor and recipient undergo surgery on the same admission**, coordinated by separate teams; Korean law requires documented proof of family relationship and ethics-committee approval before any living donation can proceed.",
+    "**The recipient takes lifelong immunosuppression** medication to prevent rejection; arranging a reliable supply and local follow-up before travel is essential, as these medicines must not be interrupted after surgery."
+  ],
+  "keyFacts": [
+    {
+      "label": "Procedure type",
+      "value": "Two coordinated operations on the same admission (donor and recipient)"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "General anaesthesia for both donor and recipient"
+    },
+    {
+      "label": "Hospital stay",
+      "value": "ICU followed by transplant ward; pairs typically remain a few weeks for follow-up"
+    },
+    {
+      "label": "Recommended stay in Korea",
+      "value": "A few weeks (individual, team-confirmed)"
+    },
+    {
+      "label": "Recovery",
+      "value": "Recipient needs lifelong immunosuppression; donor recovers from nephrectomy (usually minimally invasive)"
+    },
+    {
+      "label": "Cost estimate",
+      "value": "Itemised quote required; confirm whether donor surgery is included"
+    }
+  ],
   "sections": {
     "overview": "A living donor kidney transplant places a healthy kidney, donated by a living relative, into a patient whose own kidneys can no longer filter the blood. Korea is internationally recognized for its experience and volume in living-donor transplantation, with well-established programmes built up in a setting where living donation has long been central to transplant care. A single transplanted kidney is enough to restore filtering function, which is why one healthy person can safely donate to a relative in need.\n\nThis procedure is considered for patients with end-stage renal disease, whether from diabetes, high blood pressure, glomerular disease, polycystic kidney disease, or other causes, who would otherwise depend on long-term dialysis. Transplant offers many patients a return to a fuller daily life and freedom from the routine of dialysis, though it is a major surgery and outcomes vary by case.\n\nFor patients travelling from Africa, the Middle East, and Asia, Korean transplant centres evaluate the recipient and the potential donor together, since the two operations are planned for the same admission. The workup typically includes blood typing and cross-matching, tissue compatibility testing, imaging of both the recipient and the donor's kidneys and blood vessels, infection screening, and review by a team spanning nephrology, transplant surgery, anaesthesia, and coordination.\n\nA living donor transplant has the advantage of being a planned, scheduled operation rather than an open-ended wait, and a kidney from a healthy living donor often begins working promptly. The recipient's condition before surgery, the compatibility between donor and recipient, and the recovery that follows all influence the result, which is why the team assesses each pair individually and explains the specific risks and benefits before any decision is made.",
     "candidacy": "A living kidney donor is usually a close family member who is healthy, has two well-functioning kidneys, and is a workable match on blood type and tissue typing. Donors undergo a full evaluation, including imaging and kidney-function testing, to confirm that giving one kidney will leave them healthy. Significant kidney disease, uncontrolled high blood pressure, diabetes, or certain infections may prevent someone from donating.\n\nThe donor and recipient must travel together and plan their stay as a pair, because both operations are scheduled within the same admission and both people recover under the same transplant team. Korean transplant law requires a documented relationship between donor and recipient and approval from a hospital ethics committee before surgery proceeds. This protects the donor, confirms the donation is voluntary and unpaid, and is a routine, expected part of the process rather than a barrier. Prepare identity documents, proof of family relationship, and the consent paperwork the centre will review.\n\nRecipient candidacy depends on how stable the patient is on dialysis or before reaching it, and on whether the heart, blood vessels, and other organs can tolerate surgery and the medications that follow. Some patients need treatment to control infection, heart disease, or other conditions before transplant. Where blood types differ, certain programmes can prepare a recipient through additional treatment; the team will tell you honestly what is possible in your case.",
@@ -9,6 +41,67 @@
     "cost_breakdown": "The price range shown for this procedure is an estimate, and the key question to confirm with the centre is whether it includes the donor's surgery and care. Many living-donor programmes bundle the donor's operation, hospital stay, and follow-up into the overall transplant cost, but practice varies, so request an itemised quotation that states clearly what is covered for both donor and recipient and what is billed separately.\n\nA full estimate usually includes the recipient's surgery and hospital stay, anaesthesia, post-operative monitoring, and the pre-transplant evaluation for both people, including tissue typing and cross-matching. Costs that may sit outside the headline figure include extended hospitalisation if recovery is complicated, treatment of infection or rejection, any additional preparation needed when blood types differ, accommodation during follow-up in Korea, and travel for the donor-recipient pair.\n\nA cost that continues long after surgery is immunosuppression medication, which the recipient takes for life. These medicines are an ongoing monthly expense to factor into long-term planning, and their price and availability in your home country are worth confirming before you travel. Ask both the transplant centre and your local pharmacy what to expect so there are no surprises once you return home.",
     "why_korea": "Korea has long-established living-donor kidney transplant programmes, and several major transplant centres in Seoul perform this surgery regularly within a well-organised system of safeguards. Korean transplant services are concentrated in large university hospitals where nephrologists, transplant surgeons, anaesthetists, and dedicated coordinators work together and support international patients through evaluation, surgery, and follow-up.\n\nOrgan transplantation in Korea operates under a clear legal and ethical framework. The Ministry of Health and Welfare sets national policy, KOIHA accredits hospitals, and Medical Korea, supported by KHIDI, assists international patients. KONOS, the Korean Network for Organ Sharing, oversees organ donation and transplantation nationally, including the documentation and ethics-committee approval that living donation requires. These bodies exist to protect both donor and recipient and to keep the process transparent.\n\nFor patients travelling from Africa, the Middle East, and Asia, this combination of surgical experience and structured national oversight offers reassurance that the donor-recipient pair will be assessed and cared for under consistent standards. The centres routinely coordinate with patients who are far from home and can guide the donor and recipient through the practical steps of planning a transplant abroad."
   },
+  "costTable": [
+    {
+      "item": "Recipient surgery, hospital stay, and ICU monitoring",
+      "cost": "Confirm in itemised quote"
+    },
+    {
+      "item": "Donor surgery, hospital stay, and follow-up",
+      "cost": "Confirm if bundled or billed separately"
+    },
+    {
+      "item": "Pre-transplant evaluation — donor and recipient (tissue typing, cross-match, imaging)",
+      "cost": "Often included; confirm"
+    },
+    {
+      "item": "Extended hospitalisation for complications or rejection treatment",
+      "cost": "Billed separately"
+    },
+    {
+      "item": "Lifelong immunosuppression medication (ongoing, after discharge)",
+      "cost": "Not included; budget monthly"
+    }
+  ],
+  "callouts": [
+    {
+      "type": "warning",
+      "title": "Ethics-committee approval is mandatory before surgery",
+      "text": "Korean transplant law requires documented proof of family relationship and ethics-committee review confirming the donation is voluntary and unpaid before any living-donor transplant can proceed. This is standard practice — prepare identity documents and relationship proof in advance so the approval process does not delay your admission date."
+    }
+  ],
+  "keyTakeaways": [
+    "Living donor kidney transplant offers planned, scheduled surgery for patients with end-stage renal disease, using a healthy kidney from a relative; the donor's remaining kidney is sufficient for a normal life, and the donor operation is usually minimally invasive.",
+    "Korean transplant law requires documented family relationship and ethics-committee approval before living donation can proceed — prepare identity and relationship documents well ahead of the planned admission date.",
+    "The recipient requires lifelong immunosuppression medication that must not be interrupted; confirm the availability and cost of these medicines in your home country before travelling, and arrange local follow-up to manage the handover.",
+    "Request an itemised quote stating clearly whether the donor's surgery, hospital stay, and follow-up are included — practice varies between centres, and the total cost covers two people through a multi-week process."
+  ],
+  "entities": [
+    {
+      "name": "Kidney transplantation",
+      "url": "https://en.wikipedia.org/wiki/Kidney_transplantation"
+    },
+    {
+      "name": "Living donor transplantation",
+      "url": "https://en.wikipedia.org/wiki/Living_donor_transplantation"
+    },
+    {
+      "name": "Chronic kidney disease",
+      "url": "https://en.wikipedia.org/wiki/Chronic_kidney_disease"
+    },
+    {
+      "name": "Immunosuppression",
+      "url": "https://en.wikipedia.org/wiki/Immunosuppression"
+    },
+    {
+      "name": "Korean Network for Organ Sharing",
+      "url": "https://en.wikipedia.org/wiki/Korean_Network_for_Organ_Sharing"
+    },
+    {
+      "name": "Medical tourism in South Korea",
+      "url": "https://en.wikipedia.org/wiki/Medical_tourism_in_South_Korea"
+    }
+  ],
   "faqs": [
     {
       "q": "Do the donor and recipient need to travel to Korea together, and what visas apply?",

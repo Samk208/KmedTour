@@ -1,6 +1,38 @@
 {
   "slug": "hysterectomy",
   "shortDescription": "Surgical removal of the uterus in Korea using vaginal, laparoscopic, robotic, or open approaches matched to your diagnosis.",
+  "quickAnswer": [
+    "**Hysterectomy** is the surgical removal of the uterus, performed through vaginal, laparoscopic, robotic-assisted, or open approaches selected by the Korean gynaecology team based on your diagnosis, anatomy, and prior surgical history.",
+    "**Best candidates** have conditions such as fibroids, heavy bleeding, endometriosis, uterine prolapse, or gynaecologic cancer that have not responded to less invasive treatment, and are fit for surgery and anaesthesia.",
+    "**The procedure permanently ends fertility** — counselling is an essential part of the process, particularly for patients who have not completed family planning, and uterus-preserving alternatives are discussed where clinically reasonable.",
+    "**Typical cost in Korea:** $5,000–$15,000 USD depending on approach, covering surgery, anaesthesia, the inpatient stay, and a follow-up review within a seven-day total visit."
+  ],
+  "keyFacts": [
+    {
+      "label": "Procedure time",
+      "value": "Varies by approach; 1–4 hours typical"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "General anaesthesia"
+    },
+    {
+      "label": "Hospital stay",
+      "value": "A few days inpatient, within a ~7-day total stay"
+    },
+    {
+      "label": "Recommended stay in Korea",
+      "value": "7 days"
+    },
+    {
+      "label": "Recovery",
+      "value": "Light activity from 2–4 weeks (minimally invasive); longer after open surgery; pelvic rest as advised"
+    },
+    {
+      "label": "Typical cost in Korea",
+      "value": "$5,000–$15,000 USD"
+    }
+  ],
   "sections": {
     "overview": "A hysterectomy is the surgical removal of the uterus, performed to treat conditions such as fibroids, heavy or abnormal bleeding, endometriosis, uterine prolapse, or certain gynaecologic cancers. Korean gynaecology teams perform the procedure through several routes, vaginal, laparoscopic (minimally invasive), robotic-assisted using systems such as the da Vinci platform, or abdominal (open) surgery, and select the approach based on the underlying diagnosis, the size and position of the uterus, prior surgical history, and imaging findings rather than on a single default technique. Korea is a high-adoption market for minimally invasive and robotic-assisted gynaecologic surgery, and these approaches generally use smaller incisions, which is associated with less post-operative pain and a shorter recovery compared with open surgery in suitable patients. The extent of the operation is described in subtypes: a total hysterectomy removes the uterus and cervix, a subtotal (supracervical) hysterectomy preserves the cervix, and a radical hysterectomy, used for some cancers, removes additional surrounding tissue. Whether the ovaries are removed is a separate decision discussed in advance, because removing them in a pre-menopausal patient brings on menopause. For international patients, the typical pathway begins with a remote review of medical records and imaging, after which the team confirms candidacy and recommends an approach. A hysterectomy permanently ends the ability to carry a pregnancy, so pre-operative counselling about this is an essential part of the process, particularly for patients who have not completed or have not yet considered family planning. The inpatient stay is commonly a few days, with a total visit of around seven days to allow for pre-operative testing, surgery, initial recovery, and a follow-up review before travelling home. Each plan is individualised, and outcomes vary by case depending on the indication, the chosen approach, and the patient's overall health.",
     "candidacy": "Hysterectomy is considered when conditions affecting the uterus cause persistent symptoms or pose a health risk and other treatments have not resolved them. Common indications include uterine fibroids, heavy or prolonged menstrual bleeding, endometriosis, adenomyosis, uterine prolapse, chronic pelvic pain linked to the uterus, and gynaecologic cancers such as cancers of the uterus or cervix, where a radical approach may be required. The Korean gynaecology team reviews your medical history, symptoms, prior treatments, and imaging such as ultrasound or MRI before confirming that a hysterectomy is appropriate and which approach fits your anatomy and diagnosis. Candidacy also depends on general fitness for surgery and anaesthesia, so pre-operative tests assess overall health. Because a hysterectomy permanently ends fertility, patients who may wish to have children are counselled on uterus-preserving alternatives where these are clinically reasonable. Patients who are pregnant, or for whom less invasive treatment is still a reasonable option, may be advised to consider other paths first. International patients are typically assessed remotely from submitted records before travel, and the final confirmation of candidacy and the surgical plan is made after an in-person evaluation in Korea.",
@@ -9,6 +41,67 @@
     "cost_breakdown": "In Korea, a hysterectomy commonly ranges from about USD 5,000 to USD 15,000, with the higher end reflecting laparoscopic and robotic-assisted (da Vinci) approaches, which use additional technology compared with vaginal or open surgery. The price for an individual patient depends on the chosen approach, the extent of the operation, the length of hospital stay, and the specifics of the case. Korean packages for international patients commonly bundle pre-operative tests, general anaesthesia, use of the robotic system where applicable, the hospital stay, medications, and follow-up review, though the exact inclusions vary between hospitals, so it is worth confirming what each quote covers and what would be charged separately, such as extended stays or additional procedures. Costs not always included can involve flights, accommodation outside the hospital, interpretation services, and care after you return home. Compared with countries such as the United States, hysterectomy in Korea is frequently reported to be materially less expensive for a comparable approach, while the final figure for any patient is confirmed only after the gynaecology team reviews records and agrees on the surgical plan. Requesting an itemised quote helps you compare options and understand the total expected cost before committing to travel.",
     "why_korea": "Korea is a high-adoption market for minimally invasive and robotic-assisted gynaecologic surgery, and hospitals there routinely offer vaginal, laparoscopic, robotic-assisted, and open approaches, which lets the team match the technique to your diagnosis rather than to the limits of available equipment. Minimally invasive and robotic methods use smaller incisions, an approach associated with less post-operative pain and a shorter recovery than open surgery in suitable patients. Korean hospitals that serve international patients commonly provide a coordinated pathway, including remote review of records before travel, pre-operative testing, the procedure, an inpatient stay, and a follow-up review, often supported by international patient services and interpretation. For a comparable approach, hysterectomy in Korea is frequently reported to cost materially less than in countries such as the United States, and many hospitals offer packages that bundle testing, anaesthesia, the hospital stay, medications, and follow-up so the expected cost is clearer in advance. As with any surgery, results vary by case, and the appropriate approach, the extent of the operation, and the expected recovery are confirmed by the gynaecology team after they review your records and examine you in person."
   },
+  "costTable": [
+    {
+      "item": "Vaginal or laparoscopic hysterectomy, standard case",
+      "cost": "$5,000–$9,000"
+    },
+    {
+      "item": "Robotic-assisted (da Vinci) hysterectomy",
+      "cost": "$9,000–$15,000"
+    },
+    {
+      "item": "Open abdominal hysterectomy, complex case",
+      "cost": "$8,000–$13,000"
+    },
+    {
+      "item": "Pre-operative tests, bloodwork, and anaesthesia assessment",
+      "cost": "Often included in package"
+    },
+    {
+      "item": "Post-operative medications and follow-up review",
+      "cost": "Often included; confirm in quote"
+    }
+  ],
+  "callouts": [
+    {
+      "type": "tip",
+      "title": "Ask about ovary management before you travel",
+      "text": "Whether your ovaries are removed is a separate decision from the hysterectomy itself. If removed before menopause, this brings on surgical menopause. Discuss the implications and management options with the gynaecology team — and with your physician at home — before surgery is confirmed."
+    }
+  ],
+  "keyTakeaways": [
+    "The surgical approach — vaginal, laparoscopic, robotic-assisted, or open — is chosen based on your diagnosis, uterus size, and prior surgical history; minimally invasive methods are associated with smaller incisions and shorter recovery in suitable patients.",
+    "A hysterectomy permanently ends the ability to carry a pregnancy, so the team provides counselling beforehand and discusses uterus-preserving alternatives where clinically reasonable.",
+    "A total Korea stay of around seven days covers pre-operative testing, surgery, inpatient recovery, and a follow-up review before the surgeon confirms fitness to fly.",
+    "Costs range from $5,000 to $15,000 USD; robotic-assisted procedures sit at the higher end — confirm whether anaesthesia, the hospital stay, and follow-up are bundled and what is billed separately."
+  ],
+  "entities": [
+    {
+      "name": "Hysterectomy",
+      "url": "https://en.wikipedia.org/wiki/Hysterectomy"
+    },
+    {
+      "name": "Da Vinci surgical system",
+      "url": "https://en.wikipedia.org/wiki/Da_Vinci_surgical_system"
+    },
+    {
+      "name": "Endometriosis",
+      "url": "https://en.wikipedia.org/wiki/Endometriosis"
+    },
+    {
+      "name": "Uterine fibroid",
+      "url": "https://en.wikipedia.org/wiki/Uterine_fibroid"
+    },
+    {
+      "name": "Medical tourism in South Korea",
+      "url": "https://en.wikipedia.org/wiki/Medical_tourism_in_South_Korea"
+    },
+    {
+      "name": "Minimally invasive surgery",
+      "url": "https://en.wikipedia.org/wiki/Minimally_invasive_surgery"
+    }
+  ],
   "faqs": [
     {
       "q": "Which approach will I have, and who decides?",

@@ -1,6 +1,38 @@
 {
   "slug": "living-donor-liver-transplant",
   "shortDescription": "Partial liver graft from a living relative restores function for patients with end-stage liver disease.",
+  "quickAnswer": [
+    "**A living donor liver transplant** replaces a failing liver with a portion donated by a living relative; because the liver regenerates, both the portion given to the recipient and the remainder in the donor grow toward normal size over the following weeks.",
+    "**Best candidates** have end-stage liver disease from cirrhosis, certain liver cancers within accepted limits, biliary or metabolic disease, or acute liver failure — assessed alongside a suitable, willing, healthy living relative who passes their own full evaluation.",
+    "**Both donor and recipient undergo surgery on the same day**, coordinated by separate teams; Korean law requires documented proof of family relationship and ethics-committee approval before any living donation can proceed.",
+    "**The recipient takes lifelong immunosuppression** medication to prevent rejection; arranging a reliable supply and local follow-up before travel is essential, as these medicines must not be interrupted after surgery."
+  ],
+  "keyFacts": [
+    {
+      "label": "Procedure type",
+      "value": "Two coordinated operations on the same day (donor and recipient)"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "General anaesthesia for both donor and recipient"
+    },
+    {
+      "label": "Hospital stay",
+      "value": "ICU followed by transplant ward; pairs typically remain several weeks for follow-up"
+    },
+    {
+      "label": "Recommended stay in Korea",
+      "value": "Several weeks (individual, team-confirmed)"
+    },
+    {
+      "label": "Recovery",
+      "value": "Recipient needs lifelong immunosuppression; donor recovers from partial hepatectomy; ongoing follow-up required"
+    },
+    {
+      "label": "Cost estimate",
+      "value": "Itemised quote required; confirm whether donor surgery is included"
+    }
+  ],
   "sections": {
     "overview": "A living donor liver transplant replaces a failing liver with a portion of a healthy liver donated by a living relative. Korea is internationally recognized for its experience and volume in living-donor liver transplantation, having developed much of its surgical practice in a setting where deceased-donor organs are scarce. Because the liver regenerates, both the section given to the recipient and the remaining portion in the donor grow toward normal size over the weeks that follow surgery.\n\nThis procedure is considered for patients whose liver can no longer perform its essential work because of cirrhosis, certain liver cancers within accepted limits, biliary or metabolic disease, or acute liver failure. The decision rests on a full assessment of how advanced the disease is, whether other organs are healthy enough to withstand major surgery, and whether a suitable, willing living donor is available.\n\nFor patients travelling from Africa, the Middle East, and Asia, Korean transplant centres coordinate the recipient's evaluation alongside the donor's, since the two surgeries are planned together. The pre-transplant workup typically includes imaging of the liver and its blood vessels, blood typing and cross-matching, infection screening, and review by a multidisciplinary team that includes hepatology, surgery, anaesthesia, and transplant coordination.\n\nA living donor transplant offers the advantage of scheduled, planned surgery rather than waiting for an unpredictable deceased-donor offer. It is, however, a major operation for two people, and outcomes vary by case depending on the recipient's condition at the time of surgery, the quality of the donor graft, and the recovery that follows. The care team will explain the specific benefits and risks for your situation before any decision is made.",
     "candidacy": "A living liver donor is usually a close family member who is healthy, of suitable age, and has a compatible or workable blood type. Donors undergo their own thorough evaluation, including liver imaging to confirm that the portion remaining after donation will be enough to keep them well. Conditions such as significant liver disease, uncontrolled medical problems, or certain infections may rule a person out as a donor.\n\nThe donor and recipient must travel together and plan their stay as a pair, because both operations are scheduled for the same admission and both people recover under the same transplant team. Korean transplant law requires a documented relationship between donor and recipient and approval from a hospital ethics committee before surgery can proceed. This safeguards the donor, confirms the donation is voluntary and unpaid, and is a routine, expected part of the process rather than an obstacle. Be prepared to provide identity documents, proof of family relationship, and consent paperwork that the centre will review.\n\nRecipient candidacy depends on how far the liver disease has progressed, whether any cancer falls within accepted transplant criteria, and whether the heart, lungs, and kidneys can tolerate the surgery. Some patients need treatment to stabilise their condition before they can be listed. The transplant team makes this assessment individually and will tell you honestly whether transplant is the right path.",
@@ -9,6 +41,67 @@
     "cost_breakdown": "The price range given for this procedure is an estimate, and the most important question to confirm with the centre is whether it includes the donor's surgery and care. In many living-donor programmes the donor's operation, hospital stay, and follow-up are bundled into the overall transplant cost, but this is not universal, so ask for an itemised quotation that states clearly what is and is not covered for both donor and recipient.\n\nA full estimate usually covers the recipient's surgery and hospital stay, anaesthesia, intensive care, pre-transplant evaluation for both people, and early post-operative monitoring. Costs that may fall outside the headline figure include extended hospitalisation if recovery is complicated, treatment of any infection or rejection episode, accommodation during the weeks of follow-up in Korea, and travel for the donor-recipient pair.\n\nOne cost that continues well beyond surgery is immunosuppression medication, which the recipient takes for life. These medicines represent an ongoing monthly expense that should be factored into long-term planning, and their availability and price in your home country are worth checking before you travel. Ask the transplant centre and your local pharmacy what to expect so there are no surprises after you return home.",
     "why_korea": "Korea has built deep experience in living-donor liver transplantation, and several major transplant centres in Seoul perform this surgery regularly within an established system of safeguards. The country's hepatobiliary and transplant services are concentrated in large university hospitals that bring together liver specialists, transplant surgeons, anaesthetists, and dedicated transplant coordinators who support international patients through evaluation, surgery, and follow-up.\n\nOrgan transplantation in Korea operates under a clear legal and ethical framework. The Ministry of Health and Welfare sets national policy, while KOIHA accredits hospitals and Medical Korea, supported by KHIDI, assists international patients. KONOS, the Korean Network for Organ Sharing, oversees organ donation and transplantation nationally, including the documentation and ethics-committee approval that living donation requires. These bodies exist to protect donors and recipients and to keep the process transparent.\n\nFor patients travelling from Africa, the Middle East, and Asia, this combination of surgical experience and structured oversight offers reassurance that the donor-recipient pair will be assessed and cared for according to consistent national standards. The centres are accustomed to coordinating with patients who are far from home and can help with the practical steps of planning a transplant abroad."
   },
+  "costTable": [
+    {
+      "item": "Recipient surgery, hospital stay, and ICU care",
+      "cost": "Confirm in itemised quote"
+    },
+    {
+      "item": "Donor surgery, hospital stay, and follow-up",
+      "cost": "Confirm if bundled or billed separately"
+    },
+    {
+      "item": "Pre-transplant evaluation — donor and recipient (bloods, imaging, tissue typing)",
+      "cost": "Often included; confirm"
+    },
+    {
+      "item": "Extended hospitalisation for complications",
+      "cost": "Billed separately"
+    },
+    {
+      "item": "Lifelong immunosuppression medication (ongoing, after discharge)",
+      "cost": "Not included; budget monthly"
+    }
+  ],
+  "callouts": [
+    {
+      "type": "warning",
+      "title": "Ethics-committee approval is mandatory before surgery",
+      "text": "Korean transplant law requires documented proof of family relationship and an ethics-committee review confirming the donation is voluntary and unpaid before any living-donor transplant can proceed. This is standard practice — prepare identity documents and relationship proof in advance so the approval process does not delay your admission."
+    }
+  ],
+  "keyTakeaways": [
+    "Living donor liver transplant offers planned, scheduled surgery for a recipient with end-stage liver disease, using a partial graft from a healthy relative whose remaining liver regenerates; both people undergo major surgery on the same day.",
+    "Korean transplant law requires documented family relationship and ethics-committee approval before living donation can proceed — prepare identity and relationship documents well ahead of the planned admission date.",
+    "The recipient requires lifelong immunosuppression medication that must not be interrupted; confirm the availability and cost of these medicines in your home country before travelling, and arrange local follow-up to manage the handover.",
+    "Request an itemised quote stating clearly whether the donor's surgery, hospital stay, and follow-up are included — practice varies between centres, and the total cost covers two people through a complex, multi-week process."
+  ],
+  "entities": [
+    {
+      "name": "Liver transplantation",
+      "url": "https://en.wikipedia.org/wiki/Liver_transplantation"
+    },
+    {
+      "name": "Living donor transplantation",
+      "url": "https://en.wikipedia.org/wiki/Living_donor_transplantation"
+    },
+    {
+      "name": "Immunosuppression",
+      "url": "https://en.wikipedia.org/wiki/Immunosuppression"
+    },
+    {
+      "name": "Cirrhosis",
+      "url": "https://en.wikipedia.org/wiki/Cirrhosis"
+    },
+    {
+      "name": "Korean Network for Organ Sharing",
+      "url": "https://en.wikipedia.org/wiki/Korean_Network_for_Organ_Sharing"
+    },
+    {
+      "name": "Medical tourism in South Korea",
+      "url": "https://en.wikipedia.org/wiki/Medical_tourism_in_South_Korea"
+    }
+  ],
   "faqs": [
     {
       "q": "Do the donor and recipient need to travel to Korea together, and what visas apply?",
