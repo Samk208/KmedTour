@@ -1,51 +1,139 @@
 {
   "slug": "health-screening",
-  "shortDescription": "A condensed full-body checkup combining imaging, endoscopy, and lab tests with a same-week results consultation.",
-  "sections": {
-    "overview": "A comprehensive health screening is a planned set of examinations that assesses your overall health in one coordinated visit, combining imaging, laboratory tests, and often endoscopy. Patients travel to Korea for this because the country has developed an efficient checkup culture in which a wide battery of tests is completed within one to two days and reviewed with a doctor in the same week, rather than spread across many separate appointments.\n\nThe purpose is preventive: to look for early signs of common conditions, establish a clear baseline of your health, and catch issues before they cause symptoms. A typical program may include blood and urine analysis, blood pressure and heart checks such as an electrocardiogram, imaging like ultrasound and chest studies, and, where appropriate, endoscopy of the stomach or colon. Programs are usually offered in tiers, so the depth of screening can be matched to your age, history, and concerns.\n\nKorea's screening centers are organized for speed and flow. Fasting bloodwork and imaging are often scheduled back to back in a single morning, with results compiled quickly so that a consultation can take place within the same visit or a day or two later.\n\nThe priced range of 500 to 3,000 US dollars reflects this tiered structure, from a focused basic panel to an extensive program with advanced imaging and endoscopy. Because screening is preventive rather than a treatment, it is not measured by a success rate; its value lies in clear information and timely follow-up if something needs attention.\n\nWith a stay of around two days, screening fits comfortably into a short, focused trip.",
-    "candidacy": "Comprehensive screening suits adults who want a clear picture of their current health, whether or not they have symptoms. It is particularly useful for people over a certain age, those with a family history of conditions such as heart disease, diabetes, or certain cancers, and anyone who has not had a thorough checkup in some time and wants an up-to-date baseline.\n\nIt also fits people managing known risk factors, such as high blood pressure, raised cholesterol, or a history of smoking, who benefit from periodic monitoring. Because programs come in tiers, the depth of screening can be matched to your age, personal history, and specific concerns rather than applying a single fixed package to everyone.\n\nA few practical points affect candidacy and planning. Many tests require fasting beforehand, so timing matters. If endoscopy is included, sedation is often used, meaning you should not travel or make important decisions immediately afterward and may need someone to accompany you. People who are pregnant, or who have certain conditions, may need parts of the program adjusted, particularly imaging or endoscopy.\n\nScreening is for assessment, not for treating an active, urgent problem; anyone with acute symptoms should seek direct medical care rather than waiting for a scheduled checkup. A pre-visit questionnaire helps the center tailor the tests to you.",
-    "procedure_steps": "A screening visit is organized to move you smoothly through several stations in a short time. Before arrival you typically complete a health questionnaire and receive fasting instructions, since many blood tests and some imaging require an empty stomach.\n\nOn the day, the visit usually begins with measurements and fasting bloodwork: height, weight, blood pressure, and samples for blood and urine analysis covering items such as blood count, glucose, cholesterol, liver and kidney markers. Heart function may be checked with an electrocardiogram.\n\nImaging follows, and the exact studies depend on your chosen tier. Common components include abdominal ultrasound, a chest study, and, in more extensive programs, advanced imaging. Vision, hearing, and other focused checks may be added.\n\nWhere the program includes it, endoscopy of the stomach, and sometimes the colon, is performed to view the digestive tract directly. This is often done under sedation for comfort, which is why it is scheduled with recovery time and why you should avoid travel or demanding tasks immediately afterward.\n\nThe sequence is arranged so that tests with shared requirements, such as fasting, are grouped together, allowing much of the program to be completed in a single morning. Results from many tests are compiled rapidly. The visit concludes, either the same day or within a day or two, with a consultation in which a doctor reviews your results, explains what they mean, and outlines any recommended next steps.",
-    "recovery_timeline": "Screening involves little recovery in the usual sense, which is why a stay of around two days is enough. Most tests, such as bloodwork, imaging, and an electrocardiogram, have no aftereffects, and you can resume normal activity immediately.\n\nThe main consideration is endoscopy, when it is part of your program. If sedation is used, you will need a short rest afterward until it wears off, and you should not travel far, drive, or make important decisions for the remainder of that day. Mild bloating or a sore throat can follow stomach or colon endoscopy and typically settles within a day.\n\nA typical two-day pattern has the tests and imaging completed on the first day, often in a single morning after fasting, with the rest of that day free or used for recovery if endoscopy was performed. The results consultation then takes place the same day or on the second day, so you leave with your findings explained rather than waiting weeks for a report.\n\nFlying home is generally fine once any sedation has fully cleared and you feel well, which the schedule allows for within the stay. If endoscopy was done on the first day, planning your departure for the second day or later gives a comfortable margin.\n\nIf a finding needs further investigation or treatment, the consultation is where this is discussed. The doctor explains what was found, how urgent it is, and the recommended next steps, whether that means additional tests, a specialist referral, or simply routine monitoring.",
-    "cost_breakdown": "Comprehensive screening is priced from 500 to 3,000 US dollars, and where you fall in that range depends mainly on the tier of program you choose. A focused basic package covering core blood tests, blood pressure, an electrocardiogram, and routine imaging sits at the lower end. More extensive programs that add advanced imaging, broader laboratory panels, and endoscopy reach the higher end.\n\nThe figure typically covers the scheduled tests in your selected package and the doctor's consultation to review the results. Because programs are tiered, you can match the depth, and therefore the cost, to your age, history, and concerns rather than paying for tests you do not need.\n\nIt is worth confirming a few details when comparing options: whether sedation for endoscopy is included, whether any optional add-on tests are billed separately, and whether the results consultation and a written report are part of the price.\n\nBeyond the program fee, budget for travel and accommodation for the roughly two-day stay. One efficiency of the Korean model is that a wide range of tests and the results discussion are completed in a single short visit, which can compare favorably with arranging the same investigations separately elsewhere. Treat any quote as an estimate until the center confirms the package and any add-ons you select.",
-    "why_korea": "Korea is well known for an efficient and thorough health-screening culture, with dedicated centers organized to complete a wide range of tests in one to two days and deliver results within the same week. This condensed, one-stop approach is the main reason patients choose Korea for a comprehensive checkup: imaging, laboratory work, and endoscopy are coordinated into a single flow, followed by a consultation that explains the findings without a long wait.\n\nKorean healthcare operates under national oversight. The Ministry of Health and Welfare sets medical standards, while KHIDI and KOIHA support the international patient sector and the accreditation of facilities that serve overseas visitors. Many screening centers offer coordination for international patients, including language assistance and help scheduling the program around a short stay.\n\nThe practical appeal is convenience paired with depth: a broad assessment completed quickly, tiered so it can be matched to your needs, with same-week results and clear guidance on next steps if anything is found. For patients traveling from Africa, the Middle East, and Asia, this makes Korea a sensible destination for a preventive checkup that fits into a brief, well-organized visit."
-  },
-  "faqs": [
+  "shortDescription": "Comprehensive executive health checkup detecting disease early with full-body imaging, lab work, and specialist review.",
+  "quickAnswer": [
+    "**Comprehensive health screening** in Korea is a structured one- or two-day programme of blood tests, imaging (endoscopy, CT, MRI, ultrasound), cardiac assessment, cancer markers, and specialist consultations — designed to detect disease at an early, treatable stage.",
+    "**Suitable for anyone** aged 30 and over who wants a thorough baseline health assessment, those with risk factors for common chronic diseases, or executives and professionals seeking a complete annual health review not available at this depth in their home country.",
+    "**The programme takes 1–2 days** in a dedicated health screening centre; results are reviewed by specialists and provided in a comprehensive report before you leave, often the same day or the next morning.",
+    "**Typical cost in Korea: $500–$3,000 USD**, depending on the package tier, add-on tests, and whether specialist consultations are included."
+  ],
+  "keyFacts": [
     {
-      "q": "What does a comprehensive screening include?",
-      "a": "Programs are tiered, but a typical screening combines blood and urine tests, blood pressure and heart checks such as an electrocardiogram, and imaging like abdominal ultrasound and a chest study. More extensive packages add advanced imaging and endoscopy of the stomach or colon. The depth is matched to your age, history, and concerns, so you can choose a focused or thorough program."
+      "label": "Programme duration",
+      "value": "1–2 days"
     },
     {
-      "q": "How long does the checkup take?",
-      "a": "Korea's screening centers are built for efficiency, so much of the program is often completed in a single morning after fasting, and the full visit fits within a stay of around two days. Results from many tests are compiled quickly, allowing a doctor to review them with you the same day or within a day or two rather than weeks later."
+      "label": "Recommended Korea stay",
+      "value": "2–3 days (to allow results review)"
     },
     {
-      "q": "Do I need to fast before the tests?",
-      "a": "Usually yes. Several blood tests and some imaging require an empty stomach, so the center will send fasting instructions before your visit, typically meaning no food for a set number of hours beforehand. Following these instructions matters for accurate results. Water is often allowed, but confirm the specifics with the center, especially if you take regular medications."
+      "label": "Fasting required",
+      "value": "Yes — typically 8–12 hours before the programme"
     },
     {
-      "q": "What happens if the screening finds something?",
-      "a": "The results consultation is where any finding is discussed. The doctor explains what was found, how significant or urgent it is, and the recommended next steps, which may be further tests, a specialist referral, or simply routine monitoring. Screening is designed to catch issues early, when there are usually more options, so a finding is information that helps you act in good time."
+      "label": "Results delivery",
+      "value": "Written report same day or following morning; specialist review included"
     },
     {
-      "q": "Is the endoscopy uncomfortable?",
-      "a": "Endoscopy, when included, is often performed under sedation for comfort, so many people remember little of it. Afterward you may have mild bloating or a sore throat that settles within a day. Because sedation is used, you should rest until it clears and avoid travel or important decisions for the remainder of that day, which the two-day schedule allows for."
+      "label": "Key components",
+      "value": "Bloods, imaging (CT/MRI/ultrasound), endoscopy, cardiac assessment, cancer markers"
+    },
+    {
+      "label": "Typical cost in Korea",
+      "value": "$500–$3,000 USD"
     }
   ],
+  "sections": {
+    "overview": "**Comprehensive health screening** in Korea is a structured assessment programme delivered in a dedicated screening centre, combining laboratory tests, full-body imaging, endoscopy, cardiac tests, and specialist review within one or two days. Patients from Africa, the Middle East, and Southeast Asia travel to Korea for screening because accredited centres offer a depth of assessment — including upper and lower endoscopy, low-dose CT, and MRI — that is not routinely available in a single appointment at home, with results reviewed by specialists and delivered before you leave.\n\nA standard comprehensive programme typically includes:\n\n- **Blood and urine panels:** full blood count, metabolic panel, liver and kidney function, lipid profile, thyroid, fasting glucose, HbA1c, cancer markers (AFP, CEA, PSA for men, CA-125 for women — at appropriate tiers)\n- **Cardiac assessment:** resting ECG, blood pressure, sometimes exercise treadmill test or echocardiogram\n- **Upper endoscopy (gastroscopy):** direct visualisation of the oesophagus, stomach, and duodenum for ulcers, gastritis, and early gastric cancer\n- **Lower endoscopy (colonoscopy):** direct visualisation of the colon for polyps and early colorectal cancer — available at higher-tier packages\n- **Imaging:** low-dose chest CT, abdominal ultrasound, and depending on tier — MRI (brain, abdomen, or musculoskeletal) and CT angiography\n- **Bone density (DEXA scan)**\n- **Specialist consultations** to review findings before discharge\n\nKmedTour matches patients to a centre suited to their tier, age, sex, and risk profile, and coordinates the scheduling, transport, and results-review appointment.",
+    "candidacy": "Health screening is appropriate for a wide range of adults:\n\n- Anyone aged **30 and above** seeking a comprehensive health baseline not available at equivalent depth in their home country\n- Those with **family history** of cancer (colorectal, gastric, breast, prostate, lung), cardiovascular disease, or diabetes\n- Adults with **existing risk factors**: smoking history, hypertension, high cholesterol, elevated BMI, high alcohol intake\n- **Executives and professionals** who want a thorough annual review as part of occupational health management\n- Those preparing for **major surgery or procedures** who want a complete pre-operative health picture\n- Adults with **persistent unexplained symptoms** (fatigue, weight change, abdominal discomfort) where a thorough screen is the starting point\n\n**What to prepare before travel:**\n\n- A list of current medications (some affect test results or require dose adjustment around the programme)\n- Previous screening results or medical records if available — allows comparison\n- Family history of specific cancers or heart disease\n- Specific concerns or symptoms to ensure they are covered by the chosen package\n\nKmedTour coordinates a pre-travel briefing to match you to the right package tier and flag any add-on tests relevant to your profile.",
+    "procedure_steps": "A standard comprehensive health screening programme is delivered across one to two days in a dedicated screening centre.\n\n**Before the programme:**\n\n- **Fasting for 8–12 hours** before the start — water is permitted\n- Arrive at the scheduled time; a coordinator guides you through each station\n\n**Day 1 — morning (core testing):**\n\n- **Blood draw and urine sample** — full panels processed in the centre laboratory\n- **Blood pressure, height, weight, BMI, body composition**\n- **Vision and hearing tests**\n- **Resting ECG** — cardiac rhythm assessment\n- **Chest X-ray** or low-dose chest CT\n- **Abdominal ultrasound** — liver, gallbladder, kidneys, pancreas, spleen\n- **Upper endoscopy (gastroscopy)** under light sedation — stomach and duodenum\n- **Bone density (DEXA)**\n\n**Day 1 — afternoon (tier-dependent add-ons):**\n\n- Colonoscopy (requires bowel prep the day before — confirm with centre)\n- Echocardiogram or exercise treadmill test\n- Mammography and pelvic ultrasound (women)\n- Prostate ultrasound (men)\n- MRI brain, abdomen, or other region\n\n**Results review:**\n\n- Laboratory results are typically available the same afternoon or morning of Day 2\n- A specialist physician reviews all findings with you in a consultation\n- You receive a written, structured health report to take home",
+    "recovery_timeline": "Health screening does not involve surgery and requires no physical recovery. However, some components have specific post-procedure considerations.\n\n**After upper endoscopy (gastroscopy):**\n\n- Light sedation is used; you should not drive for the rest of the day\n- Mild throat discomfort or bloating may follow; resolves quickly\n- Eating resumes a short time after the procedure\n\n**After colonoscopy (if included):**\n\n- Sedation is used; do not drive for the rest of the day\n- Bloating from the air used during the procedure is common and resolves within hours\n- Normal diet resumes the same day\n\n**After the screening programme:**\n\n- Await the specialist results review (same day or morning of Day 2)\n- Review your written report with the specialist; ask about any abnormal results, recommended follow-up, or referrals\n- KmedTour coordinates translation of the report and, if needed, warm handover to a specialist in Korea or recommendations for follow-up at home\n\n**Planning your Korea stay:**\n\n- Allow 2–3 days in Korea to ensure you receive and review all results before flying home\n- If a finding requires urgent follow-up — such as a biopsy of a suspicious gastric lesion — the centre can usually arrange this within your stay",
+    "cost_breakdown": "The cost of health screening through KmedTour ranges from **$500 to $3,000 USD**, depending on the package tier and add-on tests selected.\n\n**Standard tier ($500–$1,000):**\n\n- Blood and urine panels, resting ECG, chest X-ray, abdominal ultrasound, upper endoscopy, basic cancer markers, DEXA, results review\n\n**Comprehensive tier ($1,000–$2,000):**\n\n- Everything above plus low-dose chest CT, colonoscopy, echocardiogram or treadmill test, expanded cancer marker panel, mammography (women), prostate ultrasound (men)\n\n**Premium / executive tier ($2,000–$3,000):**\n\n- Everything above plus MRI (brain and/or abdomen), CT angiography, full cardiac assessment, genetic cancer risk panel, extended specialist consultations, VIP room service\n\n**What is typically not included:**\n\n- Biopsies or pathology from endoscopy findings (billed separately if needed)\n- Treatment or additional procedures if a significant finding requires same-trip intervention\n- International flights, accommodation, and meals\n\nKmedTour provides a **written itemised quote** based on your age, sex, family history, and specific concerns so you choose the right tier.",
+    "why_korea": "Korea has a strong national screening culture, with the government running its own health screening programme for insured residents. This has created a large, experienced sector of dedicated health screening centres with high throughput and standardised protocols.\n\n**Accreditation and oversight:**\n\n- **KOIHA** (Korean Organisation for International Healthcare Accreditation) sets quality benchmarks for centres treating international patients\n- **KHIDI's Medical Korea programme** supports foreign patient access\n\n**Clinical approach:**\nDedicated health screening centres in Korea handle high volumes of comprehensive programmes efficiently, combining laboratory, imaging, endoscopy, and specialist review in one facility and one or two days — a model less common in many other healthcare systems. Early detection of gastric cancer — which is more common in Korean and East Asian populations and for which Korea has well-established screening protocols — is a particular strength.\n\n**International patient infrastructure:**\nAccredited centres have international patient departments with interpreter services, English-language reports, and dedicated coordinators who guide you through the programme and arrange results review consultations.\n\nKmedTour matches patients to the appropriate centre and tier, coordinates scheduling, and arranges warm handover of results to your home physician."
+  },
+  "costTable": [
+    {
+      "item": "Standard health screening package",
+      "cost": "$500–$1,000"
+    },
+    {
+      "item": "Comprehensive health screening package",
+      "cost": "$1,000–$2,000"
+    },
+    {
+      "item": "Premium / executive health screening package",
+      "cost": "$2,000–$3,000"
+    },
+    {
+      "item": "Biopsy from endoscopy finding (if needed)",
+      "cost": "Additional — varies"
+    },
+    {
+      "item": "Add-on MRI (brain or abdomen)",
+      "cost": "$300–$800 additional"
+    }
+  ],
+  "callouts": [],
+  "keyTakeaways": [
+    "Korean health screening centres deliver blood work, imaging (CT, MRI, ultrasound), upper and lower endoscopy, cardiac assessment, and specialist results review within one or two days — a depth of assessment rarely available in a single appointment elsewhere.",
+    "Package tiers range from standard ($500–$1,000) to premium executive ($2,000–$3,000); your age, sex, family history, and specific risk factors determine which tier is appropriate.",
+    "Allow 2–3 days in Korea to complete the programme and receive a full specialist results review before flying home.",
+    "Korea's well-developed national screening culture has produced high-volume, efficient screening centres accredited under KOIHA with dedicated international patient coordinators."
+  ],
+  "entities": [
+    {
+      "name": "Medical examination",
+      "url": "https://en.wikipedia.org/wiki/Medical_examination"
+    },
+    {
+      "name": "Endoscopy",
+      "url": "https://en.wikipedia.org/wiki/Endoscopy"
+    },
+    {
+      "name": "Cancer screening",
+      "url": "https://en.wikipedia.org/wiki/Cancer_screening"
+    },
+    {
+      "name": "Colonoscopy",
+      "url": "https://en.wikipedia.org/wiki/Colonoscopy"
+    },
+    {
+      "name": "Medical tourism in South Korea",
+      "url": "https://en.wikipedia.org/wiki/Medical_tourism_in_South_Korea"
+    },
+    {
+      "name": "Korean Organisation for International Healthcare Accreditation",
+      "url": "https://en.wikipedia.org/wiki/Korean_Organisation_for_International_Healthcare_Accreditation"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I need to fast before health screening?",
+      "a": "Yes. Most health screening programmes require fasting for 8–12 hours before the start of the programme to ensure accurate blood glucose, lipid, and liver enzyme results, and to allow endoscopy with a clear stomach. Water is typically permitted. Some centres allow a small amount of plain water with essential medications. You will receive specific fasting instructions when your appointment is confirmed. If colonoscopy is included in your package, a bowel-preparation regimen is required the day before — the centre will provide instructions."
+    },
+    {
+      "q": "What happens if the screening finds something abnormal?",
+      "a": "Abnormal findings are discussed with you during the specialist results review on the same day or the morning of Day 2. Minor findings — such as a small benign cyst, slightly elevated cholesterol, or a polyp removed during colonoscopy — are explained and included in your report with follow-up recommendations. Significant findings requiring further investigation — such as a suspicious gastric lesion requiring biopsy, or a cardiac abnormality — can often be addressed within your Korea stay if arranged promptly. KmedTour coordinates warm handover to the appropriate specialist and, if needed, facilitates same-trip follow-up."
+    },
+    {
+      "q": "Is colonoscopy included in all packages?",
+      "a": "Colonoscopy is usually included from the comprehensive tier upward, not in basic packages. It requires bowel preparation the day before, is performed under sedation, and adds meaningful value for colorectal cancer risk assessment — particularly from age 45 onward, or earlier with a family history. Upper endoscopy (gastroscopy) is included in most tiers. If colonoscopy is important to you, confirm it is in your chosen package before committing."
+    },
+    {
+      "q": "Can I get an MRI during the screening?",
+      "a": "MRI is included in premium tier packages and is available as a paid add-on in lower tiers. Brain MRI, abdominal MRI, and musculoskeletal MRI are the most commonly offered. MRI adds time to the programme (typically 45–90 minutes per region) and cost. If you have specific concerns — unexplained headaches, a family history of aneurysm, joint pain — discuss the appropriate MRI sequences with KmedTour before your package is finalised."
+    },
+    {
+      "q": "How do I share the results with my doctor at home?",
+      "a": "You will receive a structured written report — typically in English for international patients at accredited centres — covering every test performed, flagging abnormal values, and including specialist interpretation and follow-up recommendations. KmedTour arranges translation if needed and can coordinate a formal handover letter to your home physician summarising the key findings. The report is designed to be useful to a doctor who was not present at the screening."
+    }
+  ],
+  "references": [],
   "images": [
     {
       "src": "/images/procedures/inline/health-screening-1.jpg",
-      "alt": "Doctor reviewing a comprehensive health screening in Korea",
-      "credit": "SHVETS production"
+      "alt": "Doctor reviewing comprehensive health screening results with patient in Korea",
+      "credit": "cottonbro studio"
     },
     {
       "src": "/images/procedures/inline/health-screening-2.jpg",
-      "alt": "Advanced imaging during a Korean comprehensive health screening",
+      "alt": "MRI and CT scan imaging at a Korean medical screening center",
       "credit": "MART  PRODUCTION"
     },
     {
       "src": "/images/procedures/inline/health-screening-3.jpg",
-      "alt": "Patient receiving health screening results in Korea",
-      "credit": "Marcus Aurelius"
+      "alt": "Patient and doctor discussing health screening results",
+      "credit": "cottonbro studio"
     }
   ]
 }

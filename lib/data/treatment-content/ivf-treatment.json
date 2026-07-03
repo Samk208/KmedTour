@@ -1,51 +1,139 @@
 {
   "slug": "ivf-treatment",
-  "shortDescription": "In vitro fertilization with full cycle care at accredited Korean fertility clinics for international patients",
-  "sections": {
-    "overview": "In vitro fertilization (IVF) brings an egg and sperm together in a laboratory, then places a resulting embryo into the uterus to support pregnancy. Many patients from Africa, the Middle East, and Asia choose Korea for this care because its fertility clinics combine modern laboratory technology with coordinated support for travelers, so that a complete treatment cycle can be planned around a single stay.\n\nIVF is used for a wide range of fertility situations, including blocked or damaged fallopian tubes, low sperm count or motility, ovulation difficulties, endometriosis, and unexplained infertility. It may also be considered after other approaches have not led to pregnancy. Each cycle is shaped around your own medical history and the cause of your difficulty conceiving, so the plan you receive is tailored rather than standardized.\n\nA full cycle moves through several connected stages: hormonal stimulation to encourage the ovaries to mature several eggs, egg retrieval, fertilization in the laboratory, a short period of embryo development, and embryo transfer. Before you travel, your care team can review your records and arrange preliminary tests remotely, so your time in Korea is used efficiently. During your stay, you attend regular monitoring appointments so that medication doses can be adjusted to how your body is responding.\n\nResults from IVF vary considerably depending on your age, the underlying cause of infertility, egg and sperm quality, and other personal factors. Your clinical team will talk with you honestly about what is realistic in your situation, depending on your case, rather than offering a fixed promise. The aim of this page is to help you understand the process and plan a stay that fits a full cycle.",
-    "candidacy": "IVF may be suitable for individuals and couples facing blocked fallopian tubes, male-factor difficulties such as low sperm count or motility, ovulation disorders, endometriosis, or infertility that has no clear explanation. It is also considered when simpler treatments have not resulted in pregnancy.\n\nAge is one of the most important factors, and it deserves an honest conversation. As a woman's age increases, the number and quality of available eggs tend to decline, and this gradually affects the likelihood of a successful cycle. This pattern is real and gradual rather than a single cut-off, so your team will discuss where you stand individually rather than quoting a number that may not reflect your situation.\n\nGeneral health also matters. Conditions such as untreated thyroid problems, uncontrolled diabetes, or certain uterine concerns may need attention before a cycle begins. A body weight within a healthy range can support both the stimulation phase and a possible pregnancy. For male partners, a semen analysis helps the team plan the fertilization approach.\n\nBefore confirming that IVF is right for you, the clinic reviews your medical history, hormone levels, and imaging. Some people are advised to try other steps first, while others are encouraged to proceed without delay. The right path depends on your case, and your team will explain the reasoning so you can make an informed decision with realistic expectations.",
-    "procedure_steps": "A complete IVF cycle unfolds in connected stages, and understanding the sequence helps you plan your stay. The first stage, ovarian stimulation, uses daily hormone injections over roughly ten to fourteen days to encourage several eggs to mature at once. During this time you attend frequent monitoring visits, where ultrasound and blood tests guide any dose adjustments. This phase makes up most of your time in Korea.\n\nWhen the eggs are ready, a trigger injection prepares them for collection. Egg retrieval is a short procedure performed under sedation, in which a thin needle guided by ultrasound gathers the mature eggs. You rest afterward and can usually return to your accommodation the same day.\n\nNext comes fertilization in the laboratory. Collected eggs are combined with prepared sperm, either by placing them together or, when male-factor difficulties are present, by injecting a single sperm directly into an egg. The laboratory then cares for the fertilized eggs as they develop over several days, and your team updates you on their progress.\n\nThe final stage is embryo transfer, a quick and generally painless step in which one or more embryos are placed into the uterus through a fine catheter. If suitable embryos remain, they may be frozen for future use. Some preliminary preparation, such as initial testing and your medication schedule, can be coordinated remotely before you arrive, while stimulation, retrieval, fertilization, and transfer all take place during your stay.",
-    "recovery_timeline": "IVF recovery is generally gentle, and the stay is planned so that the demanding parts of the cycle happen while you are close to your clinic. During the stimulation phase, which spans most of your first one to two weeks, you may feel bloating, mild tenderness, or fatigue as your ovaries respond to medication. These sensations are common and usually manageable, and your team monitors you closely throughout.\n\nAfter egg retrieval, most people rest for the remainder of that day and feel noticeably better within one to three days. Some cramping and light spotting can occur, and you are advised to avoid strenuous activity during this short window. Because retrieval is followed by laboratory fertilization and embryo development, there is a natural pause of several days before transfer, which you spend recovering and preparing.\n\nEmbryo transfer itself requires little recovery, and you can resume calm daily activities soon afterward. Your clinical team will advise a settling period before any pregnancy test, typically around a week and a half, so the result is reliable. This is why a stay of about thirty days allows a full cycle to be completed with the transfer and an early follow-up inside your visit.\n\nWhen to fly home depends on your case. Many patients are comfortable traveling a few days after transfer, while others prefer to wait for an initial result. Your team will give you personalized guidance on timing, travel comfort, and any precautions, depending on your case, so your journey home does not add unnecessary stress.",
-    "cost_breakdown": "A typical IVF cycle in Korea falls within a range of roughly 8,000 to 15,000 US dollars. The figure for your own treatment depends on the medications you need, the laboratory techniques used, and whether additional steps are part of your plan. Because every cycle is tailored, you will receive a written estimate after your initial review rather than a single fixed price.\n\nFertility medications are a meaningful part of the total, and the amount varies from person to person, since stimulation doses are adjusted to how each body responds. Some patients require more medication than others, which is one reason quoted ranges are broad. Specialized laboratory work, such as injecting a single sperm directly into an egg for male-factor situations, may add to the cost when it is needed.\n\nSeveral things commonly sit outside the treatment quote. International flights, accommodation during your stay, daily living expenses, and translation or concierge services are usually arranged and paid separately. Freezing and long-term storage of any remaining embryos is generally billed on its own, often as an annual fee. If more than one cycle is needed, each cycle is costed individually. Asking for an itemized estimate up front helps you see what is included, what is excluded, and how to budget for the full stay.",
-    "why_korea": "Korea has become a considered destination for fertility care because its clinics handle a high volume of IVF cycles each year and maintain well-equipped embryology laboratories. This steady experience supports careful monitoring and consistent laboratory standards, which matter throughout a cycle. For patients traveling from Africa, the Middle East, and Asia, the ability to complete a full cycle within one coordinated stay is a practical advantage.\n\nMedical care in Korea operates within a national framework overseen by the Ministry of Health and Welfare (MOHW), and international patient services are supported by organizations such as the Korea Health Industry Development Institute (KHIDI) and the Korea Institute for Healthcare Accreditation (KOIHA). These bodies support standards and the safe coordination of care for visitors.\n\nMany clinics that welcome international patients offer English-language coordination, help with appointment scheduling, and assistance with the documents you will need. This support reduces the practical burden of arranging treatment far from home, so you can focus on the cycle itself. Combined with experienced laboratory teams and a stay structured around the full IVF process, this makes Korea a thoughtful option for patients seeking organized, compassionate fertility care."
-  },
-  "faqs": [
+  "shortDescription": "Assisted reproductive technology where eggs are fertilised outside the body and resulting embryos transferred to the uterus.",
+  "quickAnswer": [
+    "**IVF (in vitro fertilisation)** stimulates the ovaries to produce multiple eggs, retrieves them under sedation, fertilises them in a laboratory with sperm, and transfers one or more resulting embryos to the uterus to establish a pregnancy.",
+    "**Best candidates** are individuals or couples with tubal factor infertility, unexplained infertility, male-factor infertility, endometriosis, ovulatory disorders, or previous failed intrauterine insemination (IUI) cycles.",
+    "**A full IVF cycle in Korea takes approximately 30 days** from the start of ovarian stimulation through egg retrieval, fertilisation, embryo culture, and transfer — with monitoring appointments throughout.",
+    "**Typical cost in Korea: $8,000–$15,000 USD per cycle**, depending on stimulation protocol, genetic testing of embryos, and whether donor eggs or sperm are used."
+  ],
+  "keyFacts": [
     {
-      "q": "How will my medical records be transferred to the Korean clinic?",
-      "a": "Before you travel, your coordinator gathers your fertility history, hormone results, imaging, and any previous treatment records. These are shared securely with your Korean care team so they can plan your cycle in advance. Sending complete records early lets the clinic arrange preliminary tests and your medication schedule remotely, making your stay more efficient. Translated summaries can usually be arranged if your documents are in another language."
+      "label": "Cycle duration",
+      "value": "Approximately 30 days (stimulation through transfer)"
     },
     {
-      "q": "Can my partner or a companion travel with me during the cycle?",
-      "a": "Yes, and many patients bring a partner or companion for support during what can be an emotional process. If your partner is part of treatment, their presence is needed for sperm collection around the retrieval day, though timing can sometimes be coordinated in advance. Companions can attend most appointments with you. Your coordinator can help with accommodation suited to a stay of several weeks and advise on logistics for two travelers."
+      "label": "Egg retrieval procedure",
+      "value": "15–30 minutes under sedation"
     },
     {
-      "q": "What kind of visa do I need for a multi-week stay?",
-      "a": "A full IVF cycle is planned around a stay of about thirty days, so you should confirm that your entry permission covers this length. Depending on your nationality, a short-stay visitor visa or a medical visa may apply. Your coordinator can provide a letter from the clinic confirming your treatment dates to support your application. Arrange this early, since processing times vary by country and embassy."
+      "label": "Embryo transfer",
+      "value": "5–10 minutes (no anaesthesia required)"
     },
     {
-      "q": "Why does the stay need to be around thirty days?",
-      "a": "A complete cycle moves through stimulation, retrieval, laboratory fertilization, embryo development, and transfer, with monitoring throughout. Stimulation alone spans roughly two weeks, and the later stages add more days. A stay of about thirty days allows the full sequence, including an early follow-up after transfer, to happen while you are near your clinic. This avoids interrupting the cycle with travel and keeps your care continuous and closely monitored."
+      "label": "Recommended stay in Korea",
+      "value": "Approximately 30 days for a fresh cycle"
     },
     {
-      "q": "What are my chances of success with IVF?",
-      "a": "Success with IVF genuinely varies and cannot be reduced to a single figure. It depends on your age, the cause of your infertility, egg and sperm quality, and other personal factors. Your clinical team will discuss what is realistic for you, depending on your case, after reviewing your records and tests. They will speak honestly rather than promise an outcome, and they can explain what each stage of your cycle means for you."
+      "label": "Pregnancy test",
+      "value": "Blood test approximately 10–14 days after transfer"
+    },
+    {
+      "label": "Typical cost in Korea",
+      "value": "$8,000–$15,000 USD per cycle"
     }
   ],
+  "sections": {
+    "overview": "**IVF (in vitro fertilisation)** stimulates the ovaries to produce multiple mature eggs, retrieves them under sedation, fertilises them with sperm in a laboratory, cultures the resulting embryos, and transfers one or more back to the uterus to establish a pregnancy. Patients from Africa, the Middle East, and Southeast Asia choose Korea for fertility treatment because accredited clinics combine experienced embryology teams, modern laboratory technology, and comprehensive cycle monitoring within structured international-patient pathways.\n\nA full IVF cycle progresses through several overlapping stages:\n\n- **Ovarian stimulation** (10–14 days of daily hormone injections) to grow multiple follicles\n- **Monitoring** (multiple ultrasound and blood-hormone appointments during stimulation)\n- **Egg retrieval** (a brief sedated procedure once follicles reach the target size)\n- **Fertilisation** in the embryology laboratory — conventional insemination or **ICSI** (intracytoplasmic sperm injection, where a single sperm is injected directly into each egg)\n- **Embryo culture** (5–6 days to blastocyst stage)\n- **Optional genetic testing** (**PGT-A** or **PGT-M**) to assess embryo chromosomal status or inherited conditions before transfer\n- **Embryo transfer** — a brief, typically pain-free procedure; surplus good-quality embryos are frozen for future use\n\nKmedTour coordinates the full journey — clinic matching, appointment scheduling, interpreter support, and local accommodation guidance.",
+    "candidacy": "IVF may be recommended for:\n\n- **Tubal factor infertility** — blocked, damaged, or absent fallopian tubes\n- **Male-factor infertility** — low sperm count, poor motility, or abnormal morphology (ICSI is used in these cases)\n- **Unexplained infertility** — a couple or individual who has not conceived after a defined period of trying without a clear cause identified\n- **Endometriosis** affecting fertilisation or implantation\n- **Ovulatory disorders** not resolved with simpler treatments\n- **Diminished ovarian reserve** — lower egg number or quality, where stimulation aims to retrieve the best available eggs\n- **Prior failed IUI** cycles\n- **Single parents or same-sex couples** using donor gametes where legally permitted\n\n**Before starting a cycle, the clinic typically conducts:**\n\n- Day-2 or day-3 baseline blood tests (FSH, LH, AMH, oestradiol) and antral follicle count (AFC) ultrasound — to assess ovarian reserve and plan stimulation\n- Semen analysis (if male partner involved)\n- Uterine assessment (saline sonogram or hysteroscopy) to confirm the uterine cavity is clear\n- General health screening including blood group, infection screening, and thyroid function\n\nA pre-travel consultation with recent test results allows the reproductive specialist to propose a stimulation protocol and realistic success expectation before you travel.",
+    "procedure_steps": "IVF is a multi-step process spanning approximately 30 days.\n\n**Ovarian stimulation (Days 1–10 to 14):**\nDaily self-administered hormone injections (FSH, sometimes with LH) stimulate the ovaries to grow multiple follicles. Monitoring appointments — typically every 2–3 days — use transvaginal ultrasound and blood tests to track follicle growth and hormone levels and adjust the dose.\n\n**Trigger injection:**\nWhen the lead follicles reach the target size, a trigger injection (hCG or GnRH agonist) matures the eggs ready for retrieval, timed precisely 36 hours before the procedure.\n\n**Egg retrieval:**\nPerformed under **light intravenous sedation** in the procedure room. Using transvaginal ultrasound guidance, the embryologist aspirates fluid and eggs from each mature follicle through a fine needle — typically taking 15–30 minutes. Recovery in a monitored area follows.\n\n**Laboratory: fertilisation and culture:**\n\n- Retrieved eggs are evaluated and mature eggs are fertilised — by conventional insemination or **ICSI**\n- Fertilised eggs (zygotes) are cultured in the laboratory over 5–6 days to reach the blastocyst stage\n- The embryologist grades each blastocyst for quality\n\n**Optional: PGT-A/PGT-M (genetic testing):**\nA small cell sample (biopsy) from each blastocyst is sent for chromosomal or gene analysis. Results take about one week. Only chromosomally normal embryos are transferred.\n\n**Embryo transfer:**\nA thin catheter passes through the cervix (no anaesthesia needed) and one embryo — selected for best quality — is placed into the uterus. Excess good-quality embryos are vitrified (flash-frozen) for future cycles. A short rest period follows; most clinics advise normal activity from the same day.\n\n**Pregnancy test:**\nA blood beta-hCG test is performed approximately 10–14 days after transfer to confirm whether implantation has occurred.",
+    "recovery_timeline": "IVF does not require surgical recovery in the conventional sense, but the stimulation phase and post-retrieval period involve rest and monitoring.\n\n**Stimulation phase (approximately Days 1–12):**\n\n- Daily injections — self-administered after instruction\n- Clinic monitoring every 2–3 days; build appointments into your Korea schedule\n- Mild bloating or pelvic heaviness is common as follicles grow\n\n**Egg retrieval day:**\n\n- Sedation means you will need an escort and should not drive\n- Mild cramping and spotting are common and resolve within a day or two\n- Ovarian hyperstimulation syndrome (OHSS) — significant bloating, pain, or rapid weight gain — should be reported promptly; severe OHSS is uncommon but requires monitoring\n\n**Embryo culture phase (Days 1–5 after retrieval):**\n\n- No procedure; the laboratory cultures the embryos and the team provides daily updates\n\n**Transfer day:**\n\n- A brief, typically comfortable procedure; most patients return to light activity the same day\n- The two-week wait for the pregnancy test can be emotionally demanding — the clinic team is available for support\n\n**After the pregnancy test:**\n\n- If positive: early pregnancy monitoring begins; the clinic coordinates handover of records to your home obstetrician\n- If negative: the team discusses the results, remaining frozen embryos, and options for a subsequent frozen embryo transfer (FET) cycle",
+    "cost_breakdown": "The estimated cost for one IVF cycle through KmedTour ranges from **$8,000 to $15,000 USD**. Where you fall in this range depends on:\n\n- Stimulation protocol and medication cost (medications are often the single largest variable cost)\n- Whether ICSI is needed (typically adds a fee to standard insemination)\n- Optional genetic testing: PGT-A (chromosomal screening) or PGT-M (specific gene testing) significantly increases cost\n- Whether donor eggs or donor sperm are used (donor cycles cost more and have different availability by clinic)\n- Number of monitoring visits and ultrasounds during stimulation\n\n**What the quoted price generally covers:**\n\n- Reproductive specialist consultations\n- Ultrasound monitoring during stimulation\n- Egg retrieval procedure and sedation\n- Embryology laboratory fees (fertilisation, culture, embryo grading)\n- Embryo transfer procedure\n- Vitrification and storage of surplus embryos (first year typically included)\n\n**What is typically not included:**\n\n- Stimulation medications (substantial cost — discuss with the clinic)\n- PGT-A or PGT-M testing\n- Donor egg or sperm fees\n- Flights, accommodation, and living costs during the ~30-day stay\n- Subsequent frozen embryo transfer (FET) cycles\n\nKmedTour provides a **written, itemised quotation** so you understand the full cost breakdown before committing.",
+    "why_korea": "Korea has a well-developed fertility sector with clinics operating under regulatory frameworks overseen by the **Ministry of Health and Welfare**. Korea's healthcare system has fostered embryology laboratory standards and clinical practices that many international patients find competitive both in quality and cost.\n\n**Accreditation and oversight:**\n\n- **KOIHA** accreditation covers hospitals and clinics treating international patients and sets quality benchmarks\n- **KHIDI's Medical Korea programme** supports foreign patient access to accredited fertility centres\n\n**Clinical and laboratory approach:**\nAccredited Korean fertility clinics offer the full range of IVF technologies: standard insemination, ICSI, blastocyst culture, vitrification, and embryo genetic testing. Clinics typically offer high monitoring frequency during stimulation — important for adjusting protocols promptly and minimising OHSS risk.\n\n**International patient infrastructure:**\nDedicated international patient coordinators provide scheduling support across the 30-day cycle, interpreter services, and coordination with home-country obstetricians for ongoing pregnancy care.\n\nKmedTour matches patients with an appropriate clinic based on diagnosis, test results, and clinical needs — and coordinates the full stay including accommodation guidance and appointment scheduling."
+  },
+  "costTable": [
+    {
+      "item": "IVF cycle — standard (without genetic testing)",
+      "cost": "$8,000–$11,000"
+    },
+    {
+      "item": "IVF with ICSI",
+      "cost": "$9,000–$12,000"
+    },
+    {
+      "item": "IVF with ICSI + PGT-A (chromosomal screening)",
+      "cost": "$11,000–$15,000"
+    },
+    {
+      "item": "Stimulation medications (estimated, varies)",
+      "cost": "$1,500–$3,500 additional"
+    },
+    {
+      "item": "Frozen embryo transfer (FET) cycle — subsequent cycle",
+      "cost": "$2,000–$4,000 additional"
+    }
+  ],
+  "callouts": [],
+  "keyTakeaways": [
+    "A full IVF cycle spans approximately 30 days in Korea — stimulation, monitoring, egg retrieval, embryo culture, and transfer — and surplus good-quality embryos are vitrified for potential future frozen cycles.",
+    "Stimulation medications are often the largest variable cost and are usually billed separately; ICSI, genetic testing (PGT-A/M), and donor gametes each add significant additional fees that should be confirmed in writing before committing.",
+    "Korean fertility clinics accredited under KOIHA and the Medical Korea programme offer the full range of IVF technologies with dedicated international patient coordinators and high monitoring frequency during stimulation.",
+    "Costs range from $8,000 to $15,000 USD per cycle depending on protocol, ICSI, and testing; an itemised quote is provided before you travel."
+  ],
+  "entities": [
+    {
+      "name": "In vitro fertilisation",
+      "url": "https://en.wikipedia.org/wiki/In_vitro_fertilisation"
+    },
+    {
+      "name": "Intracytoplasmic sperm injection",
+      "url": "https://en.wikipedia.org/wiki/Intracytoplasmic_sperm_injection"
+    },
+    {
+      "name": "Preimplantation genetic testing",
+      "url": "https://en.wikipedia.org/wiki/Preimplantation_genetic_testing"
+    },
+    {
+      "name": "Ovarian hyperstimulation syndrome",
+      "url": "https://en.wikipedia.org/wiki/Ovarian_hyperstimulation_syndrome"
+    },
+    {
+      "name": "Medical tourism in South Korea",
+      "url": "https://en.wikipedia.org/wiki/Medical_tourism_in_South_Korea"
+    },
+    {
+      "name": "Korean Organisation for International Healthcare Accreditation",
+      "url": "https://en.wikipedia.org/wiki/Korean_Organisation_for_International_Healthcare_Accreditation"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the difference between IVF and ICSI?",
+      "a": "In standard IVF, mature eggs are placed together with a prepared sperm sample in a culture dish and fertilisation occurs naturally. In ICSI (intracytoplasmic sperm injection), the embryologist selects a single sperm and injects it directly into each mature egg under a microscope. ICSI is used when semen analysis shows significant abnormalities in count, motility, or morphology, or when prior IVF cycles have had unexpectedly low fertilisation. It adds a laboratory fee but does not change the retrieval or transfer procedures."
+    },
+    {
+      "q": "How many embryos will be transferred?",
+      "a": "Most accredited Korean clinics follow evidence-based guidance recommending single embryo transfer (SET) in appropriate patients — transferring one high-quality blastocyst at a time. This approach substantially reduces the risk of twin or higher-order pregnancy, which carries significant maternal and neonatal risks. Surplus good-quality blastocysts are vitrified for subsequent frozen embryo transfer (FET) cycles. The decision on how many to transfer is made with the reproductive specialist based on your age, embryo quality, and reproductive history."
+    },
+    {
+      "q": "What is ovarian hyperstimulation syndrome (OHSS) and how is it managed?",
+      "a": "OHSS is a response to stimulation hormones in which the ovaries become swollen and fluid can leak into the abdomen. Mild OHSS — bloating, pelvic discomfort — is relatively common and resolves on its own. Moderate OHSS involves more significant swelling and discomfort. Severe OHSS — very large ovaries, significant fluid accumulation, difficulty breathing, reduced urine output — is uncommon and requires medical management. Risk is higher in patients with polycystic ovarian morphology or very high antral follicle counts. Frequent monitoring during stimulation allows dose adjustment to reduce risk, and trigger type can be modified. If OHSS is suspected, the clinic should be contacted immediately."
+    },
+    {
+      "q": "Can I do a frozen embryo transfer (FET) from Korea if I don't want to stay for the fresh transfer?",
+      "a": "Yes. Some patients choose to freeze all embryos after retrieval — a 'freeze-all' strategy — and return for a frozen embryo transfer in a subsequent cycle. This approach is particularly used when OHSS risk is elevated, or when genetic testing (PGT-A/M) is planned (embryo biopsy results take about a week, requiring a frozen cycle anyway). A frozen embryo transfer cycle is shorter and typically less expensive than a fresh IVF cycle. Discuss the freeze-all option with your reproductive specialist at the pre-travel consultation."
+    },
+    {
+      "q": "How do I continue care after returning home?",
+      "a": "If the pregnancy test is positive, KmedTour coordinates transfer of all records — including your monitoring reports, embryology results, transfer details, and early scan images — to your home obstetrician. Early pregnancy monitoring (first trimester scans, beta-hCG follow-up) should be arranged in your home country promptly. If the cycle is unsuccessful, the team reviews the results with you, discusses any frozen embryos remaining, and helps plan whether a frozen embryo transfer cycle in Korea is appropriate."
+    }
+  ],
+  "references": [],
   "images": [
     {
       "src": "/images/procedures/inline/ivf-treatment-1.jpg",
-      "alt": "Fertility specialist consulting a couple about IVF in Korea",
-      "credit": "SHVETS production"
+      "alt": "Fertility specialist consultation at a Korean IVF clinic",
+      "credit": "Gustavo Fring"
     },
     {
       "src": "/images/procedures/inline/ivf-treatment-2.jpg",
-      "alt": "Embryology lab work during IVF treatment in Korea",
-      "credit": "Zakir Rushanly"
+      "alt": "Embryology laboratory with eggs during IVF treatment",
+      "credit": "www.kaboompics.com"
     },
     {
       "src": "/images/procedures/inline/ivf-treatment-3.jpg",
-      "alt": "Couple after IVF treatment at a Korean fertility clinic",
-      "credit": "Tima Miroshnichenko"
+      "alt": "Happy couple after successful IVF treatment at a Korean clinic",
+      "credit": "RDNE Stock project"
     }
   ]
 }

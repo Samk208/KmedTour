@@ -2,16 +2,16 @@
   "_comment": "Per-procedure inline image scenes (consultation → procedure → recovery). 3 varied, on-topic queries each; alt text is written into the sidecar for SEO/a11y. Distinct from the hero query in treatment-image-queries.json.",
   "gastric-bypass": [
     {
-      "q": "bariatric surgery consultation doctor patient",
-      "alt": "Bariatric surgeon consulting a patient before gastric bypass in Korea"
+      "q": "bariatric surgeon consultation patient obesity",
+      "alt": "Bariatric surgeon consulting with patient before gastric bypass in Korea"
     },
     {
-      "q": "laparoscopic surgery operating room monitor",
+      "q": "laparoscopic abdominal surgery operating room",
       "alt": "Laparoscopic gastric bypass surgery in a Korean operating room"
     },
     {
-      "q": "healthy balanced meal nutrition plate",
-      "alt": "Post-bariatric nutrition and healthy eating during gastric bypass recovery"
+      "q": "healthy nutrition food post surgery recovery",
+      "alt": "Healthy nutrition foods for recovery after gastric bypass surgery"
     }
   ],
   "cataract-surgery": [
@@ -44,21 +44,21 @@
   ],
   "spinal-fusion": [
     {
-      "q": "doctor spine xray mri consultation patient",
-      "alt": "Spine specialist reviewing an MRI before spinal fusion"
+      "q": "spine MRI review consultation Seoul",
+      "alt": "Spine specialist reviewing MRI scans before spinal fusion in Korea"
     },
     {
-      "q": "spine surgery operating room surgeons",
-      "alt": "Minimally invasive spinal fusion surgery in Seoul"
+      "q": "minimally invasive spine surgery operating room",
+      "alt": "Minimally invasive spinal fusion surgery in a Korean hospital"
     },
     {
-      "q": "physical therapy back rehabilitation patient",
-      "alt": "Physical therapy and rehabilitation after spinal fusion"
+      "q": "spinal rehabilitation physical therapy back",
+      "alt": "Physiotherapy for back rehabilitation after spinal fusion"
     }
   ],
   "acl-reconstruction": [
     {
-      "q": "orthopedic surgeon knee examination patient consultation",
+      "q": "knee consultation orthopedic sports medicine",
       "alt": "Orthopedic surgeon assessing a knee before ACL reconstruction in Korea"
     },
     {
@@ -66,7 +66,7 @@
       "alt": "Arthroscopic ACL reconstruction in a Korean operating room"
     },
     {
-      "q": "knee physical therapy rehabilitation athlete",
+      "q": "knee rehabilitation physical therapy crutches",
       "alt": "Knee rehabilitation and physical therapy after ACL reconstruction"
     }
   ],
@@ -170,16 +170,16 @@
   ],
   "egg-freezing": [
     {
-      "q": "fertility doctor consultation woman clinic",
-      "alt": "Fertility specialist consulting a patient about egg freezing in Korea"
+      "q": "fertility specialist consultation woman clinic",
+      "alt": "Woman consulting with a fertility specialist about egg freezing in Korea"
     },
     {
-      "q": "ivf laboratory embryologist microscope",
-      "alt": "Egg retrieval and cryopreservation in a Korean fertility lab"
+      "q": "egg retrieval cryopreservation laboratory",
+      "alt": "Egg retrieval and cryopreservation in a fertility laboratory"
     },
     {
-      "q": "confident woman planning future wellness",
-      "alt": "Patient after egg freezing at a Korean fertility clinic"
+      "q": "woman fertility clinic relaxed confident",
+      "alt": "Woman feeling confident after egg freezing at a Korean fertility clinic"
     }
   ],
   "facelift": [
@@ -212,58 +212,58 @@
   ],
   "hair-transplant": [
     {
-      "q": "hair specialist scalp consultation patient",
-      "alt": "Hair restoration specialist assessing a patient in Korea"
+      "q": "hair restoration specialist scalp assessment",
+      "alt": "Hair restoration specialist assessing scalp before transplant in Korea"
     },
     {
-      "q": "hair transplant procedure clinic technician",
-      "alt": "Follicular hair transplant procedure at a Korean clinic"
+      "q": "hair follicle transplant surgery scalp",
+      "alt": "Hair follicle transplant procedure on scalp at a Korean clinic"
     },
     {
-      "q": "man confident full hair healthy",
-      "alt": "Fuller hairline after a hair transplant in Korea"
+      "q": "hair growth results before after transplant",
+      "alt": "Hair growth results after hair transplant surgery in Korea"
     }
   ],
   "health-screening": [
     {
-      "q": "doctor patient health checkup consultation",
-      "alt": "Doctor reviewing a comprehensive health screening in Korea"
+      "q": "doctor health checkup review results Korea",
+      "alt": "Doctor reviewing comprehensive health screening results with patient in Korea"
     },
     {
-      "q": "mri ct scan medical imaging hospital",
-      "alt": "Advanced imaging during a Korean comprehensive health screening"
+      "q": "MRI CT scan imaging medical center",
+      "alt": "MRI and CT scan imaging at a Korean medical screening center"
     },
     {
-      "q": "healthy adult wellness lifestyle smiling",
-      "alt": "Patient receiving health screening results in Korea"
+      "q": "patient doctor consultation results discussion",
+      "alt": "Patient and doctor discussing health screening results"
     }
   ],
   "hip-replacement": [
     {
-      "q": "orthopedic surgeon hip consultation senior patient",
-      "alt": "Orthopedic surgeon reviewing a hip X-ray before replacement in Korea"
+      "q": "hip consultation orthopedic",
+      "alt": "Orthopedic surgeon assessing a hip patient in Korea"
     },
     {
-      "q": "joint replacement surgery operating room",
-      "alt": "Total hip replacement surgery in a Korean operating room"
+      "q": "hip replacement surgery operating room",
+      "alt": "Hip replacement surgery in a Korean operating room"
     },
     {
-      "q": "senior walking rehabilitation physical therapy",
-      "alt": "Mobility rehabilitation after hip replacement in Korea"
+      "q": "hip rehabilitation physical therapy",
+      "alt": "Hip rehabilitation physical therapy after hip replacement"
     }
   ],
   "ivf-treatment": [
     {
-      "q": "fertility specialist couple consultation clinic",
-      "alt": "Fertility specialist consulting a couple about IVF in Korea"
+      "q": "fertility specialist consultation clinic Korea",
+      "alt": "Fertility specialist consultation at a Korean IVF clinic"
     },
     {
-      "q": "ivf laboratory embryo microscope embryologist",
-      "alt": "Embryology lab work during IVF treatment in Korea"
+      "q": "embryology laboratory IVF eggs",
+      "alt": "Embryology laboratory with eggs during IVF treatment"
     },
     {
-      "q": "happy couple hopeful family future",
-      "alt": "Couple after IVF treatment at a Korean fertility clinic"
+      "q": "couple fertility clinic happy pregnant",
+      "alt": "Happy couple after successful IVF treatment at a Korean clinic"
     }
   ],
   "knee-replacement": [

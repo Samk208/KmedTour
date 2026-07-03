@@ -1,51 +1,139 @@
 {
   "slug": "egg-freezing",
-  "shortDescription": "Stimulation, retrieval, and vitrification to store eggs for future use at accredited Korean fertility clinics",
-  "sections": {
-    "overview": "Egg freezing collects and preserves a woman's eggs so they can be stored and used to attempt pregnancy at a later time. Many patients from Africa, the Middle East, and Asia choose Korea for this care because its fertility clinics carry steady experience with the freezing technique and offer coordinated support for travelers, allowing the active part of the process to be completed within a short, focused stay.\n\nPeople consider egg freezing for many reasons. Some wish to preserve fertility before medical treatment that could affect the ovaries. Others are not ready to try for pregnancy yet and want to keep options open while they are younger. Whatever the reason, the process is the same: encouraging the ovaries to mature several eggs, collecting them, and freezing them safely for the future.\n\nModern egg freezing uses a method called vitrification, a very rapid cooling technique that helps protect eggs as they are frozen. The frozen eggs are then kept in secure storage until you decide to use them, at which point they can be thawed and fertilized through IVF. Because the storage period can span years, planning ahead with your care team matters.\n\nIt is important to be honest about what freezing does and does not guarantee. Storing eggs preserves the option of using them later, but it does not promise a future pregnancy, and the likelihood of a successful outcome later depends heavily on your age at the time of freezing and other personal factors. Your clinical team will discuss this openly, depending on your case, so your expectations are grounded. This page explains the process and how a stay of around two weeks fits the stimulation and retrieval steps.",
-    "candidacy": "Egg freezing may suit women who want to preserve fertility for the future, whether for personal timing or because of a medical situation that could affect the ovaries, such as upcoming treatment for certain illnesses. It can also be a thoughtful step for those who are not currently planning pregnancy but want to keep future options open.\n\nAge deserves a frank discussion, because it strongly influences this decision. Both the number and the quality of a woman's eggs gradually decline with age, and eggs frozen at a younger age generally hold more potential for later use. This is a gradual pattern rather than a single deadline, so the most useful guidance is personal to you. Your team will explain where you stand based on your own assessment rather than quoting a figure.\n\nA short evaluation helps confirm that freezing is appropriate. This usually includes hormone testing and an ultrasound to estimate how your ovaries are likely to respond to stimulation. General health is also reviewed, since being well supports both the stimulation phase and the procedure itself.\n\nThe number of eggs collected in one stay varies from person to person, and some women choose to undergo more than one collection over time to store a larger number. Whether that is worth considering depends on your case, and your team will give you realistic, individual guidance so you can plan with clear expectations rather than assumptions.",
-    "procedure_steps": "Egg freezing follows the early stages of an IVF cycle but stops once the eggs are collected, since they are stored rather than fertilized straight away. Understanding the sequence helps you plan a stay of about two weeks.\n\nThe process begins with ovarian stimulation. Over roughly ten to twelve days, daily hormone injections encourage several eggs to mature at once instead of the single egg a natural cycle would produce. During this time you attend regular monitoring visits, where ultrasound scans and blood tests let your team adjust your medication to how your body is responding. This stimulation phase makes up most of your time in Korea.\n\nWhen the eggs have matured, a final trigger injection prepares them for collection at a precise time. Egg retrieval is a short procedure carried out under sedation, in which a fine needle guided by ultrasound gently gathers the mature eggs from the ovaries. The step usually takes under half an hour, and you rest afterward before returning to your accommodation.\n\nThe collected eggs then go to the laboratory, where the most suitable mature eggs are frozen using vitrification, a rapid cooling method designed to protect them. Unlike IVF, there is no fertilization or embryo transfer at this stage; the eggs are simply preserved. Your team will tell you how many eggs were suitable for freezing. The initial consultation and your medication schedule can often be coordinated remotely before you arrive, while stimulation, monitoring, retrieval, and freezing all take place during your stay.",
-    "recovery_timeline": "Recovery from egg freezing is generally quick, and your stay is arranged so the active steps happen while you are near your clinic. During the stimulation phase, which spans most of your roughly two-week visit, you may notice bloating, mild tenderness, or tiredness as your ovaries respond to medication. These feelings are common and usually manageable, and your team monitors you throughout to keep the cycle on track.\n\nEgg retrieval is a short procedure, and most people rest for the remainder of that day. Mild cramping and light spotting can follow and typically ease within one to three days. You are advised to avoid strenuous activity and to keep well hydrated during this brief recovery window. Because there is no embryo transfer involved, the process ends once your eggs are safely collected and frozen.\n\nMost patients feel comfortable resuming calm daily activities within a couple of days of retrieval. Your team will confirm that you have settled well before you travel, which is why a stay of around fourteen days comfortably covers stimulation, retrieval, and a short recovery period inside your visit.\n\nWhen to fly home depends on your case. Many people are ready to travel a few days after retrieval, once any tenderness has eased, while others prefer a little more time. Your team will give you personalized advice on travel timing and comfort, depending on your case, so your journey home is calm and you can return knowing your eggs are stored.",
-    "cost_breakdown": "Egg freezing in Korea generally falls within a range of roughly 3,000 to 6,000 US dollars for one collection cycle. The figure for your own treatment depends mainly on the amount of stimulation medication you need, since doses are adjusted to how each body responds. Because of this, quoted ranges are intentionally broad, and you will receive a written estimate after your initial assessment.\n\nFertility medications form a meaningful share of the total. Some women require more medication than others to encourage their eggs to mature, which is a key reason individual costs vary. Monitoring appointments during stimulation and the retrieval procedure itself are usually part of the treatment quote, but it is worth confirming this in writing.\n\nSeveral costs commonly sit outside the headline figure. Long-term storage of your frozen eggs is typically billed separately, often as an annual fee, and it is wise to ask how storage is priced over the years you expect to keep your eggs. International flights, accommodation for your stay, daily living expenses, and translation or concierge support are arranged and paid separately. If you later choose to use your eggs, thawing, fertilization, and embryo transfer are part of a future IVF cycle and carry their own costs. An itemized estimate helps you plan for both the freezing stay and ongoing storage.",
-    "why_korea": "Korea is a considered destination for egg freezing because its fertility clinics handle a high volume of cycles and maintain well-equipped laboratories experienced in vitrification, the rapid freezing method used to preserve eggs. This steady experience supports careful monitoring during stimulation and consistent laboratory handling at the freezing stage. For patients traveling from Africa, the Middle East, and Asia, completing stimulation and retrieval within one short, coordinated stay is a practical benefit.\n\nMedical care in Korea operates within a national framework overseen by the Ministry of Health and Welfare (MOHW), while international patient services are supported by organizations such as the Korea Health Industry Development Institute (KHIDI) and the Korea Institute for Healthcare Accreditation (KOIHA). These bodies support standards and the safe coordination of care for visitors.\n\nMany clinics that welcome international patients provide English-language coordination, help with scheduling, and assistance with the paperwork you will need, including documents for your stay and for long-term storage of your eggs. This support eases the practical side of arranging care far from home, so you can focus on the process itself. Combined with experienced laboratory teams and a stay structured around stimulation and retrieval, this makes Korea a thoughtful option for those preserving fertility for the future."
-  },
-  "faqs": [
+  "shortDescription": "Oocyte cryopreservation — freezing mature eggs to preserve fertility for use at a future time.",
+  "quickAnswer": [
+    "**Egg freezing (oocyte cryopreservation)** uses ovarian stimulation and a brief egg-retrieval procedure to collect mature eggs, which are then vitrified (flash-frozen) and stored in liquid nitrogen — pausing their biological age for use in a future IVF cycle.",
+    "**Best candidates** are women who wish to delay childbearing for personal or professional reasons, those about to undergo chemotherapy or radiation that may damage ovarian function, or those with conditions associated with early ovarian decline.",
+    "**The Korea stay is approximately 14 days**, covering stimulation, monitoring appointments, and the retrieval procedure — no transfer is performed during the egg-freezing cycle itself.",
+    "**Typical cost in Korea: $3,000–$6,000 USD per cycle**, plus medication costs and annual storage fees."
+  ],
+  "keyFacts": [
     {
-      "q": "How will my medical records be transferred to the Korean clinic?",
-      "a": "Before you travel, your coordinator collects your relevant medical history, any hormone results, and prior imaging, then shares them securely with your Korean care team. This lets the clinic assess how your ovaries are likely to respond and plan your stimulation in advance. Sending records early often allows your initial consultation and medication schedule to be arranged remotely, so your stay is more focused. Translated summaries can usually be arranged when needed."
+      "label": "Cycle duration",
+      "value": "Approximately 14 days (stimulation through retrieval)"
     },
     {
-      "q": "Can a companion travel with me for the procedure?",
-      "a": "Yes, and many patients bring a companion for support and reassurance. Egg freezing does not require a partner, since no fertilization happens at this stage, so the choice of who accompanies you is entirely yours. A companion can attend most appointments with you and help during the short recovery after retrieval. Your coordinator can advise on accommodation suited to a two-week stay and assist with logistics for two travelers."
+      "label": "Egg retrieval procedure",
+      "value": "15–30 minutes under sedation"
     },
     {
-      "q": "What kind of visa do I need for a multi-week stay?",
-      "a": "Egg freezing is planned around a stay of about fourteen days, so confirm your entry permission covers this length comfortably. Depending on your nationality, a short-stay visitor visa or a medical visa may apply. Your coordinator can provide a letter from the clinic confirming your treatment dates to support your application. Arrange this early, since processing times differ by country and embassy, and allow a margin around your appointment schedule."
+      "label": "Recommended stay in Korea",
+      "value": "~14 days"
     },
     {
-      "q": "How long can my eggs stay frozen, and how is storage handled?",
-      "a": "Frozen eggs can be stored for an extended period, often years, while you decide whether and when to use them. Storage is usually handled separately from the freezing procedure and billed on its own, commonly as an annual fee. Ask your clinic how storage is priced over time and what paperwork is needed to keep your eggs stored or to transfer them later. Planning storage early avoids surprises down the line."
+      "label": "Storage",
+      "value": "Vitrified eggs stored in liquid nitrogen; annual storage fee applies"
     },
     {
-      "q": "Does freezing my eggs guarantee a pregnancy later?",
-      "a": "No, and it is important to be honest about this. Freezing preserves the option of using your eggs in the future, but it does not promise a pregnancy. The likelihood of a successful outcome later depends heavily on your age at the time of freezing, the number of eggs stored, and other personal factors, and it genuinely varies. Your team will discuss what is realistic for you, depending on your case, without offering a fixed figure."
+      "label": "Future use",
+      "value": "Eggs thawed and used in a future IVF cycle"
+    },
+    {
+      "label": "Typical cost in Korea",
+      "value": "$3,000–$6,000 USD per cycle (plus medications and storage)"
     }
   ],
+  "sections": {
+    "overview": "**Egg freezing (oocyte cryopreservation)** collects mature eggs during a stimulated cycle, vitrifies them using rapid-freeze technology, and stores them in liquid nitrogen — pausing their biological age. When you are ready to attempt pregnancy, the eggs are thawed, fertilised, and transferred in an IVF cycle.\n\nPatients from Africa, the Middle East, and Southeast Asia choose Korean fertility clinics for egg freezing because accredited centres offer **vitrification** (flash-freezing that avoids ice crystal formation and significantly improves egg survival rates compared to older slow-freeze methods), experienced embryology teams, and competitive pricing relative to Western clinics.\n\nThe egg-freezing process follows the same initial stages as a full IVF cycle:\n\n- **Ovarian stimulation** (daily hormone injections for approximately 10–12 days)\n- **Monitoring appointments** (ultrasound and blood tests every 2–3 days)\n- **Trigger injection** to mature the eggs\n- **Egg retrieval** under sedation\n- **Vitrification** of mature eggs in the embryology laboratory\n\nNo embryo transfer occurs during the egg-freezing cycle. The eggs remain stored until you return for a future IVF attempt.\n\nKmedTour coordinates clinic matching, appointment scheduling, interpreter support, and local accommodation guidance for the approximately 14-day stay.",
+    "candidacy": "Egg freezing may be appropriate for:\n\n- **Elective fertility preservation** — women who wish to delay childbearing for personal, professional, or relationship reasons while protecting egg quality\n- **Medical fertility preservation before cancer treatment** — chemotherapy, radiation, or surgery that may damage ovarian function; timing here is urgent and the clinic can prioritise scheduling\n- **Conditions associated with early ovarian decline** — such as Turner syndrome (mosaic forms), BRCA gene mutations (when bilateral salpingo-oophorectomy is planned), or a family history of early menopause\n- **Prior to gender-affirming hormone treatment** — to preserve fertility before hormonal changes affect egg quality\n\n**Ovarian reserve assessment is central to candidacy:**\n\nThe clinic will review:\n\n- **AMH (anti-Müllerian hormone)** blood test — a marker of ovarian reserve\n- **Antral follicle count (AFC)** on baseline ultrasound — counts the small follicles visible at the start of the cycle\n- **Day-2/3 FSH and oestradiol** — additional reserve markers\n\nThese results help the clinic predict how many eggs are likely to be retrieved. The number of mature eggs needed for a reasonable future chance of pregnancy depends on your age and goals — the reproductive specialist will discuss realistic expectations based on your reserve assessment.\n\nA pre-travel video consultation with recent AMH results and an AFC ultrasound allows a personalised plan before you travel.",
+    "procedure_steps": "The egg-freezing cycle follows the same first stages as an IVF cycle, with vitrification at the end instead of transfer.\n\n**Ovarian stimulation (approximately Days 1–12):**\nDaily self-administered hormone injections stimulate the ovaries to grow multiple follicles. Monitoring appointments every 2–3 days track follicle growth and hormone levels.\n\n**Trigger injection:**\nWhen follicles reach the target size, a trigger injection times final egg maturation precisely 36 hours before retrieval.\n\n**Egg retrieval (approximately Day 14):**\nUnder **light intravenous sedation**, the embryologist uses transvaginal ultrasound guidance to aspirate each mature follicle through a fine needle. The procedure typically takes 15–30 minutes.\n\n**Vitrification:**\nMature eggs (MII stage) are identified in the laboratory and vitrified — flash-frozen using cryoprotectant solutions and stored in liquid nitrogen straws. Immature eggs cannot be vitrified and are not stored.\n\n**After retrieval:**\nYou receive a report of how many mature eggs were collected and vitrified. Mild cramping or bloating may follow retrieval and typically resolves within a day or two. A brief recovery observation period follows before discharge.\n\n**Future use:**\nWhen you are ready to attempt pregnancy, a **frozen embryo transfer (FET) cycle** thaws the eggs, fertilises them (usually with ICSI), cultures the resulting embryos, and transfers one to the uterus.",
+    "recovery_timeline": "Egg freezing does not require surgical recovery in the conventional sense, but the stimulation phase has a structured monitoring schedule and the retrieval day involves sedation.\n\n**Stimulation phase (approximately Days 1–12):**\n\n- Daily injections — self-administered after clinic instruction on day one\n- Monitoring appointments every 2–3 days — plan your Korea schedule to include these\n- Increasing fullness or bloating as follicles grow is common and expected\n- Report significant abdominal pain, rapid weight gain, or difficulty breathing promptly (these may indicate OHSS)\n\n**Retrieval day:**\n\n- You will need an escort; do not drive after sedation\n- Mild cramping and light spotting are common and resolve quickly\n- Most patients rest the retrieval day and resume normal activity the following day\n\n**After retrieval:**\n\n- Your normal menstrual cycle resumes after the next period\n- Egg-freezing does not affect future natural fertility\n- The clinic provides a written report of eggs retrieved and vitrified before you leave\n\n**Storage:**\n\n- Eggs are stored in the clinic's liquid nitrogen tanks under regulated conditions\n- Annual storage fees apply — confirm the clinic's storage terms and what happens if you wish to transfer eggs internationally in the future",
+    "cost_breakdown": "The estimated cost for one egg-freezing cycle through KmedTour ranges from **$3,000 to $6,000 USD**. This covers the clinic procedure costs but excludes medication and storage fees, which are significant:\n\n**What the cycle fee generally covers:**\n\n- Reproductive specialist consultations\n- Ultrasound monitoring during stimulation\n- Egg retrieval procedure and sedation\n- Embryology laboratory fees: egg identification, maturity assessment, and vitrification\n- First-year egg storage (confirm with clinic)\n\n**Key additional costs:**\n\n- **Stimulation medications:** typically $1,500–$3,000 depending on protocol and ovarian reserve\n- **Annual egg storage fees** after the first year\n- **Future FET cycle cost** when you return to use the eggs (typically $2,000–$5,000 plus medications)\n- International flights, accommodation, and living costs during the ~14-day stay\n\nMultiple cycles are sometimes needed to collect enough eggs — the reproductive specialist will discuss realistic targets based on your ovarian reserve before you decide to travel.\n\nKmedTour provides a **written, itemised quotation** so you understand the full financial picture.",
+    "why_korea": "Korean fertility clinics have adopted **vitrification** as the standard freezing method, replacing older slow-freeze techniques. Vitrification dramatically improves egg survival on thaw and is now standard at accredited international fertility centres.\n\n**Accreditation and oversight:**\n\n- **KOIHA** (Korean Organisation for International Healthcare Accreditation) sets quality and safety benchmarks for clinics treating international patients\n- **KHIDI's Medical Korea programme** supports foreign patient access to accredited fertility centres\n\n**Clinical and laboratory approach:**\nAccredited clinics offer individual stimulation protocol design based on ovarian reserve testing, frequent monitoring during stimulation to minimise OHSS risk, and experienced embryology teams for vitrification and future thaw procedures.\n\n**International patient infrastructure:**\nDedicated international patient coordinators handle scheduling across the monitoring-intensive 14-day cycle, provide interpreter services, and coordinate records transfer for future use in the patient's home country.\n\nKmedTour matches patients to an appropriate clinic based on their reserve assessment, discusses realistic outcome expectations, and coordinates the full stay."
+  },
+  "costTable": [
+    {
+      "item": "Egg-freezing cycle — clinic fee (monitoring, retrieval, vitrification)",
+      "cost": "$3,000–$6,000"
+    },
+    {
+      "item": "Stimulation medications (estimated — varies by protocol)",
+      "cost": "$1,500–$3,000 additional"
+    },
+    {
+      "item": "Annual egg storage fee (after first year)",
+      "cost": "Clinic-specific; confirm in writing"
+    },
+    {
+      "item": "Future FET cycle to use frozen eggs",
+      "cost": "$2,000–$5,000 additional"
+    },
+    {
+      "item": "Second egg-freezing cycle (if needed for egg target)",
+      "cost": "$3,000–$6,000 additional"
+    }
+  ],
+  "callouts": [],
+  "keyTakeaways": [
+    "Egg freezing uses vitrification — flash-freeze technology — to preserve mature eggs collected during a stimulated cycle; the Korea stay is approximately 14 days for stimulation, monitoring, and retrieval, with no transfer performed during this cycle.",
+    "Stimulation medications add $1,500–$3,000 to the cycle fee, and annual storage costs apply; multiple cycles are sometimes needed to reach a meaningful egg number — discuss realistic targets based on your AMH and AFC at the pre-travel consultation.",
+    "Korean fertility clinics accredited under KOIHA use vitrification as the standard method and offer individual protocol design with frequent monitoring to manage OHSS risk.",
+    "Costs are $3,000–$6,000 per cycle for clinic fees, plus medications and storage; a future frozen embryo transfer cycle will incur additional costs when you return to use the eggs."
+  ],
+  "entities": [
+    {
+      "name": "Oocyte cryopreservation",
+      "url": "https://en.wikipedia.org/wiki/Oocyte_cryopreservation"
+    },
+    {
+      "name": "Vitrification (cryopreservation)",
+      "url": "https://en.wikipedia.org/wiki/Vitrification_(cryopreservation)"
+    },
+    {
+      "name": "Anti-Müllerian hormone",
+      "url": "https://en.wikipedia.org/wiki/Anti-M%C3%BCllerian_hormone"
+    },
+    {
+      "name": "Ovarian hyperstimulation syndrome",
+      "url": "https://en.wikipedia.org/wiki/Ovarian_hyperstimulation_syndrome"
+    },
+    {
+      "name": "Medical tourism in South Korea",
+      "url": "https://en.wikipedia.org/wiki/Medical_tourism_in_South_Korea"
+    },
+    {
+      "name": "Korean Organisation for International Healthcare Accreditation",
+      "url": "https://en.wikipedia.org/wiki/Korean_Organisation_for_International_Healthcare_Accreditation"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many eggs do I need to freeze?",
+      "a": "The number of eggs needed for a reasonable chance of future pregnancy depends on your age at the time of freezing and your personal pregnancy goals. Younger women's eggs have a higher chance of leading to a successful pregnancy after thaw and fertilisation. The reproductive specialist will use your ovarian reserve markers — AMH, antral follicle count, and age — to estimate how many eggs one cycle is likely to produce and how many you would need to feel confident about your future options. Some women complete one cycle and feel satisfied; others choose to return for additional cycles if the first did not yield their target number."
+    },
+    {
+      "q": "Does egg freezing affect future natural fertility?",
+      "a": "No. The stimulation cycle and retrieval do not deplete the overall ovarian reserve in a clinically meaningful way. Ovaries contain a large pool of follicles at birth; each stimulation cycle recruits follicles from the pool that would otherwise be lost in that natural cycle. Multiple stimulation cycles in a short time are generally safe but should be discussed with the reproductive specialist based on your reserve and response. Your normal menstrual cycle resumes after the next period following retrieval."
+    },
+    {
+      "q": "How long can eggs be stored?",
+      "a": "Vitrified eggs can be stored for many years. Most regulatory frameworks in countries where fertility preservation is practised permit storage for a defined period — commonly five to ten years, with options to extend. Because storage regulations differ by country, it is important to understand the Korean clinic's specific storage policies and what your options are if you wish to transport eggs to another country for use in the future. Confirm all storage terms, annual fees, and international transport arrangements in writing before proceeding."
+    },
+    {
+      "q": "What happens when I want to use my frozen eggs?",
+      "a": "When you are ready to attempt pregnancy, you return for a frozen embryo transfer (FET) cycle. The frozen eggs are thawed — typically one cohort at a time — and fertilised using ICSI. The resulting embryos are cultured for several days, and one blastocyst is selected for transfer. Unused fertilised eggs (embryos) can be re-frozen as embryos. The FET cycle is shorter and less intensive than a full stimulation cycle: the uterus is prepared with hormonal medications over approximately two weeks, after which transfer occurs."
+    },
+    {
+      "q": "Is there an age limit for egg freezing?",
+      "a": "Egg freezing is most effective when done at a younger age, when egg quality and ovarian reserve are higher. Most accredited clinics set an upper age limit for elective egg freezing — commonly in the early-to-mid forties — based on the significant decline in egg quality and quantity that occurs with age. At older ages, the likelihood of retrieving viable eggs and achieving a successful future pregnancy decreases substantially, and the clinic should give you a frank assessment of realistic outcomes based on your reserve markers before you proceed."
+    }
+  ],
+  "references": [],
   "images": [
     {
       "src": "/images/procedures/inline/egg-freezing-1.jpg",
-      "alt": "Fertility specialist consulting a patient about egg freezing in Korea",
-      "credit": "Thirdman"
+      "alt": "Woman consulting with a fertility specialist about egg freezing in Korea",
+      "credit": "Gustavo Fring"
     },
     {
       "src": "/images/procedures/inline/egg-freezing-2.jpg",
-      "alt": "Egg retrieval and cryopreservation in a Korean fertility lab",
-      "credit": "Vladimir Srajber"
+      "alt": "Egg retrieval and cryopreservation in a fertility laboratory",
+      "credit": "www.kaboompics.com"
     },
     {
       "src": "/images/procedures/inline/egg-freezing-3.jpg",
-      "alt": "Patient after egg freezing at a Korean fertility clinic",
-      "credit": "Alex Green"
+      "alt": "Woman feeling confident after egg freezing at a Korean fertility clinic",
+      "credit": "Marta Branco"
     }
   ]
 }

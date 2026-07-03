@@ -1,64 +1,138 @@
 {
   "slug": "spinal-fusion",
-  "shortDescription": "Surgery that permanently joins two or more vertebrae to stop painful motion and stabilise the spine.",
+  "shortDescription": "Surgery that permanently joins two or more vertebrae to eliminate painful motion and stabilise the spine.",
+  "quickAnswer": [
+    "**Spinal fusion** permanently connects two or more vertebrae using bone graft and fixation hardware — rods, screws, or cages — eliminating the painful movement between them while maintaining overall spinal function above and below.",
+    "**Best candidates** are adults with degenerative disc disease, spondylolisthesis, spinal stenosis causing nerve compression, or spinal instability that has not responded to extended conservative treatment including physiotherapy and injections.",
+    "**Korea stay is 7–14 days:** patients typically stand and begin walking within days of surgery; hospital stay is usually 5–7 nights, with supervised physiotherapy continuing before departure.",
+    "**Typical cost in Korea: $18,000–$40,000 USD**, depending on the number of levels fused, the surgical approach, and implant selection."
+  ],
+  "keyFacts": [
+    {
+      "label": "Procedure time",
+      "value": "2–5 hours (varies with levels fused)"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "General"
+    },
+    {
+      "label": "Hospital stay",
+      "value": "5–7 days"
+    },
+    {
+      "label": "Recommended stay in Korea",
+      "value": "7–14 days"
+    },
+    {
+      "label": "Recovery",
+      "value": "Walking within days; return to sedentary work over weeks; full fusion solidifies over months"
+    },
+    {
+      "label": "Typical cost in Korea",
+      "value": "$18,000–$40,000 USD"
+    }
+  ],
   "sections": {
-    "overview": "Spinal fusion is an orthopedic operation that permanently joins two or more vertebrae so the treated segment no longer moves, removing a common source of mechanical back or neck pain and restoring stability. Patients travel to Korea for this procedure because the country is a recognised centre for minimally invasive spine surgery, where dedicated high-volume spine hospitals perform large numbers of fusions for international patients each year. The surgeon places a bone graft between the vertebrae and holds them with instrumentation such as screws, rods, and interbody cages. Over the following months the graft consolidates into a single solid bone bridge. Fusion is usually considered when a structural problem has not improved with conservative care like physiotherapy, medication, or injections. Typical indications include degenerative disc disease, spondylolisthesis (a slipped vertebra), scoliosis and other spinal deformities, fractures, and instability that remains or develops after a decompression. The operation can be performed in the neck, where an anterior cervical discectomy and fusion (ACDF) is common, or in the lower back as a lumbar fusion. Korean spine teams review your MRI and CT images before accepting a case and decide whether fusion is appropriate or whether a motion-preserving alternative would serve you better. Minimally invasive techniques use smaller incisions and disturb less surrounding muscle and tissue than traditional open surgery, which can mean less blood loss and a shorter, more comfortable early recovery for suitable candidates. The goal is realistic and durable: a stable spine, meaningful relief of the pain caused by the unstable or degenerated segment, and a return to everyday function. Outcomes vary by case depending on the diagnosis, the number of levels treated, and individual health, so the surgical team explains what improvement you can reasonably expect for your specific spine.",
-    "candidacy": "You are typically a candidate for spinal fusion when imaging confirms a structural problem of the spine that has not responded to a reasonable course of conservative treatment such as physiotherapy, activity modification, medication, or injections. Common qualifying conditions include degenerative disc disease, spondylolisthesis, scoliosis or other deformity, vertebral fracture, and instability that persists or appears after a decompression procedure. Before accepting an international patient, a Korean spine team reviews recent MRI and CT scans together with your clinical history to confirm that the pain and any neurological symptoms correspond to the level they intend to treat. They also weigh whether fusion is the most appropriate option or whether a motion-preserving approach, such as disc replacement or decompression alone, would suit your case better. Candidacy depends on general fitness for surgery and anaesthesia as well, so existing medical conditions, smoking status, and bone quality are part of the assessment. Patients whose pain is diffuse, unexplained by the imaging, or driven mainly by factors unrelated to spinal structure are less likely to benefit and may be steered toward non-surgical care. Because fusion permanently removes motion at the treated segment, the team aims to fuse only the levels that are genuinely responsible for symptoms. A remote consultation and image review usually take place before you travel, so you arrive in Korea with a clear plan rather than an open question about whether surgery is the right step.",
-    "procedure_steps": "Planning begins with a review of your MRI and CT imaging, after which the surgical team confirms the levels to be treated and the approach. On the day of surgery you receive general anaesthesia. The surgeon reaches the spine through an incision whose size and location depend on whether the fusion is cervical or lumbar and whether a minimally invasive or open technique is used; minimally invasive approaches use smaller incisions and tubular retractors to limit muscle disruption. Any damaged disc material or bone compressing nearby nerves is removed so the nerves have room. The surgeon then prepares the bone surfaces and places a bone graft, sometimes within an interbody cage, into the space between the vertebrae to encourage them to grow together. Instrumentation such as screws and rods is fixed to hold the vertebrae in the correct position while fusion takes place. Imaging is used during the operation to check implant placement, and the incision is then closed. The treated vertebrae are stabilised immediately by the hardware, but true bony fusion develops gradually over the following months as the graft consolidates. After surgery you are monitored as an inpatient, helped to stand and walk early under guidance, and given instructions on movement restrictions, pain control, and the rehabilitation that supports a sound fusion.",
-    "recovery_timeline": "Recovery from spinal fusion unfolds in stages. Most patients stay in hospital and in Korea for a few days up to roughly two weeks, with the longer end reflecting multi-level or more complex procedures. Walking usually begins within a day of surgery, supported by the care team, and early activity is encouraged while bending, lifting, and twisting are restricted to protect the developing fusion. Many people doing desk-based work return to it around four to six weeks, depending on the levels treated and how physical the role is. Physically demanding activity resumes much later and only with the surgeon's clearance. The bone graft consolidates into a solid fusion gradually, typically over about six to twelve months, and your surgeon may keep certain activity restrictions in place during this consolidation period. A structured rehabilitation plan helps you rebuild strength and mobility safely as healing progresses. Long-haul flying home is scheduled only when your surgeon confirms you are ready, and the team advises on blood-clot precautions for the journey, since prolonged immobility on a long flight raises clot risk after surgery. Follow-up imaging or remote review may be arranged so your home physician and the Korean team can track how the fusion is maturing. Because healing depends on your diagnosis, the number of levels, and your overall health, the surgical team gives you a timeline tailored to your case rather than a fixed schedule.",
-    "cost_breakdown": "The total cost of spinal fusion in Korea generally falls between USD 18,000 and USD 40,000, and where a particular case sits within that range depends on several factors. The number of vertebral levels fused is one of the largest drivers: a single-level cervical fusion sits toward the lower end, while multi-level or complex deformity corrections move toward the upper end. The implants used, including screws, rods, and interbody cages, and the surgical approach, whether minimally invasive or open, also affect the price, as does the choice of hospital. In a medical-tourism context, Korean cervical fusion is often quoted in the region of USD 14,000 to 28,000, with multi-level and more complex lumbar or deformity cases costing more. A package quote typically bundles the surgeon's and anaesthesia fees, the implants, operating-room and inpatient hospital charges, and pre-operative and post-operative imaging, and many also include early rehabilitation. Because every spine is different, the precise figure is confirmed only after the team reviews your imaging and finalises the surgical plan, so the range should be treated as a guide rather than a fixed price. Ask for an itemised written quote that states exactly which implants, imaging, hospital days, and rehabilitation sessions are covered, and clarify what is not included, such as flights, accommodation outside the hospital stay, and any extended physiotherapy. This makes it straightforward to compare offers and budget for the full trip.",
-    "why_korea": "Korea is a recognised destination for spine surgery, and minimally invasive techniques in particular, which is a central reason patients travel there for fusion. Dedicated, high-volume spine hospitals concentrate their expertise on the spine and treat substantial numbers of international patients, so their teams are experienced both in the surgery itself and in coordinating care for travellers. Minimally invasive fusion, where it is suitable, uses smaller incisions and disturbs less surrounding muscle and tissue than traditional open surgery, which can support a more comfortable early recovery. Korean hospitals commonly provide modern imaging and operating facilities and structured rehabilitation programmes, and international patient services help arrange remote image review, language support, and the practical side of a medical trip. The care pathway typically starts before you arrive, with a spine team reviewing your MRI and CT scans to confirm that fusion is appropriate and to plan the levels and approach, so the surgical decision is made carefully rather than rushed. This combination of focused surgical expertise, minimally invasive options, and organised support for overseas patients is what draws people from abroad to consider Korea for spinal fusion. As with any spine surgery, the right choice depends on your specific diagnosis, and the value of travelling lies in being assessed by an experienced team that decides honestly whether fusion, a motion-preserving alternative, or continued conservative care best fits your situation."
+    "overview": "**Spinal fusion** permanently connects two or more vertebrae, eliminating the painful motion between them while preserving function in the rest of the spine. Patients from Africa, the Middle East, and Southeast Asia choose Korea for spinal surgery because accredited hospitals combine experienced spine teams, modern implant systems, and intraoperative neuromonitoring within coordinated care pathways.\n\nBetween each vertebra sits an **intervertebral disc** — a cushion that absorbs load and allows movement. When discs degenerate, collapse, or shift out of position, they can cause:\n\n- **Axial pain** — deep aching in the back or neck\n- **Radiculopathy** — shooting pain, numbness, or weakness down an arm or leg from nerve compression\n- **Myelopathy** — spinal cord compression causing weakness or coordination problems\n\nFusion works by joining the painful motion segment so that load is shared across solid bone rather than through a diseased disc or unstable joint. Bone graft — from the patient's own body, a donor, or a synthetic source — fills the space and gradually turns into solid bone over months.\n\nModern approaches include **TLIF** (transforaminal), **PLIF** (posterior), **ALIF** (anterior), and **XLIF/LLIF** (lateral) — the right technique depends on the level and cause of your problem.\n\nKmedTour coordinates pre-arrival imaging review, interpreter support, and a written physiotherapy handover plan.",
+    "candidacy": "You may be a candidate for spinal fusion if you have a confirmed spinal condition causing persistent symptoms not resolved by conservative care:\n\n- **Degenerative disc disease** with confirmed disc collapse and axial pain\n- **Spondylolisthesis** (vertebral slippage) causing instability or nerve compression\n- **Spinal stenosis** with leg symptoms (claudication, weakness, numbness) not controlled by injections\n- **Disc herniation** with persistent nerve symptoms after adequate conservative management\n- **Spinal instability** from prior surgery, trauma, or tumour\n\n**Conservative care that should typically be tried first:**\n\nPhysiotherapy, structured pain management, and image-guided injections over an adequate period. Fusion is not first-line treatment for back pain without clear structural cause.\n\n**Before approving surgery, the team reviews:**\n\n- MRI (and CT where needed) confirming the structural problem at the intended level\n- Cardiovascular fitness for general anaesthesia\n- Diabetes control and smoking history (smoking significantly impairs fusion and is a contraindication at many centres)\n- Bone density (osteoporosis affects implant fixation)\n- Active infection\n\nA pre-travel video consultation with your recent imaging allows the spine surgeon to assess your case, discuss the approach, and confirm suitability before you book.",
+    "procedure_steps": "Spinal fusion is performed under **general anaesthesia**. Procedure length varies from about two hours for a single-level fusion to five or more hours for multi-level or revision cases.\n\n**Approach selection:**\nThe surgeon chooses the approach based on the location and nature of your problem:\n\n- **Posterior (PLIF/TLIF):** approach from the back; most common for lumbar fusion\n- **Anterior (ALIF):** approach from the front of the abdomen; allows a larger disc space cage\n- **Lateral (XLIF/LLIF):** approach from the side through a small flank incision; less blood loss for certain cases\n\n**Decompression:**\nIf nerve compression is present, the surgeon removes the offending material — disc fragment, bone spur, or thickened ligament — first, to relieve nerve pressure.\n\n**Implant placement:**\nA cage (titanium or PEEK) filled with bone graft is placed in the prepared disc space to restore height and alignment. Pedicle screws and connecting rods fix the segment above and below the fusion level.\n\n**Bone grafting:**\nBone graft provides the biological scaffold for fusion. Options include:\n\n- Autograft from the patient's own iliac crest or local bone\n- Allograft (donor bone)\n- Synthetic bone substitute\n\n**Intraoperative neuromonitoring (IONM)** continuously checks nerve function throughout the procedure.\n\nThe incision is closed and a drain may be placed briefly. Early mobilisation typically begins the next day.",
+    "recovery_timeline": "Recovery begins within 24 hours of surgery and continues for many months as the bone fusion solidifies. The Korea stay supports the critical early phase.\n\n**Day 1 (in hospital):**\n\n- Most patients stand and take first steps with physiotherapist support within 24 hours\n- Pain is managed with intravenous and oral medication\n- A brace may be prescribed — wear guidance is surgeon-specific\n\n**Days 2–7 (inpatient):**\n\n- Progressive walking, stair practice, and safe movement education\n- Drain removed (if placed) within 2 days\n- Wound monitoring and swelling management\n\n**Days 7–14 (pre-departure):**\n\n- Continued physiotherapy focused on safe movement, gentle core activation, and walking endurance\n- Surgeon confirms wound status and clears long-haul flight\n- KmedTour provides a **written rehabilitation plan**, operative summary, and implant details for your home team\n\n**Months 1–3 and beyond (at home):**\n\n- Avoid heavy lifting, bending, and twisting in the early months — your surgeon specifies exact restrictions\n- Bone fusion solidifies gradually over several months; imaging at follow-up confirms progress\n- Return to sedentary work: typically several weeks; manual or physical work: longer, surgeon-guided\n- Smoking must be avoided completely — it is one of the most consistent predictors of fusion failure\n\nArrange a local spinal or orthopaedic review after returning. Report new weakness, numbness, bladder or bowel changes, fever, or wound problems promptly.",
+    "cost_breakdown": "The estimated cost for spinal fusion through KmedTour ranges from **$18,000 to $40,000 USD**. Where you fall in this range depends primarily on:\n\n- Number of levels fused (single-level vs multi-level)\n- Surgical approach (posterior, anterior, or combined)\n- Implant selection: cage material, pedicle screw system, bone graft type\n- Whether a decompression procedure is performed at the same time\n- Hospital stay length\n\n**What the quoted price generally covers:**\n\n- Surgeon, assistant, and anaesthesia fees\n- Operating room, implants, and intraoperative neuromonitoring\n- Inpatient hospital stay (typically 5–7 nights)\n- Standard medications, blood transfusion if needed, drain management\n- Inpatient physiotherapy during admission\n- Pre-operative imaging review and tests on arrival\n\n**What is typically not included:**\n\n- International flights and visa fees\n- Accommodation before and after the hospital stay\n- Post-discharge brace cost\n- Extended rehabilitation and follow-up at home\n\nKmedTour provides a **written, itemised quotation** after the surgeon reviews your imaging.",
+    "why_korea": "Korea is an established destination for complex spinal surgery, with hospitals accredited under national and international standards and regulated by the **Ministry of Health and Welfare**.\n\n**Accreditation and oversight:**\n\n- **KOIHA** (Korean Organisation for International Healthcare Accreditation) sets quality and safety benchmarks for hospitals treating international patients\n- **KHIDI's Medical Korea programme** supports foreign patient access to accredited facilities\n- These frameworks reflect country-level governance, not just individual hospital reputation\n\n**Clinical approach:**\nAccredited Korean hospitals offer a range of fusion techniques including minimally invasive approaches that reduce muscle damage and aim to shorten inpatient stay. Intraoperative neuromonitoring is standard at major centres. Physiotherapy is integrated into the care pathway from the first day after surgery.\n\n**International patient infrastructure:**\nDedicated international patient departments at accredited hospitals provide interpreter services, structured discharge planning, and coordination with the patient's home medical team.\n\nKmedTour adds pre-arrival imaging review, hospital matching, and a written rehabilitation handover for your home physiotherapist — so care planned in Korea continues after you return."
   },
+  "costTable": [
+    {
+      "item": "Single-level lumbar fusion (TLIF or PLIF)",
+      "cost": "$18,000–$26,000"
+    },
+    {
+      "item": "Two-level lumbar fusion",
+      "cost": "$24,000–$34,000"
+    },
+    {
+      "item": "Three or more levels / complex reconstruction",
+      "cost": "$32,000–$40,000+"
+    },
+    {
+      "item": "Cervical fusion (1–2 levels, ACDF)",
+      "cost": "$18,000–$28,000"
+    },
+    {
+      "item": "Hospital stay (5–7 nights, standard room)",
+      "cost": "Typically included in package"
+    }
+  ],
+  "callouts": [],
+  "keyTakeaways": [
+    "Spinal fusion permanently joins painful motion segments using bone graft and fixation hardware; the surgical approach — posterior, anterior, or lateral — is selected based on your specific condition and imaging.",
+    "Bone fusion solidifies over months: early restrictions on bending, lifting, and twisting protect the implants while the graft matures — and smoking must be stopped completely, as it is a leading cause of fusion failure.",
+    "Korean hospitals accredited under KOIHA combine experienced spine teams, intraoperative neuromonitoring, minimally invasive options, and integrated physiotherapy within international-patient care pathways.",
+    "Costs range from $18,000 to $40,000 USD depending on levels fused, approach, and implants; an itemised quote is provided after the surgeon reviews your imaging."
+  ],
+  "entities": [
+    {
+      "name": "Spinal fusion",
+      "url": "https://en.wikipedia.org/wiki/Spinal_fusion"
+    },
+    {
+      "name": "Intervertebral disc",
+      "url": "https://en.wikipedia.org/wiki/Intervertebral_disc"
+    },
+    {
+      "name": "Spondylolisthesis",
+      "url": "https://en.wikipedia.org/wiki/Spondylolisthesis"
+    },
+    {
+      "name": "Spinal stenosis",
+      "url": "https://en.wikipedia.org/wiki/Spinal_stenosis"
+    },
+    {
+      "name": "Medical tourism in South Korea",
+      "url": "https://en.wikipedia.org/wiki/Medical_tourism_in_South_Korea"
+    },
+    {
+      "name": "Korean Organisation for International Healthcare Accreditation",
+      "url": "https://en.wikipedia.org/wiki/Korean_Organisation_for_International_Healthcare_Accreditation"
+    }
+  ],
   "faqs": [
     {
-      "q": "What is the difference between open and minimally invasive spinal fusion?",
-      "a": "Open fusion uses a larger incision and moves more muscle aside to reach the spine, while minimally invasive surgery uses smaller incisions and tubular retractors to disturb less tissue. Korea is recognised for minimally invasive spine work, which can mean less blood loss and a more comfortable early recovery for suitable patients. Not every case qualifies for the minimally invasive approach, so the surgical team decides based on your diagnosis and the levels involved."
+      "q": "How long does it take for a spinal fusion to fully heal?",
+      "a": "Bone fusion is a gradual biological process. The implants provide immediate mechanical stability, but the bone graft takes many months to fully solidify into mature bone — a process confirmed by follow-up imaging. Early restrictions on bending, twisting, and lifting protect the hardware while the graft matures. Your surgeon will specify activity restrictions and follow-up imaging timelines based on the number of levels fused and the bone graft used."
     },
     {
-      "q": "How many levels will be fused, and how does that affect cost and recovery?",
-      "a": "The number of vertebrae fused is set by your diagnosis and confirmed from your MRI and CT scans, and the team aims to fuse only the levels causing symptoms. Single-level fusions sit toward the lower end of the cost range and generally recover faster, while multi-level or complex cases cost more, may need a longer stay, and can take longer to rehabilitate. Your final level count and quote are confirmed after the imaging review."
+      "q": "Will fusion cause problems in the vertebrae above and below?",
+      "a": "Adjacent segment disease — accelerated wear at the levels next to a fusion — is a recognised long-term consideration. It occurs because fused segments transfer more load to neighbouring discs. The risk is higher with multi-level fusions and in patients who already have degeneration at adjacent levels. The surgeon selects the minimum number of levels required to address your problem, and post-operative physiotherapy focuses on strengthening surrounding muscles to distribute load effectively. Most patients with adjacent segment changes are managed without further surgery."
     },
     {
-      "q": "When is it safe to fly home after spinal fusion?",
-      "a": "Long-haul flying is scheduled only when your surgeon confirms you are ready, which often means staying in Korea for a few days up to around two weeks depending on the procedure. Because prolonged immobility on a long flight raises the risk of blood clots after surgery, the team advises on clot precautions for the journey, such as movement, hydration, and any recommended measures. Do not book a fixed return flight until the surgical team has cleared you to travel."
+      "q": "Can I fly long-haul after spinal fusion?",
+      "a": "Flying is generally possible several days after surgery once the immediate post-operative phase has passed, early mobilisation is established, and the surgeon has confirmed wound integrity. Long-haul flights after any spinal surgery carry some risk of blood clots; you will receive guidance on compression stockings, staying hydrated, and gentle movement during the flight. Confirm flying clearance with your surgeon before booking your return ticket."
     },
     {
-      "q": "What does a spinal fusion package usually include?",
-      "a": "A package quote commonly covers the surgeon's and anaesthesia fees, the implants such as screws, rods, and cages, operating-room and inpatient hospital charges, and pre-operative and post-operative imaging, and many include early rehabilitation. Items like flights, accommodation outside the hospital stay, and extended physiotherapy are often separate. Ask for an itemised written quote stating exactly which implants, imaging, hospital days, and rehabilitation sessions are included so you can compare offers and budget for the full trip."
+      "q": "What happens if smoking is not stopped before or after surgery?",
+      "a": "Smoking significantly impairs bone healing by reducing blood flow to the graft site and interfering with the cells responsible for new bone formation. In spinal fusion, smoking is one of the most consistent predictors of failed fusion (pseudoarthrosis), where the graft fails to solidify into solid bone. Many accredited Korean centres require documented smoking cessation before offering elective fusion surgery. If you smoke, stopping — ideally several weeks or more before surgery — is one of the most important things you can do to protect the outcome."
     },
     {
-      "q": "How long until I can return to work and the fusion is complete?",
-      "a": "Many people in desk-based jobs return to work around four to six weeks after surgery, depending on the levels treated and how physical the role is, while demanding activity resumes later and only with the surgeon's clearance. The bone graft consolidates into a solid fusion gradually, typically over about six to twelve months, and your surgeon may keep certain activity restrictions in place during that period. A structured rehabilitation plan supports a safe return as healing progresses."
-    },
-    {
-      "q": "How are my medical records and MRI reviewed before I am accepted?",
-      "a": "Before you travel, a Korean spine team reviews recent MRI and CT images alongside your clinical history, usually through a remote consultation. They confirm that your symptoms match the level they intend to treat and decide whether fusion is appropriate or whether a motion-preserving option or continued conservative care would suit you better. This means you arrive with a clear surgical plan rather than an open question, so it helps to gather your most recent imaging and reports in advance."
+      "q": "What rehabilitation happens after I return home?",
+      "a": "Before leaving Korea, KmedTour provides a written, staged rehabilitation plan alongside your operative summary, implant details, and activity restrictions. The plan covers early mobilisation, safe posture and movement, gradual core strengthening, and return-to-work guidance — structured so a physiotherapist in your home country can continue without gaps. Arrange a local spinal or orthopaedic review as soon as possible after returning. Report any new weakness, numbness, bladder or bowel changes, fever, or wound discharge immediately."
     }
   ],
-  "references": [
-    {
-      "label": "Spine — Medical Korea (KHIDI, Ministry of Health & Welfare official program)",
-      "url": "https://www.medicalkorea.or.kr/en/spine"
-    },
-    {
-      "label": "Spinal fusion — overview (Wikipedia)",
-      "url": "https://en.wikipedia.org/wiki/Spinal_fusion"
-    }
-  ],
+  "references": [],
   "images": [
     {
       "src": "/images/procedures/inline/spinal-fusion-1.jpg",
-      "alt": "Spine specialist reviewing an MRI before spinal fusion",
+      "alt": "Spine specialist reviewing MRI scans before spinal fusion in Korea",
       "credit": "Anna Shvets"
     },
     {
       "src": "/images/procedures/inline/spinal-fusion-2.jpg",
-      "alt": "Minimally invasive spinal fusion surgery in Seoul",
-      "credit": "Anna Shvets"
+      "alt": "Minimally invasive spinal fusion surgery in a Korean hospital",
+      "credit": "Stéf -b."
     },
     {
       "src": "/images/procedures/inline/spinal-fusion-3.jpg",
-      "alt": "Physical therapy and rehabilitation after spinal fusion",
+      "alt": "Physiotherapy for back rehabilitation after spinal fusion",
       "credit": "www.kaboompics.com"
     }
   ]

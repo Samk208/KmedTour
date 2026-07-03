@@ -1,51 +1,135 @@
 {
   "slug": "hip-replacement",
-  "shortDescription": "Surgical replacement of a worn hip joint with implants to restore comfortable, stable movement.",
-  "sections": {
-    "overview": "Hip replacement removes the damaged ball-and-socket surfaces of an arthritic or injured hip and replaces them with a metal stem, a new socket, and a smooth bearing, restoring pain-free movement and steadier walking. Patients from Africa, the Middle East, and Asia often choose Korea because accredited Korean hospitals combine modern implant systems, established surgical approaches, and structured early rehabilitation within one coordinated pathway.\n\nThe operation is usually recommended when osteoarthritis, rheumatoid arthritis, avascular necrosis, or post-injury damage causes persistent hip or groin pain that limits walking, dressing, sleeping, or daily independence, and when non-surgical measures such as medication, weight management, and physiotherapy no longer give adequate relief.\n\nSurgeons reach the joint through either a posterior or an anterior approach, each with its own advantages for muscle handling and recovery, and the choice depends on your anatomy and the surgeon's assessment. Implants may be fixed with bone cement or designed to bond directly with bone (uncemented), and the bearing surfaces, the two parts that move against each other, are selected to give smooth, durable motion. Rehabilitation begins within a day of surgery to protect movement and build strength.\n\nKmedTour coordinates the full journey, including pre-arrival imaging review, interpreter support, hospital admission, and a written rehabilitation plan you can hand to a physiotherapist at home. The aim is a stable, comfortable hip and a clear, realistic recovery path, planned around your travel dates and your home-country follow-up so that progress continues safely after you return.",
-    "candidacy": "You may be a candidate for hip replacement if you have moderate to severe hip arthritis or joint damage with daily pain, stiffness, or difficulty walking that has not improved with medication, injections, weight management, or physiotherapy. Imaging that shows significant cartilage loss, joint-space narrowing, avascular necrosis, or deformity helps confirm the need for surgery. Candidates are usually adults whose hip or groin pain limits walking, dressing, sitting, or sleep.\n\nThe surgeon considers your bone quality and anatomy when choosing between cemented and uncemented implants and between a posterior or anterior approach. Good candidates are well enough for anaesthesia and committed to the rehabilitation that follows.\n\nBefore approving surgery, the team reviews your general health, including heart and lung fitness, diabetes control, and any blood-clotting or bleeding history. Active infection, very poor bone quality, or unstable medical conditions may delay surgery until they are managed. Smoking and uncontrolled blood sugar can slow healing, so the team may ask you to address these first. A pre-travel video consultation and your recent scans allow the surgeon to confirm suitability and plan the approach and implant before you fly.",
-    "procedure_steps": "On the day of surgery you receive either a general anaesthetic or a spinal anaesthetic, often with additional pain relief for afterward. The surgeon then reaches the hip joint using the planned approach.\n\nIn a posterior approach, the surgeon enters from behind the hip, which gives wide access to the joint. In an anterior approach, the surgeon works from the front and can often move between muscles rather than cutting through them, which may support a quicker early recovery for suitable patients. The choice depends on your anatomy and the surgeon's assessment.\n\nThe worn ball at the top of the thighbone is removed, and the socket is prepared and fitted with a new cup. A stem is placed into the thighbone, and a new ball is attached. Implants may be cemented in place for immediate fixation, or uncemented with a textured surface that lets bone grow onto the implant over time; the surgeon selects this based on your bone quality and age.\n\nThe bearing surfaces, the ball and the cup liner that move against each other, are chosen to give smooth, durable motion. Once the components are positioned, the surgeon checks that the new hip is stable and moves correctly through its range and that leg length is balanced. The wound is closed in layers and dressed, and clot-prevention measures begin straight away. The operation typically takes one to two hours, after which you are monitored in recovery before returning to the ward, where physiotherapy is planned to begin within the first day.",
-    "recovery_timeline": "Recovery is structured around your fourteen-day stay. You will usually stand and take guided steps with a walking frame within the first day, and physiotherapy focuses on safe walking, gentle hip movement, and building strength while protecting the new joint. You will be taught movement precautions to avoid positions that could stress the hip while it heals, and these vary with the surgical approach used.\n\nDuring the first week, the team monitors the wound, manages swelling and pain, and progresses your walking distance and stair practice. Stitches or clips are checked or removed around the end of the second week, and the surgeon confirms that the wound is healing and the hip is stable before clearing you to travel.\n\nMost patients are advised not to fly until the surgeon confirms it is safe, generally toward the end of the two-week stay, because longer flights carry a clot risk after major joint surgery. You will receive guidance on compression, hydration, moving your ankles during the flight, and any prescribed blood-thinning medication to continue.\n\nBefore departure, KmedTour provides a written rehabilitation plan, your operative summary, and implant details so a physiotherapist at home can continue your program. Recovery continues for several weeks to a few months as strength, mobility, and walking endurance improve. Your home physiotherapist supervises ongoing exercises, and you should arrange a local follow-up review. Report increasing pain, redness, fever, or calf swelling promptly, as these need prompt assessment.",
-    "cost_breakdown": "The estimated cost for hip replacement through KmedTour ranges from $15,000 to $30,000. Where you fall in this range depends on the implant system selected, whether cemented or uncemented fixation is used, the bearing surfaces chosen, the surgical approach, and the length of your hospital stay.\n\nThe quoted price generally covers the surgeon and anaesthesia fees, the implant, operating-room use, your inpatient stay, standard medications, routine post-operative imaging, and inpatient physiotherapy during admission. Pre-operative tests and assessments are usually included once you arrive.\n\nItems normally not included are international flights, accommodation before or after your hospital stay, meals outside the hospital, and any extended rehabilitation or follow-up care once you return home. If both hips are treated or additional procedures are required, the cost will be higher.\n\nKmedTour provides a written, itemised quotation after the surgeon reviews your scans, so you can see what is and is not covered before you commit. We also help arrange interpreter support and local accommodation so you can budget for the full trip rather than the surgery alone.",
-    "why_korea": "Korea is a well-established destination for orthopaedic surgery, with major hospitals accredited under national and international standards and overseen within a healthcare system regulated by the Ministry of Health and Welfare. KOIHA accreditation and KHIDI's support for international patients reflect a country-level focus on quality and patient safety for visitors.\n\nMany large Korean hospitals offer modern joint replacement using a range of implant systems and both posterior and anterior approaches, with surgeons selecting the method suited to each patient. Robotic-assisted joint replacement is also available in major Korean centres. These hospitals typically run high-volume orthopaedic and rehabilitation services, with physiotherapy integrated into the surgical pathway from the first day after surgery.\n\nFor international patients, Korean hospitals provide coordinated international patient departments, interpreter services, and structured discharge planning. KmedTour adds end-to-end coordination, from pre-arrival imaging review to a written rehabilitation handover for your home physiotherapist, so that care planned in Korea continues smoothly once you return to your home country."
-  },
-  "faqs": [
+  "shortDescription": "Surgery to replace a damaged hip joint with a prosthetic implant, relieving pain and restoring mobility.",
+  "quickAnswer": [
+    "**Hip replacement (total hip arthroplasty)** removes the damaged ball and socket of the hip joint and replaces them with prosthetic components — typically a metal or ceramic ball on a titanium stem, paired with a polyethylene or ceramic cup — restoring smooth, pain-free movement.",
+    "**Best candidates** are adults with severe hip arthritis, avascular necrosis, or hip fracture causing persistent pain, significant mobility loss, or an inability to manage daily activities despite conservative treatment.",
+    "**Recovery in Korea spans 14 days:** walking with an aid typically begins within a day of surgery; most patients return to independent indoor walking within weeks, with full functional recovery continuing over months.",
+    "**Typical cost in Korea: $15,000–$30,000 USD**, depending on implant type and fixation method, bilateral versus unilateral surgery, and hospital tier."
+  ],
+  "keyFacts": [
     {
-      "q": "How will I continue physiotherapy after I return home?",
-      "a": "Before you leave Korea, KmedTour gives you a written rehabilitation plan, your operative summary, and implant details to hand to a local physiotherapist. Your exercises continue at home under their supervision, gradually building strength, mobility, and walking endurance while respecting any movement precautions. We recommend arranging a follow-up review with a local orthopaedic clinic so progress is monitored and any concerns are checked in person."
+      "label": "Procedure time",
+      "value": "1–2.5 hours"
     },
     {
-      "q": "Is it safe to fly home with a new hip joint?",
-      "a": "Your surgeon will confirm when flying is safe, usually toward the end of the fourteen-day stay, once the wound is healing and the hip is stable. Long flights carry a higher clot risk after major joint surgery, so you will receive guidance on compression, staying hydrated, moving your ankles regularly, taking aisle breaks where possible, and continuing any prescribed blood-thinning medication during the journey."
+      "label": "Anesthesia",
+      "value": "General or spinal"
     },
     {
-      "q": "What is done to prevent blood clots and DVT?",
-      "a": "Clot prevention begins straight after surgery and continues through your stay and travel. Measures may include early walking, ankle movements, compression, staying hydrated, and prescribed blood-thinning medication. The team will tell you how long to continue any anticoagulant after you return home. Report calf pain, swelling, redness, or breathlessness promptly, as these can signal a clot that needs prompt assessment."
+      "label": "Hospital stay",
+      "value": "3–5 days"
     },
     {
-      "q": "What is the difference between the posterior and anterior approaches?",
-      "a": "The posterior approach reaches the hip from behind and gives wide access to the joint. The anterior approach works from the front and can often move between muscles rather than cutting them, which may help some patients recover early movement sooner. The surgeon chooses the approach based on your anatomy, the reason for surgery, and their assessment, and explains any movement precautions that apply."
+      "label": "Recommended stay in Korea",
+      "value": "14 days"
     },
     {
-      "q": "What does cemented versus uncemented fixation mean?",
-      "a": "Cemented implants are held in place with bone cement, giving immediate fixation that allows early weight-bearing. Uncemented implants have a textured surface that lets your own bone grow onto them over time for a biological bond. The surgeon selects the option based on your bone quality, age, and anatomy. Both are well-established; the choice is tailored to give durable, stable fixation for your hip."
+      "label": "Recovery",
+      "value": "Walking with an aid within days; functional return to daily activities over weeks to months"
+    },
+    {
+      "label": "Typical cost in Korea",
+      "value": "$15,000–$30,000 USD"
     }
   ],
+  "sections": {
+    "overview": "**Hip replacement** removes the worn or damaged surfaces of the hip joint and replaces them with prosthetic components designed to restore smooth, pain-free movement. Patients from Africa, the Middle East, and Southeast Asia choose Korea for this procedure because accredited hospitals combine experienced orthopaedic teams, modern implant options, and structured post-operative rehabilitation within one coordinated pathway.\n\nThe hip joint is a ball-and-socket joint where the rounded head of the femur (thigh bone) meets the acetabulum (socket) of the pelvis. When cartilage covering these surfaces wears away — most often from **osteoarthritis**, **avascular necrosis**, or **inflammatory arthritis** — bone rubs on bone, causing pain, stiffness, and progressive loss of function.\n\n**Total hip replacement** involves:\n\n- Removing the worn femoral head and damaged socket lining\n- Fixing a titanium or cobalt-chrome stem into the femur\n- Attaching a ceramic or metal ball to the stem\n- Placing a prosthetic cup into the cleaned acetabulum, usually lined with polyethylene or ceramic\n\nModern implants are designed to last many years under normal use, though outcomes depend on activity level, body weight, and implant selection.\n\nKmedTour coordinates the full journey — pre-arrival imaging review, hospital admission, interpreter support, and a written rehabilitation plan — so that recovery continues safely once you return home.",
+    "candidacy": "You may be a candidate for hip replacement if you have confirmed hip joint damage causing:\n\n- Persistent hip or groin pain not adequately controlled with medication or physiotherapy\n- Significant stiffness limiting daily activities such as walking, climbing stairs, or putting on shoes\n- Hip pain that disrupts sleep\n- Mobility loss affecting independence or quality of life\n\n**Common underlying conditions:**\n\n- **Osteoarthritis** — progressive cartilage loss from wear\n- **Avascular necrosis** — bone death due to disrupted blood supply\n- **Rheumatoid or inflammatory arthritis**\n- **Post-traumatic arthritis** following a prior fracture\n- **Hip dysplasia** causing early joint damage\n\n**Before approving surgery, the team reviews:**\n\n- General cardiovascular fitness for anaesthesia\n- Diabetes control and wound-healing capacity\n- Body weight (very high BMI may affect implant longevity and anaesthetic risk)\n- Active infection anywhere in the body (must be cleared before surgery)\n- Bone quality (imaging and history of osteoporosis)\n\nA pre-travel video consultation with your recent X-rays and MRI allows the surgeon to assess the joint, discuss implant options, and confirm suitability before you book travel.",
+    "procedure_steps": "Hip replacement is performed under **general or spinal anaesthesia** and typically takes one to two and a half hours.\n\n**Surgical approach:**\nThe surgeon accesses the hip joint through an incision, most commonly via a **posterior** or **anterolateral approach**. Minimally invasive approaches use smaller incisions and aim to preserve surrounding muscles where anatomy allows.\n\n**Preparing the femur:**\nThe damaged femoral head is carefully removed. The femoral canal is shaped using specialised instruments, and a metal stem — **cementless** (press-fit) or **cemented** — is fixed into the canal. A ceramic or metal ball is attached to the top of the stem.\n\n**Preparing the acetabulum:**\nThe socket is cleared of damaged cartilage and shaped to accept the prosthetic cup. The cup is fixed into the pelvis — again cementless or cemented — and a liner (polyethylene or ceramic) is inserted.\n\n**Assembly and stability check:**\nThe ball is seated in the cup, the hip is moved through its full range, and leg length and stability are confirmed. The incision is closed in layers and dressed.\n\nBlood-thinning medication and compression devices begin to reduce clot risk. Early physiotherapy — often starting the same day — focuses on moving the hip and getting you upright safely.",
+    "recovery_timeline": "Recovery begins within hours of surgery and continues for months. The structured 14-day Korea stay supports early progress before you fly home.\n\n**Day 1 (in hospital):**\n\n- Physiotherapy typically begins on the day of surgery or the morning after\n- Standing and early walking with a frame or crutches under physiotherapist guidance\n- Focus: weight-bearing as tolerated, hip precautions, preventing clots\n\n**Days 2–5 (inpatient):**\n\n- Progressing to walking greater distances\n- Stair practice and sit-to-stand training before discharge from hospital\n- Wound monitoring and pain management\n\n**Days 6–14 (pre-departure):**\n\n- Outpatient physiotherapy continues at the hospital or rehabilitation centre\n- Walking distance and confidence increase\n- Surgeon confirms wound healing and clearance for long-haul flight\n- KmedTour provides a **written rehabilitation plan** and operative summary for your home physiotherapist\n\n**Months 1 and beyond (at home):**\n\n- Most patients progress from walking aids to independent walking over several weeks\n- Full functional recovery — including return to low-impact activities — typically over months\n- Hip precautions (avoiding extremes of rotation and flexion) apply in the early phase; your surgeon specifies duration\n\nArrange a local orthopaedic review after returning. Report fever, increasing wound redness, sudden severe pain, or calf swelling promptly.",
+    "cost_breakdown": "The estimated cost for hip replacement through KmedTour ranges from **$15,000 to $30,000 USD**. Where you fall in this range depends on:\n\n- Implant type: material pairing (ceramic-on-polyethylene, ceramic-on-ceramic, metal-on-polyethylene) and brand tier\n- Fixation method: cementless versus cemented\n- Unilateral versus bilateral (both hips) surgery\n- Hospital tier and room type\n- Length of inpatient stay\n\n**What the quoted price generally covers:**\n\n- Surgeon, assistant, and anaesthesia fees\n- Operating room and implant costs\n- Inpatient hospital stay (typically 3–5 nights)\n- Standard medications during admission\n- Inpatient physiotherapy sessions\n- Pre-operative blood tests and imaging on arrival\n\n**What is typically not included:**\n\n- International flights and visa fees\n- Accommodation before and after the hospital stay\n- Meals outside the hospital\n- Walking aids for home use\n- Extended rehabilitation and follow-up care at home\n\nKmedTour provides a **written, itemised quotation** after the surgeon reviews your imaging, so you understand exactly what is covered before committing.",
+    "why_korea": "Korea is a well-established destination for orthopaedic surgery, with hospitals accredited under national and international standards and operating within a system regulated by the **Ministry of Health and Welfare**.\n\n**Accreditation and oversight:**\n\n- **KOIHA** (Korean Organisation for International Healthcare Accreditation) sets patient-safety and quality benchmarks for hospitals treating international patients\n- **KHIDI's Medical Korea programme** supports access to accredited facilities for foreign patients\n- These frameworks reflect country-level governance, not just individual hospital reputation\n\n**Clinical approach:**\nKorean orthopaedic teams at accredited hospitals perform high volumes of hip replacements using modern implant systems and established fixation techniques. Integrated physiotherapy begins the day of surgery, shortening hospital stay while maintaining structured early rehabilitation.\n\n**International patient infrastructure:**\nDedicated international patient departments provide interpreter services in English, Arabic, and other languages, structured discharge planning, and coordination with the patient's home medical team.\n\nKmedTour adds end-to-end coordination — from pre-arrival imaging review and hospital matching to a written rehabilitation handover — so care continues without interruption once you return home."
+  },
+  "costTable": [
+    {
+      "item": "Total hip replacement — standard implant",
+      "cost": "$15,000–$22,000"
+    },
+    {
+      "item": "Total hip replacement — premium ceramic-on-ceramic implant",
+      "cost": "$22,000–$30,000"
+    },
+    {
+      "item": "Bilateral hip replacement (both hips, same admission)",
+      "cost": "$25,000–$45,000"
+    },
+    {
+      "item": "Hospital stay (3–5 nights, standard room)",
+      "cost": "Typically included in package"
+    },
+    {
+      "item": "Inpatient physiotherapy during admission",
+      "cost": "Typically included in package"
+    }
+  ],
+  "callouts": [],
+  "keyTakeaways": [
+    "Hip replacement removes worn joint surfaces and replaces them with prosthetic components; implant choice — material pairing, fixation method — is discussed with the surgeon before travel based on your imaging and activity goals.",
+    "Early physiotherapy begins the day of or the day after surgery; the 14-day Korea stay supports early mobilisation before the long-haul flight, and KmedTour provides a written rehabilitation plan for your home physiotherapist.",
+    "Korean hospitals accredited under KOIHA and the Medical Korea programme combine experienced orthopaedic teams, integrated rehabilitation, and dedicated international patient support.",
+    "Costs range from $15,000 to $30,000 USD depending on implant type, fixation, and whether both hips are treated; an itemised quote is provided after the surgeon reviews your imaging."
+  ],
+  "entities": [
+    {
+      "name": "Hip replacement",
+      "url": "https://en.wikipedia.org/wiki/Hip_replacement"
+    },
+    {
+      "name": "Osteoarthritis",
+      "url": "https://en.wikipedia.org/wiki/Osteoarthritis"
+    },
+    {
+      "name": "Avascular necrosis",
+      "url": "https://en.wikipedia.org/wiki/Avascular_necrosis"
+    },
+    {
+      "name": "Medical tourism in South Korea",
+      "url": "https://en.wikipedia.org/wiki/Medical_tourism_in_South_Korea"
+    },
+    {
+      "name": "Korean Organisation for International Healthcare Accreditation",
+      "url": "https://en.wikipedia.org/wiki/Korean_Organisation_for_International_Healthcare_Accreditation"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long will the implant last?",
+      "a": "Modern hip implants are designed for long service life under normal use, and registry data from multiple countries show the majority of implants functioning well many years after surgery. Longevity depends on factors including activity level, body weight, implant type, and fixation. High-impact activities — such as running or jumping — can accelerate wear and are generally discouraged after hip replacement. Your surgeon will discuss realistic expectations and activity guidelines based on your specific implant and health profile."
+    },
+    {
+      "q": "What are hip precautions, and how long do they apply?",
+      "a": "Hip precautions are movement restrictions designed to prevent dislocation while the soft tissues heal around the new joint. Common restrictions include avoiding bending the hip past a right angle, crossing the legs, or rotating the foot excessively inward or outward. The precautions typically apply for the first several weeks, though the exact period depends on the surgical approach used — some approaches are associated with lower dislocation risk and shorter restriction periods. Your surgeon will specify what applies to you before discharge."
+    },
+    {
+      "q": "Is it safe to fly home after hip replacement?",
+      "a": "Long-haul flights carry an elevated risk of deep-vein thrombosis (DVT) after lower-limb surgery. Most surgeons advise against flying until the immediate post-operative phase is complete and early mobilisation is well established. The 14-day Korea stay is structured in part to allow this clearance period. Before departure, you will receive guidance on compression stockings, hydration, and ankle exercises during the flight, as well as any prescribed blood-thinning medication. Always confirm flying clearance with your surgeon before booking your return flight."
+    },
+    {
+      "q": "Can both hips be replaced at the same time?",
+      "a": "Simultaneous bilateral hip replacement (both hips in one operation) is performed at some centres and may suit patients who have significant disease in both hips and are otherwise fit for a longer procedure and anaesthetic. It reduces the total number of hospital admissions and travel trips but involves a longer surgery and a more demanding early recovery. Staged bilateral replacement — one hip, then the other after full recovery — is more common. Your surgeon will assess which approach is appropriate based on your imaging, overall health, and fitness for anaesthesia."
+    },
+    {
+      "q": "What happens to rehabilitation after I return home?",
+      "a": "Before leaving Korea, KmedTour provides a written, staged rehabilitation plan alongside your operative summary, implant details, and hip precaution instructions. This document is designed to be handed to a physiotherapist in your home country so the programme continues without interruption. You should arrange a local orthopaedic review as soon as possible after returning. If you develop fever, increasing wound redness, sudden severe hip pain, or swelling in the calf at any point, seek medical attention immediately."
+    }
+  ],
+  "references": [],
   "images": [
     {
       "src": "/images/procedures/inline/hip-replacement-1.jpg",
-      "alt": "Orthopedic surgeon reviewing a hip X-ray before replacement in Korea",
+      "alt": "Orthopedic surgeon assessing a hip patient in Korea",
       "credit": "Tima Miroshnichenko"
     },
     {
       "src": "/images/procedures/inline/hip-replacement-2.jpg",
-      "alt": "Total hip replacement surgery in a Korean operating room",
+      "alt": "Hip replacement surgery in a Korean operating room",
       "credit": "Stéf -b."
     },
     {
       "src": "/images/procedures/inline/hip-replacement-3.jpg",
-      "alt": "Mobility rehabilitation after hip replacement in Korea",
-      "credit": "Anastasia  Shuraeva"
+      "alt": "Hip rehabilitation physical therapy after hip replacement",
+      "credit": "Kampus Production"
     }
   ]
 }

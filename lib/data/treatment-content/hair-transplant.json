@@ -1,51 +1,139 @@
 {
   "slug": "hair-transplant",
-  "shortDescription": "Surgical relocation of your own hair follicles to thinning or balding areas of the scalp",
-  "sections": {
-    "overview": "A hair transplant moves healthy follicles from a donor area, usually the back and sides of the scalp, to areas where hair has thinned or stopped growing. Patients choose Korea because its clinics combine high-volume aesthetic expertise with internationally accredited facilities and transparent pricing.\n\nThe procedure treats pattern hair loss, a receding hairline, thinning crowns, and scarring from earlier surgery or injury. Because the relocated follicles are taken from areas that are genetically resistant to the hormone driving most hair loss, transplanted hair generally continues to grow in its new position for life. The result looks natural when the angle, density, and hairline design follow the way your hair grew before.\n\nTwo main techniques are used. Follicular unit extraction removes individual follicular units one at a time, leaving tiny dot-shaped marks rather than a line. Follicular unit transplantation, sometimes called the strip method, removes a thin band of scalp from the donor area and divides it into grafts under magnification. Both are performed under local anesthesia, so you stay awake but feel no pain during the session.\n\nA single session commonly transplants somewhere in the range of 2,000 to 4,000 follicles, depending on the size of the area being treated and the density of your donor zone. Larger restorations may be planned across more than one session. The transplanted hairs typically shed within the first weeks, which is normal and expected, before new growth begins. Honest planning matters here: a transplant redistributes the hair you have rather than creating new hair, so realistic goals are set during consultation before any surgery is scheduled.",
-    "candidacy": "You may be a candidate if you have stable, well-defined hair loss and a healthy donor area at the back and sides of the scalp with enough density to spare. The procedure suits men with pattern baldness, women with localised thinning, and people wanting to restore a hairline or cover scarring from prior surgery or injury. Good general health and the absence of active scalp infection or uncontrolled skin disease are important.\n\nA transplant is less suitable if hair loss is still rapidly progressing, because newly transplanted hair will not stop the surrounding native hair from continuing to thin, which can leave gaps over time. In these cases a clinic may suggest stabilising the loss first, or planning conservatively, before committing to surgery. People with very limited donor density may not have enough follicles to achieve the coverage they hope for, and this is discussed openly during consultation.\n\nDuring assessment the clinic reviews your scalp, the pattern and likely future course of your hair loss, and your expectations. Photographs and a donor-area evaluation help confirm whether the result you want is achievable. If you take medication that affects bleeding or wound healing, share this in advance. Honest expectation-setting is part of candidacy: the aim is a natural, lasting improvement, not a guaranteed return to teenage density.",
-    "procedure_steps": "On the day, the donor and recipient areas are cleaned and marked, and the new hairline is designed with you so it suits your face and age. Local anesthesia numbs the scalp, and most people find the session comfortable once it takes effect.\n\nIf follicular unit extraction is used, individual follicular units are removed one by one from the donor area using a fine punch, leaving scattered dot-shaped marks rather than a linear scar. This approach lets you keep hair short afterwards and suits people who prefer no visible line. If follicular unit transplantation, or the strip method, is chosen, a narrow band of scalp is removed from the donor area and closed with sutures, then divided into individual grafts under magnification. The strip method can yield a large number of grafts efficiently in one session and leaves a fine linear mark that hair usually covers.\n\nWith either technique, tiny incisions are made in the recipient area at the correct angle and direction to mimic natural growth, and the prepared follicles are placed one at a time. Careful attention to angle, depth, and density is what makes the result look natural rather than uniform or pluggy. A session commonly involves 2,000 to 4,000 follicles and can take several hours depending on the count. You remain awake throughout and can usually take short breaks. Once placement is complete, the areas are cleaned and aftercare instructions are given before you leave.",
-    "recovery_timeline": "Most patients stay around five days, which covers the procedure, an early review, and the first wash before you fly home. Immediately afterward the scalp may feel tight and look red, with small crusts forming around each graft. These crusts typically flake away over the first week to ten days as the grafts settle.\n\nMild swelling of the forehead can appear in the first few days and then subsides on its own. Any donor-area soreness, and a fine line if the strip method was used, eases over the same period. The clinic usually advises gentle, careful washing from the early days and explains how to protect the new grafts from rubbing, scratching, or direct sun. Strenuous exercise, swimming, and saunas are generally avoided for the first few weeks.\n\nIt is normal and expected for the transplanted hairs to shed within the first two to six weeks. This shock loss can be discouraging if you are not prepared for it, so it helps to know it is a stage on the way to new growth rather than a failure. New hair usually begins to emerge after a few months, thickens gradually, and continues to mature over roughly a year, with the fullest result visible toward the end of that period.\n\nFlying is generally fine once the early review confirms the grafts are stable, often around the end of the stay. Patients book a return consultation or send progress photos so the clinic can follow growth over the months that follow.",
-    "cost_breakdown": "Hair transplant pricing in Korea commonly ranges from about $3,500 to $12,000. The main driver of cost is the number of follicles transplanted, since larger areas need more grafts and longer sessions. The technique also matters: follicular unit extraction is often priced higher than the strip method because it is more labour-intensive to harvest follicles individually.\n\nThe quoted price usually covers the consultation and scalp assessment, the surgical session itself, local anesthesia, and routine post-procedure care and follow-up during your stay. Smaller restorations, such as a modest hairline refinement, sit toward the lower end, while extensive coverage of a large balding area sits toward the upper end and may be planned across more than one session.\n\nCosts not always included in the headline figure can include flights, accommodation for the roughly five-day stay, airport transfers, and any prescribed medication or aftercare products. When you request a quote, ask whether it is based on a confirmed follicle count and whether follow-up is part of the package, so you can compare clinics fairly. KmedTour helps you obtain itemised estimates from accredited Korean clinics before you travel, so the total cost of treatment and travel is clear in advance.",
-    "why_korea": "Korea has built a strong reputation in aesthetic and hair-restoration care, supported by a national healthcare framework and a high concentration of clinics experienced in follicular procedures. The Ministry of Health and Welfare oversees medical standards, while the Korea Health Industry Development Institute promotes the country's medical-tourism sector and helps international patients find reputable providers.\n\nMany hospitals and clinics that treat international patients hold accreditation through bodies such as the Korea Institute for Healthcare Accreditation, which assesses patient safety and quality of care. For visitors from Africa, the Middle East, and Asia, this combination of oversight and accreditation offers reassurance that the clinic meets recognised standards.\n\nPractical factors add to the appeal. Clinics that regularly treat overseas patients often provide language support, coordinated scheduling, and clear written quotes, which makes planning a trip more straightforward. Procedures are typically completed within a short stay, so the visit can be arranged around a focused trip. KmedTour works only with accredited Korean clinics and helps you compare options, understand what is included, and prepare for travel, so your decision rests on clear information rather than guesswork."
-  },
-  "faqs": [
+  "shortDescription": "Surgical transfer of hair follicles from a donor area to restore hair in thinning or bald regions of the scalp.",
+  "quickAnswer": [
+    "**Hair transplant surgery** moves healthy, genetically resistant hair follicles from a donor area (usually the back and sides of the scalp) to thinning or bald recipient areas, where they establish permanent growth.",
+    "**Best candidates** are adults with stable androgenetic alopecia (pattern hair loss) with adequate donor hair density at the back and sides of the scalp, and realistic expectations about coverage achievable in one session.",
+    "**The Korea stay is approximately 5 days:** the procedure is performed in one day (typically 6–10 hours) under local anaesthesia, and the clinic reviews healing before you fly.",
+    "**Typical cost in Korea: $3,500–$12,000 USD**, depending on the technique used, the number of grafts transplanted, and the clinic tier."
+  ],
+  "keyFacts": [
     {
-      "q": "Will a hair transplant give me permanent results?",
-      "a": "Transplanted follicles are taken from donor areas that resist the hormone behind most hair loss, so they generally keep growing in their new position long term. However, a transplant does not stop your remaining native hair from thinning, so further loss elsewhere is possible over the years. Realistic planning during consultation helps set expectations about lasting coverage."
+      "label": "Procedure time",
+      "value": "6–10 hours (depending on graft number)"
     },
     {
-      "q": "What is the difference between FUE and the strip method?",
-      "a": "Follicular unit extraction removes follicles individually, leaving small dot-shaped marks and allowing short haircuts afterward. The strip method, or follicular unit transplantation, removes a thin band of scalp that is divided into grafts and leaves a fine linear mark. Strip surgery can yield many grafts in one session; FUE avoids a line. Your clinic recommends the better fit."
+      "label": "Anesthesia",
+      "value": "Local anaesthesia (scalp); no general anaesthesia required"
     },
     {
-      "q": "Is the procedure painful?",
-      "a": "The session is performed under local anesthesia, which numbs the scalp so you do not feel pain while follicles are harvested and placed. You stay awake and can take short breaks during the several hours it takes. Some tightness, mild soreness, and swelling are common in the days afterward and ease with the aftercare your clinic provides."
+      "label": "Hospital stay",
+      "value": "Day procedure — no overnight stay usually required"
     },
     {
-      "q": "Why does transplanted hair fall out at first?",
-      "a": "It is normal and expected for transplanted hairs to shed within the first two to six weeks. This shock loss is a stage in the process, not a failure. The follicles remain in place beneath the skin, and new hair usually begins to grow after a few months, thickening gradually over roughly a year toward the full result."
+      "label": "Recommended stay in Korea",
+      "value": "5 days (procedure + healing check before flight)"
     },
     {
-      "q": "How long should I plan to stay in Korea?",
-      "a": "A stay of around five days is typical, covering the consultation, the procedure, an early review, and the first wash before you travel home. Flying is generally fine once the clinic confirms the grafts are stable, often near the end of your stay. Follow-up afterward is usually arranged through a return visit or progress photos."
+      "label": "Recovery",
+      "value": "Grafts shed at 2–8 weeks; new growth visible from ~3–4 months; full result at 12–18 months"
+    },
+    {
+      "label": "Typical cost in Korea",
+      "value": "$3,500–$12,000 USD"
     }
   ],
+  "sections": {
+    "overview": "**Hair transplant surgery** moves hair follicles from areas of permanent growth — typically the back and sides of the scalp — to regions affected by hair loss. Patients from Africa, the Middle East, and Southeast Asia choose Korea for hair restoration because accredited clinics combine experienced surgical teams, modern extraction techniques, and competitive pricing with dedicated international-patient support.\n\nThe transplanted follicles come from the **permanent donor zone** — a band of scalp where follicles are genetically resistant to dihydrotestosterone (DHT), the hormone responsible for androgenetic hair loss. Because these follicles retain their genetic programming when moved, they continue to grow permanently in the new location.\n\n**Two main techniques are used:**\n\n- **FUE (follicular unit extraction):** individual follicular units are extracted one by one from the donor area using a small punch device, leaving tiny, scattered scars that are virtually invisible once healed. This is the most commonly offered technique for international patients.\n- **FUT (strip/follicular unit transplantation):** a strip of scalp is removed from the donor area, divided into follicular units under magnification, and transplanted. Leaves a linear scar but allows a large number of grafts in one session and preserves follicles well.\n\nChoice of technique depends on the number of grafts needed, donor hair characteristics, and your preference about scarring.\n\nKmedTour coordinates pre-arrival consultation with your scalp photographs, clinic matching, and scheduling.",
+    "candidacy": "You may be a candidate for hair transplant if you have:\n\n- **Androgenetic alopecia (pattern hair loss)** — male or female pattern — that is stable (not rapidly progressing)\n- **Adequate donor hair density** at the back and sides of the scalp — the donor zone must have enough follicles to provide meaningful coverage without excessive thinning of the donor area\n- **Realistic expectations** about coverage: the number of grafts available is finite, and a very large bald area may require staged sessions or a plan that prioritises the frontal zone\n- **Good general health** for a long local-anaesthesia procedure\n\n**Conditions that affect candidacy:**\n\n- **Diffuse alopecia or extensive donor thinning:** if the donor zone itself is thinning, there may not be enough permanent follicles to donate\n- **Alopecia areata or scarring alopecia:** these are usually not suitable for standard hair transplant — the underlying condition must be stable and managed\n- **Age and progression:** very young patients with rapidly progressing loss may not yet know the full extent of the area that will require coverage\n- **Unrealistic graft expectations:** a limited donor supply means a plan that distributes grafts for the best aesthetic impact, not uniform density everywhere\n\nA pre-travel video consultation with clear scalp photographs (top, front hairline, donor area) allows the clinic to assess density and design a graft plan before you travel.",
+    "procedure_steps": "Hair transplant is performed under **local anaesthesia** applied to the scalp; you remain awake throughout and can rest, listen to music, or watch content during the long procedure.\n\n**Design and marking:**\nThe surgeon designs the new hairline and recipient areas based on your existing hair pattern, facial proportions, and the number of grafts available. This is discussed and agreed before surgery begins.\n\n**Donor extraction — FUE:**\nThe donor area is shaved and local anaesthetic applied. A small motorised or manual punch device extracts individual follicular units — each containing 1–4 hairs — one by one. Extracted grafts are placed in a chilled holding solution.\n\n**Donor extraction — FUT (if chosen):**\nA strip of scalp is removed from the donor zone. The wound is closed with sutures (linear scar). The strip is divided under magnification into individual follicular units.\n\n**Recipient site preparation:**\nThe surgeon creates thousands of small incisions in the recipient area at the correct angle, direction, and density. This step determines the naturalness of the result.\n\n**Graft placement:**\nTechnicians or the surgeon place each graft into a prepared site. Care is taken to match natural hair direction and avoid damaging existing hair.\n\n**After the procedure:**\nThe scalp is gently washed, and you receive instructions on washing and care for the first 10–14 days. A follow-up check is typically scheduled the next morning before you leave for home.",
+    "recovery_timeline": "Hair transplant recovery involves two phases: wound healing in the first weeks, and the hair growth cycle over the following year.\n\n**Days 1–3:**\n\n- Scalp may be swollen, tender, or crusty — expected and normal\n- Small scabs form around each graft site\n- Sleep with the head slightly elevated\n- Avoid touching, rubbing, or scratching the recipient area\n- Follow the clinic's washing protocol precisely — usually a very gentle rinse from Day 2 or 3\n\n**Days 3–5 (pre-departure):**\n\n- Clinic reviews the recipient area and donor healing before you fly\n- Most patients are cleared to fly after the early healing check\n- Wear a loose hat for sun and dust protection during travel\n\n**Weeks 2–8 (shedding phase):**\n\n- The transplanted hairs shed — this is normal and expected; the follicles remain in the scalp\n- Do not be alarmed by shedding; it does not mean the transplant has failed\n\n**Months 3–4:**\n\n- New hair growth begins emerging from the transplanted follicles\n- Growth is initially fine and may be slightly wavy before settling\n\n**Months 6–12:**\n\n- Increasing density and thickness as the hairs mature\n\n**Month 12–18:**\n\n- Full result is assessable; the transplanted hairs are now growing permanently\n- If a second session is needed to add density, it is planned at this stage",
+    "cost_breakdown": "The estimated cost for hair transplant through KmedTour ranges from **$3,500 to $12,000 USD**, with the number of grafts being the primary driver of cost.\n\n**Cost by graft range (FUE technique):**\n\n- 1,000–2,000 grafts: $3,500–$5,500\n- 2,000–3,500 grafts: $5,500–$8,500\n- 3,500–5,000+ grafts: $8,500–$12,000\n\n**What the quoted price generally covers:**\n\n- Surgeon and technician fees\n- Local anaesthesia and scalp preparation\n- All graft extraction, preparation, and placement\n- Post-procedure scalp wash and follow-up check the next morning\n- Written aftercare instructions and graft-care kit\n\n**What is typically not included:**\n\n- International flights and visa costs\n- Accommodation (procedure is outpatient — no hospital stay)\n- Scalp medical treatments (Minoxidil, PRP) that may be recommended alongside transplant\n- Future sessions if staged approach is needed\n\nKmedTour provides a **written, itemised quotation** based on your consultation photographs and graft count estimate before you commit to travel.",
+    "why_korea": "Korea has a well-developed hair restoration sector, with clinics serving both domestic and international patients. Korean dermatological and plastic surgery training programmes contribute to experienced scalp surgical teams, and the competitive clinic market has driven quality and value.\n\n**Accreditation and oversight:**\n\n- **KOIHA** (Korean Organisation for International Healthcare Accreditation) sets quality and patient-safety benchmarks for clinics treating international patients\n- **KHIDI's Medical Korea programme** supports foreign patient access to accredited facilities\n\n**Clinical approach:**\nAccredited Korean clinics offer FUE and FUT performed by surgeon-led teams with experienced technicians for graft handling and placement. Some clinics offer advanced techniques such as direct hair implantation (DHI) or sapphire blade recipient-site creation. Hairline design is a particular focus — Korean aesthetic sensibilities emphasise natural-looking, age-appropriate designs.\n\n**International patient infrastructure:**\nDedicated international patient coordinators provide photo-based pre-consultation, scheduling, and post-procedure follow-up by video call to monitor early healing.\n\nKmedTour coordinates pre-arrival photo review, clinic matching by technique and tier, and scheduling for the 5-day Korea stay."
+  },
+  "costTable": [
+    {
+      "item": "Hair transplant — FUE, 1,000–2,000 grafts",
+      "cost": "$3,500–$5,500"
+    },
+    {
+      "item": "Hair transplant — FUE, 2,000–3,500 grafts",
+      "cost": "$5,500–$8,500"
+    },
+    {
+      "item": "Hair transplant — FUE, 3,500–5,000+ grafts",
+      "cost": "$8,500–$12,000"
+    },
+    {
+      "item": "FUT (strip) technique — per graft pricing may differ",
+      "cost": "Clinic-specific; typically less per graft than FUE"
+    },
+    {
+      "item": "PRP scalp treatment (add-on, optional)",
+      "cost": "$300–$600 additional"
+    }
+  ],
+  "callouts": [],
+  "keyTakeaways": [
+    "Hair transplant moves genetically DHT-resistant follicles from the donor zone to bald areas, where they grow permanently; FUE (individual extraction) is the most common technique for international patients and leaves no linear scar.",
+    "The transplanted hairs shed at 2–8 weeks after surgery — this is normal; new growth emerges from 3–4 months, with the full result visible at 12–18 months.",
+    "Cost is primarily driven by graft count ($3,500–$12,000 for 1,000–5,000+ grafts); the number of grafts available from your donor zone is finite — a pre-travel consultation with scalp photographs establishes a realistic plan.",
+    "Korean clinics accredited under KOIHA combine experienced surgeon-led teams, modern extraction techniques, and competitive pricing with dedicated international patient support."
+  ],
+  "entities": [
+    {
+      "name": "Hair transplantation",
+      "url": "https://en.wikipedia.org/wiki/Hair_transplantation"
+    },
+    {
+      "name": "Follicular unit extraction",
+      "url": "https://en.wikipedia.org/wiki/Follicular_unit_extraction"
+    },
+    {
+      "name": "Androgenetic alopecia",
+      "url": "https://en.wikipedia.org/wiki/Androgenetic_alopecia"
+    },
+    {
+      "name": "Dihydrotestosterone",
+      "url": "https://en.wikipedia.org/wiki/Dihydrotestosterone"
+    },
+    {
+      "name": "Medical tourism in South Korea",
+      "url": "https://en.wikipedia.org/wiki/Medical_tourism_in_South_Korea"
+    },
+    {
+      "name": "Korean Organisation for International Healthcare Accreditation",
+      "url": "https://en.wikipedia.org/wiki/Korean_Organisation_for_International_Healthcare_Accreditation"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is the result permanent?",
+      "a": "Yes — the transplanted follicles are taken from the permanent donor zone at the back and sides of the scalp, where follicles are genetically resistant to the hormone DHT that causes androgenetic hair loss. When moved to a new location, they retain their genetic programming and continue to grow permanently. However, it is important to understand that hair transplant does not stop the progression of natural hair loss in areas not yet transplanted — so the hair behind and around the transplanted zone may continue to thin over time. Medical treatments such as Minoxidil or finasteride are often recommended alongside transplant to slow ongoing loss."
+    },
+    {
+      "q": "What is the difference between FUE and FUT?",
+      "a": "FUE (follicular unit extraction) extracts individual follicular units one by one from the donor area using a small punch device. It leaves small, scattered scars that are virtually invisible once healed and allows the patient to wear the hair very short. FUT (follicular unit transplantation) removes a strip of scalp from the donor zone, which is then divided under magnification into follicular units. It leaves a linear scar but allows a large number of grafts to be harvested in one session and may preserve follicle integrity better during extraction. The choice depends on graft number needed, scalp laxity, scarring preference, and clinic expertise."
+    },
+    {
+      "q": "How many grafts do I need?",
+      "a": "The number of grafts depends on the extent of the bald or thinning area, the desired density, and the available donor supply. A typical frontal zone restoration may need 1,500–3,000 grafts; treating the crown as well typically requires more. A pre-travel photo consultation with the surgeon allows a graft count estimate based on your Norwood or Ludwig classification and your scalp photographs. The donor zone has a finite supply — very extensive hair loss may require staged sessions or a strategic plan that prioritises the most visible areas."
+    },
+    {
+      "q": "What happens during the shedding phase and when will I see results?",
+      "a": "After transplant, most of the transplanted hairs enter a shedding phase within 2–8 weeks. The hairs fall out, but the follicles remain in the scalp in a dormant phase. This is a normal and expected part of the transplant process and does not mean the procedure has failed. New hair growth begins emerging from the transplanted follicles at around 3–4 months. By 6–9 months, meaningful density is usually visible. The full result — with mature, thickened hairs — is assessable at 12–18 months after surgery."
+    },
+    {
+      "q": "Can I fly home a few days after the procedure?",
+      "a": "Yes — hair transplant is an outpatient procedure under local anaesthesia, and most patients fly home within 4–5 days. The clinic typically reviews the scalp the morning after surgery. Flying too early — within 24–48 hours — is generally not recommended because scalp swelling and graft vulnerability peak in this period and cabin air pressure changes may affect early healing. By Day 4–5, with the first scabs forming and the clinic having confirmed the graft sites, most patients are cleared to travel. Follow the clinic's washing instructions carefully during the flight and avoid touching or compressing the grafts."
+    }
+  ],
+  "references": [],
   "images": [
     {
       "src": "/images/procedures/inline/hair-transplant-1.jpg",
-      "alt": "Hair restoration specialist assessing a patient in Korea",
+      "alt": "Hair restoration specialist assessing scalp before transplant in Korea",
       "credit": "fahri tokcan"
     },
     {
       "src": "/images/procedures/inline/hair-transplant-2.jpg",
-      "alt": "Follicular hair transplant procedure at a Korean clinic",
+      "alt": "Hair follicle transplant procedure on scalp at a Korean clinic",
       "credit": "Dr. Haror's  Wellness"
     },
     {
       "src": "/images/procedures/inline/hair-transplant-3.jpg",
-      "alt": "Fuller hairline after a hair transplant in Korea",
-      "credit": "Andrea Piacquadio"
+      "alt": "Hair growth results after hair transplant surgery in Korea",
+      "credit": "Anku Nijjar"
     }
   ]
 }
