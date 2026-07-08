@@ -23,7 +23,12 @@ const FAKE_STAT = /\b(studies show|research shows|a study (found|showed)|\d+\s?%
 const MD_HEADING = /(^|\n)#{1,6}\s/;
 const ALLOWED_REF = /(\.gov|\.edu|ncbi\.nlm\.nih\.gov|pubmed|nih\.gov|who\.int|wikipedia\.org|medicalkorea\.or\.kr|khidi\.or\.kr|frontiersin\.org|nature\.com|thelancet\.com|bmj\.com|\.go\.kr)/i;
 const ALLOWED_ENTITY = /(wikipedia\.org|wikidata\.org)/i;
-const SKINNY_MAX_WORDS = 80; // factory hard limit is 50; warn above 80 to flag clearly-thick prose
+const SKINNY_MAX_WORDS = 50; // factory paragraph cap (bulk-affiliate playbook)
+const FAQ_MAX_WORDS = 80; // factory FAQ answer cap (50-80 words, answer-first)
+const QUICK_ANSWER_MAX_WORDS = 40; // quick-answer bullets stay extractable
+// factory BANNED_WORDS (AI-slop tells) — hard fail, the generator must avoid these
+const BANNED_WORDS = /\b(delve|tapestry|crucial|leverage|utilize|cutting-edge|game-changer|revolutionize|seamless|robust|realm|symphony|bustling|furthermore|moreover|testament|pivotal|synergy)\b|in today's (world|digital age|fast-paced)|it's important to note|needless to say|at the end of the day/i;
+const HEDGING = /\b(may|might|perhaps|potentially|arguably)\b/i; // flagged in quick-answer zone only
 
 const wordCount = (s) => s.trim().split(/\s+/).filter(Boolean).length;
 
@@ -53,12 +58,16 @@ for (const f of files) {
     if (FAKE_STAT.test(v)) hard.push(`FAKE-STAT:${s}`);
     if (MD_HEADING.test(v)) hard.push(`MD-HEADING:${s}`);
     if (/\bhttps?:\/\//.test(v)) hard.push(`URL:${s}`);
-    // skinny check (soft): flag thick prose paragraphs (bullets exempt)
+    if (BANNED_WORDS.test(v)) hard.push(`BANNED-WORD:${s}`);
+    // skinny check: >50 words soft, >80 words (wall of text) hard
     for (const block of v.split(/\n\n+/)) {
       const b = block.trim();
       if (!b) continue;
       const isList = b.split('\n').every((l) => /^\s*[-*]\s+/.test(l.trim()) || !l.trim());
-      if (!isList && wordCount(b) > SKINNY_MAX_WORDS) { soft.push(`thick-paragraph:${s}`); break; }
+      if (isList) continue;
+      const w = wordCount(b);
+      if (w > 80) { hard.push(`WALL-OF-TEXT:${s}(${w}w)`); break; }
+      if (w > SKINNY_MAX_WORDS) { soft.push(`thick-paragraph:${s}(${w}w)`); }
     }
   }
 
@@ -66,6 +75,13 @@ for (const f of files) {
   if (ATTRIB_VERB.test(allText)) hard.push('FABRICATED-QUOTE:faqs-or-text');
   if (!Array.isArray(t.faqs) || t.faqs.length < 4) hard.push(`faqs<4 (${t.faqs ? t.faqs.length : 0})`);
   else if (t.faqs.some((q) => !q.q || !q.a)) hard.push('faq-keys (must be q/a)');
+  else for (const q of t.faqs) {
+    if (wordCount(q.a) > FAQ_MAX_WORDS) soft.push(`faq>${FAQ_MAX_WORDS}w:"${q.q.slice(0, 40)}"(${wordCount(q.a)}w)`);
+  }
+  if (Array.isArray(t.quickAnswer)) for (const qa of t.quickAnswer) {
+    if (wordCount(qa) > QUICK_ANSWER_MAX_WORDS) soft.push(`quickAnswer>${QUICK_ANSWER_MAX_WORDS}w(${wordCount(qa)}w)`);
+    if (HEDGING.test(qa)) soft.push('quickAnswer-hedging');
+  }
 
   if (Array.isArray(t.references)) {
     for (const r of t.references) {
