@@ -1,0 +1,55 @@
+{
+  "slug": "cardiac-screening",
+  "candidateFor": [
+    "Adults over 40 with family history of heart disease seeking early detection",
+    "International patients wanting preventive screening without long wait times",
+    "People with chest discomfort or exercise-related shortness of breath",
+    "Patients with borderline cholesterol or blood pressure needing cardiac assessment",
+    "Those seeking non-invasive baseline heart health benchmarking before travel or major activity"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Consultation & Assessment",
+      "duration": "30-60 minutes",
+      "detail": "Initial visit with a cardiologist to review your medical history, symptoms, and risk factors. Basic blood work and blood pressure check. Doctor discusses which screening components fit your situation and expected timeline."
+    },
+    {
+      "step": "Screening Tests",
+      "duration": "2-4 hours same day",
+      "detail": "Standard battery includes ECG (resting heart rhythm), echocardiogram (ultrasound of heart chambers and valves), stress test (treadmill or chemical), lipid panel. Coronary CT angiography with calcium scoring often added. All performed outpatient, no sedation required."
+    },
+    {
+      "step": "Result Review & Follow-up",
+      "duration": "Next day or within 48 hours",
+      "detail": "Cardiologist reviews all imaging and test data, discusses findings, and provides written summary with recommendations. No downtime after tests—return to normal activity immediately. Plan 1–3 days in Korea for full screening and consultation cycle."
+    }
+  ],
+  "whyKorea": [
+    "Advanced cardiac imaging equipment (latest multi-detector CT and echocardiography systems) widely available in Seoul hospitals and major centers",
+    "Cardiologists trained under international standards with expertise in screening asymptomatic international patients; rapid appointment availability versus multi-week waits elsewhere",
+    "Transparent pricing structure for screening packages, typically 40–60% lower cost than comparable private screening in North America or Western Europe",
+    "No insurance bureaucracy—cash-based, upfront pricing; same-day results without prior authorization delays"
+  ],
+  "faqs": [
+    {
+      "question": "Can I do cardiac screening in one day if I'm traveling to Korea?",
+      "answer": "Yes. Most international patients complete the entire screening process—consultation, all tests, and initial result review—in a single day. You can add a follow-up consultation the next day for detailed discussion with the cardiologist."
+    },
+    {
+      "question": "Is cardiac screening painful or do I need to stay overnight?",
+      "answer": "No. All tests are non-invasive and outpatient. You'll walk on a treadmill during the stress test and lie still for ultrasound and CT imaging. No anesthesia, no needles beyond routine blood draw. Go home the same day."
+    },
+    {
+      "question": "What is the total cost for cardiac screening in Korea?",
+      "answer": "Bundled screening packages typically cost $400–$1,500 USD depending on which components are included. Coronary CT angiography alone runs roughly $550–$1,050 USD. Costs are fixed upfront; no surprise fees."
+    },
+    {
+      "question": "How do I get the screening results and take them home?",
+      "answer": "Cardiologist provides a detailed written report, imaging CD, and recommendations before you leave. Report is yours to share with your home physician or bring on future travels. Results typically available within 24–48 hours if additional interpretation is needed."
+    },
+    {
+      "question": "Should I fast before cardiac screening tests?",
+      "answer": "Yes. Fasting for 8–12 hours before screening (especially for lipid panel and CT) is standard. Your booking coordinator will provide specific pre-screening instructions including any medications to hold or take on test day."
+    }
+  ]
+}

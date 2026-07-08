@@ -1,0 +1,55 @@
+{
+  "slug": "angioplasty",
+  "candidateFor": [
+    "Patients with significant coronary artery narrowing confirmed by angiogram who remain symptomatic despite medication",
+    "Those experiencing stable angina or chest pain with limited blockages amenable to catheter intervention",
+    "Patients presenting with acute coronary syndrome requiring emergency artery opening during heart attack",
+    "People with single or limited-number coronary lesions where a stent placement is anatomically suitable",
+    "International patients seeking cost-effective intervention at a fraction of Western pricing without compromising safety standards"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Consultation & Assessment",
+      "duration": "1–2 days",
+      "detail": "Your cardiology team reviews your angiogram and medical history to confirm suitability. They assess the location and severity of your blockage, discuss the stent type, and explain medication requirements. Blood tests and imaging confirm your readiness for the procedure."
+    },
+    {
+      "step": "Catheterisation & Stent Placement",
+      "duration": "1–2 hours",
+      "detail": "Under local anaesthesia with sedation, a catheter reaches your coronary artery. A balloon expands to open the narrowed section, and a drug-eluting stent remains permanently in place to keep blood flowing. Complex lesions may take longer."
+    },
+    {
+      "step": "Hospital Recovery & Discharge",
+      "duration": "Typically 5 days inpatient",
+      "detail": "You remain in hospital for monitoring and to begin dual antiplatelet medication—two blood thinners started immediately and continued as prescribed long-term. Light activity resumes within days. Plan 5–7 days total in Korea, including a buffer before flying."
+    }
+  ],
+  "whyKorea": [
+    "Advanced interventional cardiology facilities with modern catheterisation labs and high-quality stent technology meeting international standards",
+    "Experienced cardiologists trained in percutaneous coronary intervention with established protocols for international patients",
+    "MFDS-regulated medical devices and facilities ensure safety and efficacy equivalent to Western centres",
+    "Procedure costs typically $10,000–$25,000 USD—40–50% below comparable North American or European pricing, with no compromise on quality or surgeon credentials"
+  ],
+  "faqs": [
+    {
+      "question": "How long does the stent stay in place?",
+      "answer": "The stent remains permanently in your artery. It doesn't need removal. Dual antiplatelet medication must be taken as prescribed to prevent clotting around the stent—stopping early significantly increases blockage risk."
+    },
+    {
+      "question": "When can I fly home after the procedure?",
+      "answer": "Most international patients fly 5–7 days after stent placement, allowing time for monitoring, medication initiation, and ensuring stable recovery. Your cardiologist will confirm readiness before you travel."
+    },
+    {
+      "question": "What medications do I need after the procedure?",
+      "answer": "You start dual antiplatelet therapy immediately—typically aspirin and another antiplatelet agent (clopidogrel, ticagrelor, or prasugrel)—and continue both as prescribed, usually for at least one year, then aspirin long-term. Your cardiologist provides a detailed medication plan before discharge."
+    },
+    {
+      "question": "Are there activity restrictions after angioplasty?",
+      "answer": "Light activity resumes within days—walking and gentle movement are encouraged. Heavy lifting and strenuous exercise are typically restricted for 2–4 weeks. Your team provides specific guidelines tailored to your recovery progress."
+    },
+    {
+      "question": "What happens if the stent becomes blocked?",
+      "answer": "Stent thrombosis is rare but serious. It's prevented by taking dual antiplatelet medication exactly as prescribed and avoiding early medication cessation. Report any chest pain, shortness of breath, or warning signs to your care team immediately."
+    }
+  ]
+}

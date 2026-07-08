@@ -1,0 +1,56 @@
+{
+  "slug": "cancer-screening",
+  "candidateFor": [
+    "Patients aged 40+ seeking preventive health screening with comprehensive diagnostics in a single visit",
+    "International patients traveling from Africa, GCC, or Southeast Asia for preventive care",
+    "Individuals wanting cancer detection workup at 40-70% lower cost than Western countries",
+    "Patients requiring English-language medical reports and international medical records",
+    "Those combining screening with leisure travel (outpatient same-day procedure allows tourism)",
+    "Patients with family history of cancer seeking early detection before symptoms"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Pre-Screening Consultation & Preparation",
+      "duration": "1-2 hours (day before or morning-of)",
+      "detail": "Speak with a screening coordinator about your health history and which tests suit your age/risk profile. You will receive fasting instructions (typically 6-8 hours before endoscopy). Arrive early for check-in and to review consent forms with English-language support."
+    },
+    {
+      "step": "Same-Day Screening Workup",
+      "duration": "3-6 hours on-site",
+      "detail": "Endoscopy (gastroscopy and colonoscopy) uses light sedation for comfort; most other tests—chest CT, ultrasound, tumor-marker blood panels, and often PET-CT—require no anesthesia. You will be walked through each station by medical staff. Many centers provide preliminary findings before discharge."
+    },
+    {
+      "step": "Recovery & Report Review",
+      "duration": "Same-day discharge; 3-5 days recommended in Korea",
+      "detail": "Resume normal activity immediately. Avoid driving on the day of sedation. Comprehensive written report with images is typically ready within 24-48 hours. Schedule a follow-up consultation to review results with a physician and discuss any next steps or referrals."
+    }
+  ],
+  "whyKorea": [
+    "South Korea holds a world-leading reputation in endoscopy technology and preventive screening protocols, backed by strict MFDS regulatory standards",
+    "Comprehensive packages cost approximately $900–$2,500 USD, roughly 40-70% less than equivalent screening in the United States, United Kingdom, or Australia",
+    "English-language medical reports, imaging, and physician consultations are standard at international screening centers, removing language barriers for overseas patients",
+    "Same-day outpatient screening allows you to complete diagnostics during a short trip, with results ready before you depart"
+  ],
+  "faqs": [
+    {
+      "question": "Is sedation used during cancer screening in Korea?",
+      "answer": "Light sedation is used only for the endoscopy portion (gastroscopy and colonoscopy) for comfort. Chest CT, ultrasound, blood work, and PET-CT require no anesthesia. You will be conscious during most of your appointment."
+    },
+    {
+      "question": "How long do I need to stay in Korea for screening?",
+      "answer": "Three to five days is recommended. This allows time for pre-screening fasting, the full-day screening appointment, and a follow-up consultation to review results and imaging with a physician before you leave."
+    },
+    {
+      "question": "What happens if screening finds something abnormal?",
+      "answer": "Your physician will discuss findings during your follow-up consultation. Additional imaging, specialist referral, or biopsy may be recommended. Many centers provide written summaries and imaging files you can take home or share with your physician abroad."
+    },
+    {
+      "question": "Can I travel or work the day after screening?",
+      "answer": "Yes. Screening is a same-day outpatient procedure with no recovery period. You can resume normal activities immediately after discharge. Avoid strenuous exercise or driving only if you received sedation that morning."
+    },
+    {
+      "question": "How much does a comprehensive cancer screening package cost?",
+      "answer": "Typical packages in Korea range from approximately $900 to $2,500 USD, depending on which tests are included (endoscopy, CT, ultrasound, tumor markers, and PET-CT). This is 40-70% less than comparable screening in Western countries."
+    }
+  ]
+}

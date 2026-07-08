@@ -1,0 +1,55 @@
+{
+  "slug": "acl-reconstruction",
+  "candidateFor": [
+    "Adults with a confirmed ACL tear causing knee instability or giving-way episodes",
+    "Active individuals who want to return to pivoting sports and dynamic movement",
+    "Patients whose initial swelling has subsided and knee movement has returned",
+    "Those seeking a less invasive approach to ACL repair via keyhole surgery",
+    "International patients needing a 7-day stay to complete initial recovery and begin physiotherapy"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Consultation & Assessment",
+      "duration": "1–2 hours",
+      "detail": "Your surgeon reviews imaging (MRI or ultrasound), examines knee stability, and confirms the ACL tear. They discuss graft options — hamstring or patellar tendon — and any additional cartilage or meniscus damage. You receive pre-operative instructions and anesthesia briefing."
+    },
+    {
+      "step": "ACL Reconstruction Surgery",
+      "duration": "1–2 hours",
+      "detail": "Performed arthroscopically through small incisions under general or spinal anesthesia with a nerve block. The damaged ligament is removed and replaced with a graft, secured with fixation devices. The procedure restores knee stability and proprioception needed for active movement."
+    },
+    {
+      "step": "Recovery & Follow-up",
+      "duration": "7 days in Korea + several months at home",
+      "detail": "Hospital stay is 1–2 days. Physiotherapy begins within 24 hours to restore range of motion and reduce swelling. During your Korea visit, you receive initial rehab sessions and discharge guidance. Full recovery spans several months; return to pivoting sports is considered only after many months once strength targets are met."
+    }
+  ],
+  "whyKorea": [
+    "Korean surgeons routinely perform arthroscopic ACL reconstruction using internationally recognized techniques and minimally invasive equipment",
+    "MFDS-regulated orthopedic facilities maintain strict safety and sterilization standards comparable to North American centers",
+    "Costs range from $5,000–$12,000 USD, typically 40–60% lower than equivalent private surgery in the US or Europe",
+    "Hospitals provide structured post-operative physiotherapy during your stay, giving you a head start on rehabilitation before returning home"
+  ],
+  "faqs": [
+    {
+      "question": "How long after injury should I have ACL reconstruction?",
+      "answer": "Most surgeons wait until initial swelling has subsided and you've regained some knee movement — typically 2–6 weeks post-injury. Rushing into surgery while the knee is swollen increases stiffness risk. Your surgeon will advise the optimal timing based on your imaging and physical exam."
+    },
+    {
+      "question": "What type of graft is best — hamstring or patellar tendon?",
+      "answer": "Both are established options. Hamstring grafts have faster early healing and less anterior knee pain; patellar tendon grafts may offer slightly faster return to high-demand sports. Your surgeon recommends based on your anatomy, activity goals, and any previous knee injuries. Discuss trade-offs during consultation."
+    },
+    {
+      "question": "Will I need physiotherapy after surgery?",
+      "answer": "Yes, physiotherapy is essential. It begins within 24 hours and continues for several months. Early sessions restore motion and reduce swelling; later phases rebuild strength and proprioception. Skipping or delaying rehab significantly increases re-injury risk and delays return to sports."
+    },
+    {
+      "question": "When can I return to sports after ACL reconstruction?",
+      "answer": "Return to pivoting or cutting sports typically requires 6–12 months of rehabilitation and meeting specific strength and control benchmarks — not calendar time alone. Lower-impact activities like swimming may resume sooner. Your physiotherapist will guide progression based on objective testing, not pain alone."
+    },
+    {
+      "question": "What if I have other knee injuries besides the ACL tear?",
+      "answer": "Damage to the meniscus or cartilage is common with ACL tears. During surgery, your surgeon assesses and repairs these during the same procedure if needed. This may extend surgical time and affect final cost (within the $5,000–$12,000 range). Discuss this before surgery."
+    }
+  ]
+}

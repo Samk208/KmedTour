@@ -1,0 +1,60 @@
+{
+  "slug": "brain-tumor-surgery",
+  "candidateFor": [
+    "International patients with diagnosed or suspected brain tumors needing surgical assessment and treatment",
+    "Patients seeking second opinions from MFDS-accredited neurosurgery centers before committing to surgery",
+    "Those requiring intraoperative imaging (MRI/neuronavigation) to minimize damage to speech and motor areas",
+    "Patients comparing costs and technology across healthcare systems; Korean centers typically cost 40-60% below North American/European facilities",
+    "Cases requiring awake-mapping techniques to preserve neurological function in tumors near critical brain regions"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Initial Consultation & Imaging Assessment",
+      "duration": "1-2 hours for appointment; imaging review typically takes 1-3 days",
+      "detail": "Neurosurgeon reviews your scans (MRI/CT), medical history, and any prior pathology reports. Korean centers use advanced diagnostic imaging to determine tumor type, size, location, and surgical approach. You'll discuss candidacy for awake-mapping or standard general anesthesia and receive a personalized surgical plan with timeline."
+    },
+    {
+      "step": "Pre-Operative Workup & Functional Testing",
+      "duration": "2-4 days",
+      "detail": "Blood work, cardiac assessment, and baseline neurological testing (speech, motor function, memory screening). Some centers perform DTI or fMRI mapping to identify critical brain pathways before surgery. This protects function during the procedure and gives your surgical team detailed functional anatomy."
+    },
+    {
+      "step": "Brain Tumor Surgery",
+      "duration": "Approximately 3-7 hours in operating room",
+      "detail": "Performed under general anesthesia or awake-asleep-awake technique. Neurosurgeon uses a microscope, intraoperative MRI, and neuronavigation to access and remove or reduce the tumor while protecting surrounding brain tissue. Hospital stay typically 5-10 days, often including 1-2 days in intensive care for monitoring."
+    },
+    {
+      "step": "Recovery & Early Follow-Up",
+      "duration": "Recommended 3-6 weeks in Korea; light activity resumable at 4-6 weeks",
+      "detail": "Post-operative scans confirm extent of resection. Physical therapy, speech therapy, or cognitive rehabilitation may begin while you're in Korea. Most centers schedule follow-up imaging and neurosurgeon review before travel. Continued outpatient care and imaging surveillance typically continues for 12 months post-op."
+    }
+  ],
+  "whyKorea": [
+    "MFDS-accredited neurosurgery centers in Seoul and Gangnam offer intraoperative MRI and neuronavigation as standard, reducing post-operative neurological complications compared to centers without real-time imaging",
+    "Korean neurosurgeons routinely perform awake-mapping and intraoperative monitoring to preserve speech, motor, and cognitive function in tumors near eloquent cortex—specialized training particularly strong in high-volume Korean centers",
+    "Comprehensive pre- and post-operative imaging protocols, including DTI and fMRI mapping, are integrated into standard surgical packages rather than billed separately, reducing total out-of-pocket costs",
+    "Self-pay costs approximately USD 18,000–45,000 depending on tumor complexity; comparable North American/European private surgery typically ranges USD 40,000–120,000, offering 40-60% savings without compromising accreditation or technology standards"
+  ],
+  "faqs": [
+    {
+      "question": "What is my realistic recovery timeline after brain tumor surgery?",
+      "answer": "Light activity and supervised walking typically resume at 4–6 weeks post-op. Most patients achieve fuller functional recovery over 3–6 months as brain swelling resolves and neurological pathways reorganize. Return to work, driving, or strenuous activity depends on your specific tumor location and post-operative function, assessed at your 6-week and 12-week follow-ups."
+    },
+    {
+      "question": "Will I have permanent memory, speech, or movement changes after surgery?",
+      "answer": "Korean centers use intraoperative neuronavigation, awake-mapping, and real-time imaging to minimize damage to speech, memory, and movement centers. Most patients experience temporary swelling-related changes that improve significantly by 3 months. Your surgical team will discuss tumor location, risk, and specific monitoring during your pre-operative assessment; outcomes vary widely by case."
+    },
+    {
+      "question": "How long do I need to stay in Korea for brain tumor surgery?",
+      "answer": "Plan 3–6 weeks: roughly 1 week for pre-operative testing, 7–10 days in hospital, and 2–3 weeks for early recovery and post-operative imaging before clearance to travel. Some patients extend their stay for rehabilitation; others coordinate return care with their home country neurosurgeon after initial healing."
+    },
+    {
+      "question": "What is included in the approximate USD 18,000–45,000 cost range?",
+      "answer": "Costs typically cover surgeon fees, operating room, intraoperative imaging (MRI/neuronavigation), hospital stay (5–10 days), anesthesia, nursing, basic physiotherapy, and pre- and post-operative imaging. Pathology analysis is usually included. Medications, extended rehabilitation, or travel accommodations are typically separate; confirm all-inclusive scope with your center before scheduling."
+    },
+    {
+      "question": "Do Korean neurosurgeons have experience with international patients?",
+      "answer": "Yes. Major Seoul and Gangnam centers regularly treat international patients. Most provide English-speaking coordinators, translation services, and discharge summaries/imaging on USB for continuity with your home country neurologist. Coordinate post-operative follow-up imaging and neurology care before departure to ensure continuity."
+    }
+  ]
+}

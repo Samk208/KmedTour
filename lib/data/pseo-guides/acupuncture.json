@@ -1,0 +1,56 @@
+{
+  "slug": "acupuncture",
+  "candidateFor": [
+    "Patients with chronic pain (back, neck, joint pain) seeking non-surgical treatment",
+    "People with tension headaches or migraines looking for drug-free management",
+    "Athletes or active individuals needing injury recovery without downtime",
+    "Patients with musculoskeletal conditions (arthritis-related stiffness, repetitive strain)",
+    "Those seeking complementary care alongside conventional treatment",
+    "International patients who can arrange 1-2 weeks in Korea for a short series"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Consultation & Assessment",
+      "duration": "1-2 hours (first visit)",
+      "detail": "A licensed Korean Medicine doctor evaluates your condition, medical history, and symptoms using traditional Korean Medicine assessment methods. They ask about pain location, severity, and how symptoms affect daily life. This guides treatment planning."
+    },
+    {
+      "step": "Acupuncture Treatment",
+      "duration": "30-60 minutes per session",
+      "detail": "Sterile needles are placed at specific body points tailored to your condition. Sessions commonly use Saam or hand-acupuncture techniques. No anesthesia is used. Many clinics combine acupuncture with other therapies like moxibustion or herbal consultation in a single visit."
+    },
+    {
+      "step": "Recovery & Follow-up",
+      "duration": "Immediate return to normal activity; plan 1-2 weeks for a treatment series",
+      "detail": "No downtime—you can resume work, exercise, or travel the same day. For optimal results, international patients typically arrange 1-2 weeks in Korea to complete a series of sessions spaced 2-3 days apart. Single sessions are also available."
+    }
+  ],
+  "whyKorea": [
+    "Korean Medicine doctors are licensed specialists with rigorous training in acupuncture techniques recognized under MFDS (Korean FDA) standards, ensuring practitioner credentials and needle safety protocols.",
+    "Sessions cost $40-$115 USD per session—typically 40-70% lower than equivalent care in North America or Western Europe.",
+    "Korean clinics integrate traditional acupuncture with modern diagnostic equipment and often operate within larger medical centers offering conventional care if complications arise.",
+    "Saam and hand-acupuncture methods, refined over centuries in Korean practice, are widely taught and performed across Seoul and major cities, making specialized approaches accessible to international patients."
+  ],
+  "faqs": [
+    {
+      "question": "Is acupuncture painful?",
+      "answer": "Acupuncture needles are thin and insertion is usually painless or causes minimal discomfort. Many patients report relaxation during treatment. Some mild soreness may occur at needle sites but resolves quickly."
+    },
+    {
+      "question": "How many sessions will I need?",
+      "answer": "This depends on your condition and severity. A single session can provide relief; short-term conditions often improve within 3-6 sessions over 1-2 weeks. Chronic conditions may require ongoing maintenance. Your doctor will recommend a plan after the initial consultation."
+    },
+    {
+      "question": "Can I combine acupuncture with other treatments?",
+      "answer": "Yes. Many Korean clinics offer acupuncture alongside herbal medicine, moxibustion, or other therapies. If you are seeing another doctor or taking medications, inform your Korean Medicine practitioner to ensure safe coordination."
+    },
+    {
+      "question": "Is acupuncture safe for international patients?",
+      "answer": "Acupuncture is very safe when performed by licensed practitioners using sterile needles—standard practice in Korean clinics. There is no surgical risk or hospital stay required. Tell your practitioner about any bleeding disorders or medications."
+    },
+    {
+      "question": "What if I'm afraid of needles?",
+      "answer": "Needles used in acupuncture are much thinner than injection needles and cause minimal sensation. If needle anxiety is severe, discuss alternatives like acupressure or herbal consultation with your practitioner. Many patients find the experience less intimidating than expected."
+    }
+  ]
+}
