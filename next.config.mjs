@@ -49,6 +49,18 @@ const nextConfig = {
         destination: "/:locale/hospitals/:slug",
         permanent: true,
       },
+      // Legacy thin treatment pages — the rich sidecar-driven /procedures
+      // route is canonical (matches sitemap.ts and page metadata).
+      {
+        source: "/:locale/content/treatments",
+        destination: "/:locale/procedures",
+        permanent: true,
+      },
+      {
+        source: "/:locale/content/treatments/:slug",
+        destination: "/:locale/procedures/:slug",
+        permanent: true,
+      },
     ];
   },
 

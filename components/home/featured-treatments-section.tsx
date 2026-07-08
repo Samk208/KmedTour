@@ -29,7 +29,7 @@ export function FeaturedTreatmentsSection() {
               {t('landing.treatments.subtitle') || "Explore treatments trusted by thousands of international patients, all performed at verified Korean clinics."}
             </p>
           </div>
-          <Link href="/content/treatments">
+          <Link href="/procedures">
             <Button variant="link" className="text-[var(--kmed-blue)] font-bold group">
               {t('landing.treatments.viewAll') || "View All Treatments"} <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
@@ -108,7 +108,7 @@ export function FeaturedTreatmentsSection() {
                       </div>
                     </div>
 
-                    <Link href={`/content/treatments/${treatment.slug}`} className="w-full">
+                    <Link href={`/procedures/${treatment.slug}`} className="w-full">
                       <Button
                         variant="outline"
                         className="w-full justify-between group border-gray-200 hover:border-[var(--kmed-teal)] hover:text-[var(--kmed-teal)]"

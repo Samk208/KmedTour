@@ -10,7 +10,7 @@ import { Clock, DollarSign, Search, TrendingUp } from 'lucide-react'
 import Link from 'next/link'
 import { useMemo, useState } from 'react'
 
-export default function TreatmentsPage() {
+export function ProceduresDirectory() {
   const [selectedCategory, setSelectedCategory] = useState<string>('all')
   const [searchQuery, setSearchQuery] = useState<string>('')
 
@@ -29,7 +29,7 @@ export default function TreatmentsPage() {
 
     return ['all', ...Array.from(uniqueCategories)]
   }, [treatments])
-  
+
   const filteredTreatments = useMemo(() => {
     let results = treatments
 
@@ -65,10 +65,10 @@ export default function TreatmentsPage() {
       <div className="container mx-auto max-w-[1240px] px-4 sm:px-6 py-16">
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4" style={{ color: 'var(--kmed-navy)' }}>
-            Medical Treatments in Korea
+            Medical Procedures in Korea
           </h1>
           <p className="text-lg leading-relaxed max-w-3xl" style={{ color: 'var(--deep-grey)' }}>
-            Explore comprehensive information about medical procedures, pricing, and success rates at Korean clinics.
+            In-depth guides to 113 procedures at KAHF-accredited Korean hospitals — real costs, recovery timelines, candidacy, and answers to the questions patients actually ask.
           </p>
         </div>
 
@@ -83,17 +83,17 @@ export default function TreatmentsPage() {
           />
         </div>
 
-        {/* Treatments Grid */}
+        {/* Procedures Grid */}
         {isLoading ? (
           <div className="text-center py-16">
             <p className="text-base" style={{ color: 'var(--deep-grey)' }}>
-              Loading treatments...
+              Loading procedures...
             </p>
           </div>
         ) : isError ? (
           <div className="text-center py-16">
             <p className="text-base mb-4" style={{ color: 'var(--kmed-navy)' }}>
-              We couldn’t load treatments right now. Please try again shortly.
+              We couldn&apos;t load procedures right now. Please try again shortly.
             </p>
             <Button onClick={handleClearFilters} className="bg-[var(--kmed-blue)] hover:bg-[var(--kmed-blue)]/90 text-white">
               Clear all filters
@@ -105,7 +105,7 @@ export default function TreatmentsPage() {
               <Search className="h-8 w-8" style={{ color: 'var(--kmed-teal)' }} />
             </div>
             <h3 className="text-xl font-semibold mb-2" style={{ color: 'var(--kmed-navy)' }}>
-              No treatments found
+              No procedures found
             </h3>
             <p className="text-base mb-6" style={{ color: 'var(--deep-grey)' }}>
               Try adjusting your search or filter to find what you&apos;re looking for.
@@ -140,12 +140,12 @@ export default function TreatmentsPage() {
                     />
                   </div>
                 </div>
-                
+
                 <div className="p-6 space-y-4">
                   <h3 className="text-xl font-semibold" style={{ color: 'var(--kmed-navy)' }}>
                     {treatment.title}
                   </h3>
-                  
+
                   <p className="text-sm leading-relaxed" style={{ color: 'var(--deep-grey)' }}>
                     {treatment.shortDescription}
                   </p>
@@ -168,8 +168,8 @@ export default function TreatmentsPage() {
                     </div>
                   </div>
 
-                  <Link href={`/content/treatments/${treatment.slug}`}>
-                    <Button 
+                  <Link href={`/procedures/${treatment.slug}`}>
+                    <Button
                       className="w-full bg-[var(--kmed-blue)] hover:bg-[var(--kmed-blue)]/90 text-white"
                     >
                       View Details

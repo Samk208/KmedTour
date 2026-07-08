@@ -40,7 +40,7 @@ export default function LandingPage() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/content/treatments">
+                <Link href="/procedures">
                   <Button 
                     size="lg" 
                     className="text-base px-8 py-6 bg-[var(--kmed-blue)] hover:bg-[var(--kmed-blue)]/90 text-white"
@@ -174,7 +174,7 @@ export default function LandingPage() {
             {topTreatments.map((treatment) => (
               <Link 
                 key={treatment.id}
-                href={`/content/treatments/${treatment.slug}`}
+                href={`/procedures/${treatment.slug}`}
                 className="block group"
               >
                 <div 
@@ -221,7 +221,7 @@ export default function LandingPage() {
           </div>
 
           <div className="text-center">
-            <Link href="/content/treatments">
+            <Link href="/procedures">
               <Button 
                 size="lg"
                 variant="outline"
@@ -453,7 +453,7 @@ export default function LandingPage() {
                 </Button>
               </Link>
               
-              <Link href="/content/treatments">
+              <Link href="/procedures">
                 <Button 
                   size="lg" 
                   variant="outline"
