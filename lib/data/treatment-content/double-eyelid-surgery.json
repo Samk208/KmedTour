@@ -8,12 +8,30 @@
     "Typical cost in Korea runs **$1,500–$4,000 USD**; plan roughly **5 days in-country** for consultation, surgery, and early healing before flying home."
   ],
   "keyFacts": [
-    { "label": "Procedure time", "value": "1–2 hours" },
-    { "label": "Anesthesia", "value": "Local with light sedation" },
-    { "label": "Hospital stay", "value": "Same-day (outpatient)" },
-    { "label": "Recommended stay in Korea", "value": "~5 days" },
-    { "label": "Recovery", "value": "Return to desk work in days; full crease settles in 2–3 months" },
-    { "label": "Typical cost in Korea", "value": "$1,500–$4,000 USD" }
+    {
+      "label": "Procedure time",
+      "value": "1–2 hours"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "Local with light sedation"
+    },
+    {
+      "label": "Hospital stay",
+      "value": "Same-day (outpatient)"
+    },
+    {
+      "label": "Recommended stay in Korea",
+      "value": "~5 days"
+    },
+    {
+      "label": "Recovery",
+      "value": "Return to desk work in days; full crease settles in 2–3 months"
+    },
+    {
+      "label": "Typical cost in Korea",
+      "value": "$1,500–$4,000 USD"
+    }
   ],
   "sections": {
     "overview": "**Double eyelid surgery** creates a defined crease in the upper eyelid for people born without one, or refines an existing crease to make the eyes appear larger and more rested.\n\nPatients travel to Korea because the procedure is one of the most frequently performed cosmetic operations there — giving surgeons extensive experience in tailoring crease height and shape to suit each face naturally, rather than applying one fixed look.\n\nThe goal is a crease that fits your eye anatomy and proportions.\n\n- Some patients want a **subtle, low crease** that simply opens the eye slightly\n- Others prefer a **more defined fold**\n- Many patients from regions where a natural crease is uncommon choose this surgery to reduce the heaviness of the upper lid and make applying makeup or simply looking awake easier\n\nThere are two main techniques:\n\n- **Non-incisional (buried suture)** method — passes fine sutures through small punctures to anchor the crease without a long cut; suits patients with thinner lids and little excess skin\n- **Incisional** method — uses a fine cut along the planned crease to remove a small amount of skin or fat and create a more durable, defined fold; suits heavier or more variable lids\n\nAn **epicanthoplasty**, which adjusts the small fold at the inner corner of the eye, is sometimes added to lengthen the eye's appearance, but it is a separate decision.\n\nThis surgery is distinct from **ptosis correction**, which addresses a drooping lid caused by weak muscle and changes how much the eye opens — not just the crease.\n\nThe ~5-day recommended stay allows for consultation, surgery, and early healing before you fly home.",
@@ -24,15 +42,39 @@
     "why_korea": "**Double eyelid surgery** is among the most commonly performed cosmetic procedures in Korea, so surgeons accumulate deep experience in matching crease height and method to each patient's anatomy.\n\nThis includes the heavier lids common among patients from **Africa, the Middle East, and Asia** who have no natural crease — a population well represented in Korean clinics. This volume supports refined, conservative techniques aimed at natural results.\n\nKorean clinics are typically well equipped, with established protocols for anesthesia, sterilization, and aftercare.\n\nThe medical tourism sector is supported by:\n\n- The **Ministry of Health and Welfare**\n- **KHIDI's Medical Korea** program, which promotes Korea internationally as a medical travel destination\n- **KOIHA** accreditation frameworks that recognise facilities meeting defined standards for international patient care\n\nFor patients travelling from abroad, this combination of focused surgical experience, modern facilities, and an established system for hosting international patients — including interpretation and coordinated scheduling — is what makes the trip practical.\n\nKmedTour connects you with accredited hospitals and helps verify a facility's credentials so your choice rests on real standards rather than marketing."
   },
   "costTable": [
-    { "item": "Non-incisional (buried suture)", "cost": "$1,500–$2,500" },
-    { "item": "Incisional method", "cost": "$2,000–$3,500" },
-    { "item": "Incisional + epicanthoplasty", "cost": "$2,500–$4,000" },
-    { "item": "Add-on: ptosis correction", "cost": "$500–$1,000 extra" }
+    {
+      "item": "Non-incisional (buried suture)",
+      "cost": "$1,500–$2,500"
+    },
+    {
+      "item": "Incisional method",
+      "cost": "$2,000–$3,500"
+    },
+    {
+      "item": "Incisional + epicanthoplasty",
+      "cost": "$2,500–$4,000"
+    },
+    {
+      "item": "Add-on: ptosis correction",
+      "cost": "$500–$1,000 extra"
+    }
   ],
   "callouts": [
-    { "type": "tip", "title": "Remote consultation", "text": "Many Korean clinics review your photos before travel to confirm technique and set realistic expectations — use this service to avoid surprises on arrival." },
-    { "type": "tip", "title": "Non-incisional vs incisional: ask your surgeon", "text": "Lid thickness and the amount of excess skin or fat determine which method suits you. Request the surgeon's reasoning in writing during your remote consult so you understand why one technique was recommended over the other." },
-    { "type": "warning", "title": "Crease looks higher at first", "text": "In the first weeks after surgery the crease will appear higher and tighter than the final result. This is normal — full settling takes 2–3 months. Do not judge the outcome too early." }
+    {
+      "type": "tip",
+      "title": "Remote consultation",
+      "text": "Many Korean clinics review your photos before travel to confirm technique and set realistic expectations — use this service to avoid surprises on arrival."
+    },
+    {
+      "type": "tip",
+      "title": "Non-incisional vs incisional: ask your surgeon",
+      "text": "Lid thickness and the amount of excess skin or fat determine which method suits you. Request the surgeon's reasoning in writing during your remote consult so you understand why one technique was recommended over the other."
+    },
+    {
+      "type": "warning",
+      "title": "Crease looks higher at first",
+      "text": "In the first weeks after surgery the crease will appear higher and tighter than the final result. This is normal — full settling takes 2–3 months. Do not judge the outcome too early."
+    }
   ],
   "keyTakeaways": [
     "Korea's high surgical volume in double eyelid surgery gives surgeons experience with a wide range of lid types, including heavier lids common among patients from Africa, the GCC, and Asia — the result is natural-looking creases tailored to your anatomy, not a one-size look.",
@@ -41,21 +83,60 @@
     "The crease continues to settle for 2–3 months after surgery — do not assess the final result during your immediate recovery."
   ],
   "entities": [
-    { "name": "Double eyelid surgery", "url": "https://en.wikipedia.org/wiki/Double_eyelid_surgery" },
-    { "name": "Epicanthoplasty", "url": "https://en.wikipedia.org/wiki/Epicanthoplasty" },
-    { "name": "Ptosis (eyelid)", "url": "https://en.wikipedia.org/wiki/Ptosis_(eyelid)" },
-    { "name": "KHIDI", "url": "https://en.wikipedia.org/wiki/Korea_Health_Industry_Development_Institute" }
+    {
+      "name": "Double eyelid surgery",
+      "url": "https://en.wikipedia.org/wiki/Double_eyelid_surgery"
+    },
+    {
+      "name": "Epicanthoplasty",
+      "url": "https://en.wikipedia.org/wiki/Epicanthoplasty"
+    },
+    {
+      "name": "Ptosis (eyelid)",
+      "url": "https://en.wikipedia.org/wiki/Ptosis_(eyelid)"
+    },
+    {
+      "name": "KHIDI",
+      "url": "https://en.wikipedia.org/wiki/Korea_Health_Industry_Development_Institute"
+    }
   ],
   "faqs": [
-    { "q": "What is the difference between the non-incisional and incisional methods?", "a": "The non-incisional (buried suture) method anchors the crease with fine sutures passed through tiny punctures, leaving no long external scar. It suits patients with thinner lids and little excess skin. The incisional method makes a fine cut along the crease, removes a small amount of excess skin, muscle, or fat, and produces a more durable, defined fold. It suits heavier lids or cases where the crease needs to last more reliably. Your surgeon recommends a technique based on lid thickness, skin amount, and the result you want." },
-    { "q": "Is double eyelid surgery painful?", "a": "The procedure is performed under local anesthesia with light sedation, so discomfort during surgery is minimal. Afterwards, most patients describe the sensation as mild tightness or a foreign-body feeling rather than significant pain, managed well with simple prescribed medication. Swelling and bruising peak in the first two to three days and gradually resolve over the following weeks." },
-    { "q": "How long do the results last?", "a": "Results from the incisional method are generally considered permanent, as the crease is structurally secured and excess skin is removed. The non-incisional method is long-lasting but carries a small chance the sutures can loosen over many years, particularly in patients whose lids change with age or weight. Your surgeon will discuss expected longevity based on your lid type and chosen technique." },
-    { "q": "Can I combine double eyelid surgery with epicanthoplasty or ptosis correction?", "a": "Yes, but these are distinct procedures with their own surgical steps, recovery considerations, and cost implications. An epicanthoplasty adjusts the inner-corner fold to lengthen the eye's appearance. Ptosis correction addresses a drooping lid by adjusting the lid-lifting muscle — it changes how wide the eye opens, not just the crease. Combining procedures is common in Korean clinics, but must be agreed in advance and will affect total recovery time and price." },
-    { "q": "How long should I stay in Korea for double eyelid surgery?", "a": "A stay of approximately 5 days is typically recommended. This allows time for an in-person consultation, the procedure itself, a day or two of early recovery, suture removal for incisional cases (usually day 4–7), and surgical clearance before flying home. The non-incisional method has no long suture line to remove, so clearance may come earlier, but 5 days provides a comfortable buffer for most patients." }
+    {
+      "q": "What is the difference between the non-incisional and incisional methods?",
+      "a": "The non-incisional (buried suture) method anchors the crease with fine sutures through tiny punctures, leaving no long external scar, and suits thinner lids with little excess skin. The incisional method makes a fine cut along the crease, removes a small amount of excess skin, muscle, or fat, and produces a more durable, defined fold, suiting heavier lids. Your surgeon recommends a technique based on lid thickness, skin amount, and the result you want."
+    },
+    {
+      "q": "Is double eyelid surgery painful?",
+      "a": "The procedure is performed under local anesthesia with light sedation, so discomfort during surgery is minimal. Afterwards, most patients describe the sensation as mild tightness or a foreign-body feeling rather than significant pain, managed well with simple prescribed medication. Swelling and bruising peak in the first two to three days and gradually resolve over the following weeks."
+    },
+    {
+      "q": "How long do the results last?",
+      "a": "Results from the incisional method are generally considered permanent, as the crease is structurally secured and excess skin is removed. The non-incisional method is long-lasting but carries a small chance the sutures can loosen over many years, particularly in patients whose lids change with age or weight. Your surgeon will discuss expected longevity based on your lid type and chosen technique."
+    },
+    {
+      "q": "Can I combine double eyelid surgery with epicanthoplasty or ptosis correction?",
+      "a": "Yes, but these are distinct procedures with their own surgical steps, recovery considerations, and cost implications. An epicanthoplasty adjusts the inner-corner fold to lengthen the eye's appearance. Ptosis correction addresses a drooping lid by adjusting the lid-lifting muscle — it changes how wide the eye opens, not just the crease. Combining procedures is common in Korean clinics, but must be agreed in advance and will affect total recovery time and price."
+    },
+    {
+      "q": "How long should I stay in Korea for double eyelid surgery?",
+      "a": "A stay of approximately 5 days is typically recommended. This allows time for an in-person consultation, the procedure itself, a day or two of early recovery, suture removal for incisional cases (usually day 4–7), and surgical clearance before flying home. The non-incisional method has no long suture line to remove, so clearance may come earlier, but 5 days provides a comfortable buffer for most patients."
+    }
   ],
   "images": [
-    { "src": "/images/procedures/inline/double-eyelid-surgery-1.jpg", "alt": "Plastic surgeon consulting a patient before double eyelid surgery in Korea", "credit": "fahri tokcan" },
-    { "src": "/images/procedures/inline/double-eyelid-surgery-2.jpg", "alt": "Double eyelid surgery at a Korean cosmetic clinic", "credit": "Dr. Haror's  Wellness" },
-    { "src": "/images/procedures/inline/double-eyelid-surgery-3.jpg", "alt": "Refreshed eye appearance after double eyelid surgery in Korea", "credit": "Shiny Diamond" }
+    {
+      "src": "/images/procedures/inline/double-eyelid-surgery-1.jpg",
+      "alt": "Plastic surgeon consulting a patient before double eyelid surgery in Korea",
+      "credit": "fahri tokcan"
+    },
+    {
+      "src": "/images/procedures/inline/double-eyelid-surgery-2.jpg",
+      "alt": "Double eyelid surgery at a Korean cosmetic clinic",
+      "credit": "Dr. Haror's  Wellness"
+    },
+    {
+      "src": "/images/procedures/inline/double-eyelid-surgery-3.jpg",
+      "alt": "Refreshed eye appearance after double eyelid surgery in Korea",
+      "credit": "Shiny Diamond"
+    }
   ]
 }

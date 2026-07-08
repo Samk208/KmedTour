@@ -57,6 +57,7 @@ export function Header() {
     { href: '/about', label: t('nav.about') },
     { href: '/how-it-works', label: t('nav.howItWorks') },
     { href: '/content', label: t('nav.content') },
+    { href: '/procedures', label: t('nav.procedures', 'Procedures') },
     { href: '/treatment-advisor', label: t('nav.treatmentAdvisor') },
     { href: '/clinics', label: 'Clinics' },
     { href: '/for-clinics', label: t('nav.forClinics') },

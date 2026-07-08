@@ -31,7 +31,7 @@ export default function FavoritesPage() {
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
               <Link
-                href="/content/treatments"
+                href="/procedures"
                 className="px-6 py-3 rounded-full font-semibold text-white transition-all duration-300 hover:scale-105"
                 style={{ backgroundColor: 'var(--kmed-blue)' }}
               >
@@ -97,7 +97,7 @@ export default function FavoritesPage() {
               {treatments.map((item) => (
                 <Link
                   key={item.id}
-                  href={`/content/treatments/${item.slug}`}
+                  href={`/procedures/${item.slug}`}
                   className="block bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300"
                 >
                   <div className="flex items-start justify-between mb-4">

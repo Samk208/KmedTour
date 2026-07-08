@@ -8,26 +8,56 @@
     "The basic new shape is visible on departure, but the refined final result settles over several months as swelling resolves."
   ],
   "keyFacts": [
-    { "label": "Procedure time", "value": "About 2–3 hours, depending on complexity" },
-    { "label": "Anesthesia", "value": "General (sedation with local for limited cases)" },
-    { "label": "Hospital stay", "value": "Outpatient — most patients go home the same day" },
-    { "label": "Recommended stay in Korea", "value": "About 7 days (through splint removal)" },
-    { "label": "Recovery", "value": "Desk work in 1–2 weeks; final result over several months" },
-    { "label": "Typical cost in Korea", "value": "$3,000–$8,000" }
+    {
+      "label": "Procedure time",
+      "value": "About 2–3 hours, depending on complexity"
+    },
+    {
+      "label": "Anesthesia",
+      "value": "General (sedation with local for limited cases)"
+    },
+    {
+      "label": "Hospital stay",
+      "value": "Outpatient — most patients go home the same day"
+    },
+    {
+      "label": "Recommended stay in Korea",
+      "value": "About 7 days (through splint removal)"
+    },
+    {
+      "label": "Recovery",
+      "value": "Desk work in 1–2 weeks; final result over several months"
+    },
+    {
+      "label": "Typical cost in Korea",
+      "value": "$3,000–$8,000"
+    }
   ],
   "sections": {
-    "overview": "Rhinoplasty is surgery to reshape the nose, adjusting the bridge, tip, nostrils, or internal structures to change appearance, correct an injury, or improve breathing. Patients travel to Korea because Korean surgeons perform a very high volume of nasal procedures and have particular experience with the structural needs of patients whose noses have lower bridges and softer cartilage, which calls for careful augmentation rather than only reduction.\n\nThe operation is tailored to your face. Some patients want a higher, more defined bridge; others want a refined, less bulbous tip or narrower nostrils. Many cases combine several of these goals in one surgery. Because the nose sits at the center of the face, small changes in millimeters produce visible differences, so planning during consultation matters as much as the surgery itself.\n\nKorean clinics commonly use the patient's own cartilage, often taken from the nasal septum or ear, to build or support the tip and bridge. Silicone or Gore-Tex implants are also used for bridge augmentation, and the choice between cartilage and implant is discussed openly based on your tissue, goals, and whether you have had previous nasal surgery.\n\nFor international patients, rhinoplasty is usually planned around a single trip of about 7 days. Final results continue to settle over many months as residual swelling resolves, but most patients leave Korea with the visible shape already taking form and clear written aftercare instructions.",
-    "candidacy": "Good candidates are adults in general good health whose facial growth is complete, who have a specific concern about nasal shape or breathing, and who hold realistic expectations. Thick skin, prior nasal trauma, or previous rhinoplasty are not barriers, but they affect technique and predictability, so they should be discussed honestly during consultation.\n\nYou may be a good candidate if:\n- Your facial growth is complete and you are in general good health.\n- You have a specific, realistic goal for the bridge, tip, nostrils, or breathing.\n- You are a non-smoker, or can stop for several weeks before and after surgery.\n\nRhinoplasty may not be advisable if:\n- You have an active sinus or skin infection in the area.\n- You have an uncontrolled bleeding disorder or unstable chronic illness.\n- You expect a different person's nose rather than a result that suits your own bone and cartilage.\n\nIf you take blood thinners, have a clotting condition, or have had keloid scarring, tell the clinic before travel. An honest consultation, including photographs reviewed in advance, helps confirm whether you are a suitable candidate before you book flights.",
-    "procedure_steps": "Care begins with a consultation, often started remotely with photos and completed in person in Korea. The surgeon examines your nasal structure, skin thickness, and breathing, discusses your goals, and agrees on a plan, including whether to use your own cartilage, an implant, or both.\n\nRhinoplasty is performed under general anesthesia or, for limited cases, sedation with local anesthesia. The two main approaches are **closed rhinoplasty**, where all incisions are hidden inside the nostrils, and **open rhinoplasty**, which adds a small incision across the columella for fuller access to reshape the tip and structure. Open technique leaves a tiny scar that usually fades; closed technique leaves none externally but offers less direct exposure.\n\nFor augmentation, the surgeon either places a silicone or Gore-Tex implant along the bridge or grafts cartilage harvested from your septum or ear. Tip refinement uses sutures and cartilage grafts to reshape and support the tip, and nostril narrowing is done through small incisions at the base of the nose.\n\nThe operation typically takes around two to three hours. At the end, a splint or cast is applied to hold the new shape, and most rhinoplasty patients go home the same day rather than staying overnight.",
+    "overview": "Rhinoplasty is surgery to reshape the nose, adjusting the bridge, tip, nostrils, or internal structures to change appearance, correct an injury, or improve breathing.\n\nPatients travel to Korea because Korean surgeons perform a very high volume of nasal procedures and have particular experience with the structural needs of patients whose noses have lower bridges and softer cartilage, which calls for careful augmentation rather than only reduction.\n\nThe operation is tailored to your face. Some patients want a higher, more defined bridge; others want a refined, less bulbous tip or narrower nostrils. Many cases combine several of these goals in one surgery.\n\nBecause the nose sits at the center of the face, small changes in millimeters produce visible differences, so planning during consultation matters as much as the surgery itself.\n\nKorean clinics commonly use the patient's own cartilage, often taken from the nasal septum or ear, to build or support the tip and bridge.\n\nSilicone or Gore-Tex implants are also used for bridge augmentation, and the choice between cartilage and implant is discussed openly based on your tissue, goals, and whether you have had previous nasal surgery.\n\nFor international patients, rhinoplasty is usually planned around a single trip of about 7 days. Final results continue to settle over many months as residual swelling resolves, but most patients leave Korea with the visible shape already taking form and clear written aftercare instructions.",
+    "candidacy": "Good candidates are adults in general good health whose facial growth is complete, who have a specific concern about nasal shape or breathing, and who hold realistic expectations.\n\nThick skin, prior nasal trauma, or previous rhinoplasty are not barriers, but they affect technique and predictability, so they should be discussed honestly during consultation.\n\nYou may be a good candidate if:\n- Your facial growth is complete and you are in general good health.\n- You have a specific, realistic goal for the bridge, tip, nostrils, or breathing.\n- You are a non-smoker, or can stop for several weeks before and after surgery.\n\nRhinoplasty may not be advisable if:\n- You have an active sinus or skin infection in the area.\n- You have an uncontrolled bleeding disorder or unstable chronic illness.\n- You expect a different person's nose rather than a result that suits your own bone and cartilage.\n\nIf you take blood thinners, have a clotting condition, or have had keloid scarring, tell the clinic before travel. An honest consultation, including photographs reviewed in advance, helps confirm whether you are a suitable candidate before you book flights.",
+    "procedure_steps": "Care begins with a consultation, often started remotely with photos and completed in person in Korea. The surgeon examines your nasal structure, skin thickness, and breathing, discusses your goals, and agrees on a plan, including whether to use your own cartilage, an implant, or both.\n\nRhinoplasty is performed under general anesthesia or, for limited cases, sedation with local anesthesia. The two main approaches are **closed rhinoplasty**, where all incisions are hidden inside the nostrils, and **open rhinoplasty**, which adds a small incision across the columella for fuller access to reshape the tip and structure.\n\nOpen technique leaves a tiny scar that usually fades; closed technique leaves none externally but offers less direct exposure.\n\nFor augmentation, the surgeon either places a silicone or Gore-Tex implant along the bridge or grafts cartilage harvested from your septum or ear. Tip refinement uses sutures and cartilage grafts to reshape and support the tip, and nostril narrowing is done through small incisions at the base of the nose.\n\nThe operation typically takes around two to three hours. At the end, a splint or cast is applied to hold the new shape, and most rhinoplasty patients go home the same day rather than staying overnight.",
     "recovery_timeline": "Recovery is gradual, and planning your stay around the splint-removal visit is the key logistic for international patients.\n\n- **Days 1–3:** Bruising and swelling peak, especially around the eyes and cheeks. You breathe partly through your mouth and sleep with your head elevated. Discomfort is usually pressure rather than sharp pain.\n- **Days 5–7:** The splint and any external sutures are removed at a follow-up visit. Most patients are cleared to fly home, which matches the ~7-day stay. The basic new shape is visible.\n- **Weeks 3–4:** Most visible swelling subsides; you can return to desk work and gentle activity. Strenuous exercise, contact sports, and resting glasses on the bridge are avoided.\n- **Several months:** Residual swelling, especially at the tip, settles gradually and the refined final result becomes clear.\n\nKmedTour coordinators help arrange your splint-removal appointment before departure and pass any later questions to the clinic, so you are not navigating follow-up alone once you are back home.",
-    "cost_breakdown": "The range of $3,000 to $8,000 reflects the variation between a focused single-goal rhinoplasty and a more involved case combining bridge augmentation, tip work, and nostril refinement, or a revision of previous surgery. The figure typically covers the surgeon's fee, anesthesia, the operating facility, standard pre-operative checks, the splint, and scheduled follow-up visits during your stay.\n\nIt generally does not include flights, accommodation, optional cartilage graft harvesting that adds operative time, extended revision work, or unrelated treatments. Always confirm in writing what your personal quote includes before you travel.\n\nKorea is competitive on price partly because the high volume of nasal surgery supports efficient, well-equipped clinics, and because facility and staffing costs differ from those in the United States and parts of Europe. KmedTour provides an itemized quote so you can compare like for like rather than headline numbers alone.",
-    "why_korea": "Korea performs a large volume of facial cosmetic surgery, and rhinoplasty is among the most commonly requested procedures, so surgeons accumulate broad experience across many nose types, including the augmentation-focused work often needed for patients from Africa, the Middle East, and Asia. This concentration of practice supports refined techniques in tip shaping, cartilage grafting, and revision surgery.\n\nKorean clinics are typically well equipped, with established protocols for anesthesia, sterilization, and aftercare. The medical tourism sector is supported by the Ministry of Health and Welfare and promoted through KHIDI's Medical Korea program, and accreditation frameworks such as KOIHA recognize facilities that meet defined standards for international patient care.\n\nFor patients traveling from abroad, this combination matters: specialized surgical experience, modern facilities, and an established system for hosting international patients, including interpretation and coordinated scheduling. KmedTour connects you with accredited hospitals and helps verify a facility's credentials so your decision rests on real standards rather than marketing alone."
+    "cost_breakdown": "The range of $3,000 to $8,000 reflects the variation between a focused single-goal rhinoplasty and a more involved case combining bridge augmentation, tip work, and nostril refinement, or a revision of previous surgery.\n\nThe figure typically covers the surgeon's fee, anesthesia, the operating facility, standard pre-operative checks, the splint, and scheduled follow-up visits during your stay.\n\nIt generally does not include flights, accommodation, optional cartilage graft harvesting that adds operative time, extended revision work, or unrelated treatments. Always confirm in writing what your personal quote includes before you travel.\n\nKorea is competitive on price partly because the high volume of nasal surgery supports efficient, well-equipped clinics, and because facility and staffing costs differ from those in the United States and parts of Europe.\n\nKmedTour provides an itemized quote so you can compare like for like rather than headline numbers alone.",
+    "why_korea": "Korea performs a large volume of facial cosmetic surgery, and rhinoplasty is among the most commonly requested procedures, so surgeons accumulate broad experience across many nose types, including the augmentation-focused work often needed for patients from Africa, the Middle East, and Asia.\n\nThis concentration of practice supports refined techniques in tip shaping, cartilage grafting, and revision surgery.\n\nKorean clinics are typically well equipped, with established protocols for anesthesia, sterilization, and aftercare. The medical tourism sector is supported by the Ministry of Health and Welfare and promoted through KHIDI's Medical Korea program, and accreditation frameworks such as KOIHA recognize facilities that meet defined standards for international patient care.\n\nFor patients traveling from abroad, this combination matters: specialized surgical experience, modern facilities, and an established system for hosting international patients, including interpretation and coordinated scheduling. KmedTour connects you with accredited hospitals and helps verify a facility's credentials so your decision rests on real standards rather than marketing alone."
   },
   "costTable": [
-    { "item": "Primary rhinoplasty (single focus — tip or bridge)", "cost": "$3,000–$5,000" },
-    { "item": "Combined bridge, tip & nostril refinement", "cost": "$5,000–$8,000" },
-    { "item": "Revision rhinoplasty", "cost": "from $6,000" },
-    { "item": "Usually included in the quote", "cost": "Surgeon, anesthesia, facility, splint, in-stay follow-ups" }
+    {
+      "item": "Primary rhinoplasty (single focus — tip or bridge)",
+      "cost": "$3,000–$5,000"
+    },
+    {
+      "item": "Combined bridge, tip & nostril refinement",
+      "cost": "$5,000–$8,000"
+    },
+    {
+      "item": "Revision rhinoplasty",
+      "cost": "from $6,000"
+    },
+    {
+      "item": "Usually included in the quote",
+      "cost": "Surgeon, anesthesia, facility, splint, in-stay follow-ups"
+    }
   ],
   "callouts": [
     {
@@ -43,11 +73,26 @@
     "Confirm an itemized written quote and the clinic's accreditation (KOIHA / Medical Korea) before booking."
   ],
   "entities": [
-    { "name": "Rhinoplasty", "url": "https://en.wikipedia.org/wiki/Rhinoplasty" },
-    { "name": "Nasal septum", "url": "https://en.wikipedia.org/wiki/Nasal_septum" },
-    { "name": "Cartilage", "url": "https://en.wikipedia.org/wiki/Cartilage" },
-    { "name": "General anaesthesia", "url": "https://en.wikipedia.org/wiki/General_anaesthesia" },
-    { "name": "Septoplasty", "url": "https://en.wikipedia.org/wiki/Septoplasty" }
+    {
+      "name": "Rhinoplasty",
+      "url": "https://en.wikipedia.org/wiki/Rhinoplasty"
+    },
+    {
+      "name": "Nasal septum",
+      "url": "https://en.wikipedia.org/wiki/Nasal_septum"
+    },
+    {
+      "name": "Cartilage",
+      "url": "https://en.wikipedia.org/wiki/Cartilage"
+    },
+    {
+      "name": "General anaesthesia",
+      "url": "https://en.wikipedia.org/wiki/General_anaesthesia"
+    },
+    {
+      "name": "Septoplasty",
+      "url": "https://en.wikipedia.org/wiki/Septoplasty"
+    }
   ],
   "faqs": [
     {
@@ -72,9 +117,18 @@
     }
   ],
   "references": [
-    { "label": "Rhinoplasty — MedlinePlus (NIH)", "url": "https://medlineplus.gov/ency/article/002983.htm" },
-    { "label": "Rhinoplasty — Wikipedia", "url": "https://en.wikipedia.org/wiki/Rhinoplasty" },
-    { "label": "Medical Korea (KHIDI) — official international patient portal", "url": "https://www.medicalkorea.or.kr" }
+    {
+      "label": "Rhinoplasty — MedlinePlus (NIH)",
+      "url": "https://medlineplus.gov/ency/article/002983.htm"
+    },
+    {
+      "label": "Rhinoplasty — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rhinoplasty"
+    },
+    {
+      "label": "Medical Korea (KHIDI) — official international patient portal",
+      "url": "https://www.medicalkorea.or.kr"
+    }
   ],
   "images": [
     {

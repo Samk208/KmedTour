@@ -54,7 +54,7 @@ export default function ContentHubPage() {
                 </p>
               </div>
             </div>
-            <Link href="/content/treatments">
+            <Link href="/procedures">
               <Button variant="ghost" style={{ color: 'var(--kmed-blue)' }}>
                 View All
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -69,7 +69,7 @@ export default function ContentHubPage() {
               </p>
             )}
             {featuredTreatments.map((treatment) => (
-              <Link key={treatment.id} href={`/content/treatments/${treatment.slug}`}>
+              <Link key={treatment.id} href={`/procedures/${treatment.slug}`}>
                 <Card className="overflow-hidden hover:shadow-xl transition-shadow h-full bg-white border-[var(--border-grey)]">
                   <div className="h-48 overflow-hidden relative">
                     <Image

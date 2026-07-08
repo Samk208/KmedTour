@@ -23,7 +23,9 @@ for (const f of files) {
   out += `import ${v} from './${f}'\n`;
 }
 out += '\nexport const treatmentContent: Record<string, TreatmentRichContent> = {\n';
-for (const [slug, v] of vars) out += `  ${JSON.stringify(slug)}: ${v} as TreatmentRichContent,\n`;
+// `as unknown as` — JSON module inference produces never[] for empty arrays
+// (e.g. references: []), which TS2352-fails a direct cast on some sidecars.
+for (const [slug, v] of vars) out += `  ${JSON.stringify(slug)}: ${v} as unknown as TreatmentRichContent,\n`;
 out += '}\n';
 
 fs.writeFileSync(path.join(dir, 'index.ts'), out);
