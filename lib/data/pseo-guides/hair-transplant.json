@@ -1,0 +1,49 @@
+{
+  "slug": "hair-transplant",
+  "candidateFor": [
+    "Men and women experiencing pattern baldness (androgenetic alopecia)",
+    "Those with sufficient donor hair density at the back and sides of the scalp",
+    "Individuals whose hair loss has stabilised — active hair loss may require ongoing treatment alongside transplantation",
+    "Adults in good general health with realistic expectations about coverage and density"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Scalp Assessment & Design",
+      "duration": "1–2 hours",
+      "detail": "A trichologist or surgeon examines your donor density, hair quality, and extent of hair loss. A hairline design is drawn that suits your facial proportions, skin tone, and future hair loss trajectory."
+    },
+    {
+      "step": "Graft Harvesting & Implantation",
+      "duration": "6–10 hours (varies by graft count)",
+      "detail": "Individual follicular units are extracted from the donor area using an FUE punch or DHI tool. Grafts are implanted in the recipient area one by one. The procedure is performed under local anesthesia — most patients remain awake and comfortable throughout."
+    },
+    {
+      "step": "Post-Operative Care & Growth",
+      "duration": "Results at 12–18 months",
+      "detail": "The scalp is washed gently from day 3. Scabs shed within 10–14 days. Transplanted hairs fall out at 2–6 weeks (shock loss) — this is normal. New growth begins at 3–4 months, with full density visible at 12–18 months."
+    }
+  ],
+  "whyKorea": [
+    "Korean hair transplant clinics frequently serve African, Middle Eastern, and South Asian patients, giving surgeons experience with the specific texture and curl characteristics of diverse hair types",
+    "Korean clinics offer competitive pricing for FUE and DHI procedures compared to UK, US, or UAE clinics offering equivalent quality",
+    "Many Korean hair transplant specialists have completed thousands of procedures, with high-volume practices enabling refined technique and efficiency"
+  ],
+  "faqs": [
+    {
+      "question": "FUE or DHI — which is better for my hair type?",
+      "answer": "FUE (Follicular Unit Extraction) creates small recipient channels first, then implants grafts using forceps. DHI (Direct Hair Implantation) uses a specialized pen to create the channel and implant the graft simultaneously, allowing denser packing and more precise angle control. Your surgeon will recommend the best approach based on your hair type, density goals, and donor availability."
+    },
+    {
+      "question": "How many grafts will I need?",
+      "answer": "The number of grafts depends on the size of the area being covered and the desired density. As a rough guide: hairline restoration typically requires 1,500–2,500 grafts; a thinning crown may require 1,000–2,000 grafts; full coverage of a Norwood Class 5–6 pattern can require 3,500–5,000+ grafts across multiple sessions. Your surgeon will provide a specific estimate after assessing your donor density."
+    },
+    {
+      "question": "Will anyone be able to tell I had a hair transplant?",
+      "answer": "With modern FUE and DHI techniques, results look natural when performed by an experienced surgeon. The key factor is hairline design — a skilled surgeon creates an irregular, age-appropriate hairline rather than a straight, uniform line. The scalp is presentable within 2–3 weeks after scab shedding."
+    },
+    {
+      "question": "Can I colour or cut my hair after a transplant?",
+      "answer": "Hair can be cut once it has grown to a cuttable length (typically 3–6 months post-procedure). Chemical colouring is generally advised against for 3–6 months to avoid stressing the newly establishing follicles. Your clinic will give specific aftercare guidance."
+    }
+  ]
+}

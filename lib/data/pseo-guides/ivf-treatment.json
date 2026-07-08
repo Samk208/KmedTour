@@ -1,0 +1,49 @@
+{
+  "slug": "ivf-treatment",
+  "candidateFor": [
+    "Couples who have not conceived after 12 months of unprotected intercourse (or 6 months if the woman is over 35)",
+    "Women with blocked or absent fallopian tubes, severe endometriosis, or ovarian insufficiency",
+    "Men with significantly low sperm count, motility, or morphology",
+    "Same-sex couples and single women pursuing parenthood with donor sperm"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Stimulation & Monitoring",
+      "duration": "10–14 days",
+      "detail": "Daily hormone injections stimulate multiple egg development. Multiple ultrasound scans and blood hormone tests monitor follicle growth and adjust medication doses."
+    },
+    {
+      "step": "Egg Retrieval & Fertilisation",
+      "duration": "1 day (retrieval); 3–5 days (embryo development)",
+      "detail": "Eggs are retrieved under mild sedation via ultrasound-guided needle. A semen sample is prepared on the same day. Eggs are fertilised using standard IVF or ICSI (intracytoplasmic sperm injection). Embryos are cultured to day 3 or day 5 blastocyst stage."
+    },
+    {
+      "step": "Embryo Transfer & Wait",
+      "duration": "15-minute procedure; 2-week wait",
+      "detail": "One or two embryos are transferred into the uterus via a thin catheter — no anesthesia required. A pregnancy blood test (beta-HCG) is performed approximately 10–14 days later."
+    }
+  ],
+  "whyKorea": [
+    "Korean fertility clinics maintain advanced embryology laboratories with time-lapse incubation, comprehensive genetic testing capabilities, and high technical standards",
+    "IVF costs in Korea are typically 50–70% lower than equivalent cycle costs in the US, UK, or Australia, without sacrificing laboratory quality",
+    "Korean clinics have well-established pathways for international patients, including remote monitoring during stimulation (in your home country) with travel to Korea only for egg retrieval and transfer"
+  ],
+  "faqs": [
+    {
+      "question": "How many IVF cycles does it typically take?",
+      "answer": "Success rates per cycle vary significantly by age and individual factors. Multiple cycles are often needed. It is important to discuss cumulative success rates — not just per-cycle rates — with your clinic, and to have a clear plan for how many cycles you are prepared to attempt. Consult your fertility specialist for a realistic assessment specific to your situation."
+    },
+    {
+      "question": "What is the difference between IVF and ICSI?",
+      "answer": "In standard IVF, eggs and sperm are placed together in a dish and fertilisation occurs naturally. In ICSI (Intracytoplasmic Sperm Injection), a single sperm is injected directly into each egg — this is used when sperm parameters are poor or when fertilisation failure has occurred in a previous cycle. ICSI is commonly used in Korean clinics."
+    },
+    {
+      "question": "Can I do part of the IVF cycle in my home country?",
+      "answer": "Yes. Many Korean fertility clinics offer a split protocol: hormone stimulation and monitoring scans are performed at a clinic near your home, and you travel to Korea for egg retrieval and embryo transfer — typically a 5–7 day visit. Frozen embryo transfers on a subsequent cycle may also allow for a shorter visit."
+    },
+    {
+      "question": "Is there an age limit for IVF in Korea?",
+      "answer": "Korean clinics generally perform IVF for women up to their mid-40s using their own eggs, and up to an older age with donor eggs. Specific policies vary by clinic. Age is the single most significant factor affecting IVF outcomes — early consultation is advisable."
+    }
+  ]
+}

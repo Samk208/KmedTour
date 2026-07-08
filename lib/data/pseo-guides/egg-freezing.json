@@ -1,0 +1,45 @@
+{
+  "slug": "egg-freezing",
+  "candidateFor": [
+    "Women in their 20s–mid-30s who wish to preserve fertility before age-related decline",
+    "Women facing medical treatments (such as chemotherapy) that may affect ovarian function",
+    "Those not yet ready for pregnancy but wishing to keep future options open",
+    "Women with a family history of early menopause or diminished ovarian reserve"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Baseline Assessment",
+      "duration": "1–2 appointments before stimulation begins",
+      "detail": "Blood tests measure AMH (anti-Müllerian hormone) and FSH to assess ovarian reserve. An ultrasound counts antral follicles. Results guide the stimulation protocol and predict the likely number of eggs retrieved."
+    },
+    {
+      "step": "Hormone Stimulation",
+      "duration": "10–14 days",
+      "detail": "Self-administered daily injections stimulate multiple egg development. Monitoring scans every 2–3 days track follicle growth. Trigger injection is given at the optimal moment."
+    },
+    {
+      "step": "Egg Retrieval & Freezing",
+      "duration": "Day procedure under mild sedation",
+      "detail": "Eggs are retrieved under ultrasound guidance and immediately vitrified (flash-frozen) for storage. You can typically leave the clinic within 2–4 hours and resume normal activities within 1–2 days."
+    }
+  ],
+  "whyKorea": [
+    "Korean fertility clinics use vitrification — the most advanced egg freezing method — as standard, achieving high post-thaw egg survival rates",
+    "The cost of an egg freezing cycle in Korea is considerably lower than in Western Europe or North America, making multiple cycles (to bank more eggs) more accessible",
+    "Korean clinics have experience managing international patients through the stimulation phase remotely, with patients travelling to Korea only for retrieval"
+  ],
+  "faqs": [
+    {
+      "question": "How many eggs should I freeze?",
+      "answer": "The number of eggs needed to achieve a good chance of future pregnancy depends on your age at the time of freezing. Younger eggs (frozen in your 20s or early 30s) tend to have higher fertilisation and implantation potential. Freezing more eggs provides greater statistical coverage. Your fertility specialist will advise on a target number based on your individual profile."
+    },
+    {
+      "question": "How long can eggs be stored frozen?",
+      "answer": "Vitrified eggs can be stored for many years without significant deterioration in quality. Legal storage limits vary by country — Korean regulations allow extended storage. Arrangements for long-term international storage should be discussed with your clinic."
+    },
+    {
+      "question": "Does egg freezing guarantee a future pregnancy?",
+      "answer": "No. Egg freezing improves your options but does not guarantee pregnancy. Not all frozen eggs will survive thawing, fertilise, develop into viable embryos, or implant. Outcomes depend on your age at freezing, egg quality, and future partner sperm quality. It is best understood as a form of insurance rather than a guarantee."
+    }
+  ]
+}

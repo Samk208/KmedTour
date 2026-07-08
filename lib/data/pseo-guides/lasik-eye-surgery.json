@@ -1,0 +1,45 @@
+{
+  "slug": "lasik-eye-surgery",
+  "candidateFor": [
+    "Adults aged 18+ with a stable spectacle prescription for at least 1–2 years",
+    "Those with myopia (short-sightedness), hyperopia (long-sightedness), or astigmatism within treatable ranges",
+    "Individuals with adequate corneal thickness to safely allow reshaping",
+    "People free of corneal disease (such as keratoconus), severe dry eye, or autoimmune conditions affecting healing"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Pre-operative Screening",
+      "duration": "3–4 hours",
+      "detail": "Comprehensive tests measure corneal thickness, curvature, pupil size, and tear production. Contact lenses must be removed at least 1 week (soft) or 3 weeks (rigid) before screening to allow the cornea to return to its natural shape."
+    },
+    {
+      "step": "LASIK Procedure",
+      "duration": "15–20 minutes per eye",
+      "detail": "A femtosecond laser creates a thin corneal flap. An excimer laser then precisely reshapes the underlying corneal tissue. The flap is repositioned and adheres without sutures. The procedure itself is painless — numbing drops are used."
+    },
+    {
+      "step": "Recovery",
+      "duration": "Vision improvement within 24 hours; full stabilization over 1–3 months",
+      "detail": "Vision is blurry immediately after surgery but improves significantly by the following morning. A check-up the next day confirms healing. Most patients can fly home 2–3 days post-procedure with protective eyewear."
+    }
+  ],
+  "whyKorea": [
+    "Korean eye surgery centers are high-volume, specialized facilities that invest in the latest generation of femtosecond and excimer laser platforms — equipment is updated more frequently than in general hospitals",
+    "Pre-operative screening is thorough and conducted by refractive specialists — patients unsuitable for LASIK are identified and offered appropriate alternatives (LASEK, SMILE, ICL)",
+    "LASIK in Korea is significantly more affordable than equivalent quality procedures in the US, UK, or Australia"
+  ],
+  "faqs": [
+    {
+      "question": "What is the difference between LASIK, LASEK, and SMILE?",
+      "answer": "LASIK creates a corneal flap with a laser, reshapes the tissue underneath, and replaces the flap. LASEK removes the thin outer epithelial layer instead of creating a flap — recovery is slower but it is suitable for thinner corneas. SMILE is a newer technique that does not create a flap and is associated with less dry eye post-operatively. Your Korean refractive surgeon will recommend the safest option based on your corneal measurements."
+    },
+    {
+      "question": "Is LASIK permanent?",
+      "answer": "LASIK reshaping is permanent, but your eyes will continue to change naturally with age. Most patients enjoy stable vision for many years, but age-related changes (particularly presbyopia from the mid-40s onward) may eventually require reading glasses regardless of having had LASIK."
+    },
+    {
+      "question": "What happens if I am not a LASIK candidate?",
+      "answer": "If your corneas are too thin or you have contraindications to LASIK, your surgeon will discuss alternatives. LASEK is suitable for moderately thin corneas. SMILE avoids flap creation entirely. Implantable Collamer Lenses (ICL) are an option for very high prescriptions or borderline corneal thickness."
+    }
+  ]
+}

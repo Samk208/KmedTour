@@ -1,0 +1,49 @@
+{
+  "slug": "knee-replacement",
+  "candidateFor": [
+    "Adults with severe osteoarthritis, rheumatoid arthritis, or post-traumatic arthritis of the knee",
+    "Those who experience significant pain that limits daily activities and has not responded to conservative treatments (physiotherapy, injections, medications)",
+    "Individuals whose X-rays show significant joint space narrowing and bone-on-bone changes",
+    "Generally adults over 50, though younger patients with severe damage are also considered"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Pre-operative Assessment",
+      "duration": "1–2 days",
+      "detail": "X-rays, blood tests, cardiac assessment, and a consultation with your orthopedic surgeon and anaesthesiologist. Baseline physiotherapy assessment is conducted to plan your post-operative rehabilitation."
+    },
+    {
+      "step": "Surgery",
+      "duration": "1.5–2.5 hours",
+      "detail": "Performed under general or spinal anesthesia. Damaged cartilage and bone are removed from the knee joint surfaces and replaced with metal and plastic prosthetic components precisely fitted to your anatomy. Robotic guidance assists with implant positioning in advanced centers."
+    },
+    {
+      "step": "Rehabilitation",
+      "duration": "3–5 days hospital stay; 10–14 days total in Korea",
+      "detail": "Physiotherapy begins the day after surgery. You will walk with assistance within 24 hours. Hospital discharge typically occurs at days 3–5. A structured home rehabilitation programme following return is essential for a full recovery."
+    }
+  ],
+  "whyKorea": [
+    "Korean orthopedic hospitals have invested in robotic-assisted surgical systems that improve implant alignment accuracy — a key factor in long-term prosthetic function",
+    "Rapid recovery protocols and early mobilization programs are well-established in Korean orthopedic centers, reducing hospital stays and complications",
+    "Total knee replacement in Korea costs significantly less than private procedures in the UK, US, or Australia while using globally recognized implant brands"
+  ],
+  "faqs": [
+    {
+      "question": "How long does a knee replacement last?",
+      "answer": "Modern knee prosthetics are designed to last 15–25 years for most patients. Longevity is influenced by patient weight, activity level, and implant alignment. Maintaining a healthy weight and avoiding high-impact activities prolongs implant life."
+    },
+    {
+      "question": "When can I walk normally after knee replacement?",
+      "answer": "Most patients walk with a walking aid within 24 hours of surgery. Walking without assistance typically occurs by weeks 3–6. A normal walking pattern — without a limp — is usually restored by 3–6 months as muscles strengthen through physiotherapy."
+    },
+    {
+      "question": "Can both knees be replaced at the same time?",
+      "answer": "Bilateral (both-knees-at-once) replacement is possible for patients who are medically fit enough. It reduces total recovery time compared to two separate procedures but carries a higher short-term surgical load. Your surgeon will advise based on your health profile and the urgency of each knee."
+    },
+    {
+      "question": "Will I need blood transfusion during knee surgery?",
+      "answer": "Modern blood conservation techniques (cell salvage, tranexamic acid) have significantly reduced transfusion requirements. Most straightforward knee replacements do not require a transfusion. Your pre-operative blood tests will identify if any preparation is needed."
+    }
+  ]
+}

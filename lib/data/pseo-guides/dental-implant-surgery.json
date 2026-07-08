@@ -1,0 +1,45 @@
+{
+  "slug": "dental-implant-surgery",
+  "candidateFor": [
+    "Adults missing one or more teeth who want a permanent, stable tooth replacement",
+    "Those with adequate jawbone density (or who are candidates for bone grafting prior to implant placement)",
+    "Individuals with well-controlled general health — systemic conditions affecting healing require specialist review",
+    "Non-smokers or those committed to quitting, as smoking impairs osseointegration"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Digital Assessment & Surgical Guide Fabrication",
+      "duration": "1–2 appointments",
+      "detail": "A CBCT 3D scan is taken. Implant positions are planned digitally. A custom surgical guide template is fabricated to direct the drill with precision during surgery."
+    },
+    {
+      "step": "Implant Placement Surgery",
+      "duration": "30–90 minutes per implant",
+      "detail": "The surgical guide is placed over the jaw and implants are inserted through the guide holes under local anesthesia. Digital guidance eliminates guesswork, reducing the risk of nerve or sinus proximity issues."
+    },
+    {
+      "step": "Healing & Crown Phase",
+      "duration": "3–6 months osseointegration; crown fitting at follow-up",
+      "detail": "The implant integrates with the jawbone over 3–6 months. A scan file and crown specifications from the Korean clinic can be sent to your home dentist for final crown fabrication — minimising the need for a second international trip."
+    }
+  ],
+  "whyKorea": [
+    "Korean dental implant brands are manufactured to the same quality standards as European and American brands and are widely trusted in clinics across Asia, Europe, and beyond",
+    "Computer-guided implant surgery is standard in Korean dental clinics, improving accuracy and reducing surgical time",
+    "Korean dental implant surgery costs 40–60% less than equivalent quality in Western European or North American clinics"
+  ],
+  "faqs": [
+    {
+      "question": "What makes computer-guided implant surgery different from freehand placement?",
+      "answer": "Computer-guided implant surgery uses a CBCT scan and digital planning software to design the optimal implant position before surgery. A printed surgical guide then directs the drill during the procedure, improving accuracy and reducing the risk of complications such as nerve or sinus involvement. It is particularly valuable in complex or multiple-implant cases."
+    },
+    {
+      "question": "Can I complete my dental implant treatment in one trip to Korea?",
+      "answer": "In immediate-loading cases (where a temporary crown is placed on the same day as implant surgery), patients can leave with functioning provisional teeth in one visit. The permanent crown is placed after osseointegration — this can be arranged with a local dentist using scan files and specifications from the Korean clinic, avoiding the need for a second long-haul trip."
+    },
+    {
+      "question": "What are Korean implant brands and are they reliable?",
+      "answer": "Osstem, Dentium, Neobiotech, Megagen, and Genoss are among the leading Korean implant manufacturers. Osstem is the 4th largest implant brand globally by market share. These brands carry CE certification, are used in clinics across 80+ countries, and are backed by long-term clinical data. They are comparable in quality and longevity to European and American brands."
+    }
+  ]
+}

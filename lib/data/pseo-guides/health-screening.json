@@ -1,0 +1,49 @@
+{
+  "slug": "health-screening",
+  "candidateFor": [
+    "Adults aged 30+ seeking a comprehensive health baseline",
+    "Those with a family history of cardiovascular disease, cancer, or metabolic conditions",
+    "Expatriates or international travellers wanting thorough diagnostics not readily available at home",
+    "Executives and professionals seeking an annual preventive health assessment"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Arrival & Sample Collection",
+      "duration": "Morning of Day 1 (fasting required from midnight)",
+      "detail": "Blood and urine samples are collected first. Packages typically include a full blood count, metabolic panel, lipid profile, thyroid function, and cancer marker tests."
+    },
+    {
+      "step": "Imaging & Specialist Assessments",
+      "duration": "Half to full day",
+      "detail": "Tests may include chest X-ray, abdominal ultrasound, cardiac EKG, gastroscopy (stomach camera), colonoscopy, mammogram (for women), and low-dose CT. Specialist examinations (ophthalmology, ENT, dermatology) are often included."
+    },
+    {
+      "step": "Results Consultation",
+      "duration": "1–2 hours",
+      "detail": "A physician reviews all results with you in a follow-up consultation. Abnormal findings trigger specialist referrals. A written report summarizing all findings and recommendations is provided."
+    }
+  ],
+  "whyKorea": [
+    "Korean health screening facilities are highly systematized and designed for efficiency — full packages are completed in 1–2 days using assembly-line workflows with minimal waiting between tests",
+    "Korea has high screening rates for common cancers (gastric, colorectal, liver), and its clinicians are highly experienced at identifying early-stage findings",
+    "Costs for comprehensive packages in Korea are substantially lower than equivalent private health assessments in Europe, making thorough annual screening accessible"
+  ],
+  "faqs": [
+    {
+      "question": "Do I need a referral to book a health screening package in Korea?",
+      "answer": "No. Health screening packages in Korea can be booked directly as a self-pay service without a referral. Your KmedTour coordinator can help you select and book the most appropriate package based on your age, gender, and health concerns."
+    },
+    {
+      "question": "What preparation is required before the screening?",
+      "answer": "Most packages require fasting from midnight the night before (water is usually permitted). If a colonoscopy is included, a bowel preparation (laxative) is taken the evening before. Your clinic will provide detailed preparation instructions when booking."
+    },
+    {
+      "question": "Will my results be explained in English?",
+      "answer": "Major Korean health screening facilities catering to international patients provide English-language reports and offer consultation with English-speaking physicians or interpreters. Your KmedTour coordinator will confirm language support when booking."
+    },
+    {
+      "question": "What happens if something abnormal is found?",
+      "answer": "If a screening finding requires further investigation, the facility will advise on next steps — either arranging specialist follow-up in Korea during your visit or providing a detailed referral report for your home physician to act upon."
+    }
+  ]
+}
