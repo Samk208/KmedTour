@@ -1,0 +1,56 @@
+{
+  "slug": "fertility-consultation",
+  "candidateFor": [
+    "Couples who have tried to conceive for 12 months without success, or 6 months if the woman is over 35",
+    "Women with irregular, absent, or very short menstrual cycles that suggest ovulatory or hormonal issues",
+    "Anyone with a history of pelvic inflammatory disease, endometriosis, or prior reproductive surgery that may have affected fertility",
+    "Men with known or suspected sperm issues — low count, poor motility, or abnormal morphology — who need formal semen analysis and specialist review",
+    "Women approaching their mid-30s who want to assess ovarian reserve and discuss egg freezing as a proactive step",
+    "Couples who have started an IVF cycle elsewhere and want a second opinion or a complete workup from a Seoul reproductive specialist before proceeding"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Consultation & Testing",
+      "duration": "2–4 days",
+      "detail": "The specialist reviews your medical, surgical, and reproductive history, then orders targeted tests: AMH and day-3 FSH/estradiol blood work to assess ovarian reserve, a transvaginal ultrasound for antral follicle count, and a semen analysis for partners. Many Seoul clinics accept digital record submission before travel to design a focused in-person workup."
+    },
+    {
+      "step": "Optional Imaging",
+      "duration": "30–60 minutes if indicated",
+      "detail": "An HSG (hysterosalpingography) may be ordered to check fallopian tube patency if your history suggests it. It can be scheduled during the same short visit. Some patients feel mild cramping during the procedure — no anesthesia or recovery period is needed afterward."
+    },
+    {
+      "step": "Results Review & Treatment Plan",
+      "duration": "Same week as testing",
+      "detail": "The specialist reviews all findings and outlines next steps — which may range from timed intercourse or IUI to a full IVF cycle. Approximate timelines and costs are discussed. International patients often coordinate any subsequent treatment remotely and return to Korea for the treatment phase, scheduled around the menstrual cycle."
+    }
+  ],
+  "whyKorea": [
+    "Seoul's Gangnam district has a concentration of specialized fertility clinics with internationally trained reproductive specialists, modern IVF laboratory infrastructure, and high-volume programs that produce competitive success rates for suitable patient groups",
+    "Many Korean fertility clinics accept digital record submission for remote review before travel, compressing the in-person workup to a focused 2–5 day visit rather than requiring an extended stay upfront",
+    "An initial consultation with baseline tests typically costs approximately $300–$1,500; full IVF cycles are widely reported around $4,000–$13,000 — substantially below comparable US and European pricing",
+    "Korea's healthcare system is regulated by the Ministry of Food and Drug Safety (MFDS), several fertility hospitals carry JCI accreditation, and KHIDI supports international patients through the Medical Korea program"
+  ],
+  "faqs": [
+    {
+      "question": "Is the fertility consultation painful or invasive?",
+      "answer": "No. It is a non-surgical outpatient visit with no anesthesia and no recovery period. The most involved parts are a transvaginal ultrasound and blood draws — both routine and brief. If an HSG is ordered to check the fallopian tubes, some patients feel mild cramping, but the procedure is short and you resume normal activity immediately afterward."
+    },
+    {
+      "question": "What tests are done at the consultation?",
+      "answer": "Typical tests include AMH blood work and day-3 FSH/estradiol to assess ovarian reserve, a transvaginal ultrasound for antral follicle count, and a semen analysis for partners. HSG tubal imaging may be added depending on your history. The exact panel depends on what the specialist learns from your medical history at the first appointment."
+    },
+    {
+      "question": "How long should I stay in Korea for the consultation?",
+      "answer": "Roughly 2–5 days is usually enough to complete testing and receive a results review. Hormone blood results may take 1–2 days, so plan accordingly. A comprehensive workup with multiple tests can span several days. If treatment follows later, international patients typically coordinate the timing remotely and return for that phase separately."
+    },
+    {
+      "question": "Are there documentation requirements for IVF in Korea?",
+      "answer": "Some Korean clinics ask international patients pursuing IVF for documentation such as a marriage certificate and a specialist referral from a reproductive endocrinologist at home. Requirements vary by clinic and are not universal. Confirm each clinic's specific requirements directly before booking, as they can affect your preparation timeline."
+    },
+    {
+      "question": "Will the consultation tell me whether I need IVF?",
+      "answer": "The specialist outlines options after reviewing your history and test results. These may range from timed intercourse and lifestyle guidance to IUI or IVF, depending on what is found. No outcome can be guaranteed — fertility treatment success depends on individual factors including age, diagnosis, and response to treatment."
+    }
+  ]
+}

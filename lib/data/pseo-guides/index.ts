@@ -10,11 +10,19 @@ import brainTumorSurgery from './brain-tumor-surgery.json'
 import breastAugmentation from './breast-augmentation.json'
 import cancerScreening from './cancer-screening.json'
 import cardiacScreening from './cardiac-screening.json'
+import cataractSurgery from './cataract-surgery.json'
+import chemicalPeel from './chemical-peel.json'
+import colonoscopy from './colonoscopy.json'
+import cornealTransplant from './corneal-transplant.json'
+import coronaryBypass from './coronary-bypass.json'
+import cuppingTherapy from './cupping-therapy.json'
 import dentalImplantSurgery from './dental-implant-surgery.json'
 import dentalImplants from './dental-implants.json'
 import doubleEyelidSurgery from './double-eyelid-surgery.json'
 import eggFreezing from './egg-freezing.json'
+import endoscopy from './endoscopy.json'
 import facelift from './facelift.json'
+import fertilityConsultation from './fertility-consultation.json'
 import hairTransplant from './hair-transplant.json'
 import healthScreening from './health-screening.json'
 import ivfTreatment from './ivf-treatment.json'
@@ -35,11 +43,19 @@ export const pseoGuides: Record<string, ProcedureGuide> = {
   "breast-augmentation": breastAugmentation as unknown as ProcedureGuide,
   "cancer-screening": cancerScreening as unknown as ProcedureGuide,
   "cardiac-screening": cardiacScreening as unknown as ProcedureGuide,
+  "cataract-surgery": cataractSurgery as unknown as ProcedureGuide,
+  "chemical-peel": chemicalPeel as unknown as ProcedureGuide,
+  "colonoscopy": colonoscopy as unknown as ProcedureGuide,
+  "corneal-transplant": cornealTransplant as unknown as ProcedureGuide,
+  "coronary-bypass": coronaryBypass as unknown as ProcedureGuide,
+  "cupping-therapy": cuppingTherapy as unknown as ProcedureGuide,
   "dental-implant-surgery": dentalImplantSurgery as unknown as ProcedureGuide,
   "dental-implants": dentalImplants as unknown as ProcedureGuide,
   "double-eyelid-surgery": doubleEyelidSurgery as unknown as ProcedureGuide,
   "egg-freezing": eggFreezing as unknown as ProcedureGuide,
+  "endoscopy": endoscopy as unknown as ProcedureGuide,
   "facelift": facelift as unknown as ProcedureGuide,
+  "fertility-consultation": fertilityConsultation as unknown as ProcedureGuide,
   "hair-transplant": hairTransplant as unknown as ProcedureGuide,
   "health-screening": healthScreening as unknown as ProcedureGuide,
   "ivf-treatment": ivfTreatment as unknown as ProcedureGuide,

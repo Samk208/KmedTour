@@ -1,0 +1,56 @@
+{
+  "slug": "corneal-transplant",
+  "candidateFor": [
+    "Patients with advanced keratoconus whose distorted corneal shape can no longer be corrected with contact lenses or glasses",
+    "Adults with Fuchs' endothelial dystrophy experiencing persistent corneal swelling, haloes, or blurred morning vision that limits daily function",
+    "Anyone with corneal scarring from herpes simplex keratitis, bacterial ulcer, or trauma that has reduced vision to a level affecting daily life",
+    "Patients with a failed prior graft requiring re-transplantation at a high-volume surgical center experienced in complex cases",
+    "Individuals with hereditary stromal or anterior corneal dystrophies affecting visual clarity that has not responded to other options",
+    "Patients whose glaucoma and dry eye are well-controlled and who can commit to a 2–4 week in-Korea stay and months of drop therapy afterward"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Pre-surgical Workup",
+      "duration": "1–2 hours",
+      "detail": "Corneal topography, pachymetry (thickness mapping), specular microscopy, and slit-lamp examination. Donor tissue is sourced from a licensed Korean eye bank with documented serological screening and cell counts. The technique — PK, DALK, DSAEK, or DMEK — is confirmed before surgery based on which corneal layers are affected."
+    },
+    {
+      "step": "Transplant Surgery",
+      "duration": "1–2 hours",
+      "detail": "Performed under local block or general anesthesia depending on the case. PK replaces the full corneal thickness with sutures held for 12–18 months. DALK preserves your own inner endothelium. DSAEK and DMEK replace only the diseased inner layer through a small incision and are held in place by an air or gas bubble."
+    },
+    {
+      "step": "Recovery & Follow-up",
+      "duration": "Minimum 2–4 weeks in Korea",
+      "detail": "Most international patients need 2–4 weeks in Korea before the surgical team considers them stable to fly. DSAEK and DMEK: usable vision in 1–2 weeks, full stabilization over 1–2 months. PK: vision fluctuates for the 12–18 months sutures remain. Antibiotic and steroid drops are prescribed for months. Rejection warning signs require same-day contact with your surgeon."
+    }
+  ],
+  "whyKorea": [
+    "Korean tertiary ophthalmology centers perform all four corneal transplant techniques — PK, DALK, DSAEK, and DMEK — regularly, giving surgeons the case volume that matters in technically demanding procedures like DMEK",
+    "A functioning national eye-bank system provides donor tissue with documented serological screening, specular microscopy, and endothelial cell counts — reputable centers use tissue above 2,000 cells/mm² for endothelial grafts",
+    "Costs run approximately $12,000–$18,000 per eye — a meaningful difference versus comparable Western pricing — within KAHF-accredited hospitals operating under the Medical Korea government framework",
+    "KHIDI-registered hospitals offer medical interpreters, visa support letters, and multi-specialist scheduling that matter when a 2–4 week stay involves frequent post-operative appointments"
+  ],
+  "faqs": [
+    {
+      "question": "What is the difference between PK, DALK, DSAEK, and DMEK?",
+      "answer": "PK replaces the full corneal thickness. DALK replaces only the front stromal layers while keeping your own healthy endothelium, eliminating endothelial rejection risk. DSAEK and DMEK replace only the diseased inner endothelial layer through a small incision — DMEK uses thinner, more anatomically precise tissue and generally achieves sharper final acuity. Your surgeon recommends the technique for your specific case."
+    },
+    {
+      "question": "How long must I stay in Korea after corneal transplant surgery?",
+      "answer": "Plan at least 2–4 weeks before flying. The first week involves frequent checks for graft adhesion and pressure monitoring. If a gas or air bubble was used (DSAEK or DMEK), you cannot fly until it fully absorbs — typically 1–2 weeks. PK patients may need suture checks within the first month. Always get written fit-to-fly clearance before booking return flights."
+    },
+    {
+      "question": "Where does the donor cornea come from, and is the tissue safe?",
+      "answer": "Donor corneas in Korea come from licensed eye banks operating under national regulatory oversight. Tissue is serologically screened for infectious diseases, evaluated by specular microscopy for endothelial cell density, and stored with documented chain-of-custody records. You can ask your coordinator for the tissue's origin documentation and cell density report before surgery."
+    },
+    {
+      "question": "What are the rejection warning signs, and how quickly do I need to act?",
+      "answer": "Contact your ophthalmologist the same day — not the next morning — if you notice sudden redness, new light sensitivity, unexplained vision blurring, or eye pain. Rejection caught within 24–48 hours can usually be reversed with intensive steroids. Delayed treatment significantly worsens the prognosis. This vigilance continues for months to years after any type of corneal graft."
+    },
+    {
+      "question": "Do I need specialist medical travel insurance for corneal transplant?",
+      "answer": "Yes. Standard travel insurance does not cover elective surgery abroad. You need a specialist medical travel policy that explicitly covers planned surgical procedures, post-operative complications, emergency repatriation, and extended stays if recovery is slower than expected. Verify the policy covers complications requiring additional surgery, and confirm the coverage limit before booking."
+    }
+  ]
+}

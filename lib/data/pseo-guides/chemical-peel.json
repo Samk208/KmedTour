@@ -1,0 +1,56 @@
+{
+  "slug": "chemical-peel",
+  "candidateFor": [
+    "Adults with acne, enlarged pores, or congested skin seeking improvement without major recovery time between travel commitments",
+    "Patients with stubborn post-inflammatory hyperpigmentation who need a dermatologist to match acid type and concentration to their specific Fitzpatrick skin type",
+    "Travelers from Africa or the GCC with higher-melanin skin wanting a supervised introduction to chemical resurfacing with a conservative, layered protocol",
+    "Anyone managing mild-to-moderate acne scarring who benefits from a planned series of spaced peels rather than a single aggressive treatment",
+    "Patients with melasma that has not responded to home products and needs a clinic-directed peel with barrier-support care",
+    "Individuals seeking a skin-refresh appointment as part of a broader Seoul health or wellness trip"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Consultation & Assessment",
+      "duration": "30–60 minutes",
+      "detail": "The dermatologist examines your skin type, reviews your history (including sun exposure, retinoid use, and prior treatments), and selects the peel type, acid, and concentration. For higher-melanin skin, a clinic may recommend a priming period of a few weeks beforehand to reduce pigmentation risk."
+    },
+    {
+      "step": "Chemical Peel Treatment",
+      "duration": "20–60 minutes",
+      "detail": "Skin is cleansed and degreased. The acid solution is applied by brush or applicator in controlled layers while the dermatologist monitors your skin's reaction. Tingling, warmth, or mild stinging is normal. The solution is then neutralized or rinsed. A soothing product and broad-spectrum sunscreen are applied before you leave."
+    },
+    {
+      "step": "Recovery & Follow-up",
+      "duration": "1–14 days depending on peel depth",
+      "detail": "Superficial peels cause mild redness and light flaking for a few days — no required in-Korea stay beyond same-day. Medium peels involve visible peeling over roughly 5–7 days. Deep peels need about 10–14 days of healing. Plan your Seoul itinerary so any visible peeling has settled before important events."
+    }
+  ],
+  "whyKorea": [
+    "Seoul's Gangnam, Apgujeong, and Myeongdong districts have a dense cluster of licensed dermatologists with extensive experience applying layered, barrier-focused protocols to a wide range of skin tones including Fitzpatrick types IV–VI",
+    "Korean clinics use devices and acid products regulated by the Ministry of Food and Drug Safety (MFDS), applying the same safety standards for international patients as for domestic ones",
+    "Superficial to medium peel sessions cost approximately $40–$280 — substantially below comparable Western dermatology clinic pricing — without compromising physician oversight",
+    "The KAHF accreditation mark and Medical Korea registration program allow international patients to verify a clinic's authorization to treat foreign patients before booking"
+  ],
+  "faqs": [
+    {
+      "question": "Is a chemical peel safe for darker skin tones?",
+      "answer": "Yes, when performed appropriately. Higher-melanin skin responds well to peels but is more prone to post-inflammatory hyperpigmentation if a peel is too aggressive or aftercare is poor. An experienced Korean dermatologist typically starts with superficial acids, may recommend a priming period, and emphasizes strict sun protection throughout."
+    },
+    {
+      "question": "How many sessions will I need?",
+      "answer": "It depends on your concern and peel depth. A single peel can refresh the skin, but lasting improvement for acne scarring or melasma usually requires a planned series with sessions spaced several weeks apart. Your dermatologist will recommend a schedule during consultation based on your specific skin type and goals."
+    },
+    {
+      "question": "How much downtime should I plan for?",
+      "answer": "Superficial peels: mild redness and flaking for a few days, most people resume activities quickly. Medium peels: visible peeling over roughly 5–7 days with some lingering pinkness. Deep peels: healing over about 10–14 days with redness that can persist longer. Plan your Korea itinerary around your chosen peel depth."
+    },
+    {
+      "question": "How much does a chemical peel cost in Korea?",
+      "answer": "Approximate ranges are $40–$120 for superficial peels and $120–$280 for medium TCA-based peels. Deep or specialized peels run higher. Gangnam-area clinics tend toward the upper end. Many clinics offer multi-session packages that lower the per-session cost. Always request a written quote, as prices vary by clinic."
+    },
+    {
+      "question": "How do I verify a Korean clinic is authorized for foreign patients?",
+      "answer": "Use the Medical Korea portal run by KHIDI to confirm a clinic is legally registered to treat international patients. Look for the KAHF accreditation mark, which signals dedicated international patient services. Also ask whether the dermatologist has experience treating your specific skin tone before booking."
+    }
+  ]
+}

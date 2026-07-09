@@ -1,0 +1,56 @@
+{
+  "slug": "colonoscopy",
+  "candidateFor": [
+    "Adults at or past typical colorectal-cancer screening age who have never been scoped or are due for a repeat exam",
+    "Anyone with a first-degree relative who had colorectal cancer or adenomatous polyps, particularly if onset was before age 60",
+    "Patients with rectal bleeding, unexplained iron-deficiency anemia, or a persistent change in bowel habit that needs investigation",
+    "Those who had a positive stool-based test (FIT or gFOBT) requiring a confirmatory colonoscopy",
+    "Individuals with a personal history of adenomatous polyps on surveillance intervals",
+    "Travelers planning a comprehensive health checkup in Seoul who want gastroscopy and colonoscopy completed in a single same-sedation session"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Preparation",
+      "duration": "1–2 days before the procedure",
+      "detail": "The day before: a low-residue diet and a bowel-prep laxative solution to clean the colon. The accuracy of the colonoscopy depends on how thoroughly you follow the prep instructions. Your clinic will provide specific written guidance. Arrive fasting on the day of the exam."
+    },
+    {
+      "step": "Colonoscopy Procedure",
+      "duration": "20–45 minutes",
+      "detail": "Under light sedation (commonly propofol-based), the endoscopist advances the scope to the cecum and slowly withdraws while examining the lining. Any polyps found are typically removed on the spot and sent for pathology. If a same-session gastroscopy is requested, it is performed under the same sedation."
+    },
+    {
+      "step": "Recovery & Results",
+      "duration": "2–3 hours same-day; pathology in 3–5 days",
+      "detail": "You recover in a monitored area until the sedation wears off. Mild bloating or gas is normal. Visual results are often discussed the same day; polyp pathology takes several days. If polyps were removed, avoid heavy lifting, alcohol, and blood thinners as advised — and do not fly for at least 7 days."
+    }
+  ],
+  "whyKorea": [
+    "Korea runs colonoscopy at national scale with standardized quality measures — cecal intubation rates, withdrawal time, adenoma detection — maintained consistently across high-volume Seoul screening centers",
+    "Gastroscopy can be added in the same sedation session, covering the full upper and lower GI tract in one appointment with a single recovery period and only a modest added cost",
+    "Comprehensive screening packages including colonoscopy typically run approximately $300–$600 — affordable by international standards for a fully equipped, protocol-driven procedure",
+    "KHIDI-registered Seoul screening centers offer English coordination, transparent same-day workflows, and package pricing designed for international visitors"
+  ],
+  "faqs": [
+    {
+      "question": "Will I be asleep or awake during the colonoscopy?",
+      "answer": "Most patients in Korea choose light sedation — often propofol-based — so they are relaxed and usually unaware during the exam. You are not under general anesthesia. An unsedated option is also available if you prefer to avoid sedation, though it can be less comfortable."
+    },
+    {
+      "question": "Can I get a gastroscopy at the same time?",
+      "answer": "Yes. Because colonoscopy already requires sedation, many Korean centers perform an upper GI gastroscopy in the same session. This covers your stomach and colon in one appointment with a single recovery period and is usually only a modest additional cost. Ask your clinic to include it in the package quote."
+    },
+    {
+      "question": "What happens if a polyp is found during my colonoscopy?",
+      "answer": "Polyps are typically removed during the same exam (polypectomy) and sent for pathology. This adds a procedure fee and means you should avoid heavy activity, alcohol, and blood thinners as advised — and you should not fly for at least 7 days because of a small bleeding and perforation risk after polyp removal."
+    },
+    {
+      "question": "How many days should I plan for in Korea?",
+      "answer": "A typical visit is about 3–5 days, allowing time for consultation, bowel prep, the procedure, and same-day results. If polyps are found and removed, plan to stay longer — air travel should be delayed at least a week after polypectomy. Build buffer days into your itinerary in case removal is needed."
+    },
+    {
+      "question": "How much does a colonoscopy cost in Korea for international patients?",
+      "answer": "A comprehensive screening package including colonoscopy commonly costs approximately $300–$600. Polypectomy, pathology, and sometimes sedation are billed separately, so a clean screening costs less than one where polyps are found and removed. Always confirm in writing what is and is not included before booking."
+    }
+  ]
+}

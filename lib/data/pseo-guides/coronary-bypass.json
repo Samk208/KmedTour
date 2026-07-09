@@ -1,0 +1,56 @@
+{
+  "slug": "coronary-bypass",
+  "candidateFor": [
+    "Patients with multivessel coronary artery disease — two or more major arteries significantly blocked — not adequately managed by medication or stenting",
+    "Individuals with left main coronary artery stenosis, where surgical bypass is preferred over stenting by most cardiac guidelines",
+    "Those with previous coronary stents that have restenosed and require a surgical solution",
+    "Diabetic patients with multivessel disease where CABG produces more durable long-term outcomes than PCI",
+    "Patients with persistent angina or breathlessness despite maximum medical therapy and lifestyle changes",
+    "Anyone seeking a remote pre-operative consultation or second opinion before committing to a treatment decision in their home country"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Pre-operative Workup",
+      "duration": "1–2 days",
+      "detail": "Full cardiac assessment: ECG, echocardiogram, chest X-ray, blood panel, and anesthetic review. Blood thinners may be paused as directed. Korean hospitals commonly accept scanned copies of prior imaging and angiogram reports for remote review before you travel, which avoids repeating expensive diagnostics on arrival."
+    },
+    {
+      "step": "CABG Surgery",
+      "duration": "3–6 hours",
+      "detail": "Performed under general anesthesia. For conventional CABG, the sternum is opened and a heart-lung machine supports circulation. For off-pump CABG (OPCAB) — a particular strength of Korean cardiac teams — the heart keeps beating throughout, avoiding bypass-machine risks. The internal mammary artery is the preferred graft conduit for durability."
+    },
+    {
+      "step": "Hospital Stay & Korea Recovery",
+      "duration": "3–4 weeks total in Korea",
+      "detail": "Inpatient stay is typically 5–10 days (1–2 days ICU, then cardiac ward). Most patients need a minimum of 3–4 weeks in Korea before a long-haul flight; your surgeon confirms travel clearance based on wound healing and cardiac stability. Sternal bone healing takes 6–12 weeks — heavy lifting and driving remain restricted after you return home."
+    }
+  ],
+  "whyKorea": [
+    "Korean cardiac teams have developed particular expertise in off-pump CABG (OPCAB), where the heart continues beating and the bypass machine is not used, reducing associated risks of neurological complications and kidney injury in suitable patients",
+    "KHIDI, under the Ministry of Health and Welfare, registers and monitors hospitals authorized to treat international cardiac patients — the Medical Korea portal lists accredited cardiac facilities with a government-backed quality signal",
+    "CABG packages at Korean hospitals typically run approximately $10,000–$20,000 — roughly 70–85% below comparable US out-of-pocket pricing for the same procedure at equivalent surgical volumes",
+    "Major Seoul cardiac centers with international departments offer remote pre-operative consultation, allowing patients to submit imaging for review and receive candidacy confirmation before committing to travel"
+  ],
+  "faqs": [
+    {
+      "question": "How long must I stay in Korea after coronary bypass surgery?",
+      "answer": "Plan a minimum of 3–4 weeks in-country. The first 5–10 days are in hospital; the remaining time is for early recovery monitoring at nearby accommodation. Your surgical team will confirm travel clearance based on wound healing and cardiac stability before you book your return flight."
+    },
+    {
+      "question": "Is off-pump CABG (OPCAB) available at Korean hospitals, and is it safer?",
+      "answer": "Yes — Korean cardiac centers have developed strong OPCAB capability. In OPCAB the heart continues beating and the bypass machine is not used, which can reduce risk of stroke, kidney injury, and blood transfusion for suitable patients. Not every case is an OPCAB candidate; the surgical team assesses anatomy and overall condition to determine the best approach."
+    },
+    {
+      "question": "What documents should I send in advance?",
+      "answer": "Send your most recent coronary angiogram images and report, echocardiogram results, full blood panel, current medication list with dosages, any prior cardiac records (stents, previous surgery), and a referral letter from your cardiologist. Most Seoul hospitals accept scanned copies for a remote pre-operative review before you book travel."
+    },
+    {
+      "question": "Does the quoted surgical cost cover everything?",
+      "answer": "Package pricing at Korean hospitals typically covers the surgeon fee, anesthesia, operating theatre, ICU stay (1–2 days), and a standard ward admission of roughly 5–7 days. It generally excludes pre-operative diagnostics conducted on arrival, extended stays due to complications, accommodation outside hospital, and return flights. Always request an itemized written quote."
+    },
+    {
+      "question": "Can I have a remote consultation with a Korean cardiac surgeon before traveling?",
+      "answer": "Yes. Most major Seoul hospitals with international departments offer pre-travel telemedicine review. You submit your imaging and medical records; a cardiac surgeon reviews them and confirms surgical candidacy, preferred technique, and an estimated cost range. This step is strongly recommended before committing to travel for a major cardiac procedure."
+    }
+  ]
+}

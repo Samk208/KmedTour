@@ -1,0 +1,56 @@
+{
+  "slug": "endoscopy",
+  "candidateFor": [
+    "Adults with ongoing heartburn or acid reflux that has not responded to medication and needs direct investigation",
+    "Patients with difficulty or pain when swallowing, or a persistent sensation of food sticking in the esophagus",
+    "Anyone with unexplained upper-abdominal pain, persistent nausea, or signs of upper GI bleeding such as black stools or unexplained anemia",
+    "Travelers adding a comprehensive health checkup in Seoul who want gastric-cancer screening as part of their package",
+    "Individuals wanting H. pylori testing — the bacterium linked to peptic ulcers and gastric cancer — either for diagnosis or to confirm eradication after prior treatment",
+    "Those who want to combine gastroscopy and colonoscopy under a single sedation for a same-day upper and lower GI check"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Preparation",
+      "duration": "6+ hours fasting before the appointment",
+      "detail": "Nothing to eat or usually drink for at least 6 hours beforehand so the stomach lining is empty and clearly visible. Your clinic will provide specific written instructions. Follow them exactly — inadequate prep can require rescheduling. A throat spray numbs the gag reflex before the scope is passed."
+    },
+    {
+      "step": "Gastroscopy Procedure",
+      "duration": "10–30 minutes",
+      "detail": "With optional light sedation (often propofol-based), the thin flexible scope is passed through the mouth to inspect the esophagus, stomach, and duodenum. Air or gas briefly expands the stomach for a clear view. Small painless biopsies may be taken if needed, including to test for H. pylori. Findings are photographed."
+    },
+    {
+      "step": "Recovery & Results",
+      "duration": "30 minutes recovery; biopsy results in 3–7 days",
+      "detail": "If sedated, you rest in a recovery area until alert — about 30 minutes. Mild sore throat, bloating, or burping is normal and settles quickly. Visual results are often discussed the same day. Biopsy or H. pylori test results typically take several days to a week. You cannot drive or travel solo the day of sedation."
+    }
+  ],
+  "whyKorea": [
+    "Gastroscopy is central to Korea's national gastric-cancer screening program, with biennial scoping offered to residents from age 40 — the equipment, sedation protocols, and same-visit reporting are deeply routine at Seoul screening centers",
+    "Seoul and Gangnam screening centers bundle gastroscopy into efficient same-day health packages, frequently with English-speaking coordination and transparent pricing designed for international visitors",
+    "A standalone gastroscopy or one within a comprehensive screening package typically costs approximately $100–$600 — well below equivalent diagnostic pricing in the US, UK, or GCC countries",
+    "Medical devices are regulated by the Ministry of Food and Drug Safety (MFDS), and KHIDI's Medical Korea program lists accredited centers authorized to treat international patients"
+  ],
+  "faqs": [
+    {
+      "question": "Will I be awake or sedated during the endoscopy?",
+      "answer": "Sedation is optional but widely available. Light propofol-based sedation means most patients feel little to nothing and have no memory of the exam. An unsedated option is also offered — a throat spray numbs the gag reflex and the exam is quick, though some people find it less comfortable. Discuss your preference with the clinic in advance."
+    },
+    {
+      "question": "How long does the whole appointment take?",
+      "answer": "The scope itself takes about 10–30 minutes. If sedated, allow 30 minutes more for monitored recovery before you are discharged. Most patients are done within 2–3 hours total, same-day. Because sedation slows reaction time, you cannot drive or sign important documents that day, and should have a companion if possible."
+    },
+    {
+      "question": "Can I combine gastroscopy and colonoscopy in the same visit?",
+      "answer": "Yes. Many Seoul screening centers perform both under one sedation in the same session, covering your stomach and colon in a single appointment with one recovery period. This is cost-efficient and practical for international patients making a dedicated health-checkup trip. Ask your clinic to include both in the package quote."
+    },
+    {
+      "question": "What can biopsy results tell me?",
+      "answer": "Biopsies can confirm gastritis, H. pylori infection, Barrett's esophagus, or early mucosal changes. Visual findings are discussed the same day. Biopsy pathology typically takes several days to a week. If H. pylori is confirmed, eradication treatment is straightforward and highly effective. Your clinic will advise on next steps based on what is found."
+    },
+    {
+      "question": "How long should I stay in Korea for a gastroscopy?",
+      "answer": "For a focused gastroscopy, plan around 1–3 days: time for fasting preparation, the exam itself, sedation recovery, and a results review. If you are combining it with a colonoscopy or a broader health checkup, 3–5 days is more practical. Note that biopsy results can take several days to a week to finalize."
+    }
+  ]
+}

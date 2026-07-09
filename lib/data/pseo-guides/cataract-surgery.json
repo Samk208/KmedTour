@@ -1,0 +1,56 @@
+{
+  "slug": "cataract-surgery",
+  "candidateFor": [
+    "Adults with lens clouding causing glare, haloes, or night-driving difficulty that restricts daily tasks",
+    "Patients experiencing generalised dimming or yellowing of vision not correctable by glasses",
+    "Prior LASIK or PRK patients needing specialist IOL power calculation using pre- and post-op records",
+    "Patients with coexisting astigmatism considering a toric IOL to reduce spectacle dependence",
+    "Anyone requiring bilateral treatment who wants both eyes handled in a single short overseas trip",
+    "Diabetic patients or those with early macular disease needing counseling before premium lens selection"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Consultation & Assessment",
+      "duration": "1–2 hours",
+      "detail": "Pre-operative examination and biometry measure the eye's axial length and curvature to determine the correct IOL power. Many Seoul eye clinics compress this and same-day surgery into a single visit for suitable patients. Bring your spectacle prescription and a list of current medications."
+    },
+    {
+      "step": "Surgery",
+      "duration": "15–30 minutes per eye",
+      "detail": "Phacoemulsification under topical anesthesia (numbing drops — no injections, no general anesthesia). The clouded lens is broken up and removed, and an IOL is inserted through a small, self-sealing incision. Femtosecond laser-assisted steps are available as an upgrade at many Korean clinics."
+    },
+    {
+      "step": "Recovery & Follow-up",
+      "duration": "3–5 days in Korea",
+      "detail": "A next-day review is standard. If both eyes are treated, the second eye is scheduled 2–3 days after the first once the initial review confirms normal healing. Useful vision returns within roughly 72 hours; final vision stabilizes over several weeks. Your home optometrist issues any spectacle prescription after stabilization."
+    }
+  ],
+  "whyKorea": [
+    "Many Seoul eye clinics compress pre-op biometry and same-day surgery into a single visit, making bilateral treatment achievable in under a week — without the long waitlists common in public health systems",
+    "Femtosecond laser-assisted steps and premium EDOF and toric IOL ranges are widely available, regulated by MFDS device standards applied equally to domestic and international patients",
+    "Per-eye costs run approximately $750–$4,500 depending on lens type — well below comparable US or UK pricing — while using equivalent equipment and surgical volumes",
+    "KOIHA-accredited facilities provide structured international patient coordination, multilingual staff, and VAT refund documentation for overseas visitors before departure"
+  ],
+  "faqs": [
+    {
+      "question": "Will I be awake during the procedure?",
+      "answer": "Yes. Cataract surgery in Korea uses topical anesthesia — numbing eye drops rather than injections or general anesthesia. You are awake and comfortable throughout. Most patients describe the 15–30 minute procedure as brief and well-tolerated, with no pain and only occasional mild pressure sensations."
+    },
+    {
+      "question": "Can both eyes be treated in one trip?",
+      "answer": "Yes. Korean eye clinics routinely treat the second eye 2–3 days after the first, once the next-day review confirms normal healing. A total stay of 3–5 days is typically enough for pre-op examination, both surgeries, and post-operative review. Confirm the inter-eye interval with your clinic during pre-travel planning."
+    },
+    {
+      "question": "How soon will I see clearly, and when can I fly home?",
+      "answer": "Most patients have useful functional vision within 72 hours. Vision continues to improve over several weeks as the eye heals. Most surgical teams clear patients to fly within 3–5 days of the next-day review, provided healing is progressing normally. Confirm your specific flight clearance date before booking return travel."
+    },
+    {
+      "question": "What is the difference between a monofocal and a premium lens?",
+      "answer": "A monofocal IOL is set to one focal distance — usually distance — so reading glasses are still needed. Multifocal and EDOF lenses provide useful vision at more than one distance, reducing spectacle dependence for many tasks but costing more and requiring stricter pre-screening. Your Korean ophthalmologist advises after the in-person examination."
+    },
+    {
+      "question": "What should I bring if I previously had LASIK or PRK?",
+      "answer": "Bring your pre- and post-operative records from any prior refractive surgery. Previous LASIK or PRK changes the measurements used to calculate IOL power, and Korean clinics use specialist biometry formulas for post-refractive eyes — but they need your original data to get the lens power right."
+    }
+  ]
+}
