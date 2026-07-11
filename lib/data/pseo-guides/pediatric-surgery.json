@@ -1,0 +1,55 @@
+{
+  "slug": "pediatric-surgery",
+  "candidateFor": [
+    "Children diagnosed with a condition such as inguinal hernia, umbilical hernia, or appendicitis that requires operative repair",
+    "Infants and children with congenital conditions identified before or after birth where surgery is the recommended course of care",
+    "Patients whose age, anatomy, and condition make them suitable for a minimally invasive approach — laparoscopy, thoracoscopy, or robotic surgery — at the surgeon's discretion",
+    "Children who are medically stable enough to tolerate general anaesthesia under a dedicated paediatric anaesthesia team",
+    "Families who have reviewed the risks, benefits, and alternatives with the treating team and are planning an elective, scheduled procedure"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Consultation, Assessment, and Pre-operative Planning",
+      "duration": "1–2 days",
+      "detail": "The paediatric surgeon reviews medical history, examines the child, and orders any needed imaging or blood tests. An anaesthesia review confirms fitness for general anaesthesia. International families are encouraged to share medical records and imaging before travel so a provisional plan is in place on arrival, reducing on-site preparation time."
+    },
+    {
+      "step": "Surgery",
+      "duration": "45 minutes to 3 hours depending on the procedure",
+      "detail": "A dedicated paediatric anaesthesia team manages the child throughout. For minimally invasive cases, small incisions allow a camera and instruments inside the abdomen or chest. Open surgery uses a single larger incision where anatomy or complexity requires it. Simple hernia repairs may be day-case or short-stay; appendectomy and more complex operations require a hospital admission."
+    },
+    {
+      "step": "Recovery and Post-operative Follow-up",
+      "duration": "Day-case to 7 days in hospital; 1–3 weeks total in Korea",
+      "detail": "Most children return to light activity within the first week and to school and normal routines within 2–4 weeks, with strenuous activity reintroduced as the surgeon advises. Families travelling from abroad should plan at least one post-operative review before flying home. Your clinic's international office provides wound care instructions and a recommended follow-up schedule."
+    }
+  ],
+  "whyKorea": [
+    "Leading Seoul university hospitals run dedicated paediatric surgery divisions where a large share of cases are performed minimally invasively — laparoscopy, thoracoscopy, and robotic surgery — reducing scarring and supporting faster recovery in children.",
+    "Korean healthcare is regulated by the Ministry of Health and Welfare, and many major hospitals hold Joint Commission International (JCI) accreditation or Korea's national accreditation for institutions serving international patients.",
+    "Major centres provide multilingual international patient services with English-speaking coordinators and child-focused nursing staff, with treatment often schedulable within days to weeks of initial consultation.",
+    "Costs in Korea are well below US pricing: hernia repair from approximately $1,000 and appendectomy approximately $5,200–$9,500 — with total spend substantially lower even after international travel costs."
+  ],
+  "faqs": [
+    {
+      "question": "Is minimally invasive surgery available for children in Korea?",
+      "answer": "Yes. At leading Seoul centres a large share of paediatric procedures are performed using laparoscopy, thoracoscopy, or robotic surgery where the child's age, size, and condition allow it. Minimally invasive approaches aim to reduce scarring, lower post-operative discomfort, and support a quicker recovery. The surgeon decides the appropriate method based on the specific case."
+    },
+    {
+      "question": "How much does paediatric surgery cost in Korea?",
+      "answer": "Reported approximate costs include inguinal hernia repair from roughly $1,000 and up, umbilical hernia repair around $3,000, and appendectomy approximately $5,200–$9,500. Complex or congenital conditions are quoted individually after assessment. Always request an itemised written quote from the hospital, as pricing varies by technique, complexity, and institution."
+    },
+    {
+      "question": "How long should we stay in Korea for a child's surgery?",
+      "answer": "For planned procedures, most families allow approximately one to three weeks to cover consultation, surgery, hospital recovery, and at least one post-operative review before flying home. Complex cases may require a longer stay. Your hospital's international patient office can advise based on the specific procedure and your child's recovery progress."
+    },
+    {
+      "question": "How long is the hospital stay for paediatric surgery?",
+      "answer": "Simple cases such as some hernia repairs may be day-case or one to two nights. Appendectomy typically involves a few days in hospital; perforated or complex cases can require five to seven days. The surgical team provides an estimated stay before the procedure so you can plan accommodation and travel timing accordingly."
+    },
+    {
+      "question": "Can we plan emergency paediatric surgery as medical travel to Korea?",
+      "answer": "No. Conditions such as suspected appendicitis are emergencies that require immediate local care — do not delay treatment to plan medical travel. Korea is best suited to planned, electively scheduled paediatric procedures where medical records can be reviewed in advance, timing is predictable, and the family can prepare for the trip properly."
+    }
+  ]
+}

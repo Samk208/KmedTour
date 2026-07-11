@@ -1,0 +1,56 @@
+{
+  "slug": "lasek-eye-surgery",
+  "candidateFor": [
+    "Adults with myopia, hyperopia, or astigmatism whose prescription has been stable for at least one year",
+    "Patients with thinner-than-average corneas who lack sufficient tissue for a LASIK flap",
+    "People with steep, flat, or mildly irregular corneal topography unsuitable for LASIK",
+    "Those in contact sports, military, law enforcement, or other high-impact roles where a permanent corneal flap carries trauma risk",
+    "Patients who have had previous corneal procedures that reduce available tissue for flap-based surgery",
+    "Anyone seeking surface-based correction as an alternative to flap-based or lenticule-extraction procedures"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Pre-operative Screening",
+      "duration": "2–3 hours",
+      "detail": "Corneal topography and pachymetry map the surface shape and thickness. Pupil size, tear-film quality, and full refraction are measured. Korean clinics require no significant prescription change for at least 12 months beforehand. Soft contact lenses must be removed at least two weeks before this visit; rigid lenses require four or more weeks."
+    },
+    {
+      "step": "LASEK Procedure",
+      "duration": "20–40 minutes total; active laser under 1 minute per eye",
+      "detail": "Topical anaesthetic drops are applied — no injections or sedation needed. Dilute alcohol loosens the outer epithelial layer, which is moved aside. An excimer laser reshapes the cornea to your prescription using real-time eye tracking. A soft bandage contact lens is placed. Both eyes are typically treated in the same session."
+    },
+    {
+      "step": "Recovery and Follow-up",
+      "duration": "Minimum 5–7 days in Korea; vision stable by weeks 3–4",
+      "detail": "The bandage lens is removed at a follow-up on days 3–5 once epithelial closure is confirmed. Light sensitivity and blurred vision are expected during this phase and peak around day 2–3. Functional vision for desk work returns within the first week after lens removal. Plan your Korea stay so the lens-removal visit occurs before you travel home."
+    }
+  ],
+  "whyKorea": [
+    "Seoul's vision correction centres perform LASEK, LASIK, SMILE, and implantable lens procedures daily, giving surgical teams refined technique and efficient post-operative protocols through very high caseloads.",
+    "The Korean Health Industry Development Institute (KHIDI) and Korean Association of Hospitals for Foreigners (KAHF) provide an accreditation framework for international patients, with language support in English, Arabic, Vietnamese, and other languages.",
+    "Dedicated international patient departments assist with scheduling around visa timelines and coordinate follow-up communication after patients return home.",
+    "Standard LASEK packages covering diagnostics, surgery, bandage lenses, medications, and scheduled follow-up typically range from approximately $750–$3,200 for both eyes — well below comparable Western pricing."
+  ],
+  "faqs": [
+    {
+      "question": "How is LASEK different from LASIK and SMILE?",
+      "answer": "LASIK cuts a hinged flap in the stroma, reshapes beneath it, then repositions the flap. SMILE extracts a small lenticule through a single incision without surface disruption. LASEK loosens the outer epithelium with dilute alcohol, moves it aside, and the excimer laser reshapes the corneal surface. No permanent flap is created, which preserves stromal depth and avoids flap-related trauma risk."
+    },
+    {
+      "question": "Am I a candidate if I have thin corneas or play contact sports?",
+      "answer": "Thin corneas are a primary reason surgeons recommend LASEK over LASIK — LASIK needs enough tissue to cut a safe flap, which thin corneas may not allow. For contact sports, military, or martial arts roles, the absence of a permanent flap avoids the risk of flap dislodgement from blunt force. Full corneal screening confirms suitability before proceeding."
+    },
+    {
+      "question": "How long does recovery take, and when can I return to work?",
+      "answer": "Most patients reach functional vision for screen and desk work within the first week after bandage lens removal on days 3–5. Vision stabilises around weeks 3–4, with minor fluctuations possible up to one month. Contact sports require 4–6 weeks clearance from your surgeon. Plan at least 5–7 days in Korea for surgery, lens removal, and early follow-up."
+    },
+    {
+      "question": "What does LASEK cost in Korea?",
+      "answer": "Standard packages for both eyes typically run approximately $750–$1,400. Advanced wavefront-guided or topography-guided treatments generally range from about $1,800–$3,200 for both eyes. Most packages include the pre-operative workup, surgery, bandage lenses, medications, and scheduled follow-up visits. Request an itemised English-language quote and confirm inclusions before booking."
+    },
+    {
+      "question": "What are the main risks of LASEK?",
+      "answer": "Subepithelial haze can develop as the cornea heals; steroid drops are prescribed to minimise it. Dry eye is common after surface laser correction and may need lubricating drops for weeks to months. Minor under- or over-correction is possible; enhancements can address residual errors once the refraction stabilises, typically after three to six months. Infection during surface healing is rare when antibiotic drops are used as directed."
+    }
+  ]
+}

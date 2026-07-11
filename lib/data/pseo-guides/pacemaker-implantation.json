@@ -1,0 +1,55 @@
+{
+  "slug": "pacemaker-implantation",
+  "candidateFor": [
+    "Adults with sick sinus syndrome — the heart's natural pacemaker fires too slowly or erratically — causing symptoms such as fatigue, near-fainting, or fainting",
+    "Patients with high-degree or complete heart block, where electrical signals between the heart chambers are partially or fully interrupted",
+    "People with persistent symptomatic bradycardia — a chronically slow heart rate causing fatigue, near-syncope, or fainting — unresolved by other measures",
+    "Patients with atrial fibrillation and a slow ventricular response, particularly after ablation or AV-node modification",
+    "Those with neurocardiogenic syncope — recurrent fainting episodes unresponsive to other treatment"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Pre-operative Cardiac Evaluation",
+      "duration": "1–2 days",
+      "detail": "A 12-lead ECG, 24–48-hour Holter monitor, echocardiogram, and blood work are completed. An electrophysiology study may be added for complex arrhythmias. Korean hospitals serving international patients typically complete this workup within 1–2 days of arrival. Sending your existing cardiac records before travel — ECG, echo, Holter reports — speeds the process."
+    },
+    {
+      "step": "Pacemaker Implantation",
+      "duration": "1–2.5 hours (conventional); under 30 minutes (leadless)",
+      "detail": "Conventional implantation uses local anaesthesia with sedation. A small incision near the collarbone allows leads to be threaded through a vein into the heart under fluoroscopy; the pulse generator is placed in a subcutaneous pocket. Leadless pacemakers are delivered via catheter through the femoral vein, anchored directly in the right ventricle — no chest incision and no subcutaneous pocket required."
+    },
+    {
+      "step": "In-hospital Recovery and Device Verification",
+      "duration": "3–5 days hospital; 7–10 days total in Korea before flying",
+      "detail": "Chest X-ray and ECG on day one confirm device position. Pain at the incision site is managed with oral medication. The arm on the implant side is kept below shoulder height for 2–4 weeks. Device interrogation verifies sensing and pacing thresholds before discharge. Most cardiologists recommend 7–10 days in Korea before clearing long-haul travel."
+    }
+  ],
+  "whyKorea": [
+    "All implantable cardiac devices in Korea must be approved by the Ministry of Food and Drug Safety (MFDS), which runs conformity reviews and post-market surveillance comparable in rigour to the US FDA — the same global device platforms from Medtronic, Abbott, and Boston Scientific are used.",
+    "Leadless pacemakers (Micra platform) are available at specialised Seoul cardiac centres, with Korean clinical data showing low acute complication rates reflecting concentrated case volumes at dedicated arrhythmia programs.",
+    "KHIDI's Medical Korea programme provides international patient support including a centre at Incheon International Airport, English-speaking coordinators, and streamlined pre-admission pathways at Gangnam cardiac facilities.",
+    "Full pacemaker packages in Korea typically cost approximately $8,000–$21,500 depending on device type, compared with $30,000–$100,000 or more for equivalent procedures in the United States."
+  ],
+  "faqs": [
+    {
+      "question": "How long do I need to stay in South Korea after pacemaker implantation?",
+      "answer": "Most patients are medically cleared for long-haul travel after 7–10 days. Hospital discharge typically occurs on days 3–5. The remaining days allow a wound check, device interrogation confirming stable pacing parameters, and your cardiologist's travel clearance. Confirm your specific timeline with the treating team, as complex cases may need slightly longer."
+    },
+    {
+      "question": "Is the pacemaker device the same brand as in the US or Europe?",
+      "answer": "Yes. Korean hospitals use globally sourced devices from Medtronic, Abbott, Boston Scientific, and other major manufacturers. All devices must be approved by Korea's MFDS before clinical use — the same models and platforms used internationally, subject to Korean regulatory oversight. You are receiving the same product, not a substitute."
+    },
+    {
+      "question": "What is a leadless pacemaker and is it available in Korea?",
+      "answer": "A leadless pacemaker is a capsule-sized device delivered directly into the right ventricle via a catheter through the femoral vein — no chest incision, no subcutaneous pocket, and no wire leads. It is available at specialised cardiac centres in Korea. Not every patient is suitable; arrhythmia type, body size, and venous anatomy all factor into whether it is appropriate."
+    },
+    {
+      "question": "Will I need to return to Korea to replace the pacemaker battery?",
+      "answer": "No. Battery replacement is a routine procedure your home-country cardiologist can perform — you do not need to return to Korea. Batteries typically last 8–15 years depending on usage. Before leaving Korea, you receive full device documentation including model, serial number, and programmed settings for handover to your local cardiac team."
+    },
+    {
+      "question": "How much does pacemaker implantation cost in Korea?",
+      "answer": "All-in packages typically range from approximately $8,000–$12,000 for a single-chamber device, $12,000–$17,000 for dual-chamber, and $15,000–$21,500 for a leadless pacemaker. Packages generally include the pre-operative workup, device, procedure, hospital stay, and discharge documentation. Confirm the full inclusion list in writing before committing to a provider."
+    }
+  ]
+}

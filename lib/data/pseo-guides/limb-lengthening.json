@@ -1,0 +1,56 @@
+{
+  "slug": "limb-lengthening",
+  "candidateFor": [
+    "Skeletally mature adults with closed growth plates seeking correction of a leg-length discrepancy or post-trauma shortening",
+    "Patients with deformity or shortening in the femur or tibia requiring reconstructive lengthening",
+    "Adults considering cosmetic height increase with realistic expectations about the multi-month timeline and effort involved",
+    "People in good cardiovascular and metabolic health who can commit to months of intensive daily physiotherapy",
+    "Patients who have discussed risks and alternatives with an orthopaedic surgeon and understand this is a major elective procedure",
+    "Non-smokers or those who can stop smoking well before surgery, since smoking significantly impairs bone healing"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Consultation, Imaging, and Surgical Planning",
+      "duration": "1–2 days",
+      "detail": "X-rays and CT scans map the bone in detail. The surgeon plans the cut site, target length, and technique — internal magnetic nail (PRECICE) or external fixator (Ilizarov or LON). They review realistic gain per segment, full risks, and the rehabilitation commitment. International patients often share imaging remotely before travel to reduce on-site workup time."
+    },
+    {
+      "step": "Osteotomy and Device Placement",
+      "duration": "2–4 hours surgery; 3–7 days hospital stay",
+      "detail": "Under general anaesthesia, the surgeon makes a controlled bone cut and places the lengthening device. With a magnetic nail, an internal rod is implanted and later controlled via an external remote controller. With an external fixator, a frame is secured around the limb. A short latency period follows before daily lengthening begins."
+    },
+    {
+      "step": "Distraction, Consolidation, and Rehabilitation",
+      "duration": "2–3 months in Korea recommended; total recovery 6–12+ months",
+      "detail": "Bone ends are separated a fraction of a millimetre multiple times daily, monitored by regular imaging. Physiotherapy starts immediately to preserve joint motion and muscle strength. After distraction ends, the new bone consolidates over roughly 1.5–2 times the distraction period before weight-bearing is gradually increased under supervision."
+    }
+  ],
+  "whyKorea": [
+    "Korean orthopaedic centres offer internal magnetic nail (PRECICE) systems and external fixator methods (Ilizarov and LON), allowing surgeons to match technique to each patient's anatomy, goals, and risk profile.",
+    "KHIDI's Medical Korea programme lists registered institutions and licensed medical facilitators, giving international patients a framework to identify credible providers before travelling.",
+    "Dedicated rehabilitation programs run alongside surgical care at major centres — important for limb lengthening because physiotherapy quality directly affects the final outcome and recovery speed.",
+    "Costs in Korea run approximately $30,000–$60,000 per segment in USD, lower than comparable specialist procedures in the United States or Western Europe, particularly for internal magnetic nail approaches."
+  ],
+  "faqs": [
+    {
+      "question": "How much height can limb lengthening add?",
+      "answer": "The achievable gain per segment depends on your individual bone structure, technique, and the surgeon's assessment after imaging — it is not a fixed number assumed in advance. Pursuing too large a gain in a single stage raises the risk of nerve and soft-tissue complications. Discuss a realistic target at your consultation rather than expecting a predetermined amount."
+    },
+    {
+      "question": "What is the difference between the PRECICE magnetic nail and an external fixator?",
+      "answer": "Internal magnetic nails are implanted inside the bone and lengthened via an external remote controller, avoiding a frame on the limb — typically more comfortable and with lower infection risk, but higher cost. External fixators such as the Ilizarov apparatus are generally less expensive but require a visible frame on the leg throughout the distraction phase. Your surgeon advises the best option for your anatomy and goals."
+    },
+    {
+      "question": "How long do I need to stay in Korea?",
+      "answer": "Most patients stay approximately 2–3 months in Korea to cover the distraction phase and early rehabilitation, then continue structured physiotherapy and follow-up imaging after returning home. The exact timeline depends on technique, target length, and how your bone heals, so confirm the plan with your clinic before booking travel."
+    },
+    {
+      "question": "Is limb lengthening painful, and what are the main risks?",
+      "answer": "Discomfort during distraction and recovery is expected and managed with medication and physiotherapy. Risks include nerve irritation, joint stiffness, delayed bone healing, and infection — higher with external fixators. Your surgeon should explain each risk fully and confirm you can commit to the rehabilitation before proceeding. Outcomes vary by individual."
+    },
+    {
+      "question": "Is cosmetic limb lengthening covered by insurance?",
+      "answer": "No. Cosmetic height increase is an elective procedure not covered by insurance. Reconstructive cases for genuine leg-length discrepancy or deformity may be treated differently. Plan to pay out of pocket for cosmetic lengthening and request a fully itemised quote covering surgery, hospital stay, device, rehabilitation, and any later hardware removal."
+    }
+  ]
+}

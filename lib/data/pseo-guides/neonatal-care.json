@@ -1,0 +1,56 @@
+{
+  "slug": "neonatal-care",
+  "candidateFor": [
+    "Families with high-risk pregnancies identified before birth, including preterm labour before 32 weeks or known fetal anomalies",
+    "Infants born very preterm (under 32 weeks) or with very low birth weight (under 1,500 g) requiring Level III NICU care",
+    "Newborns with hypoxic-ischemic encephalopathy (HIE) needing therapeutic hypothermia",
+    "Infants requiring neonatal surgical intervention for conditions such as intestinal atresia, diaphragmatic hernia, or cardiac defects",
+    "Families from regions where local Level III NICU capacity is limited or unavailable",
+    "Premature infants needing integrated retinopathy of prematurity screening or neonatal surgery as part of a coordinated NICU stay"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Admission and Acute Stabilisation",
+      "duration": "Days 1–14 (acute phase)",
+      "detail": "The infant is stabilised with respiratory support ranging from nasal CPAP to high-frequency oscillatory ventilation. Central lines are placed, comprehensive imaging is completed, and parenteral nutrition begins transitioning to enteral feeds. Therapeutic hypothermia starts within hours for eligible HIE infants, following a 72-hour cooling protocol at approximately 33.5°C."
+    },
+    {
+      "step": "Ongoing NICU Management and Neonatal Surgery",
+      "duration": "Weeks 2 through discharge — timeline varies by gestational age",
+      "detail": "Surfactant therapy, infection surveillance, and progressive enteral feeding continue under daily multidisciplinary rounds including neonatologists, nurses, dietitians, and physiotherapists. Neonatal surgeons at major Seoul tertiary centres handle procedures such as bowel resection, hernia ligation, or diaphragmatic hernia repair within the same facility. Retinopathy screening and neurodevelopmental monitoring run in parallel."
+    },
+    {
+      "step": "Pre-discharge and Post-discharge Follow-up",
+      "duration": "Final 1–2 weeks in hospital; developmental follow-up at 3, 6, 12, and 24 months corrected age",
+      "detail": "Full oral feeding, room-air tolerance, hearing screen, and metabolic screening must be completed before discharge. Families receive CPR and care training. Korean hospitals provide full handover documentation and can coordinate telemedicine follow-up for families returning abroad to continue developmental paediatrics review."
+    }
+  ],
+  "whyKorea": [
+    "The Korean Neonatal Network operates a national outcomes registry tracking very low birth weight infants across the majority of Korean births annually, providing systematic quality benchmarking that isolated centres cannot replicate.",
+    "Korea has regionalised neonatal care so that the highest-acuity infants are routed to Level III tertiary centres; Seoul leads in NICU bed density and tracks the lowest NICU mortality rates among Korean regions.",
+    "Major Seoul tertiary hospitals are accredited by the Korean Institute for Healthcare Accreditation (KOIHA), with many also holding JCI accreditation and dedicated international patient centres providing multilingual coordination.",
+    "NICU costs in Korea — approximately $8,000–$80,000 or more depending on gestational age and length of stay — are substantially below comparable US private NICU rates, making Korea accessible for families from regions with limited advanced neonatal infrastructure."
+  ],
+  "faqs": [
+    {
+      "question": "Can international families bring a premature infant to Korea for NICU care?",
+      "answer": "Extremely premature infants are rarely stable enough for international air transport immediately after birth. The more practical approach is for high-risk pregnant women to travel to Korea before delivery under maternal-fetal medicine care, then deliver at a tertiary hospital with an attached Level III NICU. Post-stabilisation transfers for specific surgical procedures are arranged case by case."
+    },
+    {
+      "question": "What is therapeutic hypothermia and is it available in Korea?",
+      "answer": "Therapeutic hypothermia is a treatment for hypoxic-ischemic encephalopathy (HIE), where the infant's core temperature is carefully lowered to approximately 33.5°C for 72 hours to limit secondary brain cell injury after oxygen deprivation around birth. Korean Level III NICU centres at tertiary hospitals implement this protocol for eligible infants in line with international neonatal guidelines."
+    },
+    {
+      "question": "How do Korean NICU costs compare to the United States?",
+      "answer": "US NICU stays can average $70,000 or more for a moderately preterm infant, with complex cases reaching much higher amounts. Korean tertiary hospital costs for international patients are typically a fraction of equivalent US private rates. Exact figures depend on gestational age, length of stay, and procedures; hospitals provide itemised estimates through their international patient departments."
+    },
+    {
+      "question": "Do Korean NICU hospitals have neonatal surgeons available on site?",
+      "answer": "Yes. Major Seoul tertiary hospitals maintain neonatal surgery teams — paediatric surgeons specialising in newborn procedures — closely coordinated with NICU staff. Conditions including congenital diaphragmatic hernia, intestinal atresia, and gastroschisis can be managed surgically within the same facility without requiring inter-hospital transport for the infant."
+    },
+    {
+      "question": "What accreditation standards do Korean NICU hospitals meet?",
+      "answer": "Korean tertiary hospitals are accredited by the Korean Institute for Healthcare Accreditation (KOIHA), managed under the Ministry of Health and Welfare. Many major Seoul centres also hold JCI accreditation. KHIDI provides broader healthcare industry oversight and supports international patient coordination through the Medical Korea programme."
+    }
+  ]
+}

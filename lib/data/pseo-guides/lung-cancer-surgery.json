@@ -1,0 +1,55 @@
+{
+  "slug": "lung-cancer-surgery",
+  "candidateFor": [
+    "Adults with early-stage non-small cell lung cancer (broadly stages I–II) confirmed on imaging and biopsy",
+    "Patients with disease localised to one lung lobe without confirmed distant spread",
+    "Those with adequate lung function and overall fitness to tolerate removal of a lobe or lung segment under general anaesthesia",
+    "Patients where a multidisciplinary team has reviewed staging results and recommended surgery as the primary approach",
+    "People seeking minimally invasive surgery (VATS or robotic) rather than open thoracotomy where anatomy and staging permit"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Pre-operative Staging and Assessment",
+      "duration": "3–5 days",
+      "detail": "CT and PET imaging, biopsy or tissue confirmation, pulmonary function testing, blood work, and an anaesthesia review are completed. The thoracic team confirms cancer stage and decides between lobectomy, segmentectomy, or wedge resection. Bringing existing scans and pathology from home reduces duplicate testing and shortens the workup period."
+    },
+    {
+      "step": "Surgery — VATS or Robotic Lobectomy",
+      "duration": "2–4 hours; general anaesthesia",
+      "detail": "For VATS or robotic surgery, small incisions between the ribs allow a camera and instruments to remove the affected lobe. The lung on the operative side is temporarily deflated. Nearby lymph nodes are sampled for staging. One or two chest drains are placed post-operatively and removed once air leakage and fluid drainage settle, typically within a few days."
+    },
+    {
+      "step": "Hospital Recovery and Post-surgical Review",
+      "duration": "4–6 days in hospital; 2–4 weeks total in Korea",
+      "detail": "Early walking and breathing exercises begin on days 1–2 to support lung re-expansion. Most patients are discharged around days 4–6. International patients stay in Korea for pathology review, wound check, and early follow-up before the surgical team clears them to fly home. Avoid flying until your team confirms it is safe."
+    }
+  ],
+  "whyKorea": [
+    "Seoul's major teaching hospitals perform VATS and robotic lobectomy at high volumes, giving thoracic surgical teams daily experience with minimally invasive techniques linked to less pain and faster recovery than open thoracotomy.",
+    "KHIDI's Medical Korea programme provides accreditation oversight and dedicated support infrastructure including an international patient centre at Incheon International Airport to help overseas patients coordinate care.",
+    "Korean healthcare is regulated by the Ministry of Food and Drug Safety for medical devices and the Ministry of Health and Welfare for facility standards, with major cancer centres holding national or JCI accreditation.",
+    "Approximate costs of $18,000–$50,000 for minimally invasive lobectomy are generally well below comparable self-funded rates in the United States, even after accounting for international travel costs."
+  ],
+  "faqs": [
+    {
+      "question": "Is lung cancer surgery in Korea minimally invasive?",
+      "answer": "Often yes. Korean thoracic teams frequently use VATS or robotic-assisted surgery through small chest incisions rather than open thoracotomy. Minimally invasive approaches are associated with less post-operative pain, shorter hospital stays, and faster recovery. The chosen approach depends on tumour size, location, and lung function, confirmed during pre-operative assessment."
+    },
+    {
+      "question": "How much does lung cancer surgery cost in Korea?",
+      "answer": "Conventional VATS lobectomy typically runs approximately $18,000–$35,000. Robotic-assisted procedures generally range from about $35,000–$50,000. Final cost depends on resection extent, hospital stay, and the institution. Request a written breakdown separating surgery, anaesthesia, hospital stay, pathology, and follow-up to compare clinics accurately."
+    },
+    {
+      "question": "How long should I stay in Korea for lung cancer surgery?",
+      "answer": "Most international patients plan for approximately 2–4 weeks, covering pre-operative staging (3–5 days), the procedure and hospital stay (4–6 days), drain removal, pathology review, and early follow-up before clearance to fly. Avoid flying until your surgical team confirms it is safe — typically after wound review and pathology results."
+    },
+    {
+      "question": "Who is a candidate for lung cancer surgery?",
+      "answer": "Surgery is generally considered for early-stage non-small cell lung cancer confined to the lung in patients with adequate lung and cardiac function. A multidisciplinary team reviews staging scans, biopsy results, and pulmonary function tests before recommending an operation. Advanced or widely spread disease is typically managed with other therapies."
+    },
+    {
+      "question": "What should I bring when travelling to Korea for lung cancer surgery?",
+      "answer": "Carry your most recent CT and PET images, biopsy or pathology reports, current medication list, and a summary of prior treatments. Bringing existing diagnostic material allows the Korean thoracic team to confirm staging quickly, reduces duplicate testing, and can shorten your total time in Korea before surgery begins."
+    }
+  ]
+}

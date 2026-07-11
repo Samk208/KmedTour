@@ -35,8 +35,16 @@ import hysterectomy from './hysterectomy.json'
 import ivfTreatment from './ivf-treatment.json'
 import kidneyStoneRemoval from './kidney-stone-removal.json'
 import kneeReplacement from './knee-replacement.json'
+import koreanMedicine from './korean-medicine.json'
+import lasekEyeSurgery from './lasek-eye-surgery.json'
+import laserSkinResurfacing from './laser-skin-resurfacing.json'
 import lasikEyeSurgery from './lasik-eye-surgery.json'
+import limbLengthening from './limb-lengthening.json'
 import liposuction from './liposuction.json'
+import lungCancerSurgery from './lung-cancer-surgery.json'
+import neonatalCare from './neonatal-care.json'
+import pacemakerImplantation from './pacemaker-implantation.json'
+import pediatricSurgery from './pediatric-surgery.json'
 import rhinoplasty from './rhinoplasty.json'
 import tummyTuck from './tummy-tuck.json'
 import vLineSurgery from './v-line-surgery.json'
@@ -76,8 +84,16 @@ export const pseoGuides: Record<string, ProcedureGuide> = {
   "ivf-treatment": ivfTreatment as unknown as ProcedureGuide,
   "kidney-stone-removal": kidneyStoneRemoval as unknown as ProcedureGuide,
   "knee-replacement": kneeReplacement as unknown as ProcedureGuide,
+  "korean-medicine": koreanMedicine as unknown as ProcedureGuide,
+  "lasek-eye-surgery": lasekEyeSurgery as unknown as ProcedureGuide,
+  "laser-skin-resurfacing": laserSkinResurfacing as unknown as ProcedureGuide,
   "lasik-eye-surgery": lasikEyeSurgery as unknown as ProcedureGuide,
+  "limb-lengthening": limbLengthening as unknown as ProcedureGuide,
   "liposuction": liposuction as unknown as ProcedureGuide,
+  "lung-cancer-surgery": lungCancerSurgery as unknown as ProcedureGuide,
+  "neonatal-care": neonatalCare as unknown as ProcedureGuide,
+  "pacemaker-implantation": pacemakerImplantation as unknown as ProcedureGuide,
+  "pediatric-surgery": pediatricSurgery as unknown as ProcedureGuide,
   "rhinoplasty": rhinoplasty as unknown as ProcedureGuide,
   "tummy-tuck": tummyTuck as unknown as ProcedureGuide,
   "v-line-surgery": vLineSurgery as unknown as ProcedureGuide,
