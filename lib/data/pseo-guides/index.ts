@@ -23,9 +23,17 @@ import eggFreezing from './egg-freezing.json'
 import endoscopy from './endoscopy.json'
 import facelift from './facelift.json'
 import fertilityConsultation from './fertility-consultation.json'
+import gastricBypass from './gastric-bypass.json'
+import gastricSleeve from './gastric-sleeve.json'
+import gynecomastiaSurgery from './gynecomastia-surgery.json'
 import hairTransplant from './hair-transplant.json'
 import healthScreening from './health-screening.json'
+import hemorrhoidSurgery from './hemorrhoid-surgery.json'
+import herbalMedicine from './herbal-medicine.json'
+import hipReplacement from './hip-replacement.json'
+import hysterectomy from './hysterectomy.json'
 import ivfTreatment from './ivf-treatment.json'
+import kidneyStoneRemoval from './kidney-stone-removal.json'
 import kneeReplacement from './knee-replacement.json'
 import lasikEyeSurgery from './lasik-eye-surgery.json'
 import liposuction from './liposuction.json'
@@ -56,9 +64,17 @@ export const pseoGuides: Record<string, ProcedureGuide> = {
   "endoscopy": endoscopy as unknown as ProcedureGuide,
   "facelift": facelift as unknown as ProcedureGuide,
   "fertility-consultation": fertilityConsultation as unknown as ProcedureGuide,
+  "gastric-bypass": gastricBypass as unknown as ProcedureGuide,
+  "gastric-sleeve": gastricSleeve as unknown as ProcedureGuide,
+  "gynecomastia-surgery": gynecomastiaSurgery as unknown as ProcedureGuide,
   "hair-transplant": hairTransplant as unknown as ProcedureGuide,
   "health-screening": healthScreening as unknown as ProcedureGuide,
+  "hemorrhoid-surgery": hemorrhoidSurgery as unknown as ProcedureGuide,
+  "herbal-medicine": herbalMedicine as unknown as ProcedureGuide,
+  "hip-replacement": hipReplacement as unknown as ProcedureGuide,
+  "hysterectomy": hysterectomy as unknown as ProcedureGuide,
   "ivf-treatment": ivfTreatment as unknown as ProcedureGuide,
+  "kidney-stone-removal": kidneyStoneRemoval as unknown as ProcedureGuide,
   "knee-replacement": kneeReplacement as unknown as ProcedureGuide,
   "lasik-eye-surgery": lasikEyeSurgery as unknown as ProcedureGuide,
   "liposuction": liposuction as unknown as ProcedureGuide,

@@ -1,0 +1,56 @@
+{
+  "slug": "gastric-bypass",
+  "candidateFor": [
+    "BMI 40 or above with no qualifying comorbidity",
+    "BMI 35 or above with type 2 diabetes, hypertension, or obstructive sleep apnoea",
+    "BMI 35 or above with obesity-related joint disease, dyslipidaemia, or non-alcoholic fatty liver disease",
+    "Adults who have not achieved durable weight loss through supervised diet and medical management",
+    "Patients medically cleared through metabolic, cardiac, endoscopic, nutritional, and psychological pre-operative evaluation",
+    "International patients able to remain in Korea for the recommended 10–14 day post-operative period before flying home"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Consultation & Assessment",
+      "duration": "2–4 days",
+      "detail": "The bariatric team conducts a full metabolic and cardiac workup, upper endoscopy, nutritional assessment, and psychological evaluation before surgery is approved. International patient coordinators arrange interpreter support and handle documentation during this phase. Results determine surgical eligibility and inform the anaesthesia plan."
+    },
+    {
+      "step": "Roux-en-Y Gastric Bypass Surgery",
+      "duration": "2–3 hours",
+      "detail": "Performed laparoscopically under general anaesthesia, the surgeon creates a small stomach pouch and connects it directly to the mid-small intestine, bypassing the remaining stomach and upper small bowel. The rerouting reduces intake capacity and alters hunger hormones, producing both restriction and metabolic effects."
+    },
+    {
+      "step": "Hospital Stay & In-Country Recovery",
+      "duration": "3–5 nights inpatient; 10–14 days total in Korea",
+      "detail": "The inpatient dietitian introduces a staged liquid-to-puree progression before discharge. The remaining days in Korea allow wound monitoring, IV hydration if needed, and a structured handover packet for the home medical team covering supplement schedules, dietary phases, and follow-up labs."
+    }
+  ],
+  "whyKorea": [
+    "Hospitals accredited under KOIHA meet international patient safety and quality benchmarks specifically validated for foreign nationals, covering surgical, nursing, and coordination standards",
+    "Korea's KHIDI Medical Korea programme vets participating hospitals for bariatric competency and assigns dedicated international patient departments with on-site interpreters",
+    "Laparoscopic gastric bypass in Korea runs approximately $12,000–$22,000 USD — roughly 40–60 percent below comparable private-sector pricing in the United Kingdom, Australia, or Gulf private hospitals",
+    "Integrated pre-operative dietary counselling and psychological evaluation are included in the surgical pathway, not billed separately, which reduces total cost and ensures nutritional readiness before the operation"
+  ],
+  "faqs": [
+    {
+      "question": "What is the total cost of gastric bypass in Korea for an international patient?",
+      "answer": "Expect approximately $12,000–$17,000 USD for standard laparoscopic RYGB and $17,000–$22,000 USD for premium-tier facilities. Both ranges include surgeon and anaesthesia fees, operating room costs, a 3–5 night hospital stay, standard medications, and inpatient dietitian support. Flights, accommodation, and follow-up labs at home are additional."
+    },
+    {
+      "question": "How long must I stay in Korea after gastric bypass surgery?",
+      "answer": "The recommended minimum is 10–14 days in total. Surgery and the hospital stay account for the first 4–6 days; the remaining time allows outpatient wound checks, dietitian follow-up, and medical clearance before a long-haul flight. Travelling home before the 10-day mark increases the risk of dehydration, wound complications, and deep vein thrombosis."
+    },
+    {
+      "question": "Is gastric bypass in Korea safe for patients from Africa or the Middle East?",
+      "answer": "KOIHA-accredited hospitals are assessed against international patient safety standards and are required to provide interpreter services and structured care coordination for foreign nationals. Pre-operative cardiac and metabolic screening is performed regardless of origin country. Patients should confirm their chosen hospital holds current KOIHA accreditation and participates in the KHIDI Medical Korea programme."
+    },
+    {
+      "question": "What are the eligibility requirements before Korean bariatric teams will operate?",
+      "answer": "The minimum clinical threshold is BMI 40 or above, or BMI 35 or above with at least one qualifying condition such as type 2 diabetes, hypertension, obstructive sleep apnoea, dyslipidaemia, obesity-related joint disease, or non-alcoholic fatty liver disease. A full pre-operative workup must be completed and cleared before surgery is scheduled."
+    },
+    {
+      "question": "What follow-up care is provided after returning home?",
+      "answer": "Korean bariatric teams prepare a written handover packet for the patient's home physician covering supplement protocols (iron, B12, calcium, vitamin D), dietary phase progression, and recommended lab tests at 3, 6, and 12 months. The patient is responsible for engaging a local dietitian and GP for ongoing monitoring once back home."
+    }
+  ]
+}

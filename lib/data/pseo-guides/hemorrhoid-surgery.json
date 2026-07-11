@@ -1,0 +1,56 @@
+{
+  "slug": "hemorrhoid-surgery",
+  "candidateFor": [
+    "Grade III or IV internal hemorrhoids with prolapse that cannot be manually reduced",
+    "Symptomatic external hemorrhoids causing persistent pain, thrombosis, or skin tags",
+    "Ongoing rectal bleeding that has not responded to fiber therapy, sitz baths, or topical treatments",
+    "Failed office-based procedures such as rubber band ligation or sclerotherapy",
+    "Prolapse affecting daily activities including sitting, walking, or bowel movements",
+    "Patients who have been cleared for anaesthesia and do not have active infection, untreated IBD flare, or unexplained new rectal bleeding requiring prior investigation"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Consultation & Assessment",
+      "duration": "1–2 hours",
+      "detail": "A colorectal or proctology specialist performs an anorectal examination, grades the hemorrhoids, and reviews your medication list, particularly blood thinners and diabetes management. The surgeon selects the technique — laser, stapled PPH, HAL-RAR, or conventional excision — based on hemorrhoid grade and anatomy. Consultation and examination typically costs $50–$200."
+    },
+    {
+      "step": "Surgical Procedure",
+      "duration": "30–60 minutes",
+      "detail": "Performed under spinal, regional, or general anaesthesia depending on technique and patient health. Laser hemorrhoidoplasty and HAL-RAR cause less tissue removal and typically allow same-day discharge. Stapled hemorrhoidopexy (PPH) and conventional excisional hemorrhoidectomy may require one overnight stay. Most patients are mobile within a few hours of waking from anaesthesia."
+    },
+    {
+      "step": "Recovery & Follow-up",
+      "duration": "10–14 days recommended stay in Korea",
+      "detail": "Pain is highest in the first 3–5 days; stool softeners and sitz baths are standard. A follow-up check at 7–10 days confirms wound healing before travel. Full recovery to normal activity takes 2–4 weeks at home. Long-haul flights are generally advised against before the 10-day mark."
+    }
+  ],
+  "whyKorea": [
+    "Seoul's colorectal and proctology units offer all four surgical techniques — conventional excision, stapled PPH, laser hemorrhoidoplasty, and Doppler-guided HAL-RAR — under one roof, allowing technique selection based on clinical need rather than equipment availability",
+    "Clinics registered under the KHIDI Medical Korea initiative are licensed to treat foreign patients and are required to carry malpractice liability insurance, providing a documented accountability framework",
+    "Approximate costs range from $1,000 to $3,500 depending on technique, which runs roughly 40–70% below equivalent out-of-pocket surgical fees at US private facilities for comparable procedures",
+    "International patient coordinators at registered Seoul clinics arrange interpreter services, discharge paperwork in English, and airport transfer logistics, reducing logistical friction during the post-operative recovery window"
+  ],
+  "faqs": [
+    {
+      "question": "Which hemorrhoid surgery technique is right for me?",
+      "answer": "The surgeon decides after grading your hemorrhoids at the anorectal examination. Laser hemorrhoidoplasty and HAL-RAR are preferred for Grade III internal hemorrhoids with less tissue to remove. Stapled PPH suits circumferential internal prolapse. Conventional excision is used for large mixed or external hemorrhoids. Anatomy and grade drive the choice, not patient preference alone."
+    },
+    {
+      "question": "How painful is recovery after hemorrhoid surgery in Korea?",
+      "answer": "Pain is most significant in the first 3–5 days regardless of technique. Laser and HAL-RAR procedures generally involve less post-operative discomfort than conventional excision. Clinics prescribe oral analgesics and stool softeners; sitz baths two to three times daily reduce inflammation. Most patients rate pain as manageable by day 7."
+    },
+    {
+      "question": "Is it safe to fly home after 10 days?",
+      "answer": "Most surgeons clear patients for long-haul travel at the 10–14 day follow-up if the wound is healing without signs of infection or bleeding. Flying earlier increases discomfort and the small risk of complications during transit. Your discharge letter will specify your individual clearance date."
+    },
+    {
+      "question": "Will hemorrhoids come back after surgery?",
+      "answer": "Recurrence depends on technique, hemorrhoid grade, and long-term diet and bowel habits. No surgical method eliminates recurrence entirely. Your surgeon can discuss the expected recurrence range for your specific case based on your grade and anatomy."
+    },
+    {
+      "question": "Do I need to stop blood thinners before the procedure?",
+      "answer": "Yes, in most cases. Aspirin, warfarin, clopidogrel, and newer anticoagulants all increase bleeding risk during and after anorectal surgery. Your Korean surgeon will coordinate with your prescribing physician to plan a safe interruption window. Disclose all medications at your initial consultation."
+    }
+  ]
+}

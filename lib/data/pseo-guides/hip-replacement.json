@@ -1,0 +1,56 @@
+{
+  "slug": "hip-replacement",
+  "candidateFor": [
+    "Severe hip or groin pain from osteoarthritis, avascular necrosis, rheumatoid arthritis, post-traumatic arthritis, or hip dysplasia that has not responded to medication or physiotherapy",
+    "Significant hip stiffness limiting basic daily activities such as dressing, walking, or climbing stairs",
+    "Nightly hip pain that consistently disrupts sleep",
+    "Mobility loss that affects independence and cannot be managed conservatively",
+    "Patients who have passed pre-operative cardiovascular, diabetes, and bone-quality screening with no active infection present",
+    "Patients whose BMI and activity level have been reviewed for implant longevity and anaesthetic risk suitability"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Consultation & Assessment",
+      "duration": "1–2 days",
+      "detail": "The international patient department coordinates X-rays, blood work, cardiovascular screening, and an orthopaedic surgeon review. Active infections must be cleared before a surgical date is confirmed. An interpreter is available throughout. The team selects the implant type — standard or premium ceramic-on-ceramic — based on bone quality, age, and activity level."
+    },
+    {
+      "step": "Hip Replacement Surgery",
+      "duration": "1–2.5 hours",
+      "detail": "Under general or spinal anaesthesia, the surgeon removes the worn femoral head and damaged socket lining. A titanium or cobalt-chrome stem is fixed into the femur with a ceramic or metal ball. A prosthetic cup with a polyethylene or ceramic liner is placed into the acetabulum. Early physiotherapy begins the same day or the morning after surgery."
+    },
+    {
+      "step": "Hospital Stay & Inpatient Rehabilitation",
+      "duration": "3–5 nights inpatient; 14 days total recommended stay in Korea",
+      "detail": "Structured physiotherapy starts within 24 hours — goals are safe weight-bearing, stair practice, and hip precaution education. Inpatient physiotherapy is typically included in the quoted package. After discharge, outpatient sessions and a surgeon wound check occur before flying. A written rehabilitation plan is provided for your home physiotherapist at departure."
+    }
+  ],
+  "whyKorea": [
+    "KOIHA (Korean Organisation for International Healthcare Accreditation) and the KHIDI Medical Korea programme set patient-safety and quality benchmarks specifically for hospitals treating international patients, with interpreters in English, Arabic, and other languages integrated into the care pathway",
+    "High-volume orthopaedic teams perform established stem-fixation techniques at scale, and same-day physiotherapy protocols are built into the standard admission, shortening hospital stay without removing structured early rehabilitation",
+    "Approximate all-inclusive costs of $15,000–$30,000 USD compare with $35,000–$60,000+ for equivalent implant grades in the United States or Western Europe — a difference of roughly 40–60% without a reduction in implant specification",
+    "Discharge includes a written rehabilitation plan coordinated with the patient's home physiotherapist, reducing the gap between Korean post-operative care and recovery in the patient's home country"
+  ],
+  "faqs": [
+    {
+      "question": "What is the difference between a standard and a ceramic-on-ceramic hip implant, and does it affect cost?",
+      "answer": "Standard implants use a metal or ceramic ball against a polyethylene liner and cost approximately $15,000–$22,000. Ceramic-on-ceramic implants use harder-wearing ceramic on both surfaces and are priced approximately $22,000–$30,000. Your surgeon will recommend the grade based on your age, bone quality, and activity level — younger, more active patients are often advised toward ceramic-on-ceramic for longevity."
+    },
+    {
+      "question": "Can both hips be replaced in the same hospital admission?",
+      "answer": "Bilateral hip replacement in a single admission is performed at selected high-volume centres in Korea. Approximate cost is $25,000–$45,000. It is only recommended when both hips meet surgical criteria and cardiovascular and anaesthetic screening confirms the patient can tolerate a longer procedure safely. Your surgeon will assess this during the pre-operative consultation."
+    },
+    {
+      "question": "When can I fly home after hip replacement surgery in Korea?",
+      "answer": "Most patients remain in Korea for approximately 14 days total to complete wound healing, outpatient physiotherapy, and a surgical review before flying. Long-haul flights carry a deep-vein thrombosis risk after hip surgery. Your surgical team provides written medical clearance and flight precaution guidance — follow their specific timeline, not a general estimate."
+    },
+    {
+      "question": "Is physiotherapy included in Korean hip replacement packages?",
+      "answer": "Inpatient physiotherapy during the 3–5 night hospital stay is typically included in the quoted package at KOIHA-accredited hospitals. Outpatient sessions after discharge may be billed separately. Confirm exactly what is included when requesting a cost estimate from the international patient department."
+    },
+    {
+      "question": "What conditions disqualify someone from hip replacement surgery in Korea?",
+      "answer": "Active infection anywhere in the body must be fully cleared before surgery can proceed. Uncontrolled diabetes, severe cardiovascular disease, or very high BMI may delay or contraindicate the procedure pending specialist review. Pre-operative screening at the Korean hospital identifies these factors — patients are advised to share complete medical records before travelling."
+    }
+  ]
+}

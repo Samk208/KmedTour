@@ -1,0 +1,56 @@
+{
+  "slug": "kidney-stone-removal",
+  "candidateFor": [
+    "Small stones under 10mm in the kidney or ureter suitable for ESWL or ureteroscopy with holmium laser — no incision required",
+    "Stones located inside the kidney (intrarenal) typically matched to RIRS using a flexible scope passed through the urinary tract",
+    "Large or complex stones over 2cm, including staghorn stones, usually requiring PCNL via a small back incision for complete clearance",
+    "Patients who have failed prior shock-wave treatment or whose stone composition resists fragmentation by sound waves",
+    "International patients able to share prior CT imaging and stone history before travel so technique selection happens before arrival",
+    "People seeking confirmed stone-free status combined with a formal stone analysis and personalised prevention plan to reduce recurrence"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Consultation & Assessment",
+      "duration": "1–2 hours on arrival day",
+      "detail": "A urologist reviews your prior CT or ultrasound, orders any updated imaging or lab tests ($150–$600 combined), confirms stone size, location, and density, then selects the treatment method. An international patient coordinator handles scheduling and interpretation. If a ureteral stent is needed before the procedure, it may be placed the same day under sedation."
+    },
+    {
+      "step": "Procedure Day",
+      "duration": "30–90 minutes in theatre; same-day discharge for ESWL or ureteroscopy, 1–3 nights inpatient for RIRS or PCNL",
+      "detail": "ESWL uses external shock waves with no anaesthesia beyond sedation. Ureteroscopy and RIRS pass a thin scope through the urinary tract under spinal or general anaesthesia, then fragment the stone with a holmium laser. PCNL requires a small back incision under general anaesthesia for large stones. A temporary stent is often left in place and removed at a separate short visit before you leave Korea."
+    },
+    {
+      "step": "Recovery & Follow-up",
+      "duration": "Approximately 1–2 weeks total stay in Korea recommended",
+      "detail": "ESWL patients typically rest one day and pass fragments over 1–2 weeks. Ureteroscopy and RIRS patients are discharged within 24 hours; stent removal follows 3–7 days later. PCNL patients need 2–3 days inpatient then 5–7 days nearby for monitoring. Before departure, you receive stone composition results and a written prevention plan covering diet and hydration adjustments."
+    }
+  ],
+  "whyKorea": [
+    "High-volume urology departments in Seoul and Gangnam offer ESWL, holmium laser ureteroscopy, RIRS, and PCNL under one roof — technique selection and treatment happen in a single coordinated visit without referral delays",
+    "Holmium laser lithotripsy, the established endoscopic standard for stone fragmentation, is routinely available; equipment and devices are regulated by MFDS (Ministry of Food and Drug Safety) and facilities operate under the KHIDI Medical Korea programme",
+    "International patient offices provide certified medical interpreters, pre-arrival image review, and coordinated scheduling so the treatment plan is confirmed before you board a flight",
+    "Approximate costs run 50–70% below comparable accredited care in the United States or Western Europe — ESWL from approximately $1,500–$3,500 and PCNL from approximately $5,000–$8,000"
+  ],
+  "faqs": [
+    {
+      "question": "Which technique will the doctor recommend for my stone?",
+      "answer": "The decision depends on stone size, location, and density shown on CT imaging. Stones under 10mm in the ureter are often cleared with ureteroscopy and laser. Stones inside the kidney typically suit RIRS. Stones over 2cm or staghorn stones generally need PCNL. Sharing your most recent CT scan before travel allows the urologist to confirm the plan in advance."
+    },
+    {
+      "question": "Will I need a ureteral stent, and does that mean a second procedure?",
+      "answer": "A temporary stent is placed in many cases to protect the ureter after laser treatment and is usually removed 3–7 days later under brief sedation — no general anaesthesia required. Stent placement and removal typically adds $300–$1,200 to overall costs. Planning your Korea stay for approximately two weeks accommodates both the procedure and stent removal before you fly home."
+    },
+    {
+      "question": "Is it safe to fly to Korea if I am in pain from a stone right now?",
+      "answer": "Active pain with fever, signs of urinary infection, or kidney swelling with infection requires urgent local treatment before travel — do not fly in that condition. Once stabilised and cleared by a local physician, travel for elective stone removal is appropriate. Notify the Korean centre of your recent history so they can arrange priority scheduling if needed."
+    },
+    {
+      "question": "How long does recovery take before I can fly home?",
+      "answer": "ESWL patients can typically fly within 2–3 days if no complications arise. Ureteroscopy and RIRS patients generally need 5–10 days to allow stent removal and confirm stone clearance. PCNL patients usually need 10–14 days before flying is advisable. Your urologist will confirm fitness to travel based on post-procedure imaging and any stent status."
+    },
+    {
+      "question": "What does the total cost typically include?",
+      "answer": "Expect to budget for consultation, CT, and labs ($150–$600), the procedure itself ($1,500–$8,000 depending on technique), and stent placement and removal if required ($300–$1,200). Hospital accommodation for RIRS or PCNL inpatient nights is usually itemised separately. The Korean centre can provide a written cost estimate after reviewing your imaging before you commit to travel."
+    }
+  ]
+}

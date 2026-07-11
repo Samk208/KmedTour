@@ -1,0 +1,56 @@
+{
+  "slug": "gastric-sleeve",
+  "candidateFor": [
+    "BMI 40 or above with no additional health conditions",
+    "BMI 35 or above with at least one obesity-related condition such as type 2 diabetes, high blood pressure, or sleep apnoea",
+    "Adults who have attempted sustained weight loss through diet and exercise without lasting results",
+    "Patients fit for general anaesthesia and laparoscopic surgery after pre-operative assessment",
+    "Individuals prepared to commit to permanent dietary change and lifelong vitamin supplementation",
+    "Patients without prior major upper abdominal surgery that would complicate a laparoscopic approach"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Consultation & Assessment",
+      "duration": "1–2 days",
+      "detail": "A bariatric surgeon reviews your BMI, comorbidities, bloodwork, and surgical history. Anaesthesia, nutrition, and psychological readiness are assessed. Pre-operative labs, endoscopy, and imaging are often bundled. This stage confirms candidacy, sets surgical risk category (standard or complex), and determines final cost range before you commit."
+    },
+    {
+      "step": "Laparoscopic Sleeve Gastrectomy",
+      "duration": "1–2 hours operative time; several days inpatient",
+      "detail": "Under general anaesthesia, the surgeon removes a large portion of the stomach through small laparoscopic incisions, leaving a narrow sleeve. The staple line is tested for leaks before closure. Inpatient monitoring continues through the highest-risk window for staple-line leak, typically the first 48–72 hours post-operation, before step-down care begins."
+    },
+    {
+      "step": "Recovery & Follow-up",
+      "duration": "10 days total recommended stay in Korea",
+      "detail": "After hospital discharge you remain in Korea for outpatient review: wound check, leak surveillance, and diet progression from liquids to soft foods. Departure is cleared once the surgical team confirms stability. Lifelong vitamin supplementation and annual blood panels are required; a follow-up protocol with your home physician should be arranged before you fly."
+    }
+  ],
+  "whyKorea": [
+    "High-volume bariatric units at KOIHA-accredited hospitals perform laparoscopic sleeve gastrectomy routinely, with surgical teams that carry concentrated experience in this specific procedure rather than general abdominal surgery caseloads",
+    "Inpatient monitoring is structured around the staple-line leak risk window, which falls in the first days post-operation — Korea's planned 10-day stay covers this period rather than discharging patients into unsupported recovery",
+    "Ministry of Health and Welfare oversight and the KHIDI international patient framework set facility and care-pathway standards, with accredited hospitals maintaining dedicated international patient coordinators with language assistance",
+    "Approximate all-in costs of $8,000–$15,000 USD compare with typical Western hospital prices of $20,000–$30,000 USD for the same laparoscopic procedure, representing a significant cost difference without requiring patients to sacrifice inpatient monitoring days"
+  ],
+  "faqs": [
+    {
+      "question": "Is the sleeve gastrectomy reversible?",
+      "answer": "No. The removed portion of the stomach is permanently excised and cannot be reattached. Because the procedure is irreversible, pre-operative psychological readiness assessment and commitment to lifelong dietary change and vitamin supplementation are required components of candidacy evaluation."
+    },
+    {
+      "question": "What does the $8,000–$15,000 cost range include?",
+      "answer": "Standard cases ($8,000–$11,000) typically cover surgery, anaesthesia, the inpatient stay, and pre-operative assessment. Complex cases ($11,000–$15,000) reflect higher surgical risk, extended monitoring, or additional workup. An initial vitamin supply on discharge runs approximately $50–$150 separately. Confirm what is itemised in your quote before travel."
+    },
+    {
+      "question": "Why do I need to stay in Korea for 10 days if the operation takes 1–2 hours?",
+      "answer": "The operative time is short but the highest-risk period for staple-line complications falls in the days immediately after surgery. The 10-day stay covers inpatient monitoring, hospital discharge, outpatient wound and leak review, and surgical clearance to fly. Leaving Korea before the team clears you removes the safety net the planned stay is designed to provide."
+    },
+    {
+      "question": "What vitamins will I need to take for life after a sleeve gastrectomy?",
+      "answer": "Because the sleeve dramatically reduces stomach volume and alters absorption, lifelong supplementation is required — typically a multivitamin, vitamin B12, iron, calcium with vitamin D, and in some cases folate. Specific protocols vary by surgeon and your bloodwork results. Annual blood panels allow your physician to adjust doses. Your Korean bariatric team will provide a discharge supplementation plan."
+    },
+    {
+      "question": "Does BMI alone determine whether I qualify for surgery?",
+      "answer": "BMI is the primary threshold — 40 or above, or 35 or above with an obesity-related condition — but it is not the only factor. You must also be fit for general anaesthesia, free of contraindications to laparoscopic surgery, and assessed as ready for permanent dietary change. The pre-operative workup exists specifically to identify patients for whom surgical risk outweighs benefit."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "hysterectomy",
+  "candidateFor": [
+    "Uterine fibroids causing heavy bleeding, pressure, or pain that has not responded to medication or less invasive procedures",
+    "Endometriosis or adenomyosis with significant symptoms after other treatments have failed",
+    "Uterine prolapse affecting quality of life and not correctable by other means",
+    "Abnormal or heavy uterine bleeding uncontrolled by hormonal or surgical alternatives",
+    "Chronic pelvic pain confirmed to originate from the uterus, unresolved after conservative management",
+    "Gynaecologic cancers of the uterus, cervix, or surrounding tissue where removal is part of the treatment plan"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Consultation & Assessment",
+      "duration": "1–2 days",
+      "detail": "A gynaecologic surgeon reviews your imaging, pathology, and surgical history remotely before arrival. On-site, you complete pre-operative blood work, ultrasound or MRI, anaesthesia review, and a consultation covering approach selection — vaginal, laparoscopic, robotic-assisted (da Vinci), or open abdominal — based on your diagnosis, uterus size, and prior surgeries. Ovary management and permanent end of fertility are discussed."
+    },
+    {
+      "step": "Surgery",
+      "duration": "1–4 hours",
+      "detail": "Performed under general anaesthesia. The surgeon removes the uterus — and cervix if total hysterectomy, or additional surrounding tissue if radical. Minimally invasive approaches (laparoscopic or robotic da Vinci) use small incisions and are associated with less post-operative pain and shorter inpatient stays. Open abdominal approach is used for complex cases. Inpatient stay is typically a few days."
+    },
+    {
+      "step": "Recovery & Follow-up",
+      "duration": "7 days in Korea recommended",
+      "detail": "After discharge, a follow-up review confirms healing and addresses any concerns before you travel. Minimally invasive cases typically allow light activity sooner than open surgery. Full recovery at home takes several weeks depending on approach. Your coordinator arranges interpretation, discharge documentation, and continuity of care instructions for your home physician."
+    }
+  ],
+  "whyKorea": [
+    "Korean hospitals have high adoption of robotic-assisted gynaecologic surgery using the da Vinci system, so approach selection is driven by your diagnosis and anatomy rather than equipment availability",
+    "Minimally invasive and robotic-assisted approaches are standard offerings at major Korean gynaecologic centres, with surgeons trained specifically in laparoscopic and robotic technique for uterine conditions",
+    "Total cost for a hysterectomy in Korea, including pre-operative testing and inpatient stay, is approximately 40–70% below comparable private hospital fees in the United States",
+    "Accredited Korean hospitals operate structured international-patient pathways covering remote record review, medical interpretation, coordinated pre-operative testing, surgery, inpatient care, and a follow-up review before departure"
+  ],
+  "faqs": [
+    {
+      "question": "Which hysterectomy approach will I have — laparoscopic, robotic, or open?",
+      "answer": "The surgeon selects the approach based on your diagnosis, uterus size and position, and prior surgical history. Laparoscopic and robotic-assisted (da Vinci) approaches are preferred for eligible cases because smaller incisions are associated with less post-operative pain and shorter recovery. Open abdominal surgery is used when anatomy or complexity requires it. The decision is made after reviewing your imaging."
+    },
+    {
+      "question": "Will my ovaries be removed at the same time?",
+      "answer": "Ovary removal is a separate decision from the hysterectomy itself. Removing ovaries before natural menopause triggers surgical menopause immediately, with associated hormonal effects. Your surgeon will discuss whether removing the ovaries is medically indicated for your diagnosis. Many hysterectomies for benign conditions preserve the ovaries."
+    },
+    {
+      "question": "What does a hysterectomy in Korea cost?",
+      "answer": "Approximate costs: vaginal or laparoscopic hysterectomy standard case $5,000–$9,000 USD; robotic-assisted (da Vinci) $9,000–$15,000 USD; open abdominal complex case $8,000–$13,000 USD. Pre-operative tests, medications, and a follow-up review are often included in international patient packages. These are ranges — your hospital will provide a personalised estimate after reviewing your records."
+    },
+    {
+      "question": "How long do I need to stay in Korea after a hysterectomy?",
+      "answer": "A minimum of 7 days in Korea is recommended. This covers pre-operative assessment, surgery, inpatient stay of a few days, and a follow-up review before travel. Minimally invasive cases may reach discharge sooner than open surgery, but a follow-up appointment before departure is standard. Your coordinator will plan the timeline around your surgical date."
+    },
+    {
+      "question": "Does a hysterectomy permanently end the ability to become pregnant?",
+      "answer": "Yes. Removal of the uterus permanently ends the ability to carry a pregnancy. This is discussed in pre-operative counselling, and where clinically reasonable, uterus-preserving alternatives are reviewed before proceeding. If fertility preservation is a priority, your surgeon will discuss which alternative treatments, if any, are appropriate for your specific diagnosis."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "herbal-medicine",
+  "candidateFor": [
+    "Adults with persistent fatigue or low energy seeking a constitutional rather than pharmaceutical approach",
+    "Patients with chronic digestive issues, appetite changes, or bloating unresolved by conventional care",
+    "Women managing menstrual irregularity, hormonal imbalance, or perimenopausal symptoms",
+    "Travelers combining herbal medicine with acupuncture, moxibustion, or cupping under one roof",
+    "Anyone pursuing general wellness, immune support, or recovery after illness without surgical intervention",
+    "Patients who want a personalised formula based on their Sasang constitutional type rather than a generic supplement"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Consultation & Assessment",
+      "duration": "20–40 minutes",
+      "detail": "The Doctor of Korean Medicine conducts a structured intake covering energy levels, digestion, sleep quality, temperature sensitivity, and emotional state. Diagnosis includes tongue inspection and pulse palpation (maekjin, 맥진). The doctor identifies your Sasang constitutional type — taeyang, taeeum, soyang, or soeum — which directly shapes the herbal prescription. No imaging or blood draws are required for a standard first visit."
+    },
+    {
+      "step": "Prescription & Dispensing",
+      "duration": "Same day — typically within 30–60 minutes after consultation",
+      "detail": "The clinic compounds a custom herbal formula (hanyak, 한약) on-site or via an in-house pharmacy. Formulas come as decoctions (pre-packaged liquid sachets), pills, or powders. The doctor explains dosing, timing relative to meals, and any dietary notes. Medication interactions are screened before dispensing. A one-month course is the standard starting supply for visitors traveling from abroad."
+    },
+    {
+      "step": "Recovery & Follow-up",
+      "duration": "No downtime; 1 day minimum stay, 3–5 days if combining therapies",
+      "detail": "No recovery period is needed — patients can eat, walk, and travel normally the same day. Visitors who add acupuncture or moxibustion sessions typically stay three to five days to complete a short treatment course. A follow-up consultation (approximately $20–$40) is possible in-person or, with some clinics, by remote video for overseas patients continuing the herbal course at home."
+    }
+  ],
+  "whyKorea": [
+    "Doctors of Korean Medicine hold state-licensed university degrees — a regulated credential requiring formal clinical training, not a wellness certification",
+    "Sasang constitutional medicine is a uniquely Korean diagnostic framework with no direct equivalent in Chinese, Japanese, or Western herbal traditions, available in concentrated form only in Korea",
+    "Seoul's Gangnam district and major city centers host clinics experienced in treating international patients, with English-language intake forms and interpretation services common at larger hanbang centers",
+    "Consultation and a one-month herbal course typically cost $105–$290 combined — substantially below comparable private integrative-medicine visits in Western Europe, North America, or Australia"
+  ],
+  "faqs": [
+    {
+      "question": "Will my herbal formula interact with prescription medications I already take?",
+      "answer": "Disclose every prescription and supplement during your consultation — this is the clinic's first screening step. Licensed Doctors of Korean Medicine are trained to identify herb-drug interactions and will modify or decline to prescribe if a conflict exists. Do not self-adjust your existing medications around a herbal course without clearance from your prescribing physician at home."
+    },
+    {
+      "question": "Can I take the herbal formula home on the plane after my visit?",
+      "answer": "Most formulas dispensed as sealed liquid sachets or powder packets are airline-friendly, but customs rules vary by destination country. Ask the clinic to provide a printed ingredient list in English and Korean. Some countries restrict specific botanicals at the border — check your home country's import rules before your appointment so the clinic can prepare appropriate documentation."
+    },
+    {
+      "question": "How long before I notice any effect from the herbal course?",
+      "answer": "Most Doctors of Korean Medicine frame initial results over two to four weeks of consistent use, with a follow-up assessment at one month. No clinic can guarantee a specific outcome — response varies by constitution, the condition being addressed, and adherence to dosing instructions. Your prescribing doctor's timeline guidance takes precedence over general estimates."
+    },
+    {
+      "question": "Is herbal medicine safe during pregnancy or breastfeeding?",
+      "answer": "Many standard hanyak formulas are contraindicated during pregnancy or breastfeeding. Disclose your status at booking and again at consultation. The clinic will either modify the formula significantly or advise against treatment. Do not assume a natural product is automatically safe — the screening step exists precisely for this situation."
+    },
+    {
+      "question": "What is the difference between a standard herbal consultation and Sasang constitutional medicine?",
+      "answer": "A standard consultation matches herbs to presenting symptoms. Sasang constitutional medicine classifies you into one of four body-type categories and tailors the entire prescription to that constitution, including herbs considered beneficial or potentially harmful for your type. Most licensed Korean clinics integrate both approaches rather than treating them as separate services."
+    }
+  ]
+}
