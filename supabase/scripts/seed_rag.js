@@ -262,50 +262,70 @@ async function embed(text) {
 }
 
 async function main() {
-  console.log('Clearing previous seeded RAG documents...');
+  const sources = buildSources();
+
+  // Phase 1 — embed EVERYTHING into memory before touching the live corpus.
+  // Embedding ~1000+ chunks is the slow, failure-prone step (network / rate
+  // limits); doing it all up front means a mid-run failure aborts here, leaving
+  // the production corpus fully intact (the old fatal flaw: delete-then-embed
+  // could strand the live chat with an empty knowledge base for minutes).
+  console.log(`Embedding ${sources.length} sources...`);
+  const prepared = [];
+  for (const source of sources) {
+    const chunks = chunkText(source.content);
+    if (chunks.length === 0) continue;
+
+    const chunkRows = [];
+    for (let i = 0; i < chunks.length; i++) {
+      const content = chunks[i];
+      chunkRows.push({
+        chunk_index: i,
+        content,
+        embedding: await embed(content),
+        // Production schema lacks token_count on rag_chunks; carry it in metadata.
+        metadata: { ...source.metadata, token_count: Math.ceil(content.length / 4) },
+      });
+      process.stdout.write('.');
+    }
+
+    prepared.push({
+      // Production schema lacks content_hash/is_active on rag_documents; carry hash in metadata.
+      document: {
+        title: source.title,
+        source_url: source.source_url,
+        source_type: 'seed',
+        source_id: source.source_id,
+        metadata: { ...source.metadata, content_hash: hashContent(source.content) },
+      },
+      chunkRows,
+    });
+  }
+
+  // Never wipe a populated corpus and replace it with nothing.
+  if (prepared.length === 0) {
+    throw new Error('No documents prepared from sources — refusing to clear the live corpus.');
+  }
+
+  // Phase 2 — swap. The destructive window is now DB-only (no network embedding
+  // between delete and insert), so it is sub-second rather than minutes.
+  console.log(`\nEmbedding complete (${prepared.length} docs). Swapping live corpus...`);
   const { error: deleteError } = await supabase
     .from('rag_documents')
     .delete()
     .eq('source_type', 'seed');
   if (deleteError) throw deleteError;
 
-  const sources = buildSources();
   let documentCount = 0;
   let chunkCount = 0;
-
-  for (const source of sources) {
-    const chunks = chunkText(source.content);
-    if (chunks.length === 0) continue;
-
-    // Production schema does not have content_hash / is_active on rag_documents.
-    // Production schema does not have token_count on rag_chunks. We carry both
-    // pieces of info in metadata so they remain queryable without a migration.
+  for (const item of prepared) {
     const { data: document, error: documentError } = await supabase
       .from('rag_documents')
-      .insert({
-        title: source.title,
-        source_url: source.source_url,
-        source_type: 'seed',
-        source_id: source.source_id,
-        metadata: { ...source.metadata, content_hash: hashContent(source.content) },
-      })
+      .insert(item.document)
       .select('id')
       .single();
     if (documentError) throw documentError;
 
-    const rows = [];
-    for (let i = 0; i < chunks.length; i++) {
-      const content = chunks[i];
-      rows.push({
-        document_id: document.id,
-        chunk_index: i,
-        content,
-        embedding: await embed(content),
-        metadata: { ...source.metadata, token_count: Math.ceil(content.length / 4) },
-      });
-      process.stdout.write('.');
-    }
-
+    const rows = item.chunkRows.map((r) => ({ ...r, document_id: document.id }));
     const { error: chunkError } = await supabase.from('rag_chunks').insert(rows);
     if (chunkError) throw chunkError;
 
@@ -313,7 +333,7 @@ async function main() {
     chunkCount += rows.length;
   }
 
-  console.log(`\nSeeded ${documentCount} RAG documents and ${chunkCount} chunks.`);
+  console.log(`Seeded ${documentCount} RAG documents and ${chunkCount} chunks.`);
 }
 
 main().catch((err) => {
