@@ -1,0 +1,56 @@
+{
+  "slug": "smile-eye-surgery",
+  "candidateFor": [
+    "Adults with myopia (short-sightedness), with or without astigmatism, who want to reduce or eliminate dependence on glasses or contact lenses",
+    "Patients who have previously been told they are not suitable for LASIK due to thin corneas or concerns about corneal flap complications",
+    "International travelers who can commit to a minimum 3-day stay in Korea for treatment and mandatory follow-up before flying home",
+    "Patients who experience significant dry-eye symptoms with contact lens wear and want a procedure that tends to preserve more corneal surface nerves than flap-based methods",
+    "Adults with stable myopia prescription — prescription should not have changed significantly in the past year before surgery",
+    "Patients seeking both-eyes correction in a single outpatient session without general anesthesia or overnight hospital admission"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Consultation & Assessment",
+      "duration": "1–2 hours",
+      "detail": "The clinic measures corneal thickness, maps the corneal surface, checks pupil size under dim light, and reviews your current prescription. This assessment confirms whether your cornea has enough tissue for SMILE and rules out conditions such as keratoconus that would disqualify you. You will need to stop wearing soft contact lenses for several days before this appointment — the clinic will specify the exact period based on your lens type."
+    },
+    {
+      "step": "SMILE Procedure",
+      "duration": "15–30 minutes (both eyes)",
+      "detail": "Topical anesthetic eye drops are applied — no injections, no general anesthesia. A femtosecond laser creates a small lens-shaped disc of corneal tissue inside the eye, then the surgeon removes it through a keyhole incision of a few millimetres. No large flap is cut. You remain awake throughout. The procedure is performed as a day case and you leave the clinic the same day."
+    },
+    {
+      "step": "Recovery & Follow-up",
+      "duration": "3 days minimum in Korea",
+      "detail": "Vision is often functional within one to two days and most patients return to desk work in that window. A mandatory check the day after surgery confirms the eye is healing correctly. A clearance appointment before your flight home — typically on day three — verifies you are safe to travel. Full visual refinement continues over several weeks after you return home. Arrange comfortable accommodation within easy travel distance of your clinic for those three days."
+    }
+  ],
+  "whyKorea": [
+    "Korean ophthalmology centers perform SMILE in high volumes, which means surgical teams are practising the technique regularly rather than occasionally — procedural consistency matters in refractive surgery",
+    "The total cost for both eyes typically falls in the $2,000–$5,000 USD range, which is substantially below comparable pricing in the United States, United Kingdom, and Australia for the same femtosecond laser platform",
+    "South Korea's Ministry of Food and Drug Safety (MFDS) applies a rigorous approval process to laser platforms used in refractive surgery, meaning the equipment in accredited clinics meets a recognized regulatory standard",
+    "The country's medical tourism infrastructure — English-speaking patient coordinators, streamlined pre-operative testing, and same-city accommodation options — is built around the 3-day international patient schedule that SMILE requires"
+  ],
+  "faqs": [
+    {
+      "question": "Can SMILE correct farsightedness or only short-sightedness?",
+      "answer": "SMILE corrects myopia (short-sightedness) with or without astigmatism. It does not correct hyperopia (farsightedness). If your prescription is primarily farsighted, your assessment appointment will flag this and the clinic will discuss whether a different procedure is appropriate for your eye profile."
+    },
+    {
+      "question": "How long do I actually need to stay in Korea after the procedure?",
+      "answer": "The recommended minimum is 3 days: surgery on day one, a healing check on day two, and a fly-home clearance on day three. Flying before that clearance is not advised. Some patients with more complex prescriptions or slower initial healing may be asked to extend by a day — confirm with your clinic before booking your return flight."
+    },
+    {
+      "question": "Will I have dry eyes after SMILE?",
+      "answer": "Because SMILE uses a small keyhole incision rather than a large corneal flap, it tends to disrupt fewer corneal surface nerves than flap-based procedures. This is associated with less pronounced dry-eye symptoms in the recovery period for many patients. That said, temporary dryness is still possible, and your clinic will provide lubricating drops for the weeks after surgery."
+    },
+    {
+      "question": "What happens if my prescription is not stable enough for surgery?",
+      "answer": "If your myopia has been changing in the past year, the clinic will likely advise waiting until it has been stable for at least 12 months before proceeding. This is a standard screening criterion — an unstable prescription means the correction achieved today may not match what your eye needs in 12 months' time."
+    },
+    {
+      "question": "Is the $2,000–$5,000 cost for one eye or both?",
+      "answer": "That approximate range covers both eyes treated in the same session. Exact pricing varies by clinic and by the complexity of your prescription. Get a formal quote after your pre-operative assessment, as the assessment results — not just your spectacle prescription — determine the final figure."
+    }
+  ]
+}

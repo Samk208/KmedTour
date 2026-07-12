@@ -45,7 +45,15 @@ import lungCancerSurgery from './lung-cancer-surgery.json'
 import neonatalCare from './neonatal-care.json'
 import pacemakerImplantation from './pacemaker-implantation.json'
 import pediatricSurgery from './pediatric-surgery.json'
+import prenatalCare from './prenatal-care.json'
+import prostateSurgery from './prostate-surgery.json'
+import pulmonaryTreatment from './pulmonary-treatment.json'
 import rhinoplasty from './rhinoplasty.json'
+import septoplasty from './septoplasty.json'
+import sinusSurgery from './sinus-surgery.json'
+import skinWhitening from './skin-whitening.json'
+import smileEyeSurgery from './smile-eye-surgery.json'
+import spinalFusion from './spinal-fusion.json'
 import tummyTuck from './tummy-tuck.json'
 import vLineSurgery from './v-line-surgery.json'
 
@@ -94,7 +102,15 @@ export const pseoGuides: Record<string, ProcedureGuide> = {
   "neonatal-care": neonatalCare as unknown as ProcedureGuide,
   "pacemaker-implantation": pacemakerImplantation as unknown as ProcedureGuide,
   "pediatric-surgery": pediatricSurgery as unknown as ProcedureGuide,
+  "prenatal-care": prenatalCare as unknown as ProcedureGuide,
+  "prostate-surgery": prostateSurgery as unknown as ProcedureGuide,
+  "pulmonary-treatment": pulmonaryTreatment as unknown as ProcedureGuide,
   "rhinoplasty": rhinoplasty as unknown as ProcedureGuide,
+  "septoplasty": septoplasty as unknown as ProcedureGuide,
+  "sinus-surgery": sinusSurgery as unknown as ProcedureGuide,
+  "skin-whitening": skinWhitening as unknown as ProcedureGuide,
+  "smile-eye-surgery": smileEyeSurgery as unknown as ProcedureGuide,
+  "spinal-fusion": spinalFusion as unknown as ProcedureGuide,
   "tummy-tuck": tummyTuck as unknown as ProcedureGuide,
   "v-line-surgery": vLineSurgery as unknown as ProcedureGuide,
 }

@@ -1,0 +1,56 @@
+{
+  "slug": "sinus-surgery",
+  "candidateFor": [
+    "Chronic rhinosinusitis that has not responded to antibiotic courses or steroid nasal sprays over several months",
+    "Nasal polyps causing persistent blockage, reduced smell, or recurring infections",
+    "Recurrent acute sinus infections (three or more per year) despite medical management",
+    "Structural sinus blockages confirmed on CT imaging that prevent normal drainage",
+    "Patients seeking balloon sinuplasty as a less invasive option for appropriate sinus anatomy",
+    "International patients who want a combined consultation, surgery, and clearance follow-up completed within a single trip"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Consultation & Assessment",
+      "duration": "1–2 days",
+      "detail": "An ENT specialist reviews your symptom history, prior imaging, and any previous treatment. If you arrive without recent CT scans, the clinic arranges them locally. The surgeon confirms whether FESS or balloon sinuplasty is appropriate for your anatomy, explains what will be addressed, and schedules pre-operative blood work. Bring any radiology reports or imaging files from home to avoid duplicate scans."
+    },
+    {
+      "step": "Sinus Surgery (FESS or Balloon Sinuplasty)",
+      "duration": "1–3 hours",
+      "detail": "FESS is performed under general anesthesia through the nostrils — no external incisions. A thin endoscope guides the surgeon in removing tissue or bone blocking sinus drainage openings. Balloon sinuplasty, suitable for select cases, uses a small inflatable catheter to widen the opening under local anesthesia or sedation. Most patients are discharged the same day or after one overnight stay."
+    },
+    {
+      "step": "Recovery & Follow-up",
+      "duration": "7–10 days total in Korea",
+      "detail": "Expect mild congestion and some discharge for several days. Light activity resumes within days; full internal healing takes several weeks. Before departure, your surgeon performs a follow-up endoscopic check to clear any crusting and confirm the sinus openings are healing correctly. This clearance appointment is the main reason a 7–10 day stay is recommended — it reduces the risk of post-operative complications after you fly home."
+    }
+  ],
+  "whyKorea": [
+    "ENT training in Korea follows a structured residency and subspecialty fellowship system regulated by the Korean Medical Association, producing surgeons who perform high volumes of sinus cases including complex revision procedures",
+    "Korean hospitals use high-definition endoscopic imaging systems and intraoperative navigation for FESS, the same generation of equipment found in major academic centers in North America and Europe",
+    "Total costs for FESS in Korea run approximately $1,500–$7,000 USD — broadly 40–70% below comparable private-pay prices in the United States, UK, or Australia, without sacrificing facility standards",
+    "Facilities treating international patients handle pre-operative coordination, medical translation, and post-operative documentation in a single visit, so patients leave with complete surgical records for their home physician"
+  ],
+  "faqs": [
+    {
+      "question": "Will I need a CT scan before I travel to Korea for sinus surgery?",
+      "answer": "Bring any existing sinus CT scans if you have them — your Korean ENT surgeon will review them during the consultation. If your scans are more than 12 months old or unavailable, the clinic can arrange a new CT locally before your surgical assessment. Arriving with recent imaging can shorten your overall stay by a day."
+    },
+    {
+      "question": "Is it safe to fly home after sinus surgery?",
+      "answer": "Most surgeons recommend waiting at least 7–10 days before flying, which is why that stay length is built into the standard international patient schedule. Your follow-up appointment clears any post-operative crusting and confirms healing before departure. Always confirm your specific clearance date with your surgeon, as it can vary based on how many sinuses were treated."
+    },
+    {
+      "question": "What is the difference between FESS and balloon sinuplasty, and how will I know which one I need?",
+      "answer": "FESS removes diseased tissue and bone to open blocked sinus passages and is appropriate for polyps, significant structural blockage, or more extensive disease. Balloon sinuplasty widens the sinus opening without tissue removal and suits patients with milder anatomical narrowing. Your surgeon determines the right approach based on your CT scan and symptom pattern — not all patients qualify for balloon sinuplasty."
+    },
+    {
+      "question": "How much pain should I expect after the procedure?",
+      "answer": "Sinus surgery is generally described as pressure and congestion rather than sharp pain. Discomfort is typically managed with standard oral pain relief in the days following surgery. Nasal packing, if used, is usually removed within 24–48 hours, which provides significant relief. Your care team will give you a written post-operative protocol covering what is normal and what requires immediate attention."
+    },
+    {
+      "question": "What does the approximate $1,500–$7,000 USD cost range cover?",
+      "answer": "The range reflects variation in procedure complexity — a single-sinus balloon sinuplasty sits toward the lower end; bilateral FESS addressing multiple sinuses with polyp removal sits toward the higher end. Get an itemized estimate after your consultation that lists surgeon fees, anesthesia, facility charges, and follow-up visits separately. Pre-operative imaging and any required medications are generally billed in addition to the surgical fee."
+    }
+  ]
+}

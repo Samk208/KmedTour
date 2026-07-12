@@ -1,0 +1,56 @@
+{
+  "slug": "prenatal-care",
+  "candidateFor": [
+    "Expatriates already living in Korea who need a structured, English-supported OB care plan for the full pregnancy",
+    "International patients relocating to Korea for part of their pregnancy specifically to access advanced genetic screening such as NIPT from 10 weeks",
+    "Patients who want high-frequency ultrasound monitoring not routinely offered in their home country",
+    "Women with a prior pregnancy complication who want close, scheduled OB follow-up across all three trimesters",
+    "Patients whose home healthcare system has long wait times for specialist OB appointments or advanced prenatal diagnostics",
+    "International couples seeking a single coordinated package covering OB visits, labs, and genetic screening rather than booking each component separately"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Consultation & Assessment",
+      "duration": "1–2 hours",
+      "detail": "At the first appointment an OB-GYN reviews your medical history, confirms gestational age by ultrasound, and maps the full visit schedule across your trimesters. If you are arriving mid-pregnancy, existing scan reports and lab results from your home country are reviewed so the Korean team can pick up without repeating unnecessary tests. An English-speaking coordinator explains the package components and arranges an interpreter if needed."
+    },
+    {
+      "step": "Scheduled OB Visits, Ultrasounds & Lab Screening",
+      "duration": "20–40 min per visit; visits follow Korea's standard schedule (every 4 weeks to 28 weeks, every 2 weeks from 28–36 weeks, weekly from 36 weeks)",
+      "detail": "Each visit includes a brief OB consultation and a high-resolution ultrasound — Korea's OB practice emphasises frequent detailed scanning. Blood and urine panels are drawn at defined windows. Optional NIPT can be arranged from 10 weeks to screen for chromosomal conditions. Packages typically bundle these components; delivery costs are quoted and billed separately."
+    },
+    {
+      "step": "Recovery & Follow-up",
+      "duration": "No recovery period per visit; recommended time in Korea depends on your plan — short stays of 1–2 weeks cover key screening windows; full relocation covers the pregnancy through delivery",
+      "detail": "Prenatal visits require no anesthesia and no hospital admission, so there is no procedural recovery. If you are visiting for a specific screening window only, you can return home between appointments. Your coordinator can forward results and scan reports to your home OB in a format they can use."
+    }
+  ],
+  "whyKorea": [
+    "Korean OB clinics perform high-resolution ultrasound at nearly every scheduled visit, giving more detailed fetal monitoring than the two or three scans typical in many Western public health systems",
+    "Advanced NIPT is widely available from 10 weeks through accredited genetics laboratories, with turnaround times and test panels that match or exceed what is accessible in most home countries",
+    "Full prenatal packages in Korea are approximately $1,500–$3,400 USD, which is substantially below the cost of equivalent private OB care packages in the United States, United Kingdom, or Australia",
+    "Several major clinics in Seoul run dedicated international patient desks staffed by English-speaking OB-GYNs and care coordinators, reducing the coordination burden on patients managing care across two healthcare systems"
+  ],
+  "faqs": [
+    {
+      "question": "Can I join a Korean prenatal package if I am already in my second trimester?",
+      "answer": "Yes. Most clinics accept international patients at any gestational stage. The OB team will review your existing records, confirm where you are in the standard visit schedule, and enroll you from that point. Some early-trimester tests such as first-trimester NIPT cannot be repeated, but the remaining scheduled visits and scans are incorporated into your plan."
+    },
+    {
+      "question": "Is delivery included in the prenatal package cost?",
+      "answer": "No. The $1,500–$3,400 USD range covers prenatal visits, ultrasounds, and lab screening only. Delivery — whether vaginal or caesarean — is costed separately and quoted by the hospital based on your clinical situation. Ask your coordinator for a delivery estimate at your first visit if you plan to deliver in Korea."
+    },
+    {
+      "question": "Will my Korean OB communicate with my doctor back home?",
+      "answer": "Most international desks will provide scan images and written summaries in English that you can share with your home OB. Direct clinic-to-clinic communication depends on your home provider. Bring a summary of your home OB's contact details and ask the coordinator at your first appointment what hand-off documentation they can prepare."
+    },
+    {
+      "question": "Do I need to stay in Korea for the entire pregnancy to use a prenatal package?",
+      "answer": "Not necessarily. Some patients visit for a defined screening window — for example, the 10–13 week NIPT or the 20-week anatomy scan — and continue routine visits at home between those windows. Full relocation through delivery is also an option. The right plan depends on your clinical risk level, what your home system offers, and how much of the pregnancy you want managed in Korea."
+    },
+    {
+      "question": "Is English support reliably available at Korean OB clinics?",
+      "answer": "English support is most consistent at larger Seoul and Gangnam clinics that run dedicated international patient departments. Outside those areas it varies. When comparing clinics, ask specifically whether the OB-GYN conducting your appointments speaks English, or whether coordination is handled by an interpreter — the difference matters for clinical discussions."
+    }
+  ]
+}

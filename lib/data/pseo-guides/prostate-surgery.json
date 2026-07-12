@@ -1,0 +1,56 @@
+{
+  "slug": "prostate-surgery",
+  "candidateFor": [
+    "Men diagnosed with localized or locally advanced prostate cancer seeking robotic radical prostatectomy",
+    "Men with BPH (enlarged prostate) whose symptoms have not responded adequately to medication",
+    "International patients who want robotic da Vinci surgery at a cost significantly below US or European pricing",
+    "Men whose home-country waitlist for prostate surgery exceeds 3–6 months",
+    "Patients who have a prior biopsy result and PSA history and are ready to proceed to surgery",
+    "Men seeking HoLEP or TURP for BPH who can remain in Korea 2–4 weeks for catheter removal and follow-up clearance"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Consultation & Assessment",
+      "duration": "2–5 days",
+      "detail": "On arrival, a urologist reviews your PSA history, biopsy pathology, and any prior imaging. New MRI or CT staging scans are ordered if needed. A general health workup confirms you are fit for general anesthesia. The team confirms the surgical approach — robotic prostatectomy for cancer, or HoLEP/TURP for BPH — and walks you through risks, expected outcomes, and the post-operative plan before you consent."
+    },
+    {
+      "step": "Surgery",
+      "duration": "1–4 hours (procedure only)",
+      "detail": "Robotic radical prostatectomy uses the da Vinci system: keyhole incisions, a magnified 3D view, and precise instrument movement — typically 2–4 hours under general anesthesia, followed by 3–7 nights in hospital. HoLEP and TURP for BPH take roughly 1–2 hours; spinal anesthesia is sometimes used and hospital stay is 1–2 nights. A urinary catheter is placed after all three procedures."
+    },
+    {
+      "step": "Recovery & Follow-up",
+      "duration": "2–4 weeks total in Korea",
+      "detail": "The catheter remains in place for approximately 5–14 days. Catheter removal and a voiding trial are completed before your care team clears you to fly. Plan to stay in Korea for 2–4 weeks in total. Light activity resumes at roughly 2–4 weeks post-surgery; fuller recovery, including return to normal exertion, generally takes 6–8 weeks from the procedure date."
+    }
+  ],
+  "whyKorea": [
+    "Korean university hospitals have operated da Vinci robotic systems for over a decade; their urology departments handle high volumes of both cancer and BPH cases, giving surgical teams broad experience with each technique",
+    "KHIDI-registered hospitals are formally accredited to treat international patients and maintain English-speaking medical coordinators who manage scheduling, translation, and discharge documentation",
+    "Approximate costs — robotic prostatectomy around $16,000–$26,000 USD, BPH laser surgery around $5,000–$10,000 USD — are typically 40–70% below comparable procedures in the United States or Western Europe",
+    "Korea's Ministry of Food and Drug Safety (MFDS) regulates medical devices and hospital standards; international patient units at large Seoul hospitals coordinate pre-operative workups, surgery, and follow-up within a single institution, reducing handoff errors"
+  ],
+  "faqs": [
+    {
+      "question": "Do I need to bring my biopsy slides or PSA records to Korea?",
+      "answer": "Yes. Bring all prior pathology reports, biopsy slides or digital scans, PSA history, and any existing MRI or CT images. The Korean surgical team will review them during your initial consultation. Having complete records avoids repeat biopsies and speeds up staging, which shortens your overall pre-operative timeline."
+    },
+    {
+      "question": "How long must I stay in Korea before I can fly home?",
+      "answer": "Plan for 2–4 weeks in total. The catheter is removed approximately 5–14 days after surgery, and your care team must confirm normal voiding before clearing you to travel. Flying long-haul before catheter removal and follow-up sign-off is not medically advisable."
+    },
+    {
+      "question": "What is the difference between robotic prostatectomy and HoLEP or TURP, and how do I know which applies to me?",
+      "answer": "Robotic radical prostatectomy removes the entire prostate gland and is used to treat prostate cancer. HoLEP and TURP remove obstructing prostate tissue to relieve urinary symptoms caused by BPH — they do not treat cancer. Your urologist will confirm the correct approach based on your diagnosis, PSA level, biopsy results, and imaging."
+    },
+    {
+      "question": "What does the approximate cost range cover?",
+      "answer": "The ranges — roughly $16,000–$26,000 for robotic prostatectomy and $5,000–$10,000 for BPH laser surgery — are approximate USD estimates for the surgical procedure and standard hospital stay. They do not include pre-operative diagnostics, accommodation, flights, or post-operative medication. Your coordinator will provide a written cost estimate after your records are reviewed."
+    },
+    {
+      "question": "Will I have English-language support throughout the process?",
+      "answer": "KHIDI-registered hospitals maintain international patient departments with English-speaking coordinators who handle appointment scheduling, document translation, and communication between you and your surgical team. Medical interpretation is available during consultations and ward rounds, though specific availability varies by hospital."
+    }
+  ]
+}

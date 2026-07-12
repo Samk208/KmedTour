@@ -1,0 +1,56 @@
+{
+  "slug": "spinal-fusion",
+  "candidateFor": [
+    "Adults with degenerative disc disease causing chronic back or leg pain that has not responded to at least six months of physiotherapy and injections",
+    "Patients diagnosed with spondylolisthesis where one vertebra has slipped forward over another, producing nerve root compression or instability",
+    "Individuals with spinal stenosis causing significant nerve compression, weakness, or bowel/bladder symptoms not controlled by conservative care",
+    "Patients with spinal instability following trauma, tumor removal, or failed prior back surgery",
+    "Adults whose imaging confirms structural changes that correlate directly with their reported pain pattern and functional limitations",
+    "International patients who are medically stable for general anesthesia and able to remain in Korea for 7–14 days post-surgery"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Consultation & Assessment",
+      "duration": "1–2 days",
+      "detail": "Your spine surgeon reviews MRI and CT scans sent in advance, then conducts a clinical examination on arrival. Anesthesia and pre-operative blood work are completed the same day or the next. You and your coordinator receive a written surgical plan, implant details, and a recovery timeline before you consent to proceed."
+    },
+    {
+      "step": "Surgery",
+      "duration": "2–5 hours (varies with number of levels fused)",
+      "detail": "Performed under general anesthesia. The surgeon places bone graft material between the target vertebrae and secures them with rods, screws, or cages depending on the level and approach. Intraoperative neuromonitoring tracks spinal cord and nerve function throughout. You move to a monitored recovery ward immediately after."
+    },
+    {
+      "step": "Hospital Stay & In-Korea Recovery",
+      "duration": "5–7 nights in hospital; 7–14 days total in Korea recommended",
+      "detail": "Most patients stand and take assisted steps within the first day or two post-surgery. Supervised physiotherapy begins in hospital and continues until departure. Before you leave Korea, your team confirms wound status, clears you for the flight, and provides a written discharge summary for your home physician. Sedentary work can typically resume over weeks; full bone fusion takes several months."
+    }
+  ],
+  "whyKorea": [
+    "Korean accredited hospitals use intraoperative neuromonitoring as a standard part of spinal fusion, providing continuous real-time feedback on nerve and spinal cord function during the procedure",
+    "Implants — rods, screws, and cages — are sourced from systems approved by the Ministry of Food and Drug Safety (MFDS), Korea's national medical device regulator",
+    "Total cost for spinal fusion in Korea falls in the approximate range of $18,000–$40,000 USD, substantially below comparable procedures in the United States or United Kingdom",
+    "Spine teams at internationally accredited Korean hospitals manage high volumes of complex fusion cases and work alongside dedicated medical tourism coordinators who handle translation, documentation, and discharge planning for international patients"
+  ],
+  "faqs": [
+    {
+      "question": "How long do I actually need to stay in Korea after spinal fusion?",
+      "answer": "Plan for 7–14 days in Korea after surgery. Hospital discharge typically comes after 5–7 nights. The remaining days allow supervised physiotherapy to begin and give your surgical team time to confirm your wound is healing correctly before you take a long-haul flight home."
+    },
+    {
+      "question": "Will I be able to walk before I leave the hospital?",
+      "answer": "Most patients stand and take assisted steps within a day or two of surgery. Physiotherapy starts in hospital. You will not be fully mobile on departure, but you will be walking with support and given a clear exercise plan to continue at home."
+    },
+    {
+      "question": "What does spinal fusion cost in Korea compared to other countries?",
+      "answer": "The approximate cost range in Korea is $18,000–$40,000 USD depending on the number of vertebral levels fused, surgical approach, and implant system used. This is substantially lower than equivalent procedures in the United States or United Kingdom. Exact quotes depend on your imaging and surgical plan."
+    },
+    {
+      "question": "How do I send my scans and medical records before traveling?",
+      "answer": "Most Korean hospitals accepting international patients have a coordinator or international patient desk. You upload MRI and CT files digitally in advance. The spine surgeon reviews them and provides a preliminary assessment — including whether you are a suitable candidate — before you book flights or pay any deposits."
+    },
+    {
+      "question": "When does the spinal fusion actually become solid, and what does recovery look like long-term?",
+      "answer": "Bone fusion is a biological process that solidifies over several months, not days. You may return to sedentary desk work within weeks of surgery. Physical activity restrictions are graduated based on surgeon guidance. Your home physician should receive your full discharge summary to oversee the longer recovery phase."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "pulmonary-treatment",
+  "candidateFor": [
+    "Patients diagnosed with early to late-stage lung cancer seeking surgical resection (VATS lobectomy or open) or systemic therapy",
+    "Individuals with COPD requiring advanced bronchoscopic intervention or pulmonary rehabilitation beyond what local care provides",
+    "Patients with pulmonary fibrosis or interstitial lung disease needing specialist workup and antifibrotic treatment initiation",
+    "Those requiring diagnostic bronchoscopy for unresolved lung nodules, hemoptysis, or inconclusive imaging",
+    "Patients whose domestic healthcare system lacks access to robotic thoracic surgery or targeted immunotherapy protocols",
+    "International patients seeking a full lung cancer staging workup and multidisciplinary treatment plan in one center"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Consultation & Assessment",
+      "duration": "1–3 days",
+      "detail": "Your care team reviews prior imaging, biopsy reports, and lung function tests. New CT, PET, or spirometry may be ordered at the hospital. A pulmonologist and thoracic surgeon jointly evaluate your case. For complex staging, a multidisciplinary tumor board may convene before a treatment recommendation is given. English-speaking coordinators manage communication throughout."
+    },
+    {
+      "step": "Procedure or Treatment",
+      "duration": "1–6 hours per session; hospital stay 3–10 days for surgery or short admission for medical management",
+      "detail": "Surgical cases — VATS lobectomy, robotic resection, or open thoracotomy — are performed under general anesthesia. Bronchoscopy uses conscious sedation and is typically outpatient. Medical management for COPD, pulmonary fibrosis, or bronchiectasis involves infusion therapy or oral regimens and may not require an operating room. Treatment type depends on condition, staging, and pulmonary function."
+    },
+    {
+      "step": "Recovery & Follow-up",
+      "duration": "Remain in Korea 3–6 weeks for surgical oncology or complex workup; 1–2 weeks for diagnostic evaluation only",
+      "detail": "After minimally invasive resection, expect 4–8 weeks before returning to light activity. Before discharge, your team provides written instructions, pathology summaries, and imaging in transferable formats. A follow-up plan is coordinated with your home physician. Most hospitals offer telemedicine check-ins after you return home."
+    }
+  ],
+  "whyKorea": [
+    "Korean tertiary centers perform VATS and robotic thoracic surgery as standard of care, reducing chest-wall trauma and shortening hospital stays compared to conventional open approaches",
+    "Treatment follows national clinical guidelines published by the Korean Academy of Tuberculosis and Respiratory Diseases, providing a consistent, evidence-based standard across accredited hospitals",
+    "Total cost for lung cancer surgical treatment in Korea is approximately 40–70% below comparable care in the United States, with the typical range of $18,000–$60,000 USD covering surgery, anesthesia, and initial inpatient stay",
+    "Leading Seoul hospitals operate dedicated international patient departments with English-speaking medical coordinators, visa invitation letters, and in-hospital translation — reducing administrative burden for patients traveling from Africa, the GCC, or Southeast Asia"
+  ],
+  "faqs": [
+    {
+      "question": "How much does pulmonary treatment in Korea cost for an international patient?",
+      "answer": "Costs range from approximately $18,000 to $60,000 USD depending on the condition, disease stage, and treatment type — bronchoscopy sits at the lower end, while robotic lobectomy or combined surgical and systemic therapy for lung cancer reaches the higher end. Get an itemized estimate from the hospital's international department before traveling."
+    },
+    {
+      "question": "How long do I need to stay in Korea for lung treatment?",
+      "answer": "Plan for 3–6 weeks if you are undergoing surgical oncology or a complex diagnostic and treatment workup. A diagnostic evaluation alone — bronchoscopy or staging imaging — typically requires 1–2 weeks. Recovery to light activity after minimally invasive resection is 4–8 weeks, though most of that can be completed at home."
+    },
+    {
+      "question": "Will the hospital accept my existing scans and biopsy reports from my home country?",
+      "answer": "Yes. Korean international departments routinely review prior imaging (CT, PET) and pathology before your arrival to help pre-plan the workup. Bring originals or high-resolution digital copies. The team may still order confirmatory tests locally, particularly if imaging is older than three months or if staging needs updating."
+    },
+    {
+      "question": "Is VATS or robotic thoracic surgery available, or will I need open surgery?",
+      "answer": "VATS lobectomy and robotic resection are performed as standard approaches at leading Korean thoracic centers. Whether you are a candidate depends on tumor size, location, and your pulmonary reserve — assessed during the pre-operative workup. Open resection remains available when anatomy or disease extent makes minimally invasive approaches unsuitable."
+    },
+    {
+      "question": "What happens with my treatment plan after I return home?",
+      "answer": "Before discharge, the hospital provides full documentation — operative reports, pathology results, imaging files, and a follow-up protocol — formatted for your home physician. Many centers offer scheduled telemedicine consultations for post-treatment monitoring. Coordinating ongoing chemotherapy, immunotherapy, or antifibrotic therapy with a local oncologist or pulmonologist is strongly recommended."
+    }
+  ]
+}
