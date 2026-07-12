@@ -112,6 +112,35 @@ describe('rag/generate', () => {
     await expect(generateAnswer('question', [chunk()])).rejects.toThrow(/gemini[\s\S]*deepseek[\s\S]*openai/)
   })
 
+  it('threads conversation history into the gemini request', async () => {
+    const fetchMock = mockFetchSequence([
+      { ok: true, json: { candidates: [{ content: { parts: [{ text: 'answer' }] } }] } },
+    ])
+    await generateAnswer('and the recovery time?', [chunk()], [
+      { role: 'user', content: 'tell me about rhinoplasty' },
+      { role: 'assistant', content: 'It reshapes the nose.' },
+    ])
+    const body = JSON.parse(String(fetchMock.mock.calls[0][1].body))
+    const flat = JSON.stringify(body.contents)
+    expect(flat).toContain('tell me about rhinoplasty')
+    expect(flat).toContain('It reshapes the nose')
+    expect(flat).toContain('and the recovery time?')
+  })
+
+  it('threads conversation history into the openai request as prior messages', async () => {
+    const fetchMock = mockFetchSequence([
+      { ok: false, status: 429, text: 'quota' }, // gemini
+      { ok: false, status: 500, text: 'down' }, // deepseek
+      { ok: true, json: { choices: [{ message: { content: 'ok' } }] } }, // openai
+    ])
+    await generateAnswer('the price?', [chunk()], [{ role: 'user', content: 'dental implants' }])
+    const body = JSON.parse(String(fetchMock.mock.calls[2][1].body))
+    const roles = body.messages.map((m: { role: string }) => m.role)
+    expect(roles[0]).toBe('system')
+    expect(JSON.stringify(body.messages)).toContain('dental implants')
+    expect(body.messages[body.messages.length - 1].content).toContain('the price?')
+  })
+
   it('does not return empty answers — treats empty gemini response as failure', async () => {
     mockFetchSequence([
       { ok: true, json: { candidates: [] } },

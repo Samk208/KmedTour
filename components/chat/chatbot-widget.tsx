@@ -49,6 +49,12 @@ export function ChatbotWidget() {
     if (!text || loading) return
 
     setInput('')
+    // Prior turns for conversational context — exclude the seeded welcome, errors,
+    // and any live voice bubble; cap to the last 12 to bound payload size.
+    const history = messages
+      .filter((m) => m.id !== 'welcome' && !m.isError && !m.id.endsWith('-live'))
+      .slice(-12)
+      .map((m) => ({ role: m.role, content: m.content }))
     const userMsg: Message = { id: `user-${Date.now()}`, role: 'user', content: text }
     setMessages((prev) => [...prev, userMsg])
     setLoading(true)
@@ -57,7 +63,7 @@ export function ChatbotWidget() {
       const res = await fetch('/api/rag/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: text }),
+        body: JSON.stringify({ message: text, history }),
       })
 
       const data = await res.json()

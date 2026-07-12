@@ -1,5 +1,6 @@
 import { getSupabaseAdminContext } from '@/lib/api/client/supabase'
 import { isEmergency, isMedicalAdvice } from '@/lib/rag/chat-guards'
+import { condenseForRetrieval } from '@/lib/rag/condense'
 import { geminiEmbed } from '@/lib/rag/embed'
 import { generateAnswer, type RetrievedChunk } from '@/lib/rag/generate'
 import { apiError, createErrorId } from '@/lib/utils/api-response'
@@ -13,17 +14,27 @@ const RAG_WINDOW_MS = 60_000
 
 const ragChatRequestSchema = z.object({
   message: z.string().min(2),
+  history: z
+    .array(
+      z.object({
+        role: z.enum(['user', 'assistant']),
+        content: z.string().min(1).max(4000),
+      })
+    )
+    .max(12)
+    .optional()
+    .default([]),
 })
 
-function safetyResponse(route: 'emergency' | 'human', answer: string) {
+function safetyResponse(route: 'emergency' | 'human' | 'fallback', answer: string) {
   return NextResponse.json({ success: true, route, answer, citations: [], retrieved: [] })
 }
 
 async function runRetrieval(
   client: NonNullable<Awaited<ReturnType<typeof getSupabaseAdminContext>>['client']>,
-  message: string
+  query: string
 ): Promise<RetrievedChunk[]> {
-  const embedding = await geminiEmbed(message)
+  const embedding = await geminiEmbed(query)
   const { data, error } = await client.rpc('match_rag_chunks', {
     query_embedding: embedding,
     match_count: 8,
@@ -82,21 +93,37 @@ export async function POST(request: Request) {
 
     const { client } = getSupabaseAdminContext()
     let retrieved: RetrievedChunk[] = []
+    let retrievalAttempted = false
 
     if (client) {
+      retrievalAttempted = true
       try {
-        retrieved = await runRetrieval(client, payload.message)
+        // Embed the query condensed with recent history so follow-ups
+        // ("how long does that one take?") retrieve against the right subject.
+        const retrievalQuery = condenseForRetrieval(payload.message, payload.history)
+        retrieved = await runRetrieval(client, retrievalQuery)
       } catch (err: unknown) {
         const msg = err instanceof Error ? err.message : 'Unknown error'
         logger.warn('RAG retrieval/embedding failed, generating without context', { path: '/api/rag/chat' }, { error: msg })
+        retrievalAttempted = false // embedding/RPC broke, not a genuine "no match"
       }
     } else {
       logger.info('RAG chat: Supabase not configured, generating without context', { path: '/api/rag/chat' })
     }
 
+    // Empty-context hard-stop: if retrieval ran cleanly but matched nothing, hand
+    // off to a coordinator instead of generating an ungrounded (hallucinated) answer.
+    if (retrievalAttempted && retrieved.length === 0) {
+      logger.info('RAG chat: no relevant context, handing off', { path: '/api/rag/chat' })
+      return safetyResponse(
+        'fallback',
+        "I don't have information on that in our knowledge base yet. A KmedTour medical coordinator can help directly — please reach out via the Contact page and we'll get you an answer."
+      )
+    }
+
     let answer: string
     try {
-      answer = await generateAnswer(payload.message, retrieved)
+      answer = await generateAnswer(payload.message, retrieved, payload.history)
     } catch (genError: unknown) {
       logger.error('RAG generation failed', { path: '/api/rag/chat' }, { error: genError instanceof Error ? genError.message : 'Unknown' })
       answer = "I apologize, but I am currently unable to process your request. Please contact our medical coordinators via the 'Contact' page."

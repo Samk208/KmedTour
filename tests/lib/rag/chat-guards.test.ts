@@ -54,4 +54,49 @@ describe('chat-guards', () => {
       expect(isMedicalAdvice('SHOULD I HAVE SURGERY')).toBe(true)
     })
   })
+
+  describe('isEmergency — multilingual (Africa audience: FR / PT / AR)', () => {
+    it('detects French chest pain, accented or not', () => {
+      expect(isEmergency("j'ai une douleur thoracique sévère")).toBe(true)
+      expect(isEmergency('jai une douleur thoracique severe')).toBe(true)
+    })
+
+    it('detects French "can\'t breathe" variants', () => {
+      expect(isEmergency("je n'arrive pas à respirer")).toBe(true)
+      expect(isEmergency('je narrive pas a respirer')).toBe(true)
+    })
+
+    it('detects French heart attack', () => {
+      expect(isEmergency('je fais une crise cardiaque')).toBe(true)
+    })
+
+    it('detects Portuguese chest pain and breathlessness', () => {
+      expect(isEmergency('estou com dor no peito')).toBe(true)
+      expect(isEmergency('não consigo respirar')).toBe(true)
+    })
+
+    it('detects Arabic chest pain and breathlessness (orthographic variants)', () => {
+      expect(isEmergency('لدي ألم في الصدر')).toBe(true)
+      expect(isEmergency('لا استطيع التنفس')).toBe(true)
+    })
+
+    it('does not fire on benign non-English queries', () => {
+      expect(isEmergency('combien coûte la rhinoplastie')).toBe(false)
+      expect(isEmergency('quanto custa o implante dentário')).toBe(false)
+    })
+  })
+
+  describe('isMedicalAdvice — multilingual', () => {
+    it('detects French "should I get surgery"', () => {
+      expect(isMedicalAdvice('devrais-je faire une chirurgie ?')).toBe(true)
+    })
+
+    it('detects Portuguese "should I have surgery"', () => {
+      expect(isMedicalAdvice('devo fazer uma cirurgia?')).toBe(true)
+    })
+
+    it('does not fire on French logistics questions', () => {
+      expect(isMedicalAdvice('de quel visa ai-je besoin pour venir en Corée ?')).toBe(false)
+    })
+  })
 })

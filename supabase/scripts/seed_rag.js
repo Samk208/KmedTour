@@ -42,6 +42,36 @@ function plain(value) {
   return String(value);
 }
 
+// Pull the rich /procedures factory content (sections, quick answer, key facts,
+// cost table, FAQs) from the per-treatment sidecar so chat answers are as deep as
+// the published pages — not the thin treatments.json description.
+function loadTreatmentSidecar(slug) {
+  const p = path.join(process.cwd(), 'lib/data/treatment-content', `${slug}.json`);
+  if (!fs.existsSync(p)) return '';
+  let sc;
+  try {
+    sc = JSON.parse(fs.readFileSync(p, 'utf8'));
+  } catch {
+    return '';
+  }
+  const parts = [];
+  if (sc.quickAnswer) parts.push(plain(sc.quickAnswer));
+  if (sc.sections && typeof sc.sections === 'object') {
+    parts.push(Object.values(sc.sections).filter(Boolean).join('\n'));
+  }
+  if (Array.isArray(sc.keyFacts)) {
+    parts.push(sc.keyFacts.map((f) => `${f.label}: ${f.value}`).join('\n'));
+  }
+  if (Array.isArray(sc.costTable)) {
+    parts.push(sc.costTable.map((c) => `${c.item}: ${c.koreanCost} in Korea (vs ${c.globalCost} globally)`).join('\n'));
+  }
+  if (Array.isArray(sc.keyTakeaways)) parts.push(sc.keyTakeaways.filter(Boolean).join('\n'));
+  if (Array.isArray(sc.faqs)) {
+    parts.push(sc.faqs.map((f) => `Q: ${f.q}\nA: ${f.a}`).join('\n'));
+  }
+  return parts.filter(Boolean).join('\n\n');
+}
+
 function chunkText(text, size = 1200, overlap = 160) {
   const normalized = text.replace(/\s+/g, ' ').trim();
   if (!normalized) return [];
@@ -96,6 +126,7 @@ function buildSources() {
       `Duration: ${treatment.duration || 'varies'}`,
       `Success rate: ${treatment.successRate || 'varies by patient'}`,
       `Highlights: ${plain(treatment.highlights)}`,
+      loadTreatmentSidecar(treatment.slug),
     ].filter(Boolean).join('\n'),
   }));
 

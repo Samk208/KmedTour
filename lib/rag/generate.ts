@@ -1,4 +1,7 @@
 import { logger } from '@/lib/utils/logger'
+import type { ChatTurn } from '@/lib/rag/condense'
+
+export type { ChatTurn }
 
 export type RetrievedChunk = {
   chunk_id: string
@@ -27,7 +30,7 @@ export function buildContextBlock(context: RetrievedChunk[]): string {
     .join('\n\n---\n\n')
 }
 
-export async function generateWithPythonAgent(question: string, contextBlock: string): Promise<string> {
+export async function generateWithPythonAgent(question: string, contextBlock: string, history: ChatTurn[] = []): Promise<string> {
   const agentBaseUrl = process.env.PYTHON_AGENT_URL
   if (!agentBaseUrl) throw new Error('PYTHON_AGENT_URL not set')
 
@@ -36,7 +39,7 @@ export async function generateWithPythonAgent(question: string, contextBlock: st
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      messages: [{ role: 'user', content }],
+      messages: [...history, { role: 'user', content }],
       session_id: 'rag-session-' + Date.now(),
     }),
   })
@@ -46,7 +49,7 @@ export async function generateWithPythonAgent(question: string, contextBlock: st
   return data.response
 }
 
-export async function generateWithGemini(question: string, contextBlock: string): Promise<string> {
+export async function generateWithGemini(question: string, contextBlock: string, history: ChatTurn[] = []): Promise<string> {
   const key = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY
   if (!key) throw new Error('GEMINI_API_KEY not set')
   // gemini-flash-latest is Google's rolling alias for the current stable Flash.
@@ -62,6 +65,10 @@ export async function generateWithGemini(question: string, contextBlock: string)
       body: JSON.stringify({
         systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
         contents: [
+          ...history.map((t) => ({
+            role: t.role === 'assistant' ? 'model' : 'user',
+            parts: [{ text: t.content }],
+          })),
           {
             role: 'user',
             parts: [{ text: contextBlock ? `Context:\n${contextBlock}\n\nQuestion: ${question}` : question }],
@@ -83,7 +90,7 @@ export async function generateWithGemini(question: string, contextBlock: string)
   return text
 }
 
-export async function generateWithDeepSeek(question: string, contextBlock: string): Promise<string> {
+export async function generateWithDeepSeek(question: string, contextBlock: string, history: ChatTurn[] = []): Promise<string> {
   const key = process.env.OPENROUTER_API_KEY
   if (!key) throw new Error('OPENROUTER_API_KEY not set')
 
@@ -94,6 +101,7 @@ export async function generateWithDeepSeek(question: string, contextBlock: strin
       model: process.env.OPENROUTER_MODEL || 'deepseek/deepseek-v4-pro',
       messages: [
         { role: 'system', content: SYSTEM_PROMPT },
+        ...history,
         { role: 'user', content: `Context:\n${contextBlock}\n\nQuestion: ${question}` },
       ],
     }),
@@ -108,7 +116,7 @@ export async function generateWithDeepSeek(question: string, contextBlock: strin
   return text
 }
 
-export async function generateWithOpenAI(question: string, contextBlock: string): Promise<string> {
+export async function generateWithOpenAI(question: string, contextBlock: string, history: ChatTurn[] = []): Promise<string> {
   const key = process.env.OPENAI_API_KEY
   if (!key) throw new Error('OPENAI_API_KEY not set')
 
@@ -119,6 +127,7 @@ export async function generateWithOpenAI(question: string, contextBlock: string)
       model: process.env.OPENAI_MODEL || 'gpt-4o-mini',
       messages: [
         { role: 'system', content: SYSTEM_PROMPT },
+        ...history,
         { role: 'user', content: `Context:\n${contextBlock}\n\nQuestion: ${question}` },
       ],
     }),
@@ -138,9 +147,9 @@ export async function generateWithOpenAI(question: string, contextBlock: string)
  * Python agent -> Gemini -> DeepSeek (OpenRouter) -> OpenAI.
  * Each failure is logged and the next provider is tried; throws only if all fail.
  */
-export async function generateAnswer(question: string, context: RetrievedChunk[]): Promise<string> {
+export async function generateAnswer(question: string, context: RetrievedChunk[], history: ChatTurn[] = []): Promise<string> {
   const contextBlock = buildContextBlock(context)
-  const providers: Array<[string, (q: string, c: string) => Promise<string>]> = [
+  const providers: Array<[string, (q: string, c: string, h: ChatTurn[]) => Promise<string>]> = [
     ['python-agent', generateWithPythonAgent],
     ['gemini', generateWithGemini],
     ['deepseek', generateWithDeepSeek],
@@ -150,7 +159,7 @@ export async function generateAnswer(question: string, context: RetrievedChunk[]
   const errors: string[] = []
   for (const [name, fn] of providers) {
     try {
-      return await fn(question, contextBlock)
+      return await fn(question, contextBlock, history)
     } catch (err) {
       const msg = err instanceof Error ? err.message : 'Unknown error'
       errors.push(`${name}: ${msg}`)

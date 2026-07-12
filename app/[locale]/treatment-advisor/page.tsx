@@ -47,6 +47,13 @@ export default function TreatmentAdvisorPage() {
 
     const userMessage = input.trim()
     setInput('')
+    // Prior turns for context — drop the seeded welcome (always first) and errors,
+    // cap to the last 12 to bound payload size.
+    const history = messages
+      .filter(m => !m.isError)
+      .slice(1)
+      .slice(-12)
+      .map(m => ({ role: m.role, content: m.content }))
     setMessages(prev => [...prev, { role: 'user', content: userMessage }])
     setIsLoading(true)
 
@@ -54,7 +61,7 @@ export default function TreatmentAdvisorPage() {
       const res = await fetch('/api/rag/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: userMessage })
+        body: JSON.stringify({ message: userMessage, history })
       })
 
       const data = await res.json()
