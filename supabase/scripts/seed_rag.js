@@ -91,7 +91,90 @@ function chunkText(text, size = 1200, overlap = 160) {
   return chunks;
 }
 
+// Clinic `specialties` use a department enum; treatments use a `category`. This
+// map bridges them so a clinic doc can list the procedures it offers with catalog
+// price ranges — the link that lets chat answer "which clinic does X, for how much".
+const SPECIALTY_TO_CATEGORIES = {
+  DERMATOLOGY: ['Cosmetic'],
+  PLASTIC_SURGERY: ['Cosmetic'],
+  OPHTHALMOLOGY: ['Eye Care'],
+  UROLOGY: ['Urology'],
+  ORTHOPEDICS: ['Orthopedic', 'Spine', 'Rehabilitation'],
+  PULMONOLOGY: ['Respiratory'],
+  PEDIATRICS: ['Pediatrics'],
+  OBSTETRICS_AND_GYNECOLOGY: ['Obstetrics', 'Gynecology'],
+  'OBSTETRICS/GYNECOLOGY': ['Obstetrics', 'Gynecology'],
+  OBSTETRICS_GYNECOLOGY: ['Obstetrics', 'Gynecology'],
+  FERTILITY: ['Fertility'],
+  NEUROSURGERY: ['Neurosurgery'],
+  GASTROENTEROLOGY: ['Gastroenterology'],
+  OTORHINOLARYNGOLOGY: ['ENT'],
+  ONCOLOGY: ['Oncology', 'Cancer'],
+  INTERNAL_MEDICINE: ['Preventive', 'Endocrine'],
+  CARDIOLOGY: ['Cardiac', 'Vascular'],
+  DENTISTRY: ['Dental', 'Dentistry'],
+  DENTAL: ['Dental', 'Dentistry'],
+};
+
+const MAX_CLINIC_PROCEDURES = 15;
+
+// Fallback for clinics whose `specialties` hold free-text instead of the enum
+// (a data-quality issue in the source). Scan the specialty text for these
+// keywords so e.g. "Specialized in ... rhinoplasty ... body contouring" still maps.
+const KEYWORD_TO_CATEGORIES = [
+  [/plastic|rhinoplasty|contouring|eyelid|blepharoplasty|facial|liposuction|cosmetic|anti-aging|dermatolog|breast surgery/, ['Cosmetic']],
+  [/korean medicine|traditional|acupuncture|herbal|moxibustion|cupping/, ['Traditional']],
+  [/orthopedic|spine|spinal|rehabilitation/, ['Orthopedic', 'Spine', 'Rehabilitation']],
+  [/dental|dentist/, ['Dental', 'Dentistry']],
+  [/fertility|ivf/, ['Fertility']],
+  [/ophthalmolog|eye care/, ['Eye Care']],
+  [/oncolog|cancer/, ['Oncology', 'Cancer']],
+  [/cardiolog|cardiac/, ['Cardiac', 'Vascular']],
+];
+
+// Procedures in a clinic's specialty areas, with catalog (not clinic-specific)
+// prices. Wording makes the "typical price, confirm exact quote" framing explicit
+// so the grounded model does not assert a clinic charges a specific amount.
+function buildClinicProcedureBlock(clinic, byCategory) {
+  const categories = new Set();
+  const specialtyText = (clinic.specialties || []).join(' ').toLowerCase();
+  for (const s of clinic.specialties || []) {
+    for (const cat of SPECIALTY_TO_CATEGORIES[String(s).trim().toUpperCase()] || []) {
+      categories.add(cat);
+    }
+  }
+  for (const [re, cats] of KEYWORD_TO_CATEGORIES) {
+    if (re.test(specialtyText)) cats.forEach((c) => categories.add(c));
+  }
+  if (categories.size === 0) return '';
+
+  const seen = new Set();
+  const lines = [];
+  for (const cat of categories) {
+    for (const t of byCategory[cat] || []) {
+      if (seen.has(t.slug)) continue;
+      seen.add(t.slug);
+      lines.push(`- ${t.title} (typical ${t.priceRange || 'contact for pricing'})`);
+      if (lines.length >= MAX_CLINIC_PROCEDURES) break;
+    }
+    if (lines.length >= MAX_CLINIC_PROCEDURES) break;
+  }
+  if (lines.length === 0) return '';
+  return (
+    `Procedures offered at ${clinic.name} in its specialty areas ` +
+    `(prices are typical KmedTour ranges — contact a coordinator for this clinic's exact quote):\n` +
+    lines.join('\n')
+  );
+}
+
 function buildSources() {
+  const treatmentData = readJson('lib/data/treatments.json');
+  const byCategory = {};
+  for (const t of treatmentData) {
+    const cat = t.category || 'Other';
+    (byCategory[cat] = byCategory[cat] || []).push({ title: t.title, slug: t.slug, priceRange: t.priceRange });
+  }
+
   // source_id pattern: '<kind>:<slug>'. Stable, readable, collision-free with
   // any non-seed rows that use UUIDs. Cleanup uses source_type='seed'.
   const clinics = readJson('lib/data/clinics.json').map((clinic) => ({
@@ -109,10 +192,11 @@ function buildSources() {
       `Languages: ${plain(clinic.languagesSupported)}`,
       `Highlights: ${plain(clinic.highlights)}`,
       `Facilities: ${plain(clinic.facilities)}`,
+      buildClinicProcedureBlock(clinic, byCategory),
     ].filter(Boolean).join('\n'),
   }));
 
-  const treatments = readJson('lib/data/treatments.json').map((treatment) => ({
+  const treatments = treatmentData.map((treatment) => ({
     title: treatment.title,
     source_url: `/procedures/${treatment.slug}`,
     source_id: `treatment:${treatment.slug}`,
