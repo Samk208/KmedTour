@@ -1,6 +1,7 @@
 import { getSupabaseAdminContext } from '@/lib/api/client/supabase'
 import { isEmergency, isMedicalAdvice } from '@/lib/rag/chat-guards'
 import { condenseForRetrieval } from '@/lib/rag/condense'
+import { logQuery } from '@/lib/rag/query-log'
 import { geminiEmbed } from '@/lib/rag/embed'
 import { generateAnswer, type RetrievedChunk } from '@/lib/rag/generate'
 import { apiError, createErrorId } from '@/lib/utils/api-response'
@@ -94,14 +95,15 @@ export async function POST(request: Request) {
     const { client } = getSupabaseAdminContext()
     let retrieved: RetrievedChunk[] = []
     let retrievalAttempted = false
+    let condensedQuery: string | null = null
 
     if (client) {
       retrievalAttempted = true
       try {
         // Embed the query condensed with recent history so follow-ups
         // ("how long does that one take?") retrieve against the right subject.
-        const retrievalQuery = condenseForRetrieval(payload.message, payload.history)
-        retrieved = await runRetrieval(client, retrievalQuery)
+        condensedQuery = condenseForRetrieval(payload.message, payload.history)
+        retrieved = await runRetrieval(client, condensedQuery)
       } catch (err: unknown) {
         const msg = err instanceof Error ? err.message : 'Unknown error'
         logger.warn('RAG retrieval/embedding failed, generating without context', { path: '/api/rag/chat' }, { error: msg })
@@ -115,6 +117,16 @@ export async function POST(request: Request) {
     // off to a coordinator instead of generating an ungrounded (hallucinated) answer.
     if (retrievalAttempted && retrieved.length === 0) {
       logger.info('RAG chat: no relevant context, handing off', { path: '/api/rag/chat' })
+      if (client) {
+        await logQuery(client, {
+          question: payload.message,
+          condensed_query: condensedQuery,
+          route: 'fallback',
+          top_similarity: null,
+          num_results: 0,
+          citations: [],
+        })
+      }
       return safetyResponse(
         'fallback',
         "I don't have information on that in our knowledge base yet. A KmedTour medical coordinator can help directly — please reach out via the Contact page and we'll get you an answer."
@@ -127,6 +139,17 @@ export async function POST(request: Request) {
     } catch (genError: unknown) {
       logger.error('RAG generation failed', { path: '/api/rag/chat' }, { error: genError instanceof Error ? genError.message : 'Unknown' })
       answer = "I apologize, but I am currently unable to process your request. Please contact our medical coordinators via the 'Contact' page."
+    }
+
+    if (client) {
+      await logQuery(client, {
+        question: payload.message,
+        condensed_query: condensedQuery,
+        route: retrieved.length > 0 ? 'rag' : 'fallback',
+        top_similarity: retrieved[0]?.similarity ?? null,
+        num_results: retrieved.length,
+        citations: retrieved.map((c) => ({ title: c.title, source_url: c.source_url, similarity: c.similarity })),
+      })
     }
 
     return buildSuccessResponse(retrieved, answer)
