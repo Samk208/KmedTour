@@ -1,0 +1,56 @@
+{
+  "slug": "tonsillectomy",
+  "candidateFor": [
+    "Adults and children with recurrent tonsillitis — typically defined as multiple documented throat infections per year that have not resolved with antibiotic treatment",
+    "Patients with obstructive sleep apnea or sleep-disordered breathing caused by enlarged tonsils that have not responded to conservative management",
+    "Individuals with chronic tonsillitis causing persistent sore throat, bad breath, or tonsillar stones affecting daily quality of life",
+    "Patients whose tonsil size is causing swallowing difficulty or airway narrowing",
+    "International patients priced out of private ENT surgery at home who can plan a 2–3 week stay in Korea for surgery and post-operative clearance",
+    "Adults who have delayed surgery due to cost and want a single trip that covers evaluation, procedure, and pre-flight healing review"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Consultation & Assessment",
+      "duration": "1–2 hours on arrival day",
+      "detail": "An ENT specialist reviews your throat history, existing imaging or scope reports, and performs a physical examination. The team confirms your eligibility for general anesthesia, discusses technique options (coblation versus electrocautery), and walks through post-operative diet and activity restrictions. Interpretation services are available at most international patient centers."
+    },
+    {
+      "step": "Tonsillectomy Procedure",
+      "duration": "30–60 minutes under general anesthesia; 1–2 night hospital stay typical",
+      "detail": "Surgery is performed under general anesthesia in an MFDS-regulated operating theater. Korean ENT centers offer coblation, a low-temperature radiofrequency method associated with less thermal spread, alongside conventional electrocautery. After a short recovery room observation, most patients stay one to two nights for pain management and to confirm there is no immediate post-operative bleeding."
+    },
+    {
+      "step": "Recovery & Pre-Departure Follow-up",
+      "duration": "2–3 weeks total stay in Korea recommended",
+      "detail": "The highest-risk window for post-operative bleeding is approximately 7–10 days after surgery. Staying in Korea through that window allows your surgical team to monitor healing and formally clear you before a long-haul flight. Expect a soft-food diet throughout this period. A follow-up appointment confirms the surgical site is healing before departure."
+    }
+  ],
+  "whyKorea": [
+    "Korean ENT facilities regulated by the Ministry of Food and Drug Safety (MFDS) are required to meet national standards for surgical equipment, anesthesia protocols, and infection control — providing a verifiable regulatory baseline for international patients.",
+    "Self-pay costs in Korea typically run approximately $2,000–$6,000 USD, which is often 40–70% below comparable private-pay prices in the United States, United Kingdom, and Gulf states for the same procedure.",
+    "Korean ENT surgeons routinely use coblation (low-temperature radiofrequency ablation), a technique that offers an alternative to traditional hot electrocautery — patients can ask about technique options and expected recovery profiles during consultation.",
+    "Major Korean hospitals and ENT centers operating international patient departments provide coordinated services — pre-surgery translation, in-patient interpretation, and post-operative communication with your home physician — reducing the logistical burden of cross-border medical care."
+  ],
+  "faqs": [
+    {
+      "question": "How much does a tonsillectomy cost in Korea for an international patient?",
+      "answer": "Self-pay costs typically range from approximately $2,000 to $6,000 USD depending on the hospital tier, technique used, and length of inpatient stay. This range generally does not include interpretation services, accommodation, or flights. Request an itemized estimate from the hospital's international patient office before booking."
+    },
+    {
+      "question": "Why do I need to stay in Korea for 2–3 weeks just for a tonsillectomy?",
+      "answer": "Post-operative bleeding is the primary risk following tonsillectomy, and it can occur up to 7–10 days after surgery. Staying in Korea through that window means your surgical team can manage any complication promptly and formally clear you before you board a long-haul flight, where access to emergency ENT care would be unavailable."
+    },
+    {
+      "question": "What is coblation and is it available in Korea?",
+      "answer": "Coblation uses low-temperature radiofrequency energy to remove tonsillar tissue, in contrast to traditional electrocautery which applies higher heat. Korean ENT centers offer both techniques. During your consultation, your surgeon can explain which approach they recommend based on your anatomy and discuss the expected recovery profile for each."
+    },
+    {
+      "question": "What can I eat during recovery after tonsillectomy in Korea?",
+      "answer": "You will be restricted to soft foods — such as porridge, yogurt, soup, and cooled liquids — throughout the recovery period. Hot, spicy, or hard foods are avoided because they can irritate the surgical site or trigger bleeding. Your care team will give you specific dietary guidance before discharge."
+    },
+    {
+      "question": "Can I have a tonsillectomy in Korea if I am an adult — is the procedure different from a child's?",
+      "answer": "Adult tonsillectomies are performed routinely in Korean ENT centers. The surgical technique is the same, though adults are sometimes noted to experience a longer or more uncomfortable recovery than children. Your pre-operative consultation will cover age-specific expectations, pain management options, and any additional pre-anesthesia screening required for adult patients."
+    }
+  ]
+}

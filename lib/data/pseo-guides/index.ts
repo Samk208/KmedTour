@@ -54,8 +54,11 @@ import sinusSurgery from './sinus-surgery.json'
 import skinWhitening from './skin-whitening.json'
 import smileEyeSurgery from './smile-eye-surgery.json'
 import spinalFusion from './spinal-fusion.json'
+import thyroidSurgery from './thyroid-surgery.json'
+import tonsillectomy from './tonsillectomy.json'
 import tummyTuck from './tummy-tuck.json'
 import vLineSurgery from './v-line-surgery.json'
+import varicoseVeinTreatment from './varicose-vein-treatment.json'
 
 export const pseoGuides: Record<string, ProcedureGuide> = {
   "acl-reconstruction": aclReconstruction as unknown as ProcedureGuide,
@@ -111,6 +114,9 @@ export const pseoGuides: Record<string, ProcedureGuide> = {
   "skin-whitening": skinWhitening as unknown as ProcedureGuide,
   "smile-eye-surgery": smileEyeSurgery as unknown as ProcedureGuide,
   "spinal-fusion": spinalFusion as unknown as ProcedureGuide,
+  "thyroid-surgery": thyroidSurgery as unknown as ProcedureGuide,
+  "tonsillectomy": tonsillectomy as unknown as ProcedureGuide,
   "tummy-tuck": tummyTuck as unknown as ProcedureGuide,
   "v-line-surgery": vLineSurgery as unknown as ProcedureGuide,
+  "varicose-vein-treatment": varicoseVeinTreatment as unknown as ProcedureGuide,
 }

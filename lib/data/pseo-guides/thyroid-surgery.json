@@ -1,0 +1,56 @@
+{
+  "slug": "thyroid-surgery",
+  "candidateFor": [
+    "Patients diagnosed with thyroid cancer (papillary, follicular, medullary, or anaplastic) seeking a high-volume surgical center",
+    "Individuals with a large goiter causing compression symptoms such as difficulty swallowing, breathing, or a visible neck mass",
+    "Patients with hyperthyroidism uncontrolled by medication or radioactive iodine who have been advised surgical removal",
+    "Those who want to avoid a visible neck scar and have been assessed as suitable for robotic (BABA) or transoral endoscopic approaches",
+    "International patients who have received a thyroid nodule diagnosis with indeterminate or suspicious biopsy results requiring surgical confirmation",
+    "Patients seeking a second surgical opinion after an initial recommendation for thyroidectomy in their home country"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Consultation & Pre-operative Assessment",
+      "duration": "1–2 days",
+      "detail": "On arrival, you will meet the surgical team for a review of your imaging, biopsy results, and thyroid function labs. Additional ultrasound or laryngoscopy to assess vocal cord baseline may be performed. The surgeon discusses the planned extent of surgery — partial (hemithyroidectomy) or total thyroidectomy — and whether a minimally invasive approach is appropriate for your anatomy and diagnosis."
+    },
+    {
+      "step": "Surgery",
+      "duration": "1–4 hours depending on technique and extent",
+      "detail": "Conventional open thyroidectomy uses a small horizontal neck incision. Robotic BABA (bilateral axillo-breast approach) and transoral endoscopic approaches route instruments through the armpits, chest, or mouth, leaving no visible neck scar. Hospital stay is typically 1–2 nights. Voice and calcium levels are monitored before discharge; hormone replacement therapy is usually initiated within the first 24 hours after total thyroidectomy."
+    },
+    {
+      "step": "Recovery & Follow-up",
+      "duration": "Approximately 10–14 days total in Korea",
+      "detail": "Most patients are ambulatory within a day and discharged within 1–2 nights. A post-operative outpatient review checks wound healing, calcium levels, and vocal cord function. Pathology results for cancer cases typically take several days. Plan to remain in Korea roughly 10–14 days to cover surgery, discharge, and the first follow-up visit before flying home."
+    }
+  ],
+  "whyKorea": [
+    "Korean hospitals run high-volume thyroid programs where surgical teams perform thyroid procedures at a scale that exceeds most Western centers, which directly correlates with procedural consistency and lower complication rates at an institutional level.",
+    "Robotic BABA and transoral endoscopic thyroidectomy techniques developed and refined at Korean institutions offer scar-free outcomes that are not yet widely available in many other countries, giving patients access to approaches unlikely to be offered locally.",
+    "All surgical facilities operating on international patients are regulated by Korea's Ministry of Food and Drug Safety (MFDS) and must meet national accreditation standards, providing a formal regulatory layer of oversight.",
+    "Out-of-pocket costs for international patients in Korea fall approximately in the range of $7,700–$16,000+, which is generally 40–70% below comparable out-of-pocket or uninsured costs at private hospitals in the United States, United Kingdom, or Australia."
+  ],
+  "faqs": [
+    {
+      "question": "Will I have a visible scar on my neck after thyroid surgery in Korea?",
+      "answer": "Not necessarily. If you are a suitable candidate, Korean surgeons offer robotic BABA or transoral endoscopic approaches that avoid any neck incision entirely. Suitability depends on thyroid size, anatomy, and diagnosis — your consultation will determine which approach is appropriate for your case."
+    },
+    {
+      "question": "How long do I need to stay in Korea for thyroid surgery?",
+      "answer": "Plan for approximately 1–2 weeks in total. This covers your pre-operative consultation, the surgery itself, a 1–2 night hospital stay, and at least one outpatient follow-up before you are cleared to fly. Patients who require pathology review for cancer cases may need to factor in a few extra days for results."
+    },
+    {
+      "question": "What is the approximate cost of thyroid surgery in Korea for an international patient?",
+      "answer": "Costs generally fall in the range of approximately $7,700 to $16,000+ USD out of pocket, depending on whether you have a partial or total thyroidectomy, which surgical technique is used, and the specific facility. Get an itemized estimate during your consultation before committing to any procedure."
+    },
+    {
+      "question": "Will I need to take medication after thyroid surgery?",
+      "answer": "After a total thyroidectomy, you will require lifelong thyroid hormone replacement (levothyroxine). This is typically started before or shortly after discharge. If only one lobe is removed, the remaining tissue may produce enough hormone on its own — your endocrinologist will monitor levels and advise accordingly."
+    },
+    {
+      "question": "Is it safe to fly home shortly after thyroid surgery?",
+      "answer": "Most patients are advised to remain in Korea for at least 10–14 days before flying, so the surgical team can confirm stable calcium levels, adequate voice recovery, and no early wound complications. Your care team will give a specific clearance based on your recovery before you travel."
+    }
+  ]
+}

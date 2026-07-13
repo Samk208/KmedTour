@@ -1,0 +1,56 @@
+{
+  "slug": "varicose-vein-treatment",
+  "candidateFor": [
+    "Patients with symptomatic varicose veins — aching, swelling, or heaviness in the legs — who have not improved with compression therapy",
+    "Those with visible, bulging superficial veins confirmed by duplex ultrasound as suitable for endovenous ablation or sclerotherapy",
+    "International patients who want outpatient treatment with same-day discharge and a short Korea stay of 3–7 days",
+    "Patients seeking EVLA, RFA, or VenaSeal as alternatives to open surgical vein stripping",
+    "Those with spider veins or smaller reticular veins appropriate for sclerotherapy sessions",
+    "Patients whose home-country wait times or private costs make Korea a practical option for MFDS-regulated vascular care"
+  ],
+  "whatToExpect": [
+    {
+      "step": "Consultation & Assessment",
+      "duration": "1–2 hours",
+      "detail": "A vascular specialist reviews your medical history and performs duplex ultrasound to map the affected veins and identify reflux points. The findings determine which technique — EVLA, RFA, VenaSeal, or sclerotherapy — is appropriate for your anatomy. You receive a treatment plan and cost estimate before any procedure is scheduled. Bring any prior ultrasound reports or medical records."
+    },
+    {
+      "step": "Procedure",
+      "duration": "30–60 minutes per session",
+      "detail": "Most treatments are performed under local or tumescent anesthesia in an outpatient clinic setting. A thin catheter or needle is guided into the vein under ultrasound; heat (EVLA, RFA) or medical adhesive (VenaSeal) closes the vein, or sclerosant solution is injected for smaller vessels. No general anesthesia or overnight stay is required. You walk out of the clinic the same day wearing compression stockings."
+    },
+    {
+      "step": "Recovery & Follow-up",
+      "duration": "3–7 days in Korea; full activity in 1–2 weeks",
+      "detail": "Compression stockings are worn for a prescribed period after the procedure. Light walking is encouraged from day one; strenuous exercise and prolonged standing are restricted for roughly one to two weeks. A follow-up ultrasound is typically scheduled a few days after treatment to confirm vein closure. Multiple sclerotherapy sessions spaced weeks apart may be needed for spider veins, which can extend your Korea stay or require return visits."
+    }
+  ],
+  "whyKorea": [
+    "Korean vascular clinics offer EVLA, RFA, VenaSeal, and sclerotherapy as standard outpatient procedures under MFDS (Ministry of Food and Drug Safety) regulation, using equipment and protocols consistent with current international vascular guidelines.",
+    "Costs for laser or radiofrequency ablation per leg are typically several hundred to low-thousands of USD — significantly below comparable private clinic rates in the US, UK, or Australia — and sclerotherapy sessions run approximately $150–$300 each.",
+    "The outpatient, walk-out model means most international patients need only 3–7 days in Korea for assessment, treatment, and a post-procedure check, making a dedicated trip practical.",
+    "Vascular surgery training in Korea includes structured specialist certification, and clinics serving international patients routinely provide duplex ultrasound on-site and English-language coordination for scheduling and documentation."
+  ],
+  "faqs": [
+    {
+      "question": "Will I need more than one treatment session?",
+      "answer": "It depends on the technique and extent of disease. EVLA, RFA, and VenaSeal typically treat the main truncal vein in a single session. Sclerotherapy for spider veins or residual smaller vessels often requires multiple sessions spaced weeks apart. Your duplex ultrasound assessment will give a clearer picture of how many sessions your case is likely to need."
+    },
+    {
+      "question": "Is varicose vein treatment in Korea painful?",
+      "answer": "Procedures use local or tumescent anesthesia, so discomfort during treatment is generally mild. Some patients notice bruising, tenderness along the treated vein, or a tight sensation in the days after, which typically resolves within one to two weeks. Compression stockings reduce post-procedure swelling and discomfort during recovery."
+    },
+    {
+      "question": "How long do I need to stay in Korea for treatment?",
+      "answer": "A stay of 3–7 days covers an initial consultation and duplex ultrasound, the procedure itself, and a follow-up ultrasound to confirm vein closure. If only sclerotherapy is planned and multiple sessions are needed, you may need to return or extend your stay. Your clinic will advise based on your treatment plan."
+    },
+    {
+      "question": "What is the difference between EVLA, RFA, and VenaSeal?",
+      "answer": "All three close the affected vein from inside without surgical removal. EVLA uses laser energy; RFA uses radiofrequency heat; VenaSeal uses a medical-grade adhesive without heat, which some patients find more comfortable and requires no tumescent anesthesia around the vein. The best option for you depends on vein anatomy, and your specialist will recommend based on your ultrasound findings."
+    },
+    {
+      "question": "Are Korean vascular clinics regulated and accredited?",
+      "answer": "Clinics and the devices they use are regulated by the MFDS, Korea's national medical regulatory authority. Many clinics treating international patients also operate within hospital networks subject to Korean Healthcare Accreditation and Quality Institute standards. Confirm your clinic's credentials and ask for your procedure and follow-up documentation in English before you leave Korea."
+    }
+  ]
+}
