@@ -5,7 +5,6 @@ type AdminClient = NonNullable<ReturnType<typeof getSupabaseAdminContext>['clien
 
 export type QueryLogEntry = {
   question: string
-  condensed_query: string | null
   route: 'rag' | 'fallback'
   top_similarity: number | null
   num_results: number

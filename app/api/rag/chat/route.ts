@@ -120,7 +120,6 @@ export async function POST(request: Request) {
       if (client) {
         await logQuery(client, {
           question: payload.message,
-          condensed_query: condensedQuery,
           route: 'fallback',
           top_similarity: null,
           num_results: 0,
@@ -144,7 +143,6 @@ export async function POST(request: Request) {
     if (client) {
       await logQuery(client, {
         question: payload.message,
-        condensed_query: condensedQuery,
         route: retrieved.length > 0 ? 'rag' : 'fallback',
         top_similarity: retrieved[0]?.similarity ?? null,
         num_results: retrieved.length,

@@ -3,7 +3,6 @@ import { logQuery, type QueryLogEntry } from '@/lib/rag/query-log'
 
 const entry = (over: Partial<QueryLogEntry> = {}): QueryLogEntry => ({
   question: 'how much are dental implants?',
-  condensed_query: 'dental implants how much are dental implants?',
   route: 'rag',
   top_similarity: 0.8,
   num_results: 8,

@@ -5,7 +5,6 @@ create table if not exists public.rag_query_log (
   id uuid primary key default gen_random_uuid(),
   created_at timestamptz not null default now(),
   question text not null,
-  condensed_query text,
   route text not null check (route in ('rag', 'fallback')),
   top_similarity double precision,
   num_results integer not null default 0,
