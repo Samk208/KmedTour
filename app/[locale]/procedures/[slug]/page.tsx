@@ -328,12 +328,6 @@ export default async function EnhancedProcedurePage({ params }: { params: Promis
                     {treatment.duration || 'Varies by case'}
                   </p>
                 </div>
-                <div className="pb-3 border-b border-[var(--border-grey)]">
-                  <p className="text-sm text-[var(--deep-grey)] mb-1">Success Rate</p>
-                  <p className="text-lg font-bold" style={{ color: 'var(--kmed-blue)' }}>
-                    {treatment.successRate || 'Consult surgeon'}
-                  </p>
-                </div>
                 <div>
                   <p className="text-sm text-[var(--deep-grey)] mb-1">Accredited Hospitals</p>
                   <p className="text-lg font-bold" style={{ color: 'var(--kmed-blue)' }}>

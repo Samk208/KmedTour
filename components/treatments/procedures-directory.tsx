@@ -6,7 +6,7 @@ import { FavoriteButton } from '@/components/shared/favorite-button'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { useTreatmentsQuery } from '@/lib/api/hooks/use-treatments'
-import { Clock, DollarSign, Search, TrendingUp } from 'lucide-react'
+import { Clock, DollarSign, Search } from 'lucide-react'
 import Link from 'next/link'
 import { useMemo, useState } from 'react'
 
@@ -150,7 +150,7 @@ export function ProceduresDirectory() {
                     {treatment.shortDescription}
                   </p>
 
-                  <div className="grid grid-cols-3 gap-2 py-4 border-t border-b" style={{ borderColor: 'var(--border-grey)' }}>
+                  <div className="grid grid-cols-2 gap-2 py-4 border-t border-b" style={{ borderColor: 'var(--border-grey)' }}>
                     <div className="text-center">
                       <DollarSign className="h-4 w-4 mx-auto mb-1" style={{ color: 'var(--kmed-teal)' }} />
                       <div className="text-xs font-semibold" style={{ color: 'var(--kmed-navy)' }}>Price</div>
@@ -160,11 +160,6 @@ export function ProceduresDirectory() {
                       <Clock className="h-4 w-4 mx-auto mb-1" style={{ color: 'var(--kmed-teal)' }} />
                       <div className="text-xs font-semibold" style={{ color: 'var(--kmed-navy)' }}>Duration</div>
                       <div className="text-xs" style={{ color: 'var(--deep-grey)' }}>{treatment.duration}</div>
-                    </div>
-                    <div className="text-center">
-                      <TrendingUp className="h-4 w-4 mx-auto mb-1" style={{ color: 'var(--kmed-teal)' }} />
-                      <div className="text-xs font-semibold" style={{ color: 'var(--kmed-navy)' }}>Success</div>
-                      <div className="text-xs" style={{ color: 'var(--deep-grey)' }}>{treatment.successRate}</div>
                     </div>
                   </div>
 

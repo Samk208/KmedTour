@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { useTreatmentsQuery } from '@/lib/api/hooks/use-treatments'
 import { motion } from 'framer-motion'
-import { ArrowRight, DollarSign, TrendingUp, ScanLine } from 'lucide-react'
+import { ArrowRight, DollarSign, ScanLine } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
@@ -96,15 +96,12 @@ export function FeaturedTreatmentsSection() {
                       {treatment.shortDescription}
                     </p>
 
-                    {/* Data Grid */}
-                    <div className="grid grid-cols-2 gap-px bg-gray-100 border border-gray-100 rounded-lg overflow-hidden my-4 text-xs">
+                    {/* Data Grid. Success rate is intentionally not shown: the only
+                        value we hold is an unsourced "95%+" on every procedure. */}
+                    <div className="grid grid-cols-1 gap-px bg-gray-100 border border-gray-100 rounded-lg overflow-hidden my-4 text-xs">
                       <div className="bg-white p-3 text-center">
                         <div className="text-gray-400 mb-1 flex items-center justify-center gap-1"><DollarSign className="w-3 h-3" /> {t('landing.treatments.costEst') || "From"}</div>
                         <div className="font-bold text-[var(--kmed-navy)]">{treatment.priceRange.split('-')[0]}</div>
-                      </div>
-                      <div className="bg-white p-3 text-center">
-                        <div className="text-gray-400 mb-1 flex items-center justify-center gap-1"><TrendingUp className="w-3 h-3" /> {t('landing.treatments.success') || "Success Rate"}</div>
-                        <div className="font-bold text-[var(--kmed-teal)]">{treatment.successRate}</div>
                       </div>
                     </div>
 
