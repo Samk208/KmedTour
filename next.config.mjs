@@ -107,7 +107,7 @@ const nextConfig = {
   // Environment variables validation (optional but recommended)
   env: {
     NEXT_PUBLIC_APP_URL:
-      process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3002",
+      process.env.NEXT_PUBLIC_APP_URL || "https://kmedtour.com",
   },
 };
 
